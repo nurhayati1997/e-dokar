@@ -7,7 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!--===============================================================================================-->
 	
-	<link rel="icon" href="<?= base_url() ?>assets/new.png" type="image/png">
+	<link rel="icon" href="<?= base_url() ?>assets_login/new.png" type="image/png">
 	<!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="<?= base_url() ?>assets_login/vendor/bootstrap/css/bootstrap.min.css">
 	<!--===============================================================================================-->
@@ -34,12 +34,12 @@
 <body>
 
 	<div class="limiter">
-		<div class="container-login100" style="background-image: url('<?= base_url() ?>assets/bg.jpg');">
+		<div class="container-login100" style="background-image: url('<?= base_url() ?>assets_login/bg.jpg');">
 			<div class="wrap-login100">
 				<form class="login100-form validate-form" action='#' method="POST">
 					<span class="login100-form-logo">
 						<!-- <i class="zmdi zmdi-gamepad"></i> -->
-						<img src="<?= base_url() ?>assets/new.png">
+						<img src="<?= base_url() ?>assets_login/new.png">
 						<!-- <i class="zmdi zmdi-landscape"></i> -->
 					</span>
 

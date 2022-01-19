@@ -35,6 +35,8 @@
               <div class="row">
                 <div class="col-md-4">
                 </div>
+
+
                 <div class="col-md-4">
                   <button type="button" class="btn btn-block btn-primary" onClick="tryTambah()">Tambah</button>
                   <div class="modal fade" id="modalTambah" tabindex="-1" role="dialog" aria-labelledby="modal-form" aria-hidden="true">
@@ -58,11 +60,22 @@
                                   </div>
                                 </div>
                                 <div class="form-group mb-3">
+                                  <div class="input-group input-group-merge input-group-alternative">
+                                    <div class="input-group-prepend">
+                                      <span class="input-group-text"><i class="ni ni-badge"></i></span>
+                                    </div>
+                                    <input class="form-control" id="id_karyawan" placeholder="Id Karyawan" type="text">
+                                  </div>
+                                </div>
+                                <div class="form-group mb-3">
                                   <select class="form-control" id="ruleUser">
                                     <option value="0" disabled selected>-Pilih Level-</option>
-                                    <option value="1">Owner</option>
-                                    <option value="2">Admin</option>
-                                    <option value="3">Dokter</option>
+                                    <option value="1">Super Admin</option>
+                                    <option value="2">Kepegawaian</option>
+                                    <option value="3">Diklat</option>
+                                    <option value="4">Karyawan</option>
+                                    <option value="5">Antrian Farmasi</option>
+                                    <option value="4">Web Profile</option>
                                   </select>
                                 </div>
                                 <div class="form-group mb-3">
@@ -79,22 +92,6 @@
                                       <span class="input-group-text"><i class="ni ni-lock-circle-open"></i></span>
                                     </div>
                                     <input class="form-control" id="password" placeholder="Pasword" type="password">
-                                  </div>
-                                </div>
-                                <div class="form-group mb-3">
-                                  <div class="input-group input-group-merge input-group-alternative">
-                                    <div class="input-group-prepend">
-                                      <span class="input-group-text"><i class="ni ni-paper-diploma"></i></span>
-                                    </div>
-                                    <input class="form-control" id="konfirPass" placeholder="Konfirmasi Pasword" type="password">
-                                  </div>
-                                </div>
-                                <div class="form-group mb-3">
-                                  <div class="input-group input-group-merge input-group-alternative">
-                                    <div class="input-group-prepend">
-                                      <span class="input-group-text"><i class="ni ni-badge"></i></span>
-                                    </div>
-                                    <input class="form-control" id="jabatan" placeholder="Jabatan" type="text">
                                   </div>
                                 </div>
                                 <div class="badge badge-danger" id="pesanErrorTambah"></div>
@@ -189,7 +186,7 @@
 
   function tampilkan() {
     $("#tempatTabel").html('<i class="fas fa-spinner fa-pulse"></i> Memuat...')
-    var baris = '<table class="table table-flush" id="tabelUser"><thead class="thead-light"><tr><th>NO</th><th>Nama</th><th>Email</th><th>Jabatan</th><th>Dokter/spesialis</th><th>Action</th></tr></thead><tbody>'
+    var baris = '<table class="table table-flush" id="tabelUser"><thead class="thead-light"><tr><th>NO</th><th>Nama</th><th>Id</th><th>Rule</th><th>Action</th></tr></thead><tbody>'
     $.ajax({
       url: '<?= base_url() ?>master_user/tampil',
       method: 'post',
@@ -199,9 +196,8 @@
           baris += '<tr>'
           baris += '<td>' + (i + 1) + '</td>'
           baris += '<td>' + data[i].nama + '</td>'
-          baris += '<td>' + data[i].email + '</td>'
+          baris += '<td>' + data[i].id_karyawan + '</td>'
           baris += '<td>' + data[i].rule + '</td>'
-          baris += '<td>' + data[i].jabatan + '</td>'
           baris += '<td><div style="cursor:pointer;" title="hapus?" class="badge badge-danger" id="hapus' + data[i].id_user + '" onClick="tryHapus(' + data[i].id_user + ')"><i class="fa fa-times"></i></div>'
           baris += ' <div style="cursor:pointer;" title="edit?" class="badge badge-info" id="edit' + data[i].id_user + '" onClick="tryEdit(' + data[i].id_user + ')"><i class="fa fa-edit"></i></div>'
           baris += '</td></tr>'
@@ -217,11 +213,10 @@
 
   function tryTambah() {
     $("#nama").val("")
+    $("#id_karyawan").val("")
     $("#rule").val("")
     $("#email").val("")
     $("#password").val("")
-    $("#konfirPass").val("")
-    $("#jabatan").val("")
     $("#modalTambah").modal('show')
     $('#pesan_error_tambah').html("")
   }
@@ -229,11 +224,10 @@
   function tambah() {
     $("#tombolTambah").html('<i class="fas fa-spinner fa-pulse"></i> Memproses..')
     var nama = $("#nama").val()
+    var nama = $("#id_karyawan").val()
     var rule = $("#ruleUser").val()
     var email = $("#email").val()
     var password = $("#password").val()
-    var konfirPass = $("#konfirPass").val()
-    var jabatan = $("#jabatan").val()
     if (rule == null) {
       rule = 0;
     }
@@ -242,11 +236,10 @@
       method: 'post',
       data: {
         nama: nama,
+        id_karyawan: id_karyawan,
         rule: rule,
         email: email,
-        password: password,
-        konfirPass: konfirPass,
-        jabatan: jabatan
+        password: password
       },
       dataType: 'json',
       success: function(data) {
@@ -254,11 +247,10 @@
           $("#modalTambah").modal('hide')
           tampilkan()
           $("#nama").val("")
+          $("#id_karyawan").val("")
           $("#rule").val("")
           $("#email").val("")
           $("#password").val("")
-          $("#konfirPass").val("")
-          $("#jabatan").val("")
           $('#pesanErroTambah').html("")
         } else {
           data = data.replace("<p>", "");

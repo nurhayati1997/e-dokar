@@ -24,7 +24,7 @@ class master_user extends CI_Controller
 	
 	public function tampil()
 	{
-		echo json_encode($this->db_model->get_all("hrd_user", ["status" => 0])->result());
+		echo json_encode($this->db_model->get_all("hrd_user")->result());
 		// $data_antrian = $this->db_model->get_all('hrd_user')->result();
 		// echo json_encode($data_antrian);
 	}
@@ -40,14 +40,14 @@ class master_user extends CI_Controller
 	public function tambah_data()
 	{
 		$data = [
-			"no_antrian" => $this->input->post("no_antrian", TRUE),
-			"no_rm" => $this->input->post("no_rm", TRUE),
 			"nama" => $this->input->post("nama", TRUE),
-			"poli" => $this->input->post("poli", TRUE),
-			"jenis_pasien" => $this->input->post("jenis_pasien", TRUE),
-			"status"=>$this->input->post("status", TRUE)
+			"id_karyawan" => $this->input->post("id_karyawan", TRUE),
+			"rule" => $this->input->post("rule", TRUE),
+			"email" => $this->input->post("email", TRUE),
+			"password" => $this->input->post("password", TRUE),
+			"status"=>1
 		];
-		$this->db_model->insert('syarefa', $data);
+		$this->db_model->insert('hrd_user', $data);
 		echo json_encode($data);
 	}
 

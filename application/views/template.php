@@ -40,7 +40,7 @@
   <!-- Fonts -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700">
   <!-- Favicon -->
-  <link rel="icon" href="<?= base_url() ?>assets_admin/img/brand/logo.ico" type="image/png">
+  <link rel="icon" href="<?= base_url() ?>assets_login/new.png" type="image/png">
 
   <!-- Icons -->
   <link rel="stylesheet" href="<?= base_url() ?>assets_admin/vendor/nucleo/css/nucleo.css" type="text/css">

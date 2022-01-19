@@ -1,121 +1,351 @@
+<div class="content">
+  <!-- Header -->
+  <!-- Header -->
+  <div class="header bg-primary pb-6">
+    <div class="container-fluid">
+      <div class="header-body">
+        <div class="row align-items-center py-4">
+          <div class="col-lg-6 col-7">
+            <h6 class="h2 text-white d-inline-block mb-0">Aulia Husada</h6>
+            <nav aria-label="breadcrumb" class="d-none d-md-inline-block ml-md-4">
+              <ol class="breadcrumb breadcrumb-links breadcrumb-dark">
+                <li class="breadcrumb-item"><a href="#"><i class="fas fa-home"></i></a></li>
+                <li class="breadcrumb-item"><a href="#">Data User</a></li>
+                <!-- <li class="breadcrumb-item active" aria-current="page">Default</li> -->
+              </ol>
+            </nav>
+          </div>
+          <!-- <div class="col-lg-6 col-5 text-right">
+            <a href="#" class="btn btn-sm btn-neutral">New</a>
+            <a href="#" class="btn btn-sm btn-neutral">Filters</a>
+          </div> -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Page content -->
+  <!-- Dark table -->
+  <div class="container-fluid mt--6">
+    <div class="row">
+      <div class="col">
+        <div class="card">
+          <div class="card-header bg-gradient-success">
+            <div class="pt-4 text-center">
+              <h4 class="text-uppercase ls-1 text-white py-3 mb-0">Data User</h4>
+              <div class="row">
+                <div class="col-md-4">
+                </div>
+                <div class="col-md-4">
+                  <button type="button" class="btn btn-block btn-primary" onClick="tryTambah()">Tambah</button>
+                  <div class="modal fade" id="modalTambah" tabindex="-1" role="dialog" aria-labelledby="modal-form" aria-hidden="true">
+                    <div class="modal-dialog modal- modal-dialog-centered modal-sm" role="document">
+                      <div class="modal-content">
+                        <div class="modal-body p-0">
+                          <div class="card bg-secondary border-0 mb-0">
+                            <div class="card-header bg-success pb-1">
+                              <div class="text-muted text-center mt-2 mb-3">
+                                <span class="text-muted text-white">Form Master Data User </span>
+                              </div>
+                            </div>
+                            <div class="card-body px-lg-5 py-lg-5">
+                              <form role="form">
+                                <div class="form-group mb-3">
+                                  <div class="input-group input-group-merge input-group-alternative">
+                                    <div class="input-group-prepend">
+                                      <span class="input-group-text"><i class="ni ni-badge"></i></span>
+                                    </div>
+                                    <input class="form-control" id="nama" placeholder="Nama" type="text">
+                                  </div>
+                                </div>
+                                <div class="form-group mb-3">
+                                  <select class="form-control" id="ruleUser">
+                                    <option value="0" disabled selected>-Pilih Level-</option>
+                                    <option value="1">Owner</option>
+                                    <option value="2">Admin</option>
+                                    <option value="3">Dokter</option>
+                                  </select>
+                                </div>
+                                <div class="form-group mb-3">
+                                  <div class="input-group input-group-merge input-group-alternative">
+                                    <div class="input-group-prepend">
+                                      <span class="input-group-text"><i class="ni ni-email-83"></i></span>
+                                    </div>
+                                    <input class="form-control" id="email" placeholder="email" type="email">
+                                  </div>
+                                </div>
+                                <div class="form-group mb-3">
+                                  <div class="input-group input-group-merge input-group-alternative">
+                                    <div class="input-group-prepend">
+                                      <span class="input-group-text"><i class="ni ni-lock-circle-open"></i></span>
+                                    </div>
+                                    <input class="form-control" id="password" placeholder="Pasword" type="password">
+                                  </div>
+                                </div>
+                                <div class="form-group mb-3">
+                                  <div class="input-group input-group-merge input-group-alternative">
+                                    <div class="input-group-prepend">
+                                      <span class="input-group-text"><i class="ni ni-paper-diploma"></i></span>
+                                    </div>
+                                    <input class="form-control" id="konfirPass" placeholder="Konfirmasi Pasword" type="password">
+                                  </div>
+                                </div>
+                                <div class="form-group mb-3">
+                                  <div class="input-group input-group-merge input-group-alternative">
+                                    <div class="input-group-prepend">
+                                      <span class="input-group-text"><i class="ni ni-badge"></i></span>
+                                    </div>
+                                    <input class="form-control" id="jabatan" placeholder="Jabatan" type="text">
+                                  </div>
+                                </div>
+                                <div class="badge badge-danger" id="pesanErrorTambah"></div>
+                                <div class="text-center">
+                                  <button type="button" onClick="tambah()" id="tombolTambah" class="btn btn-success my-2">Tambah</button>
+                                </div>
+                              </form>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="modal fade" id="modalEdit" tabindex="-1" role="dialog" aria-labelledby="modal-form" aria-hidden="true">
+                    <div class="modal-dialog modal- modal-dialog-centered modal-sm" role="document">
+                      <div class="modal-content">
+                        <div class="modal-body p-0">
+                          <div class="card bg-secondary border-0 mb-0">
+                            <div class="card-header bg-success pb-1">
+                              <div class="text-muted text-center mt-2 mb-3">
+                                <span class="text-muted text-white">Form Edit Data User </span>
+                              </div>
+                            </div>
+                            <div class="card-body px-lg-5 py-lg-5">
+                              <form role="form">
+                                <div class="form-group mb-3">
+                                  <div class="input-group input-group-merge input-group-alternative">
+                                    <div class="input-group-prepend">
+                                      <span class="input-group-text"><i class="ni ni-badge"></i></span>
+                                    </div>
+                                    <input id="idUser" type="hidden">
+                                    <input class="form-control" id="editNama" placeholder="Nama" type="text">
+                                  </div>
+                                </div>
+                                <div class="badge badge-danger" id="pesanErrorEdit"></div>
+                                <div class="text-center">
+                                  <button type="button" onClick="edit()" id="tombolEdit" class="btn btn-success my-2">Edit</button>
+                                </div>
+                              </form>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card-body ">
+            <div class="table-responsive py-4" id="tempatTabel">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-						<!--begin::Entry-->
-						<div class="d-flex flex-column-fluid">
-							<!--begin::Container-->
-							<div class="container">
-								<!--begin::Notice-->
-								<div class="alert alert-custom alert-white alert-shadow gutter-b" role="alert">
-									<div class="alert-icon">
-										<span class="svg-icon svg-icon-primary svg-icon-xl">
-											<!--begin::Svg Icon | path:/metronic/theme/html/demo2/dist/assets/media/svg/icons/Tools/Compass.svg-->
-											<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
-												<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-													<rect x="0" y="0" width="24" height="24" />
-													<path d="M7.07744993,12.3040451 C7.72444571,13.0716094 8.54044565,13.6920474 9.46808594,14.1079953 L5,23 L4.5,18 L7.07744993,12.3040451 Z M14.5865511,14.2597864 C15.5319561,13.9019016 16.375416,13.3366121 17.0614026,12.6194459 L19.5,18 L19,23 L14.5865511,14.2597864 Z M12,3.55271368e-14 C12.8284271,3.53749572e-14 13.5,0.671572875 13.5,1.5 L13.5,4 L10.5,4 L10.5,1.5 C10.5,0.671572875 11.1715729,3.56793164e-14 12,3.55271368e-14 Z" fill="#000000" opacity="0.3" />
-													<path d="M12,10 C13.1045695,10 14,9.1045695 14,8 C14,6.8954305 13.1045695,6 12,6 C10.8954305,6 10,6.8954305 10,8 C10,9.1045695 10.8954305,10 12,10 Z M12,13 C9.23857625,13 7,10.7614237 7,8 C7,5.23857625 9.23857625,3 12,3 C14.7614237,3 17,5.23857625 17,8 C17,10.7614237 14.7614237,13 12,13 Z" fill="#000000" fill-rule="nonzero" />
-												</g>
-											</svg>
-											<!--end::Svg Icon-->
-										</span>
-									</div>
-									<div class="alert-text">This example is almost identical to text based individual column example and provides the same functionality. With server-side processing enabled, all paging, searching, ordering actions that DataTables performs are handed off to a server where an SQL engine (or similar) can perform these actions on the large data set. See official documentation 
-									<a class="font-weight-bold" href="https://datatables.net/examples/api/multi_filter_select.html" target="_blank">here</a>.</div>
-								</div>
-								<!--end::Notice-->
-								<!--begin::Card-->
-								<div class="card card-custom">
-									<div class="card-header">
-										<div class="card-title">
-											<span class="card-icon">
-												<i class="flaticon2-layers text-primary"></i>
-											</span>
-											<h3 class="card-label">Individual Column Search</h3>
-										</div>
-										<div class="card-toolbar">
-											<!--begin::Dropdown-->
-											<div class="dropdown dropdown-inline mr-2">
-												<button type="button" class="btn btn-light-primary font-weight-bolder dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-												<i class="la la-download"></i>Export</button>
-												<!--begin::Dropdown Menu-->
-												<div class="dropdown-menu dropdown-menu-sm dropdown-menu-right">
-													<ul class="nav flex-column nav-hover">
-														<li class="nav-header font-weight-bolder text-uppercase text-primary pb-2">Choose an option:</li>
-														<li class="nav-item">
-															<a href="#" class="nav-link">
-																<i class="nav-icon la la-print"></i>
-																<span class="nav-text">Print</span>
-															</a>
-														</li>
-														<li class="nav-item">
-															<a href="#" class="nav-link">
-																<i class="nav-icon la la-copy"></i>
-																<span class="nav-text">Copy</span>
-															</a>
-														</li>
-														<li class="nav-item">
-															<a href="#" class="nav-link">
-																<i class="nav-icon la la-file-excel-o"></i>
-																<span class="nav-text">Excel</span>
-															</a>
-														</li>
-														<li class="nav-item">
-															<a href="#" class="nav-link">
-																<i class="nav-icon la la-file-text-o"></i>
-																<span class="nav-text">CSV</span>
-															</a>
-														</li>
-														<li class="nav-item">
-															<a href="#" class="nav-link">
-																<i class="nav-icon la la-file-pdf-o"></i>
-																<span class="nav-text">PDF</span>
-															</a>
-														</li>
-													</ul>
-												</div>
-												<!--end::Dropdown Menu-->
-											</div>
-											<!--end::Dropdown-->
-											<!--begin::Button-->
-											<a href="#" class="btn btn-primary font-weight-bolder">
-											<i class="la la-plus"></i>New Record</a>
-											<!--end::Button-->
-										</div>
-									</div>
-									<div class="card-body">
-										<!--begin: Datatable-->
-										<table class="table table-separate table-head-custom table-checkable" id="kt_datatable">
-											<thead>
-												<tr>
-													<th>Record ID</th>
-													<th>Order ID</th>
-													<th>Country</th>
-													<th>Ship City</th>
-													<th>Company Agent</th>
-													<th>Ship Date</th>
-													<th>Status</th>
-													<th>Type</th>
-													<th>Actions</th>
-												</tr>
-											</thead>
-											<tfoot>
-												<tr>
-													<th>Record ID</th>
-													<th>Order ID</th>
-													<th>Country</th>
-													<th>Ship City</th>
-													<th>Company Agent</th>
-													<th>Ship Date</th>
-													<th>Status</th>
-													<th>Type</th>
-													<th>Actions</th>
-												</tr>
-											</tfoot>
-										</table>
-										<!--end: Datatable-->
-									</div>
-								</div>
-								<!--end::Card-->
-							</div>
-							<!--end::Container-->
-						</div>
-						<!--end::Entry-->
+  <div class="modal fade" id="modalHapus" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header no-bd">
+          <h5 class="modal-title">
+            <span class="fw-mediumbold">
+              Hapus Data Master</span>
+            <span class="fw-light">
+              User
+            </span>
+          </h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p id="teksHapus"></p>
+          <input type="hidden" id="id_hapus" name="id_hapus" />
+        </div>
+        <div class="modal-footer no-bd">
+          <button type="button" id="hapus" onClick="hapus()" class="btn btn-primary">Hapus</button>
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Batal</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<script>
+  tampilkan()
+
+  function tampilkan() {
+    $("#tempatTabel").html('<i class="fas fa-spinner fa-pulse"></i> Memuat...')
+    var baris = '<table class="table table-flush" id="tabelUser"><thead class="thead-light"><tr><th>NO</th><th>Nama</th><th>Email</th><th>Jabatan</th><th>Dokter/spesialis</th><th>Action</th></tr></thead><tbody>'
+    $.ajax({
+      url: '<?= base_url() ?>master_user/tampil',
+      method: 'post',
+      dataType: 'json',
+      success: function(data) {
+        for (let i = 0; i < data.length; i++) {
+          baris += '<tr>'
+          baris += '<td>' + (i + 1) + '</td>'
+          baris += '<td>' + data[i].nama + '</td>'
+          baris += '<td>' + data[i].email + '</td>'
+          baris += '<td>' + data[i].rule + '</td>'
+          baris += '<td>' + data[i].jabatan + '</td>'
+          baris += '<td><div style="cursor:pointer;" title="hapus?" class="badge badge-danger" id="hapus' + data[i].id_user + '" onClick="tryHapus(' + data[i].id_user + ')"><i class="fa fa-times"></i></div>'
+          baris += ' <div style="cursor:pointer;" title="edit?" class="badge badge-info" id="edit' + data[i].id_user + '" onClick="tryEdit(' + data[i].id_user + ')"><i class="fa fa-edit"></i></div>'
+          baris += '</td></tr>'
+        }
+        baris += '</tbody></table>'
+        $("#tempatTabel").html(baris);
+        $('#tabelUser').DataTable({
+          "pageLength": 10,
+        });
+      }
+    });
+  }
+
+  function tryTambah() {
+    $("#nama").val("")
+    $("#rule").val("")
+    $("#email").val("")
+    $("#password").val("")
+    $("#konfirPass").val("")
+    $("#jabatan").val("")
+    $("#modalTambah").modal('show')
+    $('#pesan_error_tambah').html("")
+  }
+
+  function tambah() {
+    $("#tombolTambah").html('<i class="fas fa-spinner fa-pulse"></i> Memproses..')
+    var nama = $("#nama").val()
+    var rule = $("#ruleUser").val()
+    var email = $("#email").val()
+    var password = $("#password").val()
+    var konfirPass = $("#konfirPass").val()
+    var jabatan = $("#jabatan").val()
+    if (rule == null) {
+      rule = 0;
+    }
+    $.ajax({
+      url: '<?= base_url() ?>master_user/tambah',
+      method: 'post',
+      data: {
+        nama: nama,
+        rule: rule,
+        email: email,
+        password: password,
+        konfirPass: konfirPass,
+        jabatan: jabatan
+      },
+      dataType: 'json',
+      success: function(data) {
+        if (data == "") {
+          $("#modalTambah").modal('hide')
+          tampilkan()
+          $("#nama").val("")
+          $("#rule").val("")
+          $("#email").val("")
+          $("#password").val("")
+          $("#konfirPass").val("")
+          $("#jabatan").val("")
+          $('#pesanErroTambah').html("")
+        } else {
+          data = data.replace("<p>", "");
+          data = data.replace("</p>", "");
+          $('#pesanErrorTambah').html(data)
+        }
+        $("#tombolTambah").html('Tambah')
+      }
+    });
+  }
+
+  function tryEdit(id) {
+    $("#tombolEdit" + id).html('<i class="fas fa-spinner fa-pulse"></i>')
+    $("#idUser").val(id)
+    $.ajax({
+      url: '<?= base_url() ?>master_user/dataByid',
+      method: 'post',
+      data: "target=tbl_user&id=" + id,
+      dataType: 'json',
+      success: function(data) {
+        $("#modalEdit").modal('show')
+        $("#editNama").val(data.nama)
+        console.log(data)
+        $("#edit" + id).html('<i class="fa fa-edit"></i>')
+      }
+    });
+  }
+
+  function edit() {
+    $("#tombolEdit").html('<i class="fas fa-spinner fa-pulse"></i> Memproses..')
+    var nama = $("#editNama").val()
+    var id = $("#idUser").val()
+    $.ajax({
+      url: '<?= base_url() ?>master_user/edit',
+      method: 'post',
+      data: {
+        id: id,
+        nama: nama
+      },
+      dataType: 'json',
+      success: function(data) {
+        if (data == "") {
+          $("#modalEdit").modal('hide')
+          tampilkan()
+          $("#idUser").val("")
+          $("#nama").val("")
+          $('#pesanErrorTambah').html("")
+        } else {
+          $('#pesanErrorEdit').html(data)
+        }
+        $("#tombolEdit").html('Edit')
+      }
+    });
+  }
+
+  function tryHapus(id) {
+    $("#hapus" + id).html('<i class="fas fa-spinner fa-pulse"></i>')
+    $.ajax({
+      url: '<?= base_url() ?>master_user/dataById',
+      method: 'post',
+      data: "target=tbl_user&id=" + id,
+      dataType: 'json',
+      success: function(data) {
+        $("#id_hapus").val(id)
+        $("#teksHapus").html("apakah anda yakin ingin menghapus Jasa dengan nama '" + data.nama + "' ?")
+
+        $("#hapus" + id).html('<i class="fa fa-times"></i>')
+      }
+    });
+    $("#modalHapus").modal('show')
+  }
+
+  function hapus() {
+    $("#hapus").html('<i class="fas fa-spinner fa-pulse"></i> Memproses..')
+    var id = $("#id_hapus").val()
+    $.ajax({
+      url: '<?= base_url() ?>master_user/hapus',
+      method: 'post',
+      data: "target=tbl_user&id=" + id,
+      dataType: 'json',
+      success: function(data) {
+        $("#id_hapus").val("")
+        $("#teksHapus").html("")
+        tampilkan()
+        $("#modalHapus").modal('hide')
+        $("#hapus").html('Hapus')
+      }
+    });
+  }
+</script>

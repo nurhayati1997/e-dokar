@@ -37,18 +37,45 @@ class master_user extends CI_Controller
 	// 	// echo json_encode($this->db_model->get_where("syarefa", ["status" => $nowDate])->result());
 	// }
 
-	public function tambah_data()
+	public function tambah()
 	{
-		$data = [
-			"nama" => $this->input->post("nama", TRUE),
-			"id_karyawan" => $this->input->post("id_karyawan", TRUE),
-			"rule" => $this->input->post("rule", TRUE),
-			"email" => $this->input->post("email", TRUE),
-			"password" => $this->input->post("password", TRUE),
-			"status"=>1
-		];
-		$this->db_model->insert('hrd_user', $data);
-		echo json_encode($data);
+		$this->form_validation->set_rules('nama', 'Nama', 'required|trim');
+		$this->form_validation->set_rules('email', 'Email', 'required|trim|valid_email|is_unique[hrd_user.email]', [
+			"is_unique" => "Alamat email ini sudah terdaftar.",
+			"required" => "Email tidak boleh kosong.",
+			"valid_email" => "Email tidak valid."
+		]);
+		// $this->form_validation->set_rules('password', 'Password', 'required|trim|min_length[5]', [
+		// 	"required" => "Password tidak boleh kosong.",
+		// 	"matches" => "Password tidak cocok dengan konfirmasi.",
+		// 	"min_length" => "Pasword minimal 5 karakter."
+		// ]);
+		$this->form_validation->set_rules('password', 'Password', 'required|trim|min_length[5]');
+		if ($this->form_validation->run() == false) {
+			if (form_error("nama")) {
+				$error = "Nama tidak boleh kosong.";
+			// } else if ($this->input->post("rule") == 0) {
+			// 	$error = "Harap Memilih jenis user. (admin/dokter)";
+			} else if (form_error("email")) {
+				$error = form_error("email");
+			} else (form_error("password")) {
+				$error = form_error("password");
+			// } else {
+			// 	$error = form_error("konfirPass");
+			}
+			echo json_encode($error);
+		} else {
+			$data = [
+				"nama" => $this->input->post("nama", TRUE),
+				"email" => $this->input->post("email", TRUE),
+				"password" =>  $this->spin(password_hash($this->enkripsi($this->input->post("password")), PASSWORD_DEFAULT)),
+				"rule" => $this->input->post("rule", TRUE),
+				"jabatan" => $this->input->post("jabatan", TRUE),
+				"status" => 0
+			];
+			$this->db_model->insert('hrd_user', $data);
+			echo json_encode("");
+		}
 	}
 
 	public function dataById()

@@ -17,12 +17,11 @@ License: You must have a valid license purchased only from themeforest(the above
 <!-- Mirrored from preview.keenthemes.com/metronic/demo2/crud/datatables/basic/scrollable.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 13 Jan 2022 06:38:26 GMT -->
 <!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
 <head>
-<<<<<<< HEAD
 		<!-- Google Tag Manager -->
 		<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], j=d.createElement(s),dl=l!='dataLayer'?'&amp;l='+l:'';j.async=true;j.src= '../../../../../../www.googletagmanager.com/gtm5445.html?id='+i+dl;f.parentNode.insertBefore(j,f); })(window,document,'script','dataLayer','GTM-5FS8GGP');</script>
 		<!-- End Google Tag Manager -->
 		<meta charset="utf-8" />
-		<title>Sistem Managemen Swab</title>
+		<title>E-DOKAR || SYAMRABU</title>
 		<meta name="description" content="Scrollable datatables examples" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 		<link rel="canonical" href="https://keenthemes.com/metronic" />
@@ -107,15 +106,31 @@ License: You must have a valid license purchased only from themeforest(the above
 										<!--begin::Header Nav-->
 										<ul class="menu-nav">
 											<li class="menu-item menu-item-submenu menu-item-rel" data-menu-toggle="click" aria-haspopup="true">
-												<a href="<?= site_url('pendaftaran') ?>" class="menu-link">
-													<span class="menu-text">Pendaftaran</span>
+												<a href="<?= site_url('dashboard') ?>" class="menu-link">
+													<span class="menu-text">Dashboard</span>
+													<i class="menu-arrow"></i>
+												</a>
+											</li>
+
+                      
+											<li class="menu-item menu-item-submenu menu-item-rel" data-menu-toggle="click" aria-haspopup="true">
+												<a href="<?= site_url('dashboard') ?>" class="menu-link">
+													<span class="menu-text">Data Karyawan</span>
+													<i class="menu-arrow"></i>
+												</a>
+											</li>
+
+                      
+											<li class="menu-item menu-item-submenu menu-item-rel" data-menu-toggle="click" aria-haspopup="true">
+												<a href="<?= site_url('dashboard') ?>" class="menu-link">
+													<span class="menu-text">Pelatihan Karyawan</span>
 													<i class="menu-arrow"></i>
 												</a>
 											</li>
                       
 											<li class="menu-item menu-item-submenu menu-item-rel" data-menu-toggle="click" aria-haspopup="true">
 												<a href="javascript:;" class="menu-link menu-toggle">
-													<span class="menu-text">Features</span>
+													<span class="menu-text">Kenaikan Pangkat</span>
 													<span class="menu-desc"></span>
 													<i class="menu-arrow"></i>
 												</a>
@@ -134,7 +149,7 @@ License: You must have a valid license purchased only from themeforest(the above
 																	</svg>
 																	<!--end::Svg Icon-->
 																</span>
-																<span class="menu-text">Belum dilayani</span>
+																<span class="menu-text">Reguler Struktural</span>
 																<i class="menu-arrow"></i>
 															</a>
 														</li>
@@ -151,103 +166,46 @@ License: You must have a valid license purchased only from themeforest(the above
 																	</svg>
 																	<!--end::Svg Icon-->
 																</span>
-																<span class="menu-text">Sudah dilayani</span>
+																<span class="menu-text">Reguler Non Struktural</span>
+																<i class="menu-arrow"></i>
+															</a>
+														</li>
+														<li class="menu-item menu-item-submenu" data-menu-toggle="hover" aria-haspopup="true">
+                              <a href="javascript:;" class="menu-link menu-toggle">
+																<span class="svg-icon menu-icon">
+																	<!--begin::Svg Icon | path:/metronic/theme/html/demo1/dist/assets/media/svg/icons/Communication/Add-user.svg-->
+																	<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+																		<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+																			<polygon points="0 0 24 0 24 24 0 24" />
+																			<path d="M18,8 L16,8 C15.4477153,8 15,7.55228475 15,7 C15,6.44771525 15.4477153,6 16,6 L18,6 L18,4 C18,3.44771525 18.4477153,3 19,3 C19.5522847,3 20,3.44771525 20,4 L20,6 L22,6 C22.5522847,6 23,6.44771525 23,7 C23,7.55228475 22.5522847,8 22,8 L20,8 L20,10 C20,10.5522847 19.5522847,11 19,11 C18.4477153,11 18,10.5522847 18,10 L18,8 Z M9,11 C6.790861,11 5,9.209139 5,7 C5,4.790861 6.790861,3 9,3 C11.209139,3 13,4.790861 13,7 C13,9.209139 11.209139,11 9,11 Z" fill="#000000" fill-rule="nonzero" opacity="0.3" />
+																			<path d="M0.00065168429,20.1992055 C0.388258525,15.4265159 4.26191235,13 8.98334134,13 C13.7712164,13 17.7048837,15.2931929 17.9979143,20.2 C18.0095879,20.3954741 17.9979143,21 17.2466999,21 C13.541124,21 8.03472472,21 0.727502227,21 C0.476712155,21 -0.0204617505,20.45918 0.00065168429,20.1992055 Z" fill="#000000" fill-rule="nonzero" />
+																		</g>
+																	</svg>
+																	<!--end::Svg Icon-->
+																</span>
+																<span class="menu-text">Fungsional</span>
 																<i class="menu-arrow"></i>
 															</a>
 														</li>
 													</ul>
 												</div>
 											</li>
-											<li class="menu-item menu-item-open menu-item-here menu-item-submenu menu-item-rel menu-item-open menu-item-here" data-menu-toggle="click" aria-haspopup="true">
-												<a href="javascript:;" class="menu-link menu-toggle">
-													<span class="menu-text">Status Pelayanan</span>
-													<span class="menu-desc"></span>
+
+                      <li class="menu-item menu-item-submenu menu-item-rel" data-menu-toggle="click" aria-haspopup="true">
+												<a href="<?= site_url('dashboard') ?>" class="menu-link">
+													<span class="menu-text">Riwayat Kerja</span>
 													<i class="menu-arrow"></i>
 												</a>
-												<div class="menu-submenu menu-submenu-classic menu-submenu-left">
-													<ul class="menu-subnav">
-														<li class="menu-item menu-item-submenu" data-menu-toggle="hover" aria-haspopup="true">
-															<a href="<?= site_url('belum_dilayani') ?>" class="menu-link">
-																<span class="svg-icon menu-icon">
-																	<!--begin::Svg Icon | path:/metronic/theme/html/demo1/dist/assets/media/svg/icons/Shopping/Box2.svg-->
-																	<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
-																		<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-																			<rect x="0" y="0" width="24" height="24" />
-																			<path d="M4,9.67471899 L10.880262,13.6470401 C10.9543486,13.689814 11.0320333,13.7207107 11.1111111,13.740321 L11.1111111,21.4444444 L4.49070127,17.526473 C4.18655139,17.3464765 4,17.0193034 4,16.6658832 L4,9.67471899 Z M20,9.56911707 L20,16.6658832 C20,17.0193034 19.8134486,17.3464765 19.5092987,17.526473 L12.8888889,21.4444444 L12.8888889,13.6728275 C12.9050191,13.6647696 12.9210067,13.6561758 12.9368301,13.6470401 L20,9.56911707 Z" fill="#000000" />
-																			<path d="M4.21611835,7.74669402 C4.30015839,7.64056877 4.40623188,7.55087574 4.5299008,7.48500698 L11.5299008,3.75665466 C11.8237589,3.60013944 12.1762411,3.60013944 12.4700992,3.75665466 L19.4700992,7.48500698 C19.5654307,7.53578262 19.6503066,7.60071528 19.7226939,7.67641889 L12.0479413,12.1074394 C11.9974761,12.1365754 11.9509488,12.1699127 11.9085461,12.2067543 C11.8661433,12.1699127 11.819616,12.1365754 11.7691509,12.1074394 L4.21611835,7.74669402 Z" fill="#000000" opacity="0.3" />
-																		</g>
-																	</svg>
-																	<!--end::Svg Icon-->
-																</span>
-																<span class="menu-text">Belum dilayani</span>
-																<i class="menu-arrow"></i>
-															</a>
-														</li>
-														<li class="menu-item menu-item-submenu" data-menu-toggle="hover" aria-haspopup="true">
-															<a href="<?= site_url('sudah_dilayani') ?>" class="menu-link">
-																<span class="svg-icon menu-icon">
-																	<!--begin::Svg Icon | path:/metronic/theme/html/demo1/dist/assets/media/svg/icons/General/Thunder-move.svg-->
-																	<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
-																		<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-																			<rect x="0" y="0" width="24" height="24" />
-																			<path d="M16.3740377,19.9389434 L22.2226499,11.1660251 C22.4524142,10.8213786 22.3592838,10.3557266 22.0146373,10.1259623 C21.8914367,10.0438285 21.7466809,10 21.5986122,10 L17,10 L17,4.47708173 C17,4.06286817 16.6642136,3.72708173 16.25,3.72708173 C15.9992351,3.72708173 15.7650616,3.85240758 15.6259623,4.06105658 L9.7773501,12.8339749 C9.54758575,13.1786214 9.64071616,13.6442734 9.98536267,13.8740377 C10.1085633,13.9561715 10.2533191,14 10.4013878,14 L15,14 L15,19.5229183 C15,19.9371318 15.3357864,20.2729183 15.75,20.2729183 C16.0007649,20.2729183 16.2349384,20.1475924 16.3740377,19.9389434 Z" fill="#000000" />
-																			<path d="M4.5,5 L9.5,5 C10.3284271,5 11,5.67157288 11,6.5 C11,7.32842712 10.3284271,8 9.5,8 L4.5,8 C3.67157288,8 3,7.32842712 3,6.5 C3,5.67157288 3.67157288,5 4.5,5 Z M4.5,17 L9.5,17 C10.3284271,17 11,17.6715729 11,18.5 C11,19.3284271 10.3284271,20 9.5,20 L4.5,20 C3.67157288,20 3,19.3284271 3,18.5 C3,17.6715729 3.67157288,17 4.5,17 Z M2.5,11 L6.5,11 C7.32842712,11 8,11.6715729 8,12.5 C8,13.3284271 7.32842712,14 6.5,14 L2.5,14 C1.67157288,14 1,13.3284271 1,12.5 C1,11.6715729 1.67157288,11 2.5,11 Z" fill="#000000" opacity="0.3" />
-																		</g>
-																	</svg>
-																	<!--end::Svg Icon-->
-																</span>
-																<span class="menu-text">Sudah dilayani</span>
-																<i class="menu-arrow"></i>
-															</a>
-														</li>
-													</ul>
-												</div>
-											</li>
-											<li class="menu-item menu-item-open menu-item-here menu-item-submenu menu-item-rel menu-item-open menu-item-here" data-menu-toggle="click" aria-haspopup="true">
-												<a href="javascript:;" class="menu-link menu-toggle">
-													<span class="menu-text">Jenis Swab</span>
-													<span class="menu-desc"></span>
+                      </li>
+
+                      <li class="menu-item menu-item-submenu menu-item-rel" data-menu-toggle="click" aria-haspopup="true">
+												<a href="<?= site_url('dashboard') ?>" class="menu-link">
+													<span class="menu-text">STR/SIP exp</span>
 													<i class="menu-arrow"></i>
 												</a>
-												<div class="menu-submenu menu-submenu-classic menu-submenu-left">
-													<ul class="menu-subnav">
-														<li class="menu-item menu-item-submenu" data-menu-toggle="hover" aria-haspopup="true">
-															<a href="<?= site_url('antigen') ?>" class="menu-link">
-																<span class="svg-icon menu-icon">
-																	<!--begin::Svg Icon | path:/metronic/theme/html/demo1/dist/assets/media/svg/icons/Shopping/Box2.svg-->
-																	<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
-																		<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-																			<rect x="0" y="0" width="24" height="24" />
-																			<path d="M4,9.67471899 L10.880262,13.6470401 C10.9543486,13.689814 11.0320333,13.7207107 11.1111111,13.740321 L11.1111111,21.4444444 L4.49070127,17.526473 C4.18655139,17.3464765 4,17.0193034 4,16.6658832 L4,9.67471899 Z M20,9.56911707 L20,16.6658832 C20,17.0193034 19.8134486,17.3464765 19.5092987,17.526473 L12.8888889,21.4444444 L12.8888889,13.6728275 C12.9050191,13.6647696 12.9210067,13.6561758 12.9368301,13.6470401 L20,9.56911707 Z" fill="#000000" />
-																			<path d="M4.21611835,7.74669402 C4.30015839,7.64056877 4.40623188,7.55087574 4.5299008,7.48500698 L11.5299008,3.75665466 C11.8237589,3.60013944 12.1762411,3.60013944 12.4700992,3.75665466 L19.4700992,7.48500698 C19.5654307,7.53578262 19.6503066,7.60071528 19.7226939,7.67641889 L12.0479413,12.1074394 C11.9974761,12.1365754 11.9509488,12.1699127 11.9085461,12.2067543 C11.8661433,12.1699127 11.819616,12.1365754 11.7691509,12.1074394 L4.21611835,7.74669402 Z" fill="#000000" opacity="0.3" />
-																		</g>
-																	</svg>
-																	<!--end::Svg Icon-->
-																</span>
-																<span class="menu-text">Swab Antigen</span>
-																<i class="menu-arrow"></i>
-															</a>
-														</li>
-														<li class="menu-item menu-item-submenu" data-menu-toggle="hover" aria-haspopup="true">
-															<a href="<?= base_url('pcr') ?>" class="menu-link">
-																<span class="svg-icon menu-icon">
-																	<!--begin::Svg Icon | path:/metronic/theme/html/demo1/dist/assets/media/svg/icons/General/Thunder-move.svg-->
-																	<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
-																		<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-																			<rect x="0" y="0" width="24" height="24" />
-																			<path d="M16.3740377,19.9389434 L22.2226499,11.1660251 C22.4524142,10.8213786 22.3592838,10.3557266 22.0146373,10.1259623 C21.8914367,10.0438285 21.7466809,10 21.5986122,10 L17,10 L17,4.47708173 C17,4.06286817 16.6642136,3.72708173 16.25,3.72708173 C15.9992351,3.72708173 15.7650616,3.85240758 15.6259623,4.06105658 L9.7773501,12.8339749 C9.54758575,13.1786214 9.64071616,13.6442734 9.98536267,13.8740377 C10.1085633,13.9561715 10.2533191,14 10.4013878,14 L15,14 L15,19.5229183 C15,19.9371318 15.3357864,20.2729183 15.75,20.2729183 C16.0007649,20.2729183 16.2349384,20.1475924 16.3740377,19.9389434 Z" fill="#000000" />
-																			<path d="M4.5,5 L9.5,5 C10.3284271,5 11,5.67157288 11,6.5 C11,7.32842712 10.3284271,8 9.5,8 L4.5,8 C3.67157288,8 3,7.32842712 3,6.5 C3,5.67157288 3.67157288,5 4.5,5 Z M4.5,17 L9.5,17 C10.3284271,17 11,17.6715729 11,18.5 C11,19.3284271 10.3284271,20 9.5,20 L4.5,20 C3.67157288,20 3,19.3284271 3,18.5 C3,17.6715729 3.67157288,17 4.5,17 Z M2.5,11 L6.5,11 C7.32842712,11 8,11.6715729 8,12.5 C8,13.3284271 7.32842712,14 6.5,14 L2.5,14 C1.67157288,14 1,13.3284271 1,12.5 C1,11.6715729 1.67157288,11 2.5,11 Z" fill="#000000" opacity="0.3" />
-																		</g>
-																	</svg>
-																	<!--end::Svg Icon-->
-																</span>
-																<span class="menu-text">Swab PCR</span>
-																<i class="menu-arrow"></i>
-															</a>
-														</li>
-													</ul>
-												</div>
-											</li>
+                      </li>
+
+
 										</ul>
 										<!--end::Header Nav-->
 									</div>

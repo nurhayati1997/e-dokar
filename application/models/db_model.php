@@ -1,6 +1,29 @@
 <?php
 class Db_model extends CI_Model
 {
+    public function ambil_data($tabel)
+    {
+        $date= date('Y-m-d');
+        return $this->db->get_where($tabel, array ('tgl_daftar_swab'=> $date));
+    }
+    
+    public function ambil_data_belumambilobat($tabel)
+    {
+        return $this->db->get($tabel);
+    }
+    
+    public function all_data($tabel)
+    {
+        return $this->db->get($tabel);
+    }
+    
+
+    public function get($tabel)
+    {
+        return $this->db->get($tabel);
+    }
+
+
     public function insert($tabel, $data)
     {
         $this->db->insert($tabel, $data);
@@ -10,11 +33,7 @@ class Db_model extends CI_Model
     {
         return $this->db->get_where($table, $where);
     }
-    public function insert_get($tabel, $data)
-    {
-        $this->db->insert($tabel, $data);
-        return $this->db->insert_id();
-    }
+
     public function get_query($query)
     {
         return $this->db->query($query);
@@ -23,34 +42,6 @@ class Db_model extends CI_Model
     public function get_all($tabel)
     {
         return $this->db->get($tabel);
-    }
-
-    public function get_group($tabel, $order)
-    {
-        $this->db->select('*');
-        $this->db->from($tabel);
-        $this->db->group_by($order);
-        return $this->db->get();
-    }
-
-    public function get_tbl_pasien($tabel, $order, $tgl, $dokter, $kec, $diagnosa)
-    {
-        $this->db->select('*');
-        $this->db->from($tabel);
-        if ($tgl != null) {
-            $this->db->where('tanggal_antri', $tgl);
-        }
-        if ($dokter != null) {
-            $this->db->where('id_dokter', $dokter);
-        }
-        if ($kec != null) {
-            $this->db->where('id_kecamatan', $kec);
-        }
-        if ($diagnosa != null) {
-            $this->db->where('diagnosa', $diagnosa);
-        }
-        $this->db->group_by($order);
-        return $this->db->get();
     }
 
     public function update($tabel, $data, $where)
@@ -62,31 +53,26 @@ class Db_model extends CI_Model
     {
         $this->db->delete($tabel, $where);
     }
+    // function getWarningStock($tabel)
+    // {
+    //     $this->db->order_by('stok_barang ASC');
+    //     $this->db->limit(10, 0);
+    //     return $this->db->get($tabel);
+    // }
 
-    public function keuntunganHariIni($tanggalMulai, $tanggalSelesai)
-    {
-        $this->db->order_by("tanggal DESC");
-        $this->db->select("SUM(harga)");
-        $this->db->from("vw_transaksi");
-        $this->db->where(['tanggal >=' => $tanggalMulai, 'tanggal <=' => $tanggalSelesai]);
-        return $this->db->get()->row_array()["SUM(harga)"];
-    }
+    // function getTerlaris()
+    // {
+    //     $this->db->select('*, SUM(jumlah_penjualan)');
+    //     $this->db->group_by('id_barang');
+    //     $this->db->order_by('jumlah_penjualan DESC');
+    //     return $this->db->get('tbl_penjualan', 10);
+    // }
 
-    public function pasienByKecamatan()
-    {
-        $this->db->select("tbl_kecamatan.KECAMATAN, COUNT(nama)");
-        $this->db->from("tbl_pasien");
-        $this->db->join("tbl_kecamatan", "tbl_kecamatan.id = tbl_pasien.kecamatan");
-        $this->db->group_by("tbl_pasien.kecamatan");
-        return $this->db->get();
-    }
-
-    public function praktekByDokter()
-    {
-        $this->db->select("tbl_user.nama, COUNT(id_antrian)");
-        $this->db->from("tbl_user");
-        $this->db->join("tbl_antrian", "tbl_antrian.id_user = tbl_user.id_user");
-        $this->db->group_by("tbl_antrian.id_user");
-        return $this->db->get();
-    }
+    // function getJumlahTerjual()
+    // {
+    //     $this->db->select('SUM(jumlah_penjualan)');
+    //     $this->db->where('tgl_penjualan', date("Y/m/d"));
+    //     $this->db->group_by('tgl_penjualan');
+    //     return $this->db->get('tbl_penjualan');
+    // }
 }

@@ -120,9 +120,9 @@
 									<div class="modal-header no-bd">
 									<h5 class="modal-title">
 										<span class="fw-mediumbold">
-										Hapus Data Pasien</span>
+										Hapus Data</span>
 										<span class="fw-light">
-										User
+										Karyawan
 										</span>
 									</h5>
 									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -149,7 +149,7 @@
 											<div class="card bg-secondary border-0 mb-0">
 												<div class="card-header bg-success pb-1">
 												<div class="text-muted text-center mt-2 mb-3">
-													<span class="text-muted text-black">Form Edit Status Pelayanan </span>
+													<span class="text-muted text-black">Form Edit Data Karyawan </span>
 												</div>
 												</div>
 												<div class="card-body px-lg-5 py-lg-5">
@@ -1446,9 +1446,9 @@
     $("#tombolEdit" + id).html('<i class="fas fa-spinner fa-pulse"></i>')
     $("#idUser").val(id)
     $.ajax({
-      url: '<?= base_url() ?>pendaftaran/edit_id',
+      url: '<?= base_url() ?>data_karyawan/edit_id',
       method: 'post',
-      data: "target=swab_syamrabu&id=" + id,
+      data: "target=hrd_user&id=" + id,
       dataType: 'json',
       success: function(data) {
         $("#modalEdit").modal('show')

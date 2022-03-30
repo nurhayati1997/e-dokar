@@ -96,7 +96,7 @@ class data_karyawan extends CI_Controller
 
 	public function hapus()
 	{
-		echo json_encode($this->db_model->delete('swab_syamrabu', array('id' => $this->input->post('id', TRUE))));
+		echo json_encode($this->db_model->delete('hrd_user', array('id' => $this->input->post('id', TRUE))));
 		
 	}
 

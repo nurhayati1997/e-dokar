@@ -2065,9 +2065,9 @@
   function tryHapus(id) {
     $("#hapus" + id).html('<i class="fas fa-spinner fa-pulse"></i>')
     $.ajax({
-      url: '<?= base_url() ?>pendaftaran/edit_id',
+      url: '<?= base_url() ?>data_karyawan/edit_id',
       method: 'post',
-      data: "target=swab_syamrabu&id=" + id,
+      data: "target=hrd_user&id=" + id,
       dataType: 'json',
       success: function(data) {
         $("#id_hapus").val(id)
@@ -2083,9 +2083,9 @@
     $("#hapus").html('<i class="fas fa-spinner fa-pulse"></i> Memproses..')
     var id = $("#id_hapus").val()
     $.ajax({
-      url: '<?= base_url() ?>pendaftaran/hapus',
+      url: '<?= base_url() ?>data_karyawan/hapus',
       method: 'post',
-      data: "target=swab_syamrabu&id=" + id,
+      data: "target=hrd_user&id=" + id,
       dataType: 'json',
       success: function(data) {
         $("#id_hapus").val("")

@@ -27,7 +27,7 @@ class login extends CI_Controller
 	}
 	public function index()
 	{
-		if ($this->session->userdata("id_user")) {
+		if ($this->session->userdata("id")) {
 			redirect("dashboard");
 		}
 
@@ -54,7 +54,7 @@ class login extends CI_Controller
 		if ($user) {
 			if (password_verify($pass, $this->spin($user['password']))) {
 				$data = [
-					'id_user' => $user['id_user'],
+					'id' => $user['id'],
 					'email' => $user['email'],
 					'nama' => $user['nama'],
 					'rule' => $user['rule']
@@ -81,7 +81,7 @@ class login extends CI_Controller
 
 	public function logout()
 	{
-		$this->session->unset_userdata('id_user');
+		$this->session->unset_userdata('id');
 		$this->session->unset_userdata('nama');
 		$this->session->unset_userdata('rule');
 		redirect('login');

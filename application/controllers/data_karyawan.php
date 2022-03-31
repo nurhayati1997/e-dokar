@@ -7,7 +7,7 @@ class data_karyawan extends CI_Controller
 	function __construct()
 	{
 		parent::__construct();
-		if (!$this->session->userdata("id_user")) {
+		if (!$this->session->userdata("id")) {
 			redirect("login");
 		}
 		$this->load->model('db_model');
@@ -46,7 +46,7 @@ class data_karyawan extends CI_Controller
 			} else if (form_error("password")) {
 				$error = form_error("password");
 			} else {
-				$error = form_error("jabatan");
+				$error = form_error("rule");
 			}
 			echo json_encode($error);
 		} else {
@@ -56,10 +56,10 @@ class data_karyawan extends CI_Controller
 				"email" => $this->input->post("email", TRUE),
 				"password" =>  $this->spin(password_hash($this->enkripsi($this->input->post("password")), PASSWORD_DEFAULT)),
 				"rule" => $this->input->post("rule", TRUE),
-				"status_karyawan" => $this->input->post("status_karyawan", TRUE),
-				"jabatan" => $this->input->post("jabatan", TRUE),
-				"jenis_pendidikan" => $this->input->post("jenis_pendidikan", TRUE),
-				"jenis_tenaga" => $this->input->post("jenis_tenaga", TRUE),
+				// "status_karyawan" => $this->input->post("status_karyawan", TRUE),
+				// "jabatan" => $this->input->post("jabatan", TRUE),
+				// "jenis_pendidikan" => $this->input->post("jenis_pendidikan", TRUE),
+				// "jenis_tenaga" => $this->input->post("jenis_tenaga", TRUE),
 				"status" => 1
 			];
 			$this->db_model->insert('hrd_user', $data);

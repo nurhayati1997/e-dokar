@@ -400,7 +400,7 @@ License: You must have a valid license purchased only from themeforest(the above
 									<!-- <span class="navi-text text-muted text-hover-primary">jm@softplus.com</span> -->
 								</span>
 							</a>
-							<a href="<?= base_url("admin/logout") ?>" class="btn btn-sm btn-light-primary font-weight-bolder py-2 px-5">Log Out</a>
+							<a href="<?= base_url("login/logout") ?>" class="btn btn-sm btn-light-primary font-weight-bolder py-2 px-5">Log Out</a>
 						</div>
 					</div>
 				</div>

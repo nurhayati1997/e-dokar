@@ -75,7 +75,7 @@
 																	<option value="3">3.Karyawan</option>
 																</select>
 															</div>
-															<div class="form-group mb-3">
+															<!-- <div class="form-group mb-3">
 																<span class="form-text text-muted">Pilih Jabatan</span>
 																<select class="form-control" id="jabatan">
 																	<option value="Direktur">Direktur</option>
@@ -114,7 +114,7 @@
 															<div class="form-group mb-3">
 																<span class="form-text text-muted">Masukkan Jenis Pendidikan</span>
 																<input type="text" class="form-control" id="jenis_pendidikan" placeholder="Mohon sesuaikan dengan data ketenagaan" />
-															</div>
+															</div> -->
 
 															<div class="badge badge-danger" id="pesanErrorTambah"></div>
 																<div class="text-center">
@@ -175,15 +175,15 @@
 																	<div class="col-lg-4">
 																		<label>A. KELENGKAPAN IDENTITAS KARYAWAN:</label>
 																		<div class="custom-file">
+																			<input id="idUser" type="hidden">
 																			<input type="file" class="custom-file-input" id="foto" />
 																			<label class="custom-file-label" for="customFile">Foto Harus format JPG</label>
 																		</div>
 																	</div>
-																	<div class="col-lg-4">
-																		<input id="idUser" type="hidden">
+																	<!-- <div class="col-lg-4">
 																		<span class="form-text text-muted">Nama</span>
 																		<input type="text" class="form-control" id="nama" placeholder="Masukkan Nama Tanpa Gelar"/>
-																	</div>
+																	</div> -->
 																	<div class="col-lg-4">
 																		<span class="form-text text-muted">NIK</span>
 																		<input type="text" class="form-control" id="nik" placeholder="Masukkan NIK sesuai KTP"/>
@@ -192,10 +192,10 @@
 																		<span class="form-text text-muted">No Hp</span>
 																		<input type="text" class="form-control" id="no_hp" placeholder="Masukkan No Hp yang bisa dihubungi" />
 																	</div>
-																	<div class="col-lg-4">
+																	<!-- <div class="col-lg-4">
 																		<span class="form-text text-muted">email</span>
 																		<input type="text" class="form-control" id="email" placeholder="Sesuaikan Email Anda" />
-																	</div>
+																	</div> -->
 																	<div class="col-lg-4">
 																		<span class="form-text text-muted">Alamat Lengkap</span>
 																		<input type="text" class="form-control" id="alamat" placeholder="Masukkan Alamat Sesuai KTP" />
@@ -592,10 +592,10 @@
         email: email,
         password: password,
         rule: rule,
-        status_karyawan: status_karyawan,
-        jenis_pendidikan: jenis_pendidikan,
-        jenis_tenaga: jenis_tenaga,
-        jabatan: jabatan
+        // status_karyawan: status_karyawan,
+        // jenis_pendidikan: jenis_pendidikan,
+        // jenis_tenaga: jenis_tenaga,
+        // jabatan: jabatan
       },
       dataType: 'json',
       success: function(data) {
@@ -607,10 +607,10 @@
           $("#email").val("")
           $("#password").val("")
           $("#rule").val("")
-          $("#status_karyawan").val("")
-          $("#jabatan").val("")
-          $("#jenis_pendidikan").val("")
-          $("#jenis_tenaga").val("")
+        //   $("#status_karyawan").val("")
+        //   $("#jabatan").val("")
+        //   $("#jenis_pendidikan").val("")
+        //   $("#jenis_tenaga").val("")
           $('#pesanErroTambah').html("")
         } else {
         //   data = data.replace("<p>", "");
@@ -723,7 +723,7 @@
         $("#no_sip").val(data.no_sip)
         $("#file_sip").val(data.file_sip)
         $("#masa_sip").val(data.masa_sip)
-        // console.log(data)
+        console.log(data)
         $("#edit" + id).html('<i class="fa fa-edit"></i>')
       }
     });
@@ -853,70 +853,70 @@
       dataType: 'json',
       success: function(data) {
         if (data == "") {
-			// $("#idUser").val("")
-			// $("#foto").val("")
-			// $("#nama").val("")
-			// $("#nik").val("")
-			// $("#no_hp").val("")
-			// $("#email").val("")
-			// $("#alamat").val("")
-			// $("#prov").val("")
-			// $("#kab").val("")
-			// $("#kec").val("")
-			// $("#kelu").val("")
-			// $("#rt_rw").val("")
-			// $("#kode_pos").val("")
-			// $("#tempat_lahir").val("")
-			// $("#tanggal_lahir").val("")
-			// $("#jk").val("")
-			// $("#agama").val("")
-			// $("#status_pernikahan").val("")
-			// $("#goldar").val("")
-			// $("#suku").val("")
-			// $("#sd").val("")
-			// $("#no_sd").val("")
-			// $("#file_sd").val("")
-			// $("#smp").val("")
-			// $("#no_smp").val("")
-			// $("#file_smp").val("")
-			// $("#sma").val("")
-			// $("#no_sma").val("")
-			// $("#file_sma").val("")
-			// $("#s1").val("")
-			// $("#no_s1").val("")
-			// $("#file_s1").val("")
-			// $("#s2").val("")
-			// $("#no_s2").val("")
-			// $("#file_s2").val("")
-			// $("#s3").val("")
-			// $("#no_s3").val("")
-			// $("#file_s3").val("")
-			// $("#profesi").val("")
-			// $("#no_profesi").val("")
-			// $("#file_profesi").val("")
-			// $("#jabatan").val("")
-			// $("#status_karyawan").val("")
-			// $("#jenis_tenaga").val("")
-			// $("#jenis_detail_tenaga").val("")
-			// $("#jenis_pendidikan").val("")
-			// $("#golongan").val("")
-			// $("#pensiun").val("")
-			// $("#gaji").val("")
-			// $("#no_sk").val("")
-			// $("#file_sk").val("")
-			// $("#file_penempatan").val("")
-			// $("#no_str").val("")
-			// $("#file_str").val("")
-			// $("#no_sip").val("")
-			// $("#file_sip").val("")
-			// $("#masa_sip").val("")
-			console.log(data)
+			$("#idUser").val("")
+			$("#foto").val("")
+			$("#nama").val("")
+			$("#nik").val("")
+			$("#no_hp").val("")
+			$("#email").val("")
+			$("#alamat").val("")
+			$("#prov").val("")
+			$("#kab").val("")
+			$("#kec").val("")
+			$("#kelu").val("")
+			$("#rt_rw").val("")
+			$("#kode_pos").val("")
+			$("#tempat_lahir").val("")
+			$("#tanggal_lahir").val("")
+			$("#jk").val("")
+			$("#agama").val("")
+			$("#status_pernikahan").val("")
+			$("#goldar").val("")
+			$("#suku").val("")
+			$("#sd").val("")
+			$("#no_sd").val("")
+			$("#file_sd").val("")
+			$("#smp").val("")
+			$("#no_smp").val("")
+			$("#file_smp").val("")
+			$("#sma").val("")
+			$("#no_sma").val("")
+			$("#file_sma").val("")
+			$("#s1").val("")
+			$("#no_s1").val("")
+			$("#file_s1").val("")
+			$("#s2").val("")
+			$("#no_s2").val("")
+			$("#file_s2").val("")
+			$("#s3").val("")
+			$("#no_s3").val("")
+			$("#file_s3").val("")
+			$("#profesi").val("")
+			$("#no_profesi").val("")
+			$("#file_profesi").val("")
+			$("#jabatan").val("")
+			$("#status_karyawan").val("")
+			$("#jenis_tenaga").val("")
+			$("#jenis_detail_tenaga").val("")
+			$("#jenis_pendidikan").val("")
+			$("#golongan").val("")
+			$("#pensiun").val("")
+			$("#gaji").val("")
+			$("#no_sk").val("")
+			$("#file_sk").val("")
+			$("#file_penempatan").val("")
+			$("#no_str").val("")
+			$("#file_str").val("")
+			$("#no_sip").val("")
+			$("#file_sip").val("")
+			$("#masa_sip").val("")
+			// console.log(data)
         } else {
           $('#pesanErrorEdit').html(data)
         }
         $("#modalEdit").modal('hide');
         tampilkan();
-        $("#tombolEdit").html('View')
+        $("#tombolEdit").html('Simpan')
       }
     });
   }

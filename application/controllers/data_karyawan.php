@@ -58,6 +58,8 @@ class data_karyawan extends CI_Controller
 				"rule" => $this->input->post("rule", TRUE),
 				"status_karyawan" => $this->input->post("status_karyawan", TRUE),
 				"jabatan" => $this->input->post("jabatan", TRUE),
+				"jenis_pendidikan" => $this->input->post("jenis_pendidikan", TRUE),
+				"jenis_tenaga" => $this->input->post("jenis_tenaga", TRUE),
 				"status" => 0
 			];
 			$this->db_model->insert('hrd_user', $data);

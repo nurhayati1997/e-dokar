@@ -46,7 +46,7 @@
 												<div class="card bg-secondary border-0 mb-0">
 													<div class="card-header bg-success pb-1">
 														<div class="text-muted text-center mt-2 mb-3">
-															<span class="text-muted text-black">Form Tambah Data Karyawan </span>
+															<span class="text-white">Form Tambah Data Karyawan </span>
 														</div>
 													</div>
 													<div class="card-body px-lg-5 py-lg-5">
@@ -100,6 +100,21 @@
 																	<option value="Unit">Unit</option>
 																</select>
 															</div>
+															<div class="form-group mb-3">
+																<span class="form-text text-muted">Pilih Jenis Tenaga</span>
+																<select class="form-control" id="jenis_tenaga">
+																	<option value="Tenaga Medis / Dokter">Tenaga Medis / Dokter</option>
+																	<option value="Tenaga Keperawatan">Tenaga Keperawatan</option>
+																	<option value="Tenaga Kesehatan Lainnya">Tenaga Kesehatan Lainnya</option>
+																	<option value="Pejabat Struktural">Pejabat Struktural</option>
+																	<option value="Tenaga Umum / Non Medis">Tenaga Umum / Non Medis</option>
+																</select>
+															</div>
+															
+															<div class="form-group mb-3">
+																<span class="form-text text-muted">Masukkan Jenis Pendidikan</span>
+																<input type="text" class="form-control" id="jenis_pendidikan" placeholder="Mohon sesuaikan dengan data ketenagaan" />
+															</div>
 
 															<div class="badge badge-danger" id="pesanErrorTambah"></div>
 																<div class="text-center">
@@ -143,33 +158,357 @@
 
 							<!-- edit -->
 								<div class="modal fade" id="modalEdit" tabindex="-1" role="dialog" aria-labelledby="modal-form" aria-hidden="true">
-									<div class="modal-dialog modal- modal-dialog-centered modal-sm" role="document">
+									<div class="modal-dialog modal- modal-dialog-centered modal-xl" role="document">
 										<div class="modal-content">
 											<div class="modal-body p-0">
 											<div class="card bg-secondary border-0 mb-0">
 												<div class="card-header bg-success pb-1">
-												<div class="text-muted text-center mt-2 mb-3">
-													<span class="text-muted text-black">Form Edit Data Karyawan </span>
+												<div class=" text-center mt-2 mb-3">
+													<span class=" text-white">Form Edit Data Karyawan</span>
 												</div>
 												</div>
 												<div class="card-body px-lg-5 py-lg-5">
-												<form role="form">
-													<div class="form-group mb-3">
-													<input id="idUser" type="hidden">
-													<select class="form-control" id="status">
-														<option value="Belum dilayani"> Belum dilayani</option>
-														<option value="Sudah dilayani">Sudah diLayani</option>
-													</select>
-													</div>
-													<div class="form-group mb-3">
-													<span class="form-text text-muted">Masukkan Tgl Pelayanan</span>
-													<input type="date" class="form-control" id="tgl_sudah_dilayani" placeholder="Tgl Sudah dilayani" />
-													</div>
-													<div class="badge badge-danger" id="pesanErrorEdit"></div>
-													<div class="text-center">
-													<button type="button" onClick="edit()" id="tombolEdit" class="btn btn-success my-2">Tambah</button>
-													</div>
-												</form>
+													<!--begin::Form-->
+													<form class="form">
+														<div class="card-body">
+															<!-- identitas -->
+															<div class="form-group row">
+																<div class="col-lg-4">
+																	<label>A. KELENGKAPAN IDENTITAS KARYAWAN:</label>
+																	<div class="custom-file">
+																		<input type="file" class="custom-file-input" id="foto" />
+																		<label class="custom-file-label" for="customFile">Foto Harus format JPG</label>
+																	</div>
+																</div>
+																<div class="col-lg-4">
+																	<span class="form-text text-muted">Nama</span>
+																	<input type="text" class="form-control" id="nama" placeholder="Masukkan Nama Tanpa Gelar"/>
+																</div>
+																<div class="col-lg-4">
+																	<span class="form-text text-muted">NIK</span>
+																	<input type="text" class="form-control" id="nik" placeholder="Masukkan NIK sesuai KTP"/>
+																</div>
+																<div class="col-lg-4">
+																	<span class="form-text text-muted">No Hp</span>
+																	<input type="text" class="form-control" id="no_hp" placeholder="Masukkan No Hp yang bisa dihubungi" />
+																</div>
+																<div class="col-lg-4">
+																	<span class="form-text text-muted">email</span>
+																	<input type="text" class="form-control" id="email" placeholder="Sesuaikan Email Anda" />
+																</div>
+																<div class="col-lg-4">
+																	<span class="form-text text-muted">Alamat Lengkap</span>
+																	<input type="text" class="form-control" id="alamat" placeholder="Masukkan Alamat Sesuai KTP" />
+																</div>
+																<div class="col-lg-4">
+																	<span class="form-text text-muted">Provinsi</span>
+																	<input type="text" class="form-control" id="prov" placeholder="Masukkan Provinsi Sesuai KTP" />
+																</div>
+																<div class="col-lg-4">
+																	<span class="form-text text-muted">Kabupaten Kota</span>
+																	<input type="text" class="form-control" id="kab" placeholder="Masukkan Kabupaten Sesuai KTP" />
+																</div>
+																<div class="col-lg-4">
+																	<span class="form-text text-muted">Kecamatan Kota</span>
+																	<input type="text" class="form-control" id="kec" placeholder="Masukkan Kecamatan Sesuai KTP" />
+																</div>
+																<div class="col-lg-4">
+																	<span class="form-text text-muted">Kelurahan</span>
+																	<input type="text" class="form-control" id="kelu" placeholder="Masukkan Kelurahan Sesuai KTP" />
+																</div>
+																<div class="col-lg-4">
+																	<span class="form-text text-muted">RT/RW</span>
+																	<input type="text" class="form-control" id="rt_rw" placeholder="Masukkan RT/RW Sesuai KTP" />
+																</div>
+																<div class="col-lg-4">
+																	<span class="form-text text-muted">Kode Pos</span>
+																	<input type="text" class="form-control" id="kode_pos" placeholder="Masukkan Kode Pos Sesuai KTP" />
+																</div>
+																<div class="col-lg-4">
+																	<span class="form-text text-muted">Tempat Lahir</span>
+																	<input type="text" class="form-control" id="tempat_lahir" placeholder="Masukkan Tempat Lahir Sesuai KTP" />
+																</div>
+																<div class="col-lg-4">
+																	<span class="form-text text-muted">Tanggal Lahir</span>
+																	<input type="date" class="form-control" id="tempat_lahir" placeholder="Masukkan Tanggal Lahir Sesuai KTP" />
+																</div>
+																<div class="col-lg-4">
+																	<span class="form-text text-muted">Jenis Kelamin</span>
+																	<select class="form-control" id="jk">
+																		<option value="Perempuan">Perempuan</option>
+																		<option value="Laki-Laki">Laki-Laki</option>
+																	</select>
+																</div>
+																<div class="col-lg-4">
+																	<span class="form-text text-muted">Agama</span>
+																	<select class="form-control" id="agama">
+																	<option value="Islam">Islam</option>
+																	<option value="Kristen">Kristen</option>
+																	<option value="Hindu">Hindu</option>
+																	<option value="Budha">Kristen</option>
+																	<option value="Konghucu">Konghucu</option>
+																	</select>
+																</div>
+																<div class="col-lg-4">
+																	<span class="form-text text-muted">Status Pernikahan</span>
+																	<select class="form-control" id="status_pernikahan">
+																		<option value="Menikah">Menikah</option>
+																		<option value="Belum Menikah">Belum Menikah</option>
+																	</select>
+																</div>
+																<div class="col-lg-4">
+																	<span class="form-text text-muted">Golongan Darah</span>
+																	<input type="text" class="form-control" id="goldar" placeholder="isi tanda (-) jika tidak tahu" />
+																</div>
+																<div class="col-lg-4">
+																	<span class="form-text text-muted">Suku Bangsa</span>
+																	<input type="text" class="form-control" id="suku" placeholder="isi tanda (-) jika tidak tahu" />
+																</div>
+															</div>
+															<!-- pendidikan -->
+															<div class="form-group row">
+																<div class="col-lg-4">
+																	<label>B. KELENGKAPAN PENDIDIKAN KARYAWAN:</label>
+																	<span class="form-text text-muted">SD</span>
+																	<input type="text" class="form-control" id="sd" placeholder="Masukkan Sesuai Ijazah"/>
+																</div>
+																<div class="col-lg-4">
+																	<span class="form-text text-muted">No Ijazah SD</span>
+																	<input type="text" class="form-control" id="no_sd" placeholder="Masukkan Sesuai Ijazah"/>
+																</div>
+																<div class="col-lg-4">
+																	<span class="form-text text-muted">Upload Ijazah SD</span>
+																	<div class="custom-file">
+																		<input type="file" class="custom-file-input" id="file_sd" />
+																		<label class="custom-file-label" for="customFile">File Ijazah Harus format pdf</label>
+																	</div>
+																</div>
+																<div class="col-lg-4">
+																	<span class="form-text text-muted">SMP</span>
+																	<input type="text" class="form-control" id="smp" placeholder="Masukkan Sesuai Ijazah"/>
+																</div>
+																<div class="col-lg-4">
+																	<span class="form-text text-muted">No Ijazah SMP</span>
+																	<input type="text" class="form-control" id="no_smp" placeholder="Masukkan Sesuai Ijazah"/>
+																</div>
+																<div class="col-lg-4">
+																	<span class="form-text text-muted">Upload Ijazah SMP</span>
+																	<div class="custom-file">
+																		<input type="file" class="custom-file-input" id="file_smp" />
+																		<label class="custom-file-label" for="customFile">File Ijazah Harus format pdf</label>
+																	</div>
+																</div>
+																<div class="col-lg-4">
+																	<span class="form-text text-muted">SMA</span>
+																	<input type="text" class="form-control" id="sma" placeholder="Masukkan Sesuai Ijazah"/>
+																</div>
+																<div class="col-lg-4">
+																	<span class="form-text text-muted">No Ijazah SMA</span>
+																	<input type="text" class="form-control" id="no_sma" placeholder="Masukkan Sesuai Ijazah"/>
+																</div>
+																<div class="col-lg-4">
+																	<span class="form-text text-muted">Upload Ijazah SMA</span>
+																	<div class="custom-file">
+																		<input type="file" class="custom-file-input" id="file_sma" />
+																		<label class="custom-file-label" for="customFile">File Ijazah Harus format pdf</label>
+																	</div>
+																</div>
+																<div class="col-lg-4">
+																	<span class="form-text text-muted">S1</span>
+																	<input type="text" class="form-control" id="s1" placeholder="Masukkan Sesuai Ijazah"/>
+																</div>
+																<div class="col-lg-4">
+																	<span class="form-text text-muted">No Ijazah S1</span>
+																	<input type="text" class="form-control" id="no_s1" placeholder="Masukkan Sesuai Ijazah"/>
+																</div>
+																<div class="col-lg-4">
+																	<span class="form-text text-muted">Upload Ijazah S1</span>
+																	<div class="custom-file">
+																		<input type="file" class="custom-file-input" id="file_s1" />
+																		<label class="custom-file-label" for="customFile">File Ijazah Harus format pdf</label>
+																	</div>
+																</div>
+																<div class="col-lg-4">
+																	<span class="form-text text-muted">S2</span>
+																	<input type="text" class="form-control" id="s2" placeholder="Masukkan Sesuai Ijazah"/>
+																</div>
+																<div class="col-lg-4">
+																	<span class="form-text text-muted">No Ijazah S2</span>
+																	<input type="text" class="form-control" id="no_s2" placeholder="Masukkan Sesuai Ijazah"/>
+																</div>
+																<div class="col-lg-4">
+																	<span class="form-text text-muted">Upload Ijazah S2</span>
+																	<div class="custom-file">
+																		<input type="file" class="custom-file-input" id="file_s2" />
+																		<label class="custom-file-label" for="customFile">File Ijazah Harus format pdf</label>
+																	</div>
+																</div>
+																<div class="col-lg-4">
+																	<span class="form-text text-muted">S3</span>
+																	<input type="text" class="form-control" id="s3" placeholder="Masukkan Sesuai Ijazah"/>
+																</div>
+																<div class="col-lg-4">
+																	<span class="form-text text-muted">No Ijazah S3</span>
+																	<input type="text" class="form-control" id="no_s3" placeholder="Masukkan Sesuai Ijazah"/>
+																</div>
+																<div class="col-lg-4">
+																	<span class="form-text text-muted">Upload Ijazah S3</span>
+																	<div class="custom-file">
+																		<input type="file" class="custom-file-input" id="file_s3" />
+																		<label class="custom-file-label" for="customFile">File Ijazah Harus format pdf</label>
+																	</div>
+																</div>
+																<div class="col-lg-4">
+																	<span class="form-text text-muted">Profesi</span>
+																	<input type="text" class="form-control" id="profesi" placeholder="Masukkan Sesuai Ijazah"/>
+																</div>
+																<div class="col-lg-4">
+																	<span class="form-text text-muted">No Ijazah Profesi</span>
+																	<input type="text" class="form-control" id="no_profesi" placeholder="Masukkan Sesuai Ijazah"/>
+																</div>
+																<div class="col-lg-4">
+																	<span class="form-text text-muted">Upload Ijazah Profesi</span>
+																	<div class="custom-file">
+																		<input type="file" class="custom-file-input" id="file_profesi" />
+																		<label class="custom-file-label" for="customFile">File Ijazah Harus format pdf</label>
+																	</div>
+																</div>
+															</div>
+															<!-- Kepegawaian -->
+															<div class="form-group row">
+																<div class="col-lg-4">
+																	<label>C. KELENGKAPAN BERKAS KARYAWAN:</label>
+																	<span class="form-text text-muted">Pilih Jabatan</span>
+																	<select class="form-control" id="jabatan">
+																		<option value="Direktur">Direktur</option>
+																		<option value="Wadir">Wadir</option>
+																		<option value="KA.BAG">KA.BAG</option>
+																		<option value="KA.BID">KA.BID</option>
+																		<option value="KA.Subag">KA.Subag</option>
+																		<option value="KA.Instalasi">KA.Instalasi</option>
+																		<option value="KA.Ruangan">KA.Ruangan</option>
+																		<option value="KA.Unit">KA.Unit</option>
+																		<option value="Staff">Staff</option>
+																		<option value="Unit">Unit</option>
+																	</select>
+																</div>
+																<div class="col-lg-4">
+																	<span class="form-text text-muted">Pilih Status</span>
+																	<select class="form-control" id="status_karyawan">
+																		<option value="PNS">PNS</option>
+																		<option value="PPPK">PPPK</option>
+																		<option value="THL">THL</option>
+																		<option value="Kontrak">Kontrak</option>
+																		<option value="Unit">Unit</option>
+																	</select>
+																</div>
+																<div class="col-lg-4">
+																	<span class="form-text text-muted">Pilih Jenis Tenaga</span>
+																	<select class="form-control" id="jenis_tenaga">
+																		<option value="Tenaga Medis / Dokter">Tenaga Medis / Dokter</option>
+																		<option value="Tenaga Keperawatan">Tenaga Keperawatan</option>
+																		<option value="Tenaga Kesehatan Lainnya">Tenaga Kesehatan Lainnya</option>
+																		<option value="Pejabat Struktural">Pejabat Struktural</option>
+																		<option value="Tenaga Umum / Non Medis">Tenaga Umum / Non Medis</option>
+																	</select>
+																</div>
+																<div class="col-lg-4">
+																	<span class="form-text text-muted">Pilih Jenis detail Tenaga</span>
+																	<select class="form-control" id="jenis_detail_tenaga">
+																		<option value="Dokter Sub Spesialis">Dokter Sub Spesialis</option>
+																		<option value="Dokter Spesialis">Dokter Spesialis</option>
+																		<option value="Dokter Gigi Spesialis">Dokter Gigi Spesialis</option>
+																		<option value="Dokter Umum">Dokter Umum</option>
+																		<option value="Dokter Gigi">Dokter Gigi</option>
+																		<option value="Perawat Ahli">Perawat Ahli</option>
+																		<option value="Perawat Terampil">Perawat Terampil</option>
+																		<option value="Bidan">Bidan</option>
+																		<option value="Psikologi Klinis">Psikologi Klinis</option>
+																		<option value="Apoteker">Apoteker</option>
+																		<option value="Penyuluh Kesehatan Masyarakat">Penyuluh Kesehatan Masyarakat</option>
+																		<option value="Nutriosionis">Nutriosionis</option>
+																		<option value="Radiografer">Radiografer</option>
+																		<option value="Pranata Laboratorium Kesehatan">Pranata Laboratorium Kesehatan</option>
+																		<option value="Terapis Gigi dan Mulut">Terapis Gigi dan Mulut</option>
+																		<option value="Sanitarian">Sanitarian</option>
+																		<option value="Fisioterapis">Fisioterapis</option>
+																		<option value="elektomedis">elektomedis</option>
+																		<option value="Rekam Medis">Rekam Medis</option>
+																		<option value="Asisten Apoteker">Asisten Apoteker</option>
+																		<option value="Akupuntur">Akupuntur</option>
+																		<option value="Penata Anestesi">Penata Anestesi</option>
+																		<option value="Asisten Penata Anestesi">Asisten Penata Anestesi</option>
+																		<option value="Refraksi Optisi">Refraksi Optisi</option>
+																	</select>
+																</div>
+																<div class="col-lg-4">
+																	<span class="form-text text-muted">Masukkan Jenis Pendidikan</span>
+																	<input type="text" class="form-control" id="jenis_pendidikan" placeholder="Mohon sesuaikan dengan data ketenagaan" />
+																</div>
+																<div class="col-lg-4">
+																	<span class="form-text text-muted">Pangkat Golongan</span>
+																	<input type="text" class="form-control" id="golongan" placeholder="isi (-) jika bukan ASN"/>
+																</div>
+																<div class="col-lg-4">
+																	<span class="form-text text-muted">Prediksi Pensiun</span>
+																	<input type="date" class="form-control" id="pensiun" />
+																</div>
+																<div class="col-lg-4">
+																	<span class="form-text text-muted">Gaji</span>
+																	<input type="text" class="form-control" id="gaji" placeholder="Masukkan Gaji Sesuai SK" />
+																</div>
+																<div class="col-lg-4">
+																	<span class="form-text text-muted">No SK</span>
+																	<input type="text" class="form-control" id="no_sk" placeholder="Masukkan No Sesuai SK" />
+																</div>
+																<div class="col-lg-4">
+																	<span class="form-text text-muted">Upload SK</span>
+																	<div class="custom-file">
+																		<input type="file" class="custom-file-input" id="file_sk" />
+																		<label class="custom-file-label" for="customFile">File SK Harus format pdf</label>
+																	</div>
+																</div>
+																<div class="col-lg-4">
+																	<span class="form-text text-muted">Upload SK Penempatan</span>
+																	<div class="custom-file">
+																		<input type="file" class="custom-file-input" id="file_penempatan" />
+																		<label class="custom-file-label" for="customFile">File SK Penempatan Harus format pdf</label>
+																	</div>
+																</div>
+																<div class="col-lg-4">
+																	<span class="form-text text-muted">No STR</span>
+																	<input type="text" class="form-control" id="no_str" placeholder="Masukkan No Sesuai STR" />
+																</div>
+																<div class="col-lg-4">
+																	<span class="form-text text-muted">Upload STR</span>
+																	<div class="custom-file">
+																		<input type="file" class="custom-file-input" id="file_str" />
+																		<label class="custom-file-label" for="customFile">File STR Harus format pdf</label>
+																	</div>
+																</div>
+																<div class="col-lg-4">
+																	<span class="form-text text-muted">No SIP</span>
+																	<input type="text" class="form-control" id="no_sip" placeholder="Masukkan No Sesuai SK" />
+																</div>
+																<div class="col-lg-4">
+																	<span class="form-text text-muted">Upload SIP</span>
+																	<div class="custom-file">
+																		<input type="file" class="custom-file-input" id="file_sip" />
+																		<label class="custom-file-label" for="customFile">File SIP Harus format pdf</label>
+																	</div>
+																</div>
+																<div class="col-lg-4">
+																	<span class="form-text text-muted">Masa Berlaku STR/SIP</span>
+																	<input type="date" class="form-control" id="masa_sip"  />
+																</div>
+															</div>
+																<div class="badge badge-danger" id="pesanErrorEdit"></div>
+																<div class="text-center">
+																<button type="button" onClick="edit()" id="tombolEdit" class="btn btn-success my-2">Simpan</button>
+																</div>
+														</div>
+													</form>
+													<!--end::Form-->
 												</div>
 											</div>
 											</div>
@@ -1410,7 +1749,7 @@
 
   function tampilkan(){
     $("#tempatTabel").html('<i class="fas fa-spinner fa-pulse"></i> Memuat...')
-    var baris = '<table class="table table-separate table-head-custom table-checkable" id="tabelUser"><thead class="thead-light"><tr><th>Action</th><th>NO</th><th>ID</th><th>Nama</th><th>Email</th><th>Rule</th></tr></thead>'
+    var baris = '<table class="table table-separate table-head-custom table-checkable" id="tabelUser"><thead class="thead-light"><tr><th>Action</th><th>NO</th><th>Update</th><th>ID</th><th>Nama</th><th>Jabatan</th><th>Status Karyawan</th><th>Pendidikan</th><th>Jenis Tenaga</th></tr></thead>'
       $.ajax({
         type:'POST',
         url: '<?= base_url() ?>data_karyawan/tampil',
@@ -1423,10 +1762,14 @@
             baris += ' <div style="cursor:pointer;" title="edit?"  id="edit' + data[i].id + '" onClick="tryEdit(' + data[i].id+ ')"><i class="flaticon2-pen text-success"></i></div>'
             baris += ' <div style="cursor:pointer;" title="view?" id="cetak' + data[i].id + '" onClick="tryView(' + data[i].id+ ')"><i class="flaticon-eye text-primary"></i></div>'
             baris += '<td>' + (i + 1) + '</td>'
+            baris += '<td>' + data[i].tgl_update + '</td>'
             baris += '<td>' + data[i].id_karyawan + '</td>'
             baris += '<td>' + data[i].nama + '</td>'
-            baris += '<td>' + data[i].email + '</td>'
-            baris += '<td>' + data[i].rule + '</td>'
+            // baris += '<td>' + data[i].email + '</td>'
+            baris += '<td>' + data[i].jabatan + '</td>'
+            baris += '<td>' + data[i].status_karyawan + '</td>'
+            baris += '<td>' + data[i]. jenis_pendidikan+ '</td>'
+            baris += '<td>' + data[i]. jenis_tenaga+ '</td>'
             baris += '</td></tr>'
           }
           baris += '</tbody></table>'
@@ -1497,6 +1840,8 @@
     $("#rule").val("")
     $("#status_karyawan").val("")
     $("#jabatan").val("")
+    $("#jenis_pendidikan").val("")
+    $("#jenis_tenaga").val("")
     $("#modalTambah").modal('show')
     $('#pesan_error_tambah').html("")
   }
@@ -1509,6 +1854,8 @@
     var password = $("#password").val()
     var rule = $("#rule").val()
     var status_karyawan = $("#status_karyawan").val()
+    var jenis_pendidikan =  $("#jenis_pendidikan").val()
+    var jenis_tenaga =  $("#jenis_tenaga").val()
     var jabatan = $("#jabatan").val()
     if (rule == null) {
       rule = 0;
@@ -1523,6 +1870,8 @@
         password: password,
         rule: rule,
         status_karyawan: status_karyawan,
+        jenis_pendidikan: jenis_pendidikan,
+        jenis_tenaga: jenis_tenaga,
         jabatan: jabatan
       },
       dataType: 'json',
@@ -1537,6 +1886,8 @@
           $("#rule").val("")
           $("#status_karyawan").val("")
           $("#jabatan").val("")
+          $("#jenis_pendidikan").val("")
+          $("#jenis_tenaga").val("")
           $('#pesanErroTambah').html("")
         } else {
         //   data = data.replace("<p>", "");

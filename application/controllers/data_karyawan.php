@@ -60,7 +60,7 @@ class data_karyawan extends CI_Controller
 				"jabatan" => $this->input->post("jabatan", TRUE),
 				"jenis_pendidikan" => $this->input->post("jenis_pendidikan", TRUE),
 				"jenis_tenaga" => $this->input->post("jenis_tenaga", TRUE),
-				"status" => 0
+				"status" => 1
 			];
 			$this->db_model->insert('hrd_user', $data);
 			echo json_encode("");
@@ -78,20 +78,69 @@ class data_karyawan extends CI_Controller
 	{
 		echo json_encode($this->db_model->get_where($this->input->post("target"), ["id" => $this->input->post('id', TRUE)])->row_array());
 	}
-	
-
-	function open_form(){
-		$this->load->view('form');
-	}
 
 
 	public function edit()
 	{
 		$data = [
-			"status" => $this->input->post("status", TRUE),
-			"tgl_sudah_dilayani" => $this->input->post("tgl_sudah_dilayani", TRUE)
+			"nama" => $this->input->post("nama", TRUE),
+			"nik" => $this->input->post("nik", TRUE),
+			"no_hp" => $this->input->post("no_hp", TRUE),
+			"email" => $this->input->post("email", TRUE),
+			"foto" => $this->input->post("foto", TRUE),
+			"alamat" => $this->input->post("alamat", TRUE),
+			"prov" => $this->input->post("prov", TRUE),
+			"kab" => $this->input->post("kab", TRUE),
+			"kec" => $this->input->post("kec", TRUE),
+			"kelu" => $this->input->post("kelu", TRUE),
+			"rt_rw" => $this->input->post("rt_rw", TRUE),
+			"kode_pos" => $this->input->post("kode_pos", TRUE),
+			"tempat_lahir" => $this->input->post("tempat_lahir", TRUE),
+			"tanggal_lahir" => $this->input->post("tanggal_lahir", TRUE),
+			"jk" => $this->input->post("jk", TRUE),
+			"agama" => $this->input->post("agama", TRUE),
+			"status_pernikahan" => $this->input->post("status_pernikahan", TRUE),
+			"goldar" => $this->input->post("goldar", TRUE),
+			"suku" => $this->input->post("suku", TRUE),
+			"sd" => $this->input->post("sd", TRUE),
+			"no_sd" => $this->input->post("no_sd", TRUE),
+			"file_sd" => $this->input->post("file_sd", TRUE),
+			"smp" => $this->input->post("smp", TRUE),
+			"no_smp" => $this->input->post("no_smp", TRUE),
+			"file_smp" => $this->input->post("file_smp", TRUE),
+			"sma" => $this->input->post("sma", TRUE),
+			"no_sma" => $this->input->post("no_sma", TRUE),
+			"file_sma" => $this->input->post("file_sma", TRUE),
+			"s1" => $this->input->post("s1", TRUE),
+			"no_s1" => $this->input->post("no_s1", TRUE),
+			"file_s1" => $this->input->post("file_s1", TRUE),
+			"s2" => $this->input->post("s2", TRUE),
+			"no_s2" => $this->input->post("no_s2", TRUE),
+			"file_s2" => $this->input->post("file_s2", TRUE),
+			"s3" => $this->input->post("s3", TRUE),
+			"no_s3" => $this->input->post("no_s3", TRUE),
+			"file_s3" => $this->input->post("file_s3", TRUE),
+			"profesi" => $this->input->post("profesi", TRUE),
+			"no_profesi" => $this->input->post("no_profesi", TRUE),
+			"file_profesi" => $this->input->post("file_profesi", TRUE),
+			"jabatan" => $this->input->post("jabatan", TRUE),
+			"status_karyawan" => $this->input->post("status_karyawan", TRUE),
+			"jenis_tenaga" => $this->input->post("jenis_tenaga", TRUE),
+			"jenis_detail_tenaga" => $this->input->post("jenis_detail_tenaga", TRUE),
+			"jenis_pendidikan" => $this->input->post("jenis_pendidikan", TRUE),
+			"golongan" => $this->input->post("golongan", TRUE),
+			"pensiun" => $this->input->post("pensiun", TRUE),
+			"gaji" => $this->input->post("gaji", TRUE),
+			"no_sk" => $this->input->post("no_sk", TRUE),
+			"file_sk" => $this->input->post("file_sk", TRUE),
+			"file_penempatan" => $this->input->post("file_penempatan", TRUE),
+			"no_str" => $this->input->post("no_str", TRUE),
+			"file_str" => $this->input->post("file_str", TRUE),
+			"no_sip" => $this->input->post("no_sip", TRUE),
+			"file_sip" => $this->input->post("file_sip", TRUE),
+			"masa_sip" => $this->input->post("masa_sip", TRUE)
 		];
-		$this->db_model->update('swab_syamrabu', $data, ["id" => $this->input->post("id")]);
+		$this->db_model->update('hrd_user', $data, ["id" => $this->input->post("id")]);
 		echo json_encode("");
 		
 	}

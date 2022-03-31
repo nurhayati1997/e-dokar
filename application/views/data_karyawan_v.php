@@ -161,1581 +161,355 @@
 									<div class="modal-dialog modal- modal-dialog-centered modal-xl" role="document">
 										<div class="modal-content">
 											<div class="modal-body p-0">
-											<div class="card bg-secondary border-0 mb-0">
-												<div class="card-header bg-success pb-1">
-												<div class=" text-center mt-2 mb-3">
-													<span class=" text-white">Form Edit Data Karyawan</span>
-												</div>
-												</div>
-												<div class="card-body px-lg-5 py-lg-5">
-													<!--begin::Form-->
-													<form class="form">
-														<div class="card-body">
-															<!-- identitas -->
-															<div class="form-group row">
-																<div class="col-lg-4">
-																	<label>A. KELENGKAPAN IDENTITAS KARYAWAN:</label>
-																	<div class="custom-file">
-																		<input type="file" class="custom-file-input" id="foto" />
-																		<label class="custom-file-label" for="customFile">Foto Harus format JPG</label>
+												<div class="card bg-secondary border-0 mb-0">
+													<div class="card-header bg-success pb-1">
+														<div class=" text-center mt-2 mb-3">
+															<span class=" text-white">Form Edit Data Karyawan</span>
+														</div>
+													</div>
+													<div class="card-body px-lg-5 py-lg-5">
+														<!--begin::Form-->
+														<form class="form">
+																<!-- identitas -->
+																<div class="form-group row">
+																	<div class="col-lg-4">
+																		<label>A. KELENGKAPAN IDENTITAS KARYAWAN:</label>
+																		<div class="custom-file">
+																			<input type="file" class="custom-file-input" id="foto" />
+																			<label class="custom-file-label" for="customFile">Foto Harus format JPG</label>
+																		</div>
+																	</div>
+																	<div class="col-lg-4">
+																		<input id="idUser" type="hidden">
+																		<span class="form-text text-muted">Nama</span>
+																		<input type="text" class="form-control" id="nama" placeholder="Masukkan Nama Tanpa Gelar"/>
+																	</div>
+																	<div class="col-lg-4">
+																		<span class="form-text text-muted">NIK</span>
+																		<input type="text" class="form-control" id="nik" placeholder="Masukkan NIK sesuai KTP"/>
+																	</div>
+																	<div class="col-lg-4">
+																		<span class="form-text text-muted">No Hp</span>
+																		<input type="text" class="form-control" id="no_hp" placeholder="Masukkan No Hp yang bisa dihubungi" />
+																	</div>
+																	<div class="col-lg-4">
+																		<span class="form-text text-muted">email</span>
+																		<input type="text" class="form-control" id="email" placeholder="Sesuaikan Email Anda" />
+																	</div>
+																	<div class="col-lg-4">
+																		<span class="form-text text-muted">Alamat Lengkap</span>
+																		<input type="text" class="form-control" id="alamat" placeholder="Masukkan Alamat Sesuai KTP" />
+																	</div>
+																	<div class="col-lg-4">
+																		<span class="form-text text-muted">Provinsi</span>
+																		<input type="text" class="form-control" id="prov" placeholder="Masukkan Provinsi Sesuai KTP" />
+																	</div>
+																	<div class="col-lg-4">
+																		<span class="form-text text-muted">Kabupaten Kota</span>
+																		<input type="text" class="form-control" id="kab" placeholder="Masukkan Kabupaten Sesuai KTP" />
+																	</div>
+																	<div class="col-lg-4">
+																		<span class="form-text text-muted">Kecamatan Kota</span>
+																		<input type="text" class="form-control" id="kec" placeholder="Masukkan Kecamatan Sesuai KTP" />
+																	</div>
+																	<div class="col-lg-4">
+																		<span class="form-text text-muted">Kelurahan</span>
+																		<input type="text" class="form-control" id="kelu" placeholder="Masukkan Kelurahan Sesuai KTP" />
+																	</div>
+																	<div class="col-lg-4">
+																		<span class="form-text text-muted">RT/RW</span>
+																		<input type="text" class="form-control" id="rt_rw" placeholder="Masukkan RT/RW Sesuai KTP" />
+																	</div>
+																	<div class="col-lg-4">
+																		<span class="form-text text-muted">Kode Pos</span>
+																		<input type="text" class="form-control" id="kode_pos" placeholder="Masukkan Kode Pos Sesuai KTP" />
+																	</div>
+																	<div class="col-lg-4">
+																		<span class="form-text text-muted">Tempat Lahir</span>
+																		<input type="text" class="form-control" id="tempat_lahir" placeholder="Masukkan Tempat Lahir Sesuai KTP" />
+																	</div>
+																	<div class="col-lg-4">
+																		<span class="form-text text-muted">Tanggal Lahir</span>
+																		<input type="date" class="form-control" id="tempat_lahir" placeholder="Masukkan Tanggal Lahir Sesuai KTP" />
+																	</div>
+																	<div class="col-lg-4">
+																		<span class="form-text text-muted">Jenis Kelamin</span>
+																		<select class="form-control" id="jk">
+																			<option value="Perempuan">Perempuan</option>
+																			<option value="Laki-Laki">Laki-Laki</option>
+																		</select>
+																	</div>
+																	<div class="col-lg-4">
+																		<span class="form-text text-muted">Agama</span>
+																		<select class="form-control" id="agama">
+																		<option value="Islam">Islam</option>
+																		<option value="Kristen">Kristen</option>
+																		<option value="Hindu">Hindu</option>
+																		<option value="Budha">Kristen</option>
+																		<option value="Konghucu">Konghucu</option>
+																		</select>
+																	</div>
+																	<div class="col-lg-4">
+																		<span class="form-text text-muted">Status Pernikahan</span>
+																		<select class="form-control" id="status_pernikahan">
+																			<option value="Menikah">Menikah</option>
+																			<option value="Belum Menikah">Belum Menikah</option>
+																		</select>
+																	</div>
+																	<div class="col-lg-4">
+																		<span class="form-text text-muted">Golongan Darah</span>
+																		<input type="text" class="form-control" id="goldar" placeholder="isi tanda (-) jika tidak tahu" />
+																	</div>
+																	<div class="col-lg-4">
+																		<span class="form-text text-muted">Suku Bangsa</span>
+																		<input type="text" class="form-control" id="suku" placeholder="isi tanda (-) jika tidak tahu" />
 																	</div>
 																</div>
-																<div class="col-lg-4">
-																	<span class="form-text text-muted">Nama</span>
-																	<input type="text" class="form-control" id="nama" placeholder="Masukkan Nama Tanpa Gelar"/>
-																</div>
-																<div class="col-lg-4">
-																	<span class="form-text text-muted">NIK</span>
-																	<input type="text" class="form-control" id="nik" placeholder="Masukkan NIK sesuai KTP"/>
-																</div>
-																<div class="col-lg-4">
-																	<span class="form-text text-muted">No Hp</span>
-																	<input type="text" class="form-control" id="no_hp" placeholder="Masukkan No Hp yang bisa dihubungi" />
-																</div>
-																<div class="col-lg-4">
-																	<span class="form-text text-muted">email</span>
-																	<input type="text" class="form-control" id="email" placeholder="Sesuaikan Email Anda" />
-																</div>
-																<div class="col-lg-4">
-																	<span class="form-text text-muted">Alamat Lengkap</span>
-																	<input type="text" class="form-control" id="alamat" placeholder="Masukkan Alamat Sesuai KTP" />
-																</div>
-																<div class="col-lg-4">
-																	<span class="form-text text-muted">Provinsi</span>
-																	<input type="text" class="form-control" id="prov" placeholder="Masukkan Provinsi Sesuai KTP" />
-																</div>
-																<div class="col-lg-4">
-																	<span class="form-text text-muted">Kabupaten Kota</span>
-																	<input type="text" class="form-control" id="kab" placeholder="Masukkan Kabupaten Sesuai KTP" />
-																</div>
-																<div class="col-lg-4">
-																	<span class="form-text text-muted">Kecamatan Kota</span>
-																	<input type="text" class="form-control" id="kec" placeholder="Masukkan Kecamatan Sesuai KTP" />
-																</div>
-																<div class="col-lg-4">
-																	<span class="form-text text-muted">Kelurahan</span>
-																	<input type="text" class="form-control" id="kelu" placeholder="Masukkan Kelurahan Sesuai KTP" />
-																</div>
-																<div class="col-lg-4">
-																	<span class="form-text text-muted">RT/RW</span>
-																	<input type="text" class="form-control" id="rt_rw" placeholder="Masukkan RT/RW Sesuai KTP" />
-																</div>
-																<div class="col-lg-4">
-																	<span class="form-text text-muted">Kode Pos</span>
-																	<input type="text" class="form-control" id="kode_pos" placeholder="Masukkan Kode Pos Sesuai KTP" />
-																</div>
-																<div class="col-lg-4">
-																	<span class="form-text text-muted">Tempat Lahir</span>
-																	<input type="text" class="form-control" id="tempat_lahir" placeholder="Masukkan Tempat Lahir Sesuai KTP" />
-																</div>
-																<div class="col-lg-4">
-																	<span class="form-text text-muted">Tanggal Lahir</span>
-																	<input type="date" class="form-control" id="tempat_lahir" placeholder="Masukkan Tanggal Lahir Sesuai KTP" />
-																</div>
-																<div class="col-lg-4">
-																	<span class="form-text text-muted">Jenis Kelamin</span>
-																	<select class="form-control" id="jk">
-																		<option value="Perempuan">Perempuan</option>
-																		<option value="Laki-Laki">Laki-Laki</option>
-																	</select>
-																</div>
-																<div class="col-lg-4">
-																	<span class="form-text text-muted">Agama</span>
-																	<select class="form-control" id="agama">
-																	<option value="Islam">Islam</option>
-																	<option value="Kristen">Kristen</option>
-																	<option value="Hindu">Hindu</option>
-																	<option value="Budha">Kristen</option>
-																	<option value="Konghucu">Konghucu</option>
-																	</select>
-																</div>
-																<div class="col-lg-4">
-																	<span class="form-text text-muted">Status Pernikahan</span>
-																	<select class="form-control" id="status_pernikahan">
-																		<option value="Menikah">Menikah</option>
-																		<option value="Belum Menikah">Belum Menikah</option>
-																	</select>
-																</div>
-																<div class="col-lg-4">
-																	<span class="form-text text-muted">Golongan Darah</span>
-																	<input type="text" class="form-control" id="goldar" placeholder="isi tanda (-) jika tidak tahu" />
-																</div>
-																<div class="col-lg-4">
-																	<span class="form-text text-muted">Suku Bangsa</span>
-																	<input type="text" class="form-control" id="suku" placeholder="isi tanda (-) jika tidak tahu" />
-																</div>
-															</div>
-															<!-- pendidikan -->
-															<div class="form-group row">
-																<div class="col-lg-4">
-																	<label>B. KELENGKAPAN PENDIDIKAN KARYAWAN:</label>
-																	<span class="form-text text-muted">SD</span>
-																	<input type="text" class="form-control" id="sd" placeholder="Masukkan Sesuai Ijazah"/>
-																</div>
-																<div class="col-lg-4">
-																	<span class="form-text text-muted">No Ijazah SD</span>
-																	<input type="text" class="form-control" id="no_sd" placeholder="Masukkan Sesuai Ijazah"/>
-																</div>
-																<div class="col-lg-4">
-																	<span class="form-text text-muted">Upload Ijazah SD</span>
-																	<div class="custom-file">
-																		<input type="file" class="custom-file-input" id="file_sd" />
-																		<label class="custom-file-label" for="customFile">File Ijazah Harus format pdf</label>
+																<!-- pendidikan -->
+																<div class="form-group row">
+																	<div class="col-lg-4">
+																		<label>B. KELENGKAPAN PENDIDIKAN KARYAWAN:</label>
+																		<span class="form-text text-muted">SD</span>
+																		<input type="text" class="form-control" id="sd" placeholder="Masukkan Sesuai Ijazah"/>
+																	</div>
+																	<div class="col-lg-4">
+																		<span class="form-text text-muted">No Ijazah SD</span>
+																		<input type="text" class="form-control" id="no_sd" placeholder="Masukkan Sesuai Ijazah"/>
+																	</div>
+																	<div class="col-lg-4">
+																		<span class="form-text text-muted">Upload Ijazah SD</span>
+																		<div class="custom-file">
+																			<input type="file" class="custom-file-input" id="file_sd" />
+																			<label class="custom-file-label" for="customFile">File Ijazah Harus format pdf</label>
+																		</div>
+																	</div>
+																	<div class="col-lg-4">
+																		<span class="form-text text-muted">SMP</span>
+																		<input type="text" class="form-control" id="smp" placeholder="Masukkan Sesuai Ijazah"/>
+																	</div>
+																	<div class="col-lg-4">
+																		<span class="form-text text-muted">No Ijazah SMP</span>
+																		<input type="text" class="form-control" id="no_smp" placeholder="Masukkan Sesuai Ijazah"/>
+																	</div>
+																	<div class="col-lg-4">
+																		<span class="form-text text-muted">Upload Ijazah SMP</span>
+																		<div class="custom-file">
+																			<input type="file" class="custom-file-input" id="file_smp" />
+																			<label class="custom-file-label" for="customFile">File Ijazah Harus format pdf</label>
+																		</div>
+																	</div>
+																	<div class="col-lg-4">
+																		<span class="form-text text-muted">SMA</span>
+																		<input type="text" class="form-control" id="sma" placeholder="Masukkan Sesuai Ijazah"/>
+																	</div>
+																	<div class="col-lg-4">
+																		<span class="form-text text-muted">No Ijazah SMA</span>
+																		<input type="text" class="form-control" id="no_sma" placeholder="Masukkan Sesuai Ijazah"/>
+																	</div>
+																	<div class="col-lg-4">
+																		<span class="form-text text-muted">Upload Ijazah SMA</span>
+																		<div class="custom-file">
+																			<input type="file" class="custom-file-input" id="file_sma" />
+																			<label class="custom-file-label" for="customFile">File Ijazah Harus format pdf</label>
+																		</div>
+																	</div>
+																	<div class="col-lg-4">
+																		<span class="form-text text-muted">S1</span>
+																		<input type="text" class="form-control" id="s1" placeholder="Masukkan Sesuai Ijazah"/>
+																	</div>
+																	<div class="col-lg-4">
+																		<span class="form-text text-muted">No Ijazah S1</span>
+																		<input type="text" class="form-control" id="no_s1" placeholder="Masukkan Sesuai Ijazah"/>
+																	</div>
+																	<div class="col-lg-4">
+																		<span class="form-text text-muted">Upload Ijazah S1</span>
+																		<div class="custom-file">
+																			<input type="file" class="custom-file-input" id="file_s1" />
+																			<label class="custom-file-label" for="customFile">File Ijazah Harus format pdf</label>
+																		</div>
+																	</div>
+																	<div class="col-lg-4">
+																		<span class="form-text text-muted">S2</span>
+																		<input type="text" class="form-control" id="s2" placeholder="Masukkan Sesuai Ijazah"/>
+																	</div>
+																	<div class="col-lg-4">
+																		<span class="form-text text-muted">No Ijazah S2</span>
+																		<input type="text" class="form-control" id="no_s2" placeholder="Masukkan Sesuai Ijazah"/>
+																	</div>
+																	<div class="col-lg-4">
+																		<span class="form-text text-muted">Upload Ijazah S2</span>
+																		<div class="custom-file">
+																			<input type="file" class="custom-file-input" id="file_s2" />
+																			<label class="custom-file-label" for="customFile">File Ijazah Harus format pdf</label>
+																		</div>
+																	</div>
+																	<div class="col-lg-4">
+																		<span class="form-text text-muted">S3</span>
+																		<input type="text" class="form-control" id="s3" placeholder="Masukkan Sesuai Ijazah"/>
+																	</div>
+																	<div class="col-lg-4">
+																		<span class="form-text text-muted">No Ijazah S3</span>
+																		<input type="text" class="form-control" id="no_s3" placeholder="Masukkan Sesuai Ijazah"/>
+																	</div>
+																	<div class="col-lg-4">
+																		<span class="form-text text-muted">Upload Ijazah S3</span>
+																		<div class="custom-file">
+																			<input type="file" class="custom-file-input" id="file_s3" />
+																			<label class="custom-file-label" for="customFile">File Ijazah Harus format pdf</label>
+																		</div>
+																	</div>
+																	<div class="col-lg-4">
+																		<span class="form-text text-muted">Profesi</span>
+																		<input type="text" class="form-control" id="profesi" placeholder="Masukkan Sesuai Ijazah"/>
+																	</div>
+																	<div class="col-lg-4">
+																		<span class="form-text text-muted">No Ijazah Profesi</span>
+																		<input type="text" class="form-control" id="no_profesi" placeholder="Masukkan Sesuai Ijazah"/>
+																	</div>
+																	<div class="col-lg-4">
+																		<span class="form-text text-muted">Upload Ijazah Profesi</span>
+																		<div class="custom-file">
+																			<input type="file" class="custom-file-input" id="file_profesi" />
+																			<label class="custom-file-label" for="customFile">File Ijazah Harus format pdf</label>
+																		</div>
 																	</div>
 																</div>
-																<div class="col-lg-4">
-																	<span class="form-text text-muted">SMP</span>
-																	<input type="text" class="form-control" id="smp" placeholder="Masukkan Sesuai Ijazah"/>
-																</div>
-																<div class="col-lg-4">
-																	<span class="form-text text-muted">No Ijazah SMP</span>
-																	<input type="text" class="form-control" id="no_smp" placeholder="Masukkan Sesuai Ijazah"/>
-																</div>
-																<div class="col-lg-4">
-																	<span class="form-text text-muted">Upload Ijazah SMP</span>
-																	<div class="custom-file">
-																		<input type="file" class="custom-file-input" id="file_smp" />
-																		<label class="custom-file-label" for="customFile">File Ijazah Harus format pdf</label>
+																<!-- Kepegawaian -->
+																<div class="form-group row">
+																	<div class="col-lg-4">
+																		<label>C. KELENGKAPAN BERKAS KARYAWAN:</label>
+																		<span class="form-text text-muted">Pilih Jabatan</span>
+																		<select class="form-control" id="jabatan">
+																			<option value="Direktur">Direktur</option>
+																			<option value="Wadir">Wadir</option>
+																			<option value="KA.BAG">KA.BAG</option>
+																			<option value="KA.BID">KA.BID</option>
+																			<option value="KA.Subag">KA.Subag</option>
+																			<option value="KA.Instalasi">KA.Instalasi</option>
+																			<option value="KA.Ruangan">KA.Ruangan</option>
+																			<option value="KA.Unit">KA.Unit</option>
+																			<option value="Staff">Staff</option>
+																			<option value="Unit">Unit</option>
+																		</select>
+																	</div>
+																	<div class="col-lg-4">
+																		<span class="form-text text-muted">Pilih Status</span>
+																		<select class="form-control" id="status_karyawan">
+																			<option value="PNS">PNS</option>
+																			<option value="PPPK">PPPK</option>
+																			<option value="THL">THL</option>
+																			<option value="Kontrak">Kontrak</option>
+																			<option value="Unit">Unit</option>
+																		</select>
+																	</div>
+																	<div class="col-lg-4">
+																		<span class="form-text text-muted">Pilih Jenis Tenaga</span>
+																		<select class="form-control" id="jenis_tenaga">
+																			<option value="Tenaga Medis / Dokter">Tenaga Medis / Dokter</option>
+																			<option value="Tenaga Keperawatan">Tenaga Keperawatan</option>
+																			<option value="Tenaga Kesehatan Lainnya">Tenaga Kesehatan Lainnya</option>
+																			<option value="Pejabat Struktural">Pejabat Struktural</option>
+																			<option value="Tenaga Umum / Non Medis">Tenaga Umum / Non Medis</option>
+																		</select>
+																	</div>
+																	<div class="col-lg-4">
+																		<span class="form-text text-muted">Pilih Jenis detail Tenaga</span>
+																		<select class="form-control" id="jenis_detail_tenaga">
+																			<option value="Dokter Sub Spesialis">Dokter Sub Spesialis</option>
+																			<option value="Dokter Spesialis">Dokter Spesialis</option>
+																			<option value="Dokter Gigi Spesialis">Dokter Gigi Spesialis</option>
+																			<option value="Dokter Umum">Dokter Umum</option>
+																			<option value="Dokter Gigi">Dokter Gigi</option>
+																			<option value="Perawat Ahli">Perawat Ahli</option>
+																			<option value="Perawat Terampil">Perawat Terampil</option>
+																			<option value="Bidan">Bidan</option>
+																			<option value="Psikologi Klinis">Psikologi Klinis</option>
+																			<option value="Apoteker">Apoteker</option>
+																			<option value="Penyuluh Kesehatan Masyarakat">Penyuluh Kesehatan Masyarakat</option>
+																			<option value="Nutriosionis">Nutriosionis</option>
+																			<option value="Radiografer">Radiografer</option>
+																			<option value="Pranata Laboratorium Kesehatan">Pranata Laboratorium Kesehatan</option>
+																			<option value="Terapis Gigi dan Mulut">Terapis Gigi dan Mulut</option>
+																			<option value="Sanitarian">Sanitarian</option>
+																			<option value="Fisioterapis">Fisioterapis</option>
+																			<option value="elektomedis">elektomedis</option>
+																			<option value="Rekam Medis">Rekam Medis</option>
+																			<option value="Asisten Apoteker">Asisten Apoteker</option>
+																			<option value="Akupuntur">Akupuntur</option>
+																			<option value="Penata Anestesi">Penata Anestesi</option>
+																			<option value="Asisten Penata Anestesi">Asisten Penata Anestesi</option>
+																			<option value="Refraksi Optisi">Refraksi Optisi</option>
+																		</select>
+																	</div>
+																	<div class="col-lg-4">
+																		<span class="form-text text-muted">Masukkan Jenis Pendidikan</span>
+																		<input type="text" class="form-control" id="jenis_pendidikan" placeholder="Mohon sesuaikan dengan data ketenagaan" />
+																	</div>
+																	<div class="col-lg-4">
+																		<span class="form-text text-muted">Pangkat Golongan</span>
+																		<input type="text" class="form-control" id="golongan" placeholder="isi (-) jika bukan ASN"/>
+																	</div>
+																	<div class="col-lg-4">
+																		<span class="form-text text-muted">Prediksi Pensiun</span>
+																		<input type="date" class="form-control" id="pensiun" />
+																	</div>
+																	<div class="col-lg-4">
+																		<span class="form-text text-muted">Gaji</span>
+																		<input type="text" class="form-control" id="gaji" placeholder="Masukkan Gaji Sesuai SK" />
+																	</div>
+																	<div class="col-lg-4">
+																		<span class="form-text text-muted">No SK</span>
+																		<input type="text" class="form-control" id="no_sk" placeholder="Masukkan No Sesuai SK" />
+																	</div>
+																	<div class="col-lg-4">
+																		<span class="form-text text-muted">Upload SK</span>
+																		<div class="custom-file">
+																			<input type="file" class="custom-file-input" id="file_sk" />
+																			<label class="custom-file-label" for="customFile">File SK Harus format pdf</label>
+																		</div>
+																	</div>
+																	<div class="col-lg-4">
+																		<span class="form-text text-muted">Upload SK Penempatan</span>
+																		<div class="custom-file">
+																			<input type="file" class="custom-file-input" id="file_penempatan" />
+																			<label class="custom-file-label" for="customFile">File SK Penempatan Harus format pdf</label>
+																		</div>
+																	</div>
+																	<div class="col-lg-4">
+																		<span class="form-text text-muted">No STR</span>
+																		<input type="text" class="form-control" id="no_str" placeholder="Masukkan No Sesuai STR" />
+																	</div>
+																	<div class="col-lg-4">
+																		<span class="form-text text-muted">Upload STR</span>
+																		<div class="custom-file">
+																			<input type="file" class="custom-file-input" id="file_str" />
+																			<label class="custom-file-label" for="customFile">File STR Harus format pdf</label>
+																		</div>
+																	</div>
+																	<div class="col-lg-4">
+																		<span class="form-text text-muted">No SIP</span>
+																		<input type="text" class="form-control" id="no_sip" placeholder="Masukkan No Sesuai SK" />
+																	</div>
+																	<div class="col-lg-4">
+																		<span class="form-text text-muted">Upload SIP</span>
+																		<div class="custom-file">
+																			<input type="file" class="custom-file-input" id="file_sip" />
+																			<label class="custom-file-label" for="customFile">File SIP Harus format pdf</label>
+																		</div>
+																	</div>
+																	<div class="col-lg-4">
+																		<span class="form-text text-muted">Masa Berlaku STR/SIP</span>
+																		<input type="date" class="form-control" id="masa_sip"  />
 																	</div>
 																</div>
-																<div class="col-lg-4">
-																	<span class="form-text text-muted">SMA</span>
-																	<input type="text" class="form-control" id="sma" placeholder="Masukkan Sesuai Ijazah"/>
-																</div>
-																<div class="col-lg-4">
-																	<span class="form-text text-muted">No Ijazah SMA</span>
-																	<input type="text" class="form-control" id="no_sma" placeholder="Masukkan Sesuai Ijazah"/>
-																</div>
-																<div class="col-lg-4">
-																	<span class="form-text text-muted">Upload Ijazah SMA</span>
-																	<div class="custom-file">
-																		<input type="file" class="custom-file-input" id="file_sma" />
-																		<label class="custom-file-label" for="customFile">File Ijazah Harus format pdf</label>
-																	</div>
-																</div>
-																<div class="col-lg-4">
-																	<span class="form-text text-muted">S1</span>
-																	<input type="text" class="form-control" id="s1" placeholder="Masukkan Sesuai Ijazah"/>
-																</div>
-																<div class="col-lg-4">
-																	<span class="form-text text-muted">No Ijazah S1</span>
-																	<input type="text" class="form-control" id="no_s1" placeholder="Masukkan Sesuai Ijazah"/>
-																</div>
-																<div class="col-lg-4">
-																	<span class="form-text text-muted">Upload Ijazah S1</span>
-																	<div class="custom-file">
-																		<input type="file" class="custom-file-input" id="file_s1" />
-																		<label class="custom-file-label" for="customFile">File Ijazah Harus format pdf</label>
-																	</div>
-																</div>
-																<div class="col-lg-4">
-																	<span class="form-text text-muted">S2</span>
-																	<input type="text" class="form-control" id="s2" placeholder="Masukkan Sesuai Ijazah"/>
-																</div>
-																<div class="col-lg-4">
-																	<span class="form-text text-muted">No Ijazah S2</span>
-																	<input type="text" class="form-control" id="no_s2" placeholder="Masukkan Sesuai Ijazah"/>
-																</div>
-																<div class="col-lg-4">
-																	<span class="form-text text-muted">Upload Ijazah S2</span>
-																	<div class="custom-file">
-																		<input type="file" class="custom-file-input" id="file_s2" />
-																		<label class="custom-file-label" for="customFile">File Ijazah Harus format pdf</label>
-																	</div>
-																</div>
-																<div class="col-lg-4">
-																	<span class="form-text text-muted">S3</span>
-																	<input type="text" class="form-control" id="s3" placeholder="Masukkan Sesuai Ijazah"/>
-																</div>
-																<div class="col-lg-4">
-																	<span class="form-text text-muted">No Ijazah S3</span>
-																	<input type="text" class="form-control" id="no_s3" placeholder="Masukkan Sesuai Ijazah"/>
-																</div>
-																<div class="col-lg-4">
-																	<span class="form-text text-muted">Upload Ijazah S3</span>
-																	<div class="custom-file">
-																		<input type="file" class="custom-file-input" id="file_s3" />
-																		<label class="custom-file-label" for="customFile">File Ijazah Harus format pdf</label>
-																	</div>
-																</div>
-																<div class="col-lg-4">
-																	<span class="form-text text-muted">Profesi</span>
-																	<input type="text" class="form-control" id="profesi" placeholder="Masukkan Sesuai Ijazah"/>
-																</div>
-																<div class="col-lg-4">
-																	<span class="form-text text-muted">No Ijazah Profesi</span>
-																	<input type="text" class="form-control" id="no_profesi" placeholder="Masukkan Sesuai Ijazah"/>
-																</div>
-																<div class="col-lg-4">
-																	<span class="form-text text-muted">Upload Ijazah Profesi</span>
-																	<div class="custom-file">
-																		<input type="file" class="custom-file-input" id="file_profesi" />
-																		<label class="custom-file-label" for="customFile">File Ijazah Harus format pdf</label>
-																	</div>
-																</div>
-															</div>
-															<!-- Kepegawaian -->
-															<div class="form-group row">
-																<div class="col-lg-4">
-																	<label>C. KELENGKAPAN BERKAS KARYAWAN:</label>
-																	<span class="form-text text-muted">Pilih Jabatan</span>
-																	<select class="form-control" id="jabatan">
-																		<option value="Direktur">Direktur</option>
-																		<option value="Wadir">Wadir</option>
-																		<option value="KA.BAG">KA.BAG</option>
-																		<option value="KA.BID">KA.BID</option>
-																		<option value="KA.Subag">KA.Subag</option>
-																		<option value="KA.Instalasi">KA.Instalasi</option>
-																		<option value="KA.Ruangan">KA.Ruangan</option>
-																		<option value="KA.Unit">KA.Unit</option>
-																		<option value="Staff">Staff</option>
-																		<option value="Unit">Unit</option>
-																	</select>
-																</div>
-																<div class="col-lg-4">
-																	<span class="form-text text-muted">Pilih Status</span>
-																	<select class="form-control" id="status_karyawan">
-																		<option value="PNS">PNS</option>
-																		<option value="PPPK">PPPK</option>
-																		<option value="THL">THL</option>
-																		<option value="Kontrak">Kontrak</option>
-																		<option value="Unit">Unit</option>
-																	</select>
-																</div>
-																<div class="col-lg-4">
-																	<span class="form-text text-muted">Pilih Jenis Tenaga</span>
-																	<select class="form-control" id="jenis_tenaga">
-																		<option value="Tenaga Medis / Dokter">Tenaga Medis / Dokter</option>
-																		<option value="Tenaga Keperawatan">Tenaga Keperawatan</option>
-																		<option value="Tenaga Kesehatan Lainnya">Tenaga Kesehatan Lainnya</option>
-																		<option value="Pejabat Struktural">Pejabat Struktural</option>
-																		<option value="Tenaga Umum / Non Medis">Tenaga Umum / Non Medis</option>
-																	</select>
-																</div>
-																<div class="col-lg-4">
-																	<span class="form-text text-muted">Pilih Jenis detail Tenaga</span>
-																	<select class="form-control" id="jenis_detail_tenaga">
-																		<option value="Dokter Sub Spesialis">Dokter Sub Spesialis</option>
-																		<option value="Dokter Spesialis">Dokter Spesialis</option>
-																		<option value="Dokter Gigi Spesialis">Dokter Gigi Spesialis</option>
-																		<option value="Dokter Umum">Dokter Umum</option>
-																		<option value="Dokter Gigi">Dokter Gigi</option>
-																		<option value="Perawat Ahli">Perawat Ahli</option>
-																		<option value="Perawat Terampil">Perawat Terampil</option>
-																		<option value="Bidan">Bidan</option>
-																		<option value="Psikologi Klinis">Psikologi Klinis</option>
-																		<option value="Apoteker">Apoteker</option>
-																		<option value="Penyuluh Kesehatan Masyarakat">Penyuluh Kesehatan Masyarakat</option>
-																		<option value="Nutriosionis">Nutriosionis</option>
-																		<option value="Radiografer">Radiografer</option>
-																		<option value="Pranata Laboratorium Kesehatan">Pranata Laboratorium Kesehatan</option>
-																		<option value="Terapis Gigi dan Mulut">Terapis Gigi dan Mulut</option>
-																		<option value="Sanitarian">Sanitarian</option>
-																		<option value="Fisioterapis">Fisioterapis</option>
-																		<option value="elektomedis">elektomedis</option>
-																		<option value="Rekam Medis">Rekam Medis</option>
-																		<option value="Asisten Apoteker">Asisten Apoteker</option>
-																		<option value="Akupuntur">Akupuntur</option>
-																		<option value="Penata Anestesi">Penata Anestesi</option>
-																		<option value="Asisten Penata Anestesi">Asisten Penata Anestesi</option>
-																		<option value="Refraksi Optisi">Refraksi Optisi</option>
-																	</select>
-																</div>
-																<div class="col-lg-4">
-																	<span class="form-text text-muted">Masukkan Jenis Pendidikan</span>
-																	<input type="text" class="form-control" id="jenis_pendidikan" placeholder="Mohon sesuaikan dengan data ketenagaan" />
-																</div>
-																<div class="col-lg-4">
-																	<span class="form-text text-muted">Pangkat Golongan</span>
-																	<input type="text" class="form-control" id="golongan" placeholder="isi (-) jika bukan ASN"/>
-																</div>
-																<div class="col-lg-4">
-																	<span class="form-text text-muted">Prediksi Pensiun</span>
-																	<input type="date" class="form-control" id="pensiun" />
-																</div>
-																<div class="col-lg-4">
-																	<span class="form-text text-muted">Gaji</span>
-																	<input type="text" class="form-control" id="gaji" placeholder="Masukkan Gaji Sesuai SK" />
-																</div>
-																<div class="col-lg-4">
-																	<span class="form-text text-muted">No SK</span>
-																	<input type="text" class="form-control" id="no_sk" placeholder="Masukkan No Sesuai SK" />
-																</div>
-																<div class="col-lg-4">
-																	<span class="form-text text-muted">Upload SK</span>
-																	<div class="custom-file">
-																		<input type="file" class="custom-file-input" id="file_sk" />
-																		<label class="custom-file-label" for="customFile">File SK Harus format pdf</label>
-																	</div>
-																</div>
-																<div class="col-lg-4">
-																	<span class="form-text text-muted">Upload SK Penempatan</span>
-																	<div class="custom-file">
-																		<input type="file" class="custom-file-input" id="file_penempatan" />
-																		<label class="custom-file-label" for="customFile">File SK Penempatan Harus format pdf</label>
-																	</div>
-																</div>
-																<div class="col-lg-4">
-																	<span class="form-text text-muted">No STR</span>
-																	<input type="text" class="form-control" id="no_str" placeholder="Masukkan No Sesuai STR" />
-																</div>
-																<div class="col-lg-4">
-																	<span class="form-text text-muted">Upload STR</span>
-																	<div class="custom-file">
-																		<input type="file" class="custom-file-input" id="file_str" />
-																		<label class="custom-file-label" for="customFile">File STR Harus format pdf</label>
-																	</div>
-																</div>
-																<div class="col-lg-4">
-																	<span class="form-text text-muted">No SIP</span>
-																	<input type="text" class="form-control" id="no_sip" placeholder="Masukkan No Sesuai SK" />
-																</div>
-																<div class="col-lg-4">
-																	<span class="form-text text-muted">Upload SIP</span>
-																	<div class="custom-file">
-																		<input type="file" class="custom-file-input" id="file_sip" />
-																		<label class="custom-file-label" for="customFile">File SIP Harus format pdf</label>
-																	</div>
-																</div>
-																<div class="col-lg-4">
-																	<span class="form-text text-muted">Masa Berlaku STR/SIP</span>
-																	<input type="date" class="form-control" id="masa_sip"  />
-																</div>
-															</div>
 																<div class="badge badge-danger" id="pesanErrorEdit"></div>
 																<div class="text-center">
-																<button type="button" onClick="edit()" id="tombolEdit" class="btn btn-success my-2">Simpan</button>
+																	<button type="button" onClick="edit()" id="tombolEdit" class="btn btn-success my-2">Simpan</button>
 																</div>
-														</div>
-													</form>
-													<!--end::Form-->
-												</div>
-											</div>
-											</div>
-										</div>
-									</div>
-								</div>
-
-							<!-- view -->
-								<div class="modal fade" id="modalView" tabindex="-1" role="dialog" aria-labelledby="modal-form" aria-hidden="true">
-									<div class="modal-dialog modal- modal-dialog-centered modal-xl" role="document">
-										<div class="modal-content">
-											<div class="modal-body p-0">
-											<div class="card bg-secondary border-0 mb-0">
-												<div class="card-header bg-success pb-1">
-												<div class="text-muted text-center mt-2 mb-3">
-													<span class="text-muted text-white">Data Pasien</span>
-												</div>
-												</div>
-												<div class="card-body px-lg-5 py-lg-5">
-												<!--begin::Form-->
-												<form class="form">
-												<div class="card-body">
-													<div class="form-group row">
-													<div class="col-lg-4">
-														<!-- <label>Jenis:</label> -->
-														<span class="form-text text-muted">Pilih Jenis Test SWAB</span>
-														<select class="form-control" id="jenis_swab" disabled>
-														<option value="Antigen">Antigen</option>
-														<option value="PCR">PCR</option>
-														</select>
-													</div>
-													<div class="col-lg-4">
-														<!-- <label>Jenis:</label> -->
-														<span class="form-text text-muted">Tujuan Test SWAB</span>
-														<select class="form-control" id="tujuan_swab">
-														<option value="Screening/Diagnosa">Screening/Diagnosa</option>
-														<option value="Perjalanan">Perjalanan</option>
-														</select>
-													</div>
-													<div class="col-lg-4">
-														<label>A. IDENTITAS PASIEN:</label>
-														<span class="form-text text-muted">Mohon Masukkan Nama Lengkap Anda</span>
-														<input type="text" class="form-control" id="nama" placeholder="Nama Lengkap" disabled />
-													</div>
-													<div class="col-lg-4">
-														<!-- <label>Email:</label> -->
-														<span class="form-text text-muted">Mohon Masukkan NIK Sesuai KTP</span>
-														<input type="text" class="form-control" id="nik" placeholder="NIK" disabled />
-													</div>
-													<div class="col-lg-4">
-														<!-- <label>Username:</label> -->
-														<span class="form-text text-muted">Masukkan Nama Orang tua sesuai KK</span>
-														<div class="input-group">
-														<div class="input-group-prepend">
-															<span class="input-group-text">
-															<i class="la la-user"></i>
-															</span>
-														</div>
-														<input type="text" class="form-control" id="nama_ortu" placeholder="Nama Orang Tua" disabled/>
-														</div>
-													</div>
-													<div class="col-lg-4">
-														<!-- <label>Email:</label> -->
-														<span class="form-text text-muted">Mohon Masukkan Tgl Lahir Sesuai KTP</span>
-														<input type="date" class="form-control" id="ttl" placeholder="Pilih Tanggal" disabled />
-													</div>
-													<div class="col-lg-4">
-														<!-- <label>Username:</label> -->
-														<span class="form-text text-muted">Masukkan Umur Anda</span>
-														<div class="input-group">
-														<div class="input-group-prepend">
-															<span class="input-group-text">
-															<i class="la la-info-circle"></i>
-															</span>
-														</div>
-														<input type="text" class="form-control" id="umur" placeholder="Umur" disabled/>
-														</div>
-													</div>
-													<div class="col-lg-4">
-														<!-- <label>Jenis:</label> -->
-														<span class="form-text text-muted">Pilih Jenis Kelamin</span>
-														<select class="form-control" id="jk" disabled>
-														<option value="Laki-Laki">Laki-Laki</option>
-														<option value="Perempuan">Perempuan</option>
-														</select>
-													</div>
-													<div class="col-lg-4">
-														<!-- <label>Username:</label> -->
-														<span class="form-text text-muted">Masukkan Pekerjaan Anda Sesuai KTP</span>
-														<div class="input-group">
-														<div class="input-group-prepend">
-															<span class="input-group-text">
-															<i class="la la-info-circle"></i>
-															</span>
-														</div>
-														<input type="text" class="form-control" id="pekerjaan" placeholder="Pekerjaan" disabled/>
-														</div>
-													</div>
-													<div class="col-lg-4">
-														<!-- <label>Email:</label> -->
-														<span class="form-text text-muted">Mohon Masukkan Jalan / Blok</span>
-														<input type="text" class="form-control" id="jalan" placeholder="Jalan / Blok" disabled/>
-													</div>
-													<div class="col-lg-4">
-														<!-- <label>Email:</label> -->
-														<span class="form-text text-muted">Mohon Masukkan RT / RW</span>
-														<input type="text" class="form-control" id="rt" placeholder="RT / RW" disabled/>
-													</div>
-													<div class="col-lg-4">
-														<!-- <label>Email:</label> -->
-														<span class="form-text text-muted">Mohon Masukkan Desa / Kelurahan</span>
-														<input type="text" class="form-control" id="desa" placeholder="Desa / Kelurahan" disabled/>
-													</div>
-													<div class="col-lg-4">
-														<!-- <label>Email:</label> -->
-														<span class="form-text text-muted">Mohon Masukkan Kecamatan</span>
-														<input type="text" class="form-control" id="kec" placeholder="Kecamatan" disabled/>
-													</div>
-													<div class="col-lg-4">
-														<!-- <label>Email:</label> -->
-														<span class="form-text text-muted">Mohon Masukkan Kabupaten / Kota</span>
-														<input type="text" class="form-control" id="kab" placeholder="Kabupaten / Kota" disabled/>
-													</div>
-													<div class="col-lg-4">
-														<!-- <label>Username:</label> -->
-														<span class="form-text text-muted">Masukkan Telp / HP</span>
-														<div class="input-group">
-														<div class="input-group-prepend">
-															<span class="input-group-text">
-															<i class="la la-info-circle"></i>
-															</span>
-														</div>
-														<input type="text" class="form-control" id="no_hp" placeholder="Telepon / HP" disabled/>
-														</div>
-													</div>
-													</div>
-													<div class="form-group row">
-													<div class="col-lg-4">
-														<label>B. INFORMASI KLINIS:</label>
-														<span class="form-text text-muted">Masukkan Tgl Pertama kali Timbul gejala</span>
-														<input type="date" class="form-control" id="timbul_gejala" placeholder="Tgl pertama kali timbul gejala" disabled/>
-													</div>
-													<div class="col-lg-4">
-														<!-- <label>Jenis:</label> -->
-														<span class="form-text text-muted">Apakah ada Riwayat Demam ?</span>
-														<select class="form-control" id="riwayat_demam" disabled>
-														<option value="Ya">Ya</option>
-														<option value="Tidak">Tidak</option>
-														</select>
-													</div>
-													<div class="col-lg-4">
-														<!-- <label>Fax:</label> -->
-														<span class="form-text text-muted">Masukkan Derajat Demam</span>
-														<div class="input-group">
-														<div class="input-group-prepend">
-															<span class="input-group-text">
-															<i class="la la-info-circle"></i>
-															</span>
-														</div>
-														<input type="text" class="form-control" id="derajat_demam" placeholder="Misal 39 " disabled />
-														</div>
-													</div>
-													<div class="col-lg-4">
-														<!-- <label>Jenis:</label> -->
-														<span class="form-text text-muted">Apakah ada Batuk?</span>
-														<select class="form-control" id="riwayat_batuk" disabled>
-														<option value="Ya">Ya</option>
-														<option value="Tidak">Tidak</option>
-														<option value="Tidak Tahu">Tidak Tahu</option>
-														</select>
-													</div>
-													<div class="col-lg-4">
-														<!-- <label>Jenis:</label> -->
-														<span class="form-text text-muted">Apakah ada Pilek?</span>
-														<select class="form-control" id="riwayat_pilek" disabled>
-														<option value="Ya">Ya</option>
-														<option value="Tidak">Tidak</option>
-														<option value="Tidak Tahu">Tidak Tahu</option>
-														</select>
-													</div>
-													<div class="col-lg-4">
-														<!-- <label>Jenis:</label> -->
-														<span class="form-text text-muted">Apakah ada Sakit Tenggorokan?</span>
-														<select class="form-control" id="riwayat_sakit_tenggorokan" disabled>
-														<option value="Ya">Ya</option>
-														<option value="Tidak">Tidak</option>
-														<option value="Tidak Tahu">Tidak Tahu</option>
-														</select>
-													</div>
-													<div class="col-lg-4">
-														<!-- <label>Jenis:</label> -->
-														<span class="form-text text-muted">Apakah ada Sakit Kepala?</span>
-														<select class="form-control" id="riwayat_sakit_kepala" disabled>
-														<option value="Ya">Ya</option>
-														<option value="Tidak">Tidak</option>
-														<option value="Tidak Tahu">Tidak Tahu</option>
-														</select>
-													</div>
-													<div class="col-lg-4">
-														<!-- <label>Jenis:</label> -->
-														<span class="form-text text-muted">Apakah Lemah (malaise)?</span>
-														<select class="form-control" id="lemah" disabled>
-														<option value="Ya">Ya</option>
-														<option value="Tidak">Tidak</option>
-														<option value="Tidak Tahu">Tidak Tahu</option>
-														</select>
-													</div>
-													<div class="col-lg-4">
-														<!-- <label>Jenis:</label> -->
-														<span class="form-text text-muted">Apakah Nyeri Otot?</span>
-														<select class="form-control" id="nyeri_otot" disabled>
-														<option value="Ya">Ya</option>
-														<option value="Tidak">Tidak</option>
-														<option value="Tidak Tahu">Tidak Tahu</option>
-														</select>
-													</div>
-													<div class="col-lg-4">
-														<!-- <label>Jenis:</label> -->
-														<span class="form-text text-muted">Apakah Nyeri Mual atau Muntah?</span>
-														<select class="form-control" id="mual" disabled>
-														<option value="Ya">Ya</option>
-														<option value="Tidak">Tidak</option>
-														<option value="Tidak Tahu">Tidak Tahu</option>
-														</select>
-													</div>
-													<div class="col-lg-4">
-														<!-- <label>Jenis:</label> -->
-														<span class="form-text text-muted">Apakah Nyeri Abdomen?</span>
-														<select class="form-control" id="abdomen" disabled>
-														<option value="Ya">Ya</option>
-														<option value="Tidak">Tidak</option>
-														<option value="Tidak Tahu">Tidak Tahu</option>
-														</select>
-													</div>
-													<div class="col-lg-4">
-														<!-- <label>Jenis:</label> -->
-														<span class="form-text text-muted">Apakah Diare?</span>
-														<select class="form-control" id="diare" disabled>
-														<option value="Ya">Ya</option>
-														<option value="Tidak">Tidak</option>
-														<option value="Tidak Tahu">Tidak Tahu</option>
-														</select>
-													</div>
-													</div>
-													<div class="form-group row">
-													<div class="col-lg-4">
-														<label>KONDISI PENYERTA:</label>
-														<span class="form-text text-muted">Apakah Hamil ?</span>
-														<select class="form-control" id="hamil" disabled>
-														<option value="Ya">Ya</option>
-														<option value="Tidak">Tidak</option>
-														</select>
-													</div>
-													<div class="col-lg-4">
-														<span class="form-text text-muted">Apakah ada Diabetes ?</span>
-														<select class="form-control" id="diabetes" disabled>
-														<option value="Ya">Ya</option>
-														<option value="Tidak">Tidak</option>
-														</select>
-													</div>
-													<div class="col-lg-4">
-														<span class="form-text text-muted">Apakah ada Penyakit Jantung ?</span>
-														<select class="form-control" id="jantung" disabled>
-														<option value="Ya">Ya</option>
-														<option value="Tidak">Tidak</option>
-														</select>
-													</div>
-													<div class="col-lg-4">
-														<span class="form-text text-muted">Apakah ada Hipertensi ?</span>
-														<select class="form-control" id="hipertensi" disabled>
-														<option value="Ya">Ya</option>
-														<option value="Tidak">Tidak</option>
-														</select>
-													</div>
-													<div class="col-lg-4">
-														<span class="form-text text-muted">Apakah ada Keganasan ?</span>
-														<select class="form-control" id="keganasan" disabled>
-														<option value="Ya">Ya</option>
-														<option value="Tidak">Tidak</option>
-														</select>
-													</div>
-													<div class="col-lg-4">
-														<span class="form-text text-muted">Apakah ada Gangguan Imunologi ?</span>
-														<select class="form-control" id="gangguan_imunologi" disabled>
-														<option value="Ya">Ya</option>
-														<option value="Tidak">Tidak</option>
-														</select>
-													</div>
-													<div class="col-lg-4">
-														<span class="form-text text-muted">Apakah ada Gagal Ginjal  Kronis ?</span>
-														<select class="form-control" id="gagal_ginjal" disabled>
-														<option value="Ya">Ya</option>
-														<option value="Tidak">Tidak</option>
-														</select>
-													</div>
-													<div class="col-lg-4">
-														<span class="form-text text-muted">Apakah ada Gangguan Hati Kronis ?</span>
-														<select class="form-control" id="gangguan_hati" disabled>
-														<option value="Ya">Ya</option>
-														<option value="Tidak">Tidak</option>
-														</select>
-													</div>
-													<div class="col-lg-4">
-														<span class="form-text text-muted">Apakah ada PPOK ?</span>
-														<select class="form-control" id="ppok" disabled>
-														<option value="Ya">Ya</option>
-														<option value="Tidak">Tidak</option>
-														</select>
-													</div>
-													<div class="col-lg-4">
-														<span class="form-text text-muted">Lainnya, Sebutkan :</span>
-														<div class="input-group">
-														<div class="input-group-prepend">
-															<span class="input-group-text">
-															<i class="la la-info-circle"></i>
-															</span>
-														</div>
-														<input type="text" class="form-control" id="kondisi_penyerta_lain" placeholder="Kondisi Penyerta Lain" disabled/>
-														</div>
-													</div>
-													</div>
-													<div class="form-group row">
-													<div class="col-lg-4">
-														<label>DIAGNOSIS:</label>
-														<span class="form-text text-muted">Apakah ada Pneumonia (Klinis atau Radiologi) ?</span>
-														<select class="form-control" id="pneumonia" disabled>
-														<option value="Ya">Ya</option>
-														<option value="Tidak">Tidak</option>
-														<option value="Tidak Tahu">Tidak Tahu</option>
-														</select>
-													</div>
-													<div class="col-lg-4">
-														<span class="form-text text-muted">Apakah ada ARDS (Acute Respiratory Distress Syndrome) ?</span>
-														<select class="form-control" id="ards" disabled>
-														<option value="Ya">Ya</option>
-														<option value="Tidak">Tidak</option>
-														<option value="Tidak Tahu">Tidak Tahu</option>
-														</select>
-													</div>
-													<div class="col-lg-4">
-														<span class="form-text text-muted">Diagnosis Lainnya, Sebutkan :</span>
-														<div class="input-group">
-														<div class="input-group-prepend">
-															<span class="input-group-text">
-															<i class="la la-info-circle"></i>
-															</span>
-														</div>
-														<input type="text" class="form-control" id="diagnosis_lain" placeholder="Diagnosis Lain" disabled/>
-														</div>
-													</div>
-													<div class="col-lg-4">
-														<span class="form-text text-muted">Apakah Pasien Mempunyai diagnosis atau otiologi lain untuk penyakit Pernafasannya ?</span>
-														<select class="form-control" id="etiologi" disabled>
-														<option value="Ya">Ya</option>
-														<option value="Tidak">Tidak</option>
-														<option value="Tidak Tahu">Tidak Tahu</option>
-														</select>
-													</div>
-													<div class="col-lg-4">
-														<span class="form-text text-muted">Diagnosis Penyaki Pernafasan Lainnya, Sebutkan :</span>
-														<div class="input-group">
-														<div class="input-group-prepend">
-															<span class="input-group-text">
-															<i class="la la-info-circle"></i>
-															</span>
-														</div>
-														<input type="text" class="form-control" id="diagnosis_pernafasan_lain" placeholder="Diagnosis Penyakit Pernafasan Lain" disabled/>
-														</div>
-													</div>
-													<div class="col-lg-4">
-														<span class="form-text text-muted">Apakah Pasien dirawat di rumah sakit ?</span>
-														<select class="form-control" id="rawat_rs" disabled>
-														<option value="Ya">Ya</option>
-														<option value="Tidak">Tidak</option>
-														</select>
-													</div>
-													<div class="col-lg-4">
-														<span class="form-text text-muted">Bila Ya, Nama RS Terakhir :</span>
-														<div class="input-group">
-														<div class="input-group-prepend">
-															<span class="input-group-text">
-															<i class="la la-info-circle"></i>
-															</span>
-														</div>
-														<input type="text" class="form-control" id="rs_terakhir" placeholder="isi (-) jika tidak dirawat di rs" disabled/>
-														</div>
-													</div>
-													<div class="col-lg-4">
-														<span class="form-text text-muted">Tanggal Masuk RS Terakhir :</span>
-														<div class="input-group">
-														<div class="input-group-prepend">
-															<span class="input-group-text">
-															<i class="la la-info-circle"></i>
-															</span>
-														</div>
-														<input type="date" class="form-control" id="tgl_masuk_rs" disabled/>
-														</div>
-													</div>
-													<div class="col-lg-4">
-														<span class="form-text text-muted">Apakah Pasien dirawat di ICU ?</span>
-														<select class="form-control" id="rawat_icu" disabled>
-														<option value="Ya">Ya</option>
-														<option value="Tidak">Tidak</option>
-														</select>
-													</div>
-													<div class="col-lg-4">
-														<span class="form-text text-muted">Apakah di lakukan tindakan perawatan intubasi ?</span>
-														<select class="form-control" id="tindakan_intubasi" disabled>
-														<option value="Ya">Ya</option>
-														<option value="Tidak">Tidak</option>
-														</select>
-													</div>
-													<div class="col-lg-4">
-														<span class="form-text text-muted">Apakah di lakukan tindakan perawatan penggunaan EMCO ?</span>
-														<select class="form-control" id="penggunaan_emco" disabled>
-														<option value="Ya">Ya</option>
-														<option value="Tidak">Tidak</option>
-														</select>
-													</div>
-													<div class="col-lg-4">
-														<span class="form-text text-muted">Jika ada, nama-nama RS sebelumnya :</span>
-														<div class="input-group">
-														<div class="input-group-prepend">
-															<span class="input-group-text">
-															<i class="la la-info-circle"></i>
-															</span>
-														</div>
-														<input type="text" class="form-control" id="rs_sebelumnya" placeholder="isi (-) jika tidak" disabled/>
-														</div>
-													</div>
-													<div class="col-lg-4">
-														<span class="form-text text-muted">Status Pasien terakhir : </span>
-														<select class="form-control" id="status_pasien_terakhir" disabled>
-														<option value="Selesai Isolasi / Sembuh">Selesai Isolasi / Sembuh</option>
-														<option value="Masih Sakit">Masih Sakit</option>
-														<option value="Meninggal">Meninggal</option>
-														</select>
-													</div>
-													<div class="col-lg-4">
-														<span class="form-text text-muted">Jika Meninggal, Tanggal Meninggal :</span>
-														<div class="input-group">
-														<div class="input-group-prepend">
-															<span class="input-group-text">
-															<i class="la la-info-circle"></i>
-															</span>
-														</div>
-														<input type="date" class="form-control" id="tgl_meninggal" disabled/>
-														</div>
-													</div>
-													</div>
-													<div class="form-group row">
-													<!-- luar negeri -->
-													<div class="col-lg-4">
-														<label>C.Faktor Riwayat Perjalanan:</label>
-														<span class="form-text text-muted">Dalam 14 hari sebelum sakit, apakah memiliki riwayat perjalanan dari luar negeri ?</span>
-														<select class="form-control" id="riwayat_luar_negeri" disabled>
-														<option value="Ya">Ya</option>
-														<option value="Tidak">Tidak</option>
-														<option value="Tidak Tahu">Tidak Tahu</option>
-														</select>
-													</div>
-													<div class="col-lg-4">
-														<span class="form-text text-muted">Sebutkan Negara Pertama</span>
-														<div class="input-group">
-														<div class="input-group-prepend">
-															<span class="input-group-text">
-															<i class="la la-info-circle"></i>
-															</span>
-														</div>
-														<input type="text" class="form-control" id="negara_1" placeholder="Negara pertama " disabled/>
-														</div>
-													</div>
-													<div class="col-lg-4">
-														<span class="form-text text-muted">Sebutkan Kota Pertama</span>
-														<div class="input-group">
-														<div class="input-group-prepend">
-															<span class="input-group-text">
-															<i class="la la-info-circle"></i>
-															</span>
-														</div>
-														<input type="text" class="form-control" id="kota_1" placeholder="Kota pertama " disabled />
-														</div>
-													</div>
-													<div class="col-lg-4">
-														<span class="form-text text-muted">Tanggal Perjalanan Pertama</span>
-														<div class="input-group">
-														<div class="input-group-prepend">
-															<span class="input-group-text">
-															<i class="la la-info-circle"></i>
-															</span>
-														</div>
-														<input type="date" class="form-control" id="tgl_negara_1" placeholder="Negara pertama " disabled/>
-														</div>
-													</div>
-													<div class="col-lg-4">
-														<span class="form-text text-muted">Tgl tiba di Indonesia Pada perjalanan Pertama</span>
-														<div class="input-group">
-														<div class="input-group-prepend">
-															<span class="input-group-text">
-															<i class="la la-info-circle"></i>
-															</span>
-														</div>
-														<input type="date" class="form-control" id="tgl_tiba_negara_1" placeholder="Tanggal Tiba pada Perjalanan Pertama " disabled />
-														</div>
-													</div>
-													<div class="col-lg-4">
-														<span class="form-text text-muted">Sebutkan Negara Kedua</span>
-														<div class="input-group">
-														<div class="input-group-prepend">
-															<span class="input-group-text">
-															<i class="la la-info-circle"></i>
-															</span>
-														</div>
-														<input type="text" class="form-control" id="negara_2" placeholder="Negara kedua " disabled/>
-														</div>
-													</div>
-													<div class="col-lg-4">
-														<span class="form-text text-muted">Sebutkan Kota Kedua</span>
-														<div class="input-group">
-														<div class="input-group-prepend">
-															<span class="input-group-text">
-															<i class="la la-info-circle"></i>
-															</span>
-														</div>
-														<input type="text" class="form-control" id="kota_2" placeholder="Kota kedua " disabled />
-														</div>
-													</div>
-													<div class="col-lg-4">
-														<span class="form-text text-muted">Tanggal Perjalanan Kedua</span>
-														<div class="input-group">
-														<div class="input-group-prepend">
-															<span class="input-group-text">
-															<i class="la la-info-circle"></i>
-															</span>
-														</div>
-														<input type="date" class="form-control" id="tgl_negara_2" disabled />
-														</div>
-													</div>
-													<div class="col-lg-4">
-														<span class="form-text text-muted">Tgl tiba di Indonesia Pada Perjalanan Kedua</span>
-														<div class="input-group">
-														<div class="input-group-prepend">
-															<span class="input-group-text">
-															<i class="la la-info-circle"></i>
-															</span>
-														</div>
-														<input type="date" class="form-control" id="tgl_tiba_negara_2" disabled/>
-														</div>
-													</div>
-													<!-- transmisi lokal -->
-													<div class="col-lg-4">
-														<span class="form-text text-muted">Dalam 14 hari sebelum sakit, apakah memiliki riwayat perjalanan dari area transmisi lokal ?</span>
-														<select class="form-control" id="riwayat_transmisi_lokal" disabled>
-														<option value="Ya">Ya</option>
-														<option value="Tidak">Tidak</option>
-														<option value="Tidak Tahu">Tidak Tahu</option>
-														</select>
-													</div>
-													<div class="col-lg-4">
-														<span class="form-text text-muted">Sebutkan Provinsi Pertama</span>
-														<div class="input-group">
-														<div class="input-group-prepend">
-															<span class="input-group-text">
-															<i class="la la-info-circle"></i>
-															</span>
-														</div>
-														<input type="text" class="form-control" id="provinsi_transmisi_1" placeholder="Provinsi tansmisi lokal pertama " disabled/>
-														</div>
-													</div>
-													<div class="col-lg-4">
-														<span class="form-text text-muted">Sebutkan Kota Pertama</span>
-														<div class="input-group">
-														<div class="input-group-prepend">
-															<span class="input-group-text">
-															<i class="la la-info-circle"></i>
-															</span>
-														</div>
-														<input type="text" class="form-control" id="kota_transmisi_1" placeholder="Kota tansmisi lokal pertama " disabled />
-														</div>
-													</div>
-													<div class="col-lg-4">
-														<span class="form-text text-muted">Tanggal Perjalanan di transmisi lokal Pertama</span>
-														<div class="input-group">
-														<div class="input-group-prepend">
-															<span class="input-group-text">
-															<i class="la la-info-circle"></i>
-															</span>
-														</div>
-														<input type="date" class="form-control" id="tgl_transmisi_1" disabled/>
-														</div>
-													</div>
-													<div class="col-lg-4">
-														<span class="form-text text-muted">Tgl tiba dari transmisi lokal Pertama</span>
-														<div class="input-group">
-														<div class="input-group-prepend">
-															<span class="input-group-text">
-															<i class="la la-info-circle"></i>
-															</span>
-														</div>
-														<input type="date" class="form-control" id="tgl_tiba_transmisi_1" disabled/>
-														</div>
-													</div>
-													<div class="col-lg-4">
-														<span class="form-text text-muted">Sebutkan Provinsi Kedua</span>
-														<div class="input-group">
-														<div class="input-group-prepend">
-															<span class="input-group-text">
-															<i class="la la-info-circle"></i>
-															</span>
-														</div>
-														<input type="text" class="form-control" id="provinsi_transmisi_2" placeholder="Provinsi tansmisi lokal kedua "disabled />
-														</div>
-													</div>
-													<div class="col-lg-4">
-														<span class="form-text text-muted">Sebutkan Kota Kedua</span>
-														<div class="input-group">
-														<div class="input-group-prepend">
-															<span class="input-group-text">
-															<i class="la la-info-circle"></i>
-															</span>
-														</div>
-														<input type="text" class="form-control" id="kota_transmisi_2" placeholder="Kota tansmisi lokal kedua " disabled />
-														</div>
-													</div>
-													<div class="col-lg-4">
-														<span class="form-text text-muted">Tanggal Perjalanan di transmisi lokal Kedua</span>
-														<div class="input-group">
-														<div class="input-group-prepend">
-															<span class="input-group-text">
-															<i class="la la-info-circle"></i>
-															</span>
-														</div>
-														<input type="date" class="form-control" id="tgl_transmisi_2" disabled/>
-														</div>
-													</div>
-													<div class="col-lg-4">
-														<span class="form-text text-muted">Tgl tiba dari transmisi lokal Kedua</span>
-														<div class="input-group">
-														<div class="input-group-prepend">
-															<span class="input-group-text">
-															<i class="la la-info-circle"></i>
-															</span>
-														</div>
-														<input type="date" class="form-control" id="tgl_tiba_transmisi_2" disabled/>
-														</div>
-													</div>
-													<!-- ke transmisi lokal -->
-													<div class="col-lg-4">
-														<span class="form-text text-muted">Dalam 14 hari sebelum sakit, apakah memiliki riwayat perjalanan ke area transmisi lokal ?</span>
-														<select class="form-control" id="riwayat_ketransmisi_lokal" disabled>
-														<option value="Ya">Ya</option>
-														<option value="Tidak">Tidak</option>
-														<option value="Tidak Tahu">Tidak Tahu</option>
-														</select>
-													</div>
-													<div class="col-lg-4">
-														<span class="form-text text-muted">Sebutkan Provinsi</span>
-														<div class="input-group">
-														<div class="input-group-prepend">
-															<span class="input-group-text">
-															<i class="la la-info-circle"></i>
-															</span>
-														</div>
-														<input type="text" class="form-control" id="provinsi_ketransmisi" placeholder="Provinsi ke tansmisi lokal " disabled />
-														</div>
-													</div>
-													<div class="col-lg-4">
-														<span class="form-text text-muted">Sebutkan Kota</span>
-														<div class="input-group">
-														<div class="input-group-prepend">
-															<span class="input-group-text">
-															<i class="la la-info-circle"></i>
-															</span>
-														</div>
-														<input type="text" class="form-control" id="kota_ketransmisi" placeholder="Kota ke tansmisi lokal" disabled />
-														</div>
-													</div>
-													<!-- kontak dengan suspek/probable-->
-													<div class="col-lg-4">
-														<span class="form-text text-muted">Dalam 14 hari sebelum sakit, apakah memiliki kontak dengan suspek/probable COVID-19 ?</span>
-														<select class="form-control" id="riwayat_kontak_suspek" disabled>
-														<option value="Ya">Ya</option>
-														<option value="Tidak">Tidak</option>
-														<option value="Tidak Tahu">Tidak Tahu</option>
-														</select>
-													</div>
-													<div class="col-lg-4">
-														<span class="form-text text-muted">Sebutkan Nama yang Kontak suspek/probable Pertama</span>
-														<div class="input-group">
-														<div class="input-group-prepend">
-															<span class="input-group-text">
-															<i class="la la-info-circle"></i>
-															</span>
-														</div>
-														<input type="text" class="form-control" id="nama_suspek_1" placeholder="Nama suspek/probable pertama " disabled />
-														</div>
-													</div>
-													<div class="col-lg-4">
-														<span class="form-text text-muted">Sebutkan Alamat yang Kontak suspek/probable Pertama</span>
-														<div class="input-group">
-														<div class="input-group-prepend">
-															<span class="input-group-text">
-															<i class="la la-info-circle"></i>
-															</span>
-														</div>
-														<input type="text" class="form-control" id="alamat_suspek_1" placeholder="alamat suspek/probable pertama " disabled/>
-														</div>
-													</div>
-													<div class="col-lg-4">
-														<span class="form-text text-muted">Sebutkan hubungan dengan Kontak suspek/probable Pertama</span>
-														<div class="input-group">
-														<div class="input-group-prepend">
-															<span class="input-group-text">
-															<i class="la la-info-circle"></i>
-															</span>
-														</div>
-														<input type="text" class="form-control" id="hubungan_suspek_1" placeholder="hubungan dengan suspek/probable pertama " disabled/>
-														</div>
-													</div>
-													<div class="col-lg-4">
-														<span class="form-text text-muted">Tanggal Pertama Kontak dengan suspek/probable</span>
-														<div class="input-group">
-														<div class="input-group-prepend">
-															<span class="input-group-text">
-															<i class="la la-info-circle"></i>
-															</span>
-														</div>
-														<input type="date" class="form-control" id="tgl_kontak_suspek_1" disabled/>
-														</div>
-													</div>
-													<div class="col-lg-4">
-														<span class="form-text text-muted">Tgl terakhir kontak dengan suspek/probable</span>
-														<div class="input-group">
-														<div class="input-group-prepend">
-															<span class="input-group-text">
-															<i class="la la-info-circle"></i>
-															</span>
-														</div>
-														<input type="date" class="form-control" id="tgl_terakhir_kontak_suspek_1" disabled/>
-														</div>
-													</div>
-													</div>
-
-													<!-- D -->
-													<div class="form-group row">
-													<!-- kontak dengan konfirm-->
-													<div class="col-lg-4">
-														<label>D. Faktor Kontak/Paparan (lanjutan)</label>
-														<span class="form-text text-muted">Dalam 14 hari sebelum sakit, apakah memiliki kontak erat dengan kasus konfirmasi dan probable COVID-19 ?</span>
-														<select class="form-control" id="riwayat_kontak_konfirm" disabled>
-														<option value="Ya">Ya</option>
-														<option value="Tidak">Tidak</option>
-														<option value="Tidak Tahu">Tidak Tahu</option>
-														</select>
-													</div>
-													<div class="col-lg-4">
-														<span class="form-text text-muted">Sebutkan Nama yang Kontak Konfirm & probable Pertama</span>
-														<div class="input-group">
-														<div class="input-group-prepend">
-															<span class="input-group-text">
-															<i class="la la-info-circle"></i>
-															</span>
-														</div>
-														<input type="text" class="form-control" id="nama_konfirm_1" placeholder="Nama Konfirm pertama " disabled/>
-														</div>
-													</div>
-													<div class="col-lg-4">
-														<span class="form-text text-muted">Sebutkan Alamat yang Kontak Konfirm & probable Pertama</span>
-														<div class="input-group">
-														<div class="input-group-prepend">
-															<span class="input-group-text">
-															<i class="la la-info-circle"></i>
-															</span>
-														</div>
-														<input type="text" class="form-control" id="alamat_konfirm_1" placeholder="alamat Konfirm pertama " disabled />
-														</div>
-													</div>
-													<div class="col-lg-4">
-														<span class="form-text text-muted">Sebutkan hubungan dengan Kontak Konfirm & probable Pertama</span>
-														<div class="input-group">
-														<div class="input-group-prepend">
-															<span class="input-group-text">
-															<i class="la la-info-circle"></i>
-															</span>
-														</div>
-														<input type="text" class="form-control" id="hubungan_konfirm_1" placeholder="hubungan dengan Konfirm pertama " disabled />
-														</div>
-													</div>
-													<div class="col-lg-4">
-														<span class="form-text text-muted">Tanggal Pertama Kontak dengan Konfirm & probable</span>
-														<div class="input-group">
-														<div class="input-group-prepend">
-															<span class="input-group-text">
-															<i class="la la-info-circle"></i>
-															</span>
-														</div>
-														<input type="date" class="form-control" id="tgl_kontak_konfirm_1" disabled/>
-														</div>
-													</div>
-													<div class="col-lg-4">
-														<span class="form-text text-muted">Tgl terakhir kontak dengan Konfirm & probable</span>
-														<div class="input-group">
-														<div class="input-group-prepend">
-															<span class="input-group-text">
-															<i class="la la-info-circle"></i>
-															</span>
-														</div>
-														<input type="date" class="form-control" id="tgl_terakhir_kontak_konfirm_1" disabled/>
-														</div>
-													</div>
-													<div class="col-lg-4">
-														<span class="form-text text-muted">Apakah pasien termasuk cluster ISPA berat (demam & pneumonia membutuhkan perawatan Rumah Sakit) yang tidak diketahui penyebabnya ?</span>
-														<select class="form-control" id="ispa" disabled>
-														<option value="Ya">Ya</option>
-														<option value="Tidak">Tidak</option>
-														<option value="Tidak Tahu">Tidak Tahu</option>
-														</select>
-													</div>
-													<div class="col-lg-4">
-														<span class="form-text text-muted">Apakah pasien memiliki hewan peliharaan ?</span>
-														<select class="form-control" id="hewan_peliharaan" disabled>
-														<option value="Ya">Ya</option>
-														<option value="Tidak">Tidak</option>
-														<option value="Tidak Tahu">Tidak Tahu</option>
-														</select>
-													</div>
-													<div class="col-lg-4">
-														<span class="form-text text-muted">Sebutkan, Jika memiliki hewan peliharaan</span>
-														<div class="input-group">
-														<div class="input-group-prepend">
-															<span class="input-group-text">
-															<i class="la la-info-circle"></i>
-															</span>
-														</div>
-														<input type="text" class="form-control" id="jenis_hewan_peliharaan" placeholder="Jenis Hewan Peliharaan " disabled/>
-														</div>
-													</div>
-													<div class="col-lg-4">
-														<span class="form-text text-muted">Apakah Pasien Seorang petugas Kesehatan ?</span>
-														<select class="form-control" id="petugas_kesehatan" disabled>
-														<option value="Ya">Ya</option>
-														<option value="Tidak">Tidak</option>
-														<option value="Tidak Tahu">Tidak Tahu</option>
-														</select>
-													</div>
-													<div class="col-lg-4">
-														<span class="form-text text-muted">Jika Petugas kesehatan, Alat Pelindung diri (APD) apa yg dipakai
-														saat melakukan perawatan pada pasien suspek / peobable / Konfirm?</span>
-														<select class="form-control" id="apd" disabled>
-														<option value="Gown">Gown</option>
-														<option value="Masker Medis">Masker Medis</option>
-														<option value="Sarung Tangan">Sarung Tangan</option>
-														<option value="Masker N10SH-N95, ANEU STANDARTD FFP2">Masker N10SH-N95, ANEU STANDARTD FFP2</option>
-														<option value="FFP3">FFP3</option>
-														<option value="Kacamata Pelindung (goggle)">Kacamata Pelindung (goggle)</option>
-														<option value="Tidak Memakai APD">Tidak Memakai APD</option>
-														</select>
-													</div>
-													<div class="col-lg-4">
-														<span class="form-text text-muted">Apakah Melakukan prosedur yang menimbukan aerosol ?</span>
-														<select class="form-control" id="aerosol" disabled>
-														<option value="Ya">Ya</option>
-														<option value="Tidak">Tidak</option>
-														</select>
-													</div>
-													<div class="col-lg-4">
-														<span class="form-text text-muted">Sebutkan, Jika melakukan prosedur yang menimbulkan aerosol</span>
-														<div class="input-group">
-														<div class="input-group-prepend">
-															<span class="input-group-text">
-															<i class="la la-info-circle"></i>
-															</span>
-														</div>
-														<input type="text" class="form-control" id="sebutkan_aerosol" placeholder="Jenis Hewan Peliharaan " disabled/>
-														</div>
-													</div>
-													</div>
-													<div class="form-group row">
-													<!-- kontak 1 -->
-													<div class="col-lg-4">
-														<label>D.Daftar Kontak Erat Kasus</label>
-														<span class="form-text text-muted">Sebutkan Nama yang Kontak Erat Kasus Pertama</span>
-														<div class="input-group">
-														<div class="input-group-prepend">
-															<span class="input-group-text">
-															<i class="la la-info-circle"></i>
-															</span>
-														</div>
-														<input type="text" class="form-control" id="nama_kasus_1" placeholder="Nama Kontak Kasus Pertama" disabled/>
-														</div>
-													</div>
-													<div class="col-lg-4">
-														<span class="form-text text-muted">Sebutkan Umur yang Kontak Erat Kasus Pertama</span>
-														<div class="input-group">
-														<div class="input-group-prepend">
-															<span class="input-group-text">
-															<i class="la la-info-circle"></i>
-															</span>
-														</div>
-														<input type="text" class="form-control" id="umur_kasus_1" placeholder="Umur Kontak Kasus Pertama" disabled/>
-														</div>
-													</div>
-													<div class="col-lg-4">
-														<span class="form-text text-muted">Sebutkan Jenis Kelamin yang Kontak Erat Kasus Pertama</span>
-														<div class="input-group">
-														<div class="input-group-prepend">
-															<span class="input-group-text">
-															<i class="la la-info-circle"></i>
-															</span>
-														</div>
-														<input type="text" class="form-control" id="jk_kasus_1" placeholder="Jenis Kelamin Kontak Kasus Pertama" disabled/>
-														</div>
-													</div>
-													<div class="col-lg-4">
-														<span class="form-text text-muted">Sebutkan Hubungan dengan Kontak Erat Kasus Pertama</span>
-														<div class="input-group">
-														<div class="input-group-prepend">
-															<span class="input-group-text">
-															<i class="la la-info-circle"></i>
-															</span>
-														</div>
-														<input type="text" class="form-control" id="hubungan_kasus_1" placeholder="Hubungan dengan Kontak Kasus Pertama" disabled/>
-														</div>
-													</div>
-													<div class="col-lg-4">
-														<span class="form-text text-muted">Sebutkan Alamat Kontak Erat Kasus Pertama</span>
-														<div class="input-group">
-														<div class="input-group-prepend">
-															<span class="input-group-text">
-															<i class="la la-info-circle"></i>
-															</span>
-														</div>
-														<input type="text" class="form-control" id="alamat_kasus_1" placeholder="Alamat Kontak Kasus Pertama" disabled/>
-														</div>
-													</div>
-													<div class="col-lg-4">
-														<span class="form-text text-muted">Sebutkan No Hp Kontak Erat Kasus Pertama</span>
-														<div class="input-group">
-														<div class="input-group-prepend">
-															<span class="input-group-text">
-															<i class="la la-info-circle"></i>
-															</span>
-														</div>
-														<input type="text" class="form-control" id="hp_kasus_1" placeholder="No Hp Kontak Kasus Kedua" disabled/>
-														</div>
-													</div>
-													<div class="col-lg-4">
-														<span class="form-text text-muted">Sebutkan Aktifitas yang dilakukan oleh Kontak Erat Kasus Pertama</span>
-														<div class="input-group">
-														<div class="input-group-prepend">
-															<span class="input-group-text">
-															<i class="la la-info-circle"></i>
-															</span>
-														</div>
-														<input type="text" class="form-control" id="aktifitas_kasus_1" disabled/>
-														</div>
-													</div>
-													<!-- kontak 2 -->
-													<div class="col-lg-4">
-													<br>
-														<span class="form-text text-muted">Sebutkan Nama yang Kontak Erat Kasus Kedua</span>
-														<div class="input-group">
-														<div class="input-group-prepend">
-															<span class="input-group-text">
-															<i class="la la-info-circle"></i>
-															</span>
-														</div>
-														<input type="text" class="form-control" id="nama_kasus_2" placeholder="Nama Kontak Kasus Kedua" disabled />
-														</div>
-													</div>
-													<div class="col-lg-4">
-														<span class="form-text text-muted">Sebutkan Umur yang Kontak Erat Kasus Kedua</span>
-														<div class="input-group">
-														<div class="input-group-prepend">
-															<span class="input-group-text">
-															<i class="la la-info-circle"></i>
-															</span>
-														</div>
-														<input type="text" class="form-control" id="umur_kasus_2" placeholder="Umur Kontak Kasus Kedua" disabled />
-														</div>
-													</div>
-													<div class="col-lg-4">
-														<span class="form-text text-muted">Sebutkan Jenis Kelamin yang Kontak Erat Kasus Kedua</span>
-														<div class="input-group">
-														<div class="input-group-prepend">
-															<span class="input-group-text">
-															<i class="la la-info-circle"></i>
-															</span>
-														</div>
-														<input type="text" class="form-control" id="jk_kasus_2" placeholder="Jenis Kelamin Kontak Kasus Kedua" disabled />
-														</div>
-													</div>
-													<div class="col-lg-4">
-														<span class="form-text text-muted">Sebutkan Hubungan dengan Kontak Erat Kasus Kedua</span>
-														<div class="input-group">
-														<div class="input-group-prepend">
-															<span class="input-group-text">
-															<i class="la la-info-circle"></i>
-															</span>
-														</div>
-														<input type="text" class="form-control" id="hubungan_kasus_2" placeholder="Hubungan dengan Kontak Kasus Kedua" disabled />
-														</div>
-													</div>
-													<div class="col-lg-4">
-														<span class="form-text text-muted">Sebutkan Alamat Kontak Erat Kasus Kedua</span>
-														<div class="input-group">
-														<div class="input-group-prepend">
-															<span class="input-group-text">
-															<i class="la la-info-circle"></i>
-															</span>
-														</div>
-														<input type="text" class="form-control" id="alamat_kasus_2" placeholder="Alamat Kontak Kasus Kedua" disabled />
-														</div>
-													</div>
-													<div class="col-lg-4">
-														<span class="form-text text-muted">Sebutkan No Hp Kontak Erat Kasus Kedua</span>
-														<div class="input-group">
-														<div class="input-group-prepend">
-															<span class="input-group-text">
-															<i class="la la-info-circle"></i>
-															</span>
-														</div>
-														<input type="text" class="form-control" id="hp_kasus_2" placeholder="No Hp Kontak Kasus Kedua" disabled/>
-														</div>
-													</div>
-													<div class="col-lg-4">
-														<span class="form-text text-muted">Sebutkan Aktifitas yang dilakukan oleh Kontak Erat Kasus Kedua</span>
-														<div class="input-group">
-														<div class="input-group-prepend">
-															<span class="input-group-text">
-															<i class="la la-info-circle"></i>
-															</span>
-														</div>
-														<input type="text" class="form-control" id="aktifitas_kasus_2" disabled/>
-														</div>
-													</div>
-													<!-- kontak 3 -->
-													<div class="col-lg-4">
-													<br>
-														<span class="form-text text-muted">Sebutkan Nama yang Kontak Erat Kasus Ketiga</span>
-														<div class="input-group">
-														<div class="input-group-prepend">
-															<span class="input-group-text">
-															<i class="la la-info-circle"></i>
-															</span>
-														</div>
-														<input type="text" class="form-control" id="nama_kasus_3" placeholder="Nama Kontak Kasus Ketiga" disabled/>
-														</div>
-													</div>
-													<div class="col-lg-4">
-														<span class="form-text text-muted">Sebutkan Umur yang Kontak Erat Kasus Ketiga</span>
-														<div class="input-group">
-														<div class="input-group-prepend">
-															<span class="input-group-text">
-															<i class="la la-info-circle"></i>
-															</span>
-														</div>
-														<input type="text" class="form-control" id="umur_kasus_3" placeholder="Umur Kontak Kasus Ketiga" disabled />
-														</div>
-													</div>
-													<div class="col-lg-4">
-														<span class="form-text text-muted">Sebutkan Jenis Kelamin yang Kontak Erat Kasus Ketiga</span>
-														<div class="input-group">
-														<div class="input-group-prepend">
-															<span class="input-group-text">
-															<i class="la la-info-circle"></i>
-															</span>
-														</div>
-														<input type="text" class="form-control" id="jk_kasus_3" placeholder="Jenis Kelamin Kontak Kasus Ketiga" disabled />
-														</div>
-													</div>
-													<div class="col-lg-4">
-														<span class="form-text text-muted">Sebutkan Hubungan dengan Kontak Erat Kasus Ketiga</span>
-														<div class="input-group">
-														<div class="input-group-prepend">
-															<span class="input-group-text">
-															<i class="la la-info-circle"></i>
-															</span>
-														</div>
-														<input type="text" class="form-control" id="hubungan_kasus_3" placeholder="Hubungan dengan Kontak Kasus Ketiga" disabled/>
-														</div>
-													</div>
-													<div class="col-lg-4">
-														<span class="form-text text-muted">Sebutkan Alamat Kontak Erat Kasus Ketiga</span>
-														<div class="input-group">
-														<div class="input-group-prepend">
-															<span class="input-group-text">
-															<i class="la la-info-circle"></i>
-															</span>
-														</div>
-														<input type="text" class="form-control" id="alamat_kasus_3" placeholder="Alamat Kontak Kasus Ketiga" disabled />
-														</div>
-													</div>
-													<div class="col-lg-4">
-														<span class="form-text text-muted">Sebutkan No Hp Kontak Erat Kasus Ketiga</span>
-														<div class="input-group">
-														<div class="input-group-prepend">
-															<span class="input-group-text">
-															<i class="la la-info-circle"></i>
-															</span>
-														</div>
-														<input type="text" class="form-control" id="hp_kasus_3" placeholder="No Hp Kontak Kasus Ketiga" disabled/>
-														</div>
-													</div>
-													<div class="col-lg-4">
-														<span class="form-text text-muted">Sebutkan Aktifitas yang dilakukan oleh Kontak Erat Kasus Ketiga</span>
-														<div class="input-group">
-														<div class="input-group-prepend">
-															<span class="input-group-text">
-															<i class="la la-info-circle"></i>
-															</span>
-														</div>
-														<input type="text" class="form-control" id="aktifitas_kasus_3" disabled/>
-														</div>
-													</div>
-													<!-- kontak 4 -->
-													<div class="col-lg-4">
-													<br>
-														<span class="form-text text-muted">Sebutkan Nama yang Kontak Erat Kasus Keempat</span>
-														<div class="input-group">
-														<div class="input-group-prepend">
-															<span class="input-group-text">
-															<i class="la la-info-circle"></i>
-															</span>
-														</div>
-														<input type="text" class="form-control" id="nama_kasus_4" placeholder="Nama Kontak Kasus Keempat" disabled/>
-														</div>
-													</div>
-													<div class="col-lg-4">
-														<span class="form-text text-muted">Sebutkan Umur yang Kontak Erat Kasus Keempat</span>
-														<div class="input-group">
-														<div class="input-group-prepend">
-															<span class="input-group-text">
-															<i class="la la-info-circle"></i>
-															</span>
-														</div>
-														<input type="text" class="form-control" id="umur_kasus_4" placeholder="Umur Kontak Kasus Keempat" disabled/>
-														</div>
-													</div>
-													<div class="col-lg-4">
-														<span class="form-text text-muted">Sebutkan Jenis Kelamin yang Kontak Erat Kasus Keempat</span>
-														<div class="input-group">
-														<div class="input-group-prepend">
-															<span class="input-group-text">
-															<i class="la la-info-circle"></i>
-															</span>
-														</div>
-														<input type="text" class="form-control" id="jk_kasus_4" placeholder="Jenis Kelamin Kontak Kasus Keempat" disabled/>
-														</div>
-													</div>
-													<div class="col-lg-4">
-														<span class="form-text text-muted">Sebutkan Hubungan dengan Kontak Erat Kasus Keempat</span>
-														<div class="input-group">
-														<div class="input-group-prepend">
-															<span class="input-group-text">
-															<i class="la la-info-circle"></i>
-															</span>
-														</div>
-														<input type="text" class="form-control" id="hubungan_kasus_4" placeholder="Hubungan dengan Kontak Kasus Keempat" disabled/>
-														</div>
-													</div>
-													<div class="col-lg-4">
-														<span class="form-text text-muted">Sebutkan Alamat Kontak Erat Kasus Keempat</span>
-														<div class="input-group">
-														<div class="input-group-prepend">
-															<span class="input-group-text">
-															<i class="la la-info-circle"></i>
-															</span>
-														</div>
-														<input type="text" class="form-control" id="alamat_kasus_4" placeholder="Alamat Kontak Kasus Keempat" disabled/>
-														</div>
-													</div>
-													<div class="col-lg-4">
-														<span class="form-text text-muted">Sebutkan No Hp Kontak Erat Kasus Keempat</span>
-														<div class="input-group">
-														<div class="input-group-prepend">
-															<span class="input-group-text">
-															<i class="la la-info-circle"></i>
-															</span>
-														</div>
-														<input type="text" class="form-control" id="hp_kasus_4" placeholder="No Hp Kontak Kasus Keempat" disabled/>
-														</div>
-													</div>
-													<div class="col-lg-4">
-														<span class="form-text text-muted">Sebutkan Aktifitas yang dilakukan oleh Kontak Erat Kasus Keempat</span>
-														<div class="input-group">
-														<div class="input-group-prepend">
-															<span class="input-group-text">
-															<i class="la la-info-circle"></i>
-															</span>
-														</div>
-														<input type="text" class="form-control" id="aktifitas_kasus_4" disabled/>
-														</div>
-													</div>
-													</div>
-
-													<!-- vaksin -->
-																		
-												<div class="form-group row">
-													<div class="col-lg-4">
-													<label>E. VAKSIN:</label>
-													<span class="form-text text-muted">Apakah Sudah Vaksin 1 ?</span>
-													<select class="form-control" id="vaksin1">
-														<option value="Ya">Ya</option>
-														<option value="Tidak">Tidak</option>
-													</select>
-													</div>
-													<div class="col-lg-4">
-													<span class="form-text text-muted">Apakah Sudah Vaksin 2 ?</span>
-													<select class="form-control" id="vaksin2">
-														<option value="Ya">Ya</option>
-														<option value="Tidak">Tidak</option>
-													</select>
-													</div>
-													<div class="col-lg-4">
-													<span class="form-text text-muted">Apakah sudah Booster ?</span>
-													<select class="form-control" id="booster">
-														<option value="Ya">Ya</option>
-														<option value="Tidak">Tidak</option>
-													</select>
+														</form>
+														<!--end::Form-->
 													</div>
 												</div>
-												</div>
-												</form>
-												<!--end::Form-->
-												</div>
-											</div>
 											</div>
 										</div>
 									</div>
@@ -1775,61 +549,10 @@
           baris += '</tbody></table>'
           $("#tempatTabel").html(baris);
           $('#tabelUser').DataTable({
-            "pageLength": 10,
+            "pageLength": 20,
           });
         }
       });
-  }
-  function tryCetak(id) {
-    window.open(
-       "<?= site_url(); ?>pendaftaran/dataById/" + id);
-  }
-
-  function tryEdit(id) {
-    $("#tombolEdit" + id).html('<i class="fas fa-spinner fa-pulse"></i>')
-    $("#idUser").val(id)
-    $.ajax({
-      url: '<?= base_url() ?>data_karyawan/edit_id',
-      method: 'post',
-      data: "target=hrd_user&id=" + id,
-      dataType: 'json',
-      success: function(data) {
-        $("#modalEdit").modal('show')
-        $("#status").val(data.status)
-        $("#tgl_sudah_dilayani").val(data.tgl_sudah_dilayani)
-        console.log(data)
-        $("#edit" + id).html('<i class="fa fa-edit"></i>')
-      }
-    });
-  }
-
-  function edit() {
-    $("#tombolEdit").html('<i class="fas fa-spinner fa-pulse"></i> Memproses..')
-    var status = $("#status").val()
-    var tgl_sudah_dilayani = $("#tgl_sudah_dilayani").val()
-    var id = $("#idUser").val()
-    $.ajax({
-      url: '<?= base_url() ?>pendaftaran/edit',
-      method: 'post',
-      data: {
-        id: id,
-        status: status,
-        tgl_sudah_dilayani: tgl_sudah_dilayani
-      },
-      dataType: 'json',
-      success: function(data) {
-        if (data == "") {
-          $("#idUser").val("")
-          $("#status").val("")
-          $("#tgl_sudah_dilayani").val("")
-        } else {
-          $('#pesanErrorEdit').html(data)
-        }
-        $("#modalEdit").modal('hide');
-        tampilkan();
-        $("#tombolEdit").html('Edit')
-      }
-    });
   }
 
   function tryTambah() {
@@ -1899,520 +622,6 @@
     });
   }
 
-  function tryView(id) {
-    $("#tombolView" + id).html('<i class="fas fa-spinner fa-pulse"></i>')
-    $("#idUser").val(id)
-    $.ajax({
-      url: '<?= base_url() ?>pendaftaran/edit_id',
-      method: 'post',
-      data: "target=swab_syamrabu&id=" + id,
-      dataType: 'json',
-      success: function(data) {
-        $("#modalView").modal('show')
-        $("#riwayat_demam").val(data.riwayat_demam)
-        $("#nama").val(data.nama)
-        $("#jenis_swab").val(data.jenis_swab)
-        $("#jk").val(data.jk)
-        $("#nik").val(data.nik)
-        $("#nama_ortu").val(data.nama_ortu)
-        $("#ttl").val(data.ttl)
-        $("#umur").val(data.umur)
-        $("#pekerjaan").val(data.pekerjaan)
-        $("#jalan").val(data.jalan)
-        $("#rt").val(data.rt)
-        $("#desa").val(data.desa)
-        $("#kec").val(data.kec)
-        $("#kab").val(data.kab)
-        $("#no_hp").val(data.no_hp)
-        $("#derajat_demam").val(data.derajat_demam)
-        $("#riwayat_batuk").val(data.riwayat_batuk)
-        $("#riwayat_pilek").val(data.riwayat_pilek)
-        $("#riwayat_sakit_tenggorokan").val(data.riwayat_sakit_tenggorokan)
-        $("#riwayat_sakit_kepala").val(data.riwayat_sakit_kepala)
-        $("#lemah").val(data.lemah)
-        $("#nyeri_otot").val(data.nyeri_otot)
-        $("#mual").val(data.mual)
-        $("#abdomen").val(data.abdomen)
-        $("#diare").val(data.diare)
-        $("#hamil").val(data.hamil)
-        $("#diabetes").val(data.diabetes)
-        $("#jantung").val(data.jantung)
-        $("#hipertensi").val(data.hipertensi)
-        $("#keganasan").val(data.keganasan)
-        $("#gangguan_imunologi").val(data.gangguan_imunologi)
-        $("#gagal_ginjal").val(data.gagal_ginjal)
-        $("#gangguan_hati").val(data.gangguan_hati)
-        $("#ppok").val(data.ppok)
-        $("#kondisi_penyerta_lain").val(data.kondisi_penyerta_lain)
-        $("#pneumonia").val(data.pneumonia)
-        $("#ards").val(data.ards)
-        $("#diagnosis_lain").val(data.diagnosis_lain)
-        $("#etiologi").val(data.etiologi)
-        $("#diagnosis_pernafasan_lain").val(data.diagnosis_pernafasan_lain)
-        $("#rawat_rs").val(data.rawat_rs)
-        $("#rs_terakhir").val(data.rs_terakhir)
-        $("#tgl_masuk_rs").val(data.tgl_masuk_rs)
-        $("#rawat_icu").val(data.rawat_icu)
-        $("#tindakan_intubasi").val(data.tindakan_intubasi)
-        $("#penggunaan_emco").val(data.penggunaan_emco)
-        $("#rs_sebelumnya").val(data.rs_sebelumnya)
-        $("#status_pasien_terakhir").val(data.status_pasien_terakhir)
-        $("#tgl_meninggal").val(data.tgl_meninggal)
-        $("#riwayat_luar_negeri").val(data.riwayat_luar_negeri)
-        $("#negara_1").val(data.negara_1)
-        $("#kota_1").val(data.kota_1)
-        $("#tgl_negara_1").val(data.tgl_negara_1)
-        $("#tgl_tiba_negara_1").val(data.tgl_tiba_negara_1)
-        $("#negara_2").val(data.negara_2)
-        $("#kota_2").val(data.kota_2)
-        $("#tgl_negara_2").val(data.tgl_negara_2)
-        $("#tgl_tiba_negara_2").val(data.tgl_tiba_negara_2)
-        $("#riwayat_transmisi_lokal").val(data.riwayat_transmisi_lokal)
-        $("#provinsi_transmisi_1").val(data.provinsi_transmisi_1)
-        $("#kota_transmisi_1").val(data.kota_transmisi_1)
-        $("#tgl_transmisi_1").val(data.tgl_transmisi_1)
-        $("#tgl_tiba_transmisi_1").val(data.tgl_tiba_transmisi_1)
-        $("#provinsi_transmisi_2").val(data.provinsi_transmisi_2)
-        $("#kota_transmisi_2").val(data.kota_transmisi_2)
-        $("#tgl_transmisi_2").val(data.tgl_transmisi_2)
-        $("#tgl_tiba_transmisi_2").val(data.tgl_tiba_transmisi_2)
-        $("#riwayat_ketransmisi_lokal").val(data.riwayat_ketransmisi_lokal)
-        $("#provinsi_ketransmisi").val(data.provinsi_ketransmisi)
-        $("#kota_ketransmisi").val(data.kota_ketransmisi)
-        $("#riwayat_kontak_suspek").val(data.riwayat_kontak_suspek)
-        $("#nama_suspek_1").val(data.nama_suspek_1)
-        $("#alamat_suspek_1").val(data.alamat_suspek_1)
-        $("#hubungan_suspek_1").val(data.hubungan_suspek_1)
-        $("#tgl_kontak_suspek_1").val(data.tgl_kontak_suspek_1)
-        $("#tgl_terakhir_kontak_suspek_1").val(data.tgl_terakhir_kontak_suspek_1)
-        $("#riwayat_kontak_konfirm").val(data.riwayat_kontak_konfirm)
-        $("#nama_konfirm_1").val(data.nama_konfirm_1)
-        $("#alamat_konfirm_1").val(data.alamat_konfirm_1)
-        $("#hubungan_konfirm_1").val(data.hubungan_konfirm_1)
-        $("#tgl_kontak_konfirm_1").val(data.tgl_kontak_konfirm_1)
-        $("#tgl_terakhir_kontak_konfirm_1").val(data.tgl_terakhir_kontak_konfirm_1)
-        $("#ispa").val(data.ispa)
-        $("#jenis_hewan_peliharaan").val(data.jenis_hewan_peliharaan)
-        $("#petugas_kesehatan").val(data.petugas_kesehatan)
-        $("#apd").val(data.apd)
-        $("#aerosol").val(data.aerosol)
-        $("#sebutkan_aerosol").val(data.sebutkan_aerosol)
-        $("#nama_kasus_1").val(data.nama_kasus_1)
-        $("#umur_kasus_1").val(data.umur_kasus_1)
-        $("#jk_kasus_1").val(data.jk_kasus_1)
-        $("#hubungan_kasus_1").val(data.hubungan_kasus_1)
-        $("#alamat_kasus_1").val(data.alamat_kasus_1)
-        $("#hp_kasus_1").val(data.hp_kasus_1)
-        $("#aktifitas_kasus_1").val(data.aktifitas_kasus_1)
-        $("#nama_kasus_2").val(data.nama_kasus_2)
-        $("#umur_kasus_2").val(data.umur_kasus_2)
-        $("#jk_kasus_2").val(data.jk_kasus_2)
-        $("#hubungan_kasus_2").val(data.hubungan_kasus_2)
-        $("#alamat_kasus_2").val(data.alamat_kasus_2)
-        $("#hp_kasus_2").val(data.hp_kasus_2)
-        $("#aktifitas_kasus_2").val(data.aktifitas_kasus_2)
-        $("#nama_kasus_3").val(data.nama_kasus_3)
-        $("#umur_kasus_3").val(data.umur_kasus_3)
-        $("#jk_kasus_3").val(data.jk_kasus_3)
-        $("#hubungan_kasus_3").val(data.hubungan_kasus_3)
-        $("#alamat_kasus_3").val(data.alamat_kasus_3)
-        $("#hp_kasus_3").val(data.hp_kasus_3)
-        $("#aktifitas_kasus_3").val(data.aktifitas_kasus_3)
-        $("#nama_kasus_4").val(data.nama_kasus_4)
-        $("#umur_kasus_4").val(data.umur_kasus_4)
-        $("#jk_kasus_4").val(data.jk_kasus_4)
-        $("#hubungan_kasus_4").val(data.hubungan_kasus_4)
-        $("#alamat_kasus_4").val(data.alamat_kasus_4)
-        $("#hp_kasus_4").val(data.hp_kasus_4)
-        $("#aktifitas_kasus_4").val(data.aktifitas_kasus_4)
-        $("#vaksin1").val(data.vaksin1)
-        $("#vaksin2").val(data.vaksin2)
-        $("#booster").val(data.booster)
-        console.log(data)
-        $("#view" + id).html('<i class="fa fa-edit"></i>')
-      }
-    });
-  }
-
-  function view() {
-    $("#tombolView").html('<i class="fas fa-spinner fa-pulse"></i> Memproses..')
-    var riwayat_demam = $("#riwayat_demam").val()
-    var nama = $("#nama").val()
-    var jenis_awab = $("#jenis_swab").val()
-    var nik = $("#nik").val()
-    var nama_ortu = $("#nama_ortu").val()
-    var ttl = $("#ttl").val()
-    var umur = $("#umur").val()
-    var jk = $("#jk").val()
-    var pekerjaan = $("#pekerjaan").val()
-    var jalan = $("#jalan").val()
-    var rt = $("#rt").val()
-    var desa = $("#desa").val()
-    var kec = $("#kec").val()
-    var kab = $("#kab").val()
-    var no_hp = $("#no_hp").val()
-    var derajat_demam = $("#derajat_demam").val()
-    var riwayat_batuk = $("#riwayat_batuk").val()
-    var riwayat_pilek = $("#riwayat_pilek").val()
-    var riwayat_sakit_tenggorokan = $("#riwayat_sakit_tenggorokan").val()
-    var riwayat_sakit_kepala = $("#riwayat_sakit_kepala").val()
-    var lemah = $("#lemah").val()
-    var nyeri_otot = $("#nyeri_otot").val()
-    var mual = $("#mual").val()
-    var abdomen = $("#abdomen").val()
-    var diare = $("#diare").val()
-    var hamil = $("#hamil").val()
-    var diabetes = $("#diabetes").val()
-    var jantung = $("#jantung").val()
-    var hipertensi = $("#hipertensi").val()
-    var keganasan = $("#keganasan").val()
-    var gangguan_imunologi = $("#gangguan_imunologi").val()
-    var gagal_ginjal = $("#gagal_ginjal").val()
-    var gangguan_hati = $("#gangguan_hati").val()
-    var ppok = $("#ppok").val()
-    var kondisi_penyerta_lain = $("#kondisi_penyerta_lain").val()
-    var pneumonia = $("#pneumonia").val()
-    var ards = $("#ards").val()
-    var diagnosis_lain = $("#diagnosis_lain").val()
-    var etiologi = $("#etiologi").val()
-    var diagnosis_pernafasan_lain = $("#diagnosis_pernafasan_lain").val()
-    var rawat_rs = $("#rawat_rs").val()
-    var rs_terakhir = $("#rs_terakhir").val()
-    var tgl_masuk_rs = $("#tgl_masuk_rs").val()
-    var rawat_icu = $("#rawat_icu").val()
-    var tindakan_intubasi = $("#tindakan_intubasi").val()
-    var penggunaan_emco = $("#penggunaan_emco").val()
-    var rs_sebelumnya = $("#rs_sebelumnya").val()
-    var status_pasien_terakhir = $("#status_pasien_terakhir").val()
-    var tgl_meninggal = $("#tgl_meninggal").val()
-    var riwayat_luar_negeri = $("#riwayat_luar_negeri").val()
-    var negara_1 = $("#negara_1").val()
-    var kota_1 = $("#kota_1").val()
-    var tgl_negara_1 = $("#tgl_negara_1").val()
-    var tgl_tiba_negara_1 = $("#tgl_tiba_negara_1").val()
-    var negara_2 = $("#negara_2").val()
-    var kota_2 = $("#kota_2").val()
-    var tgl_negara_2 = $("#tgl_negara_2").val()
-    var tgl_tiba_negara_2 = $("#tgl_tiba_negara_2").val()
-    var riwayat_transmisi_lokal = $("#riwayat_transmisi_lokal").val()
-    var provinsi_transmisi_1 = $("#provinsi_transmisi_1").val()
-    var kota_transmisi_1 = $("#kota_transmisi_1").val()
-    var tgl_transmisi_1 = $("#tgl_transmisi_1").val()
-    var tgl_tiba_transmisi_1 = $("#tgl_tiba_transmisi_1").val()
-    var provinsi_transmisi_2 = $("#provinsi_transmisi_2").val()
-    var kota_transmisi_2 = $("#kota_transmisi_2").val()
-    var tgl_transmisi_2 = $("#tgl_transmisi_2").val()
-    var tgl_tiba_transmisi_2 = $("#tgl_tiba_transmisi_2").val()
-    var riwayat_ketransmisi_lokal = $("#riwayat_ketransmisi_lokal").val()
-    var provinsi_ketransmisi = $("#provinsi_ketransmisi").val()
-    var kota_ketransmisi = $("#kota_ketransmisi").val()
-    var riwayat_kontak_suspek = $("#riwayat_kontak_suspek").val()
-    var nama_suspek_1 = $("#nama_suspek_1").val()
-    var alamat_suspek_1 = $("#alamat_suspek_1").val()
-    var hubungan_suspek_1 = $("#hubungan_suspek_1").val()
-    var tgl_kontak_suspek_1 = $("#tgl_kontak_suspek_1").val()
-    var tgl_terakhir_kontak_suspek_1 = $("#tgl_terakhir_kontak_suspek_1").val()
-    var riwayat_kontak_konfirm = $("#riwayat_kontak_konfirm").val()
-    var nama_konfirm_1 = $("#nama_konfirm_1").val()
-    var alamat_konfirm_1 = $("#alamat_konfirm_1").val()
-    var hubungan_konfirm_1 = $("#hubungan_konfirm_1").val()
-    var tgl_kontak_konfirm_1 = $("#tgl_kontak_konfirm_1").val()
-    var tgl_terakhir_kontak_konfirm_1 = $("#tgl_terakhir_kontak_konfirm_1").val()
-    var hewan_peliharaan = $("#hewan_peliharaan").val()
-    var jenis_hewan_peliharaan = $("#jenis_hewan_peliharaan").val()
-    var petugas_kesehatan = $("#petugas_kesehatan").val()
-    var apd = $("#apd").val()
-    var aerosol = $("#aerosol").val()
-    var sebutkan_aerosol = $("#sebutkan_aerosol").val()
-    var nama_kasus_1 = $("#nama_kasus_1").val()
-    var umur_kasus_1 = $("#umur_kasus_1").val()
-    var jk_kasus_1 = $("#jk_kasus_1").val()
-    var hubungan_kasus_1 = $("#hubungan_kasus_1").val()
-    var alamat_kasus_1 = $("#alamat_kasus_1").val()
-    var hp_kasus_1 = $("#hp_kasus_1").val()
-    var aktifitas_kasus_1 = $("#aktifitas_kasus_1").val()
-    var nama_kasus_2 = $("#nama_kasus_2").val()
-    var umur_kasus_2 = $("#umur_kasus_2").val()
-    var jk_kasus_2 = $("#jk_kasus_2").val()
-    var hubungan_kasus_2 = $("#hubungan_kasus_2").val()
-    var alamat_kasus_2 = $("#alamat_kasus_2").val()
-    var hp_kasus_2 = $("#hp_kasus_2").val()
-    var aktifitas_kasus_2 = $("#aktifitas_kasus_2").val()
-    var nama_kasus_3 = $("#nama_kasus_3").val()
-    var umur_kasus_3 = $("#umur_kasus_3").val()
-    var jk_kasus_3 = $("#jk_kasus_3").val()
-    var hubungan_kasus_3 = $("#hubungan_kasus_3").val()
-    var alamat_kasus_3 = $("#alamat_kasus_3").val()
-    var hp_kasus_3 = $("#hp_kasus_3").val()
-    var aktifitas_kasus_3 = $("#aktifitas_kasus_3").val()
-    var nama_kasus_4 = $("#nama_kasus_4").val()
-    var umur_kasus_4 = $("#umur_kasus_4").val()
-    var jk_kasus_4 = $("#jk_kasus_4").val()
-    var hubungan_kasus_4 = $("#hubungan_kasus_4").val()
-    var alamat_kasus_4 = $("#alamat_kasus_4").val()
-    var hp_kasus_4 = $("#hp_kasus_4").val()
-    var aktifitas_kasus_4 = $("#aktifitas_kasus_4").val()
-    var vaksin1 = $("#vaksin1").val()
-    var vaksin2 = $("#vaksin2").val()
-    var booster = $("#booster").val()
-    var id = $("#idUser").val()
-    $.ajax({
-      url: '<?= base_url() ?>pendaftaran/edit',
-      method: 'post',
-      data: {
-        id: id,
-        riwayat_demam: riwayat_demam,
-        nama: nama,
-        nik: nik,
-        nama_ortu: nama_ortu,
-        ttl: ttl,
-        umur: umur,
-        jk: jk,
-        pekerjaan: pekerjaan,
-        jalan: jalan,
-        rt: rt,
-        desa: desa,
-        kec: kec,
-        kab: kab,
-        no_hp: no_hp,
-        derajat_demam: derajat_demam,
-        riwayat_batuk: riwayat_batuk,
-        riwayat_pilek: riwayat_pilek,
-        riwayat_sakit_tenggorokan: riwayat_sakit_tenggorokan,
-        riwayat_sakit_kepala: riwayat_sakit_kepala,
-        lemah: lemah,
-        nyeri_otot: nyeri_otot,
-        mual: mual,
-        abdomen: abdomen,
-        diare: diare,
-        hamil: hamil,
-        diabetes: diabetes,
-        jantung: jantung,
-        hipertensi: hipertensi,
-        keganasan: keganasan,
-        gangguan_imunologi: gangguan_imunologi,
-        gagal_ginjal: gagal_ginjal,
-        gangguan_hati: gangguan_hati,
-        ppok: ppok,
-        kondisi_penyerta_lain: kondisi_penyerta_lain,
-        pneumonia: pneumonia,
-        ards: ards,
-        diagnosis_lain: diagnosis_lain,
-        etiologi: etiologi,
-        diagnosis_pernafasan_lain: diagnosis_pernafasan_lain,
-        rawat_rs: rawat_rs,
-        rs_terakhir: rs_terakhir,
-        tgl_masuk_rs: tgl_masuk_rs,
-        rawat_icu: rawat_icu,
-        tindakan_intubasi: tindakan_intubasi,
-        penggunaan_emco: penggunaan_emco,
-        rs_sebelumnya: rs_sebelumnya,
-        status_pasien_terakhir: status_pasien_terakhir,
-        tgl_meninggal: tgl_meninggal,
-        riwayat_luar_negeri: riwayat_luar_negeri,
-        negara_1: negara_1,
-        kota_1: kota_1,
-        tgl_negara_1: tgl_negara_1,
-        tgl_tiba_negara_1: tgl_tiba_negara_1,
-        negara_2: negara_2,
-        kota_2: kota_2,
-        tgl_negara_2: tgl_negara_2,
-        tgl_tiba_negara_2: tgl_tiba_negara_2,
-        riwayat_transmisi_lokal: riwayat_transmisi_lokal,
-        provinsi_transmisi_1: provinsi_transmisi_1,
-        kota_transmisi_1: kota_transmisi_1,
-        tgl_transmisi_1: tgl_transmisi_1,
-        tgl_tiba_transmisi_1: tgl_tiba_transmisi_1,
-        provinsi_transmisi_2: provinsi_transmisi_2,
-        kota_transmisi_2: kota_transmisi_2,
-        tgl_transmisi_2: tgl_transmisi_2,
-        tgl_tiba_transmisi_2: tgl_tiba_transmisi_2,
-        riwayat_ketransmisi_lokal: riwayat_ketransmisi_lokal,
-        provinsi_ketransmisi: provinsi_ketransmisi,
-        kota_ketransmisi: kota_ketransmisi,
-        riwayat_kontak_suspek: riwayat_kontak_suspek,
-        nama_suspek_1: nama_suspek_1,
-        alamat_suspek_1: alamat_suspek_1,
-        hubungan_suspek_1: hubungan_suspek_1,
-        tgl_kontak_suspek_1: tgl_kontak_suspek_1,
-        tgl_terakhir_kontak_suspek_1: tgl_terakhir_kontak_suspek_1,
-        riwayat_kontak_konfirm: riwayat_kontak_konfirm,
-        nama_konfirm_1: nama_konfirm_1,
-        alamat_konfirm_1: alamat_konfirm_1,
-        hubungan_konfirm_1: hubungan_konfirm_1,
-        tgl_kontak_konfirm_1: tgl_kontak_konfirm_1,
-        tgl_terakhir_kontak_konfirm_1: tgl_terakhir_kontak_konfirm_1,
-        hewan_peliharaan: hewan_peliharaan,
-        jenis_hewan_peliharaan: jenis_hewan_peliharaan,
-        petugas_kesehatan: petugas_kesehatan,
-        apd: apd,
-        aerosol: aerosol,
-        sebutkan_aerosol: sebutkan_aerosol,
-        nama_kasus_1: nama_kasus_1,
-        umur_kasus_1: umur_kasus_1,
-        jk_kasus_1: jk_kasus_1,
-        hubungan_kasus_1: hubungan_kasus_1,
-        alamat_kasus_1: alamat_kasus_1,
-        hp_kasus_1: hp_kasus_1,
-        aktifitas_kasus_1: aktifitas_kasus_1,
-        nama_kasus_2: nama_kasus_2,
-        umur_kasus_2: umur_kasus_2,
-        jk_kasus_2: jk_kasus_2,
-        hubungan_kasus_2: hubungan_kasus_2,
-        alamat_kasus_2: alamat_kasus_2,
-        hp_kasus_2: hp_kasus_2,
-        aktifitas_kasus_2: aktifitas_kasus_2,
-        nama_kasus_3: nama_kasus_3,
-        umur_kasus_3: umur_kasus_3,
-        jk_kasus_3: jk_kasus_3,
-        hubungan_kasus_3: hubungan_kasus_3,
-        alamat_kasus_3: alamat_kasus_3,
-        hp_kasus_3: hp_kasus_3,
-        aktifitas_kasus_3: aktifitas_kasus_3,
-        nama_kasus_4: nama_kasus_4,
-        umur_kasus_4: umur_kasus_4,
-        jk_kasus_4: jk_kasus_4,
-        hubungan_kasus_4: hubungan_kasus_4,
-        alamat_kasus_4: alamat_kasus_4,
-        hp_kasus_4: hp_kasus_4,
-        aktifitas_kasus_4: aktifitas_kasus_4,
-        vaksin1: vaksin1,
-        vaksin2: vaksin2,
-        booster: booster
-      },
-      dataType: 'json',
-      success: function(data) {
-        if (data == "") {
-          $("#idUser").val("")
-          $("#riwayat_demam").val("")
-          $("#nama").val("")
-          $("#jenis_swab").val("")
-          $("#nik").val("")
-          $("#nama_ortu").val("")
-          $("#ttl").val("")
-          $("#umur").val("")
-          $("#jk").val("")
-          $("#pekerjaan").val("")
-          $("#jalan").val("")
-          $("#rt").val("")
-          $("#desa").val("")
-          $("#kec").val("")
-          $("#kab").val("")
-          $("#no_hp").val("")
-          $("#derajat_demam").val("")
-          $("#riwayat_batuk").val("")
-          $("#riwayat_pilek").val("")
-          $("#riwayat_sakit_tenggorokan").val("")
-          $("#riwayat_sakit_kepala").val("")
-          $("#lemah").val("")
-          $("#nyeri_otot").val("")
-          $("#mual").val("")
-          $("#abdomen").val("")
-          $("#diare").val("")
-          $("#hamil").val("")
-          $("#diabetes").val("")
-          $("#jantung").val("")
-          $("#hipertensi").val("")
-          $("#keganasan").val("")
-          $("#gangguan_imunologi").val("")
-          $("#gagal_ginjal").val("")
-          $("#gangguan_hati").val("")
-          $("#ppok").val("")
-          $("#kondisi_penyerta_lain").val("")
-          $("#pneumonia").val("")
-          $("#ards").val("")
-          $("#diagnosis_lain").val("")
-          $("#etiologi").val("")
-          $("#diagnosis_pernafasan_lain").val("")
-          $("#rawat_rs").val("")
-          $("#rs_terakhir").val("")
-          $("#tgl_masuk_rs").val("")
-          $("#rawat_icu").val("")
-          $("#tindakan_intubasi").val("")
-          $("#penggunaan_emco").val("")
-          $("#rs_sebelumnya").val("")
-          $("#status_pasien_terakhir").val("")
-          $("#tgl_meninggal").val("")
-          $("#riwayat_luar_negeri").val("")
-          $("#negara_1").val("")
-          $("#kota_1").val("")
-          $("#tgl_negara_1").val("")
-          $("#tgl_tiba_negara_1").val("")
-          $("#negara_2").val("")
-          $("#kota_2").val("")
-          $("#tgl_negara_2").val("")
-          $("#tgl_tiba_negara_2").val("")
-          $("#riwayat_transmisi_lokal").val("")
-          $("#provinsi_transmisi_1").val("")
-          $("#kota_transmisi_1").val("")
-          $("#tgl_transmisi_1").val("")
-          $("#tgl_tiba_transmisi_1").val("")
-          $("#provinsi_transmisi_2").val("")
-          $("#kota_transmisi_2").val("")
-          $("#tgl_transmisi_2").val("")
-          $("#tgl_tiba_transmisi_2").val("")
-          $("#riwayat_ketransmisi_lokal").val("")
-          $("#provinsi_ketransmisi").val("")
-          $("#kota_ketransmisi").val("")
-          $("#riwayat_kontak_suspek").val("")
-          $("#nama_suspek_1").val("")
-          $("#alamat_suspek_1").val("")
-          $("#hubungan_suspek_1").val("")
-          $("#tgl_kontak_suspek_1").val("")
-          $("#tgl_terakhir_kontak_suspek_1").val("")
-          $("#riwayat_kontak_konfirm").val("")
-          $("#nama_konfirm_1").val("")
-          $("#alamat_konfirm_1").val("")
-          $("#hubungan_konfirm_1").val("")
-          $("#tgl_kontak_konfirm_1").val("")
-          $("#tgl_terakhir_kontak_konfirm_1").val("")
-          $("#hewan_peliharaan").val("")
-          $("#jenis_hewan_peliharaan").val("")
-          $("#petugas_kesehatan").val("")
-          $("#apd").val("")
-          $("#aerosol").val("")
-          $("#sebutkan_aerosol").val("")
-          $("#nama_kasus_1").val("")
-          $("#umur_kasus_1").val("")
-          $("#jk_kasus_1").val("")
-          $("#hubungan_kasus_1").val("")
-          $("#alamat_kasus_1").val("")
-          $("#hp_kasus_1").val("")
-          $("#aktifitas_kasus_1").val("")
-          $("#nama_kasus_2").val("")
-          $("#umur_kasus_2").val("")
-          $("#jk_kasus_2").val("")
-          $("#hubungan_kasus_2").val("")
-          $("#alamat_kasus_2").val("")
-          $("#hp_kasus_2").val("")
-          $("#aktifitas_kasus_2").val("")
-          $("#nama_kasus_3").val("")
-          $("#umur_kasus_3").val("")
-          $("#jk_kasus_3").val("")
-          $("#hubungan_kasus_3").val("")
-          $("#alamat_kasus_3").val("")
-          $("#hp_kasus_3").val("")
-          $("#aktifitas_kasus_3").val("")
-          $("#nama_kasus_4").val("")
-          $("#umur_kasus_4").val("")
-          $("#jk_kasus_4").val("")
-          $("#hubungan_kasus_4").val("")
-          $("#alamat_kasus_4").val("")
-          $("#hp_kasus_4").val("")
-          $("#aktifitas_kasus_4").val("")
-          $("#vaksin1").val("")
-          $("#vaksin2").val("")
-          $("#booster").val("")
-        } else {
-          $('#pesanErrorView').html(data)
-        }
-        $("#modalView").modal('hide');
-        tampilkan();
-        $("#tombolView").html('View')
-      }
-    });
-  }
-
   function tryHapus(id) {
     $("#hapus" + id).html('<i class="fas fa-spinner fa-pulse"></i>')
     $.ajax({
@@ -2444,6 +653,270 @@
         tampilkan()
         $("#modalHapus").modal('hide')
         $("#hapus").html('Hapus')
+      }
+    });
+  }
+
+  function tryEdit(id) {
+    $("#tombolEdit" + id).html('<i class="fas fa-spinner fa-pulse"></i>')
+    $("#idUser").val(id)
+    $.ajax({
+      url: '<?= base_url() ?>data_karyawan/edit_id',
+      method: 'post',
+      data: "target=hrd_user&id=" + id,
+      dataType: 'json',
+      success: function(data) {
+        $("#modalEdit").modal('show')
+        $("#foto").val(data.foto)
+        $("#nama").val(data.nama)
+        $("#nik").val(data.nik)
+        $("#no_hp").val(data.no_hp)
+        $("#email").val(data.email)
+        $("#alamat").val(data.alamat)
+        $("#prov").val(data.prov)
+        $("#kab").val(data.kab)
+        $("#kec").val(data.kec)
+        $("#kelu").val(data.kelu)
+        $("#rt_rw").val(data.rt_rw)
+        $("#kode_pos").val(data.kode_pos)
+        $("#tempat_lahir").val(data.tempat_lahir)
+        $("#tanggal_lahir").val(data.tanggal_lahir)
+        $("#jk").val(data.jk)
+        $("#agama").val(data.agama)
+        $("#status_pernikahan").val(data.status_pernikahan)
+        $("#goldar").val(data.goldar)
+        $("#suku").val(data.suku)
+        $("#sd").val(data.sd)
+        $("#no_sd").val(data.no_sd)
+        $("#file_sd").val(data.file_sd)
+        $("#smp").val(data.smp)
+        $("#no_smp").val(data.no_smp)
+        $("#file_smp").val(data.file_smp)
+        $("#sma").val(data.sma)
+        $("#no_sma").val(data.no_sma)
+        $("#file_sma").val(data.file_sma)
+        $("#s1").val(data.s1)
+        $("#no_s1").val(data.no_s1)
+        $("#file_s1").val(data.file_s1)
+        $("#s2").val(data.s2)
+        $("#no_s2").val(data.no_s2)
+        $("#file_s2").val(data.file_s2)
+        $("#s3").val(data.s3)
+        $("#no_s3").val(data.no_s3)
+        $("#file_s3").val(data.file_s3)
+        $("#profesi").val(data.profesi)
+        $("#no_profesi").val(data.no_profesi)
+        $("#file_profesi").val(data.file_profesi)
+        $("#jabatan").val(data.jabatan)
+        $("#status_karyawan").val(data.status_karyawan)
+        $("#jenis_tenaga").val(data.jenis_tenaga)
+        $("#jenis_detail_tenaga").val(data.jenis_detail_tenaga)
+        $("#jenis_pendidikan").val(data.jenis_pendidikan)
+        $("#golongan").val(data.golongan)
+        $("#pensiun").val(data.pensiun)
+        $("#gaji").val(data.gaji)
+        $("#no_sk").val(data.no_sk)
+        $("#file_sk").val(data.file_sk)
+        $("#file_penempatan").val(data.file_penempatan)
+        $("#no_str").val(data.no_str)
+        $("#file_str").val(data.file_str)
+        $("#no_sip").val(data.no_sip)
+        $("#file_sip").val(data.file_sip)
+        $("#masa_sip").val(data.masa_sip)
+        // console.log(data)
+        $("#edit" + id).html('<i class="fa fa-edit"></i>')
+      }
+    });
+  }
+
+  function edit() {
+    $("#tombolEdit").html('<i class="fas fa-spinner fa-pulse"></i> Memproses..')
+    var foto = $("#foto").val()
+    var nama = $("#nama").val()
+    var nik = $("#nik").val()
+    var no_hp = $("#no_hp").val()
+    var email = $("#email").val()
+    var alamat = $("#alamat").val()
+    var prov = $("#prov").val()
+    var kab = $("#kab").val()
+    var kec = $("#kec").val()
+    var kelu = $("#kelu").val()
+    var rt_rw = $("#rt_rw").val()
+    var kode_pos = $("#kode_pos").val()
+    var tempat_lahir = $("#tempat_lahir").val()
+    var tanggal_lahir = $("#tanggal_lahir").val()
+    var jk = $("#jk").val()
+    var agama = $("#agama").val()
+    var status_pernikahan = $("#status_pernikahan").val()
+    var goldar = $("#goldar").val()
+    var suku = $("#suku").val()
+    var sd = $("#sd").val()
+    var no_sd = $("#no_sd").val()
+    var file_sd = $("#file_sd").val()
+    var smp = $("#smp").val()
+    var no_smp = $("#no_smp").val()
+    var file_smp = $("#file_smp").val()
+    var sma = $("#sma").val()
+    var no_sma = $("#no_sma").val()
+    var file_sma = $("#file_sma").val()
+    var s1 = $("#s1").val()
+    var no_s1 = $("#no_s1").val()
+    var file_s1 = $("#file_s1").val()
+    var s2 = $("#s2").val()
+    var no_s2 = $("#no_s2").val()
+    var file_s2 = $("#file_s2").val()
+    var s3 = $("#s3").val()
+    var no_s3 = $("#no_s3").val()
+    var file_s3 = $("#file_s3").val()
+    var profesi = $("#profesi").val()
+    var no_profesi = $("#no_profesi").val()
+    var file_profesi = $("#file_profesi").val()
+    var jabatan = $("#jabatan").val()
+    var status_karyawan = $("#status_karyawan").val()
+    var jenis_tenaga = $("#jenis_tenaga").val()
+    var jenis_detail_tenaga = $("#jenis_detail_tenaga").val()
+    var jenis_pendidikan = $("#jenis_pendidikan").val()
+    var golongan = $("#golongan").val()
+    var pensiun = $("#pensiun").val()
+    var gaji = $("#gaji").val()
+    var no_sk = $("#no_sk").val()
+    var file_sk = $("#file_sk").val()
+    var file_penempatan = $("#file_penempatan").val()
+    var no_str = $("#no_str").val()
+    var file_str = $("#file_str").val()
+    var no_sip = $("#no_sip").val()
+    var file_sip = $("#file_sip").val()
+    var masa_sip = $("#masa_sip").val()
+    var id = $("#idUser").val()
+    $.ajax({
+      url: '<?= base_url() ?>data_karyawan/edit',
+      method: 'post',
+      data: {
+        id: id,
+        foto: foto,
+        nama: nama,
+        nik: nik,
+        no_hp: no_hp,
+        email: email,
+        alamat: alamat,
+        prov: prov,
+        kab: kab,
+        kec: kec,
+        kelu: kelu,
+        rt_rw: rt_rw,
+        kode_pos: kode_pos,
+        tempat_lahir: tempat_lahir,
+        tanggal_lahir: tanggal_lahir,
+        jk: jk,
+        agama: agama,
+        status_pernikahan: status_pernikahan,
+        goldar: goldar,
+        suku: suku,
+        sd: sd,
+        no_sd: no_sd,
+        file_sd: file_sd,
+        smp: smp,
+        no_smp: no_smp,
+        file_smp: file_smp,
+        sma: sma,
+        no_sma: no_sma,
+        file_sma: file_sma,
+        s1: s1,
+        no_s1: no_s1,
+        file_s1: file_s1,
+        s2: s2,
+        no_s2: no_s2,
+        file_s2: file_s2,
+        s3: s3,
+        no_s3: no_s3,
+        file_s3: file_s3,
+        profesi: profesi,
+        no_profesi: no_profesi,
+        file_profesi: file_profesi,
+        jabatan: jabatan,
+        status_karyawan: status_karyawan,
+        jenis_tenaga: jenis_tenaga,
+        jenis_detail_tenaga: jenis_detail_tenaga,
+        jenis_pendidikan: jenis_pendidikan,
+        golongan: golongan,
+        pensiun: pensiun,
+        gaji: gaji,
+        no_sk: no_sk,
+        file_sk: file_sk,
+        file_penempatan: file_penempatan,
+        no_str: no_str,
+        file_str: file_str,
+        no_sip: no_sip,
+        file_sip: file_sip,
+        masa_sip: masa_sip
+      },
+      dataType: 'json',
+      success: function(data) {
+        if (data == "") {
+			// $("#idUser").val("")
+			// $("#foto").val("")
+			// $("#nama").val("")
+			// $("#nik").val("")
+			// $("#no_hp").val("")
+			// $("#email").val("")
+			// $("#alamat").val("")
+			// $("#prov").val("")
+			// $("#kab").val("")
+			// $("#kec").val("")
+			// $("#kelu").val("")
+			// $("#rt_rw").val("")
+			// $("#kode_pos").val("")
+			// $("#tempat_lahir").val("")
+			// $("#tanggal_lahir").val("")
+			// $("#jk").val("")
+			// $("#agama").val("")
+			// $("#status_pernikahan").val("")
+			// $("#goldar").val("")
+			// $("#suku").val("")
+			// $("#sd").val("")
+			// $("#no_sd").val("")
+			// $("#file_sd").val("")
+			// $("#smp").val("")
+			// $("#no_smp").val("")
+			// $("#file_smp").val("")
+			// $("#sma").val("")
+			// $("#no_sma").val("")
+			// $("#file_sma").val("")
+			// $("#s1").val("")
+			// $("#no_s1").val("")
+			// $("#file_s1").val("")
+			// $("#s2").val("")
+			// $("#no_s2").val("")
+			// $("#file_s2").val("")
+			// $("#s3").val("")
+			// $("#no_s3").val("")
+			// $("#file_s3").val("")
+			// $("#profesi").val("")
+			// $("#no_profesi").val("")
+			// $("#file_profesi").val("")
+			// $("#jabatan").val("")
+			// $("#status_karyawan").val("")
+			// $("#jenis_tenaga").val("")
+			// $("#jenis_detail_tenaga").val("")
+			// $("#jenis_pendidikan").val("")
+			// $("#golongan").val("")
+			// $("#pensiun").val("")
+			// $("#gaji").val("")
+			// $("#no_sk").val("")
+			// $("#file_sk").val("")
+			// $("#file_penempatan").val("")
+			// $("#no_str").val("")
+			// $("#file_str").val("")
+			// $("#no_sip").val("")
+			// $("#file_sip").val("")
+			// $("#masa_sip").val("")
+			console.log(data)
+        } else {
+          $('#pesanErrorEdit').html(data)
+        }
+        $("#modalEdit").modal('hide');
+        tampilkan();
+        $("#tombolEdit").html('View')
       }
     });
   }

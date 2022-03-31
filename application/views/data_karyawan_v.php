@@ -180,10 +180,10 @@
 																			<label class="custom-file-label" for="customFile">Foto Harus format JPG</label>
 																		</div>
 																	</div>
-																	<!-- <div class="col-lg-4">
+																	<div class="col-lg-4">
 																		<span class="form-text text-muted">Nama</span>
-																		<input type="text" class="form-control" id="nama" placeholder="Masukkan Nama Tanpa Gelar"/>
-																	</div> -->
+																		<input type="text" class="form-control" id="editnama" placeholder="Masukkan Nama Tanpa Gelar"/>
+																	</div>
 																	<div class="col-lg-4">
 																		<span class="form-text text-muted">NIK</span>
 																		<input type="text" class="form-control" id="nik" placeholder="Masukkan NIK sesuai KTP"/>
@@ -442,8 +442,92 @@
 																		</select>
 																	</div>
 																	<div class="col-lg-4">
-																		<span class="form-text text-muted">Masukkan Jenis Pendidikan</span>
-																		<input type="text" class="form-control" id="jenis_pendidikan" placeholder="Mohon sesuaikan dengan data ketenagaan" />
+																		<span class="form-text text-muted">Pilih Jenis Pendidikan</span>
+																		<select class="form-control" id="jenis_pendidikan">
+																			<option value="Dokter Umum">Dokter Umum</option>
+																			<option value="Dokter Gigi">Dokter Gigi</option>
+																			<option value="Spesialis Anestesi">Spesialis Anestesi</option>
+																			<option value="Spesialis Bedah">Spesialis Bedah</option>
+																			<option value="Spesialis Bedah Saraf">Spesialis Bedah Saraf</option>
+																			<option value="Spesialis Orthopedi dan Traumatologi">Spesialis Orthopedi dan Traumatologi</option>
+																			<option value="Spesialis Forensik">Spesialis Forensik</option>
+																			<option value="Spesialis Jantung Pembuluh Darah">Spesialis Jantung Pembuluh Darah</option>
+																			<option value="Spesialis Kandungan">Spesialis Kandungan</option>
+																			<option value="Spesialis Kulit Kelamin">Spesialis Kulit Kelamin</option>
+																			<option value="Spesialis Anak">Spesialis Anak</option>
+																			<option value="Spesialis Mata">Spesialis Mata</option>
+																			<option value="Spesialis Penyakit Dalam">Spesialis Penyakit Dalam</option>
+																			<option value="Spesialis Paru">Spesialis Paru</option>
+																			<option value="Spesialis Radiologi">Spesialis Radiologi</option>
+																			<option value="Spesialis Syaraf">Spesialis Syaraf</option>
+																			<option value="Spesialis Urologi">Spesialis Urologi</option>
+																			<option value="Spesialis THT">USpesialis THTnit</option>
+																			<option value="Spesialis THT - KL">Spesialis THT - KL</option>
+																			<option value="Spesialis Patologi Klinik">Spesialis Patologi Klinik</option>
+																			<option value="Spesialis Patologi Anatomi">Spesialis Patologi Anatomi</option>
+																			<option value="Spesialis Fisik dan Rehabilitas">Spesialis Fisik dan Rehabilitas</option>
+																			<option value="Spesialis Kedokteran Jiwa">Spesialis Kedokteran Jiwa</option>
+																			<option value="Spesialis Emergency Medicine">Spesialis Emergency Medicine</option>
+																			<option value="Spesialis Orthodontis">Spesialis Orthodontis</option>
+																			<option value="Spesialis Periodontis">Spesialis Periodontis</option>
+																			<option value="Spesialis Konservasi">Spesialis Konservasi</option>
+																			<option value="Spesialis Bedah Mulut">Spesialis Bedah Mulut</option>
+																			<option value="Sub Spesialis Anak Konsultan">Sub Spesialis Anak Konsultan</option>
+																			<option value="Sub Spesialis Ginjal dan Hipertensi">Sub Spesialis Ginjal dan Hipertensi</option>
+																			<option value="Sub Spesialis Bedah Konsultan Bedah Anak">Sub Spesialis Bedah Konsultan Bedah Anak</option>
+																			<option value="Sub Spesialis Bedah Onkologi Konsultan">Sub Spesialis Bedah Onkologi Konsultan</option>
+																			<option value="Profesi Keperawatan">Profesi Keperawatan</option>
+																			<option value="Sarjana Keperawatan">Sarjana Keperawatan</option>
+																			<option value="Akademi Keperawatan">Akademi Keperawatan</option>
+																			<option value="SPK">SPK</option>
+																			<option value="Akper Anastesi">Akper Anastesi</option>
+																			<option value="Kebidanan">Kebidanan</option>
+																			<option value="Akademi Kebidanan">Akademi Kebidanan</option>
+																			<option value="Pasca Sarjana Psikologi">Paska Sarjana Psikologi</option>
+																			<option value="Pasca Sarjana SKM">Pasca Sarjana SKM</option>
+																			<option value="Sarjana SKM">Sarjana SKM</option>
+																			<option value="Pasca Sarjana Farmasi">Pasca Sarjana Farmasi</option>
+																			<option value="Profesi Apoteker">Profesi Apoteker</option>
+																			<option value="D-III Farmasi">D-III Farmasi</option>
+																			<option value="SMF">SMF</option>
+																			<option value="D-III Perawat Gigi">D-III Perawat Gigi</option>
+																			<option value="D-IV Teknik Elektromedik">D-IV Teknik Elektromedik</option>
+																			<option value="D-III Teknik Elektromedik">D-III Teknik Elektromedik</option>
+																			<option value="Sarjana Science">Sarjana Science</option>
+																			<option value="D-III Pranata Laboratorium Kes">D-III Pranata Laboratorium Kes</option>
+																			<option value="D-IV Pranata Laboratorium Kes">D-IV Pranata Laboratorium Kes</option>
+																			<option value="D-IV Rekam Medik">D-IV Rekam Medik</option>
+																			<option value="D-III Rekam Medik">D-III Rekam Medik</option>
+																			<option value="D-III AKL">D-III AKL</option>
+																			<option value="D-III Fisioterapi">D-III Fisioterapi</option>
+																			<option value="D-IV Fisioterapi">D-IV Fisioterapi</option>
+																			<option value="S1 Gizi">S1 Gizi</option>
+																			<option value="SPRG">SPRG</option>
+																			<option value="D-III Akupuntur">D-III Akupuntur</option>
+																			<option value="D-III Radiologi">Radiologi</option>
+																			<option value="Pasca Sarjana Manajemen">Pasca Sarjana Manajemen</option>
+																			<option value="Pasca Sarjana Manajemen Kes">Pasca Sarjana Manajemen Kes</option>
+																			<option value="Pasca Sarjana Science">Pasca Sarjana Science</option>
+																			<option value="Sarjana Psikologi">Sarjana Psikologi</option>
+																			<option value="Sarjana Sosial">Sarjana Sosial</option>
+																			<option value="Sarjana Hukum">Sarjana Hukum</option>
+																			<option value="Sarjana Ekonomi">Sarjana Ekonomi</option>
+																			<option value="Sarjana Akuntansi">Sarjana Akuntansi</option>
+																			<option value="Sarjana Komputer">Sarjana Komputer</option>
+																			<option value="Sarjana Informatika">Informatika</option>
+																			<option value="Sarjana Teknik Elektro">Sarjana Teknik Elektro</option>
+																			<option value="Sarjana Teknik Lingkungan">Sarjana Teknik Lingkungan</option>
+																			<option value="Sarjana Pendidikan">Sarjana Pendidikan</option>
+																			<option value="Sarjana Ked.Gigi">Sarjana Ked.Gigi</option>
+																			<option value="D-III Manajemen Administrasi/BPA">D-III Manajemen Administrasi/BPA</option>
+																			<option value="D-III Manajemen Informatika">D-III Manajemen Informatika</option>
+																			<option value="D-III Manajemen Akuntansi">D-III Manajemen Akuntansi</option>
+																			<option value="D-III Tkg">D-III Tkg</option>
+																			<option value="SPPH">SPPH</option>
+																			<option value="SMA/SMK">SMA/SMK</option>
+																			<option value="SMP">SMP</option>
+																			<option value="SD">SD</option>
+																		</select>
 																	</div>
 																	<div class="col-lg-4">
 																		<span class="form-text text-muted">Pangkat Golongan</span>
@@ -668,7 +752,7 @@
       success: function(data) {
         $("#modalEdit").modal('show')
         $("#foto").val(data.foto)
-        $("#nama").val(data.nama)
+        $("#editnama").val(data.nama)
         $("#nik").val(data.nik)
         $("#no_hp").val(data.no_hp)
         $("#email").val(data.email)
@@ -732,7 +816,7 @@
   function edit() {
     $("#tombolEdit").html('<i class="fas fa-spinner fa-pulse"></i> Memproses..')
     var foto = $("#foto").val()
-    var nama = $("#nama").val()
+    var nama = $("#editnama").val()
     var nik = $("#nik").val()
     var no_hp = $("#no_hp").val()
     var email = $("#email").val()

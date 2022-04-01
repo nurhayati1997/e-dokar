@@ -135,7 +135,7 @@ License: You must have a valid license purchased only from themeforest(the above
 													<i class="menu-arrow"></i>
 												</a>
 												<div class="menu-submenu menu-submenu-classic menu-submenu-left">
-                          <ul class="menu-subnav">
+                         							<ul class="menu-subnav">
 														<li class="menu-item menu-item-submenu" data-menu-toggle="hover" aria-haspopup="true">
 															<a href="<?= site_url('belum_dilayani') ?>" class="menu-link">
 																<span class="svg-icon menu-icon">
@@ -171,7 +171,7 @@ License: You must have a valid license purchased only from themeforest(the above
 															</a>
 														</li>
 														<li class="menu-item menu-item-submenu" data-menu-toggle="hover" aria-haspopup="true">
-                              <a href="javascript:;" class="menu-link menu-toggle">
+                              									<a href="javascript:;" class="menu-link menu-toggle">
 																<span class="svg-icon menu-icon">
 																	<!--begin::Svg Icon | path:/metronic/theme/html/demo1/dist/assets/media/svg/icons/Communication/Add-user.svg-->
 																	<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
@@ -201,6 +201,12 @@ License: You must have a valid license purchased only from themeforest(the above
                       <li class="menu-item menu-item-submenu menu-item-rel" data-menu-toggle="click" aria-haspopup="true">
 												<a href="<?= site_url('dashboard') ?>" class="menu-link">
 													<span class="menu-text">STR/SIP exp</span>
+													<i class="menu-arrow"></i>
+												</a>
+                      </li>
+                      <li class="menu-item menu-item-submenu menu-item-rel" data-menu-toggle="click" aria-haspopup="true">
+												<a href="<?= site_url('dashboard') ?>" class="menu-link">
+													<span class="menu-text">Perizinan</span>
 													<i class="menu-arrow"></i>
 												</a>
                       </li>

@@ -70,8 +70,8 @@ class data_karyawan extends CI_Controller
 	public function dataById($id)
 	{
 
-		$query = "select * from swab_syamrabu where id=".($id);	
-		$data ['pasien'] = $this->db_model->get_query($query)->row_array();
+		$query = "select * from hrd_user where id=".($id);	
+		$data ['karyawan'] = $this->db_model->get_query($query)->row_array();
 		$this->load->view('form', $data);
 	}
 	function edit_id()
@@ -85,6 +85,7 @@ class data_karyawan extends CI_Controller
 		$data = [
 			"nama" => $this->input->post("nama", TRUE),
 			"nik" => $this->input->post("nik", TRUE),
+			"nip" => $this->input->post("nip", TRUE),
 			"no_hp" => $this->input->post("no_hp", TRUE),
 			"email" => $this->input->post("email", TRUE),
 			"foto" => $this->input->post("foto", TRUE),

@@ -230,7 +230,7 @@
 																	</div>
 																	<div class="col-lg-4">
 																		<span class="form-text text-muted">Tanggal Lahir</span>
-																		<input type="date" class="form-control" id="tanggal_lahir" placeholder="Masukkan Tanggal Lahir Sesuai KTP" />
+																		<input type="date" class="form-control" id="tempat_lahir" placeholder="Masukkan Tanggal Lahir Sesuai KTP" />
 																	</div>
 																	<div class="col-lg-4">
 																		<span class="form-text text-muted">Jenis Kelamin</span>
@@ -314,15 +314,15 @@
 																		</div>
 																	</div>
 																	<div class="col-lg-4">
-																		<span class="form-text text-muted">S1/D-III/D-IV</span>
+																		<span class="form-text text-muted">S1</span>
 																		<input type="text" class="form-control" id="s1" placeholder="Masukkan Sesuai Ijazah"/>
 																	</div>
 																	<div class="col-lg-4">
-																		<span class="form-text text-muted">No Ijazah S1/D-III/D-IV</span>
+																		<span class="form-text text-muted">No Ijazah S1</span>
 																		<input type="text" class="form-control" id="no_s1" placeholder="Masukkan Sesuai Ijazah"/>
 																	</div>
 																	<div class="col-lg-4">
-																		<span class="form-text text-muted">Upload Ijazah S1/D-III/D-IV</span>
+																		<span class="form-text text-muted">Upload Ijazah S1</span>
 																		<div class="custom-file">
 																			<input type="file" class="custom-file-input" id="file_s1" />
 																			<label class="custom-file-label" for="customFile">File Ijazah Harus format pdf</label>
@@ -534,10 +534,6 @@
 																		<input type="text" class="form-control" id="golongan" placeholder="isi (-) jika bukan ASN"/>
 																	</div>
 																	<div class="col-lg-4">
-																		<span class="form-text text-muted">NIP</span>
-																		<input type="text" class="form-control" id="nip" />
-																	</div>
-																	<div class="col-lg-4">
 																		<span class="form-text text-muted">Prediksi Pensiun</span>
 																		<input type="date" class="form-control" id="pensiun" />
 																	</div>
@@ -576,7 +572,7 @@
 																	</div>
 																	<div class="col-lg-4">
 																		<span class="form-text text-muted">No SIP</span>
-																		<input type="text" class="form-control" id="no_sip" placeholder="Masukkan No Sesuai SIP" />
+																		<input type="text" class="form-control" id="no_sip" placeholder="Masukkan No Sesuai SK" />
 																	</div>
 																	<div class="col-lg-4">
 																		<span class="form-text text-muted">Upload SIP</span>
@@ -640,50 +636,33 @@
 																				</div>
 																				<!--end::Symbol-->
 																				<!--begin::Username-->
-																				<form role="form">
-																					<div class="form-group mb-1">
-																						<span class="form-text text-muted">ID Karyawan</span>
-																						<input type="text" class="form-control" id="view_id_karyawan" disabled/>
-																					</div>
-																					<div class="form-group mb-1">
-																						<span class="form-text text-muted">Nama Lengkap</span>
-																						<input type="text" class="form-control" id="view_nama" disabled/>
-																					</div>
-																					<div class="form-group mb-1">
-																						<span class="form-text text-muted">Gaji</span>
-																						<input type="text" class="form-control" id="view_gaji" disabled/>
-																					</div>
-																					<div class="form-group mb-3">
-																						<span class="form-text text-muted">Status Karyawan</span>
-																						<input type="text" class="form-control" id="view_status_karyawan" disabled />
-																					</div>
-																					<div class="form-group mb-3">
-																						<span class="form-text text-muted">NIP</span>
-																						<input type="text" class="form-control" id="view_nip" disabled />
-																					</div>
-																					<div class="form-group mb-3">
-																						<span class="form-text text-muted">Jabatan</span>
-																						<input type="text" class="form-control" id="view_jabatan" disabled/>
-																					</div>
-																					<div class="form-group mb-3">
-																						<span class="form-text text-muted">NIK</span>
-																						<input type="text" class="form-control" id="view_nik" disabled/>
-																					</div>
-																					<div class="form-group mb-3">
-																						<span class="form-text text-muted">Pendidikan</span>
-																						<input type="text" class="form-control" id="view_jenis_pendidikan" disabled/>
-																					</div>
-																					<div class="form-group mb-3">
-																						<span class="form-text text-muted">Email</span>
-																						<input type="text" class="form-control" id="view_email" disabled/>
-																					</div>
-																					<div class="form-group mb-3">
-																						<span class="form-text text-muted">No Hp</span>
-																						<input type="text" class="form-control" id="view_no_hp" disabled/>
-																					</div>
-																				</form>
+																				<a href="#" class="card-title font-weight-bolder text-dark-75 text-hover-primary font-size-h4 m-0 pt-7 pb-1">Nama :</a>
+																				<!--end::Username-->
+																				<!--begin::Info-->
+																				<div class="font-weight-bold text-dark-50 font-size-sm pb-0">Status Karyawan : </div>
+																				<div class="font-weight-bold text-dark-50 font-size-sm pb-0">NIP : </div>
+																				<div class="font-weight-bold text-dark-50 font-size-sm pb-0">Jabatan : </div>
+																				<div class="font-weight-bold text-dark-50 font-size-sm pb-0">Gaji : </div>
+																				<!--end::Info-->
 																			</div>
 																			<!--end::Header-->
+																			<!--begin::Body-->
+																			<div class="pt-1">
+																				<!--begin::Item-->
+																				<div class="d-flex align-items-center pb-2">
+																					<!--begin::Text-->
+																					<div class="d-flex flex-column flex-grow-1">
+																						<a href="#" class="text-dark-75 text-hover-primary mb-1 font-size-lg font-weight-bolder">ID Karyawan :</a>
+																						<a href="#" class="text-dark-75 text-hover-primary mb-1 font-size-lg font-weight-bolder">Pendidikan :</a>
+																						<a href="#" class="text-dark-75 text-hover-primary mb-1 font-size-lg font-weight-bolder">NIK :</a>
+																						<a href="#" class="text-dark-75 text-hover-primary mb-1 font-size-lg font-weight-bolder">Email :</a>
+																						<a href="#" class="text-dark-75 text-hover-primary mb-1 font-size-lg font-weight-bolder">No Hp :</a>
+																					</div>
+																					<!--end::Text-->
+																				</div>
+																				<!--end::Item-->
+																			</div>
+																			<!--end::Body-->
 																		</div>
 																		<!--eng::Container-->
 																	</div>
@@ -697,63 +676,62 @@
 																<!--begin::Header-->
 																<div class="card-header border-0 pt-5">
 																	<h3 class="card-title align-items-start flex-column">
-																		<span class="card-label font-weight-bolder text-dark">_________Berkas_________</span>
+																		<span class="card-label font-weight-bolder text-dark">___Identitas Karyawan___</span>
 																	</h3>
 																</div>
 																<!--end::Header-->
 																<!--begin::Body-->
 																<div class="card-body pt-1">
 																	<!--begin::Container-->
-																			<div>
-																				<form role="form">
-																					<div class="form-group mb-1">
-																						<span class="form-text text-muted">File SK Penempatan</span>
-																						<input type="text" class="form-control" id="view_file_penempatan" disabled/>
-																					</div>
-																					<div class="form-group mb-1">
-																						<span class="form-text text-muted">File SK Karyawan</span>
-																						<input type="text" class="form-control" id="view_file_sk" disabled/>
-																					</div>
-																					<div class="form-group mb-1">
-																						<span class="form-text text-muted">File STR</span>
-																						<input type="text" class="form-control" id="view_file_str" disabled/>
-																					</div>
-																					<div class="form-group mb-3">
-																						<span class="form-text text-muted">File SIP</span>
-																						<input type="text" class="form-control" id="view_file_sip" disabled />
-																					</div>
-																					<div class="form-group mb-3">
-																						<span class="form-text text-muted">File Ijazah SD</span>
-																						<input type="text" class="form-control" id="view_file_sd" disabled />
-																					</div>
-																					<div class="form-group mb-3">
-																						<span class="form-text text-muted">File Ijazah SMP</span>
-																						<input type="text" class="form-control" id="view_file_smp" disabled />
-																					</div>
-																					<div class="form-group mb-3">
-																						<span class="form-text text-muted">File Ijazah SMA</span>
-																						<input type="text" class="form-control" id="view_file_sma" disabled />
-																					</div>
-																					<div class="form-group mb-3">
-																						<span class="form-text text-muted">File Ijazah S1/D-III/D-IV</span>
-																						<input type="text" class="form-control" id="view_file_s1" disabled />
-																					</div>
-																					<div class="form-group mb-3">
-																						<span class="form-text text-muted">File Ijazah S2</span>
-																						<input type="text" class="form-control" id="view_file_s2" disabled />
-																					</div>
-																					<div class="form-group mb-3">
-																						<span class="form-text text-muted">File Ijazah S3</span>
-																						<input type="text" class="form-control" id="view_file_s3" disabled />
-																					</div>
-																					<div class="form-group mb-3">
-																						<span class="form-text text-muted">File Ijazah Profesi</span>
-																						<input type="text" class="form-control" id="view_file_profesi" disabled />
-																					</div>
-																					
-																				</form>	
-																				
+																	<div>
+																		<!--begin::Item-->
+																		<div class="d-flex align-items-center mb-4">
+																			<!--begin::Symbol-->
+																			<div class="symbol mr-5 pt-1">
+																				<div class="symbol-label min-w-65px min-h-100px" style="background-image: url('assets/media/books/12.png')"></div>
 																			</div>
+																			<!--end::Symbol-->
+																			<!--begin::Info-->
+																			<div class="d-flex flex-column">
+																				<!--begin::Title-->
+																				<a href="#" class="text-dark-75 font-weight-bolder text-hover-primary font-size-lg">Alamat : </a>
+																				<!--end::Title-->
+																				<!--begin::Text-->
+																				<span class="text-muted font-weight-bold font-size-sm pb-0"> Provinsi : </span>
+																				<span class="text-muted font-weight-bold font-size-sm pb-0"> Kabupaten : </span>
+																				<span class="text-muted font-weight-bold font-size-sm pb-0"> Kecamatan : </span>
+																				<span class="text-muted font-weight-bold font-size-sm pb-0"> Kelurahan : </span>
+																				<span class="text-muted font-weight-bold font-size-sm pb-0"> RT/RW : </span>
+																				<span class="text-muted font-weight-bold font-size-sm pb-0"> Kode Pos : </span>
+																				<!--end::Text-->
+																			</div>
+																			<!--end::Info-->
+																		</div>
+
+																		<!--begin::Item-->
+																		<div class="d-flex align-items-center mb-4">
+																			<!--begin::Symbol-->
+																			<div class="symbol mr-5 pt-1">
+																				<div class="symbol-label min-w-65px min-h-100px" style="background-image: url('assets/media/books/12.png')"></div>
+																			</div>
+																			<!--end::Symbol-->
+																			<!--begin::Info-->
+																			<div class="d-flex flex-column">
+																				<!--begin::Title-->
+																				<a href="#" class="text-dark-75 font-weight-bolder text-hover-primary font-size-lg">Tempat Lahir : </a>
+																				<!--end::Title-->
+																				<!--begin::Text-->
+																				<span class="text-muted font-weight-bold font-size-sm pb-0"> Tanggal Lahir : </span>
+																				<span class="text-muted font-weight-bold font-size-sm pb-0"> Jenis Kelamin : </span>
+																				<span class="text-muted font-weight-bold font-size-sm pb-0"> Agama : </span>
+																				<span class="text-muted font-weight-bold font-size-sm pb-0"> Status Pernikahan : </span>
+																				<span class="text-muted font-weight-bold font-size-sm pb-0"> Golongan Darah : </span>
+																				<span class="text-muted font-weight-bold font-size-sm pb-0"> Suku Bangsa : </span>
+																				<!--end::Text-->
+																			</div>
+																			<!--end::Info-->
+																		</div>
+																	</div>
 																	<!--end::Container-->
 																</div>
 																<!--end::Body-->
@@ -802,7 +780,7 @@
 																							<!--end::Svg Icon-->
 																						</span>
 																					</span>
-																					<span class="nav-text font-weight-bold">Pelatihan</span>
+																					<span class="nav-text font-weight-bold">Account</span>
 																				</a>
 																			</li>
 																			<li class="nav-item mr-3">
@@ -820,7 +798,7 @@
 																							<!--end::Svg Icon-->
 																						</span>
 																					</span>
-																					<span class="nav-text font-weight-bold">Riwayat Kerja</span>
+																					<span class="nav-text font-weight-bold">Settings</span>
 																				</a>
 																			</li>
 																			<li class="nav-item">
@@ -838,25 +816,7 @@
 																							<!--end::Svg Icon-->
 																						</span>
 																					</span>
-																					<span class="nav-text font-weight-bold">Kenaikan</span>
-																				</a>
-																			</li>
-																			<li class="nav-item">
-																				<a class="nav-link" data-toggle="tab" href="#kt_apps_contacts_view_tab_5">
-																					<span class="nav-icon mr-2">
-																						<span class="svg-icon mr-3">
-																							<!--begin::Svg Icon | path:/metronic/theme/html/demo2/dist/assets/media/svg/icons/General/Notification2.svg-->
-																							<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
-																								<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-																									<rect x="0" y="0" width="24" height="24" />
-																									<path d="M13.2070325,4 C13.0721672,4.47683179 13,4.97998812 13,5.5 C13,8.53756612 15.4624339,11 18.5,11 C19.0200119,11 19.5231682,10.9278328 20,10.7929675 L20,17 C20,18.6568542 18.6568542,20 17,20 L7,20 C5.34314575,20 4,18.6568542 4,17 L4,7 C4,5.34314575 5.34314575,4 7,4 L13.2070325,4 Z" fill="#000000" />
-																									<circle fill="#000000" opacity="0.3" cx="18.5" cy="5.5" r="2.5" />
-																								</g>
-																							</svg>
-																							<!--end::Svg Icon-->
-																						</span>
-																					</span>
-																					<span class="nav-text font-weight-bold">Perizinan</span>
+																					<span class="nav-text font-weight-bold">Notes</span>
 																				</a>
 																			</li>
 																		</ul>
@@ -872,228 +832,122 @@
 																				<!--begin::Heading-->
 																				<div class="row">
 																					<div class="col-lg-9 col-xl-6 offset-xl-3">
-																						<h3 class="font-size-h6 mb-5">Info Karyawan:</h3>
+																						<h3 class="font-size-h6 mb-5">Student Info:</h3>
 																					</div>
 																				</div>
 																				<!--end::Heading-->
 																				<div class="form-group row">
-																					<label class="col-xl-3 col-lg-3 text-right col-form-label">Alamat</label>
-																					<div class="col-lg-9 col-xl-6">
-																						<input class="form-control form-control-lg form-control-solid" type="text" id="view_alamat" disabled />
+																					<label class="col-xl-3 col-lg-3 text-right col-form-label">Photo</label>
+																					<div class="col-lg-9 col-xl-9">
+																						<div class="image-input image-input-outline image-input-circle" id="kt_user_avatar" style="background-image: url(../../../../../theme/html/demo2/dist/assets/media/users/blank.png)">
+																							<div class="image-input-wrapper" style="background-image: url(https://preview.keenthemes.com/metronic/theme/html/demo2/dist/assets/media/svg/avatars/007-boy-2.svg)"></div>
+																							<label class="btn btn-xs btn-icon btn-circle btn-white btn-hover-text-primary btn-shadow" data-action="change" data-toggle="tooltip" title="" data-original-title="Change avatar">
+																								<i class="fa fa-pen icon-sm text-muted"></i>
+																								<input type="file" name="profile_avatar" accept=".png, .jpg, .jpeg" />
+																								<input type="hidden" name="profile_avatar_remove" />
+																							</label>
+																							<span class="btn btn-xs btn-icon btn-circle btn-white btn-hover-text-primary btn-shadow" data-action="cancel" data-toggle="tooltip" title="Cancel avatar">
+																								<i class="ki ki-bold-close icon-xs text-muted"></i>
+																							</span>
+																							<span class="btn btn-xs btn-icon btn-circle btn-white btn-hover-text-primary btn-shadow" data-action="remove" data-toggle="tooltip" title="Remove avatar">
+																								<i class="ki ki-bold-close icon-xs text-muted"></i>
+																							</span>
+																						</div>
 																					</div>
 																				</div>
 																				<div class="form-group row">
-																					<label class="col-xl-3 col-lg-3 text-right col-form-label">Provinsi</label>
+																					<label class="col-xl-3 col-lg-3 text-right col-form-label">Name</label>
 																					<div class="col-lg-9 col-xl-6">
-																						<input class="form-control form-control-lg form-control-solid" type="text" id="view_prov" disabled />
+																						<input class="form-control form-control-lg form-control-solid" type="text" value="Nick" />
 																					</div>
 																				</div>
 																				<div class="form-group row">
-																					<label class="col-xl-3 col-lg-3 text-right col-form-label">Kabupaten/Kota</label>
+																					<label class="col-xl-3 col-lg-3 text-right col-form-label">Nickname</label>
 																					<div class="col-lg-9 col-xl-6">
-																						<input class="form-control form-control-lg form-control-solid" type="text" id="view_kab" disabled />
+																						<input class="form-control form-control-lg form-control-solid" type="text" value="Bold" />
 																					</div>
 																				</div>
 																				<div class="form-group row">
-																					<label class="col-xl-3 col-lg-3 text-right col-form-label">Kecamatan</label>
+																					<label class="col-xl-3 col-lg-3 text-right col-form-label">Organization</label>
 																					<div class="col-lg-9 col-xl-6">
-																						<input class="form-control form-control-lg form-control-solid" type="text" id="view_kec" disabled />
-																					</div>
-																				</div>
-																				<div class="form-group row">
-																					<label class="col-xl-3 col-lg-3 text-right col-form-label">Kelurahan</label>
-																					<div class="col-lg-9 col-xl-6">
-																						<input class="form-control form-control-lg form-control-solid" type="text" id="view_kelu" disabled />
-																					</div>
-																				</div>
-																				<div class="form-group row">
-																					<label class="col-xl-3 col-lg-3 text-right col-form-label">RT/RW</label>
-																					<div class="col-lg-9 col-xl-6">
-																						<input class="form-control form-control-lg form-control-solid" type="text" id="view_rt_rw" disabled />
-																					</div>
-																				</div>
-																				<div class="form-group row">
-																					<label class="col-xl-3 col-lg-3 text-right col-form-label">Kode Pos</label>
-																					<div class="col-lg-9 col-xl-6">
-																						<input class="form-control form-control-lg form-control-solid" type="text" id="view_kode_pos" disabled />
-																					</div>
-																				</div>
-																				<div class="form-group row">
-																					<label class="col-xl-3 col-lg-3 text-right col-form-label">Tempat Lahir</label>
-																					<div class="col-lg-9 col-xl-6">
-																						<input class="form-control form-control-lg form-control-solid" type="text" id="view_tempat_lahir" disabled />
-																					</div>
-																				</div>
-																				<div class="form-group row">
-																					<label class="col-xl-3 col-lg-3 text-right col-form-label">Tanggal Lahir</label>
-																					<div class="col-lg-9 col-xl-6">
-																						<input class="form-control form-control-lg form-control-solid" type="text" id="view_tanggal_lahir" disabled />
-																					</div>
-																				</div>
-																				<div class="form-group row">
-																					<label class="col-xl-3 col-lg-3 text-right col-form-label">Jenis Kelamin</label>
-																					<div class="col-lg-9 col-xl-6">
-																						<input class="form-control form-control-lg form-control-solid" type="text" id="view_jk" disabled />
-																					</div>
-																				</div>
-																				<div class="form-group row">
-																					<label class="col-xl-3 col-lg-3 text-right col-form-label">Agama</label>
-																					<div class="col-lg-9 col-xl-6">
-																						<input class="form-control form-control-lg form-control-solid" type="text" id="view_agama" disabled />
-																					</div>
-																				</div>
-																				<div class="form-group row">
-																					<label class="col-xl-3 col-lg-3 text-right col-form-label">Status Pernikahan</label>
-																					<div class="col-lg-9 col-xl-6">
-																						<input class="form-control form-control-lg form-control-solid" type="text" id="view_status_pernikahan" disabled />
-																					</div>
-																				</div>
-																				<div class="form-group row">
-																					<label class="col-xl-3 col-lg-3 text-right col-form-label">Golongan Darah</label>
-																					<div class="col-lg-9 col-xl-6">
-																						<input class="form-control form-control-lg form-control-solid" type="text" id="view_goldar" disabled />
-																					</div>
-																				</div>
-																				<div class="form-group row">
-																					<label class="col-xl-3 col-lg-3 text-right col-form-label">Suku Bangsa</label>
-																					<div class="col-lg-9 col-xl-6">
-																						<input class="form-control form-control-lg form-control-solid" type="text" id="view_suku" disabled />
+																						<input class="form-control form-control-lg form-control-solid" type="text" value="Loop Inc." />
+																						<span class="form-text text-muted">If you want your invoices addressed to a company. Leave blank to use your full name.</span>
 																					</div>
 																				</div>
 																				<div class="separator separator-dashed my-10"></div>
 																				<!--begin::Heading-->
 																				<div class="row">
 																					<div class="col-lg-9 col-xl-6 offset-xl-3">
-																						<h3 class="font-size-h6 mb-5">Kepegawaian :</h3>
+																						<h3 class="font-size-h6 mb-5">Contact Info:</h3>
 																					</div>
 																				</div>
 																				<!--end::Heading-->
 																				<div class="form-group row">
-																					<label class="col-xl-3 col-lg-3 text-right col-form-label">Jenis Tenaga</label>
+																					<label class="col-xl-3 col-lg-3 text-right col-form-label">Phone</label>
 																					<div class="col-lg-9 col-xl-6">
-																						<input class="form-control form-control-lg form-control-solid" type="text" id="view_jenis_tenaga" disabled />
+																						<div class="input-group input-group-lg input-group-solid">
+																							<div class="input-group-prepend">
+																								<span class="input-group-text">
+																									<i class="la la-phone"></i>
+																								</span>
+																							</div>
+																							<input type="text" class="form-control form-control-lg form-control-solid" value="+35278953712" placeholder="Phone" />
+																						</div>
+																						<span class="form-text text-muted">We'll never share your email with anyone else.</span>
 																					</div>
 																				</div>
 																				<div class="form-group row">
-																					<label class="col-xl-3 col-lg-3 text-right col-form-label">Jenis Detail Tenaga</label>
+																					<label class="col-xl-3 col-lg-3 text-right col-form-label">Email Address</label>
 																					<div class="col-lg-9 col-xl-6">
-																						<input class="form-control form-control-lg form-control-solid" type="text" id="view_jenis_detail_tenaga" disabled />
+																						<div class="input-group input-group-lg input-group-solid">
+																							<div class="input-group-prepend">
+																								<span class="input-group-text">
+																									<i class="la la-at"></i>
+																								</span>
+																							</div>
+																							<input type="text" class="form-control form-control-lg form-control-solid" value="nick.bold@loop.com" placeholder="Email" />
+																						</div>
 																					</div>
 																				</div>
 																				<div class="form-group row">
-																					<label class="col-xl-3 col-lg-3 text-right col-form-label">Pangkat / Golongan</label>
+																					<label class="col-xl-3 col-lg-3 text-right col-form-label">Site</label>
 																					<div class="col-lg-9 col-xl-6">
-																						<input class="form-control form-control-lg form-control-solid" type="text" id="view_golongan" disabled />
-																					</div>
-																				</div>
-																				<div class="form-group row">
-																					<label class="col-xl-3 col-lg-3 text-right col-form-label">No SK</label>
-																					<div class="col-lg-9 col-xl-6">
-																						<input class="form-control form-control-lg form-control-solid" type="text" id="view_no_sk" disabled />
-																					</div>
-																				</div>
-																				<div class="form-group row">
-																					<label class="col-xl-3 col-lg-3 text-right col-form-label">No SIP</label>
-																					<div class="col-lg-9 col-xl-6">
-																						<input class="form-control form-control-lg form-control-solid" type="text" id="view_no_sip" disabled />
-																					</div>
-																				</div>
-																				<div class="form-group row">
-																					<label class="col-xl-3 col-lg-3 text-right col-form-label">No STR</label>
-																					<div class="col-lg-9 col-xl-6">
-																						<input class="form-control form-control-lg form-control-solid" type="text" id="view_no_str" disabled />
+																						<div class="input-group input-group-lg input-group-solid">
+																							<input type="text" class="form-control form-control-lg form-control-solid" placeholder="Username" value="loop" />
+																							<div class="input-group-append">
+																								<span class="input-group-text">.com</span>
+																							</div>
+																						</div>
 																					</div>
 																				</div>
 																				<div class="separator separator-dashed my-10"></div>
 																				<!--begin::Heading-->
 																				<div class="row">
 																					<div class="col-lg-9 col-xl-6 offset-xl-3">
-																						<h3 class="font-size-h6 mb-5">Pendidikan :</h3>
+																						<h3 class="font-size-h6 mb-5">Contact Info:</h3>
 																					</div>
 																				</div>
 																				<!--end::Heading-->
 																				<div class="form-group row">
-																					<label class="col-xl-3 col-lg-3 text-right col-form-label">SD</label>
+																					<label class="col-xl-3 col-lg-3 text-right col-form-label">Email Notification</label>
 																					<div class="col-lg-9 col-xl-6">
-																						<input class="form-control form-control-lg form-control-solid" type="text" id="view_sd" disabled />
+																						<span class="switch">
+																							<label>
+																								<input type="checkbox" checked="checked" name="email_notification_1" />
+																								<span></span>
+																							</label>
+																						</span>
 																					</div>
 																				</div>
 																				<div class="form-group row">
-																					<label class="col-xl-3 col-lg-3 text-right col-form-label">No Ijazah SD</label>
+																					<label class="col-xl-3 col-lg-3 text-right col-form-label">Send Copy</label>
 																					<div class="col-lg-9 col-xl-6">
-																						<input class="form-control form-control-lg form-control-solid" type="text" id="view_no_sd" disabled />
-																					</div>
-																				</div>
-																				<div class="form-group row">
-																					<label class="col-xl-3 col-lg-3 text-right col-form-label">SMP</label>
-																					<div class="col-lg-9 col-xl-6">
-																						<input class="form-control form-control-lg form-control-solid" type="text" id="view_smp" disabled />
-																					</div>
-																				</div>
-																				<div class="form-group row">
-																					<label class="col-xl-3 col-lg-3 text-right col-form-label">No Ijazah SMP</label>
-																					<div class="col-lg-9 col-xl-6">
-																						<input class="form-control form-control-lg form-control-solid" type="text" id="view_no_smp" disabled />
-																					</div>
-																				</div>
-																				<div class="form-group row">
-																					<label class="col-xl-3 col-lg-3 text-right col-form-label">SMA</label>
-																					<div class="col-lg-9 col-xl-6">
-																						<input class="form-control form-control-lg form-control-solid" type="text" id="view_smp" disabled />
-																					</div>
-																				</div>
-																				<div class="form-group row">
-																					<label class="col-xl-3 col-lg-3 text-right col-form-label">No Ijazah SMA</label>
-																					<div class="col-lg-9 col-xl-6">
-																						<input class="form-control form-control-lg form-control-solid" type="text" id="view_no_sma" disabled />
-																					</div>
-																				</div>
-																				<div class="form-group row">
-																					<label class="col-xl-3 col-lg-3 text-right col-form-label">S1</label>
-																					<div class="col-lg-9 col-xl-6">
-																						<input class="form-control form-control-lg form-control-solid" type="text" id="view_s1" disabled />
-																					</div>
-																				</div>
-																				<div class="form-group row">
-																					<label class="col-xl-3 col-lg-3 text-right col-form-label">No Ijazah S1</label>
-																					<div class="col-lg-9 col-xl-6">
-																						<input class="form-control form-control-lg form-control-solid" type="text" id="view_no_s1" disabled />
-																					</div>
-																				</div>
-																				<div class="form-group row">
-																					<label class="col-xl-3 col-lg-3 text-right col-form-label">S2</label>
-																					<div class="col-lg-9 col-xl-6">
-																						<input class="form-control form-control-lg form-control-solid" type="text" id="view_s2" disabled />
-																					</div>
-																				</div>
-																				<div class="form-group row">
-																					<label class="col-xl-3 col-lg-3 text-right col-form-label">No Ijazah S2</label>
-																					<div class="col-lg-9 col-xl-6">
-																						<input class="form-control form-control-lg form-control-solid" type="text" id="view_no_s2" disabled />
-																					</div>
-																				</div>
-																				<div class="form-group row">
-																					<label class="col-xl-3 col-lg-3 text-right col-form-label">S3</label>
-																					<div class="col-lg-9 col-xl-6">
-																						<input class="form-control form-control-lg form-control-solid" type="text" id="view_s3" disabled />
-																					</div>
-																				</div>
-																				<div class="form-group row">
-																					<label class="col-xl-3 col-lg-3 text-right col-form-label">No Ijazah S3</label>
-																					<div class="col-lg-9 col-xl-6">
-																						<input class="form-control form-control-lg form-control-solid" type="text" id="view_no_s3" disabled />
-																					</div>
-																				</div>
-																				<div class="form-group row">
-																					<label class="col-xl-3 col-lg-3 text-right col-form-label">Profesi</label>
-																					<div class="col-lg-9 col-xl-6">
-																						<input class="form-control form-control-lg form-control-solid" type="text" id="view_profesi" disabled />
-																					</div>
-																				</div>
-																				<div class="form-group row">
-																					<label class="col-xl-3 col-lg-3 text-right col-form-label">No Ijazah Profesi</label>
-																					<div class="col-lg-9 col-xl-6">
-																						<input class="form-control form-control-lg form-control-solid" type="text" id="view_no_profesi" disabled />
+																						<span class="switch">
+																							<label>
+																								<input type="checkbox" name="email_notification_2" />
+																								<span></span>
+																							</label>
+																						</span>
 																					</div>
 																				</div>
 																			</form>
@@ -1822,317 +1676,6 @@
 																			</div>
 																		</div>
 																		<!--end::Tab Content-->
-																		<!--begin::Tab Content-->
-																		<div class="tab-pane" id="kt_apps_contacts_view_tab_5" role="tabpanel">
-																			<form class="form">
-																				<!--begin::Notice-->
-																				<div class="row">
-																					<div class="col-lg-9 col-xl-6 offset-xl-3">
-																						<div class="alert alert-custom alert-light-danger fade show mb-9" role="alert">
-																							<div class="alert-icon">
-																								<i class="flaticon-warning"></i>
-																							</div>
-																							<div class="alert-text">Configure user passwords to expire periodically. 
-																							<br />Users will need warning that their passwords are going to expire, or they might inadvertently get locked out of the system!</div>
-																							<div class="alert-close">
-																								<button type="button" class="close" data-dismiss="alert" aria-label="Close">
-																									<span aria-hidden="true">
-																										<i class="ki ki-close"></i>
-																									</span>
-																								</button>
-																							</div>
-																						</div>
-																					</div>
-																				</div>
-																				<!--end::Notice-->
-																				<!--begin::Heading-->
-																				<div class="row">
-																					<div class="col-lg-9 col-xl-6 offset-xl-3">
-																						<h3 class="font-size-h6 mb-5">Account:</h3>
-																					</div>
-																				</div>
-																				<!--end::Heading-->
-																				<div class="form-group row">
-																					<label class="col-xl-3 col-lg-3 text-right col-form-label">Username</label>
-																					<div class="col-lg-9 col-xl-6">
-																						<div class="spinner spinner-sm spinner-success spinner-right">
-																							<input class="form-control form-control-lg form-control-solid" type="text" value="nick84" />
-																						</div>
-																					</div>
-																				</div>
-																				<div class="form-group row">
-																					<label class="col-xl-3 col-lg-3 text-right col-form-label">Email Address</label>
-																					<div class="col-lg-9 col-xl-6">
-																						<div class="input-group input-group-lg input-group-solid">
-																							<div class="input-group-prepend">
-																								<span class="input-group-text">
-																									<i class="la la-at"></i>
-																								</span>
-																							</div>
-																							<input type="text" class="form-control form-control-lg form-control-solid" value="nick.watson@loop.com" placeholder="Email" />
-																						</div>
-																						<span class="form-text text-muted">Email will not be publicly displayed. 
-																						<a href="#">Learn more</a>.</span>
-																					</div>
-																				</div>
-																				<div class="form-group row">
-																					<label class="col-xl-3 col-lg-3 text-right col-form-label">Language</label>
-																					<div class="col-lg-9 col-xl-6">
-																						<select class="form-control form-control-lg form-control-solid">
-																							<option>Select Language...</option>
-																							<option value="id">Bahasa Indonesia - Indonesian</option>
-																							<option value="msa">Bahasa Melayu - Malay</option>
-																							<option value="ca">Català - Catalan</option>
-																							<option value="cs">Čeština - Czech</option>
-																							<option value="da">Dansk - Danish</option>
-																							<option value="de">Deutsch - German</option>
-																							<option value="en" selected="selected">English</option>
-																							<option value="en-gb">English UK - British English</option>
-																							<option value="es">Español - Spanish</option>
-																							<option value="eu">Euskara - Basque (beta)</option>
-																							<option value="fil">Filipino</option>
-																							<option value="fr">Français - French</option>
-																							<option value="ga">Gaeilge - Irish (beta)</option>
-																							<option value="gl">Galego - Galician (beta)</option>
-																							<option value="hr">Hrvatski - Croatian</option>
-																							<option value="it">Italiano - Italian</option>
-																							<option value="hu">Magyar - Hungarian</option>
-																							<option value="nl">Nederlands - Dutch</option>
-																							<option value="no">Norsk - Norwegian</option>
-																							<option value="pl">Polski - Polish</option>
-																							<option value="pt">Português - Portuguese</option>
-																							<option value="ro">Română - Romanian</option>
-																							<option value="sk">Slovenčina - Slovak</option>
-																							<option value="fi">Suomi - Finnish</option>
-																							<option value="sv">Svenska - Swedish</option>
-																							<option value="vi">Tiếng Việt - Vietnamese</option>
-																							<option value="tr">Türkçe - Turkish</option>
-																							<option value="el">Ελληνικά - Greek</option>
-																							<option value="bg">Български език - Bulgarian</option>
-																							<option value="ru">Русский - Russian</option>
-																							<option value="sr">Српски - Serbian</option>
-																							<option value="uk">Українська мова - Ukrainian</option>
-																							<option value="he">עִבְרִית - Hebrew</option>
-																							<option value="ur">اردو - Urdu (beta)</option>
-																							<option value="ar">العربية - Arabic</option>
-																							<option value="fa">فارسی - Persian</option>
-																							<option value="mr">मराठी - Marathi</option>
-																							<option value="hi">हिन्दी - Hindi</option>
-																							<option value="bn">বাংলা - Bangla</option>
-																							<option value="gu">ગુજરાતી - Gujarati</option>
-																							<option value="ta">தமிழ் - Tamil</option>
-																							<option value="kn">ಕನ್ನಡ - Kannada</option>
-																							<option value="th">ภาษาไทย - Thai</option>
-																							<option value="ko">한국어 - Korean</option>
-																							<option value="ja">日本語 - Japanese</option>
-																							<option value="zh-cn">简体中文 - Simplified Chinese</option>
-																							<option value="zh-tw">繁體中文 - Traditional Chinese</option>
-																						</select>
-																					</div>
-																				</div>
-																				<div class="form-group row">
-																					<label class="col-xl-3 col-lg-3 text-right col-form-label">Time Zone</label>
-																					<div class="col-lg-9 col-xl-6">
-																						<select class="form-control form-control-lg form-control-solid">
-																							<option data-offset="-39600" value="International Date Line West">(GMT-11:00) International Date Line West</option>
-																							<option data-offset="-39600" value="Midway Island">(GMT-11:00) Midway Island</option>
-																							<option data-offset="-39600" value="Samoa">(GMT-11:00) Samoa</option>
-																							<option data-offset="-36000" value="Hawaii">(GMT-10:00) Hawaii</option>
-																							<option data-offset="-28800" value="Alaska">(GMT-08:00) Alaska</option>
-																							<option data-offset="-25200" value="Pacific Time (US &amp; Canada)">(GMT-07:00) Pacific Time (US &amp; Canada)</option>
-																							<option data-offset="-25200" value="Tijuana">(GMT-07:00) Tijuana</option>
-																							<option data-offset="-25200" value="Arizona">(GMT-07:00) Arizona</option>
-																							<option data-offset="-21600" value="Mountain Time (US &amp; Canada)">(GMT-06:00) Mountain Time (US &amp; Canada)</option>
-																							<option data-offset="-21600" value="Chihuahua">(GMT-06:00) Chihuahua</option>
-																							<option data-offset="-21600" value="Mazatlan">(GMT-06:00) Mazatlan</option>
-																							<option data-offset="-21600" value="Saskatchewan">(GMT-06:00) Saskatchewan</option>
-																							<option data-offset="-21600" value="Central America">(GMT-06:00) Central America</option>
-																							<option data-offset="-18000" value="Central Time (US &amp; Canada)">(GMT-05:00) Central Time (US &amp; Canada)</option>
-																							<option data-offset="-18000" value="Guadalajara">(GMT-05:00) Guadalajara</option>
-																							<option data-offset="-18000" value="Mexico City">(GMT-05:00) Mexico City</option>
-																							<option data-offset="-18000" value="Monterrey">(GMT-05:00) Monterrey</option>
-																							<option data-offset="-18000" value="Bogota">(GMT-05:00) Bogota</option>
-																							<option data-offset="-18000" value="Lima">(GMT-05:00) Lima</option>
-																							<option data-offset="-18000" value="Quito">(GMT-05:00) Quito</option>
-																							<option data-offset="-14400" value="Eastern Time (US &amp; Canada)">(GMT-04:00) Eastern Time (US &amp; Canada)</option>
-																							<option data-offset="-14400" value="Indiana (East)">(GMT-04:00) Indiana (East)</option>
-																							<option data-offset="-14400" value="Caracas">(GMT-04:00) Caracas</option>
-																							<option data-offset="-14400" value="La Paz">(GMT-04:00) La Paz</option>
-																							<option data-offset="-14400" value="Georgetown">(GMT-04:00) Georgetown</option>
-																							<option data-offset="-10800" value="Atlantic Time (Canada)">(GMT-03:00) Atlantic Time (Canada)</option>
-																							<option data-offset="-10800" value="Santiago">(GMT-03:00) Santiago</option>
-																							<option data-offset="-10800" value="Brasilia">(GMT-03:00) Brasilia</option>
-																							<option data-offset="-10800" value="Buenos Aires">(GMT-03:00) Buenos Aires</option>
-																							<option data-offset="-9000" value="Newfoundland">(GMT-02:30) Newfoundland</option>
-																							<option data-offset="-7200" value="Greenland">(GMT-02:00) Greenland</option>
-																							<option data-offset="-7200" value="Mid-Atlantic">(GMT-02:00) Mid-Atlantic</option>
-																							<option data-offset="-3600" value="Cape Verde Is.">(GMT-01:00) Cape Verde Is.</option>
-																							<option data-offset="0" value="Azores">(GMT) Azores</option>
-																							<option data-offset="0" value="Monrovia">(GMT) Monrovia</option>
-																							<option data-offset="0" value="UTC">(GMT) UTC</option>
-																							<option data-offset="3600" value="Dublin">(GMT+01:00) Dublin</option>
-																							<option data-offset="3600" value="Edinburgh">(GMT+01:00) Edinburgh</option>
-																							<option data-offset="3600" value="Lisbon">(GMT+01:00) Lisbon</option>
-																							<option data-offset="3600" value="London">(GMT+01:00) London</option>
-																							<option data-offset="3600" value="Casablanca">(GMT+01:00) Casablanca</option>
-																							<option data-offset="3600" value="West Central Africa">(GMT+01:00) West Central Africa</option>
-																							<option data-offset="7200" value="Belgrade">(GMT+02:00) Belgrade</option>
-																							<option data-offset="7200" value="Bratislava">(GMT+02:00) Bratislava</option>
-																							<option data-offset="7200" value="Budapest">(GMT+02:00) Budapest</option>
-																							<option data-offset="7200" value="Ljubljana">(GMT+02:00) Ljubljana</option>
-																							<option data-offset="7200" value="Prague">(GMT+02:00) Prague</option>
-																							<option data-offset="7200" value="Sarajevo">(GMT+02:00) Sarajevo</option>
-																							<option data-offset="7200" value="Skopje">(GMT+02:00) Skopje</option>
-																							<option data-offset="7200" value="Warsaw">(GMT+02:00) Warsaw</option>
-																							<option data-offset="7200" value="Zagreb">(GMT+02:00) Zagreb</option>
-																							<option data-offset="7200" value="Brussels">(GMT+02:00) Brussels</option>
-																							<option data-offset="7200" value="Copenhagen">(GMT+02:00) Copenhagen</option>
-																							<option data-offset="7200" value="Madrid">(GMT+02:00) Madrid</option>
-																							<option data-offset="7200" value="Paris">(GMT+02:00) Paris</option>
-																							<option data-offset="7200" value="Amsterdam">(GMT+02:00) Amsterdam</option>
-																							<option data-offset="7200" value="Berlin">(GMT+02:00) Berlin</option>
-																							<option data-offset="7200" value="Bern">(GMT+02:00) Bern</option>
-																							<option data-offset="7200" value="Rome">(GMT+02:00) Rome</option>
-																							<option data-offset="7200" value="Stockholm">(GMT+02:00) Stockholm</option>
-																							<option data-offset="7200" value="Vienna">(GMT+02:00) Vienna</option>
-																							<option data-offset="7200" value="Cairo">(GMT+02:00) Cairo</option>
-																							<option data-offset="7200" value="Harare">(GMT+02:00) Harare</option>
-																							<option data-offset="7200" value="Pretoria">(GMT+02:00) Pretoria</option>
-																							<option data-offset="10800" value="Bucharest">(GMT+03:00) Bucharest</option>
-																							<option data-offset="10800" value="Helsinki">(GMT+03:00) Helsinki</option>
-																							<option data-offset="10800" value="Kiev">(GMT+03:00) Kiev</option>
-																							<option data-offset="10800" value="Kyiv">(GMT+03:00) Kyiv</option>
-																							<option data-offset="10800" value="Riga">(GMT+03:00) Riga</option>
-																							<option data-offset="10800" value="Sofia">(GMT+03:00) Sofia</option>
-																							<option data-offset="10800" value="Tallinn">(GMT+03:00) Tallinn</option>
-																							<option data-offset="10800" value="Vilnius">(GMT+03:00) Vilnius</option>
-																							<option data-offset="10800" value="Athens">(GMT+03:00) Athens</option>
-																							<option data-offset="10800" value="Istanbul">(GMT+03:00) Istanbul</option>
-																							<option data-offset="10800" value="Minsk">(GMT+03:00) Minsk</option>
-																							<option data-offset="10800" value="Jerusalem">(GMT+03:00) Jerusalem</option>
-																							<option data-offset="10800" value="Moscow">(GMT+03:00) Moscow</option>
-																							<option data-offset="10800" value="St. Petersburg">(GMT+03:00) St. Petersburg</option>
-																							<option data-offset="10800" value="Volgograd">(GMT+03:00) Volgograd</option>
-																							<option data-offset="10800" value="Kuwait">(GMT+03:00) Kuwait</option>
-																							<option data-offset="10800" value="Riyadh">(GMT+03:00) Riyadh</option>
-																							<option data-offset="10800" value="Nairobi">(GMT+03:00) Nairobi</option>
-																							<option data-offset="10800" value="Baghdad">(GMT+03:00) Baghdad</option>
-																							<option data-offset="14400" value="Abu Dhabi">(GMT+04:00) Abu Dhabi</option>
-																							<option data-offset="14400" value="Muscat">(GMT+04:00) Muscat</option>
-																							<option data-offset="14400" value="Baku">(GMT+04:00) Baku</option>
-																							<option data-offset="14400" value="Tbilisi">(GMT+04:00) Tbilisi</option>
-																							<option data-offset="14400" value="Yerevan">(GMT+04:00) Yerevan</option>
-																							<option data-offset="16200" value="Tehran">(GMT+04:30) Tehran</option>
-																							<option data-offset="16200" value="Kabul">(GMT+04:30) Kabul</option>
-																							<option data-offset="18000" value="Ekaterinburg">(GMT+05:00) Ekaterinburg</option>
-																							<option data-offset="18000" value="Islamabad">(GMT+05:00) Islamabad</option>
-																							<option data-offset="18000" value="Karachi">(GMT+05:00) Karachi</option>
-																							<option data-offset="18000" value="Tashkent">(GMT+05:00) Tashkent</option>
-																							<option data-offset="19800" value="Chennai">(GMT+05:30) Chennai</option>
-																							<option data-offset="19800" value="Kolkata">(GMT+05:30) Kolkata</option>
-																							<option data-offset="19800" value="Mumbai">(GMT+05:30) Mumbai</option>
-																							<option data-offset="19800" value="New Delhi">(GMT+05:30) New Delhi</option>
-																							<option data-offset="19800" value="Sri Jayawardenepura">(GMT+05:30) Sri Jayawardenepura</option>
-																							<option data-offset="20700" value="Kathmandu">(GMT+05:45) Kathmandu</option>
-																							<option data-offset="21600" value="Astana">(GMT+06:00) Astana</option>
-																							<option data-offset="21600" value="Dhaka">(GMT+06:00) Dhaka</option>
-																							<option data-offset="21600" value="Almaty">(GMT+06:00) Almaty</option>
-																							<option data-offset="21600" value="Urumqi">(GMT+06:00) Urumqi</option>
-																							<option data-offset="23400" value="Rangoon">(GMT+06:30) Rangoon</option>
-																							<option data-offset="25200" value="Novosibirsk">(GMT+07:00) Novosibirsk</option>
-																							<option data-offset="25200" value="Bangkok">(GMT+07:00) Bangkok</option>
-																							<option data-offset="25200" value="Hanoi">(GMT+07:00) Hanoi</option>
-																							<option data-offset="25200" value="Jakarta">(GMT+07:00) Jakarta</option>
-																							<option data-offset="25200" value="Krasnoyarsk">(GMT+07:00) Krasnoyarsk</option>
-																							<option data-offset="28800" value="Beijing">(GMT+08:00) Beijing</option>
-																							<option data-offset="28800" value="Chongqing">(GMT+08:00) Chongqing</option>
-																							<option data-offset="28800" value="Hong Kong">(GMT+08:00) Hong Kong</option>
-																							<option data-offset="28800" value="Kuala Lumpur">(GMT+08:00) Kuala Lumpur</option>
-																							<option data-offset="28800" value="Singapore">(GMT+08:00) Singapore</option>
-																							<option data-offset="28800" value="Taipei">(GMT+08:00) Taipei</option>
-																							<option data-offset="28800" value="Perth">(GMT+08:00) Perth</option>
-																							<option data-offset="28800" value="Irkutsk">(GMT+08:00) Irkutsk</option>
-																							<option data-offset="28800" value="Ulaan Bataar">(GMT+08:00) Ulaan Bataar</option>
-																							<option data-offset="32400" value="Seoul">(GMT+09:00) Seoul</option>
-																							<option data-offset="32400" value="Osaka">(GMT+09:00) Osaka</option>
-																							<option data-offset="32400" value="Sapporo">(GMT+09:00) Sapporo</option>
-																							<option data-offset="32400" value="Tokyo">(GMT+09:00) Tokyo</option>
-																							<option data-offset="32400" value="Yakutsk">(GMT+09:00) Yakutsk</option>
-																							<option data-offset="34200" value="Darwin">(GMT+09:30) Darwin</option>
-																							<option data-offset="34200" value="Adelaide">(GMT+09:30) Adelaide</option>
-																							<option data-offset="36000" value="Canberra">(GMT+10:00) Canberra</option>
-																							<option data-offset="36000" value="Melbourne">(GMT+10:00) Melbourne</option>
-																							<option data-offset="36000" value="Sydney">(GMT+10:00) Sydney</option>
-																							<option data-offset="36000" value="Brisbane">(GMT+10:00) Brisbane</option>
-																							<option data-offset="36000" value="Hobart">(GMT+10:00) Hobart</option>
-																							<option data-offset="36000" value="Vladivostok">(GMT+10:00) Vladivostok</option>
-																							<option data-offset="36000" value="Guam">(GMT+10:00) Guam</option>
-																							<option data-offset="36000" value="Port Moresby">(GMT+10:00) Port Moresby</option>
-																							<option data-offset="36000" value="Solomon Is.">(GMT+10:00) Solomon Is.</option>
-																							<option data-offset="39600" value="Magadan">(GMT+11:00) Magadan</option>
-																							<option data-offset="39600" value="New Caledonia">(GMT+11:00) New Caledonia</option>
-																							<option data-offset="43200" value="Fiji">(GMT+12:00) Fiji</option>
-																							<option data-offset="43200" value="Kamchatka">(GMT+12:00) Kamchatka</option>
-																							<option data-offset="43200" value="Marshall Is.">(GMT+12:00) Marshall Is.</option>
-																							<option data-offset="43200" value="Auckland">(GMT+12:00) Auckland</option>
-																							<option data-offset="43200" value="Wellington">(GMT+12:00) Wellington</option>
-																							<option data-offset="46800" value="Nuku'alofa">(GMT+13:00) Nuku'alofa</option>
-																						</select>
-																					</div>
-																				</div>
-																				<div class="form-group row align-items-center">
-																					<label class="col-xl-3 col-lg-3 col-form-label text-right">Communication</label>
-																					<div class="col-lg-9 col-xl-6">
-																						<div class="checkbox-inline">
-																							<label class="checkbox">
-																							<input type="checkbox" />
-																							<span></span>Email</label>
-																							<label class="checkbox">
-																							<input type="checkbox" />
-																							<span></span>SMS</label>
-																							<label class="checkbox">
-																							<input type="checkbox" />
-																							<span></span>Phone</label>
-																						</div>
-																					</div>
-																				</div>
-																				<div class="separator separator-dashed my-10"></div>
-																				<!--begin::Heading-->
-																				<div class="row">
-																					<div class="col-lg-9 col-xl-6 offset-xl-3">
-																						<h3 class="font-size-h6 mb-5">Security:</h3>
-																					</div>
-																				</div>
-																				<!--end::Heading-->
-																				<div class="form-group row">
-																					<label class="col-xl-3 col-lg-3 text-right col-form-label">Login verification</label>
-																					<div class="col-lg-9 col-xl-6">
-																						<button type="button" class="btn btn-light-primary font-weight-bold btn-sm">Setup login verification</button>
-																						<span class="form-text text-muted">After you log in, you will be asked for additional information to confirm your identity and protect your account from being compromised. 
-																						<a href="#">Learn more</a>.</span>
-																					</div>
-																				</div>
-																				<div class="form-group row">
-																					<label class="col-xl-3 col-lg-3 text-right col-form-label">Password reset verification</label>
-																					<div class="col-lg-9 col-xl-6">
-																						<div class="checkbox-inline">
-																							<label class="checkbox">
-																							<input type="checkbox" />
-																							<span></span>Require personal information to reset your password.</label>
-																						</div>
-																						<span class="form-text text-muted">For extra security, this requires you to confirm your email or phone number when you reset your password. 
-																						<a href="#">Learn more</a>.</span>
-																					</div>
-																				</div>
-																				<div class="form-group row">
-																					<label class="col-xl-3 col-lg-3 text-right col-form-label"></label>
-																					<div class="col-lg-9 col-xl-6">
-																						<button type="button" class="btn btn-light-danger font-weight-bold btn-sm">Deactivate your account ?</button>
-																					</div>
-																				</div>
-																			</form>
-																		</div>
-																		<!--end::Tab Content-->
 																	</div>
 																</div>
 																<!--end::Body-->
@@ -2291,6 +1834,10 @@
       }
     });
   }
+  function tryCetak(id) {
+    window.open(
+       "<?= site_url(); ?>data_karyawan/dataById/" + id);
+  }
 
   function tryEdit(id) {
     $("#tombolEdit" + id).html('<i class="fas fa-spinner fa-pulse"></i>')
@@ -2310,7 +1857,6 @@
         $("#alamat").val(data.alamat)
         $("#prov").val(data.prov)
         $("#kab").val(data.kab)
-        $("#nip").val(data.nip)
         $("#kec").val(data.kec)
         $("#kelu").val(data.kelu)
         $("#rt_rw").val(data.rt_rw)
@@ -2375,7 +1921,6 @@
     var alamat = $("#alamat").val()
     var prov = $("#prov").val()
     var kab = $("#kab").val()
-    var nip = $("#nip").val()
     var kec = $("#kec").val()
     var kelu = $("#kelu").val()
     var rt_rw = $("#rt_rw").val()
@@ -2433,7 +1978,6 @@
         foto: foto,
         nama: nama,
         nik: nik,
-        nip: nip,
         no_hp: no_hp,
         email: email,
         alamat: alamat,
@@ -2498,7 +2042,6 @@
 			$("#no_hp").val("")
 			$("#email").val("")
 			$("#alamat").val("")
-			$("#nip").val("")
 			$("#prov").val("")
 			$("#kab").val("")
 			$("#kec").val("")
@@ -2571,63 +2114,61 @@
       success: function(data) {
         $("#modalView").modal('show')
 		$("#foto").val(data.foto)
-        $("#view_nama").val(data.nama)
-        $("#view_id_karyawan").val(data.id_karyawan)
-        $("#view_nik").val(data.nik)
-        $("#view_nip").val(data.nip)
-        $("#view_no_hp").val(data.no_hp)
-        $("#view_email").val(data.email)
-        $("#view_alamat").val(data.alamat)
-        $("#view_prov").val(data.prov)
-        $("#view_kab").val(data.kab)
-        $("#view_kec").val(data.kec)
-        $("#view_kelu").val(data.kelu)
-        $("#view_rt_rw").val(data.rt_rw)
-        $("#view_kode_pos").val(data.kode_pos)
-        $("#view_tempat_lahir").val(data.tempat_lahir)
-        $("#view_tanggal_lahir").val(data.tanggal_lahir)
-        $("#view_jk").val(data.jk)
-        $("#view_agama").val(data.agama)
-        $("#view_status_pernikahan").val(data.status_pernikahan)
-        $("#view_goldar").val(data.goldar)
-        $("#view_suku").val(data.suku)
-        $("#view_sd").val(data.sd)
-        $("#view_no_sd").val(data.no_sd)
-        $("#view_file_sd").val(data.file_sd)
-        $("#view_smp").val(data.smp)
-        $("#view_no_smp").val(data.no_smp)
-        $("#view_file_smp").val(data.file_smp)
-        $("#view_sma").val(data.sma)
-        $("#view_no_sma").val(data.no_sma)
-        $("#view_file_sma").val(data.file_sma)
-        $("#view_s1").val(data.s1)
-        $("#view_no_s1").val(data.no_s1)
-        $("#view_file_s1").val(data.file_s1)
-        $("#view_s2").val(data.s2)
-        $("#view_no_s2").val(data.no_s2)
-        $("#view_file_s2").val(data.file_s2)
-        $("#view_s3").val(data.s3)
-        $("#view_no_s3").val(data.no_s3)
-        $("#view_file_s3").val(data.file_s3)
-        $("#view_profesi").val(data.profesi)
-        $("#view_no_profesi").val(data.no_profesi)
-        $("#view_file_profesi").val(data.file_profesi)
-        $("#view_jabatan").val(data.jabatan)
-        $("#view_status_karyawan").val(data.status_karyawan)
-        $("#view_jenis_tenaga").val(data.jenis_tenaga)
-        $("#view_jenis_detail_tenaga").val(data.jenis_detail_tenaga)
-        $("#view_jenis_pendidikan").val(data.jenis_pendidikan)
-        $("#view_golongan").val(data.golongan)
-        $("#view_pensiun").val(data.pensiun)
-        $("#view_gaji").val(data.gaji)
-        $("#view_no_sk").val(data.no_sk)
-        $("#view_file_sk").val(data.file_sk)
-        $("#view_file_penempatan").val(data.file_penempatan)
-        $("#view_no_str").val(data.no_str)
-        $("#view_file_str").val(data.file_str)
-        $("#view_no_sip").val(data.no_sip)
-        $("#view_file_sip").val(data.file_sip)
-        $("#view_masa_sip").val(data.masa_sip)
+        $("#editnama").val(data.nama)
+        $("#nik").val(data.nik)
+        $("#no_hp").val(data.no_hp)
+        $("#email").val(data.email)
+        $("#alamat").val(data.alamat)
+        $("#prov").val(data.prov)
+        $("#kab").val(data.kab)
+        $("#kec").val(data.kec)
+        $("#kelu").val(data.kelu)
+        $("#rt_rw").val(data.rt_rw)
+        $("#kode_pos").val(data.kode_pos)
+        $("#tempat_lahir").val(data.tempat_lahir)
+        $("#tanggal_lahir").val(data.tanggal_lahir)
+        $("#jk").val(data.jk)
+        $("#agama").val(data.agama)
+        $("#status_pernikahan").val(data.status_pernikahan)
+        $("#goldar").val(data.goldar)
+        $("#suku").val(data.suku)
+        $("#sd").val(data.sd)
+        $("#no_sd").val(data.no_sd)
+        $("#file_sd").val(data.file_sd)
+        $("#smp").val(data.smp)
+        $("#no_smp").val(data.no_smp)
+        $("#file_smp").val(data.file_smp)
+        $("#sma").val(data.sma)
+        $("#no_sma").val(data.no_sma)
+        $("#file_sma").val(data.file_sma)
+        $("#s1").val(data.s1)
+        $("#no_s1").val(data.no_s1)
+        $("#file_s1").val(data.file_s1)
+        $("#s2").val(data.s2)
+        $("#no_s2").val(data.no_s2)
+        $("#file_s2").val(data.file_s2)
+        $("#s3").val(data.s3)
+        $("#no_s3").val(data.no_s3)
+        $("#file_s3").val(data.file_s3)
+        $("#profesi").val(data.profesi)
+        $("#no_profesi").val(data.no_profesi)
+        $("#file_profesi").val(data.file_profesi)
+        $("#jabatan").val(data.jabatan)
+        $("#status_karyawan").val(data.status_karyawan)
+        $("#jenis_tenaga").val(data.jenis_tenaga)
+        $("#jenis_detail_tenaga").val(data.jenis_detail_tenaga)
+        $("#jenis_pendidikan").val(data.jenis_pendidikan)
+        $("#golongan").val(data.golongan)
+        $("#pensiun").val(data.pensiun)
+        $("#gaji").val(data.gaji)
+        $("#no_sk").val(data.no_sk)
+        $("#file_sk").val(data.file_sk)
+        $("#file_penempatan").val(data.file_penempatan)
+        $("#no_str").val(data.no_str)
+        $("#file_str").val(data.file_str)
+        $("#no_sip").val(data.no_sip)
+        $("#file_sip").val(data.file_sip)
+        $("#masa_sip").val(data.masa_sip)
         console.log(data)
         $("#view" + id).html('<i class="fa fa-edit"></i>')
       }
@@ -2636,194 +2177,381 @@
 
   function view() {
     $("#tombolView").html('<i class="fas fa-spinner fa-pulse"></i> Memproses..')
-    var foto = $("#foto").val()
-    var nama = $("#view_nama").val()
+    var riwayat_demam = $("#riwayat_demam").val()
+    var nama = $("#nama").val()
+    var jenis_awab = $("#jenis_swab").val()
     var nik = $("#nik").val()
-    var no_hp = $("#no_hp").val()
-    var email = $("#email").val()
-    var alamat = $("#alamat").val()
-    var prov = $("#prov").val()
-    var kab = $("#kab").val()
-    var kec = $("#kec").val()
-    var kelu = $("#kelu").val()
-    var rt_rw = $("#rt_rw").val()
-    var kode_pos = $("#kode_pos").val()
-    var tempat_lahir = $("#tempat_lahir").val()
-    var tanggal_lahir = $("#tanggal_lahir").val()
+    var nama_ortu = $("#nama_ortu").val()
+    var ttl = $("#ttl").val()
+    var umur = $("#umur").val()
     var jk = $("#jk").val()
-    var agama = $("#agama").val()
-    var status_pernikahan = $("#status_pernikahan").val()
-    var goldar = $("#goldar").val()
-    var suku = $("#suku").val()
-    var sd = $("#sd").val()
-    var no_sd = $("#no_sd").val()
-    var file_sd = $("#file_sd").val()
-    var smp = $("#smp").val()
-    var no_smp = $("#no_smp").val()
-    var file_smp = $("#file_smp").val()
-    var sma = $("#sma").val()
-    var no_sma = $("#no_sma").val()
-    var file_sma = $("#file_sma").val()
-    var s1 = $("#s1").val()
-    var no_s1 = $("#no_s1").val()
-    var file_s1 = $("#file_s1").val()
-    var s2 = $("#s2").val()
-    var no_s2 = $("#no_s2").val()
-    var file_s2 = $("#file_s2").val()
-    var s3 = $("#s3").val()
-    var no_s3 = $("#no_s3").val()
-    var file_s3 = $("#file_s3").val()
-    var profesi = $("#profesi").val()
-    var no_profesi = $("#no_profesi").val()
-    var file_profesi = $("#file_profesi").val()
-    var jabatan = $("#jabatan").val()
-    var status_karyawan = $("#status_karyawan").val()
-    var jenis_tenaga = $("#jenis_tenaga").val()
-    var jenis_detail_tenaga = $("#jenis_detail_tenaga").val()
-    var jenis_pendidikan = $("#jenis_pendidikan").val()
-    var golongan = $("#golongan").val()
-    var pensiun = $("#pensiun").val()
-    var gaji = $("#gaji").val()
-    var no_sk = $("#no_sk").val()
-    var file_sk = $("#file_sk").val()
-    var file_penempatan = $("#file_penempatan").val()
-    var no_str = $("#no_str").val()
-    var file_str = $("#file_str").val()
-    var no_sip = $("#no_sip").val()
-    var file_sip = $("#file_sip").val()
-    var masa_sip = $("#masa_sip").val()
+    var pekerjaan = $("#pekerjaan").val()
+    var jalan = $("#jalan").val()
+    var rt = $("#rt").val()
+    var desa = $("#desa").val()
+    var kec = $("#kec").val()
+    var kab = $("#kab").val()
+    var no_hp = $("#no_hp").val()
+    var derajat_demam = $("#derajat_demam").val()
+    var riwayat_batuk = $("#riwayat_batuk").val()
+    var riwayat_pilek = $("#riwayat_pilek").val()
+    var riwayat_sakit_tenggorokan = $("#riwayat_sakit_tenggorokan").val()
+    var riwayat_sakit_kepala = $("#riwayat_sakit_kepala").val()
+    var lemah = $("#lemah").val()
+    var nyeri_otot = $("#nyeri_otot").val()
+    var mual = $("#mual").val()
+    var abdomen = $("#abdomen").val()
+    var diare = $("#diare").val()
+    var hamil = $("#hamil").val()
+    var diabetes = $("#diabetes").val()
+    var jantung = $("#jantung").val()
+    var hipertensi = $("#hipertensi").val()
+    var keganasan = $("#keganasan").val()
+    var gangguan_imunologi = $("#gangguan_imunologi").val()
+    var gagal_ginjal = $("#gagal_ginjal").val()
+    var gangguan_hati = $("#gangguan_hati").val()
+    var ppok = $("#ppok").val()
+    var kondisi_penyerta_lain = $("#kondisi_penyerta_lain").val()
+    var pneumonia = $("#pneumonia").val()
+    var ards = $("#ards").val()
+    var diagnosis_lain = $("#diagnosis_lain").val()
+    var etiologi = $("#etiologi").val()
+    var diagnosis_pernafasan_lain = $("#diagnosis_pernafasan_lain").val()
+    var rawat_rs = $("#rawat_rs").val()
+    var rs_terakhir = $("#rs_terakhir").val()
+    var tgl_masuk_rs = $("#tgl_masuk_rs").val()
+    var rawat_icu = $("#rawat_icu").val()
+    var tindakan_intubasi = $("#tindakan_intubasi").val()
+    var penggunaan_emco = $("#penggunaan_emco").val()
+    var rs_sebelumnya = $("#rs_sebelumnya").val()
+    var status_pasien_terakhir = $("#status_pasien_terakhir").val()
+    var tgl_meninggal = $("#tgl_meninggal").val()
+    var riwayat_luar_negeri = $("#riwayat_luar_negeri").val()
+    var negara_1 = $("#negara_1").val()
+    var kota_1 = $("#kota_1").val()
+    var tgl_negara_1 = $("#tgl_negara_1").val()
+    var tgl_tiba_negara_1 = $("#tgl_tiba_negara_1").val()
+    var negara_2 = $("#negara_2").val()
+    var kota_2 = $("#kota_2").val()
+    var tgl_negara_2 = $("#tgl_negara_2").val()
+    var tgl_tiba_negara_2 = $("#tgl_tiba_negara_2").val()
+    var riwayat_transmisi_lokal = $("#riwayat_transmisi_lokal").val()
+    var provinsi_transmisi_1 = $("#provinsi_transmisi_1").val()
+    var kota_transmisi_1 = $("#kota_transmisi_1").val()
+    var tgl_transmisi_1 = $("#tgl_transmisi_1").val()
+    var tgl_tiba_transmisi_1 = $("#tgl_tiba_transmisi_1").val()
+    var provinsi_transmisi_2 = $("#provinsi_transmisi_2").val()
+    var kota_transmisi_2 = $("#kota_transmisi_2").val()
+    var tgl_transmisi_2 = $("#tgl_transmisi_2").val()
+    var tgl_tiba_transmisi_2 = $("#tgl_tiba_transmisi_2").val()
+    var riwayat_ketransmisi_lokal = $("#riwayat_ketransmisi_lokal").val()
+    var provinsi_ketransmisi = $("#provinsi_ketransmisi").val()
+    var kota_ketransmisi = $("#kota_ketransmisi").val()
+    var riwayat_kontak_suspek = $("#riwayat_kontak_suspek").val()
+    var nama_suspek_1 = $("#nama_suspek_1").val()
+    var alamat_suspek_1 = $("#alamat_suspek_1").val()
+    var hubungan_suspek_1 = $("#hubungan_suspek_1").val()
+    var tgl_kontak_suspek_1 = $("#tgl_kontak_suspek_1").val()
+    var tgl_terakhir_kontak_suspek_1 = $("#tgl_terakhir_kontak_suspek_1").val()
+    var riwayat_kontak_konfirm = $("#riwayat_kontak_konfirm").val()
+    var nama_konfirm_1 = $("#nama_konfirm_1").val()
+    var alamat_konfirm_1 = $("#alamat_konfirm_1").val()
+    var hubungan_konfirm_1 = $("#hubungan_konfirm_1").val()
+    var tgl_kontak_konfirm_1 = $("#tgl_kontak_konfirm_1").val()
+    var tgl_terakhir_kontak_konfirm_1 = $("#tgl_terakhir_kontak_konfirm_1").val()
+    var hewan_peliharaan = $("#hewan_peliharaan").val()
+    var jenis_hewan_peliharaan = $("#jenis_hewan_peliharaan").val()
+    var petugas_kesehatan = $("#petugas_kesehatan").val()
+    var apd = $("#apd").val()
+    var aerosol = $("#aerosol").val()
+    var sebutkan_aerosol = $("#sebutkan_aerosol").val()
+    var nama_kasus_1 = $("#nama_kasus_1").val()
+    var umur_kasus_1 = $("#umur_kasus_1").val()
+    var jk_kasus_1 = $("#jk_kasus_1").val()
+    var hubungan_kasus_1 = $("#hubungan_kasus_1").val()
+    var alamat_kasus_1 = $("#alamat_kasus_1").val()
+    var hp_kasus_1 = $("#hp_kasus_1").val()
+    var aktifitas_kasus_1 = $("#aktifitas_kasus_1").val()
+    var nama_kasus_2 = $("#nama_kasus_2").val()
+    var umur_kasus_2 = $("#umur_kasus_2").val()
+    var jk_kasus_2 = $("#jk_kasus_2").val()
+    var hubungan_kasus_2 = $("#hubungan_kasus_2").val()
+    var alamat_kasus_2 = $("#alamat_kasus_2").val()
+    var hp_kasus_2 = $("#hp_kasus_2").val()
+    var aktifitas_kasus_2 = $("#aktifitas_kasus_2").val()
+    var nama_kasus_3 = $("#nama_kasus_3").val()
+    var umur_kasus_3 = $("#umur_kasus_3").val()
+    var jk_kasus_3 = $("#jk_kasus_3").val()
+    var hubungan_kasus_3 = $("#hubungan_kasus_3").val()
+    var alamat_kasus_3 = $("#alamat_kasus_3").val()
+    var hp_kasus_3 = $("#hp_kasus_3").val()
+    var aktifitas_kasus_3 = $("#aktifitas_kasus_3").val()
+    var nama_kasus_4 = $("#nama_kasus_4").val()
+    var umur_kasus_4 = $("#umur_kasus_4").val()
+    var jk_kasus_4 = $("#jk_kasus_4").val()
+    var hubungan_kasus_4 = $("#hubungan_kasus_4").val()
+    var alamat_kasus_4 = $("#alamat_kasus_4").val()
+    var hp_kasus_4 = $("#hp_kasus_4").val()
+    var aktifitas_kasus_4 = $("#aktifitas_kasus_4").val()
+    var vaksin1 = $("#vaksin1").val()
+    var vaksin2 = $("#vaksin2").val()
+    var booster = $("#booster").val()
     var id = $("#idUser").val()
     $.ajax({
       url: '<?= base_url() ?>data_karyawan/edit',
       method: 'post',
       data: {
         id: id,
-        foto: foto,
+        riwayat_demam: riwayat_demam,
         nama: nama,
         nik: nik,
-        no_hp: no_hp,
-        email: email,
-        alamat: alamat,
-        prov: prov,
-        kab: kab,
-        kec: kec,
-        kelu: kelu,
-        rt_rw: rt_rw,
-        kode_pos: kode_pos,
-        tempat_lahir: tempat_lahir,
-        tanggal_lahir: tanggal_lahir,
+        nama_ortu: nama_ortu,
+        ttl: ttl,
+        umur: umur,
         jk: jk,
-        agama: agama,
-        status_pernikahan: status_pernikahan,
-        goldar: goldar,
-        suku: suku,
-        sd: sd,
-        no_sd: no_sd,
-        file_sd: file_sd,
-        smp: smp,
-        no_smp: no_smp,
-        file_smp: file_smp,
-        sma: sma,
-        no_sma: no_sma,
-        file_sma: file_sma,
-        s1: s1,
-        no_s1: no_s1,
-        file_s1: file_s1,
-        s2: s2,
-        no_s2: no_s2,
-        file_s2: file_s2,
-        s3: s3,
-        no_s3: no_s3,
-        file_s3: file_s3,
-        profesi: profesi,
-        no_profesi: no_profesi,
-        file_profesi: file_profesi,
-        jabatan: jabatan,
-        status_karyawan: status_karyawan,
-        jenis_tenaga: jenis_tenaga,
-        jenis_detail_tenaga: jenis_detail_tenaga,
-        jenis_pendidikan: jenis_pendidikan,
-        golongan: golongan,
-        pensiun: pensiun,
-        gaji: gaji,
-        no_sk: no_sk,
-        file_sk: file_sk,
-        file_penempatan: file_penempatan,
-        no_str: no_str,
-        file_str: file_str,
-        no_sip: no_sip,
-        file_sip: file_sip,
-        masa_sip: masa_sip
+        pekerjaan: pekerjaan,
+        jalan: jalan,
+        rt: rt,
+        desa: desa,
+        kec: kec,
+        kab: kab,
+        no_hp: no_hp,
+        derajat_demam: derajat_demam,
+        riwayat_batuk: riwayat_batuk,
+        riwayat_pilek: riwayat_pilek,
+        riwayat_sakit_tenggorokan: riwayat_sakit_tenggorokan,
+        riwayat_sakit_kepala: riwayat_sakit_kepala,
+        lemah: lemah,
+        nyeri_otot: nyeri_otot,
+        mual: mual,
+        abdomen: abdomen,
+        diare: diare,
+        hamil: hamil,
+        diabetes: diabetes,
+        jantung: jantung,
+        hipertensi: hipertensi,
+        keganasan: keganasan,
+        gangguan_imunologi: gangguan_imunologi,
+        gagal_ginjal: gagal_ginjal,
+        gangguan_hati: gangguan_hati,
+        ppok: ppok,
+        kondisi_penyerta_lain: kondisi_penyerta_lain,
+        pneumonia: pneumonia,
+        ards: ards,
+        diagnosis_lain: diagnosis_lain,
+        etiologi: etiologi,
+        diagnosis_pernafasan_lain: diagnosis_pernafasan_lain,
+        rawat_rs: rawat_rs,
+        rs_terakhir: rs_terakhir,
+        tgl_masuk_rs: tgl_masuk_rs,
+        rawat_icu: rawat_icu,
+        tindakan_intubasi: tindakan_intubasi,
+        penggunaan_emco: penggunaan_emco,
+        rs_sebelumnya: rs_sebelumnya,
+        status_pasien_terakhir: status_pasien_terakhir,
+        tgl_meninggal: tgl_meninggal,
+        riwayat_luar_negeri: riwayat_luar_negeri,
+        negara_1: negara_1,
+        kota_1: kota_1,
+        tgl_negara_1: tgl_negara_1,
+        tgl_tiba_negara_1: tgl_tiba_negara_1,
+        negara_2: negara_2,
+        kota_2: kota_2,
+        tgl_negara_2: tgl_negara_2,
+        tgl_tiba_negara_2: tgl_tiba_negara_2,
+        riwayat_transmisi_lokal: riwayat_transmisi_lokal,
+        provinsi_transmisi_1: provinsi_transmisi_1,
+        kota_transmisi_1: kota_transmisi_1,
+        tgl_transmisi_1: tgl_transmisi_1,
+        tgl_tiba_transmisi_1: tgl_tiba_transmisi_1,
+        provinsi_transmisi_2: provinsi_transmisi_2,
+        kota_transmisi_2: kota_transmisi_2,
+        tgl_transmisi_2: tgl_transmisi_2,
+        tgl_tiba_transmisi_2: tgl_tiba_transmisi_2,
+        riwayat_ketransmisi_lokal: riwayat_ketransmisi_lokal,
+        provinsi_ketransmisi: provinsi_ketransmisi,
+        kota_ketransmisi: kota_ketransmisi,
+        riwayat_kontak_suspek: riwayat_kontak_suspek,
+        nama_suspek_1: nama_suspek_1,
+        alamat_suspek_1: alamat_suspek_1,
+        hubungan_suspek_1: hubungan_suspek_1,
+        tgl_kontak_suspek_1: tgl_kontak_suspek_1,
+        tgl_terakhir_kontak_suspek_1: tgl_terakhir_kontak_suspek_1,
+        riwayat_kontak_konfirm: riwayat_kontak_konfirm,
+        nama_konfirm_1: nama_konfirm_1,
+        alamat_konfirm_1: alamat_konfirm_1,
+        hubungan_konfirm_1: hubungan_konfirm_1,
+        tgl_kontak_konfirm_1: tgl_kontak_konfirm_1,
+        tgl_terakhir_kontak_konfirm_1: tgl_terakhir_kontak_konfirm_1,
+        hewan_peliharaan: hewan_peliharaan,
+        jenis_hewan_peliharaan: jenis_hewan_peliharaan,
+        petugas_kesehatan: petugas_kesehatan,
+        apd: apd,
+        aerosol: aerosol,
+        sebutkan_aerosol: sebutkan_aerosol,
+        nama_kasus_1: nama_kasus_1,
+        umur_kasus_1: umur_kasus_1,
+        jk_kasus_1: jk_kasus_1,
+        hubungan_kasus_1: hubungan_kasus_1,
+        alamat_kasus_1: alamat_kasus_1,
+        hp_kasus_1: hp_kasus_1,
+        aktifitas_kasus_1: aktifitas_kasus_1,
+        nama_kasus_2: nama_kasus_2,
+        umur_kasus_2: umur_kasus_2,
+        jk_kasus_2: jk_kasus_2,
+        hubungan_kasus_2: hubungan_kasus_2,
+        alamat_kasus_2: alamat_kasus_2,
+        hp_kasus_2: hp_kasus_2,
+        aktifitas_kasus_2: aktifitas_kasus_2,
+        nama_kasus_3: nama_kasus_3,
+        umur_kasus_3: umur_kasus_3,
+        jk_kasus_3: jk_kasus_3,
+        hubungan_kasus_3: hubungan_kasus_3,
+        alamat_kasus_3: alamat_kasus_3,
+        hp_kasus_3: hp_kasus_3,
+        aktifitas_kasus_3: aktifitas_kasus_3,
+        nama_kasus_4: nama_kasus_4,
+        umur_kasus_4: umur_kasus_4,
+        jk_kasus_4: jk_kasus_4,
+        hubungan_kasus_4: hubungan_kasus_4,
+        alamat_kasus_4: alamat_kasus_4,
+        hp_kasus_4: hp_kasus_4,
+        aktifitas_kasus_4: aktifitas_kasus_4,
+        vaksin1: vaksin1,
+        vaksin2: vaksin2,
+        booster: booster
       },
       dataType: 'json',
       success: function(data) {
         if (data == "") {
-			$("#idUser").val("")
-			$("#foto").val("")
-			$("#nama").val("")
-			$("#nik").val("")
-			$("#no_hp").val("")
-			$("#email").val("")
-			$("#alamat").val("")
-			$("#prov").val("")
-			$("#kab").val("")
-			$("#kec").val("")
-			$("#kelu").val("")
-			$("#rt_rw").val("")
-			$("#kode_pos").val("")
-			$("#tempat_lahir").val("")
-			$("#tanggal_lahir").val("")
-			$("#jk").val("")
-			$("#agama").val("")
-			$("#status_pernikahan").val("")
-			$("#goldar").val("")
-			$("#suku").val("")
-			$("#sd").val("")
-			$("#no_sd").val("")
-			$("#file_sd").val("")
-			$("#smp").val("")
-			$("#no_smp").val("")
-			$("#file_smp").val("")
-			$("#sma").val("")
-			$("#no_sma").val("")
-			$("#file_sma").val("")
-			$("#s1").val("")
-			$("#no_s1").val("")
-			$("#file_s1").val("")
-			$("#s2").val("")
-			$("#no_s2").val("")
-			$("#file_s2").val("")
-			$("#s3").val("")
-			$("#no_s3").val("")
-			$("#file_s3").val("")
-			$("#profesi").val("")
-			$("#no_profesi").val("")
-			$("#file_profesi").val("")
-			$("#jabatan").val("")
-			$("#status_karyawan").val("")
-			$("#jenis_tenaga").val("")
-			$("#jenis_detail_tenaga").val("")
-			$("#jenis_pendidikan").val("")
-			$("#golongan").val("")
-			$("#pensiun").val("")
-			$("#gaji").val("")
-			$("#no_sk").val("")
-			$("#file_sk").val("")
-			$("#file_penempatan").val("")
-			$("#no_str").val("")
-			$("#file_str").val("")
-			$("#no_sip").val("")
-			$("#file_sip").val("")
-			$("#masa_sip").val("")
-			// console.log(data)
+          $("#idUser").val("")
+          $("#riwayat_demam").val("")
+          $("#nama").val("")
+          $("#jenis_swab").val("")
+          $("#nik").val("")
+          $("#nama_ortu").val("")
+          $("#ttl").val("")
+          $("#umur").val("")
+          $("#jk").val("")
+          $("#pekerjaan").val("")
+          $("#jalan").val("")
+          $("#rt").val("")
+          $("#desa").val("")
+          $("#kec").val("")
+          $("#kab").val("")
+          $("#no_hp").val("")
+          $("#derajat_demam").val("")
+          $("#riwayat_batuk").val("")
+          $("#riwayat_pilek").val("")
+          $("#riwayat_sakit_tenggorokan").val("")
+          $("#riwayat_sakit_kepala").val("")
+          $("#lemah").val("")
+          $("#nyeri_otot").val("")
+          $("#mual").val("")
+          $("#abdomen").val("")
+          $("#diare").val("")
+          $("#hamil").val("")
+          $("#diabetes").val("")
+          $("#jantung").val("")
+          $("#hipertensi").val("")
+          $("#keganasan").val("")
+          $("#gangguan_imunologi").val("")
+          $("#gagal_ginjal").val("")
+          $("#gangguan_hati").val("")
+          $("#ppok").val("")
+          $("#kondisi_penyerta_lain").val("")
+          $("#pneumonia").val("")
+          $("#ards").val("")
+          $("#diagnosis_lain").val("")
+          $("#etiologi").val("")
+          $("#diagnosis_pernafasan_lain").val("")
+          $("#rawat_rs").val("")
+          $("#rs_terakhir").val("")
+          $("#tgl_masuk_rs").val("")
+          $("#rawat_icu").val("")
+          $("#tindakan_intubasi").val("")
+          $("#penggunaan_emco").val("")
+          $("#rs_sebelumnya").val("")
+          $("#status_pasien_terakhir").val("")
+          $("#tgl_meninggal").val("")
+          $("#riwayat_luar_negeri").val("")
+          $("#negara_1").val("")
+          $("#kota_1").val("")
+          $("#tgl_negara_1").val("")
+          $("#tgl_tiba_negara_1").val("")
+          $("#negara_2").val("")
+          $("#kota_2").val("")
+          $("#tgl_negara_2").val("")
+          $("#tgl_tiba_negara_2").val("")
+          $("#riwayat_transmisi_lokal").val("")
+          $("#provinsi_transmisi_1").val("")
+          $("#kota_transmisi_1").val("")
+          $("#tgl_transmisi_1").val("")
+          $("#tgl_tiba_transmisi_1").val("")
+          $("#provinsi_transmisi_2").val("")
+          $("#kota_transmisi_2").val("")
+          $("#tgl_transmisi_2").val("")
+          $("#tgl_tiba_transmisi_2").val("")
+          $("#riwayat_ketransmisi_lokal").val("")
+          $("#provinsi_ketransmisi").val("")
+          $("#kota_ketransmisi").val("")
+          $("#riwayat_kontak_suspek").val("")
+          $("#nama_suspek_1").val("")
+          $("#alamat_suspek_1").val("")
+          $("#hubungan_suspek_1").val("")
+          $("#tgl_kontak_suspek_1").val("")
+          $("#tgl_terakhir_kontak_suspek_1").val("")
+          $("#riwayat_kontak_konfirm").val("")
+          $("#nama_konfirm_1").val("")
+          $("#alamat_konfirm_1").val("")
+          $("#hubungan_konfirm_1").val("")
+          $("#tgl_kontak_konfirm_1").val("")
+          $("#tgl_terakhir_kontak_konfirm_1").val("")
+          $("#hewan_peliharaan").val("")
+          $("#jenis_hewan_peliharaan").val("")
+          $("#petugas_kesehatan").val("")
+          $("#apd").val("")
+          $("#aerosol").val("")
+          $("#sebutkan_aerosol").val("")
+          $("#nama_kasus_1").val("")
+          $("#umur_kasus_1").val("")
+          $("#jk_kasus_1").val("")
+          $("#hubungan_kasus_1").val("")
+          $("#alamat_kasus_1").val("")
+          $("#hp_kasus_1").val("")
+          $("#aktifitas_kasus_1").val("")
+          $("#nama_kasus_2").val("")
+          $("#umur_kasus_2").val("")
+          $("#jk_kasus_2").val("")
+          $("#hubungan_kasus_2").val("")
+          $("#alamat_kasus_2").val("")
+          $("#hp_kasus_2").val("")
+          $("#aktifitas_kasus_2").val("")
+          $("#nama_kasus_3").val("")
+          $("#umur_kasus_3").val("")
+          $("#jk_kasus_3").val("")
+          $("#hubungan_kasus_3").val("")
+          $("#alamat_kasus_3").val("")
+          $("#hp_kasus_3").val("")
+          $("#aktifitas_kasus_3").val("")
+          $("#nama_kasus_4").val("")
+          $("#umur_kasus_4").val("")
+          $("#jk_kasus_4").val("")
+          $("#hubungan_kasus_4").val("")
+          $("#alamat_kasus_4").val("")
+          $("#hp_kasus_4").val("")
+          $("#aktifitas_kasus_4").val("")
+          $("#vaksin1").val("")
+          $("#vaksin2").val("")
+          $("#booster").val("")
         } else {
           $('#pesanErrorView').html(data)
         }
         $("#modalView").modal('hide');
         tampilkan();
-        $("#tombolView").html('Simpan')
+        $("#tombolView").html('View')
       }
     });
-  }
+}
 
 </script>

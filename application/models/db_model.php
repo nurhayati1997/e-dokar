@@ -53,6 +53,11 @@ class Db_model extends CI_Model
     {
         $this->db->delete($tabel, $where);
     }
+    public function insert_get($tabel, $data)
+    {
+        $this->db->insert($tabel, $data);
+        return $this->db->insert_id();
+    }
     // function getWarningStock($tabel)
     // {
     //     $this->db->order_by('stok_barang ASC');

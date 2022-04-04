@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.0.2
+-- version 5.0.4
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 01, 2022 at 09:48 AM
--- Server version: 10.4.14-MariaDB
--- PHP Version: 7.4.9
+-- Generation Time: Apr 04, 2022 at 03:07 AM
+-- Server version: 10.4.17-MariaDB
+-- PHP Version: 7.4.14
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -101,7 +101,8 @@ INSERT INTO `hrd_user` (`id`, `nama`, `status_karyawan`, `jabatan`, `email`, `pa
 (1, 'hilal amin', 'PNS', 'KA.Unit', 'hilal@gmail.com', '$y201$a4a$jU/LgIQb21X6hXqmkzX17.fP1uX4OTGq.7o/2mTcUhysbmCtvZ', 1, 1, '2342', '', '', '123456', '', 'Margister', 'Pejabat Struktural', 0, '2022-03-31', '', '', '', '', '', '', '', '', '0000-00-00', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '0000-00-00', '', '', '', '', '', '', '', '', '0000-00-00'),
 (6, 'Nurhayati Fitriani', '', 'owner', 'nurhayatifitriani77@gmail.com', '$y201$H8m$nI/V0H/vVJ60wQaK0Lfi86WhH.tcWDg5o73ZhNAwZr5oCSpmug', 1, 1, '', '', '', '', '', '', '', 0, '0000-00-00', '', '', '', '', '', '', '', '', '0000-00-00', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '0000-00-00', '', '', '', '', '', '', '', '', '0000-00-00'),
 (123457, 'mohammad', 'PNS', 'Wadir', 'hilal77@gmail.com', '$y201$4VF$zWC0R9C0x16268QaiJp/bogvFu93H.RMU74Xv94f7PDOtiZcvs', 2, 1, '764', '', '0986', '765', 'bumianyar', 'Pasca Sarjana Manajemen', 'Pejabat Struktural', 0, '2022-03-31', '', '', '', '', '', '', '', '', '0000-00-00', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '0000-00-00', '', '', '', '', '', '', '', '', '0000-00-00'),
-(123458, 'rina handayani', 'Kontrak', 'Staff', 'rina@gmail.com', '$y201$cv/$iLrz0MRLLhi5QoaYexOEJR9mGOCe31ibNOBurOJYCoKX8iFlpM', 3, 1, '5432144', '1909674571474', '08230104', '8764', 'jl.Halim Perdana Kusuma No 12', 'Sarjana Ekonomi', 'Pejabat Struktural', 0, '2022-03-31', '', 'Jawa Timur', 'Bangkalan', 'Bangkalan', '-', '-/-', '69112', 'Sumenep', '2022-04-20', 'Perempuan', 'Islam', 'Menikah', 'o', 'Indonesia', 'bangkalan 01', '', '', 'bangkalan 02', '2457443', '', 'bangkalan 03', '254345', '', 'STKIP', '343', '', '-', '3434', '', '-', '34', '', 'Keperawatan', '7798/j/475', '', 'Penata Muda/IIIb', '0000-00-00', '3.500.000', '4575/597/78', '', '', '7789/14/sep/hn', '', '789/uyr/o/2022', '', '0000-00-00');
+(123458, 'rina handayani', 'Kontrak', 'Staff', 'rina@gmail.com', '$y201$cv/$iLrz0MRLLhi5QoaYexOEJR9mGOCe31ibNOBurOJYCoKX8iFlpM', 3, 1, '5432144', '1909674571474', '08230104', '8764', 'jl.Halim Perdana Kusuma No 12', 'Sarjana Ekonomi', 'Pejabat Struktural', 0, '2022-03-31', '', 'Jawa Timur', 'Bangkalan', 'Bangkalan', '-', '-/-', '69112', 'Sumenep', '2022-04-20', 'Perempuan', 'Islam', 'Menikah', 'o', 'Indonesia', 'bangkalan 01', '', '', 'bangkalan 02', '2457443', '', 'bangkalan 03', '254345', '', 'STKIP', '343', '', '-', '3434', '', '-', '34', '', 'Keperawatan', '7798/j/475', '', 'Penata Muda/IIIb', '0000-00-00', '3.500.000', '4575/597/78', '', '', '7789/14/sep/hn', '', '789/uyr/o/2022', '', '0000-00-00'),
+(123459, 'nona', '', '', 'dr.nunukkristiani@gmail.com', '$y201$qN2$kO9EUHE3VwX7881e53W97lsOjec3b0O7Ffk2Yo.hK//MWKQREI', 2, 1, '', '', '', '654', '', '', '', 0, '2022-04-02', '', '', '', '', '', '', '', '', '0000-00-00', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '0000-00-00', '', '', '', '', '', '', '', '', '2022-09-01');
 
 --
 -- Indexes for dumped tables
@@ -121,7 +122,7 @@ ALTER TABLE `hrd_user`
 -- AUTO_INCREMENT for table `hrd_user`
 --
 ALTER TABLE `hrd_user`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=123459;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=123460;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

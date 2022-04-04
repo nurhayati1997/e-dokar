@@ -22,7 +22,14 @@ class data_karyawan extends CI_Controller
 	
 	public function tampil()
 	{
-		echo json_encode($this->db_model->all_data("hrd_user")->result());
+		// $user = $this->db_model->get_where('hrd_user', array('id' => $this->session->userdata("id")))->row();
+		if ($this->session->userdata("rule")==1) {
+			// redirect("login");
+			echo json_encode($this->db_model->all_data("hrd_user")->result());
+		}else{
+			echo json_encode($this->db_model->get_where("hrd_user", array('id' => $this->session->userdata("id")))->result());
+		}
+		
 	}
 
 

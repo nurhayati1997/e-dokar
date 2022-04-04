@@ -113,21 +113,26 @@ License: You must have a valid license purchased only from themeforest(the above
 											</li>
 
                       
+											<?php if ($this->session->userdata("rule") == 1 or $this->session->userdata("rule") == 3) { ?>
 											<li class="menu-item menu-item-submenu menu-item-rel" data-menu-toggle="click" aria-haspopup="true">
 												<a href="<?= site_url('data_karyawan') ?>" class="menu-link">
 													<span class="menu-text">Data Karyawan</span>
 													<i class="menu-arrow"></i>
 												</a>
 											</li>
+											<?php } ?>
 
-                      
+											<?php if ($this->session->userdata("rule") == 1 or $this->session->userdata("rule") == 2) { ?>
 											<li class="menu-item menu-item-submenu menu-item-rel" data-menu-toggle="click" aria-haspopup="true">
-												<a href="<?= site_url('dashboard') ?>" class="menu-link">
+												<a href="<?= site_url('pelatihan_karyawan') ?>" class="menu-link">
 													<span class="menu-text">Pelatihan Karyawan</span>
 													<i class="menu-arrow"></i>
 												</a>
 											</li>
+											<?php } ?>
+											
                       
+											<?php if ($this->session->userdata("rule") == 1) { ?>
 											<li class="menu-item menu-item-submenu menu-item-rel" data-menu-toggle="click" aria-haspopup="true">
 												<a href="javascript:;" class="menu-link menu-toggle">
 													<span class="menu-text">Kenaikan Pangkat</span>
@@ -137,7 +142,7 @@ License: You must have a valid license purchased only from themeforest(the above
 												<div class="menu-submenu menu-submenu-classic menu-submenu-left">
                          							<ul class="menu-subnav">
 														<li class="menu-item menu-item-submenu" data-menu-toggle="hover" aria-haspopup="true">
-															<a href="<?= site_url('belum_dilayani') ?>" class="menu-link">
+															<a href="<?= site_url('kenaikan_reguler') ?>" class="menu-link">
 																<span class="svg-icon menu-icon">
 																	<!--begin::Svg Icon | path:/metronic/theme/html/demo1/dist/assets/media/svg/icons/Shopping/Box2.svg-->
 																	<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
@@ -190,26 +195,36 @@ License: You must have a valid license purchased only from themeforest(the above
 													</ul>
 												</div>
 											</li>
+											<?php } ?>
 
-                      <li class="menu-item menu-item-submenu menu-item-rel" data-menu-toggle="click" aria-haspopup="true">
+											<?php if ($this->session->userdata("rule") == 1) { ?>
+											<li class="menu-item menu-item-submenu menu-item-rel" data-menu-toggle="click" aria-haspopup="true">
 												<a href="<?= site_url('dashboard') ?>" class="menu-link">
 													<span class="menu-text">Riwayat Kerja</span>
 													<i class="menu-arrow"></i>
 												</a>
-                      </li>
+                     						 </li>
+											<?php } ?>
 
-                      <li class="menu-item menu-item-submenu menu-item-rel" data-menu-toggle="click" aria-haspopup="true">
-												<a href="<?= site_url('dashboard') ?>" class="menu-link">
-													<span class="menu-text">STR/SIP exp</span>
-													<i class="menu-arrow"></i>
-												</a>
-                      </li>
-                      <li class="menu-item menu-item-submenu menu-item-rel" data-menu-toggle="click" aria-haspopup="true">
+											<?php if ($this->session->userdata("rule") == 1) { ?>
+											<li class="menu-item menu-item-submenu menu-item-rel" data-menu-toggle="click" aria-haspopup="true">
 												<a href="<?= site_url('dashboard') ?>" class="menu-link">
 													<span class="menu-text">Perizinan</span>
 													<i class="menu-arrow"></i>
 												</a>
-                      </li>
+                     						</li>
+											 <?php } ?>
+
+                      						
+											<?php if ($this->session->userdata("rule") == 1 or $this->session->userdata("rule") == 3) { ?><li class="menu-item menu-item-submenu menu-item-rel" data-menu-toggle="click" aria-haspopup="true">
+												<a href="<?= site_url('dashboard') ?>" class="menu-link">
+													<span class="menu-text">STR/SIP exp</span>
+													<i class="menu-arrow"></i>
+												</a>
+											</li>
+											<?php } ?>
+
+
 
 
 										</ul>

@@ -548,6 +548,61 @@
 																		<input type="text" class="form-control" id="gaji" placeholder="Masukkan Gaji Sesuai SK" />
 																	</div>
 																	<div class="col-lg-4">
+																		<span class="form-text text-muted">Masukkan Ruangan</span>
+																		<select class="form-control" id="ruangan">
+																			<option value="LOKET 1 ( RM )">LOKET 1 ( RM )</option>
+																			<option value="LOKET  2  ( MOBDA )">LOKET  2  ( MOBDA )</option>
+																			<option value="ASOKA">ASOKA</option>
+																			<option value="ANGGREK">ANGGREK</option>
+																			<option value="SAKURA">SAKURA</option>
+																			<option value="BUGENVILE">BUGENVILE</option>
+																			<option value="CAMELIA">CAMELIA</option>
+																			<option value="CEMPAKA">CEMPAKA</option>
+																			<option value="DAHLIA">DAHLIA</option>
+																			<option value="EDELWEIS">EDELWEIS</option>
+																			<option value="FLAMBOYAN">FLAMBOYAN</option>
+																			<option value="MELATI">MELATI</option>
+																			<option value="TULIP">TULIP</option>
+																			<option value="IBS DAN INSTALASI ANASTHESI">IBS DAN INSTALASI ANASTHESI</option>
+																			<option value="HD">HD</option>
+																			<option value="IPCN">IPCN</option>
+																			<option value="INSTALASI RAWAT JALAN">INSTALASI RAWAT JALAN</option>
+																			<option value="INSTALASI FARMASI">INSTALASI FARMASI</option>
+																			<option value="INSTALASI KESEHATAN LINGKUNGAN ">INSTALASI KESEHATAN LINGKUNGAN </option>
+																			<option value="CLEANING SERVICE">CLEANING SERVICE</option>
+																			<option value="RADIOLOGI">RADIOLOGI</option>
+																			<option value="INSTALASI LABORATORIUM">INSTALASI LABORATORIUM</option>
+																			<option value="INSTALASI LINEN">INSTALASI LINEN</option>
+																			<option value="INSTALASI CSSD">INSTALASI CSSD</option>
+																			<option value="INSTALASI PEMELIHARAAN SARANA">INSTALASI PEMELIHARAAN SARANA</option>
+																			<option value="INSTALASI TEKNOLOGI DAN INFORMASI">INSTALASI TEKNOLOGI DAN INFORMASI</option>
+																			<option value="INSTALASI PEMULASARAAN  JENAZAH">INSTALASI PEMULASARAAN  JENAZAH</option>
+																			<option value="INSTALASI  GIZI">INSTALASI  GIZI</option>
+																			<option value="BAGIAN SUNGRAM DAN REKAM  MEDIK">BAGIAN SUNGRAM DAN REKAM  MEDIK</option>
+																			<option value="BIDANG YANKEP">BIDANG YANKEP</option>
+																			<option value="BIDANG YANMED">BIDANG YANMED</option>
+																			<option value="BIDANG YANJANG">BIDANG YANJANG</option>
+																			<option value="BAGIAN UMUM">BAGIAN UMUM</option>
+																			<option value="BAGIAN PERLENGKAPAN">BAGIAN PERLENGKAPAN</option>
+																			<option value="BAGIAN KEPEGAWAIAN">BAGIAN KEPEGAWAIAN</option>
+																			<option value="PETUGAS PARKIR UMUM">PETUGAS PARKIR UMUM</option>
+																			<option value="BAGIAN KEUANGAN">BAGIAN KEUANGAN</option>
+																			<option value="BAGIAN ESELON">BAGIAN ESELON</option>
+																			<option value="KOMITE  MEDIK">KOMITE  MEDIK</option>
+																			<option value="TIM PENGADAAN BARANG DAN JASA ( TPBJ )">TIM PENGADAAN BARANG DAN JASA ( TPBJ )</option>
+																			<option value="SATPAM">SATPAM</option>
+																			<option value="SATUAN PENGAWAS INTERNAL ( SPI)">SATUAN PENGAWAS INTERNAL ( SPI)</option>
+																			<option value="INSTALASI GAS MEDIK">INSTALASI GAS MEDIK</option>
+																			<option value="IGD">IGD</option>
+																			<option value="INSTALASI AMBULANCE">INSTALASI AMBULANCE</option>
+																			<option value="INSTALASI PROMKES">INSTALASI PROMKES</option>
+																			<option value="PENDIDIKAN&PENELITIAN">PENDIDIKAN&PENELITIAN</option>
+																			<option value="PENGADMINISTRASIAN UMUM">PENGADMINISTRASIAN UMUM</option>
+																			<option value="UNIT CASEMIX">UNIT CASEMIX</option>
+																		</select>
+																		
+																	</div>
+																	<div class="col-lg-4">
 																		<span class="form-text text-muted">No SK</span>
 																		<input type="text" class="form-control" id="no_sk" placeholder="Masukkan No Sesuai SK" />
 																	</div>
@@ -654,6 +709,10 @@
 																					<div class="form-group mb-1">
 																						<span class="form-text text-muted">Gaji</span>
 																						<input type="text" class="form-control" id="view_gaji" disabled/>
+																					</div>
+																					<div class="form-group mb-1">
+																						<span class="form-text text-muted">Ruangan</span>
+																						<input type="text" class="form-control" id="view_ruangan" disabled/>
 																					</div>
 																					<div class="form-group mb-3">
 																						<span class="form-text text-muted">Status Karyawan</span>
@@ -2449,7 +2508,7 @@
 
   function tampilkan(){
     $("#tempatTabel").html('<i class="fas fa-spinner fa-pulse"></i> Memuat...')
-    var baris = '<table class="table table-separate table-head-custom table-checkable" id="tabelUser"><thead class="thead-light"><tr><th>Action</th><th>NO</th><th>Update</th><th>ID</th><th>Nama</th><th>Jabatan</th><th>Status Karyawan</th><th>Pendidikan</th><th>Jenis Tenaga</th></tr></thead>'
+    var baris = '<table class="table table-separate table-head-custom table-checkable" id="tabelUser"><thead class="thead-light"><tr><th>Action</th><th>NO</th><th>Update</th><th>ID</th><th>Nama</th><th>Ruangan</th><th>Jabatan</th><th>Status Karyawan</th><th>Pendidikan</th><th>Jenis Tenaga</th></tr></thead>'
       $.ajax({
         type:'POST',
         url: '<?= base_url() ?>data_karyawan/tampil',
@@ -2466,7 +2525,7 @@
             baris += '<td>' + data[i].tgl_update + '</td>'
             baris += '<td>' + data[i].id_karyawan + '</td>'
             baris += '<td>' + data[i].nama + '</td>'
-            // baris += '<td>' + data[i].email + '</td>'
+            baris += '<td>' + data[i].ruangan + '</td>'
             baris += '<td>' + data[i].jabatan + '</td>'
             baris += '<td>' + data[i].status_karyawan + '</td>'
             baris += '<td>' + data[i]. jenis_pendidikan+ '</td>'
@@ -2643,6 +2702,7 @@
         $("#golongan").val(data.golongan)
         $("#pensiun").val(data.pensiun)
         $("#gaji").val(data.gaji)
+        $("#ruangan").val(data.ruangan)
         $("#no_sk").val(data.no_sk)
         $("#file_sk").val(data.file_sk)
         $("#file_penempatan").val(data.file_penempatan)
@@ -2708,6 +2768,7 @@
     var golongan = $("#golongan").val()
     var pensiun = $("#pensiun").val()
     var gaji = $("#gaji").val()
+    var ruangan = $("#ruangan").val()
     var no_sk = $("#no_sk").val()
     var file_sk = $("#file_sk").val()
     var file_penempatan = $("#file_penempatan").val()
@@ -2771,6 +2832,7 @@
         golongan: golongan,
         pensiun: pensiun,
         gaji: gaji,
+        ruangan: ruangan,
         no_sk: no_sk,
         file_sk: file_sk,
         file_penempatan: file_penempatan,
@@ -2833,6 +2895,7 @@
 			$("#golongan").val("")
 			$("#pensiun").val("")
 			$("#gaji").val("")
+			$("#ruangan").val("")
 			$("#no_sk").val("")
 			$("#file_sk").val("")
 			$("#file_penempatan").val("")
@@ -2912,6 +2975,7 @@
         $("#view_golongan").val(data.golongan)
         $("#view_pensiun").val(data.pensiun)
         $("#view_gaji").val(data.gaji)
+        $("#view_ruangan").val(data.ruangan)
         $("#view_no_sk").val(data.no_sk)
         $("#view_file_sk").val(data.file_sk)
         $("#view_file_penempatan").val(data.file_penempatan)
@@ -2976,6 +3040,7 @@
     var golongan = $("#golongan").val()
     var pensiun = $("#pensiun").val()
     var gaji = $("#gaji").val()
+    var ruangan = $("#ruangan").val()
     var no_sk = $("#no_sk").val()
     var file_sk = $("#file_sk").val()
     var file_penempatan = $("#file_penempatan").val()
@@ -3038,6 +3103,7 @@
         golongan: golongan,
         pensiun: pensiun,
         gaji: gaji,
+        ruangan: ruangan,
         no_sk: no_sk,
         file_sk: file_sk,
         file_penempatan: file_penempatan,
@@ -3099,6 +3165,7 @@
 			$("#golongan").val("")
 			$("#pensiun").val("")
 			$("#gaji").val("")
+			$("#ruangan").val("")
 			$("#no_sk").val("")
 			$("#file_sk").val("")
 			$("#file_penempatan").val("")

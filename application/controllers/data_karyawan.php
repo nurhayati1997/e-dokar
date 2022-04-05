@@ -139,6 +139,7 @@ class data_karyawan extends CI_Controller
 			"golongan" => $this->input->post("golongan", TRUE),
 			"pensiun" => $this->input->post("pensiun", TRUE),
 			"gaji" => $this->input->post("gaji", TRUE),
+			"ruangan" => $this->input->post("ruangan", TRUE),
 			"no_sk" => $this->input->post("no_sk", TRUE),
 			"file_sk" => $this->input->post("file_sk", TRUE),
 			"file_penempatan" => $this->input->post("file_penempatan", TRUE),

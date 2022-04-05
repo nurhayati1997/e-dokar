@@ -72,7 +72,8 @@
 										</div>
 									<div class="card-body px-lg-5 py-lg-5">
 										<?php if ($this->session->userdata("rule") == 1 or $this->session->userdata("rule") == 3) { ?>
-											<button type="button" class="btn btn-danger" onclick="tryCetak()">Cetak Form Cuti</button>
+											<button type="button" class="btn btn-secondary"><a href="assets/Blangko_Cuti.pdf" target="_blank">Cetak Form Cuti</a></button>
+											<!-- <button type="button" class="btn btn-danger" onclick="tryCetak()">Cetak Form Cuti</button> -->
 										<?php } ?>
 
 										<?php if ($this->session->userdata("rule") == 1 or $this->session->userdata("rule") == 2) { ?>
@@ -98,32 +99,26 @@
 												<div class="card bg-secondary border-0 mb-0">
 													<div class="card-header bg-success pb-1">
 														<div class="text-muted text-center mt-2 mb-3">
-															<span class="text-white">Form Tambah Data Riwayat Kerja Karyawan </span>
+															<span class="text-white">Form Tambah Data Cuti Karyawan </span>
 														</div>
 													</div>
 													<div class="card-body px-lg-5 py-lg-5">
-														<form role="form">
-															<div class="form-group mb-3">
-																<span class="form-text text-muted">Pilih Nama</span>
-																<select class="form-control" id="nama_karyawan">
-																</select>
-															</div>
-															<div class="form-group mb-3">
-																<span class="form-text text-muted">Masukkan Tanggal Berhenti</span>
-																<input type="date" class="form-control" id="tgl_berhenti"/>
-															</div>
-															<div class="form-group mb-3">
-																  <span class="form-text text-muted">Pilih Status</span>
-																  <select class="form-control" id="status_karyawan">
-																			<option value="PNS">PNS</option>
-																			<option value="PPPK">PPPK</option>
-																			<option value="THL">THL</option>
-																			<option value="Kontrak">Kontrak</option>
-																			<option value="Unit">Unit</option>
+														<!--begin::Form-->
+														<form class="form">
+																<!-- identitas -->
+																<div class="form-group row">
+																	<div class="col-lg-4">
+																		<label>I. DATA PEGAWAI:</label>
+																		<span class="form-text text-muted">Pilih Nama</span>
+																		<select class="form-control" id="nama_karyawan">
 																		</select>
-															</div>
-															<div class="form-group mb-3">
-																<span class="form-text text-muted">Pilih Jabatan</span>
+																	</div>
+																	<div class="col-lg-4">
+																		<span class="form-text text-muted">NIP</span>
+																		<input type="text" class="form-control" id="nip" placeholder="Masukkan NIK sesuai KTP"/>
+																	</div>
+																	<div class="col-lg-4">
+																	<span class="form-text text-muted">Pilih Jabatan</span>
 																		<select class="form-control" id="jabatan">
 																			<option value="Direktur">Direktur</option>
 																			<option value="Wadir">Wadir</option>
@@ -134,21 +129,15 @@
 																			<option value="KA.Ruangan">KA.Ruangan</option>
 																			<option value="KA.Unit">KA.Unit</option>
 																			<option value="Staff">Staff</option>
-																			<option value="Unit">Unit</option>
 																		</select>
-															</div>
-															<div class="form-group mb-3">
-																<span class="form-text text-muted">Alasan Berhenti</span>
-																		<select class="form-control" id="alasan_berhenti">
-																			<option value="Pensiun">Pensiun</option>
-																			<option value="Meninggal">Meninggal</option>
-																			<option value="Mutasi">Mutasi</option>
-																			<option value="Berhenti">Berhenti</option>
-																		</select>
-															</div>
-															<div class="form-group mb-3">
-																 <span class="form-text text-muted">Masukkan Ruangan Baru</span>
-																		<select class="form-control" id="ruangan_terakhir">
+																	</div>
+																	<div class="col-lg-4">
+																		<span class="form-text text-muted">Masa Kerja</span>
+																		<input type="text" class="form-control" id="masa_kerja" placeholder="Masukkan Alamat Sesuai KTP" />
+																	</div>
+																	<div class="col-lg-4">
+																		<span class="form-text text-muted">Unit Kerja</span>
+																		<select class="form-control" id="unit_kerja">
 																			<option value="LOKET 1 ( RM )">LOKET 1 ( RM )</option>
 																			<option value="LOKET  2  ( MOBDA )">LOKET  2  ( MOBDA )</option>
 																			<option value="ASOKA">ASOKA</option>
@@ -199,13 +188,151 @@
 																			<option value="PENGADMINISTRASIAN UMUM">PENGADMINISTRASIAN UMUM</option>
 																			<option value="UNIT CASEMIX">UNIT CASEMIX</option>
 																		</select>
+																	</div>
+																</div>
+																<div class="form-group row">
+																	<div class="col-lg-12">
+																		<label>II. JENIS CUTI YANG DIAMBIL:</label>
+																		<span class="form-text text-muted">Pilih Jenis Cuti</span>
+																		<select class="form-control" id="jenis_cuti">
+																			<option value="Cuti Tahunan">Cuti Tahunan</option>
+																			<option value="Cuti Besar">Cuti Besar</option>
+																			<option value="Cuti Sakit">Cuti Sakit</option>
+																			<option value="Cuti Melahirkan">Cuti Melahirkan</option>
+																			<option value="Cuti Karena Alasan Penting">Cuti Karena Alasan Penting</option>
+																			<option value="Cuti di Luar Tanggungan Negara">Cuti di Luar Tanggungan Negara</option>
+																		</select>
+																	</div>
+																</div>
+																<div class="form-group row">
+																	<div class="col-lg-12">
+																		<label>III. ALASAN CUTI:</label>
+																		<span class="form-text text-muted">Alasan Mengambil Cuti</span>
+																		<input type="text" class="form-control" id="alasan_cuti" placeholder="Jelaskan Dengan Rinci" />
+																	</div>
+																</div>
+																<div class="form-group row">
+																	<div class="col-lg-4">
+																		<label>IV. LAMA CUTI:</label>
+																		<span class="form-text text-muted">Selama : </span>
+																		<input type="text" class="form-control" id="cuti_selama" placeholder="(hari/bulan/tahun)" />
+																	</div>
+																	<div class="col-lg-4">
+																		<span class="form-text text-muted">Mulai Tanggal : </span>
+																		<input type="date" class="form-control" id="mulai_tgl" />
+																	</div>
+																	<div class="col-lg-4">
+																		<span class="form-text text-muted">Samapai Tanggal : </span>
+																		<input type="date" class="form-control" id="sampai_tgl" />
+																	</div>
+																</div>
+																<div class="form-group row">
+																	<div class="col-lg-12">
+																		<label>V. CATATAN CUTI: (isi sesuai jenis cuti yang dipilih)</label>
+																		<span class="form-text text-muted">CUTI TAHUNAN : </span>
+																		<!-- <input type="text" class="form-control" id="cuti_selama" placeholdr="(hari/bulan/tahun)" /> -->
+																	</div>
+																	<div class="col-lg-6">
+																		<span class="form-text text-muted">Sisa N2 : </span>
+																		<input type="text" class="form-control" id="tahunan_n2_sisa" placeholdr="Kosongi Jika Bukan Cuti Tahunan" />
+																	</div>
+																	<div class="col-lg-6">
+																		<span class="form-text text-muted">Keterangan N2 : </span>
+																		<input type="text" class="form-control" id="tahunan_n2_keterangan" placeholdr="Kosongi Jika Bukan Cuti Tahunan" />
+																	</div>
+																	<div class="col-lg-6">
+																		<span class="form-text text-muted">Sisa N1 : </span>
+																		<input type="text" class="form-control" id="tahunan_n1_sisa" placeholdr="Kosongi Jika Bukan Cuti Tahunan" />
+																	</div>
+																	<div class="col-lg-6">
+																		<span class="form-text text-muted">Keterangan N1 : </span>
+																		<input type="text" class="form-control" id="tahunan_n1_keterangan" placeholdr="Kosongi Jika Bukan Cuti Tahunan" />
+																	</div>
+																	<div class="col-lg-6">
+																		<span class="form-text text-muted">Sisa N : </span>
+																		<input type="text" class="form-control" id="tahunan_n_sisa" placeholdr="Kosongi Jika Bukan Cuti Tahunan" />
+																	</div>
+																	<div class="col-lg-6">
+																		<span class="form-text text-muted">Keterangan N : </span>
+																		<input type="text" class="form-control" id="tahunan_n_keterangan" placeholdr="Kosongi Jika Bukan Cuti Tahunan" />
+																	</div>
+																	<div class="col-lg-12">
+																		<span class="form-text text-muted">CUTI BESAR : </span>
+																		<input type="text" class="form-control" id="cuti_besar_ket" placeholdr="(hari/bulan/tahun)" />
+																	</div>
+																	<div class="col-lg-12">
+																		<span class="form-text text-muted">CUTI SAKIT : </span>
+																		<input type="text" class="form-control" id="cuti_sakit_ket" placeholdr="(hari/bulan/tahun)" />
+																	</div>
+																	<div class="col-lg-12">
+																		<span class="form-text text-muted">CUTI MELAHIRKAN : </span>
+																		<input type="text" class="form-control" id="cuti_melahirkan_ket" placeholdr="(hari/bulan/tahun)" />
+																	</div>
+																	<div class="col-lg-12">
+																		<span class="form-text text-muted">CUTI KARENA ALASAN PENTING : </span>
+																		<input type="text" class="form-control" id="cuti_penting_ket" placeholdr="(hari/bulan/tahun)" />
+																	</div>
+																	<div class="col-lg-12">
+																		<span class="form-text text-muted">CUTI DILUAR TANGGUNGAN NEGARA : </span>
+																		<input type="text" class="form-control" id="cuti_diluar_tanggungan_ket" placeholdr="(hari/bulan/tahun)" />
+																	</div>
+																</div>
 																
-															</div>
-															<div class="badge badge-danger" id="pesanErrorTambah"></div>
-																<div class="text-center">
-																<button type="button" id="simpan_button" class="btn btn-success my-2" onclick="tambah_baru()"><div id="loader"> </div> Simpan</button>
-															</div>
+																<div class="form-group row">
+																	<div class="col-lg-12">
+																		<label>VI. ALAMAT SELAMA MENJALAN CUTI:</label>
+																		<span class="form-text text-muted">Isi Alamat Lengkap</span>
+																		<input type="text" class="form-control" id="alamat_selama_cuti" placeholder="Jelaskan Dengan Rinci" />
+																	</div>
+																	<div class="col-lg-12">
+																		<span class="form-text text-muted">Telp yang bisa dihubungi</span>
+																		<input type="text" class="form-control" id="telp" placeholder="Jelaskan Dengan Rinci" />
+																	</div>
+																</div>
+
+																<div class="form-group row">
+																	<div class="col-lg-12">
+																		<label>VII. PERTIMBANGAN ATASAN LANGSUNG:</label>
+																		<span class="form-text text-muted">Pilih Persetujuan</span>
+																		<select class="form-control" id="pertimbangan_atasan">
+																			<option value="DISETUJUI">DISETUJUI</option>
+																			<option value="PERUBAHAN">PERUBAHAN</option>
+																			<option value="DITANGGUHKAN">DITANGGUHKAN</option>
+																			<option value="TIDAK DISETUJUI">TIDAK DISETUJUI</option>
+																		</select>
+																	</div>
+																</div>
+																<div class="form-group row">
+																	<div class="col-lg-12">
+																		<label>VIII. KEPUTUSAN PEJABAT YANG BERWENANG MEMBERIKAN CUTI:</label>
+																		<span class="form-text text-muted">Pilih Persetujuan</span>
+																		<select class="form-control" id="keputusan_pejabat">
+																			<option value="DISETUJUI">DISETUJUI</option>
+																			<option value="PERUBAHAN">PERUBAHAN</option>
+																			<option value="DITANGGUHKAN">DITANGGUHKAN</option>
+																			<option value="TIDAK DISETUJUI">TIDAK DISETUJUI</option>
+																		</select>
+																	</div>
+																</div>
+
+																<div class="form-group row">
+																	<div class="col-lg-12">
+																		<!-- <label>VIII. KEPUTUSAN PEJABAT YANG BERWENANG MEMBERIKAN CUTI:</label> -->
+																		<span class="form-text text-muted">Upload File Cuti</span>
+																		<div class="custom-file">
+																			<input type="file" class="custom-file-input" id="file_cuti" />
+																			<label class="custom-file-label" for="customFile">File Cuti Harus format pdf</label>
+																		</div>
+																	</div>
+																</div>
+
+
+																<div class="badge badge-danger" id="pesanErrorTambah"></div>
+																	<div class="text-center">
+																	<button type="button" id="simpan_button" class="btn btn-success my-2" onclick="tambah_baru()"><div id="loader"> </div> Simpan</button>
+																</div>
 														</form>
+														<!--end::Form-->
 													</div>
 												</div>
 											</div>
@@ -308,7 +435,7 @@
 
   function tampilkan(){
     $("#tempatTabel").html('<i class="fas fa-spinner fa-pulse"></i> Memuat...')
-    var baris = '<table class="table table-separate table-head-custom table-checkable" id="tabelUser"><thead class="thead-light"><tr><th>Action</th><th>NO</th><th>Nama</th><th>NIP</th><th>Jabatan</th><th>Ruangan Terakhir</th><th>Status</th><th>Jabatan</th></tr></thead>'
+    var baris = '<table class="table table-separate table-head-custom table-checkable" id="tabelUser"><thead class="thead-light"><tr><th>Action</th><th>NO</th><th>Nama</th><th>NIP</th><th>Jabatan</th><th>Masa Kerja</th><th>Unit Kerja</th><th>Jenis Cuti</th><th>Alasan Cuti</th><th>Lama Cuti</th><th>Mulai Cuti</th><th>Selesai Cuti</th><th>Cuti Tahunan Sisa N2</th><th>Cuti Tahunan Keterangan N2</th><th>Cuti Tahunan Sisa N1</th><th>Cuti Tahunan Keterangan N1</th><th>Cuti Tahunan Sisa N</th><th>Cuti Tahunan Keterangan N</th><th>Cuti Besar</th><th>Cuti Sakit</th><th>Cuti Melahirkan</th><th>Cuti Karena Alasan Penting</th><th>Cuti di luar Tanggungan Negara</th><th>Alamat selama Cuti</th><th>telp</th><th>Pertimbangan Atasan</th><th>Keputusan Pejabat</th><th>File Cuti</th></tr></thead>'
       $.ajax({
         type:'POST',
         url: '<?= base_url() ?>cuti_karyawan/tampil',
@@ -325,6 +452,29 @@
             baris += '<td>' + data[i].nama + '</td>'
             baris += '<td>' + data[i].nip + '</td>'
             baris += '<td>' + data[i].jabatan + '</td>'
+            baris += '<td>' + data[i].masa_kerja + '</td>'
+            baris += '<td>' + data[i].unit_kerja + '</td>'
+            baris += '<td>' + data[i].jenis_cuti + '</td>'
+            baris += '<td>' + data[i].alasan_cuti + '</td>'
+            baris += '<td>' + data[i].cuti_selama + '</td>'
+            baris += '<td>' + data[i].mulai_tgl + '</td>'
+            baris += '<td>' + data[i].sampai_tgl + '</td>'
+            baris += '<td>' + data[i].tahunan_n2_sisa + '</td>'
+            baris += '<td>' + data[i].tahunan_n2_keterangan + '</td>'
+            baris += '<td>' + data[i].tahunan_n1_sisa + '</td>'
+            baris += '<td>' + data[i].tahunan_n1_keterangan + '</td>'
+            baris += '<td>' + data[i].tahunan_n_sisa + '</td>'
+            baris += '<td>' + data[i].tahunan_n_keterangan + '</td>'
+            baris += '<td>' + data[i].cuti_besar_ket + '</td>'
+            baris += '<td>' + data[i].cuti_sakit_ket + '</td>'
+            baris += '<td>' + data[i].cuti_melahirkan_ket + '</td>'
+            baris += '<td>' + data[i].cuti_penting_ket + '</td>'
+            baris += '<td>' + data[i].cuti_diluar_tanggungan_ket + '</td>'
+            baris += '<td>' + data[i].alamat_selama_cuti + '</td>'
+            baris += '<td>' + data[i].telp + '</td>'
+            baris += '<td>' + data[i].pertimbangan_atasan + '</td>'
+            baris += '<td>' + data[i].keputusan_pejabat + '</td>'
+            baris += '<td>' + data[i].file_cuti + '</td>'
             baris += '</td></tr>'
           }
           baris += '</tbody></table>'
@@ -359,11 +509,31 @@
   function reset_form(){
     random_all = '';
     document.getElementById('nama_karyawan').value = "";
-    document.getElementById('tgl_berhenti').value = "";
-    document.getElementById('alasan_berhenti').value = "";
-    document.getElementById('ruangan_terakhir').value = "";
-    document.getElementById('status_karyawan').value = "";
+    document.getElementById('nip').value = "";
     document.getElementById('jabatan').value = "";
+    document.getElementById('masa_kerja').value = "";
+    document.getElementById('unit_kerja').value = "";
+    document.getElementById('jenis_cuti').value = "";
+    document.getElementById('alasan_cuti').value = "";
+    document.getElementById('cuti_selama').value = "";
+    document.getElementById('mulai_tgl').value = "";
+    document.getElementById('sampai_tgl').value = "";
+    document.getElementById('tahunan_n2_sisa').value = "";
+    document.getElementById('tahunan_n2_keterangan').value = "";
+    document.getElementById('tahunan_n1_sisa').value = "";
+    document.getElementById('tahunan_n1_keterangan').value = "";
+    document.getElementById('tahunan_n_sisa').value = "";
+    document.getElementById('tahunan_n_keterangan').value = "";
+    document.getElementById('cuti_besar_ket').value = "";
+    document.getElementById('cuti_sakit_ket').value = "";
+    document.getElementById('cuti_melahirkan_ket').value = "";
+    document.getElementById('cuti_penting_ket').value = "";
+    document.getElementById('cuti_diluar_tanggungan_ket').value = "";
+    document.getElementById('alamat_selama_cuti').value = "";
+    document.getElementById('telp').value = "";
+    document.getElementById('pertimbangan_atasan').value = "";
+    document.getElementById('keputusan_pejabat').value = "";
+    document.getElementById('file_cuti').value = "";
   }
 
   function tampil_input_modal(){
@@ -376,17 +546,39 @@
 
 
   function tambah_baru() {
-      if (document.getElementById('tgl_berhenti').value == "") {
-          document.getElementById('tgl_berhenti').focus();
+      if (document.getElementById('nip').value == "") {
+          document.getElementById('nip').focus();
       } else if(document.getElementById('nama_karyawan').value == "") {
           document.getElementById('nama_karyawan').focus();
       } else {
           $.ajax({
               type: 'POST',
-              data: 'tgl_berhenti=' + document.getElementById("tgl_berhenti").value + '&alasan_berhenti=' + document.getElementById('alasan_berhenti').value
-              + '&nama_karyawan=' +  document.getElementById('nama_karyawan').value + '&ruangan_terakhir=' +  document.getElementById('ruangan_terakhir').value
-              + '&status_karyawan=' +  document.getElementById('status_karyawan').value + '&jabatan=' +  document.getElementById('jabatan').value,
-              url: '<?= base_url() ?>berhenti_karyawan/tambah_berhenti',
+              data: 'nip=' + document.getElementById("nip").value + '&jabatan=' + document.getElementById('jabatan').value
+              + '&nama_karyawan=' +  document.getElementById('nama_karyawan').value 
+			  + '&masa_kerja=' +  document.getElementById('masa_kerja').value
+              + '&unit_kerja=' +  document.getElementById('unit_kerja').value 
+              + '&jenis_cuti=' +  document.getElementById('jenis_cuti').value 
+              + '&alasan_cuti=' +  document.getElementById('alasan_cuti').value 
+              + '&cuti_selama=' +  document.getElementById('cuti_selama').value 
+              + '&mulai_tgl=' +  document.getElementById('mulai_tgl').value 
+              + '&sampai_tgl=' +  document.getElementById('sampai_tgl').value 
+              + '&tahunan_n2_sisa=' +  document.getElementById('tahunan_n2_sisa').value 
+              + '&tahunan_n2_keterangan=' +  document.getElementById('tahunan_n2_keterangan').value 
+              + '&tahunan_n1_sisa=' +  document.getElementById('tahunan_n1_sisa').value 
+              + '&tahunan_n1_keterangan=' +  document.getElementById('tahunan_n1_keterangan').value 
+              + '&tahunan_n_sisa=' +  document.getElementById('tahunan_n_sisa').value 
+              + '&tahunan_n_keterangan=' +  document.getElementById('tahunan_n_keterangan').value 
+              + '&cuti_besar_ket=' +  document.getElementById('cuti_besar_ket').value 
+              + '&cuti_sakit_ket=' +  document.getElementById('cuti_sakit_ket').value 
+              + '&cuti_melahirkan_ket=' +  document.getElementById('cuti_melahirkan_ket').value 
+              + '&cuti_penting_ket=' +  document.getElementById('cuti_penting_ket').value 
+              + '&cuti_diluar_tanggungan_ket=' +  document.getElementById('cuti_diluar_tanggungan_ket').value 
+              + '&alamat_selama_cuti=' +  document.getElementById('alamat_selama_cuti').value 
+              + '&telp=' +  document.getElementById('telp').value 
+              + '&pertimbangan_atasan=' +  document.getElementById('pertimbangan_atasan').value 
+              + '&file_cuti=' +  document.getElementById('file_cuti').value 
+			  + '&keputusan_pejabat=' +  document.getElementById('keputusan_pejabat').value,
+              url: '<?= base_url() ?>cuti_karyawan/tambah_cuti',
               dataType: 'json',
               beforeSend: function () {
                 $('#simpan_button').attr('disabled', true);

@@ -35,19 +35,39 @@ class cuti_karyawan extends CI_Controller
 	}
 
 
-	function tambah_berhenti()
+	function tambah_cuti()
 	{
 		$data = [
-			"tgl_berhenti" => $this->input->post('tgl_berhenti', TRUE),
-			"alasan_berhenti" => $this->input->post('alasan_berhenti', TRUE),
-			"ruangan_terakhir" => $this->input->post('ruangan_terakhir', TRUE),
+			"nip" => $this->input->post('nip', TRUE),
+			"jabatan" => $this->input->post('jabatan', TRUE),
+			"masa_kerja" => $this->input->post('masa_kerja', TRUE),
 			"nama" => $this->input->post('nama_karyawan', TRUE),
-			"status_karyawan" => $this->input->post('status_karyawan', TRUE),
-			"jabatan" => $this->input->post('jabatan', TRUE)
+			"unit_kerja" => $this->input->post('unit_kerja', TRUE),
+			"jenis_cuti" => $this->input->post('jenis_cuti', TRUE),
+			"alasan_cuti" => $this->input->post('alasan_cuti', TRUE),
+			"cuti_selama" => $this->input->post('cuti_selama', TRUE),
+			"mulai_tgl" => $this->input->post('mulai_tgl', TRUE),
+			"sampai_tgl" => $this->input->post('sampai_tgl', TRUE),
+			"tahunan_n2_sisa" => $this->input->post('tahunan_n2_sisa', TRUE),
+			"tahunan_n2_keterangan" => $this->input->post('tahunan_n2_keterangan', TRUE),
+			"tahunan_n1_sisa" => $this->input->post('tahunan_n1_sisa', TRUE),
+			"tahunan_n1_keterangan" => $this->input->post('tahunan_n1_keterangan', TRUE),
+			"tahunan_n_sisa" => $this->input->post('tahunan_n_sisa', TRUE),
+			"tahunan_n_keterangan" => $this->input->post('tahunan_n_keterangan', TRUE),
+			"cuti_besar_ket" => $this->input->post('cuti_besar_ket', TRUE),
+			"cuti_sakit_ket" => $this->input->post('cuti_sakit_ket', TRUE),
+			"cuti_melahirkan_ket" => $this->input->post('cuti_melahirkan_ket', TRUE),
+			"cuti_penting_ket" => $this->input->post('cuti_penting_ket', TRUE),
+			"cuti_diluar_tanggungan_ket" => $this->input->post('cuti_diluar_tanggungan_ket', TRUE),
+			"alamat_selama_cuti" => $this->input->post('alamat_selama_cuti', TRUE),
+			"telp" => $this->input->post('telp', TRUE),
+			"pertimbangan_atasan" => $this->input->post('pertimbangan_atasan', TRUE),
+			"keputusan_pejabat" => $this->input->post('keputusan_pejabat', TRUE),
+			"file_cuti" => $this->input->post('file_cuti', TRUE)
 		];
 
 		// echo json_encode($data);
-		echo json_encode($this->db_model->insert_get("berhenti_karyawan", $data));
+		echo json_encode($this->db_model->insert_get("cuti_karyawan", $data));
 	}
 	public function dataById()
 	{

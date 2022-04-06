@@ -10,9 +10,16 @@
 											<h3 class="card-label">Data Karyawan 
 											<span class="d-block text-muted pt-2 font-size-sm">UOBK RSUD SYAMRABU BANGKALAN</span></h3>
 										</div>
-										<?php if ($this->session->userdata("rule") == 1 or $this->session->userdata("rule") == 2) { ?>
-											<button type="button" class="btn btn-success" onClick="tryTambah()">Tambah Data</button>
-										<?php } ?>
+										<div class="card-body px-lg-5 py-lg-5">
+											<?php if ($this->session->userdata("rule") == 1 or $this->session->userdata("rule") == 3) { ?>
+												<button type="button" class="btn btn-secondary"><a href="<?= site_url('data_karyawan/excel') ?>">Export Excel</a></button>
+												<!-- <button type="button" class="btn btn-danger" onclick="tryCetak()">Cetak Form Cuti</button> -->
+											<?php } ?>
+
+											<?php if ($this->session->userdata("rule") == 1 or $this->session->userdata("rule") == 2) { ?>
+												<button type="button" class="btn btn-success" onClick="tryTambah()">Tambah Data</button>
+											<?php } ?>
+										</div>
 									</div>
 									<div class="card-body">
 										<!--begin: Datatable-->

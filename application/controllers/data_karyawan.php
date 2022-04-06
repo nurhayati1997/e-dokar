@@ -180,6 +180,52 @@ class data_karyawan extends CI_Controller
 		
 	}
 
+	public function excel(){
+		$data['karyawan'] =$this->db_model->all_data("hrd_user")->result();
+		// echo json_encode($this->db_model->all_data("hrd_user")->result());
+
+		require(APPPATH.'PHPExcel-1.8/Classes/PHPExcel.php');
+		require(APPPATH.'PHPExcel-1.8/Classes/PHPExcel/Writer/Excel2007.php');
+
+		$object = new PHPExcel();
+
+		$object->getProperties()->setCreator("Tim IT RSUD SYAMRABU");
+		$object->getProperties()->setLastModifiedBy("Tim IT RSUD SYAMRABU");
+		$object->getProperties()->setTitle("Data Karyawan");
+
+		$object->setActiveSheetIndex(0);
+
+		$object->getActiveSheet()->setCellValue('A1','NO');
+		$object->getActiveSheet()->setCellValue('A1','NAMA');
+		$object->getActiveSheet()->setCellValue('A1','RUANGAN');
+		$object->getActiveSheet()->setCellValue('A1','JABATAN');
+		$object->getActiveSheet()->setCellValue('A1','STATUS KARYAWAN');
+		$object->getActiveSheet()->setCellValue('A1','PENDIDIKAN');
+		$object->getActiveSheet()->setCellValue('A1','JENIS TENAGA');
+
+		$baris = 2;
+		$no = 1;
+
+		foreach($data['karyawan']as $karyawan){
+			$object->getActiveSheet()->setCellValue('A'.$baris, $no++);
+			$object->getActiveSheet()->setCellValue('A'.$baris, $karyawan->nama);
+			$object->getActiveSheet()->setCellValue('A'.$baris, $karyawan->ruangan);
+			$object->getActiveSheet()->setCellValue('A'.$baris, $karyawan->jabatan);
+			$object->getActiveSheet()->setCellValue('A'.$baris, $karyawan->status_karyawan);
+			$object->getActiveSheet()->setCellValue('A'.$baris, $karyawan->jenis_pendidikan);
+			$object->getActiveSheet()->setCellValue('A'.$baris, $karyawan->jenis_tenaga);
+
+			$baris++;
+
+		}
+
+		$filename="Data Karyawan".'xlsx';
+
+		
+
+
+	}
+
 	function enkripsi($data)
 	{
 		$kode =  array("", "~", "!", "@", "#", "$", "%", "^", "&", "*", "(", ")", "_", "s-", "d+", "9=", "=|", ")}", "{", "-[", "[]", ";", ":", "?", ">", ".", "<k", "67", "05=", "2e", "8q", "9a", "2=", "3", "8", "9", "0", "A", "3", "s", "s", "E", "F", "G", "l", "o", "J", "K", "L", "M", "a", "sf", "Pa", "w$", "ar", "Sj", "sa", "sf", "V", "W", "s", "Y", "Z", "~", "!", "@", "#", "$", "%", "^", "&", "*", "(", ")", "_", "-", "+", "=", "|", "}", "{", "[", "]", ";", ":", "?", ">", ".", "<", "3", "5", "2", "8", "-", "as", "3", "8", "9", "0", "A", "3", "d", "<k", "67", "05=", "2e", "a", "gd",  "!", "@", "#", "$", "%", "^", "&", "*", "(", ")", "Fa", "df", "a", "sf", "Jh", "Ks", "L", "M", "05=", "2e", "8q", "9a", "Mj", "gOf", "qw", "w", "ht", ".S", "a", "p[", "dg", "W0", "Xia", "asY", "dZ", "M", "a", "sf", "Pa", "w$", "ar", "Sj", "sa", "sf", "V");

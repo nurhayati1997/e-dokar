@@ -154,6 +154,26 @@ class data_karyawan extends CI_Controller
 		
 	}
 
+	public function arsip()
+	{
+		$data = [
+			"file_sd" => $this->input->post("file_sd", TRUE),
+			"file_smp" => $this->input->post("file_smp", TRUE),
+			"file_sma" => $this->input->post("file_sma", TRUE),
+			"file_s1" => $this->input->post("file_s1", TRUE),
+			"file_s2" => $this->input->post("file_s2", TRUE),
+			"file_s3" => $this->input->post("file_s3", TRUE),
+			"file_profesi" => $this->input->post("file_profesi", TRUE),
+			"file_sk" => $this->input->post("file_sk", TRUE),
+			"file_penempatan" => $this->input->post("file_penempatan", TRUE),
+			"file_str" => $this->input->post("file_str", TRUE),
+			"file_sip" => $this->input->post("file_sip", TRUE)
+		];
+		$this->db_model->update('hrd_user', $data, ["id" => $this->input->post("id")]);
+		echo json_encode("");
+		
+	}
+
 	public function hapus()
 	{
 		echo json_encode($this->db_model->delete('hrd_user', array('id' => $this->input->post('id', TRUE))));

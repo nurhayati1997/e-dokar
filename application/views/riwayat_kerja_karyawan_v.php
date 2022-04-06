@@ -215,52 +215,92 @@
 
 							<!-- edit -->
 								<div class="modal fade" id="modalEdit" tabindex="-1" role="dialog" aria-labelledby="modal-form" aria-hidden="true">
-								<div class="modal-dialog modal- modal-dialog-centered modal-lg" role="document">
+									<div class="modal-dialog modal- modal-dialog-centered modal-lg" role="document">
 										<div class="modal-content">
 											<div class="modal-body p-0">
 												<div class="card bg-secondary border-0 mb-0">
 													<div class="card-header bg-success pb-1">
 														<div class="text-muted text-center mt-2 mb-3">
-															<span class="text-white">Form Edit Data Pelatihan Karyawan </span>
+															<span class="text-white">Form Edit Data Riwayat Kerja Karyawan </span>
 														</div>
 													</div>
 													<div class="card-body px-lg-5 py-lg-5">
-														<form role="form">
+													<form role="form">
 															<div class="form-group mb-3">
-																<span class="form-text text-muted">Masukkan Nama Pelatihan</span>
-																<input id="idUser" type="hidden">
-																<input type="text" class="form-control" id="edit_nama_pelatihan" placeholder="Nama Acara Pelatihan" />
+                                								<input id="idUser" type="hidden">
+																<span class="form-text text-muted">Masukkan Ruangan Baru</span>
+																		<select class="form-control" id="editruangan_baru">
+																			<option value="LOKET 1 ( RM )">LOKET 1 ( RM )</option>
+																			<option value="LOKET  2  ( MOBDA )">LOKET  2  ( MOBDA )</option>
+																			<option value="ASOKA">ASOKA</option>
+																			<option value="ANGGREK">ANGGREK</option>
+																			<option value="SAKURA">SAKURA</option>
+																			<option value="BUGENVILE">BUGENVILE</option>
+																			<option value="CAMELIA">CAMELIA</option>
+																			<option value="CEMPAKA">CEMPAKA</option>
+																			<option value="DAHLIA">DAHLIA</option>
+																			<option value="EDELWEIS">EDELWEIS</option>
+																			<option value="FLAMBOYAN">FLAMBOYAN</option>
+																			<option value="MELATI">MELATI</option>
+																			<option value="TULIP">TULIP</option>
+																			<option value="IBS DAN INSTALASI ANASTHESI">IBS DAN INSTALASI ANASTHESI</option>
+																			<option value="HD">HD</option>
+																			<option value="IPCN">IPCN</option>
+																			<option value="INSTALASI RAWAT JALAN">INSTALASI RAWAT JALAN</option>
+																			<option value="INSTALASI FARMASI">INSTALASI FARMASI</option>
+																			<option value="INSTALASI KESEHATAN LINGKUNGAN ">INSTALASI KESEHATAN LINGKUNGAN </option>
+																			<option value="CLEANING SERVICE">CLEANING SERVICE</option>
+																			<option value="RADIOLOGI">RADIOLOGI</option>
+																			<option value="INSTALASI LABORATORIUM">INSTALASI LABORATORIUM</option>
+																			<option value="INSTALASI LINEN">INSTALASI LINEN</option>
+																			<option value="INSTALASI CSSD">INSTALASI CSSD</option>
+																			<option value="INSTALASI PEMELIHARAAN SARANA">INSTALASI PEMELIHARAAN SARANA</option>
+																			<option value="INSTALASI TEKNOLOGI DAN INFORMASI">INSTALASI TEKNOLOGI DAN INFORMASI</option>
+																			<option value="INSTALASI PEMULASARAAN  JENAZAH">INSTALASI PEMULASARAAN  JENAZAH</option>
+																			<option value="INSTALASI  GIZI">INSTALASI  GIZI</option>
+																			<option value="BAGIAN SUNGRAM DAN REKAM  MEDIK">BAGIAN SUNGRAM DAN REKAM  MEDIK</option>
+																			<option value="BIDANG YANKEP">BIDANG YANKEP</option>
+																			<option value="BIDANG YANMED">BIDANG YANMED</option>
+																			<option value="BIDANG YANJANG">BIDANG YANJANG</option>
+																			<option value="BAGIAN UMUM">BAGIAN UMUM</option>
+																			<option value="BAGIAN PERLENGKAPAN">BAGIAN PERLENGKAPAN</option>
+																			<option value="BAGIAN KEPEGAWAIAN">BAGIAN KEPEGAWAIAN</option>
+																			<option value="PETUGAS PARKIR UMUM">PETUGAS PARKIR UMUM</option>
+																			<option value="BAGIAN KEUANGAN">BAGIAN KEUANGAN</option>
+																			<option value="BAGIAN ESELON">BAGIAN ESELON</option>
+																			<option value="KOMITE  MEDIK">KOMITE  MEDIK</option>
+																			<option value="TIM PENGADAAN BARANG DAN JASA ( TPBJ )">TIM PENGADAAN BARANG DAN JASA ( TPBJ )</option>
+																			<option value="SATPAM">SATPAM</option>
+																			<option value="SATUAN PENGAWAS INTERNAL ( SPI)">SATUAN PENGAWAS INTERNAL ( SPI)</option>
+																			<option value="INSTALASI GAS MEDIK">INSTALASI GAS MEDIK</option>
+																			<option value="IGD">IGD</option>
+																			<option value="INSTALASI AMBULANCE">INSTALASI AMBULANCE</option>
+																			<option value="INSTALASI PROMKES">INSTALASI PROMKES</option>
+																			<option value="PENDIDIKAN&PENELITIAN">PENDIDIKAN&PENELITIAN</option>
+																			<option value="PENGADMINISTRASIAN UMUM">PENGADMINISTRASIAN UMUM</option>
+																			<option value="UNIT CASEMIX">UNIT CASEMIX</option>
+																		</select>
 															</div>
 															<div class="form-group mb-3">
-																<span class="form-text text-muted">Masukkan Tanggal Mulai</span>
-																<input type="date" class="form-control" id="edit_tgl_mulai_pelatihan"/>
+																<span class="form-text text-muted">Masukkan No SK</span>
+																<input type="text" class="form-control" id="editno_sk" placeholder="No SK" />
 															</div>
 															<div class="form-group mb-3">
-																<span class="form-text text-muted">Masukkan Tanggal Selesai</span>
-																<input type="date" class="form-control" id="edit_tgl_selesai_pelatihan"/>
+																<span class="form-text text-muted">Masukkan Tanggal SK</span>
+																<input type="date" class="form-control" id="edittgl_sk"/>
 															</div>
 															<div class="form-group mb-3">
-																<span class="form-text text-muted">Masukkan Durasi Pelatihan</span>
-																<input type="text" class="form-control" id="edit_durasi_pelatihan" placeholder="Gunakan Huruf & Angka" />
+																<span class="form-text text-muted">Masukkan Nama Pimpinan</span>
+																<input type="text" class="form-control" id="editnama_pinpinan" placeholder="Nama Pimpinan" />
 															</div>
 															<div class="form-group mb-3">
-																<span class="form-text text-muted">Masukkan No Sertifikat</span>
-																<input type="text" class="form-control" id="edit_no_sertifikat" placeholder="Gunakan Huruf & Angka" />
+																<span class="form-text text-muted">Masukkan Tahun</span>
+																<input type="year" class="form-control" id="edittahun"/>
 															</div>
-
-															<div class="form-group mb-3">
-																<span class="form-text text-muted">Upload Sertifiikat Pelatihan</span>
-																<div class="custom-file">
-																	<input type="file" class="custom-file-input" id="edit_file_sertifikat" />
-																	<label class="custom-file-label" for="customFile">File Sertofokat Harus format pdf</label>
-																</div>
-															</div>
-
-																		
-														
+								
 															<div class="badge badge-danger" id="pesanErrorTambah"></div>
 																<div class="text-center">
-																<button type="button"  class="btn btn-success my-2" onClick="edit()" id="tombolEdit"><div id="loader"> </div> Simpan</button>
+																<button type="button" id="simpan_button" class="btn btn-success my-2" onclick="tambah_baru()"><div id="loader"> </div> Simpan</button>
 															</div>
 														</form>
 													</div>
@@ -342,6 +382,7 @@
     // get_random();
     // get_nrm();
     $('#modalTambah').modal('show');
+    // $('#modalEdit').modal('show');
   }
 
 
@@ -365,6 +406,7 @@
               },
               success: function(data) {
                  console.log(data);
+                 tampilkan()
                 
                 Swal.fire({
                     position: 'center',
@@ -424,18 +466,17 @@
     $("#tombolEdit" + id).html('<i class="fas fa-spinner fa-pulse"></i>')
     $("#idUser").val(id)
     $.ajax({
-      url: '<?= base_url() ?>pelatihan_karyawan/edit_id',
+      url: '<?= base_url() ?>riwayat_kerja_karyawan/edit_id',
       method: 'post',
-      data: "target=pelatihan_karyawan&id=" + id,
+      data: "target=riwayat_kerja_karyawan&id=" + id,
       dataType: 'json',
       success: function(data) {
         $("#modalEdit").modal('show')
-        $("#edit_nama_pelatihan").val(data.nama_pelatihan)
-        $("#edit_tgl_mulai_pelatihan").val(data.tgl_mulai_pelatihan)
-        $("#edit_tgl_selesai_pelatihan").val(data.tgl_selesai_pelatihan)
-        $("#edit_durasi_pelatihan").val(data.durasi_pelatihan)
-        $("#edit_no_sertifikat").val(data.no_sertifikat)
-        $("#edit_file_sertifikat").val(data.file_sertifikat)
+        $("#editruangan_baru").val(data.ruangan_baru)
+        $("#editno_sk").val(data.no_sk)
+        $("#edittgl_sk").val(data.tgl_sk)
+        $("#editnama_pinpinan").val(data.nama_pinpinan)
+        $("#edittahun").val(data.tahun)
         console.log(data)
         $("#edit" + id).html('<i class="fa fa-edit"></i>')
       }
@@ -444,35 +485,33 @@
 
   function edit() {
     $("#tombolEdit").html('<i class="fas fa-spinner fa-pulse"></i> Memproses..')
-    var nama_pelatihan = $("#edit_nama_pelatihan").val()
-    var tgl_mulai_pelatihan = $("#edit_tgl_mulai_pelatihan").val()
-    var tgl_selesai_pelatihan = $("#edit_tgl_selesai_pelatihan").val()
-    var durasi_pelatihan = $("#edit_durasi_pelatihan").val()
-    var no_sertifikat = $("#edit_no_sertifikat").val()
-    var file_sertifikat = $("#edit_file_sertifikat").val()
+    var nama = $("#editnama_karyawan").val()
+    var ruangan_baru = $("#editruangan_baru").val()
+    var no_sk = $("#editno_sk").val()
+    var tgl_sk = $("#edittgl_sk").val()
+    var nama_pinpinan = $("#editnama_pinpinan").val()
+    var tahun = $("#edittahun").val()
     var id = $("#idUser").val()
     $.ajax({
-      url: '<?= base_url() ?>pelatihan_karyawan/edit',
+      url: '<?= base_url() ?>riwayat_kerja_karyawan/edit',
       method: 'post',
       data: {
-        nama_pelatihan: nama_pelatihan,
-        tgl_mulai_pelatihan: tgl_mulai_pelatihan,
-        tgl_selesai_pelatihan: tgl_selesai_pelatihan,
-        durasi_pelatihan: durasi_pelatihan,
-        no_sertifikat: no_sertifikat,
-        file_sertifikat: file_sertifikat
+        ruangan_baru: ruangan_baru,
+        no_sk: no_sk,
+        tgl_sk: tgl_sk,
+        nama_pinpinan: nama_pinpinan,
+        tahun: tahun
       },
       dataType: 'json',
       success: function(data) {
         if (data == "") {
-			$("#idUser").val("")
-			$("#nama_pelatihan").val("")
-			$("#tgl_mulai_pelatihan").val("")
-			$("#tgl_selesai_pelatihan").val("")
-			$("#durasi_pelatihan").val("")
-			$("#no_sertifikat").val("")
-			$("#file_sertifikat").val("")
-			// console.log(data)
+			// $("#idUser").val("")
+			// $("#ruangan_baru").val("")
+			// $("#no_sk").val("")
+			// $("#tgl_sk").val("")
+			// $("#nama_pinpinan").val("")
+			// $("#tahun").val("")
+			console.log(data)
         } else {
           $('#pesanErrorEdit').html(data)
         }

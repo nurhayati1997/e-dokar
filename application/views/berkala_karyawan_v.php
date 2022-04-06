@@ -67,7 +67,7 @@
 								<div class="card card-custom gutter-b">
 									<div class="card-header flex-wrap border-0 pt-6 pb-0">
 										<div class="card-title">
-											<h3 class="card-label">Data Pelatihan Karyawan 
+											<h3 class="card-label">Data Berkala Karyawan 
 											<span class="d-block text-muted pt-2 font-size-sm">UOBK RSUD SYAMRABU BANGKALAN</span></h3>
 										</div>
                     <?php if ($this->session->userdata("rule") == 1 or $this->session->userdata("rule") == 2) { ?>
@@ -92,7 +92,7 @@
 												<div class="card bg-secondary border-0 mb-0">
 													<div class="card-header bg-success pb-1">
 														<div class="text-muted text-center mt-2 mb-3">
-															<span class="text-white">Form Tambah Data Pelatihan Karyawan </span>
+															<span class="text-white">Form Tambah Data Berkala Karyawan </span>
 														</div>
 													</div>
 													<div class="card-body px-lg-5 py-lg-5">
@@ -103,31 +103,21 @@
 																</select>
 															</div>
 															<div class="form-group mb-3">
-																<span class="form-text text-muted">Masukkan Nama Pelatihan</span>
-																<input type="text" class="form-control" id="nama_pelatihan" placeholder="Nama Acara Pelatihan" />
+																<span class="form-text text-muted">Masukkan Tanggal Berkala</span>
+																<input type="date" class="form-control" id="tgl_berkala"/>
 															</div>
 															<div class="form-group mb-3">
-																<span class="form-text text-muted">Masukkan Tanggal Mulai</span>
-																<input type="date" class="form-control" id="tgl_mulai_pelatihan"/>
-															</div>
-															<div class="form-group mb-3">
-																<span class="form-text text-muted">Masukkan Tanggal Selesai</span>
-																<input type="date" class="form-control" id="tgl_selesai_pelatihan"/>
-															</div>
-															<div class="form-group mb-3">
-																<span class="form-text text-muted">Masukkan Durasi Pelatihan</span>
-																<input type="text" class="form-control" id="durasi_pelatihan" placeholder="Gunakan Huruf & Angka" />
-															</div>
-															<div class="form-group mb-3">
-																<span class="form-text text-muted">Masukkan No Sertifikat</span>
-																<input type="text" class="form-control" id="no_sertifikat" placeholder="Gunakan Huruf & Angka" />
-															</div>
-
-															<div class="form-group mb-3">
-																<span class="form-text text-muted">Upload Sertifiikat Pelatihan</span>
+																<span class="form-text text-muted">Upload Fotocopy SK Pangkat Terakhir</span>
 																<div class="custom-file">
-																	<input type="file" class="custom-file-input" id="file_sertifikat" />
-																	<label class="custom-file-label" for="customFile">File Sertofokat Harus format pdf</label>
+																	<input type="file" class="custom-file-input" id="sk_pangkat_terakhir" />
+																	<label class="custom-file-label" for="customFile">File FC SK Pangkat Terakhir format pdf</label>
+																</div>
+															</div>
+															<div class="form-group mb-3">
+																<span class="form-text text-muted">Upload Fotocopy SK Berkala</span>
+																<div class="custom-file">
+																	<input type="file" class="custom-file-input" id="sk_berkala" />
+																	<label class="custom-file-label" for="customFile">File FC SK Berkala format pdf</label>
 																</div>
 															</div>
 
@@ -154,7 +144,7 @@
 										<span class="fw-mediumbold">
 										Hapus Data</span>
 										<span class="fw-light">
-										Pelatihan Karyawan
+										Berkala Karyawan
 										</span>
 									</h5>
 									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -175,7 +165,7 @@
 
 							<!-- edit -->
 								<div class="modal fade" id="modalEdit" tabindex="-1" role="dialog" aria-labelledby="modal-form" aria-hidden="true">
-								<div class="modal-dialog modal- modal-dialog-centered modal-lg" role="document">
+								  <div class="modal-dialog modal- modal-dialog-centered modal-lg" role="document">
 										<div class="modal-content">
 											<div class="modal-body p-0">
 												<div class="card bg-secondary border-0 mb-0">
@@ -187,8 +177,8 @@
 													<div class="card-body px-lg-5 py-lg-5">
 														<form role="form">
 															<div class="form-group mb-3">
-																<input id="idUser" type="hidden">
 																<span class="form-text text-muted">Masukkan Nama Pelatihan</span>
+																<input id="idUser" type="hidden">
 																<input type="text" class="form-control" id="edit_nama_pelatihan" placeholder="Nama Acara Pelatihan" />
 															</div>
 															<div class="form-group mb-3">
@@ -216,11 +206,9 @@
 																</div>
 															</div>
 
-																		
-														
 															<div class="badge badge-danger" id="pesanErrorTambah"></div>
 																<div class="text-center">
-																<button type="button"  class="btn btn-success my-2" onClick="edit()" id="tombolEdit">Simpan</button>
+																<button type="button"  class="btn btn-success my-2" onClick="edit()" id="tombolEdit"><div id="loader"> </div> Simpan</button>
 															</div>
 														</form>
 													</div>
@@ -240,10 +228,10 @@
 
   function tampilkan(){
     $("#tempatTabel").html('<i class="fas fa-spinner fa-pulse"></i> Memuat...')
-    var baris = '<table class="table table-separate table-head-custom table-checkable" id="tabelUser"><thead class="thead-light"><tr><th>Action</th><th>NO</th><th>Nama</th><th>Pelatihan</th><th>Durasi</th><th>No Sertifikat</th><th>File Sertifikat</th><th>Mulai</th><th>Selesai</th></tr></thead>'
+    var baris = '<table class="table table-separate table-head-custom table-checkable" id="tabelUser"><thead class="thead-light"><tr><th>Action</th><th>NO</th><th>Nama</th><th>Tanggal Berkala</th><th>SK Pangkat Terakhir</th><th>SK Berkala</th></tr></thead>'
       $.ajax({
         type:'POST',
-        url: '<?= base_url() ?>pelatihan_karyawan/tampil',
+        url: '<?= base_url() ?>berkala_karyawan/tampil',
         dataType :'json',
         success: function(data){
          //console.log(data);
@@ -251,17 +239,11 @@
             baris += '<tr>'
             baris += '<td><div style="cursor:pointer;" title="hapus?" id="hapus' + data[i].id + '" onClick="tryHapus(' + data[i].id+ ')"><i class="flaticon-delete text-danger"></i></div>'
             baris += ' <div style="cursor:pointer;" title="edit?"  id="edit' + data[i].id + '" onClick="tryEdit(' + data[i].id+ ')"><i class="flaticon2-pen text-success"></i></div>'
-            // baris += ' <div style="cursor:pointer;" title="view?" id="cetak' + data[i].id + '" onClick="tryCetak(' + data[i].id+ ')"><i class="flaticon-eye text-primary"></i></div>'
-            // baris += ' <div style="cursor:pointer;" title="view?" id="view' + data[i].id + '" onClick="tryView(' + data[i].id+ ')"><i class="flaticon-eye text-primary"></i></div>'
             baris += '<td>' + (i + 1) + '</td>'
             baris += '<td>' + data[i].nama + '</td>'
-            baris += '<td>' + data[i].nama_pelatihan + '</td>'
-            baris += '<td>' + data[i].durasi_pelatihan + '</td>'
-            // baris += '<td>' + data[i].email + '</td>'
-            baris += '<td>' + data[i].no_sertifikat + '</td>'
-            baris += '<td>' + data[i].file_sertifikat + '</td>'
-            baris += '<td>' + data[i].tgl_mulai_pelatihan+ '</td>'
-            baris += '<td>' + data[i].tgl_selesai_pelatihan+ '</td>'
+            baris += '<td>' + data[i].tgl_berkala + '</td>'
+            baris += '<td>' + data[i].sk_pangkat_terakhir + '</td>'
+            baris += '<td>' + data[i].sk_berkala + '</td>'
             baris += '</td></tr>'
           }
           baris += '</tbody></table>'
@@ -276,7 +258,7 @@
   function get_nama() {
       $.ajax({
           type: 'POST',
-          url: '<?= base_url() ?>pelatihan_karyawan/get_nama_karyawan',
+          url: '<?= base_url() ?>kenaikan_reguler/get_nama_karyawan',
           dataType: 'json',
           success: function(data) {
               var html = '<option value="">-Pilih Karyawan-</option>';
@@ -291,12 +273,9 @@
   function reset_form(){
     random_all = '';
     document.getElementById('nama_karyawan').value = "";
-    document.getElementById('nama_pelatihan').value = "";
-    document.getElementById('tgl_mulai_pelatihan').value = "";
-    document.getElementById('tgl_selesai_pelatihan').value = "";
-    document.getElementById('durasi_pelatihan').value = "";
-    document.getElementById('no_sertifikat').value = "";
-    document.getElementById('file_sertifikat').value = "";
+    document.getElementById('tgl_berkala').value = "";
+    document.getElementById('sk_pangkat_terakhir').value = "";
+    document.getElementById('sk_berkala').value = "";
   }
 
   function tampil_input_modal(){
@@ -309,18 +288,16 @@
 
 
   function tambah_baru() {
-      if (document.getElementById('nama_pelatihan').value == "") {
-          document.getElementById('nama_pelatihan').focus();
+      if (document.getElementById('tgl_berkala').value == "") {
+          document.getElementById('tgl_berkala').focus();
       } else if(document.getElementById('nama_karyawan').value == "") {
           document.getElementById('nama_karyawan').focus();
       } else {
           $.ajax({
               type: 'POST',
-              data: 'nama_pelatihan=' + document.getElementById("nama_pelatihan").value + '&tgl_mulai_pelatihan=' + document.getElementById('tgl_mulai_pelatihan').value
-              + '&nama_karyawan=' +  document.getElementById('nama_karyawan').value + '&tgl_selesai_pelatihan=' +  document.getElementById('tgl_selesai_pelatihan').value
-              + '&durasi_pelatihan=' +  document.getElementById('durasi_pelatihan').value + '&no_sertifikat=' +  document.getElementById('no_sertifikat').value
-              + '&file_sertifikat=' +  document.getElementById('file_sertifikat').value,
-              url: '<?= base_url() ?>pelatihan_karyawan/tambah_pelatihan',
+              data: 'tgl_berkala=' + document.getElementById("tgl_berkala").value + '&sk_pangkat_terakhir=' + document.getElementById('sk_pangkat_terakhir').value
+              + '&nama_karyawan=' +  document.getElementById('nama_karyawan').value + '&sk_berkala=' +  document.getElementById('sk_berkala').value,
+              url: '<?= base_url() ?>berkala_karyawan/tambah_berkala',
               dataType: 'json',
               beforeSend: function () {
                 $('#simpan_button').attr('disabled', true);
@@ -352,9 +329,9 @@
   function tryHapus(id) {
     $("#hapus" + id).html('<i class="fas fa-spinner fa-pulse"></i>')
     $.ajax({
-      url: '<?= base_url() ?>pelatihan_karyawan/edit_id',
+      url: '<?= base_url() ?>berkala_karyawan/edit_id',
       method: 'post',
-      data: "target=pelatihan_karyawan&id=" + id,
+      data: "target=berkala_karyawan&id=" + id,
       dataType: 'json',
       success: function(data) {
         $("#id_hapus").val(id)
@@ -370,9 +347,9 @@
     $("#hapus").html('<i class="fas fa-spinner fa-pulse"></i> Memproses..')
     var id = $("#id_hapus").val()
     $.ajax({
-      url: '<?= base_url() ?>pelatihan_karyawan/hapus',
+      url: '<?= base_url() ?>berkala_karyawan/hapus',
       method: 'post',
-      data: "target=pelatihan_karyawan&id=" + id,
+      data: "target=berkala_karyawan&id=" + id,
       dataType: 'json',
       success: function(data) {
         $("#id_hapus").val("")

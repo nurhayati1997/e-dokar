@@ -414,6 +414,7 @@
               },
               success: function(data) {
                  console.log(data);
+                 tampilkan()
                 
                 Swal.fire({
                     position: 'center',

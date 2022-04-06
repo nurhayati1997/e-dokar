@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class riwayat_kerja_karyawan extends CI_Controller 
+class berkala_karyawan extends CI_Controller 
 {
 
 	function __construct()
@@ -17,13 +17,13 @@ class riwayat_kerja_karyawan extends CI_Controller
 
 	public function index()
 	{
-		$this->template->load('template', 'riwayat_kerja_karyawan_v');
+		$this->template->load('template', 'berkala_karyawan_v');
 	}	
 	
 	public function tampil()
 	{
 		
-			echo json_encode($this->db_model->all_data("v_riwayat_kerja_karyawan")->result());
+			echo json_encode($this->db_model->all_data("v_berkala_karyawan")->result());
 	}
 
 	function get_nama_karyawan()
@@ -32,19 +32,17 @@ class riwayat_kerja_karyawan extends CI_Controller
 	}
 
 
-	function tambah_pelatihan()
+	function tambah_berkala()
 	{
 		$data = [
-			"ruangan_baru" => $this->input->post('ruangan_baru', TRUE),
-			"no_sk" => $this->input->post('no_sk', TRUE),
-			"tgl_sk" => $this->input->post('tgl_sk', TRUE),
 			"nama" => $this->input->post('nama_karyawan', TRUE),
-			"nama_pinpinan" => $this->input->post('nama_pinpinan', TRUE),
-			"tahun" => $this->input->post('tahun', TRUE)
+			"tgl_berkala" => $this->input->post('tgl_berkala', TRUE),
+			"sk_pangkat_terakhir" => $this->input->post('sk_pangkat_terakhir', TRUE),
+			"sk_berkala" => $this->input->post('sk_berkala', TRUE)
 		];
 
 		// echo json_encode($data);
-		echo json_encode($this->db_model->insert_get("riwayat_kerja_karyawan", $data));
+		echo json_encode($this->db_model->insert_get("berkala_karyawan", $data));
 	}
 	public function dataById($id)
 	{
@@ -62,45 +60,21 @@ class riwayat_kerja_karyawan extends CI_Controller
 	public function edit()
 	{
 		$data = [
-			// "nama" => $this->input->post("nama_karyawan", TRUE),
-			"ruangan_baru" => $this->input->post("ruangan_baru", TRUE),
-			"no_sk" => $this->input->post("no_sk", TRUE),
-			"tgl_sk" => $this->input->post("tgl_sk", TRUE),
-			"nama_pinpinan" => $this->input->post("nama_pinpinan", TRUE),
-			"tahun" => $this->input->post("tahun", TRUE)
+			"nama_pelatihan" => $this->input->post("nama_pelatihan", TRUE),
+			"tgl_mulai_pelatihan" => $this->input->post("tgl_mulai_pelatihan", TRUE),
+			"tgl_selesai_pelatihan" => $this->input->post("tgl_selesai_pelatihan", TRUE),
+			"durasi_pelatihan" => $this->input->post("durasi_pelatihan", TRUE),
+			"no_sertifikat" => $this->input->post("no_sertifikat", TRUE),
+			"file_sertifikat" => $this->input->post("file_sertifikat", TRUE)
 		];
-		$this->db_model->update('riwayat_kerja_karyawan', $data, ["id" => $this->input->post("id")]);
+		$this->db_model->update('pelatihan_karyawan', $data, ["id" => $this->input->post("id")]);
 		echo json_encode("");
 		
 	}
 
-	function ubah_list()
-	{
-		echo json_encode($this->db_model->get_where('riwayat_kerja_karyawan', ["id" => $this->input->post('id', TRUE)])->result());
-	}
-
-	public function ubah()
-	{
-		$data = [
-			"kode_barang" => $this->input->post("kode", TRUE),
-			"nama_barang" => $this->input->post("nama", TRUE),
-			"distributor" => $this->input->post("distributor", TRUE),
-			"jenis" => $this->input->post("jenis", TRUE),
-			"keterangan" => $this->input->post("ket", TRUE),
-			"lokasi" => $this->input->post("lokasi", TRUE),
-			"merk_barang" => $this->input->post("merk", TRUE),
-			"harga_kulak" => $this->input->post("satuan", TRUE),
-			"harga_jual" => $this->input->post("jual", TRUE),
-			"stok_barang" => $this->input->post("stok", TRUE),
-			"pagu" => $this->input->post("pagu", TRUE)
-		];
-		$this->db_model->update('riwayat_kerja_karyawan', $data, array('id' => $this->input->post('id', TRUE)));
-		echo json_encode($data);
-	}
-
 	public function hapus()
 	{
-		echo json_encode($this->db_model->delete('riwayat_kerja_karyawan', array('id' => $this->input->post('id', TRUE))));
+		echo json_encode($this->db_model->delete('berkala_karyawan', array('id' => $this->input->post('id', TRUE))));
 		
 	}
 

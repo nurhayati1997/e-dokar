@@ -77,46 +77,6 @@
 																	<option value="3">3.Karyawan</option>
 																</select>
 															</div>
-															<!-- <div class="form-group mb-3">
-																<span class="form-text text-muted">Pilih Jabatan</span>
-																<select class="form-control" id="jabatan">
-																	<option value="Direktur">Direktur</option>
-																	<option value="Wadir">Wadir</option>
-																	<option value="KA.BAG">KA.BAG</option>
-																	<option value="KA.BID">KA.BID</option>
-																	<option value="KA.Subag">KA.Subag</option>
-																	<option value="KA.Instalasi">KA.Instalasi</option>
-																	<option value="KA.Ruangan">KA.Ruangan</option>
-																	<option value="KA.Unit">KA.Unit</option>
-																	<option value="Staff">Staff</option>
-																	<option value="Unit">Unit</option>
-																</select>
-															</div>
-															<div class="form-group mb-3">
-																<span class="form-text text-muted">Pilih Status</span>
-																<select class="form-control" id="status_karyawan">
-																	<option value="PNS">PNS</option>
-																	<option value="PPPK">PPPK</option>
-																	<option value="THL">THL</option>
-																	<option value="Kontrak">Kontrak</option>
-																	<option value="Unit">Unit</option>
-																</select>
-															</div>
-															<div class="form-group mb-3">
-																<span class="form-text text-muted">Pilih Jenis Tenaga</span>
-																<select class="form-control" id="jenis_tenaga">
-																	<option value="Tenaga Medis / Dokter">Tenaga Medis / Dokter</option>
-																	<option value="Tenaga Keperawatan">Tenaga Keperawatan</option>
-																	<option value="Tenaga Kesehatan Lainnya">Tenaga Kesehatan Lainnya</option>
-																	<option value="Pejabat Struktural">Pejabat Struktural</option>
-																	<option value="Tenaga Umum / Non Medis">Tenaga Umum / Non Medis</option>
-																</select>
-															</div>
-															
-															<div class="form-group mb-3">
-																<span class="form-text text-muted">Masukkan Jenis Pendidikan</span>
-																<input type="text" class="form-control" id="jenis_pendidikan" placeholder="Mohon sesuaikan dengan data ketenagaan" />
-															</div> -->
 
 															<div class="badge badge-danger" id="pesanErrorTambah"></div>
 																<div class="text-center">
@@ -269,111 +229,62 @@
 																</div>
 																<!-- pendidikan -->
 																<div class="form-group row">
-																	<div class="col-lg-4">
+																	<div class="col-lg-6">
 																		<label>B. KELENGKAPAN PENDIDIKAN KARYAWAN:</label>
 																		<span class="form-text text-muted">SD</span>
 																		<input type="text" class="form-control" id="sd" placeholder="Masukkan Sesuai Ijazah"/>
 																	</div>
-																	<div class="col-lg-4">
+																	<div class="col-lg-6">
 																		<span class="form-text text-muted">No Ijazah SD</span>
 																		<input type="text" class="form-control" id="no_sd" placeholder="Masukkan Sesuai Ijazah"/>
 																	</div>
-																	<div class="col-lg-4">
-																		<span class="form-text text-muted">Upload Ijazah SD</span>
-																		<div class="custom-file">
-																			<input type="file" class="custom-file-input" id="file_sd" />
-																			<label class="custom-file-label" for="customFile">File Ijazah Harus format pdf</label>
-																		</div>
-																	</div>
-																	<div class="col-lg-4">
+																	<div class="col-lg-6">
 																		<span class="form-text text-muted">SMP</span>
 																		<input type="text" class="form-control" id="smp" placeholder="Masukkan Sesuai Ijazah"/>
 																	</div>
-																	<div class="col-lg-4">
+																	<div class="col-lg-6">
 																		<span class="form-text text-muted">No Ijazah SMP</span>
 																		<input type="text" class="form-control" id="no_smp" placeholder="Masukkan Sesuai Ijazah"/>
 																	</div>
-																	<div class="col-lg-4">
-																		<span class="form-text text-muted">Upload Ijazah SMP</span>
-																		<div class="custom-file">
-																			<input type="file" class="custom-file-input" id="file_smp" />
-																			<label class="custom-file-label" for="customFile">File Ijazah Harus format pdf</label>
-																		</div>
-																	</div>
-																	<div class="col-lg-4">
+																	<div class="col-lg-6">
 																		<span class="form-text text-muted">SMA</span>
 																		<input type="text" class="form-control" id="sma" placeholder="Masukkan Sesuai Ijazah"/>
 																	</div>
-																	<div class="col-lg-4">
+																	<div class="col-lg-6">
 																		<span class="form-text text-muted">No Ijazah SMA</span>
 																		<input type="text" class="form-control" id="no_sma" placeholder="Masukkan Sesuai Ijazah"/>
 																	</div>
-																	<div class="col-lg-4">
-																		<span class="form-text text-muted">Upload Ijazah SMA</span>
-																		<div class="custom-file">
-																			<input type="file" class="custom-file-input" id="file_sma" />
-																			<label class="custom-file-label" for="customFile">File Ijazah Harus format pdf</label>
-																		</div>
-																	</div>
-																	<div class="col-lg-4">
+																	<div class="col-lg-6">
 																		<span class="form-text text-muted">S1/D-III/D-IV</span>
 																		<input type="text" class="form-control" id="s1" placeholder="Masukkan Sesuai Ijazah"/>
 																	</div>
-																	<div class="col-lg-4">
+																	<div class="col-lg-6">
 																		<span class="form-text text-muted">No Ijazah S1/D-III/D-IV</span>
 																		<input type="text" class="form-control" id="no_s1" placeholder="Masukkan Sesuai Ijazah"/>
 																	</div>
-																	<div class="col-lg-4">
-																		<span class="form-text text-muted">Upload Ijazah S1/D-III/D-IV</span>
-																		<div class="custom-file">
-																			<input type="file" class="custom-file-input" id="file_s1" />
-																			<label class="custom-file-label" for="customFile">File Ijazah Harus format pdf</label>
-																		</div>
-																	</div>
-																	<div class="col-lg-4">
+																	<div class="col-lg-6">
 																		<span class="form-text text-muted">S2</span>
 																		<input type="text" class="form-control" id="s2" placeholder="Masukkan Sesuai Ijazah"/>
 																	</div>
-																	<div class="col-lg-4">
+																	<div class="col-lg-6">
 																		<span class="form-text text-muted">No Ijazah S2</span>
 																		<input type="text" class="form-control" id="no_s2" placeholder="Masukkan Sesuai Ijazah"/>
 																	</div>
-																	<div class="col-lg-4">
-																		<span class="form-text text-muted">Upload Ijazah S2</span>
-																		<div class="custom-file">
-																			<input type="file" class="custom-file-input" id="file_s2" />
-																			<label class="custom-file-label" for="customFile">File Ijazah Harus format pdf</label>
-																		</div>
-																	</div>
-																	<div class="col-lg-4">
+																	<div class="col-lg-6">
 																		<span class="form-text text-muted">S3</span>
 																		<input type="text" class="form-control" id="s3" placeholder="Masukkan Sesuai Ijazah"/>
 																	</div>
-																	<div class="col-lg-4">
+																	<div class="col-lg-6">
 																		<span class="form-text text-muted">No Ijazah S3</span>
 																		<input type="text" class="form-control" id="no_s3" placeholder="Masukkan Sesuai Ijazah"/>
 																	</div>
-																	<div class="col-lg-4">
-																		<span class="form-text text-muted">Upload Ijazah S3</span>
-																		<div class="custom-file">
-																			<input type="file" class="custom-file-input" id="file_s3" />
-																			<label class="custom-file-label" for="customFile">File Ijazah Harus format pdf</label>
-																		</div>
-																	</div>
-																	<div class="col-lg-4">
+																	<div class="col-lg-6">
 																		<span class="form-text text-muted">Profesi</span>
 																		<input type="text" class="form-control" id="profesi" placeholder="Masukkan Sesuai Ijazah"/>
 																	</div>
-																	<div class="col-lg-4">
+																	<div class="col-lg-6">
 																		<span class="form-text text-muted">No Ijazah Profesi</span>
 																		<input type="text" class="form-control" id="no_profesi" placeholder="Masukkan Sesuai Ijazah"/>
-																	</div>
-																	<div class="col-lg-4">
-																		<span class="form-text text-muted">Upload Ijazah Profesi</span>
-																		<div class="custom-file">
-																			<input type="file" class="custom-file-input" id="file_profesi" />
-																			<label class="custom-file-label" for="customFile">File Ijazah Harus format pdf</label>
-																		</div>
 																	</div>
 																</div>
 																<!-- Kepegawaian -->
@@ -607,40 +518,12 @@
 																		<input type="text" class="form-control" id="no_sk" placeholder="Masukkan No Sesuai SK" />
 																	</div>
 																	<div class="col-lg-4">
-																		<span class="form-text text-muted">Upload SK</span>
-																		<div class="custom-file">
-																			<input type="file" class="custom-file-input" id="file_sk" />
-																			<label class="custom-file-label" for="customFile">File SK Harus format pdf</label>
-																		</div>
-																	</div>
-																	<div class="col-lg-4">
-																		<span class="form-text text-muted">Upload SK Penempatan</span>
-																		<div class="custom-file">
-																			<input type="file" class="custom-file-input" id="file_penempatan" />
-																			<label class="custom-file-label" for="customFile">File SK Penempatan Harus format pdf</label>
-																		</div>
-																	</div>
-																	<div class="col-lg-4">
 																		<span class="form-text text-muted">No STR</span>
 																		<input type="text" class="form-control" id="no_str" placeholder="Masukkan No Sesuai STR" />
 																	</div>
 																	<div class="col-lg-4">
-																		<span class="form-text text-muted">Upload STR</span>
-																		<div class="custom-file">
-																			<input type="file" class="custom-file-input" id="file_str" />
-																			<label class="custom-file-label" for="customFile">File STR Harus format pdf</label>
-																		</div>
-																	</div>
-																	<div class="col-lg-4">
 																		<span class="form-text text-muted">No SIP</span>
 																		<input type="text" class="form-control" id="no_sip" placeholder="Masukkan No Sesuai SIP" />
-																	</div>
-																	<div class="col-lg-4">
-																		<span class="form-text text-muted">Upload SIP</span>
-																		<div class="custom-file">
-																			<input type="file" class="custom-file-input" id="file_sip" />
-																			<label class="custom-file-label" for="customFile">File SIP Harus format pdf</label>
-																		</div>
 																	</div>
 																	<div class="col-lg-4">
 																		<span class="form-text text-muted">Masa Berlaku STR/SIP</span>
@@ -909,7 +792,7 @@
 																				<a href="#" class="font-weight-bold text-dark-75 text-hover-primary font-size-lg mb-1">Ijazah SD</a>
 																				<form role="form">
 																					<div class="form-group mb-1">
-																						<input type="text" class="form-control" id="view_file_penempatan" disabled/>
+																						<input type="text" class="form-control" id="view_file_sd" disabled/>
 																					</div>
 																				</form><!-- <span class="text-muted font-weight-bold">Due in 2 Days</span> -->
 																			</div>
@@ -937,7 +820,7 @@
 																			<a href="#" class="font-weight-bold text-dark-75 text-hover-primary font-size-lg mb-1">Ijazah SMP</a>
 																				<form role="form">
 																					<div class="form-group mb-1">
-																						<input type="text" class="form-control" id="view_file_sk" disabled/>
+																						<input type="text" class="form-control" id="view_file_smp" disabled/>
 																					</div>
 																				</form>
 																			</div>
@@ -969,7 +852,7 @@
 																				<a href="#" class="font-weight-bold text-dark-75 text-hover-primary font-size-lg mb-1">Ijazah SMA</a>
 																				<form role="form">
 																					<div class="form-group mb-1">
-																						<input type="text" class="form-control" id="view_file_str" disabled/>
+																						<input type="text" class="form-control" id="view_file_sma" disabled/>
 																					</div>
 																				</form>
 																			</div>
@@ -1004,7 +887,7 @@
 																				<a href="#" class="font-weight-bold text-dark-75 text-hover-primary font-size-lg mb-1">Ijazah SI</a>
 																				<form role="form">
 																					<div class="form-group mb-1">
-																						<input type="text" class="form-control" id="view_file_sip" disabled/>
+																						<input type="text" class="form-control" id="view_file_s1" disabled/>
 																					</div>
 																				</form>
 																			</div>
@@ -1033,7 +916,7 @@
 																				<a href="#" class="font-weight-bold text-dark-75 text-hover-primary font-size-lg mb-1">Ijazah S2</a>
 																				<form role="form">
 																					<div class="form-group mb-1">
-																						<input type="text" class="form-control" id="view_file_penempatan" disabled/>
+																						<input type="text" class="form-control" id="view_file_s2" disabled/>
 																					</div>
 																				</form><!-- <span class="text-muted font-weight-bold">Due in 2 Days</span> -->
 																			</div>
@@ -1061,7 +944,7 @@
 																			<a href="#" class="font-weight-bold text-dark-75 text-hover-primary font-size-lg mb-1">Ijazah S3</a>
 																				<form role="form">
 																					<div class="form-group mb-1">
-																						<input type="text" class="form-control" id="view_file_sk" disabled/>
+																						<input type="text" class="form-control" id="view_file_s3" disabled/>
 																					</div>
 																				</form>
 																			</div>
@@ -1093,7 +976,7 @@
 																				<a href="#" class="font-weight-bold text-dark-75 text-hover-primary font-size-lg mb-1">Ijazah Profesi</a>
 																				<form role="form">
 																					<div class="form-group mb-1">
-																						<input type="text" class="form-control" id="view_file_str" disabled/>
+																						<input type="text" class="form-control" id="view_file_profesi" disabled/>
 																					</div>
 																				</form>
 																			</div>
@@ -2500,6 +2383,110 @@
 								</div>
 							</div>
 
+						<!-- tambah arsip -->
+						
+								<div class="modal fade" id="modalArsip" tabindex="-1" role="dialog" aria-labelledby="modal-form" aria-hidden="true">
+									<div class="modal-dialog modal- modal-dialog-centered modal-lg" role="document">
+										<div class="modal-content">
+											<div class="modal-body p-0">
+												<div class="card bg-secondary border-0 mb-0">
+													<div class="card-header bg-success pb-1">
+														<div class="text-muted text-center mt-2 mb-3">
+															<span class="text-white">Form Tambah File Kelengkapan Karyawan </span>
+														</div>
+													</div>
+													<div class="card-body px-lg-5 py-lg-5">
+														<form role="form">
+															<div class="form-group mb-3">
+																<span class="form-text text-muted">Upload Ijazah SD</span>
+																<div class="custom-file">
+																	<input id="idUser" type="hidden">
+																	<input type="file" class="custom-file-input" id="file_sd" />
+																	<label class="custom-file-label" for="customFile">File Ijazah Harus format pdf</label>
+																</div>
+															</div>
+															<div class="form-group mb-3">
+																		<span class="form-text text-muted">Upload Ijazah SMP</span>
+																		<div class="custom-file">
+																			<input type="file" class="custom-file-input" id="file_smp" />
+																			<label class="custom-file-label" for="customFile">File Ijazah Harus format pdf</label>
+																		</div>
+															</div>
+															<div class="form-group mb-3">
+																		<span class="form-text text-muted">Upload Ijazah SMA</span>
+																		<div class="custom-file">
+																			<input type="file" class="custom-file-input" id="file_sma" />
+																			<label class="custom-file-label" for="customFile">File Ijazah Harus format pdf</label>
+																		</div>
+															</div>
+															<div class="form-group mb-3">
+																		<span class="form-text text-muted">Upload Ijazah S1/D-III/D-IV</span>
+																		<div class="custom-file">
+																			<input type="file" class="custom-file-input" id="file_s1" />
+																			<label class="custom-file-label" for="customFile">File Ijazah Harus format pdf</label>
+																		</div>
+															</div>
+															<div class="form-group mb-3">
+																		<span class="form-text text-muted">Upload Ijazah S2</span>
+																		<div class="custom-file">
+																			<input type="file" class="custom-file-input" id="file_s2" />
+																			<label class="custom-file-label" for="customFile">File Ijazah Harus format pdf</label>
+																		</div>
+															</div>
+															<div class="form-group mb-3">
+																		<span class="form-text text-muted">Upload Ijazah S3</span>
+																		<div class="custom-file">
+																			<input type="file" class="custom-file-input" id="file_s3" />
+																			<label class="custom-file-label" for="customFile">File Ijazah Harus format pdf</label>
+																		</div>
+															</div>
+															<div class="form-group mb-3">
+																		<span class="form-text text-muted">Upload Ijazah Profesi</span>
+																		<div class="custom-file">
+																			<input type="file" class="custom-file-input" id="file_profesi" />
+																			<label class="custom-file-label" for="customFile">File Ijazah Harus format pdf</label>
+																		</div>
+															</div>
+															<div class="form-group mb-3">
+																		<span class="form-text text-muted">Upload SK</span>
+																		<div class="custom-file">
+																			<input type="file" class="custom-file-input" id="file_sk" />
+																			<label class="custom-file-label" for="customFile">File SK Harus format pdf</label>
+																		</div>
+															</div>
+															<div class="form-group mb-3">
+																		<span class="form-text text-muted">Upload SK Penempatan</span>
+																		<div class="custom-file">
+																			<input type="file" class="custom-file-input" id="file_penempatan" />
+																			<label class="custom-file-label" for="customFile">File SK Penempatan Harus format pdf</label>
+																		</div>
+															</div>
+															<div class="form-group mb-3">
+																		<span class="form-text text-muted">Upload STR</span>
+																		<div class="custom-file">
+																			<input type="file" class="custom-file-input" id="file_str" />
+																			<label class="custom-file-label" for="customFile">File STR Harus format pdf</label>
+																		</div>
+															</div>
+															<div class="form-group mb-3">
+																		<span class="form-text text-muted">Upload SIP</span>
+																		<div class="custom-file">
+																			<input type="file" class="custom-file-input" id="file_sip" />
+																			<label class="custom-file-label" for="customFile">File SIP Harus format pdf</label>
+																		</div>
+															</div>
+															<div class="badge badge-danger" id="pesanErrorTambah"></div>
+																<div class="text-center">
+																<button type="button" onClick="arsip()" id="tombolArsip" class="btn btn-success my-2">Tambah</button>
+															</div>
+														</form>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
 							<!--end::Container-->
 						</div>
 <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
@@ -2518,6 +2505,7 @@
           for (let i = 0; i < data.length; i++) {
             baris += '<tr>'
             baris += '<td><div style="cursor:pointer;" title="hapus?" id="hapus' + data[i].id + '" onClick="tryHapus(' + data[i].id+ ')"><i class="flaticon-delete text-danger"></i></div>'
+            baris += ' <div style="cursor:pointer;" title="upload?"  id="arsip' + data[i].id + '" onClick="tryArsip(' + data[i].id+ ')"><i class="flaticon2-open-box text-warning"></i></div>'
             baris += ' <div style="cursor:pointer;" title="edit?"  id="edit' + data[i].id + '" onClick="tryEdit(' + data[i].id+ ')"><i class="flaticon2-pen text-success"></i></div>'
             // baris += ' <div style="cursor:pointer;" title="view?" id="cetak' + data[i].id + '" onClick="tryCetak(' + data[i].id+ ')"><i class="flaticon-eye text-primary"></i></div>'
             baris += ' <div style="cursor:pointer;" title="view?" id="view' + data[i].id + '" onClick="tryView(' + data[i].id+ ')"><i class="flaticon-eye text-primary"></i></div>'
@@ -2607,6 +2595,8 @@
       }
     });
   }
+
+
 
   function tryHapus(id) {
     $("#hapus" + id).html('<i class="fas fa-spinner fa-pulse"></i>')
@@ -2911,6 +2901,90 @@
         $("#modalEdit").modal('hide');
         tampilkan();
         $("#tombolEdit").html('Simpan')
+      }
+    });
+  }
+  
+  function tryArsip(id) {
+    $("#tombolArsip" + id).html('<i class="fas fa-spinner fa-pulse"></i>')
+    $("#idUser").val(id)
+    $.ajax({
+      url: '<?= base_url() ?>data_karyawan/edit_id',
+      method: 'post',
+      data: "target=hrd_user&id=" + id,
+      dataType: 'json',
+      success: function(data) {
+        $("#modalArsip").modal('show')
+        $("#file_sd").val(data.file_sd)
+        $("#file_smp").val(data.file_smp)
+        $("#file_sma").val(data.file_sma)
+        $("#file_s1").val(data.file_s1)
+        $("#file_s2").val(data.file_s2)
+        $("#file_s3").val(data.file_s3)
+        $("#file_profesi").val(data.file_profesi)
+        $("#file_sk").val(data.file_sk)
+        $("#file_penempatan").val(data.file_penempatan)
+        $("#file_str").val(data.file_str)
+        $("#file_sip").val(data.file_sip)
+        console.log(data)
+        $("#arsip" + id).html('<i class="fa fa-edit"></i>')
+      }
+    });
+  }
+
+  function arsip() {
+    $("#tombolArsip").html('<i class="fas fa-spinner fa-pulse"></i> Memproses..')
+    var file_sd = $("#file_sd").val()
+    var file_smp = $("#file_smp").val()
+    var file_sma = $("#file_sma").val()
+    var file_s1 = $("#file_s1").val()
+    var file_s2 = $("#file_s2").val()
+    var file_s3 = $("#file_s3").val()
+    var file_profesi = $("#file_profesi").val()
+    var file_sk = $("#file_sk").val()
+    var file_penempatan = $("#file_penempatan").val()
+    var file_str = $("#file_str").val()
+    var file_sip = $("#file_sip").val()
+    var id = $("#idUser").val()
+    $.ajax({
+      url: '<?= base_url() ?>data_karyawan/arsip',
+      method: 'post',
+      data: {
+        id: id,
+        file_sd: file_sd,
+        file_smp: file_smp,
+        file_sma: file_sma,
+        file_s1: file_s1,
+        file_s2: file_s2,
+        file_s3: file_s3,
+        file_profesi: file_profesi,
+        file_sk: file_sk,
+        file_penempatan: file_penempatan,
+        file_str: file_str,
+        file_sip: file_sip,
+      },
+      dataType: 'json',
+      success: function(data) {
+        if (data == "") {
+			$("#idUser").val("")
+			$("#file_sd").val("")
+			$("#file_smp").val("")
+			$("#file_sma").val("")
+			$("#file_s1").val("")
+			$("#file_s2").val("")
+			$("#file_s3").val("")
+			$("#file_profesi").val("")
+			$("#file_sk").val("")
+			$("#file_penempatan").val("")
+			$("#file_str").val("")
+			$("#file_sip").val("")
+			// console.log(data)
+        } else {
+          $('#pesanErrorEdit').html(data)
+        }
+        $("#modalArsip").modal('hide');
+        tampilkan();
+        $("#tombolArsip").html('Simpan')
       }
     });
   }

@@ -179,52 +179,129 @@ class data_karyawan extends CI_Controller
 		echo json_encode($this->db_model->delete('hrd_user', array('id' => $this->input->post('id', TRUE))));
 		
 	}
+ 	public function create_result()
+   {
 
-	public function excel(){
-		$data['karyawan'] =$this->db_model->all_data("hrd_user")->result();
-		// echo json_encode($this->db_model->all_data("hrd_user")->result());
+         set_time_limit(600);
+		//  $list =$this->db_model->all_data("hrd_user")->result();
+		// $this->db_model->all_data('hrd_user');
+        // $list = $this->input->post(); 
+		// $this->load->model('db_model');
 
-		require(APPPATH.'PHPExcel-1.8/Classes/PHPExcel.php');
-		require(APPPATH.'PHPExcel-1.8/Classes/PHPExcel/Writer/Excel2007.php');
+		$this->load->model('db_model');
+		$list = $this->db_model->all_data("hrd_user")->result_array(); 
 
-		$object = new PHPExcel();
 
-		$object->getProperties()->setCreator("Tim IT RSUD SYAMRABU");
-		$object->getProperties()->setLastModifiedBy("Tim IT RSUD SYAMRABU");
-		$object->getProperties()->setTitle("Data Karyawan");
+         require(APPPATH."PHPExcel-1.8/Classes/PHPExcel.php");
+         require(APPPATH."PHPExcel-1.8/Classes/PHPExcel/Writer/Excel5.php");
 
-		$object->setActiveSheetIndex(0);
+         $objPHPExcel = new PHPExcel();
 
-		$object->getActiveSheet()->setCellValue('A1','NO');
-		$object->getActiveSheet()->setCellValue('A1','NAMA');
-		$object->getActiveSheet()->setCellValue('A1','RUANGAN');
-		$object->getActiveSheet()->setCellValue('A1','JABATAN');
-		$object->getActiveSheet()->setCellValue('A1','STATUS KARYAWAN');
-		$object->getActiveSheet()->setCellValue('A1','PENDIDIKAN');
-		$object->getActiveSheet()->setCellValue('A1','JENIS TENAGA');
+         $objPHPExcel->getProperties()->setCreator("");
+         $objPHPExcel->getProperties()->setLastModifiedBy("");
+         $objPHPExcel->getProperties()->setTitle("");
+         $objPHPExcel->getProperties()->setSubject("");
+         $objPHPExcel->getProperties()->setDescription("");
 
-		$baris = 2;
-		$no = 1;
+         $objPHPExcel->setActiveSheetIndex(0);
 
-		foreach($data['karyawan']as $karyawan){
-			$object->getActiveSheet()->setCellValue('A'.$baris, $no++);
-			$object->getActiveSheet()->setCellValue('A'.$baris, $karyawan->nama);
-			$object->getActiveSheet()->setCellValue('A'.$baris, $karyawan->ruangan);
-			$object->getActiveSheet()->setCellValue('A'.$baris, $karyawan->jabatan);
-			$object->getActiveSheet()->setCellValue('A'.$baris, $karyawan->status_karyawan);
-			$object->getActiveSheet()->setCellValue('A'.$baris, $karyawan->jenis_pendidikan);
-			$object->getActiveSheet()->setCellValue('A'.$baris, $karyawan->jenis_tenaga);
+         $sheet = $objPHPExcel->getActiveSheet();
 
-			$baris++;
+         $sheet->setCellValue("A1","Nama");
+         $sheet->setCellValue("B1","Jabatan");
+        //  $sheet->setCellValue("C1","date");
+        //  $sheet->setCellValue("D1","type");
+        //  $sheet->setCellValue("E1","view");
 
-		}
+         $row = 2;
 
-		$filename="Data Karyawan".'xlsx';
+         foreach ($list as $key => $value)
+         {
+
+            // $object->getActiveSheet()->setCellValue('A'.$baris, $karyawan->nama); 
+			$sheet->setCellValue("A".$row,$value['nama']);
+             $sheet->setCellValue("B".$row,$value['jabatan']);
+            //  $sheet->setCellValue("C".$row,$value['MsgDate']);
+            //  $sheet->setCellValue("D".$row,$value['MsgType']);
+            //  $sheet->setCellValue("E".$row,$value['CountView']);
+             $row++;
+             }
+
+         $filename = "Task-Exportet-on-".date("Y-m-d-H-i-s").".xls";
+         $sheet->setTitle("Task-Overview");
+
+		 header("Pragma: public");
+		 header("Expires: 0");
+		 header("Cache-Control: must-revalidate, post-check=0, pre-check=0");
+		 header("Content-Type: application/force-download");
+		 header("Content-Type: application/octet-stream");
+		 header("Content-Type: application/download");;
+		 header("Content-Disposition: attachment;filename=$filename");
+
+
+        $objWriter = PHPExcel_IOFactory::createWriter($objPHPExcel, 'Excel2007');  
+                //force user to download the Excel file without writing it to server's HD
+        $objWriter->save('php://output');
+        set_time_limit(30);
+        exit;
+    }
+
+	// public function excel(){
+	// 	$data['karyawan'] =$this->db_model->all_data("hrd_user")->result();
+	// 	// echo json_encode($this->db_model->all_data("hrd_user")->result());
+
+	// 	require(APPPATH.'PHPExcel-1.8/Classes/PHPExcel.php');
+	// 	require(APPPATH.'PHPExcel-1.8/Classes/PHPExcel/Writer/Excel2007.php');
+
+	// 	$object = new PHPExcel();
+
+	// 	$object->getProperties()->setCreator("Tim IT RSUD SYAMRABU");
+	// 	$object->getProperties()->setLastModifiedBy("Tim IT RSUD SYAMRABU");
+	// 	$object->getProperties()->setTitle("Data Karyawan");
+
+	// 	$object->setActiveSheetIndex(0);
+
+	// 	$object->getActiveSheet()->setCellValue('A1','NO');
+	// 	$object->getActiveSheet()->setCellValue('A1','NAMA');
+	// 	$object->getActiveSheet()->setCellValue('A1','RUANGAN');
+	// 	$object->getActiveSheet()->setCellValue('A1','JABATAN');
+	// 	$object->getActiveSheet()->setCellValue('A1','STATUS KARYAWAN');
+	// 	$object->getActiveSheet()->setCellValue('A1','PENDIDIKAN');
+	// 	$object->getActiveSheet()->setCellValue('A1','JENIS TENAGA');
+
+	// 	$baris = 2;
+	// 	$no = 1;
+
+	// 	foreach($data['karyawan']as $karyawan){
+	// 		$object->getActiveSheet()->setCellValue('A'.$baris, $no++);
+	// 		$object->getActiveSheet()->setCellValue('A'.$baris, $karyawan->nama);
+	// 		$object->getActiveSheet()->setCellValue('A'.$baris, $karyawan->ruangan);
+	// 		$object->getActiveSheet()->setCellValue('A'.$baris, $karyawan->jabatan);
+	// 		$object->getActiveSheet()->setCellValue('A'.$baris, $karyawan->status_karyawan);
+	// 		$object->getActiveSheet()->setCellValue('A'.$baris, $karyawan->jenis_pendidikan);
+	// 		$object->getActiveSheet()->setCellValue('A'.$baris, $karyawan->jenis_tenaga);
+
+	// 		$baris++;
+
+	// 	}
+
+	// 	$filename="Data Karyawan".'xlsx';
+	// 	$object->getActiveSheet()->setTitle("Data Karyawan");
+
+	// 	header('Content-Type: application/
+	// 			vnd.openxmlformats-officedocument.spreadsheetml.sheet');
+	// 	header('Content-Disposition; attachment;filename="'.$filename. '"');
+	// 	header('Cache-Control; max-age=0');
+
+	// 	$writer=PHPExcel_IOFactory::createwriter($object, 'Excel2007');
+	// 	$writer->save('php://output');
+
+	// 	exit;
 
 		
 
 
-	}
+	// }
 
 	function enkripsi($data)
 	{

@@ -11,8 +11,9 @@
 											<span class="d-block text-muted pt-2 font-size-sm">UOBK RSUD SYAMRABU BANGKALAN</span></h3>
 										</div>
 										<div class="card-body px-lg-5 py-lg-5">
-											<?php if ($this->session->userdata("rule") == 1 or $this->session->userdata("rule") == 3) { ?>
-												<button type="button" class="btn btn-secondary" id="ButtonExcel" onclick="getExcel()" >Export Excel</button>
+											<?php if ($this->session->userdata("rule") == 1) { ?>
+												<button type="button" class="btn btn-secondary"><a href="data_karyawan/exel/" target="_blank">Export Excel</a></button>
+												<!-- <button type="button" class="btn btn-secondary" id="ButtonExcel" onclick="getExcel()" >Export Excel</button> -->
 												<!-- <button type="button" class="btn btn-danger" onclick="tryCetak()">Cetak Form Cuti</button> -->
 											<?php } ?>
 
@@ -2536,29 +2537,6 @@
       });
   }
 
-  function getExcel()
-    {
-        $.ajax({
-                       url:'<?=base_url();?>data_karyawan/create_result',
-                       destroy: true,
-                       type: 'POST',
-                       data: '',
-                       beforeSend: function() {
-                          $("#ButtonExcel").removeClass("buttonExcel");
-                          $("#ButtonExcel").addClass("buttonExcel-getExcel");
-                          $("#ButtonExcel").blur();
-                       },
-                       success: function(response){
-
-
-                               window.open('<?=base_url();?>data_karyawan/create_result','_blank');
-                    },
-                        error: function(){
-                            alert("error when get data");
-
-                        }
-                });
-        }
 
   function tryTambah() {
     $("#id_karyawan").val("")

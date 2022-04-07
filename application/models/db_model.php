@@ -16,6 +16,14 @@ class Db_model extends CI_Model
     {
         return $this->db->get($tabel);
     }
+    public function dataKaryawan()
+    {
+        $this->db->select('*');
+        $this->db->from('hrd_user');
+        $this->db->order_by('id', 'asc');
+        $data = $this->db->get('');
+        return $data;
+    }
     
     public function all_data_karyawan($tabel)
     {

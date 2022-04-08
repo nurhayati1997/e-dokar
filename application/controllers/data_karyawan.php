@@ -32,6 +32,62 @@ class data_karyawan extends CI_Controller
 		
 	}
 
+	function upload_pernyataan()
+	{
+		$user = $this->db_model->get_where('hrd_user', array('id' => $this->input->post('id', TRUE)))->row();
+		$nama = $user->nama ;
+		// $nama = $user->tanggal_antri . "_" . $user->id . "_" . $user->nama;
+
+		$config['allowed_types'] = 'jpg|jpeg|pdf';
+		$config['upload_path'] = './assets/foto_karyawan/';
+		$config['file_name'] = $nama;
+
+		$this->load->library('upload', $config);
+
+		// unlink('./document/pernyataan/'.$nama);
+
+		if ($this->upload->do_upload('berkas_foto')) {
+
+			$namaFotoBaru = $this->upload->data('file_name');
+
+			$data = [
+				"foto" => $namaFotoBaru
+				// "tindakan" => $this->input->post('jenis', TRUE),
+			];
+
+			echo json_encode($this->db_model->update("hrd_user", $data, array('id' => $this->input->post("id", TRUE))));
+		} else {
+			echo json_encode($this->upload->display_errors());
+		}
+		// echo json_encode($nama);
+	}
+
+	// public function tambah()
+	// {
+	// 	$config['upload_path'] ='.assets/foto_karyawan';
+	// 	$config['allowed_types'] = 'jpg|jpeg|png|gif';
+	// 	$config['encrypt_name'] = TRUE;
+		 
+	// 	$this->load->library('upload', $config);
+	// 	if($this->upload->do_upload('foto'))
+	// 	{
+	// 		$data = array('upload_data' => $this->upload->data());
+
+	// 		$id_karyawan = $this->$this->input->post("id_karyawan", TRUE);
+	// 		$nama = $this->input->post("nama", TRUE);
+	// 		$email = $this->input->post("email", TRUE);
+	// 		$password = $this->spin(password_hash($this->enkripsi($this->input->post("password")), PASSWORD_DEFAULT));
+	// 		$rule = $this->input->post("rule", TRUE);
+	// 		$foto = $data['upload_data']['foto'];
+	// 		$status = 1;
+
+	// 		$result =$this->db_model->save_upload($id_karyawan,$nama,$email,$password,$rule,$foto,$status);
+
+	// 		echo json_decode($result);
+			
+	// 	}
+	// }
+
 
 	public function tambah()
 	{
@@ -63,10 +119,7 @@ class data_karyawan extends CI_Controller
 				"email" => $this->input->post("email", TRUE),
 				"password" =>  $this->spin(password_hash($this->enkripsi($this->input->post("password")), PASSWORD_DEFAULT)),
 				"rule" => $this->input->post("rule", TRUE),
-				// "status_karyawan" => $this->input->post("status_karyawan", TRUE),
-				// "jabatan" => $this->input->post("jabatan", TRUE),
-				// "jenis_pendidikan" => $this->input->post("jenis_pendidikan", TRUE),
-				// "jenis_tenaga" => $this->input->post("jenis_tenaga", TRUE),
+				// "foto" => $this->input->post("foto", TRUE),
 				"status" => 1
 			];
 			$this->db_model->insert('hrd_user', $data);

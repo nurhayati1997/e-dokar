@@ -16,6 +16,15 @@ class Db_model extends CI_Model
     {
         return $this->db->get($tabel);
     }
+
+    public function save_upload($id_karyawan,$nama,$email,$password,$rule,$foto,$status){
+        $data =array('id_karyawan' => $id_karyawan, 'nama'=>$nama, 'email'=>$email, 'password'=>$password, 'rule'=>$rule, 'foto'=>$foto, 'status'=>$status );
+
+        $result =$this->db->insert('hrd_user',$data);
+        return $result;
+
+    }
+
     public function dataKaryawan()
     {
         $this->db->select('*');

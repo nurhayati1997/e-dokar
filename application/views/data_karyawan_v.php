@@ -1,3 +1,16 @@
+<style>
+  .swal2-container {
+    z-index: 3000;
+  }
+  .selectpicker{
+    background-color: white!important;
+  }
+
+  .bootstrap-select>.dropdown-toggle.bs-placeholder, .bootstrap-select>.dropdown-toggle.bs-placeholder:active, .bootstrap-select>.dropdown-toggle.bs-placeholder:focus, .bootstrap-select>.dropdown-toggle.bs-placeholder:hover{
+    color: white;
+  }
+
+</style>						
 						<div class="d-flex flex-column-fluid">
 							<!--begin::Container-->
 							<div class="container">
@@ -61,6 +74,12 @@
 													</div>
 													<div class="card-body px-lg-5 py-lg-5">
 														<form role="form">
+															<!-- <div class="form-group mb-3">
+																<div class="custom-file">
+																	<input type="file" class="custom-file-input" id="foto" />
+																	<label class="custom-file-label" for="customFile">Foto Harus format JPG</label>
+																</div>
+															</div> -->
 															<div class="form-group mb-3">
 																<span class="form-text text-muted">Masukkan Id Karyawan</span>
 																<input type="text" class="form-control" id="id_karyawan" placeholder="ID Karyawan" />
@@ -142,15 +161,15 @@
 														<form class="form">
 																<!-- identitas -->
 																<div class="form-group row">
-																	<div class="col-lg-4">
-																		<label>A. KELENGKAPAN IDENTITAS KARYAWAN:</label>
+																	<!-- <div class="col-lg-4">
 																		<div class="custom-file">
-																			<input id="idUser" type="hidden">
 																			<input type="file" class="custom-file-input" id="foto" />
 																			<label class="custom-file-label" for="customFile">Foto Harus format JPG</label>
 																		</div>
-																	</div>
+																	</div> -->
 																	<div class="col-lg-4">
+																		<label>A. KELENGKAPAN IDENTITAS KARYAWAN:</label>
+																		<input id="idUser" type="hidden">
 																		<span class="form-text text-muted">Nama</span>
 																		<input type="text" class="form-control" id="editnama" placeholder="Masukkan Nama Tanpa Gelar"/>
 																	</div>
@@ -2494,6 +2513,37 @@
 										</div>
 									</div>
 								</div>
+						
+							<!-- Tambah Foto-->
+								<div class="modal fade" id="modalFoto" tabindex="-1" role="dialog" aria-labelledby="modal-form" aria-hidden="true">	
+									<div class="modal-dialog modal- modal-dialog-centered modal-sm" role="document">
+										<div class="modal-content">
+											<div class="modal-body p-0">
+												<div class="card bg-secondary border-0 mb-0">
+													<div class="card-header bg-success pb-1">
+														<div class="text-muted text-center mt-2 mb-3">
+															<span class="text-white">Form Tambah Foto Karyawan </span>
+														</div>
+													</div>
+													<div class="card-body px-lg-5 py-lg-5">
+														<form role="form">
+															<div class="form-group mb-3">
+																<div class="custom-file">
+																	<input type="file" class="custom-file-input" id="berkas_foto" accept="image/jpeg,image/jpg,image/png" />
+																	<label class="custom-file-label" for="berkas_foto">Foto Harus format JPG</label>
+																</div>
+															</div>
+
+															
+															<div id="div_upload">
+															</div>
+														</form>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
 
 							<!--end::Container-->
 						</div>
@@ -2503,7 +2553,7 @@
 
   function tampilkan(){
     $("#tempatTabel").html('<i class="fas fa-spinner fa-pulse"></i> Memuat...')
-    var baris = '<table class="table table-separate table-head-custom table-checkable" id="tabelUser"><thead class="thead-light"><tr><th>Action</th><th>NO</th><th>Update</th><th>ID</th><th>Nama</th><th>Ruangan</th><th>Jabatan</th><th>Status Karyawan</th><th>Pendidikan</th><th>Jenis Tenaga</th></tr></thead>'
+    var baris = '<table class="table table-separate table-head-custom table-checkable" id="tabelUser"><thead class="thead-light"><tr><th>Action</th><th>NO</th><th>Update</th><th>ID</th><th>Nama</th><th>Foto</th><th>Ruangan</th><th>Jabatan</th><th>Status Karyawan</th><th>Pendidikan</th><th>Jenis Tenaga</th></tr></thead>'
       $.ajax({
         type:'POST',
         url: '<?= base_url() ?>data_karyawan/tampil',
@@ -2513,7 +2563,9 @@
           for (let i = 0; i < data.length; i++) {
             baris += '<tr>'
             baris += '<td><div style="cursor:pointer;" title="hapus?" id="hapus' + data[i].id + '" onClick="tryHapus(' + data[i].id+ ')"><i class="flaticon-delete text-danger"></i></div>'
-            baris += ' <div style="cursor:pointer;" title="upload?"  id="arsip' + data[i].id + '" onClick="tryArsip(' + data[i].id+ ')"><i class="flaticon2-open-box text-warning"></i></div>'
+            baris += ' <div style="cursor:pointer;" title="upload Berkas?"  id="arsip' + data[i].id + '" onClick="tryArsip(' + data[i].id+ ')"><i class="flaticon2-open-box text-warning"></i></div>'
+            // baris += ' <div style="cursor:pointer;" title="upload foto?"  id="foto' + data[i].id + '" onClick="tryFoto(' + data[i].id+ ')"><i class="flaticon-photo-camera text-primary"></i></div>'
+            baris += ' <div style="cursor:pointer;" title="upload foto?"  id="foto' + data[i].id + '" onClick="tampil_modal_upload(' + data[i].id+ ')"><i class="flaticon-photo-camera text-primary"></i></div>'
             baris += ' <div style="cursor:pointer;" title="edit?"  id="edit' + data[i].id + '" onClick="tryEdit(' + data[i].id+ ')"><i class="flaticon2-pen text-success"></i></div>'
             // baris += ' <div style="cursor:pointer;" title="view?" id="cetak' + data[i].id + '" onClick="tryCetak(' + data[i].id+ ')"><i class="flaticon-eye text-primary"></i></div>'
             baris += ' <div style="cursor:pointer;" title="view?" id="view' + data[i].id + '" onClick="tryView(' + data[i].id+ ')"><i class="flaticon-eye text-primary"></i></div>'
@@ -2521,6 +2573,7 @@
             baris += '<td>' + data[i].tgl_update + '</td>'
             baris += '<td>' + data[i].id_karyawan + '</td>'
             baris += '<td>' + data[i].nama + '</td>'
+            baris += '<td>' + data[i].foto + '</td>'
             baris += '<td>' + data[i].ruangan + '</td>'
             baris += '<td>' + data[i].jabatan + '</td>'
             baris += '<td>' + data[i].status_karyawan + '</td>'
@@ -2537,6 +2590,71 @@
       });
   }
 
+  function tampil_modal_upload(id){
+    //   document.getElementById("jenis_pernyataan").value = "";
+      document.getElementById("berkas_foto").value = "";
+
+      var tombol = '<button type="button" onclick="pernyataan('+id+')" id="simpan_pernyataan" class="btn btn-block btn-info"><div id="loader_upload"> </div> Simpan</button>';
+      $("#div_upload").html(tombol);
+
+      $('#modalFoto').modal('show');
+    }
+
+	function pernyataan(id) {
+      // console.log(id);
+      if(document.getElementById("berkas_foto").value == ""){
+        document.getElementById("berkas_foto").focus();
+      } else{
+        var format = $('#berkas_foto').prop('files')[0].type;
+        if (format.includes('pdf') || format.includes('jpg') || format.includes('jpeg')) {
+          var form_data = new FormData();
+          form_data.append('id', id);
+        //   form_data.append('jenis', document.getElementById("jenis_pernyataan").value);
+          form_data.append('berkas_foto', $('#berkas_foto').prop('files')[0]);
+
+          $.ajax({
+            type: 'POST',
+            data: form_data,
+            url: '<?= base_url() ?>data_karyawan/upload_pernyataan',
+            processData:false,
+            contentType:false,
+            cache:false,
+            dataType: 'json',
+            beforeSend: function () {
+              $('#simpan_pernyataan').attr('disabled', true);
+              $('#loader_upload').html('');
+              addSpinner($('#loader_upload'));
+            },
+            success: function(data) {
+              // alert(data);
+              // console.log(data);
+              $('#simpan_pernyataan').attr('disabled', false);
+              removeSpinner($('#loader_upload'), function () {
+                $('#loader_upload').html('');
+              });
+            //   ambil_data();
+              $('#modal-upload').modal('hide');
+              Swal.fire({
+                position: 'center',
+                icon: 'success',
+                title: 'Data Berhasil Diupload',
+                showConfirmButton: false,
+                timer: 2500
+              });
+            }
+          });
+        }else{
+           Swal.fire({
+              position: 'center',
+              icon: 'error',
+              title: 'Type file harus PDF atau JPEG atau JPG',
+              showConfirmButton: false,
+              timer: 2500
+            });
+        }
+      }
+  }
+
 
   function tryTambah() {
     $("#id_karyawan").val("")
@@ -2544,10 +2662,7 @@
     $("#email").val("")
     $("#password").val("")
     $("#rule").val("")
-    $("#status_karyawan").val("")
-    $("#jabatan").val("")
-    $("#jenis_pendidikan").val("")
-    $("#jenis_tenaga").val("")
+    // $("#foto").val("")
     $("#modalTambah").modal('show')
     $('#pesan_error_tambah').html("")
   }
@@ -2559,10 +2674,7 @@
     var email = $("#email").val()
     var password = $("#password").val()
     var rule = $("#rule").val()
-    var status_karyawan = $("#status_karyawan").val()
-    var jenis_pendidikan =  $("#jenis_pendidikan").val()
-    var jenis_tenaga =  $("#jenis_tenaga").val()
-    var jabatan = $("#jabatan").val()
+    // var foto = $("#foto").val()
     if (rule == null) {
       rule = 0;
     }
@@ -2574,7 +2686,8 @@
         nama: nama,
         email: email,
         password: password,
-        rule: rule,
+        rule: rule
+        // foto: foto
         // status_karyawan: status_karyawan,
         // jenis_pendidikan: jenis_pendidikan,
         // jenis_tenaga: jenis_tenaga,
@@ -2590,7 +2703,7 @@
           $("#email").val("")
           $("#password").val("")
           $("#rule").val("")
-        //   $("#status_karyawan").val("")
+        //   $("#foto").val("")
         //   $("#jabatan").val("")
         //   $("#jenis_pendidikan").val("")
         //   $("#jenis_tenaga").val("")
@@ -2604,7 +2717,6 @@
       }
     });
   }
-
 
 
   function tryHapus(id) {
@@ -2652,7 +2764,7 @@
       dataType: 'json',
       success: function(data) {
         $("#modalEdit").modal('show')
-        $("#foto").val(data.foto)
+        // $("#foto").val(data.foto)
         $("#editnama").val(data.nama)
         $("#nik").val(data.nik)
         $("#no_hp").val(data.no_hp)
@@ -2718,7 +2830,7 @@
 
   function edit() {
     $("#tombolEdit").html('<i class="fas fa-spinner fa-pulse"></i> Memproses..')
-    var foto = $("#foto").val()
+    // var foto = $("#foto").val()
     var nama = $("#editnama").val()
     var nik = $("#nik").val()
     var no_hp = $("#no_hp").val()
@@ -2782,7 +2894,7 @@
       method: 'post',
       data: {
         id: id,
-        foto: foto,
+        // foto: foto,
         nama: nama,
         nik: nik,
         nip: nip,
@@ -2845,7 +2957,7 @@
       success: function(data) {
         if (data == "") {
 			$("#idUser").val("")
-			$("#foto").val("")
+			// $("#foto").val("")
 			$("#nama").val("")
 			$("#nik").val("")
 			$("#no_hp").val("")
@@ -3267,5 +3379,35 @@
       }
     });
   }
+
+  function addSpinner(el, static_pos)
+{
+  var spinner = el.children('.spinner');
+  if (spinner.length && !spinner.hasClass('spinner-remove')) return null;
+  !spinner.length && (spinner = $('<div class="spinner' + (static_pos ? '' : ' spinner-absolute') + '"/>').appendTo(el));
+  animateSpinner(spinner, 'add');
+}
+
+function removeSpinner(el, complete)
+{
+  var spinner = el.children('.spinner');
+  spinner.length && animateSpinner(spinner, 'remove', complete);
+}
+
+function removeSpinner(el, complete)
+{
+  var spinner = el.children('.spinner');
+  spinner.length && animateSpinner(spinner, 'remove', complete);
+}
+
+function animateSpinner(el, animation, complete)
+{
+  if (el.data('animating')) {
+    el.removeClass(el.data('animating')).data('animating', null);
+    el.data('animationTimeout') && clearTimeout(el.data('animationTimeout'));
+  }
+  el.addClass('spinner-' + animation).data('animating', 'spinner-' + animation);
+  el.data('animationTimeout', setTimeout(function() { animation == 'remove' && el.remove(); complete && complete(); }, parseFloat(el.css('animation-duration')) * 1000));
+}
 
 </script>

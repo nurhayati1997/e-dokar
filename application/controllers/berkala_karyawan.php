@@ -28,7 +28,7 @@ class berkala_karyawan extends CI_Controller
 
 	function get_nama_karyawan()
 	{
-		echo json_encode($this->db_model->get_all('hrd_user')->result());
+		echo json_encode($this->db_model->get_all('karyawan')->result());
 	}
 
 
@@ -47,7 +47,7 @@ class berkala_karyawan extends CI_Controller
 	public function dataById($id)
 	{
 
-		$query = "select * from hrd_user where id=".($id);	
+		$query = "select * from karyawan where id=".($id);	
 		$data ['karyawan'] = $this->db_model->get_query($query)->row_array();
 		$this->load->view('form', $data);
 	}

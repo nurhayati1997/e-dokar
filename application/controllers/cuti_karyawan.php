@@ -31,7 +31,7 @@ class cuti_karyawan extends CI_Controller
 
 	function get_nama_karyawan()
 	{
-		echo json_encode($this->db_model->get_all('hrd_user')->result());
+		echo json_encode($this->db_model->get_all('karyawan')->result());
 	}
 
 

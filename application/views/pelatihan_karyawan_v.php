@@ -240,7 +240,7 @@
 
   function tampilkan(){
     $("#tempatTabel").html('<i class="fas fa-spinner fa-pulse"></i> Memuat...')
-    var baris = '<table class="table table-separate table-head-custom table-checkable" id="tabelUser"><thead class="thead-light"><tr><th>Action</th><th>NO</th><th>Nama</th><th>Pelatihan</th><th>Durasi</th><th>No Sertifikat</th><th>File Sertifikat</th><th>Mulai</th><th>Selesai</th></tr></thead>'
+    var baris = '<table class="table table-separate table-head-custom table-checkable" id="tabelUser"><thead class="thead-light"><tr><th>Action</th><th>NO</th><th>Tanggal Pengisian</th><th>Nama</th><th>Pelatihan</th><th>Durasi</th><th>No Sertifikat</th><th>File Sertifikat</th><th>Mulai</th><th>Selesai</th></tr></thead>'
       $.ajax({
         type:'POST',
         url: '<?= base_url() ?>pelatihan_karyawan/tampil',
@@ -254,6 +254,7 @@
             // baris += ' <div style="cursor:pointer;" title="view?" id="cetak' + data[i].id + '" onClick="tryCetak(' + data[i].id+ ')"><i class="flaticon-eye text-primary"></i></div>'
             // baris += ' <div style="cursor:pointer;" title="view?" id="view' + data[i].id + '" onClick="tryView(' + data[i].id+ ')"><i class="flaticon-eye text-primary"></i></div>'
             baris += '<td>' + (i + 1) + '</td>'
+            baris += '<td>' + data[i].tgl_update + '</td>'
             baris += '<td>' + data[i].nama + '</td>'
             baris += '<td>' + data[i].nama_pelatihan + '</td>'
             baris += '<td>' + data[i].durasi_pelatihan + '</td>'

@@ -22,19 +22,19 @@ class data_karyawan extends CI_Controller
 	
 	public function tampil()
 	{
-		// $user = $this->db_model->get_where('hrd_user', array('id' => $this->session->userdata("id")))->row();
+		// $user = $this->db_model->get_where('karyawan', array('id' => $this->session->userdata("id")))->row();
 		if ($this->session->userdata("rule")==1) {
 			// redirect("login");
-			echo json_encode($this->db_model->all_data("hrd_user")->result());
+			echo json_encode($this->db_model->all_data("karyawan")->result());
 		}else{
-			echo json_encode($this->db_model->get_where("hrd_user", array('id' => $this->session->userdata("id")))->result());
+			echo json_encode($this->db_model->get_where("karyawan", array('id' => $this->session->userdata("id")))->result());
 		}
 		
 	}
 
 	function upload_pernyataan()
 	{
-		$user = $this->db_model->get_where('hrd_user', array('id' => $this->input->post('id', TRUE)))->row();
+		$user = $this->db_model->get_where('karyawan', array('id' => $this->input->post('id', TRUE)))->row();
 		$nama = $user->nama ;
 		// $nama = $user->tanggal_antri . "_" . $user->id . "_" . $user->nama;
 
@@ -55,7 +55,7 @@ class data_karyawan extends CI_Controller
 				// "tindakan" => $this->input->post('jenis', TRUE),
 			];
 
-			echo json_encode($this->db_model->update("hrd_user", $data, array('id' => $this->input->post("id", TRUE))));
+			echo json_encode($this->db_model->update("karyawan", $data, array('id' => $this->input->post("id", TRUE))));
 		} else {
 			echo json_encode($this->upload->display_errors());
 		}
@@ -92,7 +92,7 @@ class data_karyawan extends CI_Controller
 	public function tambah()
 	{
 		$this->form_validation->set_rules('nama', 'Nama', 'required|trim');
-		$this->form_validation->set_rules('email', 'Email', 'required|trim|valid_email|is_unique[hrd_user.email]', [
+		$this->form_validation->set_rules('email', 'Email', 'required|trim|valid_email|is_unique[karyawan.email]', [
 			"is_unique" => "Alamat email ini sudah terdaftar.",
 			"required" => "Email tidak boleh kosong.",
 			"valid_email" => "Email tidak valid."
@@ -122,7 +122,7 @@ class data_karyawan extends CI_Controller
 				// "foto" => $this->input->post("foto", TRUE),
 				"status" => 1
 			];
-			$this->db_model->insert('hrd_user', $data);
+			$this->db_model->insert('karyawan', $data);
 			echo json_encode("");
 		}
 	}
@@ -130,7 +130,7 @@ class data_karyawan extends CI_Controller
 	public function dataById($id)
 	{
 
-		$query = "select * from hrd_user where id=".($id);	
+		$query = "select * from karyawan where id=".($id);	
 		$data ['karyawan'] = $this->db_model->get_query($query)->row_array();
 		$this->load->view('form', $data);
 	}
@@ -194,6 +194,8 @@ class data_karyawan extends CI_Controller
 			"jenis_detail_tenaga" => $this->input->post("jenis_detail_tenaga", TRUE),
 			"jenis_pendidikan" => $this->input->post("jenis_pendidikan", TRUE),
 			"golongan" => $this->input->post("golongan", TRUE),
+			"jenis_jabatan" => $this->input->post("jenis_jabatan", TRUE),
+			"pangkat_golongan" => $this->input->post("pangkat_golongan", TRUE),
 			"pensiun" => $this->input->post("pensiun", TRUE),
 			"gaji" => $this->input->post("gaji", TRUE),
 			"ruangan" => $this->input->post("ruangan", TRUE),
@@ -206,7 +208,7 @@ class data_karyawan extends CI_Controller
 			"file_sip" => $this->input->post("file_sip", TRUE),
 			"masa_sip" => $this->input->post("masa_sip", TRUE)
 		];
-		$this->db_model->update('hrd_user', $data, ["id" => $this->input->post("id")]);
+		$this->db_model->update('karyawan', $data, ["id" => $this->input->post("id")]);
 		echo json_encode("");
 		
 	}
@@ -224,16 +226,17 @@ class data_karyawan extends CI_Controller
 			"file_sk" => $this->input->post("file_sk", TRUE),
 			"file_penempatan" => $this->input->post("file_penempatan", TRUE),
 			"file_str" => $this->input->post("file_str", TRUE),
-			"file_sip" => $this->input->post("file_sip", TRUE)
+			"file_sip" => $this->input->post("file_sip", TRUE),
+			"file_skp" => $this->input->post("file_skp", TRUE)
 		];
-		$this->db_model->update('hrd_user', $data, ["id" => $this->input->post("id")]);
+		$this->db_model->update('karyawan', $data, ["id" => $this->input->post("id")]);
 		echo json_encode("");
 		
 	}
 
 	public function hapus()
 	{
-		echo json_encode($this->db_model->delete('hrd_user', array('id' => $this->input->post('id', TRUE))));
+		echo json_encode($this->db_model->delete('karyawan', array('id' => $this->input->post('id', TRUE))));
 		
 	}
 

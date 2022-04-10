@@ -339,7 +339,7 @@
 																			<option value="PPPK">PPPK</option>
 																			<option value="THL">THL</option>
 																			<option value="Kontrak">Kontrak</option>
-																			<option value="Unit">Unit</option>
+																			<option value="CPNS">CPNS</option>
 																		</select>
 																	</div>
 																	<div class="col-lg-4">
@@ -379,6 +379,8 @@
 																			<option value="Penata Anestesi">Penata Anestesi</option>
 																			<option value="Asisten Penata Anestesi">Asisten Penata Anestesi</option>
 																			<option value="Refraksi Optisi">Refraksi Optisi</option>
+																			<option value="Pejabat Struktural">Pejabat Struktural</option>
+																			<option value="Tenagan Umum/Non Medis">Tenagan Umum/Non Medis</option>
 																		</select>
 																	</div>
 																	<div class="col-lg-4">
@@ -470,8 +472,79 @@
 																		</select>
 																	</div>
 																	<div class="col-lg-4">
+																		<span class="form-text text-muted">Jenis Jabatan</span>
+																		<select class="form-control" id="jenis_jabatan">
+																			<option value="-">Bukan PNS</option>
+																			<option value="Struktural">Struktural</option>
+																			<option value="Fungsional">Fungsional</option>
+																			<option value="Profesi" disable>Profesi</option>
+																		</select>
+																	</div>
+																	<div class="col-lg-4">
+																		<span class="form-text text-muted">Pilih Golongan</span>
+																		<select class="form-control" id="golongan">
+																			<option value="-">Bukan PNS</option>
+																			<option value="I c">I c {Struktural}</option>
+																			<option value="I d">I d {Struktural}</option>
+																			<option value="II a">II a {Struktural}</option>
+																			<option value="II b">II b {Struktural}</option>
+																			<option value="II c">II c {Struktural}</option>
+																			<option value="II d">II d {Struktural}</option>
+																			<option value="III a">III a {Struktural}</option>
+																			<option value="III b">III b {Struktural}</option>
+																			<option value="III c">III c {Struktural}</option>
+																			<option value="III d">III d {Struktural}</option>
+																			<option value="IV a">IV a {Struktural}</option>
+																			<option value="IV b">IV b {Struktural}</option>
+																			<option value="IV c">IV c {Struktural}</option>
+																			
+																			<option value="II a">II a {Fungsional}</option>
+																			<option value="II b">II b {Fungsional}</option>
+																			<option value="II c">II c {Fungsional}</option>
+																			<option value="II d">II d {Fungsional}</option>
+																			<option value="III a">III a {Fungsional}</option>
+																			<option value="III b">III b {Fungsional}</option>
+																			<option value="III c">III c {Fungsional}</option>
+																			<option value="III d">III d {Fungsional}</option>
+
+																			<option value="III a">III a {Profesi}</option>
+																			<option value="III b">III b {Profesi}</option>
+																			<option value="III c">III c {Profesi}</option>
+																			<option value="III d">III d {Profesi}</option>
+																			<option value="IV a">IV a {Profesi}</option>
+																			<option value="IV b">IV b {Profesi}</option>
+																			<option value="IV c">IV c {Profesi}</option>
+
+																		</select>
+																	</div>
+																	<div class="col-lg-4">
 																		<span class="form-text text-muted">Pangkat Golongan</span>
-																		<input type="text" class="form-control" id="golongan" placeholder="isi (-) jika bukan ASN"/>
+																		<select class="form-control" id="pangkat_golongan">
+																			<option value="-">Bukan PNS</option>
+																			<option value="Juru">Juru {Struktural}</option>
+																			<option value="Juru Tk.I">Juru Tk.I {Struktural}</option>
+																			<option value="Pengatur Muda">Pengatur Muda {Struktural}</option>
+																			<option value="Pengatur Muda Tk.I">Pengatur Muda Tk.I {Struktural}</option>
+																			<option value="Pengatur">Pengatur {Struktural}</option>
+																			<option value="Pengatur Tk.I">Pengatur Tk.I {Struktural}</option>
+																			<option value="Penata Muda">Penata Muda {Struktural}</option>
+																			<option value="Penata Muda Tk.I">Penata Muda Tk.I {Struktural}</option>
+																			<option value="Penata">Penata {Struktural}</option>
+																			<option value="Penata Tk.I">Penata Tk.I {Struktural}</option>
+																			<option value="Pembina">Pembina</option>
+																			<option value="Pembina Tk.I">Pembina Tk.I {Struktural}</option>
+																			<option value="Pembina Utama Muda">Pembina Utama Muda {Struktural}</option>
+																			
+																			<option value="Pemula">Pemula {Fungsional}</option>
+																			<option value="Terampil ">Terampil {Fungsional}</option>
+																			<option value="Mahir">Mahir {Fungsional}</option>
+																			<option value="Penyelia">Penyelia {Fungsional}</option>
+
+																			<option value="Pertama">Pertama</option>
+																			<option value="Muda">Muda</option>
+																			<option value="Madya">Madya</option>
+
+																		</select>
 																	</div>
 																	<div class="col-lg-4">
 																		<span class="form-text text-muted">NIP</span>
@@ -756,6 +829,38 @@
 																				<form role="form">
 																					<div class="form-group mb-1">
 																						<input type="text" class="form-control" id="view_file_str" disabled/>
+																					</div>
+																				</form>
+																			</div>
+																			<!--end::Title-->
+																			<!--begin::Lable-->
+																			<!-- <span class="font-weight-bolder text-danger py-1 font-size-lg">-27%</span> -->
+																			<!--end::Lable-->
+																		</div>
+																		<!--end::Item-->
+																		<!--begin::Item-->
+																		<div class="d-flex align-items-center bg-light-danger rounded p-5 mb-9">
+																			<!--begin::Icon-->
+																			<span class="svg-icon svg-icon-danger mr-5">
+																				<span class="svg-icon svg-icon-lg">
+																					<!--begin::Svg Icon | path:/metronic/theme/html/demo2/dist/assets/media/svg/icons/Communication/Group-chat.svg-->
+																					<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+																						<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+																							<rect x="0" y="0" width="24" height="24" />
+																							<path d="M16,15.6315789 L16,12 C16,10.3431458 14.6568542,9 13,9 L6.16183229,9 L6.16183229,5.52631579 C6.16183229,4.13107011 7.29290239,3 8.68814808,3 L20.4776218,3 C21.8728674,3 23.0039375,4.13107011 23.0039375,5.52631579 L23.0039375,13.1052632 L23.0206157,17.786793 C23.0215995,18.0629336 22.7985408,18.2875874 22.5224001,18.2885711 C22.3891754,18.2890457 22.2612702,18.2363324 22.1670655,18.1421277 L19.6565168,15.6315789 L16,15.6315789 Z" fill="#000000" />
+																							<path d="M1.98505595,18 L1.98505595,13 C1.98505595,11.8954305 2.88048645,11 3.98505595,11 L11.9850559,11 C13.0896254,11 13.9850559,11.8954305 13.9850559,13 L13.9850559,18 C13.9850559,19.1045695 13.0896254,20 11.9850559,20 L4.10078614,20 L2.85693427,21.1905292 C2.65744295,21.3814685 2.34093638,21.3745358 2.14999706,21.1750444 C2.06092565,21.0819836 2.01120804,20.958136 2.01120804,20.8293182 L2.01120804,18.32426 C1.99400175,18.2187196 1.98505595,18.1104045 1.98505595,18 Z M6.5,14 C6.22385763,14 6,14.2238576 6,14.5 C6,14.7761424 6.22385763,15 6.5,15 L11.5,15 C11.7761424,15 12,14.7761424 12,14.5 C12,14.2238576 11.7761424,14 11.5,14 L6.5,14 Z M9.5,16 C9.22385763,16 9,16.2238576 9,16.5 C9,16.7761424 9.22385763,17 9.5,17 L11.5,17 C11.7761424,17 12,16.7761424 12,16.5 C12,16.2238576 11.7761424,16 11.5,16 L9.5,16 Z" fill="#000000" opacity="0.3" />
+																						</g>
+																					</svg>
+																					<!--end::Svg Icon-->
+																				</span>
+																			</span>
+																			<!--end::Icon-->
+																			<!--begin::Title-->
+																			<div class="d-flex flex-column flex-grow-1 mr-2">
+																				<a href="#" class="font-weight-bold text-dark-75 text-hover-primary font-size-lg mb-1">SKP</a>
+																				<form role="form">
+																					<div class="form-group mb-1">
+																						<input type="text" class="form-control" id="view_file_skp" disabled/>
 																					</div>
 																				</form>
 																			</div>
@@ -1242,9 +1347,21 @@
 																					</div>
 																				</div>
 																				<div class="form-group row">
-																					<label class="col-xl-3 col-lg-3 text-right col-form-label">Pangkat / Golongan</label>
+																					<label class="col-xl-3 col-lg-3 text-right col-form-label">Jenis Jabatan</label>
+																					<div class="col-lg-9 col-xl-6">
+																						<input class="form-control form-control-lg form-control-solid" type="text" id="view_jenis_jabatan" disabled />
+																					</div>
+																				</div>
+																				<div class="form-group row">
+																					<label class="col-xl-3 col-lg-3 text-right col-form-label">Golongan</label>
 																					<div class="col-lg-9 col-xl-6">
 																						<input class="form-control form-control-lg form-control-solid" type="text" id="view_golongan" disabled />
+																					</div>
+																				</div>
+																				<div class="form-group row">
+																					<label class="col-xl-3 col-lg-3 text-right col-form-label">Pangkat Golongan</label>
+																					<div class="col-lg-9 col-xl-6">
+																						<input class="form-control form-control-lg form-control-solid" type="text" id="view_pangkat_golongan" disabled />
 																					</div>
 																				</div>
 																				<div class="form-group row">
@@ -2489,6 +2606,13 @@
 																		</div>
 															</div>
 															<div class="form-group mb-3">
+																		<span class="form-text text-muted">Upload SKP</span>
+																		<div class="custom-file">
+																			<input type="file" class="custom-file-input" id="file_skp" />
+																			<label class="custom-file-label" for="customFile">File SKP Harus format pdf</label>
+																		</div>
+															</div>
+															<div class="form-group mb-3">
 																		<span class="form-text text-muted">Upload STR</span>
 																		<div class="custom-file">
 																			<input type="file" class="custom-file-input" id="file_str" />
@@ -2724,7 +2848,7 @@
     $.ajax({
       url: '<?= base_url() ?>data_karyawan/edit_id',
       method: 'post',
-      data: "target=hrd_user&id=" + id,
+      data: "target=karyawan&id=" + id,
       dataType: 'json',
       success: function(data) {
         $("#id_hapus").val(id)
@@ -2742,7 +2866,7 @@
     $.ajax({
       url: '<?= base_url() ?>data_karyawan/hapus',
       method: 'post',
-      data: "target=hrd_user&id=" + id,
+      data: "target=karyawan&id=" + id,
       dataType: 'json',
       success: function(data) {
         $("#id_hapus").val("")
@@ -2760,7 +2884,7 @@
     $.ajax({
       url: '<?= base_url() ?>data_karyawan/edit_id',
       method: 'post',
-      data: "target=hrd_user&id=" + id,
+      data: "target=karyawan&id=" + id,
       dataType: 'json',
       success: function(data) {
         $("#modalEdit").modal('show')
@@ -2811,6 +2935,8 @@
         $("#jenis_detail_tenaga").val(data.jenis_detail_tenaga)
         $("#jenis_pendidikan").val(data.jenis_pendidikan)
         $("#golongan").val(data.golongan)
+        $("#jenis_jabatan").val(data.jenis_jabatan)
+        $("#pangkat_golongan").val(data.pangkat_golongan)
         $("#pensiun").val(data.pensiun)
         $("#gaji").val(data.gaji)
         $("#ruangan").val(data.ruangan)
@@ -2877,6 +3003,8 @@
     var jenis_detail_tenaga = $("#jenis_detail_tenaga").val()
     var jenis_pendidikan = $("#jenis_pendidikan").val()
     var golongan = $("#golongan").val()
+    var jenis_jabatan = $("#jenis_jabatan").val()
+    var pangkat_golongan = $("#pangkat_golongan").val()
     var pensiun = $("#pensiun").val()
     var gaji = $("#gaji").val()
     var ruangan = $("#ruangan").val()
@@ -2941,6 +3069,8 @@
         jenis_detail_tenaga: jenis_detail_tenaga,
         jenis_pendidikan: jenis_pendidikan,
         golongan: golongan,
+        jenis_jabatan: jenis_jabatan,
+        pangkat_golongan: pangkat_golongan,
         pensiun: pensiun,
         gaji: gaji,
         ruangan: ruangan,
@@ -3004,6 +3134,8 @@
 			$("#jenis_detail_tenaga").val("")
 			$("#jenis_pendidikan").val("")
 			$("#golongan").val("")
+			$("#jenis_jabatan").val("")
+			$("#pangkat_golongan").val("")
 			$("#pensiun").val("")
 			$("#gaji").val("")
 			$("#ruangan").val("")
@@ -3032,7 +3164,7 @@
     $.ajax({
       url: '<?= base_url() ?>data_karyawan/edit_id',
       method: 'post',
-      data: "target=hrd_user&id=" + id,
+      data: "target=karyawan&id=" + id,
       dataType: 'json',
       success: function(data) {
         $("#modalArsip").modal('show')
@@ -3047,6 +3179,7 @@
         $("#file_penempatan").val(data.file_penempatan)
         $("#file_str").val(data.file_str)
         $("#file_sip").val(data.file_sip)
+        $("#file_skp").val(data.file_skp)
         console.log(data)
         $("#arsip" + id).html('<i class="fa fa-edit"></i>')
       }
@@ -3066,6 +3199,7 @@
     var file_penempatan = $("#file_penempatan").val()
     var file_str = $("#file_str").val()
     var file_sip = $("#file_sip").val()
+    var file_skp = $("#file_skp").val()
     var id = $("#idUser").val()
     $.ajax({
       url: '<?= base_url() ?>data_karyawan/arsip',
@@ -3083,6 +3217,7 @@
         file_penempatan: file_penempatan,
         file_str: file_str,
         file_sip: file_sip,
+        file_skp: file_skp
       },
       dataType: 'json',
       success: function(data) {
@@ -3099,6 +3234,7 @@
 			$("#file_penempatan").val("")
 			$("#file_str").val("")
 			$("#file_sip").val("")
+			$("#file_skp").val("")
 			// console.log(data)
         } else {
           $('#pesanErrorEdit').html(data)
@@ -3116,7 +3252,7 @@
     $.ajax({
       url: '<?= base_url() ?>data_karyawan/edit_id',
       method: 'post',
-      data: "target=hrd_user&id=" + id,
+      data: "target=karyawan&id=" + id,
       dataType: 'json',
       success: function(data) {
         $("#modalView").modal('show')
@@ -3168,6 +3304,8 @@
         $("#view_jenis_detail_tenaga").val(data.jenis_detail_tenaga)
         $("#view_jenis_pendidikan").val(data.jenis_pendidikan)
         $("#view_golongan").val(data.golongan)
+        $("#view_jenis_jabatan").val(data.jenis_jabatan)
+        $("#view_pangkat_golongan").val(data.pangkat_golongan)
         $("#view_pensiun").val(data.pensiun)
         $("#view_gaji").val(data.gaji)
         $("#view_ruangan").val(data.ruangan)
@@ -3178,6 +3316,7 @@
         $("#view_file_str").val(data.file_str)
         $("#view_no_sip").val(data.no_sip)
         $("#view_file_sip").val(data.file_sip)
+        $("#view_file_skp").val(data.file_skp)
         $("#view_masa_sip").val(data.masa_sip)
         console.log(data)
         $("#view" + id).html('<i class="fa fa-edit"></i>')

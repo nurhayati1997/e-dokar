@@ -24,7 +24,7 @@ class master_user extends CI_Controller
 	
 	public function tampil()
 	{
-		echo json_encode($this->db_model->get_all("hrd_user")->result());
+		echo json_encode($this->db_model->get_all("karyawan")->result());
 		// $data_antrian = $this->db_model->get_all('hrd_user')->result();
 		// echo json_encode($data_antrian);
 	}

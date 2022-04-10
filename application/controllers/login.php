@@ -48,7 +48,7 @@ class login extends CI_Controller
 	{
 		$email = $this->input->post("email");
 		$pass = $this->enkripsi($this->input->post("pass"));
-		$user = $this->db_model->get_where("hrd_user", ["email" => $email])->row_array();
+		$user = $this->db_model->get_where("karyawan", ["email" => $email])->row_array();
 
 		//if ($this->cekCaptcha()) {
 		if ($user) {

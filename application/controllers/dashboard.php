@@ -25,11 +25,14 @@ class dashboard extends CI_Controller {
 			redirect("login");
 		}
 		$this->load->model('db_model');
+		$this->load->helper('url');
+		$this->load->library('form_validation');
 	}
 	
 	public function index()
 	{
+		$data["total_pns"] = $this->db_model->get("v_total_pns")->num_rows();
 		// $this->load->view('dashboard_v');
-		$this->template->load('template','dashboard_v');
+		$this->template->load('template','dashboard_v',$data);
 	}
 }

@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.0.4
+-- version 5.0.2
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 10, 2022 at 05:00 PM
--- Server version: 10.4.17-MariaDB
--- PHP Version: 7.4.14
+-- Generation Time: Apr 11, 2022 at 09:14 AM
+-- Server version: 10.4.14-MariaDB
+-- PHP Version: 7.4.9
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -30,6 +30,7 @@ SET time_zone = "+00:00";
 CREATE TABLE `berhenti_karyawan` (
   `id` int(11) NOT NULL,
   `nama` int(11) NOT NULL,
+  `tgl_input` date NOT NULL DEFAULT current_timestamp(),
   `tgl_berhenti` date NOT NULL,
   `alasan_berhenti` varchar(100) NOT NULL,
   `ruangan_terakhir` varchar(100) NOT NULL,
@@ -41,9 +42,9 @@ CREATE TABLE `berhenti_karyawan` (
 -- Dumping data for table `berhenti_karyawan`
 --
 
-INSERT INTO `berhenti_karyawan` (`id`, `nama`, `tgl_berhenti`, `alasan_berhenti`, `ruangan_terakhir`, `status_karyawan`, `jabatan`) VALUES
-(1, 123457, '2022-04-19', '-', '-', '-', '-'),
-(3, 123458, '2022-04-07', 'Berhenti', '', 'Kontrak', 'KA.BID');
+INSERT INTO `berhenti_karyawan` (`id`, `nama`, `tgl_input`, `tgl_berhenti`, `alasan_berhenti`, `ruangan_terakhir`, `status_karyawan`, `jabatan`) VALUES
+(4, 123458, '2022-04-11', '2022-04-05', 'Pensiun', 'TULIP', 'THL', 'KA.Subag'),
+(5, 1, '2022-04-11', '2022-04-02', 'Mutasi', 'INSTALASI KESEHATAN LINGKUNGAN ', 'CPNS', 'Staff');
 
 -- --------------------------------------------------------
 
@@ -54,6 +55,7 @@ INSERT INTO `berhenti_karyawan` (`id`, `nama`, `tgl_berhenti`, `alasan_berhenti`
 CREATE TABLE `berkala_karyawan` (
   `id` int(11) NOT NULL,
   `nama` int(11) NOT NULL,
+  `tgl_input` date NOT NULL DEFAULT current_timestamp(),
   `tgl_berkala` date NOT NULL,
   `sk_pangkat_terakhir` varchar(100) NOT NULL,
   `sk_berkala` varchar(100) NOT NULL
@@ -63,10 +65,10 @@ CREATE TABLE `berkala_karyawan` (
 -- Dumping data for table `berkala_karyawan`
 --
 
-INSERT INTO `berkala_karyawan` (`id`, `nama`, `tgl_berkala`, `sk_pangkat_terakhir`, `sk_berkala`) VALUES
-(1, 6, '2022-04-19', '-', '-'),
-(2, 123458, '2022-04-14', 'C:\\fakepath\\Blangko_Cuti.pdf', ''),
-(4, 1, '2022-04-07', 'C:\\fakepath\\Blangko_Cuti.pdf', 'C:\\fakepath\\SK TIM SIMRS.pdf');
+INSERT INTO `berkala_karyawan` (`id`, `nama`, `tgl_input`, `tgl_berkala`, `sk_pangkat_terakhir`, `sk_berkala`) VALUES
+(2, 123458, '2022-04-11', '2022-04-14', 'C:\\fakepath\\Blangko_Cuti.pdf', ''),
+(4, 1, '2022-04-11', '2022-04-07', 'C:\\fakepath\\Blangko_Cuti.pdf', 'C:\\fakepath\\SK TIM SIMRS.pdf'),
+(5, 123458, '2022-04-11', '2022-04-01', 'C:\\fakepath\\Data Karyawan.xls', 'C:\\fakepath\\RAJAL JANUARI 2022.xlsx');
 
 -- --------------------------------------------------------
 
@@ -76,6 +78,7 @@ INSERT INTO `berkala_karyawan` (`id`, `nama`, `tgl_berkala`, `sk_pangkat_terakhi
 
 CREATE TABLE `cuti_karyawan` (
   `id` int(11) NOT NULL,
+  `tgl_input` date NOT NULL DEFAULT current_timestamp(),
   `nama` int(11) NOT NULL,
   `nip` varchar(100) NOT NULL,
   `jabatan` varchar(100) NOT NULL,
@@ -108,12 +111,11 @@ CREATE TABLE `cuti_karyawan` (
 -- Dumping data for table `cuti_karyawan`
 --
 
-INSERT INTO `cuti_karyawan` (`id`, `nama`, `nip`, `jabatan`, `masa_kerja`, `unit_kerja`, `jenis_cuti`, `alasan_cuti`, `cuti_selama`, `mulai_tgl`, `sampai_tgl`, `tahunan_n2_sisa`, `tahunan_n2_keterangan`, `tahunan_n1_sisa`, `tahunan_n1_keterangan`, `tahunan_n_sisa`, `tahunan_n_keterangan`, `cuti_besar_ket`, `cuti_sakit_ket`, `cuti_melahirkan_ket`, `cuti_penting_ket`, `cuti_diluar_tanggungan_ket`, `alamat_selama_cuti`, `telp`, `pertimbangan_atasan`, `keputusan_pejabat`, `file_cuti`) VALUES
-(2, 123458, '7', 'njh', '', '', '', '', '', '0000-00-00', '0000-00-00', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', ''),
-(3, 123458, '11', 'gg', '4 thn', 'g', 'g', 'g', '6', '2022-04-01', '2022-04-20', '', '', '', '', '', '', '', 'melhirkan', '', '', '', 'bmyar', '6756', 'setuju', 'setuju', ''),
-(4, 123458, '0', 'Wadir', '2 Tahun / September 2019 - Sep', 'HD', 'Cuti Besar', '-', '2', '2022-04-05', '2022-04-07', '-', '-', '-', '-', '-', '', '', '', '', '', '', '', '', 'DITANGGUHKAN', 'PERUBAHAN', ''),
-(5, 6, '1', 'KA.BAG', '2 Tahun / September 2019 - Sep', 'CAMELIA', 'Cuti Sakit', '', '', '2022-04-19', '2022-04-21', '', '', '', '', '', '', '', '', '', '', '', '', '', 'PERUBAHAN', 'DISETUJUI', ''),
-(6, 123457, '0', 'KA.Unit', '2 Tahun / September 2019 - Sep', 'HD', 'Cuti Karena Alasan Penting', 'f', 'f', '2022-04-06', '2022-04-27', 'f', 'f', 'fs', 'df', 'x', 'fc', 'fgn', 'fgn', 'gn', 'fgn', 'dfn', 'fgn', 'fgn', 'DISETUJUI', 'DISETUJUI', 'C:\\fakepath\\cuti_karyawan.sql');
+INSERT INTO `cuti_karyawan` (`id`, `tgl_input`, `nama`, `nip`, `jabatan`, `masa_kerja`, `unit_kerja`, `jenis_cuti`, `alasan_cuti`, `cuti_selama`, `mulai_tgl`, `sampai_tgl`, `tahunan_n2_sisa`, `tahunan_n2_keterangan`, `tahunan_n1_sisa`, `tahunan_n1_keterangan`, `tahunan_n_sisa`, `tahunan_n_keterangan`, `cuti_besar_ket`, `cuti_sakit_ket`, `cuti_melahirkan_ket`, `cuti_penting_ket`, `cuti_diluar_tanggungan_ket`, `alamat_selama_cuti`, `telp`, `pertimbangan_atasan`, `keputusan_pejabat`, `file_cuti`) VALUES
+(3, '2022-04-11', 123458, '11', 'gg', '4 thn', 'g', 'g', 'g', '6', '2022-04-01', '2022-04-20', '', '', '', '', '', '', '', 'melhirkan', '', '', '', 'bmyar', '6756', 'setuju', 'setuju', ''),
+(4, '2022-04-11', 123458, '0', 'Wadir', '2 Tahun / September 2019 - Sep', 'HD', 'Cuti Besar', '-', '2', '2022-04-05', '2022-04-07', '-', '-', '-', '-', '-', '', '', '', '', '', '', '', '', 'DITANGGUHKAN', 'PERUBAHAN', ''),
+(5, '2022-04-11', 6, '1', 'KA.BAG', '2 Tahun / September 2019 - Sep', 'CAMELIA', 'Cuti Sakit', '', '', '2022-04-19', '2022-04-21', '', '', '', '', '', '', '', '', '', '', '', '', '', 'PERUBAHAN', 'DISETUJUI', ''),
+(6, '2022-04-11', 123457, '0', 'KA.Unit', '2 Tahun / September 2019 - Sep', 'HD', 'Cuti Karena Alasan Penting', 'f', 'f', '2022-04-06', '2022-04-27', 'f', 'f', 'fs', 'df', 'x', 'fc', 'fgn', 'fgn', 'gn', 'fgn', 'dfn', 'fgn', 'fgn', 'DISETUJUI', 'DISETUJUI', 'C:\\fakepath\\cuti_karyawan.sql');
 
 -- --------------------------------------------------------
 
@@ -158,6 +160,96 @@ INSERT INTO `gcu_syamrabu` (`id`, `tgl_daftar_gcu`, `nama`, `jk_pasien_gcu`, `pe
 (14, '2022-02-04', 'yati sedang mencoba', 'Perempuan', 'Menikah', 'si', 'fh', '2022-02-22', 'gf', 'fgj', 'jil', NULL, NULL, '', '', 'dtutfhdfhyftrytjhtyjnghjygloiu', NULL, NULL, '-', '-', '-', '-', '-', NULL),
 (15, '2022-02-04', 'tud', 'Perempuan', 'Menikah', 'drtu', 'trd', '2022-02-08', 'dh', 'dj', 'jd', 172, 67, 'Baik', '-', 'dj', 'dr.YULIA MAYASIN', '197207082010012003', 'dy', 'du', 'u', 'u', 'u', 'hfhf'),
 (18, '2022-02-04', 'trdyu', 'Perempuan', 'Menikah', 'djudt', 'tu', '2022-02-14', 'utr', 'tu', 'rtd', NULL, NULL, '', '', 'ght', NULL, NULL, 'tu', 'tu', 'u', 'u', 'u', NULL);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `hrd_user`
+--
+
+CREATE TABLE `hrd_user` (
+  `id` int(11) NOT NULL,
+  `nama` varchar(200) NOT NULL,
+  `status_karyawan` varchar(30) NOT NULL,
+  `jabatan` varchar(200) DEFAULT NULL,
+  `email` varchar(50) NOT NULL,
+  `password` varchar(256) NOT NULL,
+  `rule` int(1) NOT NULL,
+  `status` int(1) NOT NULL,
+  `nik` varchar(100) NOT NULL,
+  `nip` varchar(100) NOT NULL,
+  `no_hp` varchar(50) NOT NULL,
+  `id_karyawan` varchar(100) NOT NULL,
+  `alamat` varchar(50) NOT NULL,
+  `jenis_pendidikan` varchar(100) NOT NULL,
+  `jenis_tenaga` varchar(100) NOT NULL,
+  `jenis_detail_tenaga` int(11) NOT NULL,
+  `tgl_update` date NOT NULL DEFAULT current_timestamp(),
+  `foto` varchar(100) NOT NULL,
+  `prov` varchar(100) NOT NULL,
+  `kab` varchar(50) NOT NULL,
+  `kec` varchar(100) NOT NULL,
+  `kelu` varchar(50) NOT NULL,
+  `rt_rw` varchar(100) NOT NULL,
+  `kode_pos` varchar(30) NOT NULL,
+  `tempat_lahir` varchar(50) NOT NULL,
+  `tanggal_lahir` date NOT NULL,
+  `jk` varchar(50) NOT NULL,
+  `agama` varchar(100) NOT NULL,
+  `status_pernikahan` varchar(100) NOT NULL,
+  `goldar` varchar(30) NOT NULL,
+  `suku` varchar(20) NOT NULL,
+  `sd` varchar(30) NOT NULL,
+  `no_sd` varchar(30) NOT NULL,
+  `file_sd` varchar(30) NOT NULL,
+  `smp` varchar(50) NOT NULL,
+  `no_smp` varchar(100) NOT NULL,
+  `file_smp` varchar(50) NOT NULL,
+  `sma` varchar(100) NOT NULL,
+  `no_sma` varchar(100) NOT NULL,
+  `file_sma` varchar(30) NOT NULL,
+  `s1` varchar(30) NOT NULL,
+  `no_s1` varchar(30) NOT NULL,
+  `file_s1` varchar(50) NOT NULL,
+  `s2` varchar(100) NOT NULL,
+  `no_s2` varchar(50) NOT NULL,
+  `file_s2` varchar(100) NOT NULL,
+  `s3` varchar(50) NOT NULL,
+  `no_s3` varchar(100) NOT NULL,
+  `file_s3` varchar(100) NOT NULL,
+  `profesi` varchar(50) NOT NULL,
+  `no_profesi` varchar(50) NOT NULL,
+  `file_profesi` varchar(50) NOT NULL,
+  `golongan` varchar(50) NOT NULL,
+  `pensiun` date NOT NULL,
+  `gaji` varchar(50) NOT NULL,
+  `ruangan` varchar(100) NOT NULL,
+  `no_sk` varchar(100) NOT NULL,
+  `file_sk` varchar(50) NOT NULL,
+  `file_penempatan` varchar(100) NOT NULL,
+  `no_str` varchar(100) NOT NULL,
+  `file_str` varchar(30) NOT NULL,
+  `no_sip` varchar(30) NOT NULL,
+  `file_sip` varchar(30) NOT NULL,
+  `masa_sip` date NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `hrd_user`
+--
+
+INSERT INTO `hrd_user` (`id`, `nama`, `status_karyawan`, `jabatan`, `email`, `password`, `rule`, `status`, `nik`, `nip`, `no_hp`, `id_karyawan`, `alamat`, `jenis_pendidikan`, `jenis_tenaga`, `jenis_detail_tenaga`, `tgl_update`, `foto`, `prov`, `kab`, `kec`, `kelu`, `rt_rw`, `kode_pos`, `tempat_lahir`, `tanggal_lahir`, `jk`, `agama`, `status_pernikahan`, `goldar`, `suku`, `sd`, `no_sd`, `file_sd`, `smp`, `no_smp`, `file_smp`, `sma`, `no_sma`, `file_sma`, `s1`, `no_s1`, `file_s1`, `s2`, `no_s2`, `file_s2`, `s3`, `no_s3`, `file_s3`, `profesi`, `no_profesi`, `file_profesi`, `golongan`, `pensiun`, `gaji`, `ruangan`, `no_sk`, `file_sk`, `file_penempatan`, `no_str`, `file_str`, `no_sip`, `file_sip`, `masa_sip`) VALUES
+(1, 'hilal aminuddin rohman', 'PNS', 'Direktur', 'hilal@gmail.com', '$y201$a4a$jU/LgIQb21X6hXqmkzX17.fP1uX4OTGq.7o/2mTcUhysbmCtvZ', 1, 1, '2342565', '', '', '123456', '', 'Dokter Umum', 'Tenaga Medis / Dokter', 0, '2022-03-31', 'hilal_aminuddin_rohman.jpg', '', '', '', '', '', '', '', '0000-00-00', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '0000-00-00', '', 'LOKET 1 ( RM )', '', '', '', '', '', '', '', '0000-00-00'),
+(6, 'Nurhayati Fitriani', '', 'owner', 'nurhayatifitriani77@gmail.com', '$y201$H8m$nI/V0H/vVJ60wQaK0Lfi86WhH.tcWDg5o73ZhNAwZr5oCSpmug', 1, 1, '', '', '', '', '', '', '', 0, '0000-00-00', 'Nurhayati_Fitriani_Karyawan.jpeg', '', '', '', '', '', '', '', '0000-00-00', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '0000-00-00', '', '', '', '', '', '', '', '', '', '0000-00-00'),
+(123457, 'mohammad', 'PNS', 'Wadir', 'hilal77@gmail.com', '$y201$4VF$zWC0R9C0x16268QaiJp/bogvFu93H.RMU74Xv94f7PDOtiZcvs', 2, 1, '764', '', '0986', '765', 'bumianyar', 'Pasca Sarjana Manajemen', 'Pejabat Struktural', 0, '2022-03-31', '', '', '', '', '', '', '', '', '0000-00-00', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '0000-00-00', '', 'BAGIAN UMUM', '', '', '', '', '', '', '', '0000-00-00'),
+(123458, 'rina handayani', 'Kontrak', 'Staff', 'rina@gmail.com', '$y201$cv/$iLrz0MRLLhi5QoaYexOEJR9mGOCe31ibNOBurOJYCoKX8iFlpM', 3, 1, '5432144', '1909674571474', '08230104', '8764', 'jl.Halim Perdana Kusuma No 12', 'Sarjana Ekonomi', 'Pejabat Struktural', 0, '2022-03-31', '', 'Jawa Timur', 'Bangkalan', 'Bangkalan', '-', '-/-', '69112', 'Sumenep', '2022-04-20', 'Perempuan', 'Islam', 'Menikah', 'o', 'Indonesia', 'bangkalan 01', '', 'C:\\fakepath\\01a-big data routi', 'bangkalan 02', '2457443', '', 'bangkalan 03', '254345', '', 'STKIP', '343', '', '-', '3434', '', '-', '34', '', 'Keperawatan', '7798/j/475', '', 'Penata Muda/IIIb', '0000-00-00', '3.500.000', 'BAGIAN KEPEGAWAIAN', '4575/597/78', '', '', '7789/14/sep/hn', '', '789/uyr/o/2022', '', '0000-00-00'),
+(123460, 'nanaj', 'Kontrak', 'Staff', '', '$y201$5.X$za29zx53QsaZBGUXijVMhTdyO.AlvfOY40nn8xaecpAICqL71h', 3, 1, '', '', '', '65754', '', 'D-III Manajemen Informatika', 'Tenaga Umum / Non Medis', 0, '2022-04-08', '', '', '', '', '', '', '', '', '0000-00-00', 'Perempuan', 'Islam', 'Menikah', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '0000-00-00', '', 'LOKET 1 ( RM )', '', '', '', '', '', '', '', '0000-00-00'),
+(123462, 'fsa', '', NULL, 'itriani77@gmail.com', '$y201$yy3$nnSwO1eKR5gCBqc/5Py6J4SUaepoBR18CYENB2JbNEFOqioEeO', 3, 1, '', '', '', '8565', '', '', '', 0, '2022-04-08', '_.jpeg', '', '', '', '', '', '', '', '0000-00-00', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '0000-00-00', '', '', '', '', '', '', '', '', '', '0000-00-00'),
+(123463, 'jia nur afifah', '', '', 'jia@gmail.com', '$y201$8n3$V0xsgXOqnWmtWDkkViCllKC.le2IDEaK2qFYTLbvHJv86OKlnL', 3, 1, '', '', '', '564', '', '', '', 0, '2022-04-08', '', '', '', '', '', '', '', '', '0000-00-00', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '0000-00-00', '', '', '', '', '', '', '', '', '', '0000-00-00'),
+(123464, 'etry', '', NULL, 'fgj77@gmail.com', '$y201$FxR$DmVDk1v7SgLMIBTQOtSS72ExnOnP.tLZ91OYKTXKrtMAj2r6AO', 3, 1, '', '', '', '54', '', '', '', 0, '2022-04-08', '', '', '', '', '', '', '', '', '0000-00-00', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '0000-00-00', '', '', '', '', '', '', '', '', '', '0000-00-00'),
+(123465, '879', '', NULL, 'jhg@gmail.com', '$y201$wSI$gBhkhr03/T.CVwR70K3a/lEd2Oky3a7RwG.sppmY6F0RUSU7Gj', 3, 1, '', '', '', '658', '', '', '', 0, '2022-04-08', '', '', '', '', '', '', '', '', '0000-00-00', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '0000-00-00', '', '', '', '', '', '', '', '', '', '0000-00-00'),
+(123466, 'ytu', '', NULL, 'tyh@gmail.com', '$y201$k3z$KaUyBaFySOzCiYQgbJPWmsNKDuLXWp2R3Z7Fe4lVLGKS1u6067', 3, 1, '', '', '', '87', '', '', '', 0, '2022-04-08', '', '', '', '', '', '', '', '', '0000-00-00', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '0000-00-00', '', '', '', '', '', '', '', '', '', '0000-00-00'),
+(123467, 'hgf', '', NULL, 'ghgh@gmail.com', '$y201$Dkh$W1SSksWLYFp0k8CvbRha9EEM2usxq3NatMcV477tyk/TY6bUe1', 3, 1, '', '', '', '876', '', '', '', 0, '2022-04-08', '', '', '', '', '', '', '', '', '0000-00-00', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '0000-00-00', '', '', '', '', '', '', '', '', '', '0000-00-00');
 
 -- --------------------------------------------------------
 
@@ -276,8 +368,8 @@ CREATE TABLE `kenaikan_fungsional_karyawan` (
 --
 
 INSERT INTO `kenaikan_fungsional_karyawan` (`id`, `nama`, `tgl_input`, `tgl_kenaikan`, `file_fc_karpeg`, `file_fc_sk_pangkat_terakhir`, `file_fc_ijazah_terakhir`, `file_fc_skp_2_tahun`, `file_pak_asli`, `file_pak_sebelumnya`, `file_fc_sk_konversi_nip`, `file_asli_pak_terakhir`, `file_asli_skp_2_tahun`, `file_asli_sk_terakhir`, `file_jabatan_fungsional`, `file_asli_ijazah`, `file_asli_transkip`) VALUES
-(5, 123458, '2022-04-04', '2022-04-26', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-'),
-(8, 1, '2022-04-04', '2022-04-13', 'C:\\fakepath\\hrd_user.sql', 'C:\\fakepath\\kenaikan_reguler_karyawan.sql', 'C:\\fakepath\\v_kenaikan_reguler.sql', 'C:\\fakepath\\v_pelatihan_karyawan.sql', 'C:\\fakepath\\NAMA RUANGAN.xlsx', 'C:\\fakepath\\hrd_user(1).sql', 'C:\\fakepath\\Permohonan sarana aplikasi WA API.pdf', '', '', '', '', '', '');
+(8, 1, '2022-04-04', '2022-04-13', 'C:\\fakepath\\hrd_user.sql', 'C:\\fakepath\\kenaikan_reguler_karyawan.sql', 'C:\\fakepath\\v_kenaikan_reguler.sql', 'C:\\fakepath\\v_pelatihan_karyawan.sql', 'C:\\fakepath\\NAMA RUANGAN.xlsx', 'C:\\fakepath\\hrd_user(1).sql', 'C:\\fakepath\\Permohonan sarana aplikasi WA API.pdf', '', '', '', '', '', ''),
+(9, 123458, '2022-04-11', '2022-04-12', 'C:\\fakepath\\hrd_user(2).sql', 'C:\\fakepath\\Data Karyawan(2).xls', 'C:\\fakepath\\Data Karyawan(3).xls', '', '', '', '', '', '', '', '', '', '');
 
 -- --------------------------------------------------------
 
@@ -309,11 +401,10 @@ CREATE TABLE `kenaikan_reguler_karyawan` (
 --
 
 INSERT INTO `kenaikan_reguler_karyawan` (`id`, `nama`, `jenis_kenaikan_reguler`, `tgl_input`, `tgl_kenaikan`, `file_fc_karpeg`, `file_fc_sk_pangkat_terakhir`, `file_fc_stlud`, `file_fc_ijazah_terakhir`, `file_fc_skp_2_tahun`, `file_fc_cpns_pns`, `file_fc_sk_konversi_nip`, `file_asli_sk_terakhir`, `file_asli_skp_2_tahun`, `file_asli_ijazah`, `file_asli_transkip`) VALUES
-(1, 6, '', '0000-00-00', '2022-04-21', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-'),
 (3, 123458, '', '2022-04-03', '2022-04-28', '', '', '', '', '', '', '', '', '', '', ''),
 (6, 1, 'Struktural', '2022-04-03', '2022-04-20', '', '', '', '', '', '', '', '', '', '', ''),
-(7, 123457, 'Non Struktural', '2022-04-04', '2022-04-12', '', '', '', '', '', '', '', '', '', '', ''),
-(8, 123457, 'Struktural', '2022-04-06', '2022-04-13', 'C:\\fakepath\\Blangko_Cuti.pdf', '', '', '', '', '', '', '', '', '', '');
+(8, 123457, 'Struktural', '2022-04-06', '2022-04-13', 'C:\\fakepath\\Blangko_Cuti.pdf', '', '', '', '', '', '', '', '', '', ''),
+(9, 123458, 'Non Struktural', '2022-04-11', '2022-04-05', 'C:\\fakepath\\hrd_user(2).sql', 'C:\\fakepath\\Data Karyawan(2).xls', '', '', '', '', '', '', '', '', '');
 
 -- --------------------------------------------------------
 
@@ -340,7 +431,6 @@ CREATE TABLE `pelatihan_karyawan` (
 INSERT INTO `pelatihan_karyawan` (`id`, `tgl_update`, `nama`, `nama_pelatihan`, `tgl_mulai_pelatihan`, `tgl_selesai_pelatihan`, `durasi_pelatihan`, `no_sertifikat`, `file_sertifikat`) VALUES
 (4, '0000-00-00', 123458, 'pelatihan up', '2022-04-01', '2022-04-04', '30 jam', '102/87/a/2020', ''),
 (7, '0000-00-00', 6, 'digitalent', '2022-04-14', '2022-04-07', 'hg', 'hi', ''),
-(9, '0000-00-00', 123457, 'dg', '2022-04-15', '2022-04-26', 'dh', 'hdf', ''),
 (11, '2022-04-10', 6, 'jjk', '2022-04-07', '0000-00-00', 'k', 'j', '');
 
 -- --------------------------------------------------------
@@ -366,8 +456,8 @@ CREATE TABLE `riwayat_kerja_karyawan` (
 
 INSERT INTO `riwayat_kerja_karyawan` (`id`, `nama`, `tgl_input`, `ruangan_baru`, `no_sk`, `tgl_sk`, `nama_pinpinan`, `tahun`) VALUES
 (2, 6, '2022-04-04', 'INSTALASI TEKNOLOGI DAN INFORMASI', '546', '2022-04-12', 'jml', 2012),
-(3, 123458, '2022-04-04', 'DAHLIA', '8', '2022-04-13', 'rn', 0000),
-(4, 1, '2022-04-06', 'SAKURA', '4634', '2022-04-13', 'ty', 2002);
+(4, 1, '2022-04-06', 'SAKURA', '4634', '2022-04-13', 'ty', 2002),
+(5, 123458, '2022-04-11', 'CEMPAKA', '54', '2022-04-26', 'tg', 2022);
 
 -- --------------------------------------------------------
 
@@ -574,6 +664,78 @@ CREATE TABLE `v_ambilantrian_umum` (
 -- --------------------------------------------------------
 
 --
+-- Stand-in structure for view `v_berhenti_karyawan`
+-- (See below for the actual view)
+--
+CREATE TABLE `v_berhenti_karyawan` (
+`rule` int(1)
+,`id` int(11)
+,`nama` varchar(200)
+,`tgl_input` date
+,`tgl_berhenti` date
+,`alasan_berhenti` varchar(100)
+,`ruangan_terakhir` varchar(100)
+,`status_karyawan` varchar(100)
+,`jabatan` varchar(50)
+);
+
+-- --------------------------------------------------------
+
+--
+-- Stand-in structure for view `v_berkala_karyawan`
+-- (See below for the actual view)
+--
+CREATE TABLE `v_berkala_karyawan` (
+`rule` int(1)
+,`id` int(11)
+,`nama` varchar(200)
+,`tgl_input` date
+,`tgl_berkala` date
+,`sk_pangkat_terakhir` varchar(100)
+,`sk_berkala` varchar(100)
+);
+
+-- --------------------------------------------------------
+
+--
+-- Stand-in structure for view `v_cuti_karyawan`
+-- (See below for the actual view)
+--
+CREATE TABLE `v_cuti_karyawan` (
+`rule` int(1)
+,`id` int(11)
+,`nama` varchar(200)
+,`tgl_input` date
+,`nip` varchar(100)
+,`jabatan` varchar(100)
+,`masa_kerja` varchar(30)
+,`unit_kerja` varchar(50)
+,`jenis_cuti` varchar(100)
+,`alasan_cuti` varchar(100)
+,`cuti_selama` varchar(35)
+,`mulai_tgl` date
+,`sampai_tgl` date
+,`tahunan_n2_sisa` varchar(30)
+,`tahunan_n2_keterangan` varchar(100)
+,`tahunan_n1_sisa` varchar(30)
+,`tahunan_n1_keterangan` varchar(100)
+,`tahunan_n_sisa` varchar(30)
+,`tahunan_n_keterangan` varchar(100)
+,`cuti_besar_ket` varchar(100)
+,`cuti_sakit_ket` varchar(100)
+,`cuti_melahirkan_ket` varchar(100)
+,`cuti_penting_ket` varchar(100)
+,`cuti_diluar_tanggungan_ket` varchar(100)
+,`alamat_selama_cuti` varchar(100)
+,`telp` varchar(50)
+,`pertimbangan_atasan` varchar(100)
+,`keputusan_pejabat` varchar(100)
+,`file_cuti` varchar(100)
+);
+
+-- --------------------------------------------------------
+
+--
 -- Stand-in structure for view `v_gcu_syamrabu`
 -- (See below for the actual view)
 --
@@ -602,6 +764,59 @@ CREATE TABLE `v_gcu_syamrabu` (
 ,`no_surat_atas_permintaan_ps` varchar(100)
 ,`perihal_atas_permintaan_ps` varchar(100)
 ,`keterangan_pasien_gcu` varchar(100)
+);
+
+-- --------------------------------------------------------
+
+--
+-- Stand-in structure for view `v_kenaikan_fungsional`
+-- (See below for the actual view)
+--
+CREATE TABLE `v_kenaikan_fungsional` (
+`rule` int(1)
+,`id` int(11)
+,`nama` varchar(200)
+,`tgl_input` date
+,`tgl_kenaikan` date
+,`file_fc_karpeg` varchar(100)
+,`file_fc_sk_pangkat_terakhir` varchar(100)
+,`file_pak_asli` varchar(50)
+,`file_pak_sebelumnya` varchar(100)
+,`file_fc_ijazah_terakhir` varchar(100)
+,`file_fc_skp_2_tahun` varchar(100)
+,`file_fc_sk_konversi_nip` varchar(100)
+,`file_asli_pak_terakhir` varchar(100)
+,`file_jabatan_fungsional` varchar(100)
+,`file_asli_sk_terakhir` varchar(100)
+,`file_asli_skp_2_tahun` varchar(100)
+,`file_asli_ijazah` varchar(100)
+,`file_asli_transkip` varchar(100)
+);
+
+-- --------------------------------------------------------
+
+--
+-- Stand-in structure for view `v_kenaikan_reguler`
+-- (See below for the actual view)
+--
+CREATE TABLE `v_kenaikan_reguler` (
+`rule` int(1)
+,`id` int(11)
+,`nama` varchar(200)
+,`tgl_input` date
+,`jenis_kenaikan_reguler` varchar(50)
+,`tgl_kenaikan` date
+,`file_fc_karpeg` varchar(100)
+,`file_fc_sk_pangkat_terakhir` varchar(100)
+,`file_fc_stlud` varchar(100)
+,`file_fc_ijazah_terakhir` varchar(100)
+,`file_fc_skp_2_tahun` varchar(100)
+,`file_fc_cpns_pns` varchar(100)
+,`file_fc_sk_konversi_nip` varchar(100)
+,`file_asli_sk_terakhir` varchar(100)
+,`file_asli_skp_2_tahun` varchar(100)
+,`file_asli_ijazah` varchar(100)
+,`file_asli_transkip` varchar(100)
 );
 
 -- --------------------------------------------------------
@@ -649,6 +864,24 @@ CREATE TABLE `v_pelatihan_karyawan` (
 ,`durasi_pelatihan` varchar(30)
 ,`no_sertifikat` varchar(100)
 ,`file_sertifikat` varchar(100)
+);
+
+-- --------------------------------------------------------
+
+--
+-- Stand-in structure for view `v_riwayat_kerja_karyawan`
+-- (See below for the actual view)
+--
+CREATE TABLE `v_riwayat_kerja_karyawan` (
+`rule` int(1)
+,`id` int(11)
+,`nama` varchar(200)
+,`tgl_input` date
+,`ruangan_baru` varchar(50)
+,`no_sk` varchar(50)
+,`tgl_sk` date
+,`nama_pinpinan` varchar(50)
+,`tahun` year(4)
 );
 
 -- --------------------------------------------------------
@@ -728,6 +961,17 @@ CREATE TABLE `v_total_bpjs` (
 -- --------------------------------------------------------
 
 --
+-- Stand-in structure for view `v_total_pns`
+-- (See below for the actual view)
+--
+CREATE TABLE `v_total_pns` (
+`nama` varchar(200)
+,`status_karyawan` varchar(30)
+);
+
+-- --------------------------------------------------------
+
+--
 -- Stand-in structure for view `v_total_umum`
 -- (See below for the actual view)
 --
@@ -743,7 +987,7 @@ CREATE TABLE `v_total_umum` (
 --
 DROP TABLE IF EXISTS `v_ambilantrian_bpjs`;
 
-CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `v_ambilantrian_bpjs`  AS SELECT `v_today`.`no_antrian` AS `no_antrian`, `v_today`.`status` AS `status`, `v_today`.`jenis_pasien` AS `jenis_pasien` FROM `v_today` WHERE `v_today`.`status` = '3' AND `v_today`.`jenis_pasien` = '1' ;
+CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `v_ambilantrian_bpjs`  AS  select `v_today`.`no_antrian` AS `no_antrian`,`v_today`.`status` AS `status`,`v_today`.`jenis_pasien` AS `jenis_pasien` from `v_today` where `v_today`.`status` = '3' and `v_today`.`jenis_pasien` = '1' ;
 
 -- --------------------------------------------------------
 
@@ -752,7 +996,34 @@ CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW 
 --
 DROP TABLE IF EXISTS `v_ambilantrian_umum`;
 
-CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `v_ambilantrian_umum`  AS SELECT `v_today`.`no_antrian` AS `no_antrian`, `v_today`.`status` AS `status`, `v_today`.`jenis_pasien` AS `jenis_pasien` FROM `v_today` WHERE `v_today`.`status` = '3' AND `v_today`.`jenis_pasien` = '2' ;
+CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `v_ambilantrian_umum`  AS  select `v_today`.`no_antrian` AS `no_antrian`,`v_today`.`status` AS `status`,`v_today`.`jenis_pasien` AS `jenis_pasien` from `v_today` where `v_today`.`status` = '3' and `v_today`.`jenis_pasien` = '2' ;
+
+-- --------------------------------------------------------
+
+--
+-- Structure for view `v_berhenti_karyawan`
+--
+DROP TABLE IF EXISTS `v_berhenti_karyawan`;
+
+CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `v_berhenti_karyawan`  AS  select `karyawan`.`rule` AS `rule`,`berhenti_karyawan`.`id` AS `id`,`karyawan`.`nama` AS `nama`,`berhenti_karyawan`.`tgl_input` AS `tgl_input`,`berhenti_karyawan`.`tgl_berhenti` AS `tgl_berhenti`,`berhenti_karyawan`.`alasan_berhenti` AS `alasan_berhenti`,`berhenti_karyawan`.`ruangan_terakhir` AS `ruangan_terakhir`,`berhenti_karyawan`.`status_karyawan` AS `status_karyawan`,`berhenti_karyawan`.`jabatan` AS `jabatan` from (`karyawan` join `berhenti_karyawan`) where `karyawan`.`id` = `berhenti_karyawan`.`nama` order by `karyawan`.`id` ;
+
+-- --------------------------------------------------------
+
+--
+-- Structure for view `v_berkala_karyawan`
+--
+DROP TABLE IF EXISTS `v_berkala_karyawan`;
+
+CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `v_berkala_karyawan`  AS  select `karyawan`.`rule` AS `rule`,`berkala_karyawan`.`id` AS `id`,`karyawan`.`nama` AS `nama`,`berkala_karyawan`.`tgl_input` AS `tgl_input`,`berkala_karyawan`.`tgl_berkala` AS `tgl_berkala`,`berkala_karyawan`.`sk_pangkat_terakhir` AS `sk_pangkat_terakhir`,`berkala_karyawan`.`sk_berkala` AS `sk_berkala` from (`karyawan` join `berkala_karyawan`) where `karyawan`.`id` = `berkala_karyawan`.`nama` order by `karyawan`.`id` ;
+
+-- --------------------------------------------------------
+
+--
+-- Structure for view `v_cuti_karyawan`
+--
+DROP TABLE IF EXISTS `v_cuti_karyawan`;
+
+CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `v_cuti_karyawan`  AS  select `karyawan`.`rule` AS `rule`,`cuti_karyawan`.`id` AS `id`,`karyawan`.`nama` AS `nama`,`cuti_karyawan`.`tgl_input` AS `tgl_input`,`cuti_karyawan`.`nip` AS `nip`,`cuti_karyawan`.`jabatan` AS `jabatan`,`cuti_karyawan`.`masa_kerja` AS `masa_kerja`,`cuti_karyawan`.`unit_kerja` AS `unit_kerja`,`cuti_karyawan`.`jenis_cuti` AS `jenis_cuti`,`cuti_karyawan`.`alasan_cuti` AS `alasan_cuti`,`cuti_karyawan`.`cuti_selama` AS `cuti_selama`,`cuti_karyawan`.`mulai_tgl` AS `mulai_tgl`,`cuti_karyawan`.`sampai_tgl` AS `sampai_tgl`,`cuti_karyawan`.`tahunan_n2_sisa` AS `tahunan_n2_sisa`,`cuti_karyawan`.`tahunan_n2_keterangan` AS `tahunan_n2_keterangan`,`cuti_karyawan`.`tahunan_n1_sisa` AS `tahunan_n1_sisa`,`cuti_karyawan`.`tahunan_n1_keterangan` AS `tahunan_n1_keterangan`,`cuti_karyawan`.`tahunan_n_sisa` AS `tahunan_n_sisa`,`cuti_karyawan`.`tahunan_n_keterangan` AS `tahunan_n_keterangan`,`cuti_karyawan`.`cuti_besar_ket` AS `cuti_besar_ket`,`cuti_karyawan`.`cuti_sakit_ket` AS `cuti_sakit_ket`,`cuti_karyawan`.`cuti_melahirkan_ket` AS `cuti_melahirkan_ket`,`cuti_karyawan`.`cuti_penting_ket` AS `cuti_penting_ket`,`cuti_karyawan`.`cuti_diluar_tanggungan_ket` AS `cuti_diluar_tanggungan_ket`,`cuti_karyawan`.`alamat_selama_cuti` AS `alamat_selama_cuti`,`cuti_karyawan`.`telp` AS `telp`,`cuti_karyawan`.`pertimbangan_atasan` AS `pertimbangan_atasan`,`cuti_karyawan`.`keputusan_pejabat` AS `keputusan_pejabat`,`cuti_karyawan`.`file_cuti` AS `file_cuti` from (`karyawan` join `cuti_karyawan`) where `karyawan`.`id` = `cuti_karyawan`.`nama` order by `karyawan`.`id` ;
 
 -- --------------------------------------------------------
 
@@ -761,7 +1032,25 @@ CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW 
 --
 DROP TABLE IF EXISTS `v_gcu_syamrabu`;
 
-CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `v_gcu_syamrabu`  AS SELECT `gcu_syamrabu`.`id` AS `id`, date_format(`gcu_syamrabu`.`tgl_daftar_gcu`,'%d-%M-%Y') AS `tgl_daftar_gcu`, `gcu_syamrabu`.`nama` AS `nama`, `gcu_syamrabu`.`jk_pasien_gcu` AS `jk_pasien_gcu`, `gcu_syamrabu`.`pernikahan_pasien_gcu` AS `pernikahan_pasien_gcu`, `gcu_syamrabu`.`pendidikan_pasien_gcu` AS `pendidikan_pasien_gcu`, `gcu_syamrabu`.`tempat_lahir` AS `tempat_lahir`, date_format(`gcu_syamrabu`.`ttl_pasien_gcu`,'%d-%m-%Y') AS `ttl_pasien_gcu`, `gcu_syamrabu`.`alamat_pasien_gcu` AS `alamat_pasien_gcu`, `gcu_syamrabu`.`kecamatan_pasien_gcu` AS `kecamatan_pasien_gcu`, `gcu_syamrabu`.`kabupaten_pasien_gcu` AS `kabupaten_pasien_gcu`, `gcu_syamrabu`.`bb_pasien_gcu` AS `bb_pasien_gcu`, `gcu_syamrabu`.`tb_pasien_gcu` AS `tb_pasien_gcu`, `gcu_syamrabu`.`pendengaran_pasien_gcu` AS `pendengaran_pasien_gcu`, `gcu_syamrabu`.`warna_pasien_gcu` AS `warna_pasien_gcu`, `gcu_syamrabu`.`keperluan_pasien_gcu` AS `keperluan_pasien_gcu`, `gcu_syamrabu`.`nama_dokter_gcu` AS `nama_dokter_gcu`, `gcu_syamrabu`.`nip_dokter_gcu` AS `nip_dokter_gcu`, `gcu_syamrabu`.`atas_permintaan_ps` AS `atas_permintaan_ps`, `gcu_syamrabu`.`nama_atas_permintaan_ps` AS `nama_atas_permintaan_ps`, `gcu_syamrabu`.`jabatan_atas_permintaan_ps` AS `jabatan_atas_permintaan_ps`, `gcu_syamrabu`.`no_surat_atas_permintaan_ps` AS `no_surat_atas_permintaan_ps`, `gcu_syamrabu`.`perihal_atas_permintaan_ps` AS `perihal_atas_permintaan_ps`, `gcu_syamrabu`.`keterangan_pasien_gcu` AS `keterangan_pasien_gcu` FROM `gcu_syamrabu` ;
+CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `v_gcu_syamrabu`  AS  select `gcu_syamrabu`.`id` AS `id`,date_format(`gcu_syamrabu`.`tgl_daftar_gcu`,'%d-%M-%Y') AS `tgl_daftar_gcu`,`gcu_syamrabu`.`nama` AS `nama`,`gcu_syamrabu`.`jk_pasien_gcu` AS `jk_pasien_gcu`,`gcu_syamrabu`.`pernikahan_pasien_gcu` AS `pernikahan_pasien_gcu`,`gcu_syamrabu`.`pendidikan_pasien_gcu` AS `pendidikan_pasien_gcu`,`gcu_syamrabu`.`tempat_lahir` AS `tempat_lahir`,date_format(`gcu_syamrabu`.`ttl_pasien_gcu`,'%d-%m-%Y') AS `ttl_pasien_gcu`,`gcu_syamrabu`.`alamat_pasien_gcu` AS `alamat_pasien_gcu`,`gcu_syamrabu`.`kecamatan_pasien_gcu` AS `kecamatan_pasien_gcu`,`gcu_syamrabu`.`kabupaten_pasien_gcu` AS `kabupaten_pasien_gcu`,`gcu_syamrabu`.`bb_pasien_gcu` AS `bb_pasien_gcu`,`gcu_syamrabu`.`tb_pasien_gcu` AS `tb_pasien_gcu`,`gcu_syamrabu`.`pendengaran_pasien_gcu` AS `pendengaran_pasien_gcu`,`gcu_syamrabu`.`warna_pasien_gcu` AS `warna_pasien_gcu`,`gcu_syamrabu`.`keperluan_pasien_gcu` AS `keperluan_pasien_gcu`,`gcu_syamrabu`.`nama_dokter_gcu` AS `nama_dokter_gcu`,`gcu_syamrabu`.`nip_dokter_gcu` AS `nip_dokter_gcu`,`gcu_syamrabu`.`atas_permintaan_ps` AS `atas_permintaan_ps`,`gcu_syamrabu`.`nama_atas_permintaan_ps` AS `nama_atas_permintaan_ps`,`gcu_syamrabu`.`jabatan_atas_permintaan_ps` AS `jabatan_atas_permintaan_ps`,`gcu_syamrabu`.`no_surat_atas_permintaan_ps` AS `no_surat_atas_permintaan_ps`,`gcu_syamrabu`.`perihal_atas_permintaan_ps` AS `perihal_atas_permintaan_ps`,`gcu_syamrabu`.`keterangan_pasien_gcu` AS `keterangan_pasien_gcu` from `gcu_syamrabu` ;
+
+-- --------------------------------------------------------
+
+--
+-- Structure for view `v_kenaikan_fungsional`
+--
+DROP TABLE IF EXISTS `v_kenaikan_fungsional`;
+
+CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `v_kenaikan_fungsional`  AS  select `karyawan`.`rule` AS `rule`,`kenaikan_fungsional_karyawan`.`id` AS `id`,`karyawan`.`nama` AS `nama`,`kenaikan_fungsional_karyawan`.`tgl_input` AS `tgl_input`,`kenaikan_fungsional_karyawan`.`tgl_kenaikan` AS `tgl_kenaikan`,`kenaikan_fungsional_karyawan`.`file_fc_karpeg` AS `file_fc_karpeg`,`kenaikan_fungsional_karyawan`.`file_fc_sk_pangkat_terakhir` AS `file_fc_sk_pangkat_terakhir`,`kenaikan_fungsional_karyawan`.`file_pak_asli` AS `file_pak_asli`,`kenaikan_fungsional_karyawan`.`file_pak_sebelumnya` AS `file_pak_sebelumnya`,`kenaikan_fungsional_karyawan`.`file_fc_ijazah_terakhir` AS `file_fc_ijazah_terakhir`,`kenaikan_fungsional_karyawan`.`file_fc_skp_2_tahun` AS `file_fc_skp_2_tahun`,`kenaikan_fungsional_karyawan`.`file_fc_sk_konversi_nip` AS `file_fc_sk_konversi_nip`,`kenaikan_fungsional_karyawan`.`file_asli_pak_terakhir` AS `file_asli_pak_terakhir`,`kenaikan_fungsional_karyawan`.`file_jabatan_fungsional` AS `file_jabatan_fungsional`,`kenaikan_fungsional_karyawan`.`file_asli_sk_terakhir` AS `file_asli_sk_terakhir`,`kenaikan_fungsional_karyawan`.`file_asli_skp_2_tahun` AS `file_asli_skp_2_tahun`,`kenaikan_fungsional_karyawan`.`file_asli_ijazah` AS `file_asli_ijazah`,`kenaikan_fungsional_karyawan`.`file_asli_transkip` AS `file_asli_transkip` from (`karyawan` join `kenaikan_fungsional_karyawan`) where `karyawan`.`id` = `kenaikan_fungsional_karyawan`.`nama` order by `karyawan`.`id` ;
+
+-- --------------------------------------------------------
+
+--
+-- Structure for view `v_kenaikan_reguler`
+--
+DROP TABLE IF EXISTS `v_kenaikan_reguler`;
+
+CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `v_kenaikan_reguler`  AS  select `karyawan`.`rule` AS `rule`,`kenaikan_reguler_karyawan`.`id` AS `id`,`karyawan`.`nama` AS `nama`,`kenaikan_reguler_karyawan`.`tgl_input` AS `tgl_input`,`kenaikan_reguler_karyawan`.`jenis_kenaikan_reguler` AS `jenis_kenaikan_reguler`,`kenaikan_reguler_karyawan`.`tgl_kenaikan` AS `tgl_kenaikan`,`kenaikan_reguler_karyawan`.`file_fc_karpeg` AS `file_fc_karpeg`,`kenaikan_reguler_karyawan`.`file_fc_sk_pangkat_terakhir` AS `file_fc_sk_pangkat_terakhir`,`kenaikan_reguler_karyawan`.`file_fc_stlud` AS `file_fc_stlud`,`kenaikan_reguler_karyawan`.`file_fc_ijazah_terakhir` AS `file_fc_ijazah_terakhir`,`kenaikan_reguler_karyawan`.`file_fc_skp_2_tahun` AS `file_fc_skp_2_tahun`,`kenaikan_reguler_karyawan`.`file_fc_cpns_pns` AS `file_fc_cpns_pns`,`kenaikan_reguler_karyawan`.`file_fc_sk_konversi_nip` AS `file_fc_sk_konversi_nip`,`kenaikan_reguler_karyawan`.`file_asli_sk_terakhir` AS `file_asli_sk_terakhir`,`kenaikan_reguler_karyawan`.`file_asli_skp_2_tahun` AS `file_asli_skp_2_tahun`,`kenaikan_reguler_karyawan`.`file_asli_ijazah` AS `file_asli_ijazah`,`kenaikan_reguler_karyawan`.`file_asli_transkip` AS `file_asli_transkip` from (`karyawan` join `kenaikan_reguler_karyawan`) where `karyawan`.`id` = `kenaikan_reguler_karyawan`.`nama` order by `karyawan`.`id` ;
 
 -- --------------------------------------------------------
 
@@ -770,7 +1059,7 @@ CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW 
 --
 DROP TABLE IF EXISTS `v_obatbelumdiambil_bpjs`;
 
-CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `v_obatbelumdiambil_bpjs`  AS SELECT `v_today`.`no_antrian` AS `no_antrian`, `v_today`.`nama` AS `nama`, `v_today`.`poli` AS `poli`, `v_today`.`status` AS `status`, `v_today`.`jenis_pasien` AS `jenis_pasien` FROM `v_today` WHERE `v_today`.`status` = '5' AND `v_today`.`jenis_pasien` = '1' ;
+CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `v_obatbelumdiambil_bpjs`  AS  select `v_today`.`no_antrian` AS `no_antrian`,`v_today`.`nama` AS `nama`,`v_today`.`poli` AS `poli`,`v_today`.`status` AS `status`,`v_today`.`jenis_pasien` AS `jenis_pasien` from `v_today` where `v_today`.`status` = '5' and `v_today`.`jenis_pasien` = '1' ;
 
 -- --------------------------------------------------------
 
@@ -779,7 +1068,7 @@ CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW 
 --
 DROP TABLE IF EXISTS `v_obatbelumdiambil_umum`;
 
-CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `v_obatbelumdiambil_umum`  AS SELECT `v_today`.`no_antrian` AS `no_antrian`, `v_today`.`nama` AS `nama`, `v_today`.`poli` AS `poli`, `v_today`.`status` AS `status`, `v_today`.`jenis_pasien` AS `jenis_pasien` FROM `v_today` WHERE `v_today`.`status` = '5' AND `v_today`.`jenis_pasien` = '2' ;
+CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `v_obatbelumdiambil_umum`  AS  select `v_today`.`no_antrian` AS `no_antrian`,`v_today`.`nama` AS `nama`,`v_today`.`poli` AS `poli`,`v_today`.`status` AS `status`,`v_today`.`jenis_pasien` AS `jenis_pasien` from `v_today` where `v_today`.`status` = '5' and `v_today`.`jenis_pasien` = '2' ;
 
 -- --------------------------------------------------------
 
@@ -788,7 +1077,16 @@ CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW 
 --
 DROP TABLE IF EXISTS `v_pelatihan_karyawan`;
 
-CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `v_pelatihan_karyawan`  AS SELECT `karyawan`.`rule` AS `rule`, `karyawan`.`id` AS `id`, `karyawan`.`nama` AS `nama`, `pelatihan_karyawan`.`tgl_update` AS `tgl_update`, `pelatihan_karyawan`.`nama_pelatihan` AS `nama_pelatihan`, `pelatihan_karyawan`.`tgl_mulai_pelatihan` AS `tgl_mulai_pelatihan`, `pelatihan_karyawan`.`tgl_selesai_pelatihan` AS `tgl_selesai_pelatihan`, `pelatihan_karyawan`.`durasi_pelatihan` AS `durasi_pelatihan`, `pelatihan_karyawan`.`no_sertifikat` AS `no_sertifikat`, `pelatihan_karyawan`.`file_sertifikat` AS `file_sertifikat` FROM (`karyawan` join `pelatihan_karyawan`) WHERE `karyawan`.`id` = `pelatihan_karyawan`.`nama` ORDER BY `karyawan`.`id` ASC ;
+CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `v_pelatihan_karyawan`  AS  select `karyawan`.`rule` AS `rule`,`pelatihan_karyawan`.`id` AS `id`,`karyawan`.`nama` AS `nama`,`pelatihan_karyawan`.`tgl_update` AS `tgl_update`,`pelatihan_karyawan`.`nama_pelatihan` AS `nama_pelatihan`,`pelatihan_karyawan`.`tgl_mulai_pelatihan` AS `tgl_mulai_pelatihan`,`pelatihan_karyawan`.`tgl_selesai_pelatihan` AS `tgl_selesai_pelatihan`,`pelatihan_karyawan`.`durasi_pelatihan` AS `durasi_pelatihan`,`pelatihan_karyawan`.`no_sertifikat` AS `no_sertifikat`,`pelatihan_karyawan`.`file_sertifikat` AS `file_sertifikat` from (`karyawan` join `pelatihan_karyawan`) where `karyawan`.`id` = `pelatihan_karyawan`.`nama` order by `karyawan`.`id` ;
+
+-- --------------------------------------------------------
+
+--
+-- Structure for view `v_riwayat_kerja_karyawan`
+--
+DROP TABLE IF EXISTS `v_riwayat_kerja_karyawan`;
+
+CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `v_riwayat_kerja_karyawan`  AS  select `karyawan`.`rule` AS `rule`,`riwayat_kerja_karyawan`.`id` AS `id`,`karyawan`.`nama` AS `nama`,`riwayat_kerja_karyawan`.`tgl_input` AS `tgl_input`,`riwayat_kerja_karyawan`.`ruangan_baru` AS `ruangan_baru`,`riwayat_kerja_karyawan`.`no_sk` AS `no_sk`,`riwayat_kerja_karyawan`.`tgl_sk` AS `tgl_sk`,`riwayat_kerja_karyawan`.`nama_pinpinan` AS `nama_pinpinan`,`riwayat_kerja_karyawan`.`tahun` AS `tahun` from (`karyawan` join `riwayat_kerja_karyawan`) where `karyawan`.`id` = `riwayat_kerja_karyawan`.`nama` order by `karyawan`.`id` ;
 
 -- --------------------------------------------------------
 
@@ -797,7 +1095,7 @@ CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW 
 --
 DROP TABLE IF EXISTS `v_sedangdikerjan_bpjs`;
 
-CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `v_sedangdikerjan_bpjs`  AS SELECT `v_today`.`no_antrian` AS `no_antrian`, `v_today`.`status` AS `status`, `v_today`.`jenis_pasien` AS `jenis_pasien` FROM `v_today` WHERE `v_today`.`status` = '2' AND `v_today`.`jenis_pasien` = '1' ;
+CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `v_sedangdikerjan_bpjs`  AS  select `v_today`.`no_antrian` AS `no_antrian`,`v_today`.`status` AS `status`,`v_today`.`jenis_pasien` AS `jenis_pasien` from `v_today` where `v_today`.`status` = '2' and `v_today`.`jenis_pasien` = '1' ;
 
 -- --------------------------------------------------------
 
@@ -806,7 +1104,7 @@ CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW 
 --
 DROP TABLE IF EXISTS `v_sedangdikerjan_umum`;
 
-CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `v_sedangdikerjan_umum`  AS SELECT `v_today`.`no_antrian` AS `no_antrian`, `v_today`.`status` AS `status`, `v_today`.`jenis_pasien` AS `jenis_pasien` FROM `v_today` WHERE `v_today`.`status` = '2' AND `v_today`.`jenis_pasien` = '2' ;
+CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `v_sedangdikerjan_umum`  AS  select `v_today`.`no_antrian` AS `no_antrian`,`v_today`.`status` AS `status`,`v_today`.`jenis_pasien` AS `jenis_pasien` from `v_today` where `v_today`.`status` = '2' and `v_today`.`jenis_pasien` = '2' ;
 
 -- --------------------------------------------------------
 
@@ -815,7 +1113,7 @@ CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW 
 --
 DROP TABLE IF EXISTS `v_sisaresep_bpjs`;
 
-CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `v_sisaresep_bpjs`  AS SELECT `v_today`.`no_antrian` AS `no_antrian`, `v_today`.`status` AS `status`, `v_today`.`jenis_pasien` AS `jenis_pasien` FROM `v_today` WHERE `v_today`.`status` = '1' AND `v_today`.`jenis_pasien` = '1' ;
+CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `v_sisaresep_bpjs`  AS  select `v_today`.`no_antrian` AS `no_antrian`,`v_today`.`status` AS `status`,`v_today`.`jenis_pasien` AS `jenis_pasien` from `v_today` where `v_today`.`status` = '1' and `v_today`.`jenis_pasien` = '1' ;
 
 -- --------------------------------------------------------
 
@@ -824,7 +1122,7 @@ CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW 
 --
 DROP TABLE IF EXISTS `v_sisaresep_umum`;
 
-CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `v_sisaresep_umum`  AS SELECT `v_today`.`no_antrian` AS `no_antrian`, `v_today`.`status` AS `status`, `v_today`.`jenis_pasien` AS `jenis_pasien` FROM `v_today` WHERE `v_today`.`status` = '1' AND `v_today`.`jenis_pasien` = '2' ;
+CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `v_sisaresep_umum`  AS  select `v_today`.`no_antrian` AS `no_antrian`,`v_today`.`status` AS `status`,`v_today`.`jenis_pasien` AS `jenis_pasien` from `v_today` where `v_today`.`status` = '1' and `v_today`.`jenis_pasien` = '2' ;
 
 -- --------------------------------------------------------
 
@@ -833,7 +1131,7 @@ CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW 
 --
 DROP TABLE IF EXISTS `v_today`;
 
-CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `v_today`  AS SELECT `syarefa`.`no_antrian` AS `no_antrian`, `syarefa`.`no_rm` AS `no_rm`, `syarefa`.`nama` AS `nama`, `syarefa`.`poli` AS `poli`, `syarefa`.`jenis_pasien` AS `jenis_pasien`, `syarefa`.`status` AS `status` FROM `syarefa` WHERE `syarefa`.`tgl_input` = curdate() ;
+CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `v_today`  AS  select `syarefa`.`no_antrian` AS `no_antrian`,`syarefa`.`no_rm` AS `no_rm`,`syarefa`.`nama` AS `nama`,`syarefa`.`poli` AS `poli`,`syarefa`.`jenis_pasien` AS `jenis_pasien`,`syarefa`.`status` AS `status` from `syarefa` where `syarefa`.`tgl_input` = curdate() ;
 
 -- --------------------------------------------------------
 
@@ -842,7 +1140,16 @@ CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW 
 --
 DROP TABLE IF EXISTS `v_total_bpjs`;
 
-CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `v_total_bpjs`  AS SELECT `v_today`.`no_antrian` AS `no_antrian`, `v_today`.`jenis_pasien` AS `jenis_pasien` FROM `v_today` WHERE `v_today`.`jenis_pasien` = '1' ;
+CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `v_total_bpjs`  AS  select `v_today`.`no_antrian` AS `no_antrian`,`v_today`.`jenis_pasien` AS `jenis_pasien` from `v_today` where `v_today`.`jenis_pasien` = '1' ;
+
+-- --------------------------------------------------------
+
+--
+-- Structure for view `v_total_pns`
+--
+DROP TABLE IF EXISTS `v_total_pns`;
+
+CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `v_total_pns`  AS  select `karyawan`.`nama` AS `nama`,`karyawan`.`status_karyawan` AS `status_karyawan` from `karyawan` where `karyawan`.`status_karyawan` = 'PNS' ;
 
 -- --------------------------------------------------------
 
@@ -851,7 +1158,7 @@ CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW 
 --
 DROP TABLE IF EXISTS `v_total_umum`;
 
-CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `v_total_umum`  AS SELECT `v_today`.`no_antrian` AS `no_antrian`, `v_today`.`jenis_pasien` AS `jenis_pasien` FROM `v_today` WHERE `v_today`.`jenis_pasien` = '2' ;
+CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `v_total_umum`  AS  select `v_today`.`no_antrian` AS `no_antrian`,`v_today`.`jenis_pasien` AS `jenis_pasien` from `v_today` where `v_today`.`jenis_pasien` = '2' ;
 
 --
 -- Indexes for dumped tables
@@ -882,6 +1189,12 @@ ALTER TABLE `cuti_karyawan`
 -- Indexes for table `gcu_syamrabu`
 --
 ALTER TABLE `gcu_syamrabu`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `hrd_user`
+--
+ALTER TABLE `hrd_user`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -938,13 +1251,13 @@ ALTER TABLE `syarefa`
 -- AUTO_INCREMENT for table `berhenti_karyawan`
 --
 ALTER TABLE `berhenti_karyawan`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT for table `berkala_karyawan`
 --
 ALTER TABLE `berkala_karyawan`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT for table `cuti_karyawan`
@@ -959,6 +1272,12 @@ ALTER TABLE `gcu_syamrabu`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
 
 --
+-- AUTO_INCREMENT for table `hrd_user`
+--
+ALTER TABLE `hrd_user`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=123468;
+
+--
 -- AUTO_INCREMENT for table `karyawan`
 --
 ALTER TABLE `karyawan`
@@ -968,13 +1287,13 @@ ALTER TABLE `karyawan`
 -- AUTO_INCREMENT for table `kenaikan_fungsional_karyawan`
 --
 ALTER TABLE `kenaikan_fungsional_karyawan`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT for table `kenaikan_reguler_karyawan`
 --
 ALTER TABLE `kenaikan_reguler_karyawan`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT for table `pelatihan_karyawan`
@@ -986,7 +1305,7 @@ ALTER TABLE `pelatihan_karyawan`
 -- AUTO_INCREMENT for table `riwayat_kerja_karyawan`
 --
 ALTER TABLE `riwayat_kerja_karyawan`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT for table `swab_syamrabu`

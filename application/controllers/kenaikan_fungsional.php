@@ -26,6 +26,11 @@ class kenaikan_fungsional extends CI_Controller
 			echo json_encode($this->db_model->all_data("v_kenaikan_fungsional")->result());
 	}
 
+	public function exel(){
+		$data = $this->db_model->datafungsional();
+		$this->load->view('laporan/fungsional' , ['data'=>$data]);
+	}
+
 	function get_nama_karyawan()
 	{
 		echo json_encode($this->db_model->get_all('karyawan')->result());

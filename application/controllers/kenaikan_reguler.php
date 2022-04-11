@@ -26,6 +26,11 @@ class kenaikan_reguler extends CI_Controller
 			echo json_encode($this->db_model->all_data("v_kenaikan_reguler")->result());
 	}
 
+	public function exel(){
+		$data = $this->db_model->datareguler();
+		$this->load->view('laporan/reguler' , ['data'=>$data]);
+	}
+
 	function get_nama_karyawan()
 	{
 		echo json_encode($this->db_model->get_all('karyawan')->result());

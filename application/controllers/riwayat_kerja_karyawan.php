@@ -26,6 +26,11 @@ class riwayat_kerja_karyawan extends CI_Controller
 			echo json_encode($this->db_model->all_data("v_riwayat_kerja_karyawan")->result());
 	}
 
+	public function exel(){
+		$data = $this->db_model->datariwayat();
+		$this->load->view('laporan/riwayat' , ['data'=>$data]);
+	}
+
 	function get_nama_karyawan()
 	{
 		echo json_encode($this->db_model->get_all('karyawan')->result());

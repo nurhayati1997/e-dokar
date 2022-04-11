@@ -3,7 +3,7 @@
     header ("Pragma: no-cache");
     header ("Content-type: application/x-msexcel");
     header ("Content-type: application/octet-stream");
-    header ("Content-Disposition: attachment; filename= Data Kenaikan Reguler Karyawan.xls");
+    header ("Content-Disposition: attachment; filename= Data Karyawan Berhenti.xls");
 ?>
 
 <style type="text/css">
@@ -16,7 +16,7 @@
 </style>
 
 <div style="text-align: center;">
-  <span style="margin-left: 20px;font-size: 20px;"><b>Data Kenaikan Reguler Karyawan RSUD SYAMRABU Bangkalan</b></span>
+  <span style="margin-left: 20px;font-size: 20px;"><b>Data Karyawan Berhenti RSUD SYAMRABU Bangkalan</b></span>
 </div>
 <br>
 <table border="1">
@@ -24,8 +24,11 @@
         <tr>
           <th>No</th>
           <th>Nama</th>
-          <th>Jenis Kenaikan</th>
-          <th>Tanggal Kenaikan</th>
+          <th>Status Karyawan</th>
+          <th>Jabatan</th>
+          <th>Tanggal Berhenti</th>
+          <th>Alasan Berhenti</th>
+          <th>Ruangan Terakhir</th>
         </tr>
       </thead>
       <?php
@@ -36,8 +39,11 @@
               <tr>
                 <td><?php echo $no++; ?></td>
                 <td><?php echo $row->nama; ?></td>
-                <td><?php echo $row->jenis_kenaikan_reguler; ?></td>
-                <td><?php echo $row->tgl_kenaikan; ?></td>
+                <td><?php echo $row->status_karyawan; ?></td>
+                <td><?php echo $row->jabatan; ?></td>
+                <td><?php echo $row->tgl_berhenti; ?></td>
+                <td><?php echo $row->alasan_berhenti; ?></td>
+                <td><?php echo $row->ruangan_terakhir; ?></td>
               </tr>
 
             <?php

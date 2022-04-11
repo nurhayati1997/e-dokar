@@ -70,11 +70,16 @@
 											<h3 class="card-label">Data Riwayat Kerja Karyawan 
 											<span class="d-block text-muted pt-2 font-size-sm">UOBK RSUD SYAMRABU BANGKALAN</span></h3>
 										</div>
-                    <?php if ($this->session->userdata("rule") == 1 or $this->session->userdata("rule") == 2) { ?>
-										  <button type="button" class="btn btn-success" onclick="tampil_input_modal()">Tambah Data</button>
-                    <?php } ?>
-                  </div>
-									<div class="card-body">
+                   						<div class="card-body px-lg-5 py-lg-5">
+											<?php if ($this->session->userdata("rule") == 1) { ?>
+												<button type="button" class="btn btn-secondary"><a href="riwayat_kerja_karyawan/exel/" target="_blank">Export Excel</a></button>
+											<?php } ?>
+
+											<?php if ($this->session->userdata("rule") == 1 or $this->session->userdata("rule") == 2) { ?>
+												<button type="button" class="btn btn-success" onclick="tampil_input_modal()">Tambah Data</button>
+											<?php } ?>
+										</div>
+											<div class="card-body">
 										<!--begin: Datatable-->
 										<div class="table-responsive" id="tempatTabel">
 										</div>

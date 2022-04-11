@@ -29,6 +29,12 @@ class cuti_karyawan extends CI_Controller
 		}
 	}
 
+	public function exel(){
+		$data = $this->db_model->datacuti();
+		$this->load->view('laporan/cuti' , ['data'=>$data]);
+	}
+
+
 	function get_nama_karyawan()
 	{
 		echo json_encode($this->db_model->get_all('karyawan')->result());

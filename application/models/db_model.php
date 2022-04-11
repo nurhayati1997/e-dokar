@@ -37,7 +37,61 @@ class Db_model extends CI_Model
     public function datapelatihan()
     {
         $this->db->select('*');
-        $this->db->from('pelatihan_karyawan');
+        $this->db->from('v_pelatihan_karyawan');
+        $this->db->order_by('id', 'asc');
+        $data = $this->db->get('');
+        return $data;
+    }
+
+    public function datareguler()
+    {
+        $this->db->select('*');
+        $this->db->from('v_kenaikan_reguler');
+        $this->db->order_by('id', 'asc');
+        $data = $this->db->get('');
+        return $data;
+    }
+
+    public function datafungsional()
+    {
+        $this->db->select('*');
+        $this->db->from('v_kenaikan_fungsional');
+        $this->db->order_by('id', 'asc');
+        $data = $this->db->get('');
+        return $data;
+    }
+
+    public function databerkala()
+    {
+        $this->db->select('*');
+        $this->db->from('v_berkala_karyawan');
+        $this->db->order_by('id', 'asc');
+        $data = $this->db->get('');
+        return $data;
+    }
+
+    public function datariwayat()
+    {
+        $this->db->select('*');
+        $this->db->from('v_riwayat_kerja_karyawan');
+        $this->db->order_by('id', 'asc');
+        $data = $this->db->get('');
+        return $data;
+    }
+
+    public function databerhenti()
+    {
+        $this->db->select('*');
+        $this->db->from('v_berhenti_karyawan');
+        $this->db->order_by('id', 'asc');
+        $data = $this->db->get('');
+        return $data;
+    }
+
+    public function datacuti()
+    {
+        $this->db->select('*');
+        $this->db->from('v_cuti_karyawan');
         $this->db->order_by('id', 'asc');
         $data = $this->db->get('');
         return $data;
@@ -45,9 +99,7 @@ class Db_model extends CI_Model
     
     public function all_data_karyawan($tabel)
     {
-        // return $this->db->get($tabel);
         $query = $this->db->get('karyawan');
-        // $result=$query->result();
         $result=$query->result_array();
         return $result;
     }

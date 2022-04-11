@@ -26,6 +26,11 @@ class berhenti_karyawan extends CI_Controller
 			echo json_encode($this->db_model->all_data("v_berhenti_karyawan")->result());
 	}
 
+	public function exel(){
+		$data = $this->db_model->databerhenti();
+		$this->load->view('laporan/berhenti' , ['data'=>$data]);
+	}
+
 	function get_nama_karyawan()
 	{
 		echo json_encode($this->db_model->get_all('karyawan')->result());

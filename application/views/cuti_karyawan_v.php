@@ -79,6 +79,10 @@
 										<?php if ($this->session->userdata("rule") == 1 or $this->session->userdata("rule") == 2) { ?>
 											<button type="button" class="btn btn-success" onclick="tampil_input_modal()">Tambah Data</button>
 										<?php } ?>
+
+										<?php if ($this->session->userdata("rule") == 1) { ?>
+											<button type="button" class="btn btn-secondary"><a href="cuti_karyawan/exel/" target="_blank">Export Excel</a></button>
+										<?php } ?>
 									</div>
 								</div>
 									<div class="card-body">

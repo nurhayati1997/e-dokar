@@ -26,6 +26,11 @@ class berkala_karyawan extends CI_Controller
 			echo json_encode($this->db_model->all_data("v_berkala_karyawan")->result());
 	}
 
+	public function exel(){
+		$data = $this->db_model->databerkala();
+		$this->load->view('laporan/berkala' , ['data'=>$data]);
+	}
+
 	function get_nama_karyawan()
 	{
 		echo json_encode($this->db_model->get_all('karyawan')->result());

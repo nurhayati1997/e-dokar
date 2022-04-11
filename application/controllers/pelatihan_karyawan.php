@@ -25,6 +25,11 @@ class pelatihan_karyawan extends CI_Controller
 		
 			echo json_encode($this->db_model->all_data("v_pelatihan_karyawan")->result());
 	}
+	public function exel(){
+		$data = $this->db_model->datapelatihan();
+		$this->load->view('laporan/pelatihan' , ['data'=>$data]);
+	}
+
 
 	function get_nama_karyawan()
 	{

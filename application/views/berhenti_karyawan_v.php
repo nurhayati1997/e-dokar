@@ -110,10 +110,10 @@
 																  <span class="form-text text-muted">Pilih Status</span>
 																  <select class="form-control" id="status_karyawan">
 																			<option value="PNS">PNS</option>
+																			<option value="CPNS">CPNS</option>
 																			<option value="PPPK">PPPK</option>
 																			<option value="THL">THL</option>
 																			<option value="Kontrak">Kontrak</option>
-																			<option value="Unit">Unit</option>
 																		</select>
 															</div>
 															<div class="form-group mb-3">
@@ -302,7 +302,7 @@
 
   function tampilkan(){
     $("#tempatTabel").html('<i class="fas fa-spinner fa-pulse"></i> Memuat...')
-    var baris = '<table class="table table-separate table-head-custom table-checkable" id="tabelUser"><thead class="thead-light"><tr><th>Action</th><th>NO</th><th>Nama</th><th>Tanggal Berhenti</th><th>Alasan</th><th>Ruangan Terakhir</th><th>Status</th><th>Jabatan</th></tr></thead>'
+    var baris = '<table class="table table-separate table-head-custom table-checkable" id="tabelUser"><thead class="thead-light"><tr><th>Action</th><th>NO</th><th>Tgl Update</th><th>Nama</th><th>Tanggal Berhenti</th><th>Alasan</th><th>Ruangan Terakhir</th><th>Status</th><th>Jabatan</th></tr></thead>'
       $.ajax({
         type:'POST',
         url: '<?= base_url() ?>berhenti_karyawan/tampil',
@@ -312,10 +312,11 @@
           for (let i = 0; i < data.length; i++) {
             baris += '<tr>'
             baris += '<td><div style="cursor:pointer;" title="hapus?" id="hapus' + data[i].id + '" onClick="tryHapus(' + data[i].id+ ')"><i class="flaticon-delete text-danger"></i></div>'
-            baris += ' <div style="cursor:pointer;" title="edit?"  id="edit' + data[i].id + '" onClick="tryEdit(' + data[i].id+ ')"><i class="flaticon2-pen text-success"></i></div>'
+            // baris += ' <div style="cursor:pointer;" title="edit?"  id="edit' + data[i].id + '" onClick="tryEdit(' + data[i].id+ ')"><i class="flaticon2-pen text-success"></i></div>'
             // baris += ' <div style="cursor:pointer;" title="view?" id="cetak' + data[i].id + '" onClick="tryCetak(' + data[i].id+ ')"><i class="flaticon-eye text-primary"></i></div>'
             // baris += ' <div style="cursor:pointer;" title="view?" id="view' + data[i].id + '" onClick="tryView(' + data[i].id+ ')"><i class="flaticon-eye text-primary"></i></div>'
             baris += '<td>' + (i + 1) + '</td>'
+            baris += '<td>' + data[i].tgl_input + '</td>'
             baris += '<td>' + data[i].nama + '</td>'
             baris += '<td>' + data[i].tgl_berhenti + '</td>'
             baris += '<td>' + data[i].alasan_berhenti + '</td>'

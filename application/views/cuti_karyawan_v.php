@@ -115,7 +115,7 @@
 																	</div>
 																	<div class="col-lg-4">
 																		<span class="form-text text-muted">NIP</span>
-																		<input type="text" class="form-control" id="nip" placeholder="Masukkan NIK sesuai KTP"/>
+																		<input type="text" class="form-control" id="nip" placeholder="Masukkan NIP sesuai KTP"/>
 																	</div>
 																	<div class="col-lg-4">
 																	<span class="form-text text-muted">Pilih Jabatan</span>
@@ -349,7 +349,7 @@
 										<span class="fw-mediumbold">
 										Hapus Data</span>
 										<span class="fw-light">
-										Pelatihan Karyawan
+										Cuti Karyawan
 										</span>
 									</h5>
 									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -435,7 +435,7 @@
 
   function tampilkan(){
     $("#tempatTabel").html('<i class="fas fa-spinner fa-pulse"></i> Memuat...')
-    var baris = '<table class="table table-separate table-head-custom table-checkable" id="tabelUser"><thead class="thead-light"><tr><th>Action</th><th>NO</th><th>Nama</th><th>NIP</th><th>Jabatan</th><th>Masa Kerja</th><th>Unit Kerja</th><th>Jenis Cuti</th><th>Alasan Cuti</th><th>Lama Cuti</th><th>Mulai Cuti</th><th>Selesai Cuti</th><th>Cuti Tahunan Sisa N2</th><th>Cuti Tahunan Keterangan N2</th><th>Cuti Tahunan Sisa N1</th><th>Cuti Tahunan Keterangan N1</th><th>Cuti Tahunan Sisa N</th><th>Cuti Tahunan Keterangan N</th><th>Cuti Besar</th><th>Cuti Sakit</th><th>Cuti Melahirkan</th><th>Cuti Karena Alasan Penting</th><th>Cuti di luar Tanggungan Negara</th><th>Alamat selama Cuti</th><th>telp</th><th>Pertimbangan Atasan</th><th>Keputusan Pejabat</th><th>File Cuti</th></tr></thead>'
+    var baris = '<table class="table table-separate table-head-custom table-checkable" id="tabelUser"><thead class="thead-light"><tr><th>Action</th><th>NO</th><th>Tanggal Update</th><th>Nama</th><th>NIP</th><th>Jabatan</th><th>Masa Kerja</th><th>Unit Kerja</th><th>Jenis Cuti</th><th>Alasan Cuti</th><th>Lama Cuti</th><th>Mulai Cuti</th><th>Selesai Cuti</th><th>Cuti Tahunan Sisa N2</th><th>Cuti Tahunan Keterangan N2</th><th>Cuti Tahunan Sisa N1</th><th>Cuti Tahunan Keterangan N1</th><th>Cuti Tahunan Sisa N</th><th>Cuti Tahunan Keterangan N</th><th>Cuti Besar</th><th>Cuti Sakit</th><th>Cuti Melahirkan</th><th>Cuti Karena Alasan Penting</th><th>Cuti di luar Tanggungan Negara</th><th>Alamat selama Cuti</th><th>telp</th><th>Pertimbangan Atasan</th><th>Keputusan Pejabat</th><th>File Cuti</th></tr></thead>'
       $.ajax({
         type:'POST',
         url: '<?= base_url() ?>cuti_karyawan/tampil',
@@ -445,10 +445,11 @@
           for (let i = 0; i < data.length; i++) {
             baris += '<tr>'
             baris += '<td><div style="cursor:pointer;" title="hapus?" id="hapus' + data[i].id + '" onClick="tryHapus(' + data[i].id+ ')"><i class="flaticon-delete text-danger"></i></div>'
-            baris += ' <div style="cursor:pointer;" title="edit?"  id="edit' + data[i].id + '" onClick="tryEdit(' + data[i].id+ ')"><i class="flaticon2-pen text-success"></i></div>'
+            // baris += ' <div style="cursor:pointer;" title="edit?"  id="edit' + data[i].id + '" onClick="tryEdit(' + data[i].id+ ')"><i class="flaticon2-pen text-success"></i></div>'
             // baris += ' <div style="cursor:pointer;" title="view?" id="cetak' + data[i].id + '" onClick="tryCetak(' + data[i].id+ ')"><i class="flaticon-eye text-primary"></i></div>'
             // baris += ' <div style="cursor:pointer;" title="view?" id="view' + data[i].id + '" onClick="tryView(' + data[i].id+ ')"><i class="flaticon-eye text-primary"></i></div>'
             baris += '<td>' + (i + 1) + '</td>'
+            baris += '<td>' + data[i].tgl_input + '</td>'
             baris += '<td>' + data[i].nama + '</td>'
             baris += '<td>' + data[i].nip + '</td>'
             baris += '<td>' + data[i].jabatan + '</td>'
@@ -494,7 +495,7 @@
   function get_nama() {
       $.ajax({
           type: 'POST',
-          url: '<?= base_url() ?>pelatihan_karyawan/get_nama_karyawan',
+          url: '<?= base_url() ?>cuti_karyawan/get_nama_karyawan',
           dataType: 'json',
           success: function(data) {
               var html = '<option value="">-Pilih Karyawan-</option>';
@@ -610,9 +611,9 @@
   function tryHapus(id) {
     $("#hapus" + id).html('<i class="fas fa-spinner fa-pulse"></i>')
     $.ajax({
-      url: '<?= base_url() ?>berhenti_karyawan/edit_id',
+      url: '<?= base_url() ?>cuti_karyawan/edit_id',
       method: 'post',
-      data: "target=berhenti_karyawan&id=" + id,
+      data: "target=cuti_karyawan&id=" + id,
       dataType: 'json',
       success: function(data) {
         $("#id_hapus").val(id)
@@ -628,9 +629,9 @@
     $("#hapus").html('<i class="fas fa-spinner fa-pulse"></i> Memproses..')
     var id = $("#id_hapus").val()
     $.ajax({
-      url: '<?= base_url() ?>berhenti_karyawan/hapus',
+      url: '<?= base_url() ?>cuti_karyawan/hapus',
       method: 'post',
-      data: "target=berhenti_karyawan&id=" + id,
+      data: "target=cuti_karyawan&id=" + id,
       dataType: 'json',
       success: function(data) {
         $("#id_hapus").val("")

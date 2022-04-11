@@ -70,9 +70,15 @@
 											<h3 class="card-label">Data Pelatihan Karyawan 
 											<span class="d-block text-muted pt-2 font-size-sm">UOBK RSUD SYAMRABU BANGKALAN</span></h3>
 										</div>
-                    <?php if ($this->session->userdata("rule") == 1 or $this->session->userdata("rule") == 2) { ?>
-										  <button type="button" class="btn btn-success" onclick="tampil_input_modal()">Tambah Data</button>
-                    <?php } ?>
+                    <div class="card-body px-lg-5 py-lg-5">
+											<?php if ($this->session->userdata("rule") == 1) { ?>
+												<button type="button" class="btn btn-secondary"><a href="pelatihan_karyawan/exel/" target="_blank">Export Excel</a></button>
+											<?php } ?>
+
+                      <?php if ($this->session->userdata("rule") == 1 or $this->session->userdata("rule") == 2) { ?>
+                        <button type="button" class="btn btn-success" onclick="tampil_input_modal()">Tambah Data</button>
+                      <?php } ?>
+                    </div>
                   </div>
 									<div class="card-body">
 										<!--begin: Datatable-->
@@ -250,7 +256,7 @@
           for (let i = 0; i < data.length; i++) {
             baris += '<tr>'
             baris += '<td><div style="cursor:pointer;" title="hapus?" id="hapus' + data[i].id + '" onClick="tryHapus(' + data[i].id+ ')"><i class="flaticon-delete text-danger"></i></div>'
-            baris += ' <div style="cursor:pointer;" title="edit?"  id="edit' + data[i].id + '" onClick="tryEdit(' + data[i].id+ ')"><i class="flaticon2-pen text-success"></i></div>'
+            // baris += ' <div style="cursor:pointer;" title="edit?"  id="edit' + data[i].id + '" onClick="tryEdit(' + data[i].id+ ')"><i class="flaticon2-pen text-success"></i></div>'
             // baris += ' <div style="cursor:pointer;" title="view?" id="cetak' + data[i].id + '" onClick="tryCetak(' + data[i].id+ ')"><i class="flaticon-eye text-primary"></i></div>'
             // baris += ' <div style="cursor:pointer;" title="view?" id="view' + data[i].id + '" onClick="tryView(' + data[i].id+ ')"><i class="flaticon-eye text-primary"></i></div>'
             baris += '<td>' + (i + 1) + '</td>'

@@ -20,7 +20,7 @@ class Db_model extends CI_Model
     public function save_upload($id_karyawan,$nama,$email,$password,$rule,$foto,$status){
         $data =array('id_karyawan' => $id_karyawan, 'nama'=>$nama, 'email'=>$email, 'password'=>$password, 'rule'=>$rule, 'foto'=>$foto, 'status'=>$status );
 
-        $result =$this->db->insert('hrd_user',$data);
+        $result =$this->db->insert('karyawan',$data);
         return $result;
 
     }
@@ -28,7 +28,16 @@ class Db_model extends CI_Model
     public function dataKaryawan()
     {
         $this->db->select('*');
-        $this->db->from('hrd_user');
+        $this->db->from('karyawan');
+        $this->db->order_by('id', 'asc');
+        $data = $this->db->get('');
+        return $data;
+    }
+
+    public function datapelatihan()
+    {
+        $this->db->select('*');
+        $this->db->from('pelatihan_karyawan');
         $this->db->order_by('id', 'asc');
         $data = $this->db->get('');
         return $data;
@@ -37,7 +46,7 @@ class Db_model extends CI_Model
     public function all_data_karyawan($tabel)
     {
         // return $this->db->get($tabel);
-        $query = $this->db->get('hrd_user');
+        $query = $this->db->get('karyawan');
         // $result=$query->result();
         $result=$query->result_array();
         return $result;

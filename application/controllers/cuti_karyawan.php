@@ -99,7 +99,7 @@ class cuti_karyawan extends CI_Controller
 
 	public function hapus()
 	{
-		echo json_encode($this->db_model->delete('berhenti_karyawan', array('id' => $this->input->post('id', TRUE))));
+		echo json_encode($this->db_model->delete('cuti_karyawan', array('id' => $this->input->post('id', TRUE))));
 		
 	}
 

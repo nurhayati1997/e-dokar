@@ -26,8 +26,6 @@
 										<div class="card-body px-lg-5 py-lg-5">
 											<?php if ($this->session->userdata("rule") == 1) { ?>
 												<button type="button" class="btn btn-secondary"><a href="data_karyawan/exel/" target="_blank">Export Excel</a></button>
-												<!-- <button type="button" class="btn btn-secondary" id="ButtonExcel" onclick="getExcel()" >Export Excel</button> -->
-												<!-- <button type="button" class="btn btn-danger" onclick="tryCetak()">Cetak Form Cuti</button> -->
 											<?php } ?>
 
 											<?php if ($this->session->userdata("rule") == 1 or $this->session->userdata("rule") == 2) { ?>

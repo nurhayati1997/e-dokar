@@ -96,6 +96,32 @@ class Db_model extends CI_Model
         $data = $this->db->get('');
         return $data;
     }
+
+    public function datapns()
+    {
+        $this->db->select('*');
+        $this->db->from('v_total_pns');
+        $this->db->order_by('id', 'asc');
+        $data = $this->db->get('');
+        return $data;
+    }
+    public function datacpns()
+    {
+        $this->db->select('*');
+        $this->db->from('v_total_cpns');
+        $this->db->order_by('id', 'asc');
+        $data = $this->db->get('');
+        return $data;
+    }
+
+    public function datapppk()
+    {
+        $this->db->select('*');
+        $this->db->from('v_total_pppk');
+        $this->db->order_by('id', 'asc');
+        $data = $this->db->get('');
+        return $data;
+    }
     
     public function all_data_karyawan($tabel)
     {

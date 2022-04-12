@@ -32,7 +32,25 @@ class dashboard extends CI_Controller {
 	public function index()
 	{
 		$data["total_pns"] = $this->db_model->get("v_total_pns")->num_rows();
+		$data["total_cpns"] = $this->db_model->get("v_total_cpns")->num_rows();
+		$data["total_pppk"] = $this->db_model->get("v_total_pppk")->num_rows();
 		// $this->load->view('dashboard_v');
 		$this->template->load('template','dashboard_v',$data);
 	}
+
+	public function pns(){
+		$data = $this->db_model->datapns();
+		$this->load->view('laporan/pns' , ['data'=>$data]);
+	}
+
+	public function cpns(){
+		$data = $this->db_model->datacpns();
+		$this->load->view('laporan/cpns' , ['data'=>$data]);
+	}
+
+	public function pppk(){
+		$data = $this->db_model->datapppk();
+		$this->load->view('laporan/pppk' , ['data'=>$data]);
+	}
+
 }

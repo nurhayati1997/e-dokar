@@ -122,6 +122,123 @@ class Db_model extends CI_Model
         $data = $this->db->get('');
         return $data;
     }
+
+    public function datathl()
+    {
+        $this->db->select('*');
+        $this->db->from('v_total_thl');
+        $this->db->order_by('id', 'asc');
+        $data = $this->db->get('');
+        return $data;
+    }
+
+    public function datakontrak()
+    {
+        $this->db->select('*');
+        $this->db->from('v_total_kontrak');
+        $this->db->order_by('id', 'asc');
+        $data = $this->db->get('');
+        return $data;
+    }
+
+    public function datatenagamedis()
+    {
+        $this->db->select('*');
+        $this->db->from('v_total_tenaga_medis');
+        $this->db->order_by('id', 'asc');
+        $data = $this->db->get('');
+        return $data;
+    }
+
+    public function datatenagakeperawatan()
+    {
+        $this->db->select('*');
+        $this->db->from('v_total_tenaga_keperawatan');
+        $this->db->order_by('id', 'asc');
+        $data = $this->db->get('');
+        return $data;
+    }
+
+    public function datapejabat_struktural()
+    {
+        $this->db->select('*');
+        $this->db->from('v_total_pejabat_struktural');
+        $this->db->order_by('id', 'asc');
+        $data = $this->db->get('');
+        return $data;
+    }
+
+    public function datatenaga_kesehatan_lainnya()
+    {
+        $this->db->select('*');
+        $this->db->from('v_total_tenaga_kesehatan_lainnya');
+        $this->db->order_by('id', 'asc');
+        $data = $this->db->get('');
+        return $data;
+    }
+
+    public function datatenaga_umum()
+    {
+        $this->db->select('*');
+        $this->db->from('v_total_tenaga_umum');
+        $this->db->order_by('id', 'asc');
+        $data = $this->db->get('');
+        return $data;
+    }
+
+    public function datalaki()
+    {
+        $this->db->select('*');
+        $this->db->from('v_total_laki');
+        $this->db->order_by('id', 'asc');
+        $data = $this->db->get('');
+        return $data;
+    }
+
+    public function dataperempuan()
+    {
+        $this->db->select('*');
+        $this->db->from('v_total_perempuan');
+        $this->db->order_by('id', 'asc');
+        $data = $this->db->get('');
+        return $data;
+    }
+
+    public function dataKaryawanfungsional()
+    {
+        $this->db->select('*');
+        $this->db->from('v_total_fungsional');
+        $this->db->order_by('id', 'asc');
+        $data = $this->db->get('');
+        return $data;
+    }
+
+    public function dataKaryawanstruktural()
+    {
+        $this->db->select('*');
+        $this->db->from('v_total_struktural');
+        $this->db->order_by('id', 'asc');
+        $data = $this->db->get('');
+        return $data;
+    }
+
+    public function dataKaryawanprofesi()
+    {
+        $this->db->select('*');
+        $this->db->from('v_total_profesi');
+        $this->db->order_by('id', 'asc');
+        $data = $this->db->get('');
+        return $data;
+    }
+
+    public function dataKaryawanbukanpns()
+    {
+        $this->db->select('*');
+        $this->db->from('v_total_bukan_pns');
+        $this->db->order_by('id', 'asc');
+        $data = $this->db->get('');
+        return $data;
+    }
     
     public function all_data_karyawan($tabel)
     {

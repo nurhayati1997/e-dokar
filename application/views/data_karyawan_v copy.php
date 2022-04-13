@@ -2624,7 +2624,9 @@
 																			<label class="custom-file-label" for="customFile">File SIP Harus format pdf</label>
 																		</div>
 															</div>
-															<div id="div_upload_arsip">
+															<div class="badge badge-danger" id="pesanErrorTambah"></div>
+																<div class="text-center">
+																<button type="button" onClick="arsip()" id="tombolArsip" class="btn btn-success my-2">Tambah</button>
 															</div>
 														</form>
 													</div>
@@ -2683,10 +2685,12 @@
           for (let i = 0; i < data.length; i++) {
             baris += '<tr>'
             baris += '<td><div style="cursor:pointer;" title="hapus?" id="hapus' + data[i].id + '" onClick="tryHapus(' + data[i].id+ ')"><i class="flaticon-delete text-danger"></i></div>'
-            baris += ' <div style="cursor:pointer;" title="upload Berkas?"  id="arsip' + data[i].id + '" onClick="tampil_modal_upload_arsip(' + data[i].id+ ')"><i class="flaticon2-open-box text-warning"></i></div>'
+            baris += ' <div style="cursor:pointer;" title="upload Berkas?"  id="arsip' + data[i].id + '" onClick="tryArsip(' + data[i].id+ ')"><i class="flaticon2-open-box text-warning"></i></div>'
+            // baris += ' <div style="cursor:pointer;" title="upload foto?"  id="foto' + data[i].id + '" onClick="tryFoto(' + data[i].id+ ')"><i class="flaticon-photo-camera text-primary"></i></div>'
             baris += ' <div style="cursor:pointer;" title="upload foto?"  id="foto' + data[i].id + '" onClick="tampil_modal_upload(' + data[i].id+ ')"><i class="flaticon-photo-camera text-primary"></i></div>'
             baris += ' <div style="cursor:pointer;" title="edit?"  id="edit' + data[i].id + '" onClick="tryEdit(' + data[i].id+ ')"><i class="flaticon2-pen text-success"></i></div>'
-           	baris += ' <div style="cursor:pointer;" title="view?" id="view' + data[i].id + '" onClick="tryView(' + data[i].id+ ')"><i class="flaticon-eye text-primary"></i></div>'
+            // baris += ' <div style="cursor:pointer;" title="view?" id="cetak' + data[i].id + '" onClick="tryCetak(' + data[i].id+ ')"><i class="flaticon-eye text-primary"></i></div>'
+            baris += ' <div style="cursor:pointer;" title="view?" id="view' + data[i].id + '" onClick="tryView(' + data[i].id+ ')"><i class="flaticon-eye text-primary"></i></div>'
             baris += '<td>' + (i + 1) + '</td>'
             baris += '<td>' + data[i].tgl_update + '</td>'
             baris += '<td>' + data[i].id_karyawan + '</td>'
@@ -2707,126 +2711,6 @@
         }
       });
   }
-
-  function tampil_modal_upload_arsip(id){
-    //   document.getElementById("jenis_pernyataan").value = "";
-      document.getElementById("file_sd").value = "";
-      document.getElementById("file_smp").value = "";
-      document.getElementById("file_sma").value = "";
-      document.getElementById("file_s1").value = "";
-      document.getElementById("file_s2").value = "";
-      document.getElementById("file_s3").value = "";
-      document.getElementById("file_profesi").value = "";
-      document.getElementById("file_sk").value = "";
-      document.getElementById("file_penempatan").value = "";
-      document.getElementById("file_str").value = "";
-      document.getElementById("file_sip").value = "";
-      document.getElementById("file_skp").value = "";
-
-      var tombol = '<button type="button" onclick="berkas_arsip('+id+')" id="simpan_arsip" class="btn btn-block btn-info"><div id="loader_upload_arsip"> </div> Simpan</button>';
-      $("#div_upload_arsip").html(tombol);
-
-      $('#modalArsip').modal('show');
-    }
-
-	function berkas_arsip(id) {
-      // console.log(id);
-      if(document.getElementById("file_sd").value == ""){
-        document.getElementById("file_sd").focus();
-	  } else if(document.getElementById("file_smp").value == ""){
-        document.getElementById("file_smp").focus();
-	  } else if(document.getElementById("file_sma").value == ""){
-        document.getElementById("file_sma").focus();
-	  } else if(document.getElementById("file_s1").value == ""){
-        document.getElementById("file_s1").focus();
-	  } else if(document.getElementById("file_s2").value == ""){
-        document.getElementById("file_s2").focus();
-	  } else if(document.getElementById("file_s3").value == ""){
-        document.getElementById("file_s3").focus();
-	  } else if(document.getElementById("file_profesi").value == ""){
-        document.getElementById("file_profesi").focus();
-	  } else if(document.getElementById("file_sk").value == ""){
-        document.getElementById("file_sk").focus();
-	  } else if(document.getElementById("file_penempatan").value == ""){
-        document.getElementById("file_penempatan").focus();
-	  } else if(document.getElementById("file_str").value == ""){
-        document.getElementById("file_str").focus();
-	  } else if(document.getElementById("file_sip").value == ""){
-        document.getElementById("file_sip").focus();
-	  } else if(document.getElementById("file_skp").value == ""){
-        document.getElementById("file_skp").focus();
-      } else{
-        var format = $('#file_sd').prop('files')[0].type;
-        var format = $('#file_smp').prop('files')[0].type;
-        var format = $('#file_sma').prop('files')[0].type;
-        var format = $('#file_s1').prop('files')[0].type;
-        var format = $('#file_s2').prop('files')[0].type;
-        var format = $('#file_s3').prop('files')[0].type;
-        var format = $('#file_profesi').prop('files')[0].type;
-        var format = $('#file_sk').prop('files')[0].type;
-        var format = $('#file_penempatan').prop('files')[0].type;
-        var format = $('#file_str').prop('files')[0].type;
-        var format = $('#file_sip').prop('files')[0].type;
-        var format = $('#file_skp').prop('files')[0].type;
-        if (format.includes('pdf') ) {
-          var form_data = new FormData();
-          form_data.append('id', id);
-        //   form_data.append('jenis', document.getElementById("jenis_pernyataan").value);
-          form_data.append('file_sd', $('#file_sd').prop('files')[0]);
-          form_data.append('file_smp', $('#file_smp').prop('files')[0]);
-          form_data.append('file_sma', $('#file_sma').prop('files')[0]);
-          form_data.append('file_s1', $('#file_s1').prop('files')[0]);
-          form_data.append('file_s2', $('#file_s2').prop('files')[0]);
-          form_data.append('file_s3', $('#file_s3').prop('files')[0]);
-          form_data.append('file_profesi', $('#file_profesi').prop('files')[0]);
-          form_data.append('file_sk', $('#file_sk').prop('files')[0]);
-          form_data.append('file_penempatan', $('#file_penempatan').prop('files')[0]);
-          form_data.append('file_str', $('#file_str').prop('files')[0]);
-          form_data.append('file_sip', $('#file_sip').prop('files')[0]);
-          form_data.append('file_skp', $('#file_skp').prop('files')[0]);
-
-          $.ajax({
-            type: 'POST',
-            data: form_data,
-            url: '<?= base_url() ?>data_karyawan/upload_arsip',
-            processData:false,
-            contentType:false,
-            cache:false,
-            dataType: 'json',
-            beforeSend: function () {
-              $('#simpan_arsip').attr('disabled', true);
-              $('#loader_upload_arsip').html('');
-              addSpinner($('#loader_upload_arsip'));
-            },
-            success: function(data) {
-              // alert(data);
-              // console.log(data);
-              $('#simpan_arsip').attr('disabled', false);
-              removeSpinner($('#loader_upload_arsip'), function () {
-                $('#loader_upload_arsip').html('');
-              });
-            //   ambil_data();
-              $('#modal-arsip').modal('hide');
-              Swal.fire({
-                position: 'center',
-                icon: 'success',
-                title: 'Data Berhasil Diupload',
-                showConfirmButton: false,
-                timer: 2500
-              });
-            }
-          });
-        }else{
-           Swal.fire({
-              position: 'center',
-              icon: 'error',
-              title: 'Type file harus PDF',
-              showConfirmButton: false,
-              timer: 2500
-            });
-        }
-      }
-  	}
 
   function tampil_modal_upload(id){
     //   document.getElementById("jenis_pernyataan").value = "";
@@ -2891,7 +2775,7 @@
             });
         }
       }
-  	}
+  }
 
 
   function tryTambah() {

@@ -62,6 +62,36 @@ class data_karyawan extends CI_Controller
 		// echo json_encode($nama);
 	}
 
+	function upload_arsip()
+	{
+		$user = $this->db_model->get_where('karyawan', array('id' => $this->input->post('id', TRUE)))->row();
+		$nama = $user->nama ;
+		// $nama = $user->tanggal_antri . "_" . $user->id . "_" . $user->nama;
+
+		$config['allowed_types'] = 'jpg';
+		$config['upload_path'] = './assets/arsip_karyawan/';
+		$config['file_name'] = $nama;
+
+		$this->load->library('upload', $config);
+
+		// unlink('./document/pernyataan/'.$nama);
+
+		if ($this->upload->do_upload('berkas_foto')) {
+
+			$namaFotoBaru = $this->upload->data('file_name');
+
+			$data = [
+				"foto" => $namaFotoBaru
+				// "tindakan" => $this->input->post('jenis', TRUE),
+			];
+
+			echo json_encode($this->db_model->update("karyawan", $data, array('id' => $this->input->post("id", TRUE))));
+		} else {
+			echo json_encode($this->upload->display_errors());
+		}
+		// echo json_encode($nama);
+	}
+
 	// public function tambah()
 	// {
 	// 	$config['upload_path'] ='.assets/foto_karyawan';

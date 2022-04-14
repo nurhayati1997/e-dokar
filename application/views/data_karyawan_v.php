@@ -2664,6 +2664,37 @@
 										</div>
 									</div>
 								</div>
+						
+						<!-- Tambah sd-->
+							<div class="modal fade" id="modalsd" tabindex="-1" role="dialog" aria-labelledby="modal-form" aria-hidden="true">	
+								<div class="modal-dialog modal- modal-dialog-centered modal-sm" role="document">
+									<div class="modal-content">
+										<div class="modal-body p-0">
+											<div class="card bg-secondary border-0 mb-0">
+												<div class="card-header bg-success pb-1">
+													<div class="text-muted text-center mt-2 mb-3">
+														<span class="text-white">Form Tambah Ijazah SD Karyawan </span>
+													</div>
+												</div>
+												<div class="card-body px-lg-5 py-lg-5">
+													<form role="form">
+														<div class="form-group mb-3">
+															<div class="custom-file">
+																<input type="file" class="custom-file-input" id="berkas_sd" accept="application/pdf" />
+																<label class="custom-file-label" for="berkas_sd">Foto Harus format PDF</label>
+															</div>
+														</div>
+
+														
+														<div id="div_upload_sd">
+														</div>
+													</form>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
 
 							<!--end::Container-->
 						</div>
@@ -2673,7 +2704,7 @@
 
   function tampilkan(){
     $("#tempatTabel").html('<i class="fas fa-spinner fa-pulse"></i> Memuat...')
-    var baris = '<table class="table table-separate table-head-custom table-checkable" id="tabelUser"><thead class="thead-light"><tr><th>Action</th><th>Upload Ijazah</th><th>NO</th><th>Update</th><th>ID</th><th>Nama</th><th>Foto</th><th>Ruangan</th><th>Jabatan</th><th>Status Karyawan</th><th>Pendidikan</th><th>Jenis Tenaga</th></tr></thead>'
+    var baris = '<table class="table table-separate table-head-custom table-checkable" id="tabelUser"><thead class="thead-light"><tr><th>Action</th><th>NO</th><th>Update</th><th>ID</th><th>Nama</th><th>Foto</th><th>Ruangan</th><th>Jabatan</th><th>Status Karyawan</th><th>Pendidikan</th><th>Jenis Tenaga</th><th>Ijazah Sekolah</th><th>Ijazah Kuliah</th><th>SK</th><th>Berkas Lain</th></tr></thead>'
       $.ajax({
         type:'POST',
         url: '<?= base_url() ?>data_karyawan/tampil',
@@ -2688,13 +2719,6 @@
             baris += ' <div style="cursor:pointer;" title="edit?"  id="edit' + data[i].id + '" onClick="tryEdit(' + data[i].id+ ')"><i class="flaticon2-pen text-success"></i></div>'
            	baris += ' <div style="cursor:pointer;" title="view?" id="view' + data[i].id + '" onClick="tryView(' + data[i].id+ ')"><i class="flaticon-eye text-primary"></i></div>'
 
-			
-			baris += '<td><div style="cursor:pointer;" title="hapus?" id="hapus' + data[i].id + '" onClick="tryHapus(' + data[i].id+ ')"><i class="btn btn-light btn-shadow font-weight-bold mr-2">SD</i></div>'
-            baris += ' <div style="cursor:pointer;" title="upload foto?"  id="foto' + data[i].id + '" onClick="tampil_modal_upload(' + data[i].id+ ')"><i class="btn btn-success btn-shadow font-weight-bold mr-2">SMP</i></div>'
-            baris += ' <div style="cursor:pointer;" title="edit?"  id="edit' + data[i].id + '" onClick="tryEdit(' + data[i].id+ ')"><i class="btn btn-primary btn-shadow font-weight-bold mr-2">SMA</i></div>'
-           	// baris += ' <div style="cursor:pointer;" title="view?" id="view' + data[i].id + '" onClick="tryView(' + data[i].id+ ')"><i class="flaticon-eye text-primary"></i></div>'
-
-
             baris += '<td>' + (i + 1) + '</td>'
             baris += '<td>' + data[i].tgl_update + '</td>'
             baris += '<td>' + data[i].id_karyawan + '</td>'
@@ -2705,6 +2729,25 @@
             baris += '<td>' + data[i].status_karyawan + '</td>'
             baris += '<td>' + data[i]. jenis_pendidikan+ '</td>'
             baris += '<td>' + data[i]. jenis_tenaga+ '</td>'
+
+			
+			baris += '<td><div style="cursor:pointer;" title="upload ijazah SD?" id="sd' + data[i].id + '" onClick="tampil_modal_upload_sd(' + data[i].id+ ')"><i class="btn btn-light btn-shadow font-weight-bold mr-2">SD</i></div>'
+            baris += ' <div style="cursor:pointer;" title="upload foto?"  id="foto' + data[i].id + '" onClick="tampil_modal_upload(' + data[i].id+ ')"><i class="btn btn-success btn-shadow font-weight-bold mr-2">SMP</i></div>'
+            baris += ' <div style="cursor:pointer;" title="edit?"  id="edit' + data[i].id + '" onClick="tryEdit(' + data[i].id+ ')"><i class="btn btn-primary btn-shadow font-weight-bold mr-2">SMA</i></div>'
+           	// baris += ' <div style="cursor:pointer;" title="view?" id="view' + data[i].id + '" onClick="tryView(' + data[i].id+ ')"><i class="flaticon-eye text-primary"></i></div>'
+
+			baris += '<td><div style="cursor:pointer;" title="hapus?" id="hapus' + data[i].id + '" onClick="tryHapus(' + data[i].id+ ')"><i class="btn btn-danger btn-shadow font-weight-bold mr-2">S1</i></div>'
+            baris += ' <div style="cursor:pointer;" title="upload foto?"  id="foto' + data[i].id + '" onClick="tampil_modal_upload(' + data[i].id+ ')"><i class="btn btn-warning btn-shadow font-weight-bold mr-2">S2</i></div>'
+            baris += ' <div style="cursor:pointer;" title="edit?"  id="edit' + data[i].id + '" onClick="tryEdit(' + data[i].id+ ')"><i class="btn btn-light btn-shadow font-weight-bold mr-2">S3</i></div>'
+
+			baris += '<td><div style="cursor:pointer;" title="hapus?" id="hapus' + data[i].id + '" onClick="tryHapus(' + data[i].id+ ')"><i class="btn btn-success btn-shadow font-weight-bold mr-2">Sk</i></div>'
+            baris += ' <div style="cursor:pointer;" title="upload foto?"  id="foto' + data[i].id + '" onClick="tampil_modal_upload(' + data[i].id+ ')"><i class="btn btn-primary btn-shadow font-weight-bold mr-2">Sk Penempatan</i></div>'
+            baris += ' <div style="cursor:pointer;" title="edit?"  id="edit' + data[i].id + '" onClick="tryEdit(' + data[i].id+ ')"><i class="btn btn-danger btn-shadow font-weight-bold mr-2">SKP</i></div>'
+
+			baris += '<td><div style="cursor:pointer;" title="hapus?" id="hapus' + data[i].id + '" onClick="tryHapus(' + data[i].id+ ')"><i class="btn btn-success btn-shadow font-weight-bold mr-2">Ijazah Profesi</i></div>'
+			baris += ' <div style="cursor:pointer;" title="upload foto?"  id="foto' + data[i].id + '" onClick="tampil_modal_upload(' + data[i].id+ ')"><i class="btn btn-warning btn-shadow font-weight-bold mr-2">STR</i></div>'
+            baris += ' <div style="cursor:pointer;" title="edit?"  id="edit' + data[i].id + '" onClick="tryEdit(' + data[i].id+ ')"><i class="btn btn-light btn-shadow font-weight-bold mr-2">SIP</i></div>'
+
             baris += '</td></tr>'
           }
           baris += '</tbody></table>'
@@ -2716,127 +2759,8 @@
       });
   }
 
-  function tampil_modal_upload_arsip(id){
-    //   document.getElementById("jenis_pernyataan").value = "";
-      document.getElementById("file_sd").value = "";
-      document.getElementById("file_smp").value = "";
-      document.getElementById("file_sma").value = "";
-      document.getElementById("file_s1").value = "";
-      document.getElementById("file_s2").value = "";
-      document.getElementById("file_s3").value = "";
-      document.getElementById("file_profesi").value = "";
-      document.getElementById("file_sk").value = "";
-      document.getElementById("file_penempatan").value = "";
-      document.getElementById("file_str").value = "";
-      document.getElementById("file_sip").value = "";
-      document.getElementById("file_skp").value = "";
 
-      var tombol = '<button type="button" onclick="berkas_arsip('+id+')" id="simpan_arsip" class="btn btn-block btn-info"><div id="loader_upload_arsip"> </div> Simpan</button>';
-      $("#div_upload_arsip").html(tombol);
-
-      $('#modalArsip').modal('show');
-    }
-
-	function berkas_arsip(id) {
-      // console.log(id);
-      if(document.getElementById("file_sd").value == ""){
-        document.getElementById("file_sd").focus();
-	  } else if(document.getElementById("file_smp").value == ""){
-        document.getElementById("file_smp").focus();
-	  } else if(document.getElementById("file_sma").value == ""){
-        document.getElementById("file_sma").focus();
-	  } else if(document.getElementById("file_s1").value == ""){
-        document.getElementById("file_s1").focus();
-	  } else if(document.getElementById("file_s2").value == ""){
-        document.getElementById("file_s2").focus();
-	  } else if(document.getElementById("file_s3").value == ""){
-        document.getElementById("file_s3").focus();
-	  } else if(document.getElementById("file_profesi").value == ""){
-        document.getElementById("file_profesi").focus();
-	  } else if(document.getElementById("file_sk").value == ""){
-        document.getElementById("file_sk").focus();
-	  } else if(document.getElementById("file_penempatan").value == ""){
-        document.getElementById("file_penempatan").focus();
-	  } else if(document.getElementById("file_str").value == ""){
-        document.getElementById("file_str").focus();
-	  } else if(document.getElementById("file_sip").value == ""){
-        document.getElementById("file_sip").focus();
-	  } else if(document.getElementById("file_skp").value == ""){
-        document.getElementById("file_skp").focus();
-      } else{
-        var format = $('#file_sd').prop('files')[0].type;
-        var format = $('#file_smp').prop('files')[0].type;
-        var format = $('#file_sma').prop('files')[0].type;
-        var format = $('#file_s1').prop('files')[0].type;
-        var format = $('#file_s2').prop('files')[0].type;
-        var format = $('#file_s3').prop('files')[0].type;
-        var format = $('#file_profesi').prop('files')[0].type;
-        var format = $('#file_sk').prop('files')[0].type;
-        var format = $('#file_penempatan').prop('files')[0].type;
-        var format = $('#file_str').prop('files')[0].type;
-        var format = $('#file_sip').prop('files')[0].type;
-        var format = $('#file_skp').prop('files')[0].type;
-        if (format.includes('pdf') ) {
-          var form_data = new FormData();
-          form_data.append('id', id);
-        //   form_data.append('jenis', document.getElementById("jenis_pernyataan").value);
-          form_data.append('file_sd', $('#file_sd').prop('files')[0]);
-          form_data.append('file_smp', $('#file_smp').prop('files')[0]);
-          form_data.append('file_sma', $('#file_sma').prop('files')[0]);
-          form_data.append('file_s1', $('#file_s1').prop('files')[0]);
-          form_data.append('file_s2', $('#file_s2').prop('files')[0]);
-          form_data.append('file_s3', $('#file_s3').prop('files')[0]);
-          form_data.append('file_profesi', $('#file_profesi').prop('files')[0]);
-          form_data.append('file_sk', $('#file_sk').prop('files')[0]);
-          form_data.append('file_penempatan', $('#file_penempatan').prop('files')[0]);
-          form_data.append('file_str', $('#file_str').prop('files')[0]);
-          form_data.append('file_sip', $('#file_sip').prop('files')[0]);
-          form_data.append('file_skp', $('#file_skp').prop('files')[0]);
-
-          $.ajax({
-            type: 'POST',
-            data: form_data,
-            url: '<?= base_url() ?>data_karyawan/upload_arsip',
-            processData:false,
-            contentType:false,
-            cache:false,
-            dataType: 'json',
-            beforeSend: function () {
-              $('#simpan_arsip').attr('disabled', true);
-              $('#loader_upload_arsip').html('');
-              addSpinner($('#loader_upload_arsip'));
-            },
-            success: function(data) {
-              // alert(data);
-              // console.log(data);
-              $('#simpan_arsip').attr('disabled', false);
-              removeSpinner($('#loader_upload_arsip'), function () {
-                $('#loader_upload_arsip').html('');
-              });
-            //   ambil_data();
-              $('#modal-arsip').modal('hide');
-              Swal.fire({
-                position: 'center',
-                icon: 'success',
-                title: 'Data Berhasil Diupload',
-                showConfirmButton: false,
-                timer: 2500
-              });
-            }
-          });
-        }else{
-           Swal.fire({
-              position: 'center',
-              icon: 'error',
-              title: 'Type file harus PDF',
-              showConfirmButton: false,
-              timer: 2500
-            });
-        }
-      }
-  	}
-
-  function tampil_modal_upload(id){
+  	function tampil_modal_upload(id){
     //   document.getElementById("jenis_pernyataan").value = "";
       document.getElementById("berkas_foto").value = "";
 
@@ -2901,8 +2825,75 @@
       }
   	}
 
+	
+	  function tampil_modal_upload_sd(id){
+    //   document.getElementById("jenis_pernyataan").value = "";
+      document.getElementById("berkas_sd").value = "";
 
-  function tryTambah() {
+      var tombol = '<button type="button" onclick="pernyataan_sd('+id+')" id="simpan_pernyataan_sd" class="btn btn-block btn-info"><div id="loader_upload_sd"> </div> Simpan</button>';
+      $("#div_upload_sd").html(tombol);
+
+      $('#modalsd').modal('show');
+    }
+
+	function pernyataan_sd(id) {
+      // console.log(id);
+      if(document.getElementById("berkas_sd").value == ""){
+        document.getElementById("berkas_sd").focus();
+      } else{
+        var format = $('#berkas_sd').prop('files')[0].type;
+        if (format.includes('pdf')) {
+          var form_data = new FormData();
+          form_data.append('id', id);
+        //   form_data.append('jenis', document.getElementById("jenis_pernyataan").value);
+          form_data.append('berkas_sd', $('#berkas_sd').prop('files')[0]);
+
+          $.ajax({
+            type: 'POST',
+            data: form_data,
+            url: '<?= base_url() ?>data_karyawan/upload_pernyataan_sd',
+            processData:false,
+            contentType:false,
+            cache:false,
+            dataType: 'json',
+            beforeSend: function () {
+              $('#simpan_pernyataan_sd').attr('disabled', true);
+              $('#loader_upload_sd').html('');
+              addSpinner($('#loader_upload_sd'));
+            },
+            success: function(data) {
+              // alert(data);
+              // console.log(data);
+              $('#simpan_pernyataan_sd').attr('disabled', false);
+              removeSpinner($('#loader_upload_sd'), function () {
+                $('#loader_upload_sd').html('');
+              });
+            //   ambil_data();
+              $('#modal-upload').modal('hide');
+              Swal.fire({
+                position: 'center',
+                icon: 'success',
+                title: 'Data Berhasil Diupload',
+                showConfirmButton: false,
+                timer: 2500
+              });
+            }
+          });
+        }else{
+           Swal.fire({
+              position: 'center',
+              icon: 'error',
+              title: 'Type file harus PDF atau JPEG atau JPG',
+              showConfirmButton: false,
+              timer: 2500
+            });
+        }
+      }
+  	}
+
+
+  
+	  function tryTambah() {
     $("#id_karyawan").val("")
     $("#nama").val("")
     $("#email").val("")

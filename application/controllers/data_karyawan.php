@@ -62,6 +62,35 @@ class data_karyawan extends CI_Controller
 		// echo json_encode($nama);
 	}
 
+	function upload_pernyataan_sd()
+	{
+		$user = $this->db_model->get_where('karyawan', array('id' => $this->input->post('id', TRUE)))->row();
+		$nama = "Ijazah SD_" .$user->nama ;
+		// $nama = $user->tanggal_antri . "_" . $user->id . "_" . $user->nama;
+
+		$config['allowed_types'] = 'pdf';
+		$config['upload_path'] = './assets/arsip_karyawan/';
+		$config['file_name'] = $nama;
+
+		$this->load->library('upload', $config);
+
+		// unlink('./document/pernyataan/'.$nama);
+
+		if ($this->upload->do_upload('berkas_sd')) {
+
+			$namaFotoBaru = $this->upload->data('file_name');
+
+			$data = [
+				"file_sd" => $namaFotoBaru
+				// "tindakan" => $this->input->post('jenis', TRUE),
+			];
+
+			echo json_encode($this->db_model->update("karyawan", $data, array('id' => $this->input->post("id", TRUE))));
+		} else {
+			echo json_encode($this->upload->display_errors());
+		}
+		// echo json_encode($nama);
+	}
 	function upload_arsip()
 	{
 		$user = $this->db_model->get_where('karyawan', array('id' => $this->input->post('id', TRUE)))->row();

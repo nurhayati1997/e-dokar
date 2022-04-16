@@ -91,6 +91,340 @@ class data_karyawan extends CI_Controller
 		}
 		// echo json_encode($nama);
 	}
+
+	function upload_pernyataan_smp()
+	{
+		$user = $this->db_model->get_where('karyawan', array('id' => $this->input->post('id', TRUE)))->row();
+		$nama = "Ijazah SMP_" .$user->nama ;
+		// $nama = $user->tanggal_antri . "_" . $user->id . "_" . $user->nama;
+
+		$config['allowed_types'] = 'pdf';
+		$config['upload_path'] = './assets/arsip_karyawan/';
+		$config['file_name'] = $nama;
+
+		$this->load->library('upload', $config);
+
+		// unlink('./document/pernyataan/'.$nama);
+
+		if ($this->upload->do_upload('berkas_smp')) {
+
+			$namaFotoBaru = $this->upload->data('file_name');
+
+			$data = [
+				"file_smp" => $namaFotoBaru
+				// "tindakan" => $this->input->post('jenis', TRUE),
+			];
+
+			echo json_encode($this->db_model->update("karyawan", $data, array('id' => $this->input->post("id", TRUE))));
+		} else {
+			echo json_encode($this->upload->display_errors());
+		}
+		// echo json_encode($nama);
+	}
+
+	function upload_pernyataan_sma()
+	{
+		$user = $this->db_model->get_where('karyawan', array('id' => $this->input->post('id', TRUE)))->row();
+		$nama = "Ijazah SMA_" .$user->nama ;
+		// $nama = $user->tanggal_antri . "_" . $user->id . "_" . $user->nama;
+
+		$config['allowed_types'] = 'pdf';
+		$config['upload_path'] = './assets/arsip_karyawan/';
+		$config['file_name'] = $nama;
+
+		$this->load->library('upload', $config);
+
+		// unlink('./document/pernyataan/'.$nama);
+
+		if ($this->upload->do_upload('berkas_sma')) {
+
+			$namaFotoBaru = $this->upload->data('file_name');
+
+			$data = [
+				"file_sma" => $namaFotoBaru
+				// "tindakan" => $this->input->post('jenis', TRUE),
+			];
+
+			echo json_encode($this->db_model->update("karyawan", $data, array('id' => $this->input->post("id", TRUE))));
+		} else {
+			echo json_encode($this->upload->display_errors());
+		}
+		// echo json_encode($nama);
+	}
+
+	function upload_pernyataan_s1()
+	{
+		$user = $this->db_model->get_where('karyawan', array('id' => $this->input->post('id', TRUE)))->row();
+		$nama = "Ijazah S1_" .$user->nama ;
+		// $nama = $user->tanggal_antri . "_" . $user->id . "_" . $user->nama;
+
+		$config['allowed_types'] = 'pdf';
+		$config['upload_path'] = './assets/arsip_karyawan/';
+		$config['file_name'] = $nama;
+
+		$this->load->library('upload', $config);
+
+		// unlink('./document/pernyataan/'.$nama);
+
+		if ($this->upload->do_upload('berkas_s1')) {
+
+			$namaFotoBaru = $this->upload->data('file_name');
+
+			$data = [
+				"file_s1" => $namaFotoBaru
+				// "tindakan" => $this->input->post('jenis', TRUE),
+			];
+
+			echo json_encode($this->db_model->update("karyawan", $data, array('id' => $this->input->post("id", TRUE))));
+		} else {
+			echo json_encode($this->upload->display_errors());
+		}
+		// echo json_encode($nama);
+	}
+
+	function upload_pernyataan_s2()
+	{
+		$user = $this->db_model->get_where('karyawan', array('id' => $this->input->post('id', TRUE)))->row();
+		$nama = "Ijazah S2_" .$user->nama ;
+		// $nama = $user->tanggal_antri . "_" . $user->id . "_" . $user->nama;
+
+		$config['allowed_types'] = 'pdf';
+		$config['upload_path'] = './assets/arsip_karyawan/';
+		$config['file_name'] = $nama;
+
+		$this->load->library('upload', $config);
+
+		// unlink('./document/pernyataan/'.$nama);
+
+		if ($this->upload->do_upload('berkas_s2')) {
+
+			$namaFotoBaru = $this->upload->data('file_name');
+
+			$data = [
+				"file_s2" => $namaFotoBaru
+				// "tindakan" => $this->input->post('jenis', TRUE),
+			];
+
+			echo json_encode($this->db_model->update("karyawan", $data, array('id' => $this->input->post("id", TRUE))));
+		} else {
+			echo json_encode($this->upload->display_errors());
+		}
+		// echo json_encode($nama);
+	}
+
+	function upload_pernyataan_s3()
+	{
+		$user = $this->db_model->get_where('karyawan', array('id' => $this->input->post('id', TRUE)))->row();
+		$nama = "Ijazah S3_" .$user->nama ;
+		// $nama = $user->tanggal_antri . "_" . $user->id . "_" . $user->nama;
+
+		$config['allowed_types'] = 'pdf';
+		$config['upload_path'] = './assets/arsip_karyawan/';
+		$config['file_name'] = $nama;
+
+		$this->load->library('upload', $config);
+
+		// unlink('./document/pernyataan/'.$nama);
+
+		if ($this->upload->do_upload('berkas_s3')) {
+
+			$namaFotoBaru = $this->upload->data('file_name');
+
+			$data = [
+				"file_s3" => $namaFotoBaru
+				// "tindakan" => $this->input->post('jenis', TRUE),
+			];
+
+			echo json_encode($this->db_model->update("karyawan", $data, array('id' => $this->input->post("id", TRUE))));
+		} else {
+			echo json_encode($this->upload->display_errors());
+		}
+		// echo json_encode($nama);
+	}
+
+	function upload_pernyataan_sk()
+	{
+		$user = $this->db_model->get_where('karyawan', array('id' => $this->input->post('id', TRUE)))->row();
+		$nama = "SK_" .$user->nama ;
+		// $nama = $user->tanggal_antri . "_" . $user->id . "_" . $user->nama;
+
+		$config['allowed_types'] = 'pdf';
+		$config['upload_path'] = './assets/arsip_karyawan/';
+		$config['file_name'] = $nama;
+
+		$this->load->library('upload', $config);
+
+		// unlink('./document/pernyataan/'.$nama);
+
+		if ($this->upload->do_upload('berkas_sk')) {
+
+			$namaFotoBaru = $this->upload->data('file_name');
+
+			$data = [
+				"file_sk" => $namaFotoBaru
+				// "tindakan" => $this->input->post('jenis', TRUE),
+			];
+
+			echo json_encode($this->db_model->update("karyawan", $data, array('id' => $this->input->post("id", TRUE))));
+		} else {
+			echo json_encode($this->upload->display_errors());
+		}
+		// echo json_encode($nama);
+	}
+
+	function upload_pernyataan_penempatan()
+	{
+		$user = $this->db_model->get_where('karyawan', array('id' => $this->input->post('id', TRUE)))->row();
+		$nama = "SK_PENEMPATAN_" .$user->nama ;
+		// $nama = $user->tanggal_antri . "_" . $user->id . "_" . $user->nama;
+
+		$config['allowed_types'] = 'pdf';
+		$config['upload_path'] = './assets/arsip_karyawan/';
+		$config['file_name'] = $nama;
+
+		$this->load->library('upload', $config);
+
+		// unlink('./document/pernyataan/'.$nama);
+
+		if ($this->upload->do_upload('berkas_penempatan')) {
+
+			$namaFotoBaru = $this->upload->data('file_name');
+
+			$data = [
+				"file_penempatan" => $namaFotoBaru
+				// "tindakan" => $this->input->post('jenis', TRUE),
+			];
+
+			echo json_encode($this->db_model->update("karyawan", $data, array('id' => $this->input->post("id", TRUE))));
+		} else {
+			echo json_encode($this->upload->display_errors());
+		}
+		// echo json_encode($nama);
+	}
+
+	function upload_pernyataan_skp()
+	{
+		$user = $this->db_model->get_where('karyawan', array('id' => $this->input->post('id', TRUE)))->row();
+		$nama = "SKP_" .$user->nama ;
+		// $nama = $user->tanggal_antri . "_" . $user->id . "_" . $user->nama;
+
+		$config['allowed_types'] = 'pdf';
+		$config['upload_path'] = './assets/arsip_karyawan/';
+		$config['file_name'] = $nama;
+
+		$this->load->library('upload', $config);
+
+		// unlink('./document/pernyataan/'.$nama);
+
+		if ($this->upload->do_upload('berkas_skp')) {
+
+			$namaFotoBaru = $this->upload->data('file_name');
+
+			$data = [
+				"file_skp" => $namaFotoBaru
+				// "tindakan" => $this->input->post('jenis', TRUE),
+			];
+
+			echo json_encode($this->db_model->update("karyawan", $data, array('id' => $this->input->post("id", TRUE))));
+		} else {
+			echo json_encode($this->upload->display_errors());
+		}
+		// echo json_encode($nama);
+	}
+
+	function upload_pernyataan_profesi()
+	{
+		$user = $this->db_model->get_where('karyawan', array('id' => $this->input->post('id', TRUE)))->row();
+		$nama = "Ijazah Profesi_" .$user->nama ;
+		// $nama = $user->tanggal_antri . "_" . $user->id . "_" . $user->nama;
+
+		$config['allowed_types'] = 'pdf';
+		$config['upload_path'] = './assets/arsip_karyawan/';
+		$config['file_name'] = $nama;
+
+		$this->load->library('upload', $config);
+
+		// unlink('./document/pernyataan/'.$nama);
+
+		if ($this->upload->do_upload('berkas_profesi')) {
+
+			$namaFotoBaru = $this->upload->data('file_name');
+
+			$data = [
+				"file_profesi" => $namaFotoBaru
+				// "tindakan" => $this->input->post('jenis', TRUE),
+			];
+
+			echo json_encode($this->db_model->update("karyawan", $data, array('id' => $this->input->post("id", TRUE))));
+		} else {
+			echo json_encode($this->upload->display_errors());
+		}
+		// echo json_encode($nama);
+	}
+
+	function upload_pernyataan_str()
+	{
+		$user = $this->db_model->get_where('karyawan', array('id' => $this->input->post('id', TRUE)))->row();
+		$nama = "STR_" .$user->nama ;
+		// $nama = $user->tanggal_antri . "_" . $user->id . "_" . $user->nama;
+
+		$config['allowed_types'] = 'pdf';
+		$config['upload_path'] = './assets/arsip_karyawan/';
+		$config['file_name'] = $nama;
+
+		$this->load->library('upload', $config);
+
+		// unlink('./document/pernyataan/'.$nama);
+
+		if ($this->upload->do_upload('berkas_str')) {
+
+			$namaFotoBaru = $this->upload->data('file_name');
+
+			$data = [
+				"file_str" => $namaFotoBaru
+				// "tindakan" => $this->input->post('jenis', TRUE),
+			];
+
+			echo json_encode($this->db_model->update("karyawan", $data, array('id' => $this->input->post("id", TRUE))));
+		} else {
+			echo json_encode($this->upload->display_errors());
+		}
+		// echo json_encode($nama);
+	}
+
+	function upload_pernyataan_sip()
+	{
+		$user = $this->db_model->get_where('karyawan', array('id' => $this->input->post('id', TRUE)))->row();
+		$nama = "SIP_" .$user->nama ;
+		// $nama = $user->tanggal_antri . "_" . $user->id . "_" . $user->nama;
+
+		$config['allowed_types'] = 'pdf';
+		$config['upload_path'] = './assets/arsip_karyawan/';
+		$config['file_name'] = $nama;
+
+		$this->load->library('upload', $config);
+
+		// unlink('./document/pernyataan/'.$nama);
+
+		if ($this->upload->do_upload('berkas_sip')) {
+
+			$namaFotoBaru = $this->upload->data('file_name');
+
+			$data = [
+				"file_sip" => $namaFotoBaru
+				// "tindakan" => $this->input->post('jenis', TRUE),
+			];
+
+			echo json_encode($this->db_model->update("karyawan", $data, array('id' => $this->input->post("id", TRUE))));
+		} else {
+			echo json_encode($this->upload->display_errors());
+		}
+		// echo json_encode($nama);
+	}
+
+
+
+
 	function upload_arsip()
 	{
 		$user = $this->db_model->get_where('karyawan', array('id' => $this->input->post('id', TRUE)))->row();

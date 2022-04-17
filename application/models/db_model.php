@@ -4,7 +4,7 @@ class Db_model extends CI_Model
     public function ambil_data($tabel)
     {
         $date= date('Y-m-d');
-        return $this->db->get_where($tabel, array ('tgl_daftar_swab'=> $date));
+        return $this->db->get_where($tabel, array ('masa_sip'=> $date));
     }
     
     public function ambil_data_belumambilobat($tabel)
@@ -287,6 +287,8 @@ class Db_model extends CI_Model
         $this->db->insert($tabel, $data);
         return $this->db->insert_id();
     }
+
+
     // function getWarningStock($tabel)
     // {
     //     $this->db->order_by('stok_barang ASC');

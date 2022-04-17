@@ -32,6 +32,31 @@ class data_karyawan extends CI_Controller
 		
 	}
 
+	public function str_sip()
+	{
+		echo json_encode($this->db_model->all_data("v_bulan_ini")->result());
+	}
+
+	public function berkala()
+	{
+		echo json_encode($this->db_model->all_data("v_berkala_bulan_ini")->result());
+	}
+
+	public function reguler()
+	{
+		echo json_encode($this->db_model->all_data("v_reguler_bulan_ini")->result());
+	}
+
+	public function fungsional()
+	{
+		echo json_encode($this->db_model->all_data("v_fungsional_bulan_ini")->result());
+	}
+
+	public function pensiun()
+	{
+		echo json_encode($this->db_model->all_data("v_pensiun")->result());
+	}
+
 	function upload_pernyataan()
 	{
 		$user = $this->db_model->get_where('karyawan', array('id' => $this->input->post('id', TRUE)))->row();

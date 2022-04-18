@@ -672,8 +672,9 @@
 																			<div class="d-flex flex-column flex-center">
 																				<!--begin::Symbol-->
 																				<div class="symbol symbol-120 symbol-circle symbol-success overflow-hidden">
-																					<span class="symbol-label">
-																						<img src="https://preview.keenthemes.com/metronic/theme/html/demo2/dist/assets/media/svg/avatars/007-boy-2.svg" class="h-75 align-self-end" alt="" />
+																					<span class="symbol-label" id="view_foto">
+																						<!-- <img src="https://preview.keenthemes.com/metronic/theme/html/demo2/dist/assets/media/svg/avatars/007-boy-2.svg" class="h-75 align-self-end" alt="" /> -->
+																						<!-- <img src="#" id="view_foto" alt="" /> -->
 																					</span>
 																				</div>
 																				<!--end::Symbol-->
@@ -763,12 +764,7 @@
 																			<!--end::Icon-->
 																			<!--begin::Title-->
 																			<div class="d-flex flex-column flex-grow-1 mr-2">
-																				<a href="#" class="font-weight-bold text-dark-75 text-hover-primary font-size-lg mb-1">SK Penempatan</a>
-																				<form role="form">
-																					<div class="form-group mb-1">
-																						<input type="text" class="form-control" id="view_file_penempatan" disabled/>
-																					</div>
-																				</form><!-- <span class="text-muted font-weight-bold">Due in 2 Days</span> -->
+																				<a href="#" class="font-weight-bold text-dark-75 text-hover-primary font-size-lg mb-1" id="view_file_penempatan">SK Penempatan</a>
 																			</div>
 																		</div>
 																		<!--end::Item-->
@@ -791,12 +787,7 @@
 																			<!--end::Icon-->
 																			<!--begin::Title-->
 																			<div class="d-flex flex-column flex-grow-1 mr-2">
-																			<a href="#" class="font-weight-bold text-dark-75 text-hover-primary font-size-lg mb-1">SK KARYAWAN</a>
-																				<form role="form">
-																					<div class="form-group mb-1">
-																						<input type="text" class="form-control" id="view_file_sk" disabled/>
-																					</div>
-																				</form>
+																			<a href="#" class="font-weight-bold text-dark-75 text-hover-primary font-size-lg mb-1" id="view_file_sk">SK KARYAWAN</a>
 																			</div>
 																			<!--end::Title-->
 																			<!--begin::Lable-->
@@ -823,12 +814,7 @@
 																			<!--end::Icon-->
 																			<!--begin::Title-->
 																			<div class="d-flex flex-column flex-grow-1 mr-2">
-																				<a href="#" class="font-weight-bold text-dark-75 text-hover-primary font-size-lg mb-1">STR</a>
-																				<form role="form">
-																					<div class="form-group mb-1">
-																						<input type="text" class="form-control" id="view_file_str" disabled/>
-																					</div>
-																				</form>
+																				<a href="#"  class="font-weight-bold text-dark-75 text-hover-primary font-size-lg mb-1" id="view_file_str">STR</a>
 																			</div>
 																			<!--end::Title-->
 																			<!--begin::Lable-->
@@ -855,12 +841,7 @@
 																			<!--end::Icon-->
 																			<!--begin::Title-->
 																			<div class="d-flex flex-column flex-grow-1 mr-2">
-																				<a href="#" class="font-weight-bold text-dark-75 text-hover-primary font-size-lg mb-1">SKP</a>
-																				<form role="form">
-																					<div class="form-group mb-1">
-																						<input type="text" class="form-control" id="view_file_skp" disabled/>
-																					</div>
-																				</form>
+																				<a href="#" class="font-weight-bold text-dark-75 text-hover-primary font-size-lg mb-1" id="view_file_skp">SKP</a>
 																			</div>
 																			<!--end::Title-->
 																			<!--begin::Lable-->
@@ -869,7 +850,7 @@
 																		</div>
 																		<!--end::Item-->
 																		<!--begin::Item-->
-																		<div class="d-flex align-items-center bg-light-info rounded p-5">
+																		<div class="d-flex align-items-center bg-light-info rounded p-5 mb-9">
 																			<!--begin::Icon-->
 																			<span class="svg-icon svg-icon-info mr-5">
 																				<span class="svg-icon svg-icon-lg">
@@ -889,19 +870,12 @@
 																			<!--end::Icon-->
 																			<!--begin::Title-->
 																			<div class="d-flex flex-column flex-grow-1 mr-2">
-																			<div class="d-flex flex-column flex-grow-1 mr-2">
-																				<a href="#" class="font-weight-bold text-dark-75 text-hover-primary font-size-lg mb-1">SIP</a>
-																				<form role="form">
-																					<div class="form-group mb-1">
-																						<input type="text" class="form-control" id="view_file_sip" disabled/>
-																					</div>
-																				</form>
-																			</div>
+																				<a href="#" class="font-weight-bold text-dark-75 text-hover-primary font-size-lg mb-1" id="view_file_sip">SIP</a>
 																			</div>
 																		</div>
 																		<!--end::Item-->
 																		<!--begin::Item-->
-																		<div class="d-flex align-items-center mb-9 bg-light-warning rounded p-5">
+																		<div class="d-flex align-items-center mb-9 bg-light-warning rounded p-5 mb-9">
 																			<!--begin::Icon-->
 																			<span class="svg-icon svg-icon-warning mr-5">
 																				<span class="svg-icon svg-icon-lg">
@@ -919,12 +893,7 @@
 																			<!--end::Icon-->
 																			<!--begin::Title-->
 																			<div class="d-flex flex-column flex-grow-1 mr-2">
-																				<a href="#" class="font-weight-bold text-dark-75 text-hover-primary font-size-lg mb-1">Ijazah SD</a>
-																				<form role="form">
-																					<div class="form-group mb-1">
-																						<input type="text" class="form-control" id="view_file_sd" disabled/>
-																					</div>
-																				</form><!-- <span class="text-muted font-weight-bold">Due in 2 Days</span> -->
+																				<a href="#" class="font-weight-bold text-dark-75 text-hover-primary font-size-lg mb-1" id="view_file_sd">Ijazah SD</a>
 																			</div>
 																		</div>
 																		<!--end::Item-->
@@ -947,12 +916,7 @@
 																			<!--end::Icon-->
 																			<!--begin::Title-->
 																			<div class="d-flex flex-column flex-grow-1 mr-2">
-																			<a href="#" class="font-weight-bold text-dark-75 text-hover-primary font-size-lg mb-1">Ijazah SMP</a>
-																				<form role="form">
-																					<div class="form-group mb-1">
-																						<input type="text" class="form-control" id="view_file_smp" disabled/>
-																					</div>
-																				</form>
+																				<a href="#" class="font-weight-bold text-dark-75 text-hover-primary font-size-lg mb-1" id="view_file_smp">Ijazah SMP</a>
 																			</div>
 																			<!--end::Title-->
 																			<!--begin::Lable-->
@@ -979,12 +943,7 @@
 																			<!--end::Icon-->
 																			<!--begin::Title-->
 																			<div class="d-flex flex-column flex-grow-1 mr-2">
-																				<a href="#" class="font-weight-bold text-dark-75 text-hover-primary font-size-lg mb-1">Ijazah SMA</a>
-																				<form role="form">
-																					<div class="form-group mb-1">
-																						<input type="text" class="form-control" id="view_file_sma" disabled/>
-																					</div>
-																				</form>
+																				<a href="#" class="font-weight-bold text-dark-75 text-hover-primary font-size-lg mb-1" id="view_file_sma">Ijazah SMA</a>
 																			</div>
 																			<!--end::Title-->
 																			<!--begin::Lable-->
@@ -993,7 +952,7 @@
 																		</div>
 																		<!--end::Item-->
 																		<!--begin::Item-->
-																		<div class="d-flex align-items-center bg-light-info rounded p-5">
+																		<div class="d-flex align-items-center bg-light-info rounded p-5 mb-9">
 																			<!--begin::Icon-->
 																			<span class="svg-icon svg-icon-info mr-5">
 																				<span class="svg-icon svg-icon-lg">
@@ -1013,19 +972,12 @@
 																			<!--end::Icon-->
 																			<!--begin::Title-->
 																			<div class="d-flex flex-column flex-grow-1 mr-2">
-																			<div class="d-flex flex-column flex-grow-1 mr-2">
-																				<a href="#" class="font-weight-bold text-dark-75 text-hover-primary font-size-lg mb-1">Ijazah SI</a>
-																				<form role="form">
-																					<div class="form-group mb-1">
-																						<input type="text" class="form-control" id="view_file_s1" disabled/>
-																					</div>
-																				</form>
-																			</div>
+																				<a href="#" class="font-weight-bold text-dark-75 text-hover-primary font-size-lg mb-1" id="view_file_s1">Ijazah SI</a>
 																			</div>
 																		</div>
 																		<!--end::Item-->
 																		<!--begin::Item-->
-																		<div class="d-flex align-items-center mb-9 bg-light-warning rounded p-5">
+																		<div class="d-flex align-items-center mb-9 bg-light-warning rounded p-5 mb-9">
 																			<!--begin::Icon-->
 																			<span class="svg-icon svg-icon-warning mr-5">
 																				<span class="svg-icon svg-icon-lg">
@@ -1043,12 +995,7 @@
 																			<!--end::Icon-->
 																			<!--begin::Title-->
 																			<div class="d-flex flex-column flex-grow-1 mr-2">
-																				<a href="#" class="font-weight-bold text-dark-75 text-hover-primary font-size-lg mb-1">Ijazah S2</a>
-																				<form role="form">
-																					<div class="form-group mb-1">
-																						<input type="text" class="form-control" id="view_file_s2" disabled/>
-																					</div>
-																				</form><!-- <span class="text-muted font-weight-bold">Due in 2 Days</span> -->
+																				<a href="#" class="font-weight-bold text-dark-75 text-hover-primary font-size-lg mb-1" id="view_file_s2">Ijazah S2</a>
 																			</div>
 																		</div>
 																		<!--end::Item-->
@@ -1071,12 +1018,7 @@
 																			<!--end::Icon-->
 																			<!--begin::Title-->
 																			<div class="d-flex flex-column flex-grow-1 mr-2">
-																			<a href="#" class="font-weight-bold text-dark-75 text-hover-primary font-size-lg mb-1">Ijazah S3</a>
-																				<form role="form">
-																					<div class="form-group mb-1">
-																						<input type="text" class="form-control" id="view_file_s3" disabled/>
-																					</div>
-																				</form>
+																				<a href="#" class="font-weight-bold text-dark-75 text-hover-primary font-size-lg mb-1" id="view_file_s3">Ijazah S3</a>
 																			</div>
 																			<!--end::Title-->
 																			<!--begin::Lable-->
@@ -1103,12 +1045,7 @@
 																			<!--end::Icon-->
 																			<!--begin::Title-->
 																			<div class="d-flex flex-column flex-grow-1 mr-2">
-																				<a href="#" class="font-weight-bold text-dark-75 text-hover-primary font-size-lg mb-1">Ijazah Profesi</a>
-																				<form role="form">
-																					<div class="form-group mb-1">
-																						<input type="text" class="form-control" id="view_file_profesi" disabled/>
-																					</div>
-																				</form>
+																				<a href="#" class="font-weight-bold text-dark-75 text-hover-primary font-size-lg mb-1" id="view_file_profesi">Ijazah Profesi</a>
 																			</div>
 																			<!--end::Title-->
 																			<!--begin::Lable-->
@@ -1378,6 +1315,12 @@
 																					<label class="col-xl-3 col-lg-3 text-right col-form-label">No STR</label>
 																					<div class="col-lg-9 col-xl-6">
 																						<input class="form-control form-control-lg form-control-solid" type="text" id="view_no_str" disabled />
+																					</div>
+																				</div>
+																				<div class="form-group row">
+																					<label class="col-xl-3 col-lg-3 text-right col-form-label">Masa Berlaku STR/SIP</label>
+																					<div class="col-lg-9 col-xl-6">
+																						<input class="form-control form-control-lg form-control-solid" type="text" id="view_masa_sip" disabled />
 																					</div>
 																				</div>
 																				<div class="separator separator-dashed my-10"></div>
@@ -3094,6 +3037,7 @@
             baris += '<td>' + data[i].tgl_update + '</td>'
             baris += '<td>' + data[i].id_karyawan + '</td>'
             baris += '<td>' + data[i].nama + '</td>'
+            // baris += '<td>' + data[i].foto + '</td>'
             baris += '<td>' + data[i].foto + '</td>'
             baris += '<td>' + data[i].ruangan + '</td>'
             baris += '<td>' + data[i].jabatan + '</td>'
@@ -3153,7 +3097,7 @@
         document.getElementById("berkas_foto").focus();
       } else{
         var format = $('#berkas_foto').prop('files')[0].type;
-        if (format.includes('pdf') || format.includes('jpg') || format.includes('jpeg')) {
+        if (format.includes('png') || format.includes('jpg') || format.includes('jpeg')) {
           var form_data = new FormData();
           form_data.append('id', id);
         //   form_data.append('jenis', document.getElementById("jenis_pernyataan").value);
@@ -3194,7 +3138,7 @@
            Swal.fire({
               position: 'center',
               icon: 'error',
-              title: 'Type file harus PDF atau JPEG atau JPG',
+              title: 'Type file harus JPEG atau JPG',
               showConfirmButton: false,
               timer: 2500
             });
@@ -3308,7 +3252,7 @@
                 $('#loader_upload_smp').html('');
               });
             //   ambil_data();
-              $('#modalsma').modal('hide');
+              $('#modalsmp').modal('hide');
               Swal.fire({
                 position: 'center',
                 icon: 'success',
@@ -4447,8 +4391,24 @@
 		data: "target=karyawan&id=" + id,
 		dataType: 'json',
 		success: function(data) {
+			$("#view_file_penempatan").html('');
+			$("#view_file_sk").html('');
+			$("#view_file_str").html('');
+			$("#view_file_skp").html('');
+			$("#view_file_sip").html('');
+			$("#view_file_sd").html('');
+			$("#view_file_smp").html('');
+			$("#view_file_s1").html('');
+			$("#view_file_s2").html('');
+			$("#view_file_s3").html('');
+			$("#view_file_profesi").html('');
+			$("#view_foto").html('');
+
+			// $("#view_foto").html('<img src="'+base_url+'assets/foto_karyawan/'+data.foto+'">');
+
 			$("#modalView").modal('show')
-			$("#foto").val(data.foto)
+			$("#view_foto").val(data.foto)
+			// $("#foto").val(data.foto)
 			$("#view_nama").val(data.nama)
 			$("#view_id_karyawan").val(data.id_karyawan)
 			$("#view_nik").val(data.nik)
@@ -4510,6 +4470,77 @@
 			$("#view_file_sip").val(data.file_sip)
 			$("#view_file_skp").val(data.file_skp)
 			$("#view_masa_sip").val(data.masa_sip)
+
+
+			if(data.foto!=null){
+                var foto = '<img src="<?= base_url() ?>assets/foto_karyawan/'+data.foto+'" width="150" height="150" />';
+                $("#view_foto").html(foto);
+            }
+
+			// if(data.foto!=null){
+            //     var foto = '<img src="'+base_url+'assets/foto_karyawan/'+data.foto+'">';
+            //     $("#view_foto").html(foto);
+            // }
+
+			if(data.file_penempatan!=null){
+                var link = ' <a href="<?= base_url() ?>assets/arsip_karyawan/'+data.file_penempatan+'" target="_blank">SK Penempatan</a>';
+                $("#view_file_penempatan").html(link);
+            }
+
+			if(data.file_sk!=null){
+                var link = ' <a href="<?= base_url() ?>assets/arsip_karyawan/'+data.file_sk+'" target="_blank">SK KARYAWAN</a>';
+                $("#view_file_sk").html(link);
+            }
+			
+			if(data.file_str!=null){
+                var link = ' <a href="<?= base_url() ?>assets/arsip_karyawan/'+data.file_str+'" target="_blank">STR</a>';
+                $("#view_file_str").html(link);
+            }
+
+			if(data.file_skp!=null){
+                var link = ' <a href="<?= base_url() ?>assets/arsip_karyawan/'+data.file_skp+'" target="_blank">SKP</a>';
+                $("#view_file_skp").html(link);
+            }
+
+			if(data.file_sip!=null){
+                var link = ' <a href="<?= base_url() ?>assets/arsip_karyawan/'+data.file_sip+'" target="_blank">SIP</a>';
+                $("#view_file_sip").html(link);
+            }
+
+			if(data.file_sd!=null){
+                var link = ' <a href="<?= base_url() ?>assets/arsip_karyawan/'+data.file_sd+'" target="_blank">IJAZAH SD</a>';
+                $("#view_file_sd").html(link);
+            }
+
+			if(data.file_smp!=null){
+                var link = ' <a href="<?= base_url() ?>assets/arsip_karyawan/'+data.file_smp+'" target="_blank">IJAZAH SMP</a>';
+                $("#view_file_smp").html(link);
+            }
+
+			if(data.file_sma!=null){
+                var link = ' <a href="<?= base_url() ?>assets/arsip_karyawan/'+data.file_sma+'" target="_blank">IJAZAH SMA</a>';
+                $("#view_file_sma").html(link);
+            }
+
+			if(data.file_s1!=null){
+                var link = ' <a href="<?= base_url() ?>assets/arsip_karyawan/'+data.file_s1+'" target="_blank">IJAZAH S1/D-III/D-IV</a>';
+                $("#view_file_s1").html(link);
+            }
+
+			if(data.file_s2!=null){
+                var link = ' <a href="<?= base_url() ?>assets/arsip_karyawan/'+data.file_s2+'" target="_blank">IJAZAH S2</a>';
+                $("#view_file_s2").html(link);
+            }
+
+			if(data.file_s3!=null){
+                var link = ' <a href="<?= base_url() ?>assets/arsip_karyawan/'+data.file_s3+'" target="_blank">IJAZAH S3</a>';
+                $("#view_file_s3").html(link);
+            }
+
+			if(data.file_profesi!=null){
+                var link = ' <a href="<?= base_url() ?>assets/arsip_karyawan/'+data.file_profesi+'" target="_blank">IJAZAH PROFESI</a>';
+                $("#view_file_profesi").html(link);
+            }
 			console.log(data)
 			$("#view" + id).html('<i class="fa fa-edit"></i>')
 		}

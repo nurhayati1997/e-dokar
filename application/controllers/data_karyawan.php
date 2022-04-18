@@ -63,7 +63,7 @@ class data_karyawan extends CI_Controller
 		$nama = $user->nama ;
 		// $nama = $user->tanggal_antri . "_" . $user->id . "_" . $user->nama;
 
-		$config['allowed_types'] = 'jpg|jpeg|pdf';
+		$config['allowed_types'] = 'jpg|jpeg|png';
 		$config['upload_path'] = './assets/foto_karyawan/';
 		$config['file_name'] = $nama;
 

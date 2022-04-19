@@ -36,14 +36,73 @@ class berkala_karyawan extends CI_Controller
 		echo json_encode($this->db_model->get_all('karyawan')->result());
 	}
 
+	
+	function upload_pernyataan_sk_pangkat_terakhir()
+	{
+		$user = $this->db_model->get_where('v_berkala_karyawan', array('id' => $this->input->post('id', TRUE)))->row();
+		$nama = "SK PANGKAT TERAKHIR_" .$user->nama ;
+		// $nama = $user->tanggal_antri . "_" . $user->id . "_" . $user->nama;
+
+		$config['allowed_types'] = 'pdf';
+		$config['upload_path'] = './assets/arsip_karyawan/';
+		$config['file_name'] = $nama;
+
+		$this->load->library('upload', $config);
+
+		// unlink('./document/pernyataan/'.$nama);
+
+		if ($this->upload->do_upload('berkas_sk_pangkat_terakhir')) {
+
+			$namaFotoBaru = $this->upload->data('file_name');
+
+			$data = [
+				"sk_pangkat_terakhir" => $namaFotoBaru
+				// "tindakan" => $this->input->post('jenis', TRUE),
+			];
+
+			echo json_encode($this->db_model->update("berkala_karyawan", $data, array('id' => $this->input->post("id", TRUE))));
+		} else {
+			echo json_encode($this->upload->display_errors());
+		}
+		// echo json_encode($nama);
+	}
+	
+	function upload_pernyataan_sk_berkala()
+	{
+		$user = $this->db_model->get_where('v_berkala_karyawan', array('id' => $this->input->post('id', TRUE)))->row();
+		$nama = "SK PANGKAT TERAKHIR_" .$user->nama ;
+		// $nama = $user->tanggal_antri . "_" . $user->id . "_" . $user->nama;
+
+		$config['allowed_types'] = 'pdf';
+		$config['upload_path'] = './assets/arsip_karyawan/';
+		$config['file_name'] = $nama;
+
+		$this->load->library('upload', $config);
+
+		// unlink('./document/pernyataan/'.$nama);
+
+		if ($this->upload->do_upload('berkas_sk_berkala')) {
+
+			$namaFotoBaru = $this->upload->data('file_name');
+
+			$data = [
+				"sk_berkala" => $namaFotoBaru
+				// "tindakan" => $this->input->post('jenis', TRUE),
+			];
+
+			echo json_encode($this->db_model->update("berkala_karyawan", $data, array('id' => $this->input->post("id", TRUE))));
+		} else {
+			echo json_encode($this->upload->display_errors());
+		}
+		// echo json_encode($nama);
+	}
+
 
 	function tambah_berkala()
 	{
 		$data = [
 			"nama" => $this->input->post('nama_karyawan', TRUE),
-			"tgl_berkala" => $this->input->post('tgl_berkala', TRUE),
-			"sk_pangkat_terakhir" => $this->input->post('sk_pangkat_terakhir', TRUE),
-			"sk_berkala" => $this->input->post('sk_berkala', TRUE)
+			"tgl_berkala" => $this->input->post('tgl_berkala', TRUE)
 		];
 
 		// echo json_encode($data);

@@ -112,20 +112,6 @@
 																<span class="form-text text-muted">Masukkan Tanggal Berkala</span>
 																<input type="date" class="form-control" id="tgl_berkala"/>
 															</div>
-															<div class="form-group mb-3">
-																<span class="form-text text-muted">Upload Fotocopy SK Pangkat Terakhir</span>
-																<div class="custom-file">
-																	<input type="file" class="custom-file-input" id="sk_pangkat_terakhir" />
-																	<label class="custom-file-label" for="customFile">File FC SK Pangkat Terakhir format pdf</label>
-																</div>
-															</div>
-															<div class="form-group mb-3">
-																<span class="form-text text-muted">Upload Fotocopy SK Berkala</span>
-																<div class="custom-file">
-																	<input type="file" class="custom-file-input" id="sk_berkala" />
-																	<label class="custom-file-label" for="customFile">File FC SK Berkala format pdf</label>
-																</div>
-															</div>
 
 																		
 														
@@ -133,6 +119,82 @@
 																<div class="text-center">
 																<button type="button" id="simpan_button" class="btn btn-success my-2" onclick="tambah_baru()"><div id="loader"> </div> Simpan</button>
 															</div>
+														</form>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+							<!-- View -->
+								<div class="modal fade" id="modalview" tabindex="-1" role="dialog" aria-labelledby="modal-form" aria-hidden="true">
+									<div class="modal-dialog modal- modal-dialog-centered modal-lg" role="document">
+										<div class="modal-content">
+											<div class="modal-body p-0">
+												<div class="card bg-secondary border-0 mb-0">
+													<div class="card-header bg-success pb-1">
+														<div class="text-muted text-center mt-2 mb-3">
+															<span class="text-white">Data Berkala Karyawan </span>
+														</div>
+													</div>
+													<div class="card-body px-lg-5 py-lg-5">
+														<form role="form">
+															<div class="form-group mb-3">
+																<span class="form-text text-muted">Tanggal Berkala</span>
+																<input type="date" class="form-control" id="view_tgl_berkala" disabled/>
+															</div>
+                              
+                                          <!--begin::Item-->
+                                          <div class="d-flex align-items-center mb-9 bg-light-warning rounded p-5">
+                                            <!--begin::Icon-->
+                                            <span class="svg-icon svg-icon-warning mr-5">
+                                              <span class="svg-icon svg-icon-lg">
+                                                <!--begin::Svg Icon | path:/metronic/theme/html/demo2/dist/assets/media/svg/icons/Home/Library.svg-->
+                                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+                                                  <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                                    <rect x="0" y="0" width="24" height="24" />
+                                                    <path d="M5,3 L6,3 C6.55228475,3 7,3.44771525 7,4 L7,20 C7,20.5522847 6.55228475,21 6,21 L5,21 C4.44771525,21 4,20.5522847 4,20 L4,4 C4,3.44771525 4.44771525,3 5,3 Z M10,3 L11,3 C11.5522847,3 12,3.44771525 12,4 L12,20 C12,20.5522847 11.5522847,21 11,21 L10,21 C9.44771525,21 9,20.5522847 9,20 L9,4 C9,3.44771525 9.44771525,3 10,3 Z" fill="#000000" />
+                                                    <rect fill="#000000" opacity="0.3" transform="translate(17.825568, 11.945519) rotate(-19.000000) translate(-17.825568, -11.945519)" x="16.3255682" y="2.94551858" width="3" height="18" rx="1" />
+                                                  </g>
+                                                </svg>
+                                                <!--end::Svg Icon-->
+                                              </span>
+                                            </span>
+                                            <!--end::Icon-->
+                                            <!--begin::Title-->
+                                            <div class="d-flex flex-column flex-grow-1 mr-2">
+                                              <a href="#" class="font-weight-bold text-dark-75 text-hover-primary font-size-lg mb-1" id="view_sk_pangkat_terakhir">SK PANGKAT TERAKHIR</a>
+                                            </div>
+                                          </div>
+                                          
+                                          <!--begin::Item-->
+                                          <div class="d-flex align-items-center bg-light-success rounded p-5 mb-9">
+                                            <!--begin::Icon-->
+                                            <span class="svg-icon svg-icon-success mr-5">
+                                              <span class="svg-icon svg-icon-lg">
+                                                <!--begin::Svg Icon | path:/metronic/theme/html/demo2/dist/assets/media/svg/icons/Communication/Write.svg-->
+                                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+                                                  <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                                    <rect x="0" y="0" width="24" height="24" />
+                                                    <path d="M12.2674799,18.2323597 L12.0084872,5.45852451 C12.0004303,5.06114792 12.1504154,4.6768183 12.4255037,4.38993949 L15.0030167,1.70195304 L17.5910752,4.40093695 C17.8599071,4.6812911 18.0095067,5.05499603 18.0083938,5.44341307 L17.9718262,18.2062508 C17.9694575,19.0329966 17.2985816,19.701953 16.4718324,19.701953 L13.7671717,19.701953 C12.9505952,19.701953 12.2840328,19.0487684 12.2674799,18.2323597 Z" fill="#000000" fill-rule="nonzero" transform="translate(14.701953, 10.701953) rotate(-135.000000) translate(-14.701953, -10.701953)" />
+                                                    <path d="M12.9,2 C13.4522847,2 13.9,2.44771525 13.9,3 C13.9,3.55228475 13.4522847,4 12.9,4 L6,4 C4.8954305,4 4,4.8954305 4,6 L4,18 C4,19.1045695 4.8954305,20 6,20 L18,20 C19.1045695,20 20,19.1045695 20,18 L20,13 C20,12.4477153 20.4477153,12 21,12 C21.5522847,12 22,12.4477153 22,13 L22,18 C22,20.209139 20.209139,22 18,22 L6,22 C3.790861,22 2,20.209139 2,18 L2,6 C2,3.790861 3.790861,2 6,2 L12.9,2 Z" fill="#000000" fill-rule="nonzero" opacity="0.3" />
+                                                  </g>
+                                                </svg>
+                                                <!--end::Svg Icon-->
+                                              </span>
+                                            </span>
+                                            <!--end::Icon-->
+                                            <!--begin::Title-->
+                                            <div class="d-flex flex-column flex-grow-1 mr-2">
+                                            <a href="#" class="font-weight-bold text-dark-75 text-hover-primary font-size-lg mb-1" id="view_sk_berkala">SK BERKALA</a>
+                                            </div>
+                                            <!--end::Title-->
+                                            <!--begin::Lable-->
+                                            <!-- <span class="font-weight-bolder text-success py-1 font-size-lg">+50%</span> -->
+                                            <!--end::Lable-->
+                                          </div>
+                                          <!--end::Item-->
 														</form>
 													</div>
 												</div>
@@ -169,60 +231,69 @@
 								</div>
 							</div>
 
-							<!-- edit -->
-								<div class="modal fade" id="modalEdit" tabindex="-1" role="dialog" aria-labelledby="modal-form" aria-hidden="true">
-								  <div class="modal-dialog modal- modal-dialog-centered modal-lg" role="document">
-										<div class="modal-content">
-											<div class="modal-body p-0">
-												<div class="card bg-secondary border-0 mb-0">
-													<div class="card-header bg-success pb-1">
-														<div class="text-muted text-center mt-2 mb-3">
-															<span class="text-white">Form Edit Data Pelatihan Karyawan </span>
+                            						
+						  <!-- Tambah sk_pangkat_terakhir-->
+							<div class="modal fade" id="modalsk_pangkat_terakhir" tabindex="-1" role="dialog" aria-labelledby="modal-form" aria-hidden="true">	
+								<div class="modal-dialog modal- modal-dialog-centered modal-sm" role="document">
+									<div class="modal-content">
+										<div class="modal-body p-0">
+											<div class="card bg-secondary border-0 mb-0">
+												<div class="card-header bg-success pb-1">
+													<div class="text-muted text-center mt-2 mb-3">
+														<span class="text-white">Form Tambah SK TERAKHIR </span>
+													</div>
+												</div>
+												<div class="card-body px-lg-5 py-lg-5">
+													<form role="form">
+														<div class="form-group mb-3">
+															<div class="custom-file">
+																<input type="file" class="custom-file-input" id="berkas_sk_pangkat_terakhir" accept="application/pdf" />
+																<label class="custom-file-label" for="berkas_sk_pangkat_terakhir">File Harus format PDF</label>
+															</div>
 														</div>
-													</div>
-													<div class="card-body px-lg-5 py-lg-5">
-														<form role="form">
-															<div class="form-group mb-3">
-																<span class="form-text text-muted">Masukkan Nama Pelatihan</span>
-																<input id="idUser" type="hidden">
-																<input type="text" class="form-control" id="edit_nama_pelatihan" placeholder="Nama Acara Pelatihan" />
-															</div>
-															<div class="form-group mb-3">
-																<span class="form-text text-muted">Masukkan Tanggal Mulai</span>
-																<input type="date" class="form-control" id="edit_tgl_mulai_pelatihan"/>
-															</div>
-															<div class="form-group mb-3">
-																<span class="form-text text-muted">Masukkan Tanggal Selesai</span>
-																<input type="date" class="form-control" id="edit_tgl_selesai_pelatihan"/>
-															</div>
-															<div class="form-group mb-3">
-																<span class="form-text text-muted">Masukkan Durasi Pelatihan</span>
-																<input type="text" class="form-control" id="edit_durasi_pelatihan" placeholder="Gunakan Huruf & Angka" />
-															</div>
-															<div class="form-group mb-3">
-																<span class="form-text text-muted">Masukkan No Sertifikat</span>
-																<input type="text" class="form-control" id="edit_no_sertifikat" placeholder="Gunakan Huruf & Angka" />
-															</div>
 
-															<div class="form-group mb-3">
-																<span class="form-text text-muted">Upload Sertifiikat Pelatihan</span>
-																<div class="custom-file">
-																	<input type="file" class="custom-file-input" id="edit_file_sertifikat" />
-																	<label class="custom-file-label" for="customFile">File Sertofokat Harus format pdf</label>
-																</div>
-															</div>
-
-															<div class="badge badge-danger" id="pesanErrorTambah"></div>
-																<div class="text-center">
-																<button type="button"  class="btn btn-success my-2" onClick="edit()" id="tombolEdit"><div id="loader"> </div> Simpan</button>
-															</div>
-														</form>
-													</div>
+														
+														<div id="div_upload_sk_pangkat_terakhir">
+														</div>
+													</form>
 												</div>
 											</div>
 										</div>
 									</div>
 								</div>
+							</div>
+
+                            						
+						<!-- Tambah sk_berkala-->
+							<div class="modal fade" id="modalsk_berkala" tabindex="-1" role="dialog" aria-labelledby="modal-form" aria-hidden="true">	
+								<div class="modal-dialog modal- modal-dialog-centered modal-sm" role="document">
+									<div class="modal-content">
+										<div class="modal-body p-0">
+											<div class="card bg-secondary border-0 mb-0">
+												<div class="card-header bg-success pb-1">
+													<div class="text-muted text-center mt-2 mb-3">
+														<span class="text-white">Form Tambah SK BERKALA </span>
+													</div>
+												</div>
+												<div class="card-body px-lg-5 py-lg-5">
+													<form role="form">
+														<div class="form-group mb-3">
+															<div class="custom-file">
+																<input type="file" class="custom-file-input" id="berkas_sk_berkala" accept="application/pdf" />
+																<label class="custom-file-label" for="berkas_sk_berkala">File Harus format PDF</label>
+															</div>
+														</div>
+
+														
+														<div id="div_upload_sk_berkala">
+														</div>
+													</form>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
 
 
 							<!--end::Container-->
@@ -244,13 +315,13 @@
           for (let i = 0; i < data.length; i++) {
             baris += '<tr>'
             baris += '<td><div style="cursor:pointer;" title="hapus?" id="hapus' + data[i].id + '" onClick="tryHapus(' + data[i].id+ ')"><i class="flaticon-delete text-danger"></i></div>'
-            // baris += ' <div style="cursor:pointer;" title="edit?"  id="edit' + data[i].id + '" onClick="tryEdit(' + data[i].id+ ')"><i class="flaticon2-pen text-success"></i></div>'
+            baris += ' <div style="cursor:pointer;" title="view?" id="view' + data[i].id + '" onClick="tryView(' + data[i].id+ ')"><i class="flaticon-eye text-primary"></i></div>'
             baris += '<td>' + (i + 1) + '</td>'
             baris += '<td>' + data[i].tgl_input + '</td>'
             baris += '<td>' + data[i].nama + '</td>'
             baris += '<td>' + data[i].tgl_berkala + '</td>'
-            baris += '<td>' + data[i].sk_pangkat_terakhir + '</td>'
-            baris += '<td>' + data[i].sk_berkala + '</td>'
+            baris += '<td><div style="cursor:pointer;" title="upload SK Pangkat Terakhir?"  id="sk_pangkat_terakhir' + data[i].id + '" onClick="tampil_modal_sk_pangkat_terakhir(' + data[i].id+ ')"><i class="btn btn-success btn-shadow font-weight-bold mr-2">Upload SK Pangkat Terakhir</i></div></td>'
+            baris += '<td><div style="cursor:pointer;" title="upload SK Berkala?"  id="sk_berkala' + data[i].id + '" onClick="tampil_modal_sk_berkala(' + data[i].id+ ')"><i class="btn btn-primary btn-shadow font-weight-bold mr-2">Upload SK BERKALA</i></div></td>'
             baris += '</td></tr>'
           }
           baris += '</tbody></table>'
@@ -281,8 +352,6 @@
     random_all = '';
     document.getElementById('nama_karyawan').value = "";
     document.getElementById('tgl_berkala').value = "";
-    document.getElementById('sk_pangkat_terakhir').value = "";
-    document.getElementById('sk_berkala').value = "";
   }
 
   function tampil_input_modal(){
@@ -302,8 +371,8 @@
       } else {
           $.ajax({
               type: 'POST',
-              data: 'tgl_berkala=' + document.getElementById("tgl_berkala").value + '&sk_pangkat_terakhir=' + document.getElementById('sk_pangkat_terakhir').value
-              + '&nama_karyawan=' +  document.getElementById('nama_karyawan').value + '&sk_berkala=' +  document.getElementById('sk_berkala').value,
+              data: 'tgl_berkala=' + document.getElementById("tgl_berkala").value 
+              + '&nama_karyawan=' +  document.getElementById('nama_karyawan').value,
               url: '<?= base_url() ?>berkala_karyawan/tambah_berkala',
               dataType: 'json',
               beforeSend: function () {
@@ -331,6 +400,171 @@
           });
       }
   }
+
+  
+    function tampil_modal_sk_pangkat_terakhir(id){
+      document.getElementById("berkas_sk_pangkat_terakhir").value = "";
+
+      var tombol = '<button type="button" onclick="pernyataan_sk_pangkat_terakhir('+id+')" id="simpan_pernyataan_sk_pangkat_terakhir" class="btn btn-block btn-info"><div id="loader_upload_sk_pangkat_terakhir"> </div> Simpan</button>';
+      $("#div_upload_sk_pangkat_terakhir").html(tombol);
+      $('#modalsk_pangkat_terakhir').modal('show');
+    }
+
+	  function pernyataan_sk_pangkat_terakhir(id) {
+      // console.log(id);
+      if(document.getElementById("berkas_sk_pangkat_terakhir").value == ""){
+        document.getElementById("berkas_sk_pangkat_terakhir").focus();
+      } else{
+        var format = $('#berkas_sk_pangkat_terakhir').prop('files')[0].type;
+        if (format.includes('pdf')) {
+          var form_data = new FormData();
+          form_data.append('id', id);
+        //   form_data.append('jenis', document.getElementById("jenis_pernyataan").value);
+          form_data.append('berkas_sk_pangkat_terakhir', $('#berkas_sk_pangkat_terakhir').prop('files')[0]);
+
+          $.ajax({
+            type: 'POST',
+            data: form_data,
+            url: '<?= base_url() ?>berkala_karyawan/upload_pernyataan_sk_pangkat_terakhir',
+            processData:false,
+            contentType:false,
+            cache:false,
+            dataType: 'json',
+            beforeSend: function () {
+              $('#simpan_pernyataan_sk_pangkat_terakhir').attr('disabled', true);
+              $('#loader_upload_sk_pangkat_terakhir').html('');
+              addSpinner($('#loader_upload_sk_pangkat_terakhir'));
+            },
+            success: function(data) {
+              // alert(data);
+              // console.log(data);
+              $('#simpan_pernyataan_sk_pangkat_terakhir').attr('disabled', false);
+              removeSpinner($('#loader_upload_sk_pangkat_terakhir'), function () {
+                $('#loader_upload_sk_pangkat_terakhir').html('');
+              });
+            //   ambil_data();
+              $('#modalsk_pangkat_terakhir').modal('hide');
+              Swal.fire({
+                position: 'center',
+                icon: 'success',
+                title: 'Data Berhasil Diupload',
+                showConfirmButton: false,
+                timer: 2500
+              });
+            }
+          });
+        }else{
+           Swal.fire({
+              position: 'center',
+              icon: 'error',
+              title: 'Type file harus PDF ',
+              showConfirmButton: false,
+              timer: 2500
+            });
+        }
+      }
+  	}
+
+  
+    function tampil_modal_sk_berkala(id){
+      document.getElementById("berkas_sk_berkala").value = "";
+
+      var tombol = '<button type="button" onclick="pernyataan_sk_berkala('+id+')" id="simpan_pernyataan_sk_berkala" class="btn btn-block btn-info"><div id="loader_upload_sk_berkala"> </div> Simpan</button>';
+      $("#div_upload_sk_berkala").html(tombol);
+      $('#modalsk_berkala').modal('show');
+    }
+
+	  function pernyataan_sk_berkala(id) {
+      // console.log(id);
+      if(document.getElementById("berkas_sk_berkala").value == ""){
+        document.getElementById("berkas_sk_berkala").focus();
+      } else{
+        var format = $('#berkas_sk_berkala').prop('files')[0].type;
+        if (format.includes('pdf')) {
+          var form_data = new FormData();
+          form_data.append('id', id);
+        //   form_data.append('jenis', document.getElementById("jenis_pernyataan").value);
+          form_data.append('berkas_sk_berkala', $('#berkas_sk_berkala').prop('files')[0]);
+
+          $.ajax({
+            type: 'POST',
+            data: form_data,
+            url: '<?= base_url() ?>berkala_karyawan/upload_pernyataan_sk_berkala',
+            processData:false,
+            contentType:false,
+            cache:false,
+            dataType: 'json',
+            beforeSend: function () {
+              $('#simpan_pernyataan_sk_berkala').attr('disabled', true);
+              $('#loader_upload_sk_berkala').html('');
+              addSpinner($('#loader_upload_sk_berkala'));
+            },
+            success: function(data) {
+              // alert(data);
+              // console.log(data);
+              $('#simpan_pernyataan_sk_berkala').attr('disabled', false);
+              removeSpinner($('#loader_upload_sk_berkala'), function () {
+                $('#loader_upload_sk_berkala').html('');
+              });
+            //   ambil_data();
+              $('#modalsk_berkala').modal('hide');
+              Swal.fire({
+                position: 'center',
+                icon: 'success',
+                title: 'Data Berhasil Diupload',
+                showConfirmButton: false,
+                timer: 2500
+              });
+            }
+          });
+        }else{
+           Swal.fire({
+              position: 'center',
+              icon: 'error',
+              title: 'Type file harus PDF ',
+              showConfirmButton: false,
+              timer: 2500
+            });
+        }
+      }
+  	}
+
+    
+    function tryView(id) {
+      $("#tombolView" + id).html('<i class="fas fa-spinner fa-pulse"></i>')
+      $("#idUser").val(id)
+      $.ajax({
+      url: '<?= base_url() ?>berkala_karyawan/edit_id',
+      method: 'post',
+      data: "target=berkala_karyawan&id=" + id,
+      dataType: 'json',
+      success: function(data) {
+        $("#view_sk_pangkat_terakhir").html('');
+        $("#view_sk_berkala").html('');
+
+        // $("#view_foto").html('<img src="'+base_url+'assets/foto_karyawan/'+data.foto+'">');
+
+        $("#modalview").modal('show')
+        $("#view_tgl_berkala").val(data.tgl_berkala)
+        $("#view_sk_pangkat_terakhir").val(data.sk_pangkat_terakhir)
+        $("#view_sk_berkala").val(data.sk_berkala)
+
+
+        if(data.sk_pangkat_terakhir!=null){
+          var link = ' <a href="<?= base_url() ?>assets/arsip_karyawan/'+data.sk_pangkat_terakhir+'" target="_blank">SK PANGKAT TERAKHIR</a>';
+          $("#view_sk_pangkat_terakhir").html(link);
+        }
+
+        if(data.sk_berkala!=null){
+          var link = ' <a href="<?= base_url() ?>assets/arsip_karyawan/'+data.sk_berkala+'" target="_blank">SK BERKALA</a>';
+          $("#view_sk_berkala").html(link);
+        }
+        console.log(data)
+        $("#view" + id).html('<i class="fa fa-edit"></i>')
+      }
+      });
+	  }
+
 
 
   function tryHapus(id) {

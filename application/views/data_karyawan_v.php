@@ -2467,115 +2467,6 @@
 									</div>
 								</div>
 							</div>
-
-						<!-- tambah arsip -->
-						
-								<div class="modal fade" id="modalArsip" tabindex="-1" role="dialog" aria-labelledby="modal-form" aria-hidden="true">
-									<div class="modal-dialog modal- modal-dialog-centered modal-lg" role="document">
-										<div class="modal-content">
-											<div class="modal-body p-0">
-												<div class="card bg-secondary border-0 mb-0">
-													<div class="card-header bg-success pb-1">
-														<div class="text-muted text-center mt-2 mb-3">
-															<span class="text-white">Form Tambah File Kelengkapan Karyawan </span>
-														</div>
-													</div>
-													<div class="card-body px-lg-5 py-lg-5">
-														<form role="form">
-															<div class="form-group mb-3">
-																<span class="form-text text-muted">Upload Ijazah SD</span>
-																<div class="custom-file">
-																	<input id="idUser" type="hidden">
-																	<input type="file" class="custom-file-input" id="file_sd" />
-																	<label class="custom-file-label" for="customFile">File Ijazah Harus format pdf</label>
-																</div>
-															</div>
-															<div class="form-group mb-3">
-																		<span class="form-text text-muted">Upload Ijazah SMP</span>
-																		<div class="custom-file">
-																			<input type="file" class="custom-file-input" id="file_smp" />
-																			<label class="custom-file-label" for="customFile">File Ijazah Harus format pdf</label>
-																		</div>
-															</div>
-															<div class="form-group mb-3">
-																		<span class="form-text text-muted">Upload Ijazah SMA</span>
-																		<div class="custom-file">
-																			<input type="file" class="custom-file-input" id="file_sma" />
-																			<label class="custom-file-label" for="customFile">File Ijazah Harus format pdf</label>
-																		</div>
-															</div>
-															<div class="form-group mb-3">
-																		<span class="form-text text-muted">Upload Ijazah S1/D-III/D-IV</span>
-																		<div class="custom-file">
-																			<input type="file" class="custom-file-input" id="file_s1" />
-																			<label class="custom-file-label" for="customFile">File Ijazah Harus format pdf</label>
-																		</div>
-															</div>
-															<div class="form-group mb-3">
-																		<span class="form-text text-muted">Upload Ijazah S2</span>
-																		<div class="custom-file">
-																			<input type="file" class="custom-file-input" id="file_s2" />
-																			<label class="custom-file-label" for="customFile">File Ijazah Harus format pdf</label>
-																		</div>
-															</div>
-															<div class="form-group mb-3">
-																		<span class="form-text text-muted">Upload Ijazah S3</span>
-																		<div class="custom-file">
-																			<input type="file" class="custom-file-input" id="file_s3" />
-																			<label class="custom-file-label" for="customFile">File Ijazah Harus format pdf</label>
-																		</div>
-															</div>
-															<div class="form-group mb-3">
-																		<span class="form-text text-muted">Upload Ijazah Profesi</span>
-																		<div class="custom-file">
-																			<input type="file" class="custom-file-input" id="file_profesi" />
-																			<label class="custom-file-label" for="customFile">File Ijazah Harus format pdf</label>
-																		</div>
-															</div>
-															<div class="form-group mb-3">
-																		<span class="form-text text-muted">Upload SK</span>
-																		<div class="custom-file">
-																			<input type="file" class="custom-file-input" id="file_sk" />
-																			<label class="custom-file-label" for="customFile">File SK Harus format pdf</label>
-																		</div>
-															</div>
-															<div class="form-group mb-3">
-																		<span class="form-text text-muted">Upload SK Penempatan</span>
-																		<div class="custom-file">
-																			<input type="file" class="custom-file-input" id="file_penempatan" />
-																			<label class="custom-file-label" for="customFile">File SK Penempatan Harus format pdf</label>
-																		</div>
-															</div>
-															<div class="form-group mb-3">
-																		<span class="form-text text-muted">Upload SKP</span>
-																		<div class="custom-file">
-																			<input type="file" class="custom-file-input" id="file_skp" />
-																			<label class="custom-file-label" for="customFile">File SKP Harus format pdf</label>
-																		</div>
-															</div>
-															<div class="form-group mb-3">
-																		<span class="form-text text-muted">Upload STR</span>
-																		<div class="custom-file">
-																			<input type="file" class="custom-file-input" id="file_str" />
-																			<label class="custom-file-label" for="customFile">File STR Harus format pdf</label>
-																		</div>
-															</div>
-															<div class="form-group mb-3">
-																		<span class="form-text text-muted">Upload SIP</span>
-																		<div class="custom-file">
-																			<input type="file" class="custom-file-input" id="file_sip" />
-																			<label class="custom-file-label" for="customFile">File SIP Harus format pdf</label>
-																		</div>
-															</div>
-															<div id="div_upload_arsip">
-															</div>
-														</form>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
 						
 							<!-- Tambah Foto-->
 								<div class="modal fade" id="modalFoto" tabindex="-1" role="dialog" aria-labelledby="modal-form" aria-hidden="true">	
@@ -3018,7 +2909,7 @@
 
   function tampilkan(){
     $("#tempatTabel").html('<i class="fas fa-spinner fa-pulse"></i> Memuat...')
-    var baris = '<table class="table table-separate table-head-custom table-checkable" id="tabelUser"><thead class="thead-light"><tr><th>Action</th><th>NO</th><th>Update</th><th>ID</th><th>Nama</th><th>Foto</th><th>Ruangan</th><th>Jabatan</th><th>Status Karyawan</th><th>Pendidikan</th><th>Jenis Tenaga</th><th>Ijazah Sekolah</th><th>Ijazah Kuliah</th><th>SK</th><th>Berkas Lain</th></tr></thead>'
+    var baris = '<table class="table table-separate table-head-custom table-checkable" id="tabelUser"><thead class="thead-light"><tr><th>Action</th><th>NO</th><th>Update</th><th>ID</th><th>Nama</th><th>Ruangan</th><th>Jabatan</th><th>Status Karyawan</th><th>Pendidikan</th><th>Jenis Tenaga</th><th>Ijazah Sekolah</th><th>Ijazah Kuliah</th><th>SK</th><th>Berkas Lain</th></tr></thead>'
       $.ajax({
         type:'POST',
         url: '<?= base_url() ?>data_karyawan/tampil',
@@ -3038,7 +2929,7 @@
             baris += '<td>' + data[i].id_karyawan + '</td>'
             baris += '<td>' + data[i].nama + '</td>'
             // baris += '<td>' + data[i].foto + '</td>'
-            baris += '<td>' + data[i].foto + '</td>'
+            // baris += '<td>' + data[i].foto + '</td>'
             baris += '<td>' + data[i].ruangan + '</td>'
             baris += '<td>' + data[i].jabatan + '</td>'
             baris += '<td>' + data[i].status_karyawan + '</td>'

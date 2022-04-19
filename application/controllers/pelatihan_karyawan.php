@@ -45,12 +45,42 @@ class pelatihan_karyawan extends CI_Controller
 			"tgl_selesai_pelatihan" => $this->input->post('tgl_selesai_pelatihan', TRUE),
 			"nama" => $this->input->post('nama_karyawan', TRUE),
 			"durasi_pelatihan" => $this->input->post('durasi_pelatihan', TRUE),
-			"no_sertifikat" => $this->input->post('no_sertifikat', TRUE),
-			"file_sertifikat" => $this->input->post('file_sertifikat', TRUE)
+			"no_sertifikat" => $this->input->post('no_sertifikat', TRUE)
 		];
 
 		// echo json_encode($data);
 		echo json_encode($this->db_model->insert_get("pelatihan_karyawan", $data));
+	}
+
+	
+	function upload_pernyataan_sertifikat()
+	{
+		$user = $this->db_model->get_where('v_pelatihan_karyawan', array('id' => $this->input->post('id', TRUE)))->row();
+		$nama = "Sertifikat Pelatihan_" .$user->nama ;
+		// $nama = $user->tanggal_antri . "_" . $user->id . "_" . $user->nama;
+
+		$config['allowed_types'] = 'pdf';
+		$config['upload_path'] = './assets/arsip_karyawan/';
+		$config['file_name'] = $nama;
+
+		$this->load->library('upload', $config);
+
+		// unlink('./document/pernyataan/'.$nama);
+
+		if ($this->upload->do_upload('berkas_sertifikat')) {
+
+			$namaFotoBaru = $this->upload->data('file_name');
+
+			$data = [
+				"file_sertifikat" => $namaFotoBaru
+				// "tindakan" => $this->input->post('jenis', TRUE),
+			];
+
+			echo json_encode($this->db_model->update("pelatihan_karyawan", $data, array('id' => $this->input->post("id", TRUE))));
+		} else {
+			echo json_encode($this->upload->display_errors());
+		}
+		// echo json_encode($nama);
 	}
 	public function dataById($id)
 	{
@@ -72,8 +102,7 @@ class pelatihan_karyawan extends CI_Controller
 			"tgl_mulai_pelatihan" => $this->input->post("tgl_mulai_pelatihan", TRUE),
 			"tgl_selesai_pelatihan" => $this->input->post("tgl_selesai_pelatihan", TRUE),
 			"durasi_pelatihan" => $this->input->post("durasi_pelatihan", TRUE),
-			"no_sertifikat" => $this->input->post("no_sertifikat", TRUE),
-			"file_sertifikat" => $this->input->post("file_sertifikat", TRUE)
+			"no_sertifikat" => $this->input->post("no_sertifikat", TRUE)
 		];
 		$this->db_model->update('pelatihan_karyawan', $data, ["id" => $this->input->post("id")]);
 		echo json_encode("");

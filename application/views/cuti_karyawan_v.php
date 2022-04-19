@@ -372,63 +372,288 @@
 								</div>
 							</div>
 
-							<!-- edit -->
-								<div class="modal fade" id="modalEdit" tabindex="-1" role="dialog" aria-labelledby="modal-form" aria-hidden="true">
-								  <div class="modal-dialog modal- modal-dialog-centered modal-lg" role="document">
+							              
+							<!-- Tambah cuti-->
+							<div class="modal fade" id="modalcuti" tabindex="-1" role="dialog" aria-labelledby="modal-form" aria-hidden="true">	
+								<div class="modal-dialog modal- modal-dialog-centered modal-sm" role="document">
+									<div class="modal-content">
+										<div class="modal-body p-0">
+											<div class="card bg-secondary border-0 mb-0">
+												<div class="card-header bg-success pb-1">
+													<div class="text-muted text-center mt-2 mb-3">
+														<span class="text-white">Form Tambah Bukti Cuti Karyawan </span>
+													</div>
+												</div>
+												<div class="card-body px-lg-5 py-lg-5">
+													<form role="form">
+														<div class="form-group mb-3">
+															<div class="custom-file">
+																<input type="file" class="custom-file-input" id="berkas_cuti" accept="application/pdf" />
+																<label class="custom-file-label" for="berkas_cuti">File Harus format PDF</label>
+															</div>
+														</div>
+
+														
+														<div id="div_upload_cuti">
+														</div>
+													</form>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- View Cuti-->
+								<div class="modal fade" id="modalview" tabindex="-1" role="dialog" aria-labelledby="modal-form" aria-hidden="true">
+									<div class="modal-dialog modal- modal-dialog-centered modal-lg" role="document">
 										<div class="modal-content">
 											<div class="modal-body p-0">
 												<div class="card bg-secondary border-0 mb-0">
 													<div class="card-header bg-success pb-1">
 														<div class="text-muted text-center mt-2 mb-3">
-															<span class="text-white">Form Edit Data Pelatihan Karyawan </span>
+															<span class="text-white">Data Cuti Karyawan </span>
 														</div>
 													</div>
 													<div class="card-body px-lg-5 py-lg-5">
-														<form role="form">
-															<div class="form-group mb-3">
-																<span class="form-text text-muted">Masukkan Nama Pelatihan</span>
-																<input id="idUser" type="hidden">
-																<input type="text" class="form-control" id="edit_nama_pelatihan" placeholder="Nama Acara Pelatihan" />
-															</div>
-															<div class="form-group mb-3">
-																<span class="form-text text-muted">Masukkan Tanggal Mulai</span>
-																<input type="date" class="form-control" id="edit_tgl_mulai_pelatihan"/>
-															</div>
-															<div class="form-group mb-3">
-																<span class="form-text text-muted">Masukkan Tanggal Selesai</span>
-																<input type="date" class="form-control" id="edit_tgl_selesai_pelatihan"/>
-															</div>
-															<div class="form-group mb-3">
-																<span class="form-text text-muted">Masukkan Durasi Pelatihan</span>
-																<input type="text" class="form-control" id="edit_durasi_pelatihan" placeholder="Gunakan Huruf & Angka" />
-															</div>
-															<div class="form-group mb-3">
-																<span class="form-text text-muted">Masukkan No Sertifikat</span>
-																<input type="text" class="form-control" id="edit_no_sertifikat" placeholder="Gunakan Huruf & Angka" />
-															</div>
-
-															<div class="form-group mb-3">
-																<span class="form-text text-muted">Upload Sertifiikat Pelatihan</span>
-																<div class="custom-file">
-																	<input type="file" class="custom-file-input" id="edit_file_sertifikat" />
-																	<label class="custom-file-label" for="customFile">File Sertofokat Harus format pdf</label>
+														<!--begin::Form-->
+														<form class="form">
+																<!-- identitas -->
+																<div class="form-group row">
+																	<div class="col-lg-4">
+																		<label>I. DATA PEGAWAI:</label>
+																		<span class="form-text text-muted">NIP</span>
+																		<input type="text" class="form-control" id="view_nip" placeholder="Masukkan NIP sesuai KTP" disabled/>
+																	</div>
+																	<div class="col-lg-4">
+																	<span class="form-text text-muted">Pilih Jabatan</span>
+																		<select class="form-control" id="view_jabatan" disabled>
+																			<option value="Direktur">Direktur</option>
+																			<option value="Wadir">Wadir</option>
+																			<option value="KA.BAG">KA.BAG</option>
+																			<option value="KA.BID">KA.BID</option>
+																			<option value="KA.Subag">KA.Subag</option>
+																			<option value="KA.Instalasi">KA.Instalasi</option>
+																			<option value="KA.Ruangan">KA.Ruangan</option>
+																			<option value="KA.Unit">KA.Unit</option>
+																			<option value="Staff">Staff</option>
+																		</select>
+																	</div>
+																	<div class="col-lg-4">
+																		<span class="form-text text-muted">Masa Kerja</span>
+																		<input type="text" class="form-control" id="view_masa_kerja" placeholder="Masukkan Alamat Sesuai KTP" disabled/>
+																	</div>
+																	<div class="col-lg-4">
+																		<span class="form-text text-muted">Unit Kerja</span>
+																		<select class="form-control" id="view_unit_kerja" disabled>
+																			<option value="LOKET 1 ( RM )">LOKET 1 ( RM )</option>
+																			<option value="LOKET  2  ( MOBDA )">LOKET  2  ( MOBDA )</option>
+																			<option value="ASOKA">ASOKA</option>
+																			<option value="ANGGREK">ANGGREK</option>
+																			<option value="SAKURA">SAKURA</option>
+																			<option value="BUGENVILE">BUGENVILE</option>
+																			<option value="CAMELIA">CAMELIA</option>
+																			<option value="CEMPAKA">CEMPAKA</option>
+																			<option value="DAHLIA">DAHLIA</option>
+																			<option value="EDELWEIS">EDELWEIS</option>
+																			<option value="FLAMBOYAN">FLAMBOYAN</option>
+																			<option value="MELATI">MELATI</option>
+																			<option value="TULIP">TULIP</option>
+																			<option value="IBS DAN INSTALASI ANASTHESI">IBS DAN INSTALASI ANASTHESI</option>
+																			<option value="HD">HD</option>
+																			<option value="IPCN">IPCN</option>
+																			<option value="INSTALASI RAWAT JALAN">INSTALASI RAWAT JALAN</option>
+																			<option value="INSTALASI FARMASI">INSTALASI FARMASI</option>
+																			<option value="INSTALASI KESEHATAN LINGKUNGAN ">INSTALASI KESEHATAN LINGKUNGAN </option>
+																			<option value="CLEANING SERVICE">CLEANING SERVICE</option>
+																			<option value="RADIOLOGI">RADIOLOGI</option>
+																			<option value="INSTALASI LABORATORIUM">INSTALASI LABORATORIUM</option>
+																			<option value="INSTALASI LINEN">INSTALASI LINEN</option>
+																			<option value="INSTALASI CSSD">INSTALASI CSSD</option>
+																			<option value="INSTALASI PEMELIHARAAN SARANA">INSTALASI PEMELIHARAAN SARANA</option>
+																			<option value="INSTALASI TEKNOLOGI DAN INFORMASI">INSTALASI TEKNOLOGI DAN INFORMASI</option>
+																			<option value="INSTALASI PEMULASARAAN  JENAZAH">INSTALASI PEMULASARAAN  JENAZAH</option>
+																			<option value="INSTALASI  GIZI">INSTALASI  GIZI</option>
+																			<option value="BAGIAN SUNGRAM DAN REKAM  MEDIK">BAGIAN SUNGRAM DAN REKAM  MEDIK</option>
+																			<option value="BIDANG YANKEP">BIDANG YANKEP</option>
+																			<option value="BIDANG YANMED">BIDANG YANMED</option>
+																			<option value="BIDANG YANJANG">BIDANG YANJANG</option>
+																			<option value="BAGIAN UMUM">BAGIAN UMUM</option>
+																			<option value="BAGIAN PERLENGKAPAN">BAGIAN PERLENGKAPAN</option>
+																			<option value="BAGIAN KEPEGAWAIAN">BAGIAN KEPEGAWAIAN</option>
+																			<option value="PETUGAS PARKIR UMUM">PETUGAS PARKIR UMUM</option>
+																			<option value="BAGIAN KEUANGAN">BAGIAN KEUANGAN</option>
+																			<option value="BAGIAN ESELON">BAGIAN ESELON</option>
+																			<option value="KOMITE  MEDIK">KOMITE  MEDIK</option>
+																			<option value="TIM PENGADAAN BARANG DAN JASA ( TPBJ )">TIM PENGADAAN BARANG DAN JASA ( TPBJ )</option>
+																			<option value="SATPAM">SATPAM</option>
+																			<option value="SATUAN PENGAWAS INTERNAL ( SPI)">SATUAN PENGAWAS INTERNAL ( SPI)</option>
+																			<option value="INSTALASI GAS MEDIK">INSTALASI GAS MEDIK</option>
+																			<option value="IGD">IGD</option>
+																			<option value="INSTALASI AMBULANCE">INSTALASI AMBULANCE</option>
+																			<option value="INSTALASI PROMKES">INSTALASI PROMKES</option>
+																			<option value="PENDIDIKAN&PENELITIAN">PENDIDIKAN&PENELITIAN</option>
+																			<option value="PENGADMINISTRASIAN UMUM">PENGADMINISTRASIAN UMUM</option>
+																			<option value="UNIT CASEMIX">UNIT CASEMIX</option>
+																		</select>
+																	</div>
 																</div>
-															</div>
+																<div class="form-group row">
+																	<div class="col-lg-12">
+																		<label>II. JENIS CUTI YANG DIAMBIL:</label>
+																		<span class="form-text text-muted">Pilih Jenis Cuti</span>
+																		<select class="form-control" id="view_jenis_cuti" disabled>
+																			<option value="Cuti Tahunan">Cuti Tahunan</option>
+																			<option value="Cuti Besar">Cuti Besar</option>
+																			<option value="Cuti Sakit">Cuti Sakit</option>
+																			<option value="Cuti Melahirkan">Cuti Melahirkan</option>
+																			<option value="Cuti Karena Alasan Penting">Cuti Karena Alasan Penting</option>
+																			<option value="Cuti di Luar Tanggungan Negara">Cuti di Luar Tanggungan Negara</option>
+																		</select>
+																	</div>
+																</div>
+																<div class="form-group row">
+																	<div class="col-lg-12">
+																		<label>III. ALASAN CUTI:</label>
+																		<span class="form-text text-muted">Alasan Mengambil Cuti</span>
+																		<input type="text" class="form-control" id="view_alasan_cuti" placeholder="Jelaskan Dengan Rinci" disabled/>
+																	</div>
+																</div>
+																<div class="form-group row">
+																	<div class="col-lg-4">
+																		<label>IV. LAMA CUTI:</label>
+																		<span class="form-text text-muted">Selama : </span>
+																		<input type="text" class="form-control" id="view_cuti_selama" placeholder="(hari/bulan/tahun)" disabled />
+																	</div>
+																	<div class="col-lg-4">
+																		<span class="form-text text-muted">Mulai Tanggal : </span>
+																		<input type="date" class="form-control" id="view_mulai_tgl" disabled/>
+																	</div>
+																	<div class="col-lg-4">
+																		<span class="form-text text-muted">Samapai Tanggal : </span>
+																		<input type="date" class="form-control" id="view_sampai_tgl" disabled/>
+																	</div>
+																</div>
+																<div class="form-group row">
+																	<div class="col-lg-12">
+																		<label>V. CATATAN CUTI: (isi sesuai jenis cuti yang dipilih)</label>
+																		<span class="form-text text-muted">CUTI TAHUNAN : </span>
+																		<!-- <input type="text" class="form-control" id="cuti_selama" placeholdr="(hari/bulan/tahun)" /> -->
+																	</div>
+																	<div class="col-lg-6">
+																		<span class="form-text text-muted">Sisa N2 : </span>
+																		<input type="text" class="form-control" id="view_tahunan_n2_sisa" placeholdr="Kosongi Jika Bukan Cuti Tahunan" disabled/>
+																	</div>
+																	<div class="col-lg-6">
+																		<span class="form-text text-muted">Keterangan N2 : </span>
+																		<input type="text" class="form-control" id="view_tahunan_n2_keterangan" placeholdr="Kosongi Jika Bukan Cuti Tahunan" disabled/>
+																	</div>
+																	<div class="col-lg-6">
+																		<span class="form-text text-muted">Sisa N1 : </span>
+																		<input type="text" class="form-control" id="view_tahunan_n1_sisa" placeholdr="Kosongi Jika Bukan Cuti Tahunan" disabled/>
+																	</div>
+																	<div class="col-lg-6">
+																		<span class="form-text text-muted">Keterangan N1 : </span>
+																		<input type="text" class="form-control" id="view_tahunan_n1_keterangan" placeholdr="Kosongi Jika Bukan Cuti Tahunan" disabled/>
+																	</div>
+																	<div class="col-lg-6">
+																		<span class="form-text text-muted">Sisa N : </span>
+																		<input type="text" class="form-control" id="view_tahunan_n_sisa" placeholdr="Kosongi Jika Bukan Cuti Tahunan" disabled/>
+																	</div>
+																	<div class="col-lg-6">
+																		<span class="form-text text-muted">Keterangan N : </span>
+																		<input type="text" class="form-control" id="view_tahunan_n_keterangan" placeholdr="Kosongi Jika Bukan Cuti Tahunan" disabled/>
+																	</div>
+																	<div class="col-lg-12">
+																		<span class="form-text text-muted">CUTI BESAR : </span>
+																		<input type="text" class="form-control" id="view_cuti_besar_ket" placeholdr="(hari/bulan/tahun)" disabled/>
+																	</div>
+																	<div class="col-lg-12">
+																		<span class="form-text text-muted">CUTI SAKIT : </span>
+																		<input type="text" class="form-control" id="view_cuti_sakit_ket" placeholdr="(hari/bulan/tahun)" disabled/>
+																	</div>
+																	<div class="col-lg-12">
+																		<span class="form-text text-muted">CUTI MELAHIRKAN : </span>
+																		<input type="text" class="form-control" id="view_cuti_melahirkan_ket" placeholdr="(hari/bulan/tahun)" disabled/>
+																	</div>
+																	<div class="col-lg-12">
+																		<span class="form-text text-muted">CUTI KARENA ALASAN PENTING : </span>
+																		<input type="text" class="form-control" id="view_cuti_penting_ket" placeholdr="(hari/bulan/tahun)" disabled/>
+																	</div>
+																	<div class="col-lg-12">
+																		<span class="form-text text-muted">CUTI DILUAR TANGGUNGAN NEGARA : </span>
+																		<input type="text" class="form-control" id="view_cuti_diluar_tanggungan_ket" placeholdr="(hari/bulan/tahun)" disabled/>
+																	</div>
+																</div>
+																
+																<div class="form-group row">
+																	<div class="col-lg-12">
+																		<label>VI. ALAMAT SELAMA MENJALAN CUTI:</label>
+																		<span class="form-text text-muted">Isi Alamat Lengkap</span>
+																		<input type="text" class="form-control" id="view_alamat_selama_cuti" placeholder="Jelaskan Dengan Rinci" disabled/>
+																	</div>
+																	<div class="col-lg-12">
+																		<span class="form-text text-muted">Telp yang bisa dihubungi</span>
+																		<input type="text" class="form-control" id="view_telp" placeholder="Jelaskan Dengan Rinci" disabled/>
+																	</div>
+																</div>
 
-																		
-														
-															<div class="badge badge-danger" id="pesanErrorTambah"></div>
-																<div class="text-center">
-																<button type="button"  class="btn btn-success my-2" onClick="edit()" id="tombolEdit"><div id="loader"> </div> Simpan</button>
-															</div>
+																<div class="form-group row">
+																	<div class="col-lg-12">
+																		<label>VII. PERTIMBANGAN ATASAN LANGSUNG:</label>
+																		<span class="form-text text-muted">Pilih Persetujuan</span>
+																		<select class="form-control" id="view_pertimbangan_atasan" disabled>
+																			<option value="DISETUJUI">DISETUJUI</option>
+																			<option value="PERUBAHAN">PERUBAHAN</option>
+																			<option value="DITANGGUHKAN">DITANGGUHKAN</option>
+																			<option value="TIDAK DISETUJUI">TIDAK DISETUJUI</option>
+																		</select>
+																	</div>
+																</div>
+																<div class="form-group row">
+																	<div class="col-lg-12">
+																		<label>VIII. KEPUTUSAN PEJABAT YANG BERWENANG MEMBERIKAN CUTI:</label>
+																		<span class="form-text text-muted">Pilih Persetujuan</span>
+																		<select class="form-control" id="view_keputusan_pejabat" disabled>
+																			<option value="DISETUJUI">DISETUJUI</option>
+																			<option value="PERUBAHAN">PERUBAHAN</option>
+																			<option value="DITANGGUHKAN">DITANGGUHKAN</option>
+																			<option value="TIDAK DISETUJUI">TIDAK DISETUJUI</option>
+																		</select>
+																	</div>
+																</div>
+
+																					<!--begin::Item-->
+																					<div class="d-flex align-items-center mb-9 bg-light-warning rounded p-5">
+																						<!--begin::Icon-->
+																						<span class="svg-icon svg-icon-warning mr-5">
+																						<span class="svg-icon svg-icon-lg">
+																							<!--begin::Svg Icon | path:/metronic/theme/html/demo2/dist/assets/media/svg/icons/Home/Library.svg-->
+																							<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+																							<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+																								<rect x="0" y="0" width="24" height="24" />
+																								<path d="M5,3 L6,3 C6.55228475,3 7,3.44771525 7,4 L7,20 C7,20.5522847 6.55228475,21 6,21 L5,21 C4.44771525,21 4,20.5522847 4,20 L4,4 C4,3.44771525 4.44771525,3 5,3 Z M10,3 L11,3 C11.5522847,3 12,3.44771525 12,4 L12,20 C12,20.5522847 11.5522847,21 11,21 L10,21 C9.44771525,21 9,20.5522847 9,20 L9,4 C9,3.44771525 9.44771525,3 10,3 Z" fill="#000000" />
+																								<rect fill="#000000" opacity="0.3" transform="translate(17.825568, 11.945519) rotate(-19.000000) translate(-17.825568, -11.945519)" x="16.3255682" y="2.94551858" width="3" height="18" rx="1" />
+																							</g>
+																							</svg>
+																							<!--end::Svg Icon-->
+																						</span>
+																						</span>
+																						<!--end::Icon-->
+																						<!--begin::Title-->
+																						<div class="d-flex flex-column flex-grow-1 mr-2">
+																						<a href="#" class="font-weight-bold text-dark-75 text-hover-primary font-size-lg mb-1" id="view_file_cuti">File Cuti</a>
+																						</div>
+																					</div>
 														</form>
+														<!--end::Form-->
 													</div>
 												</div>
 											</div>
 										</div>
 									</div>
 								</div>
-
+							
+              
 
 							<!--end::Container-->
 						</div>
@@ -439,7 +664,7 @@
 
   function tampilkan(){
     $("#tempatTabel").html('<i class="fas fa-spinner fa-pulse"></i> Memuat...')
-    var baris = '<table class="table table-separate table-head-custom table-checkable" id="tabelUser"><thead class="thead-light"><tr><th>Action</th><th>NO</th><th>Tanggal Update</th><th>Nama</th><th>NIP</th><th>Jabatan</th><th>Masa Kerja</th><th>Unit Kerja</th><th>Jenis Cuti</th><th>Alasan Cuti</th><th>Lama Cuti</th><th>Mulai Cuti</th><th>Selesai Cuti</th><th>Cuti Tahunan Sisa N2</th><th>Cuti Tahunan Keterangan N2</th><th>Cuti Tahunan Sisa N1</th><th>Cuti Tahunan Keterangan N1</th><th>Cuti Tahunan Sisa N</th><th>Cuti Tahunan Keterangan N</th><th>Cuti Besar</th><th>Cuti Sakit</th><th>Cuti Melahirkan</th><th>Cuti Karena Alasan Penting</th><th>Cuti di luar Tanggungan Negara</th><th>Alamat selama Cuti</th><th>telp</th><th>Pertimbangan Atasan</th><th>Keputusan Pejabat</th><th>File Cuti</th></tr></thead>'
+    var baris = '<table class="table table-separate table-head-custom table-checkable" id="tabelUser"><thead class="thead-light"><tr><th>Action</th><th>NO</th><th>Tanggal Update</th><th>Nama</th><th>NIP</th><th>Jabatan</th><th>Masa Kerja</th><th>Unit Kerja</th><th>Jenis Cuti</th><th>Alasan Cuti</th><th>Lama Cuti</th><th>Pertimbangan Atasan</th><th>Keputusan Pejabat</th></tr></thead>'
       $.ajax({
         type:'POST',
         url: '<?= base_url() ?>cuti_karyawan/tampil',
@@ -450,8 +675,8 @@
             baris += '<tr>'
             baris += '<td><div style="cursor:pointer;" title="hapus?" id="hapus' + data[i].id + '" onClick="tryHapus(' + data[i].id+ ')"><i class="flaticon-delete text-danger"></i></div>'
             // baris += ' <div style="cursor:pointer;" title="edit?"  id="edit' + data[i].id + '" onClick="tryEdit(' + data[i].id+ ')"><i class="flaticon2-pen text-success"></i></div>'
-            // baris += ' <div style="cursor:pointer;" title="view?" id="cetak' + data[i].id + '" onClick="tryCetak(' + data[i].id+ ')"><i class="flaticon-eye text-primary"></i></div>'
-            // baris += ' <div style="cursor:pointer;" title="view?" id="view' + data[i].id + '" onClick="tryView(' + data[i].id+ ')"><i class="flaticon-eye text-primary"></i></div>'
+			baris += ' <div style="cursor:pointer;" title="Upload Berkas Cuti?"  id="cuti' + data[i].id + '" onClick="tampil_modal_cuti(' + data[i].id+ ')"><i class="flaticon2-open-box text-warning"></i></div>'
+            baris += ' <div style="cursor:pointer;" title="view?" id="view' + data[i].id + '" onClick="tryView(' + data[i].id+ ')"><i class="flaticon-eye text-primary"></i></div>'
             baris += '<td>' + (i + 1) + '</td>'
             baris += '<td>' + data[i].tgl_input + '</td>'
             baris += '<td>' + data[i].nama + '</td>'
@@ -462,24 +687,9 @@
             baris += '<td>' + data[i].jenis_cuti + '</td>'
             baris += '<td>' + data[i].alasan_cuti + '</td>'
             baris += '<td>' + data[i].cuti_selama + '</td>'
-            baris += '<td>' + data[i].mulai_tgl + '</td>'
-            baris += '<td>' + data[i].sampai_tgl + '</td>'
-            baris += '<td>' + data[i].tahunan_n2_sisa + '</td>'
-            baris += '<td>' + data[i].tahunan_n2_keterangan + '</td>'
-            baris += '<td>' + data[i].tahunan_n1_sisa + '</td>'
-            baris += '<td>' + data[i].tahunan_n1_keterangan + '</td>'
-            baris += '<td>' + data[i].tahunan_n_sisa + '</td>'
-            baris += '<td>' + data[i].tahunan_n_keterangan + '</td>'
-            baris += '<td>' + data[i].cuti_besar_ket + '</td>'
-            baris += '<td>' + data[i].cuti_sakit_ket + '</td>'
-            baris += '<td>' + data[i].cuti_melahirkan_ket + '</td>'
-            baris += '<td>' + data[i].cuti_penting_ket + '</td>'
-            baris += '<td>' + data[i].cuti_diluar_tanggungan_ket + '</td>'
-            baris += '<td>' + data[i].alamat_selama_cuti + '</td>'
-            baris += '<td>' + data[i].telp + '</td>'
             baris += '<td>' + data[i].pertimbangan_atasan + '</td>'
             baris += '<td>' + data[i].keputusan_pejabat + '</td>'
-            baris += '<td>' + data[i].file_cuti + '</td>'
+            // baris += '<td>' + data[i].file_cuti + '</td>'
             baris += '</td></tr>'
           }
           baris += '</tbody></table>'
@@ -511,6 +721,124 @@
       });
   }
 
+  
+  function tampil_modal_cuti(id){
+      document.getElementById("berkas_cuti").value = "";
+
+      var tombol = '<button type="button" onclick="pernyataan_cuti('+id+')" id="simpan_pernyataan_cuti" class="btn btn-block btn-info"><div id="loader_upload_cuti"> </div> Simpan</button>';
+      $("#div_upload_cuti").html(tombol);
+      $('#modalcuti').modal('show');
+    }
+
+	  function pernyataan_cuti(id) {
+      // console.log(id);
+      if(document.getElementById("berkas_cuti").value == ""){
+        document.getElementById("berkas_cuti").focus();
+      } else{
+        var format = $('#berkas_cuti').prop('files')[0].type;
+        if (format.includes('pdf')) {
+          var form_data = new FormData();
+          form_data.append('id', id);
+        //   form_data.append('jenis', document.getElementById("jenis_pernyataan").value);
+          form_data.append('berkas_cuti', $('#berkas_cuti').prop('files')[0]);
+
+          $.ajax({
+            type: 'POST',
+            data: form_data,
+            url: '<?= base_url() ?>cuti_karyawan/upload_pernyataan_cuti',
+            processData:false,
+            contentType:false,
+            cache:false,
+            dataType: 'json',
+            beforeSend: function () {
+              $('#simpan_pernyataan_cuti').attr('disabled', true);
+              $('#loader_upload_cuti').html('');
+              addSpinner($('#loader_upload_cuti'));
+            },
+            success: function(data) {
+              // alert(data);
+              // console.log(data);
+              $('#simpan_pernyataan_cuti').attr('disabled', false);
+              removeSpinner($('#loader_upload_cuti'), function () {
+                $('#loader_upload_cuti').html('');
+              });
+            //   ambil_data();
+              $('#modalcuti').modal('hide');
+              Swal.fire({
+                position: 'center',
+                icon: 'success',
+                title: 'Data Berhasil Diupload',
+                showConfirmButton: false,
+                timer: 2500
+              });
+            }
+          });
+        }else{
+           Swal.fire({
+              position: 'center',
+              icon: 'error',
+              title: 'Type file harus PDF atau JPEG atau JPG',
+              showConfirmButton: false,
+              timer: 2500
+            });
+        }
+      }
+  	}
+
+
+	  function tryView(id) {
+      $("#tombolView" + id).html('<i class="fas fa-spinner fa-pulse"></i>')
+      $("#idUser").val(id)
+      $.ajax({
+      url: '<?= base_url() ?>cuti_karyawan/edit_id',
+      method: 'post',
+      data: "target=cuti_karyawan&id=" + id,
+      dataType: 'json',
+      success: function(data) {
+        $("#view_file_cuti").html('');
+
+        // $("#view_foto").html('<img src="'+base_url+'assets/foto_karyawan/'+data.foto+'">');
+
+        $("#modalview").modal('show')
+        $("#view_nip").val(data.nip)
+        $("#view_jabatan").val(data.jabatan)
+        $("#view_masa_kerja").val(data.masa_kerja)
+        $("#view_unit_kerja").val(data.unit_kerja)
+        $("#view_jenis_cuti").val(data.jenis_cuti)
+        $("#view_alasan_cuti").val(data.alasan_cuti)
+        $("#view_cuti_selama").val(data.cuti_selama)
+        $("#view_mulai_tgl").val(data.mulai_tgl)
+        $("#view_sampai_tgl").val(data.sampai_tgl)
+        $("#view_tahunan_n2_sisa").val(data.tahunan_n2_sisa)
+        $("#view_tahunan_n2_keterangan").val(data.tahunan_n2_keterangan)
+        $("#view_tahunan_n1_sisa").val(data.tahunan_n1_sisa)
+        $("#view_tahunan_n1_keterangan").val(data.tahunan_n1_keterangan)
+        $("#view_tahunan_n_sisa").val(data.tahunan_n_sisa)
+        $("#view_tahunan_n_keterangan").val(data.tahunan_n_keterangan)
+        $("#view_cuti_besar_ket").val(data.cuti_besar_ket)
+        $("#view_cuti_sakit_ket").val(data.cuti_sakit_ket)
+        $("#view_cuti_melahirkan_ket").val(data.cuti_melahirkan_ket)
+        $("#view_cuti_penting_ket").val(data.cuti_penting_ket)
+        $("#view_cuti_diluar_tanggungan_ket").val(data.cuti_diluar_tanggungan_ket)
+        $("#view_alamat_selama_cuti").val(data.alamat_selama_cuti)
+        $("#view_telp").val(data.telp)
+        $("#view_pertimbangan_atasan").val(data.pertimbangan_atasan)
+        $("#view_keputusan_pejabat").val(data.keputusan_pejabat)
+        $("#view_file_cuti").val(data.file_sertifikat)
+
+
+        if(data.file_cuti!=null){
+          var link = ' <a href="<?= base_url() ?>assets/arsip_karyawan/'+data.file_cuti+'" target="_blank">Berkas Cuti</a>';
+          $("#view_file_cuti").html(link);
+        }
+        console.log(data)
+        $("#view" + id).html('<i class="fa fa-edit"></i>')
+      }
+      });
+	  }
+
+
+
   function reset_form(){
     random_all = '';
     document.getElementById('nama_karyawan').value = "";
@@ -538,7 +866,6 @@
     document.getElementById('telp').value = "";
     document.getElementById('pertimbangan_atasan').value = "";
     document.getElementById('keputusan_pejabat').value = "";
-    document.getElementById('file_cuti').value = "";
   }
 
   function tampil_input_modal(){
@@ -581,7 +908,6 @@
               + '&alamat_selama_cuti=' +  document.getElementById('alamat_selama_cuti').value 
               + '&telp=' +  document.getElementById('telp').value 
               + '&pertimbangan_atasan=' +  document.getElementById('pertimbangan_atasan').value 
-              + '&file_cuti=' +  document.getElementById('file_cuti').value 
 			  + '&keputusan_pejabat=' +  document.getElementById('keputusan_pejabat').value,
               url: '<?= base_url() ?>cuti_karyawan/tambah_cuti',
               dataType: 'json',

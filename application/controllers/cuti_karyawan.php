@@ -28,6 +28,35 @@ class cuti_karyawan extends CI_Controller
 			echo json_encode($this->db_model->get_where("v_cuti_karyawan", array('id' => $this->session->userdata("id")))->result());
 		}
 	}
+	function upload_pernyataan_cuti()
+	{
+		$user = $this->db_model->get_where('v_cuti_karyawan', array('id' => $this->input->post('id', TRUE)))->row();
+		$nama = "Berkas Cuti_" .$user->nama ;
+		// $nama = $user->tanggal_antri . "_" . $user->id . "_" . $user->nama;
+
+		$config['allowed_types'] = 'pdf';
+		$config['upload_path'] = './assets/arsip_karyawan/';
+		$config['file_name'] = $nama;
+
+		$this->load->library('upload', $config);
+
+		// unlink('./document/pernyataan/'.$nama);
+
+		if ($this->upload->do_upload('berkas_cuti')) {
+
+			$namaFotoBaru = $this->upload->data('file_name');
+
+			$data = [
+				"file_cuti" => $namaFotoBaru
+				// "tindakan" => $this->input->post('jenis', TRUE),
+			];
+
+			echo json_encode($this->db_model->update("cuti_karyawan", $data, array('id' => $this->input->post("id", TRUE))));
+		} else {
+			echo json_encode($this->upload->display_errors());
+		}
+		// echo json_encode($nama);
+	}
 
 	public function exel(){
 		$data = $this->db_model->datacuti();

@@ -129,13 +129,13 @@
 																<input type="text" class="form-control" id="no_sertifikat" placeholder="Gunakan Huruf & Angka" />
 															</div>
 
-															<div class="form-group mb-3">
+															<!-- <div class="form-group mb-3">
 																<span class="form-text text-muted">Upload Sertifiikat Pelatihan</span>
 																<div class="custom-file">
 																	<input type="file" class="custom-file-input" id="file_sertifikat" />
 																	<label class="custom-file-label" for="customFile">File Sertofokat Harus format pdf</label>
 																</div>
-															</div>
+															</div> -->
 
 																		
 														
@@ -181,7 +181,7 @@
 
 							<!-- edit -->
 								<div class="modal fade" id="modalEdit" tabindex="-1" role="dialog" aria-labelledby="modal-form" aria-hidden="true">
-								<div class="modal-dialog modal- modal-dialog-centered modal-lg" role="document">
+								  <div class="modal-dialog modal- modal-dialog-centered modal-lg" role="document">
 										<div class="modal-content">
 											<div class="modal-body p-0">
 												<div class="card bg-secondary border-0 mb-0">
@@ -235,6 +235,104 @@
 										</div>
 									</div>
 								</div>
+              
+              
+						<!-- Tambah sertifikat-->
+							<div class="modal fade" id="modalsertifikat" tabindex="-1" role="dialog" aria-labelledby="modal-form" aria-hidden="true">	
+								<div class="modal-dialog modal- modal-dialog-centered modal-sm" role="document">
+									<div class="modal-content">
+										<div class="modal-body p-0">
+											<div class="card bg-secondary border-0 mb-0">
+												<div class="card-header bg-success pb-1">
+													<div class="text-muted text-center mt-2 mb-3">
+														<span class="text-white">Form Tambah Sertifikat Pelatihan Karyawan </span>
+													</div>
+												</div>
+												<div class="card-body px-lg-5 py-lg-5">
+													<form role="form">
+														<div class="form-group mb-3">
+															<div class="custom-file">
+																<input type="file" class="custom-file-input" id="berkas_sertifikat" accept="application/pdf" />
+																<label class="custom-file-label" for="berkas_sertifikat">Foto Harus format PDF</label>
+															</div>
+														</div>
+
+														
+														<div id="div_upload_sertifikat">
+														</div>
+													</form>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+              
+              
+						<!-- View-->
+							<div class="modal fade" id="modalview" tabindex="-1" role="dialog" aria-labelledby="modal-form" aria-hidden="true">	
+								<div class="modal-dialog modal- modal-dialog-centered modal-sm" role="document">
+									<div class="modal-content">
+										<div class="modal-body p-0">
+											<div class="card bg-secondary border-0 mb-0">
+												<div class="card-header bg-success pb-1">
+													<div class="text-muted text-center mt-2 mb-3">
+														<span class="text-white">Data Pelatihan Karyawan </span>
+													</div>
+												</div>
+												<div class="card-body px-lg-5 py-lg-5">
+																				<form role="form">
+																					<div class="form-group mb-1">
+																						<span class="form-text text-muted">Nama Pelatihan</span>
+																		<input id="idUser" type="hidden">
+																						<input type="text" class="form-control" id="view_nama_pelatihan" disabled/>
+																					</div>
+																					<div class="form-group mb-1">
+																						<span class="form-text text-muted">Durasi Pelatihan</span>
+																						<input type="text" class="form-control" id="view_durasi_pelatihan" disabled/>
+																					</div>
+																					<div class="form-group mb-1">
+																						<span class="form-text text-muted">Mulai Pelatihan</span>
+																						<input type="text" class="form-control" id="view_tgl_mulai_pelatihan" disabled/>
+																					</div>
+																					<div class="form-group mb-1">
+																						<span class="form-text text-muted">Selesai Pelatihan</span>
+																						<input type="text" class="form-control" id="view_tgl_selesai_pelatihan" disabled/>
+																					</div>
+																					<div class="form-group mb-3">
+																						<span class="form-text text-muted">No Sertifikat</span>
+																						<input type="text" class="form-control" id="view_no_sertifikat" disabled />
+																					</div>
+                                          <!--begin::Item-->
+                                          <div class="d-flex align-items-center mb-9 bg-light-warning rounded p-5">
+                                            <!--begin::Icon-->
+                                            <span class="svg-icon svg-icon-warning mr-5">
+                                              <span class="svg-icon svg-icon-lg">
+                                                <!--begin::Svg Icon | path:/metronic/theme/html/demo2/dist/assets/media/svg/icons/Home/Library.svg-->
+                                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+                                                  <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                                    <rect x="0" y="0" width="24" height="24" />
+                                                    <path d="M5,3 L6,3 C6.55228475,3 7,3.44771525 7,4 L7,20 C7,20.5522847 6.55228475,21 6,21 L5,21 C4.44771525,21 4,20.5522847 4,20 L4,4 C4,3.44771525 4.44771525,3 5,3 Z M10,3 L11,3 C11.5522847,3 12,3.44771525 12,4 L12,20 C12,20.5522847 11.5522847,21 11,21 L10,21 C9.44771525,21 9,20.5522847 9,20 L9,4 C9,3.44771525 9.44771525,3 10,3 Z" fill="#000000" />
+                                                    <rect fill="#000000" opacity="0.3" transform="translate(17.825568, 11.945519) rotate(-19.000000) translate(-17.825568, -11.945519)" x="16.3255682" y="2.94551858" width="3" height="18" rx="1" />
+                                                  </g>
+                                                </svg>
+                                                <!--end::Svg Icon-->
+                                              </span>
+                                            </span>
+                                            <!--end::Icon-->
+                                            <!--begin::Title-->
+                                            <div class="d-flex flex-column flex-grow-1 mr-2">
+                                              <a href="#" class="font-weight-bold text-dark-75 text-hover-primary font-size-lg mb-1" id="view_file_sertifikat">File Sertifikat</a>
+                                            </div>
+                                          </div>
+
+																				</form>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
 
 
 							<!--end::Container-->
@@ -244,43 +342,139 @@
   var random_all = '';
   tampilkan();
 
-  function tampilkan(){
-    $("#tempatTabel").html('<i class="fas fa-spinner fa-pulse"></i> Memuat...')
-    var baris = '<table class="table table-separate table-head-custom table-checkable" id="tabelUser"><thead class="thead-light"><tr><th>Action</th><th>NO</th><th>Tanggal Pengisian</th><th>Nama</th><th>Pelatihan</th><th>Durasi</th><th>No Sertifikat</th><th>File Sertifikat</th><th>Mulai</th><th>Selesai</th></tr></thead>'
-      $.ajax({
-        type:'POST',
-        url: '<?= base_url() ?>pelatihan_karyawan/tampil',
-        dataType :'json',
-        success: function(data){
-         //console.log(data);
-          for (let i = 0; i < data.length; i++) {
-            baris += '<tr>'
-            baris += '<td><div style="cursor:pointer;" title="hapus?" id="hapus' + data[i].id + '" onClick="tryHapus(' + data[i].id+ ')"><i class="flaticon-delete text-danger"></i></div>'
-            // baris += ' <div style="cursor:pointer;" title="edit?"  id="edit' + data[i].id + '" onClick="tryEdit(' + data[i].id+ ')"><i class="flaticon2-pen text-success"></i></div>'
-            // baris += ' <div style="cursor:pointer;" title="view?" id="cetak' + data[i].id + '" onClick="tryCetak(' + data[i].id+ ')"><i class="flaticon-eye text-primary"></i></div>'
-            // baris += ' <div style="cursor:pointer;" title="view?" id="view' + data[i].id + '" onClick="tryView(' + data[i].id+ ')"><i class="flaticon-eye text-primary"></i></div>'
-            baris += '<td>' + (i + 1) + '</td>'
-            baris += '<td>' + data[i].tgl_update + '</td>'
-            baris += '<td>' + data[i].nama + '</td>'
-            baris += '<td>' + data[i].nama_pelatihan + '</td>'
-            baris += '<td>' + data[i].durasi_pelatihan + '</td>'
-            // baris += '<td>' + data[i].email + '</td>'
-            baris += '<td>' + data[i].no_sertifikat + '</td>'
-            baris += '<td>' + data[i].file_sertifikat + '</td>'
-            baris += '<td>' + data[i].tgl_mulai_pelatihan+ '</td>'
-            baris += '<td>' + data[i].tgl_selesai_pelatihan+ '</td>'
-            baris += '</td></tr>'
+    function tampilkan(){
+      $("#tempatTabel").html('<i class="fas fa-spinner fa-pulse"></i> Memuat...')
+      var baris = '<table class="table table-separate table-head-custom table-checkable" id="tabelUser"><thead class="thead-light"><tr><th>Action</th><th>NO</th><th>Tanggal Pengisian</th><th>Nama</th><th>Pelatihan</th><th>Durasi</th><th>No Sertifikat</th><th>Mulai</th><th>Selesai</th></tr></thead>'
+        $.ajax({
+          type:'POST',
+          url: '<?= base_url() ?>pelatihan_karyawan/tampil',
+          dataType :'json',
+          success: function(data){
+          //console.log(data);
+            for (let i = 0; i < data.length; i++) {
+              baris += '<tr>'
+              baris += '<td><div style="cursor:pointer;" title="hapus?" id="hapus' + data[i].id + '" onClick="tryHapus(' + data[i].id+ ')"><i class="flaticon-delete text-danger"></i></div>'
+              baris += ' <div style="cursor:pointer;" title="Upload Sertifikat?"  id="sertifikat' + data[i].id + '" onClick="tampil_modal_sertifikat(' + data[i].id+ ')"><i class="flaticon2-open-box text-warning"></i></div>'
+              baris += ' <div style="cursor:pointer;" title="view?" id="view' + data[i].id + '" onClick="tryView(' + data[i].id+ ')"><i class="flaticon-eye text-primary"></i></div>'
+              baris += '<td>' + (i + 1) + '</td>'
+              baris += '<td>' + data[i].tgl_update + '</td>'
+              baris += '<td>' + data[i].nama + '</td>'
+              baris += '<td>' + data[i].nama_pelatihan + '</td>'
+              baris += '<td>' + data[i].durasi_pelatihan + '</td>'
+              // baris += '<td>' + data[i].email + '</td>'
+              baris += '<td>' + data[i].no_sertifikat + '</td>'
+              // baris += '<td>' + data[i].file_sertifikat + '</td>'
+              baris += '<td>' + data[i].tgl_mulai_pelatihan+ '</td>'
+              baris += '<td>' + data[i].tgl_selesai_pelatihan+ '</td>'
+              baris += '</td></tr>'
+            }
+            baris += '</tbody></table>'
+            $("#tempatTabel").html(baris);
+            $('#tabelUser').DataTable({
+              "pageLength": 20,
+            });
           }
-          baris += '</tbody></table>'
-          $("#tempatTabel").html(baris);
-          $('#tabelUser').DataTable({
-            "pageLength": 20,
-          });
-        }
-      });
-  }
+        });
+    }
 
-  function get_nama() {
+    function tampil_modal_sertifikat(id){
+      document.getElementById("berkas_sertifikat").value = "";
+
+      var tombol = '<button type="button" onclick="pernyataan_sertifikat('+id+')" id="simpan_pernyataan_sertifikat" class="btn btn-block btn-info"><div id="loader_upload_sertifikat"> </div> Simpan</button>';
+      $("#div_upload_sertifikat").html(tombol);
+      $('#modalsertifikat').modal('show');
+    }
+
+	  function pernyataan_sertifikat(id) {
+      // console.log(id);
+      if(document.getElementById("berkas_sertifikat").value == ""){
+        document.getElementById("berkas_sertifikat").focus();
+      } else{
+        var format = $('#berkas_sertifikat').prop('files')[0].type;
+        if (format.includes('pdf')) {
+          var form_data = new FormData();
+          form_data.append('id', id);
+        //   form_data.append('jenis', document.getElementById("jenis_pernyataan").value);
+          form_data.append('berkas_sertifikat', $('#berkas_sertifikat').prop('files')[0]);
+
+          $.ajax({
+            type: 'POST',
+            data: form_data,
+            url: '<?= base_url() ?>pelatihan_karyawan/upload_pernyataan_sertifikat',
+            processData:false,
+            contentType:false,
+            cache:false,
+            dataType: 'json',
+            beforeSend: function () {
+              $('#simpan_pernyataan_sertifikat').attr('disabled', true);
+              $('#loader_upload_sertifikat').html('');
+              addSpinner($('#loader_upload_sertifikat'));
+            },
+            success: function(data) {
+              // alert(data);
+              // console.log(data);
+              $('#simpan_pernyataan_sertifikat').attr('disabled', false);
+              removeSpinner($('#loader_upload_sertifikat'), function () {
+                $('#loader_upload_sertifikat').html('');
+              });
+            //   ambil_data();
+              $('#modalsertifikat').modal('hide');
+              Swal.fire({
+                position: 'center',
+                icon: 'success',
+                title: 'Data Berhasil Diupload',
+                showConfirmButton: false,
+                timer: 2500
+              });
+            }
+          });
+        }else{
+           Swal.fire({
+              position: 'center',
+              icon: 'error',
+              title: 'Type file harus PDF atau JPEG atau JPG',
+              showConfirmButton: false,
+              timer: 2500
+            });
+        }
+      }
+  	}
+
+    function tryView(id) {
+      $("#tombolView" + id).html('<i class="fas fa-spinner fa-pulse"></i>')
+      $("#idUser").val(id)
+      $.ajax({
+      url: '<?= base_url() ?>pelatihan_karyawan/edit_id',
+      method: 'post',
+      data: "target=pelatihan_karyawan&id=" + id,
+      dataType: 'json',
+      success: function(data) {
+        $("#view_file_sertifikat").html('');
+
+        // $("#view_foto").html('<img src="'+base_url+'assets/foto_karyawan/'+data.foto+'">');
+
+        $("#modalview").modal('show')
+        $("#view_nama").val(data.nama)
+        $("#view_nama_pelatihan").val(data.nama_pelatihan)
+        $("#view_tgl_mulai_pelatihan").val(data.tgl_mulai_pelatihan)
+        $("#view_tgl_selesai_pelatihan").val(data.tgl_selesai_pelatihan)
+        $("#view_durasi_pelatihan").val(data.durasi_pelatihan)
+        $("#view_no_sertifikat").val(data.no_sertifikat)
+        $("#view_file_sertifikat").val(data.file_sertifikat)
+
+
+        if(data.file_sertifikat!=null){
+          var link = ' <a href="<?= base_url() ?>assets/arsip_karyawan/'+data.file_sertifikat+'" target="_blank">Sertifikat Pelatihan</a>';
+          $("#view_file_sertifikat").html(link);
+        }
+        console.log(data)
+        $("#view" + id).html('<i class="fa fa-edit"></i>')
+      }
+      });
+	  }
+
+  
+    function get_nama() {
       $.ajax({
           type: 'POST',
           url: '<?= base_url() ?>pelatihan_karyawan/get_nama_karyawan',
@@ -293,7 +487,7 @@
               $("#nama_karyawan").html(html);
           }
       });
-  }
+    }
 
   function reset_form(){
     random_all = '';
@@ -303,7 +497,6 @@
     document.getElementById('tgl_selesai_pelatihan').value = "";
     document.getElementById('durasi_pelatihan').value = "";
     document.getElementById('no_sertifikat').value = "";
-    document.getElementById('file_sertifikat').value = "";
   }
 
   function tampil_input_modal(){
@@ -325,8 +518,7 @@
               type: 'POST',
               data: 'nama_pelatihan=' + document.getElementById("nama_pelatihan").value + '&tgl_mulai_pelatihan=' + document.getElementById('tgl_mulai_pelatihan').value
               + '&nama_karyawan=' +  document.getElementById('nama_karyawan').value + '&tgl_selesai_pelatihan=' +  document.getElementById('tgl_selesai_pelatihan').value
-              + '&durasi_pelatihan=' +  document.getElementById('durasi_pelatihan').value + '&no_sertifikat=' +  document.getElementById('no_sertifikat').value
-              + '&file_sertifikat=' +  document.getElementById('file_sertifikat').value,
+              + '&durasi_pelatihan=' +  document.getElementById('durasi_pelatihan').value + '&no_sertifikat=' +  document.getElementById('no_sertifikat').value,
               url: '<?= base_url() ?>pelatihan_karyawan/tambah_pelatihan',
               dataType: 'json',
               beforeSend: function () {

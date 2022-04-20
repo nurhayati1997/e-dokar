@@ -122,7 +122,7 @@ License: You must have a valid license purchased only from themeforest(the above
 											</li>
 											<?php } ?>
 
-											<?php if ($this->session->userdata("rule") == 1 or $this->session->userdata("rule") == 2) { ?>
+											<?php if ($this->session->userdata("rule") == 1 or $this->session->userdata("rule") == 3) { ?>
 											<li class="menu-item menu-item-submenu menu-item-rel" data-menu-toggle="click" aria-haspopup="true">
 												<a href="<?= site_url('pelatihan_karyawan') ?>" class="menu-link">
 													<span class="menu-text">Pelatihan Karyawan</span>
@@ -132,7 +132,7 @@ License: You must have a valid license purchased only from themeforest(the above
 											<?php } ?>
 											
                       
-											<?php if ($this->session->userdata("rule") == 1) { ?>
+											<?php if ($this->session->userdata("rule") == 1 or $this->session->userdata("rule") == 3) { ?>
 											<li class="menu-item menu-item-submenu menu-item-rel" data-menu-toggle="click" aria-haspopup="true">
 												<a href="javascript:;" class="menu-link menu-toggle">
 													<span class="menu-text">Kenaikan</span>
@@ -197,7 +197,7 @@ License: You must have a valid license purchased only from themeforest(the above
 											</li>
 											<?php } ?>
 
-											<?php if ($this->session->userdata("rule") == 1) { ?>
+											<?php if ($this->session->userdata("rule") == 1 or $this->session->userdata("rule") == 3) { ?>
 											<li class="menu-item menu-item-submenu menu-item-rel" data-menu-toggle="click" aria-haspopup="true">
 												<a href="<?= site_url('riwayat_kerja_karyawan') ?>" class="menu-link">
 													<span class="menu-text">Riwayat Kerja</span>

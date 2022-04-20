@@ -22,8 +22,14 @@ class berkala_karyawan extends CI_Controller
 	
 	public function tampil()
 	{
-		
+		if ($this->session->userdata("rule")==1) {
+			// redirect("login");
 			echo json_encode($this->db_model->all_data("v_berkala_karyawan")->result());
+		}else{
+			echo json_encode($this->db_model->get_where("v_berkala", array('id' => $this->session->userdata("id")))->result());
+		}
+		
+			// echo json_encode($this->db_model->all_data("v_berkala_karyawan")->result());
 	}
 
 	public function exel(){

@@ -25,7 +25,7 @@ class cuti_karyawan extends CI_Controller
 		if ($this->session->userdata("rule")==1) {
 			echo json_encode($this->db_model->all_data("v_cuti_karyawan")->result());
 		}else{
-			echo json_encode($this->db_model->get_where("v_cuti_karyawan", array('id' => $this->session->userdata("id")))->result());
+			echo json_encode($this->db_model->get_where("v_cuti", array('id' => $this->session->userdata("id")))->result());
 		}
 	}
 	function upload_pernyataan_cuti()

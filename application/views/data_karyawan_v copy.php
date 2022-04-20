@@ -672,8 +672,9 @@
 																			<div class="d-flex flex-column flex-center">
 																				<!--begin::Symbol-->
 																				<div class="symbol symbol-120 symbol-circle symbol-success overflow-hidden">
-																					<span class="symbol-label">
-																						<img src="https://preview.keenthemes.com/metronic/theme/html/demo2/dist/assets/media/svg/avatars/007-boy-2.svg" class="h-75 align-self-end" alt="" />
+																					<span class="symbol-label" id="view_foto">
+																						<!-- <img src="https://preview.keenthemes.com/metronic/theme/html/demo2/dist/assets/media/svg/avatars/007-boy-2.svg" class="h-75 align-self-end" alt="" /> -->
+																						<!-- <img src="#" id="view_foto" alt="" /> -->
 																					</span>
 																				</div>
 																				<!--end::Symbol-->
@@ -763,12 +764,7 @@
 																			<!--end::Icon-->
 																			<!--begin::Title-->
 																			<div class="d-flex flex-column flex-grow-1 mr-2">
-																				<a href="#" class="font-weight-bold text-dark-75 text-hover-primary font-size-lg mb-1">SK Penempatan</a>
-																				<form role="form">
-																					<div class="form-group mb-1">
-																						<input type="text" class="form-control" id="view_file_penempatan" disabled/>
-																					</div>
-																				</form><!-- <span class="text-muted font-weight-bold">Due in 2 Days</span> -->
+																				<a href="#" class="font-weight-bold text-dark-75 text-hover-primary font-size-lg mb-1" id="view_file_penempatan">SK Penempatan</a>
 																			</div>
 																		</div>
 																		<!--end::Item-->
@@ -791,12 +787,7 @@
 																			<!--end::Icon-->
 																			<!--begin::Title-->
 																			<div class="d-flex flex-column flex-grow-1 mr-2">
-																			<a href="#" class="font-weight-bold text-dark-75 text-hover-primary font-size-lg mb-1">SK KARYAWAN</a>
-																				<form role="form">
-																					<div class="form-group mb-1">
-																						<input type="text" class="form-control" id="view_file_sk" disabled/>
-																					</div>
-																				</form>
+																			<a href="#" class="font-weight-bold text-dark-75 text-hover-primary font-size-lg mb-1" id="view_file_sk">SK KARYAWAN</a>
 																			</div>
 																			<!--end::Title-->
 																			<!--begin::Lable-->
@@ -823,12 +814,7 @@
 																			<!--end::Icon-->
 																			<!--begin::Title-->
 																			<div class="d-flex flex-column flex-grow-1 mr-2">
-																				<a href="#" class="font-weight-bold text-dark-75 text-hover-primary font-size-lg mb-1">STR</a>
-																				<form role="form">
-																					<div class="form-group mb-1">
-																						<input type="text" class="form-control" id="view_file_str" disabled/>
-																					</div>
-																				</form>
+																				<a href="#"  class="font-weight-bold text-dark-75 text-hover-primary font-size-lg mb-1" id="view_file_str">STR</a>
 																			</div>
 																			<!--end::Title-->
 																			<!--begin::Lable-->
@@ -855,12 +841,7 @@
 																			<!--end::Icon-->
 																			<!--begin::Title-->
 																			<div class="d-flex flex-column flex-grow-1 mr-2">
-																				<a href="#" class="font-weight-bold text-dark-75 text-hover-primary font-size-lg mb-1">SKP</a>
-																				<form role="form">
-																					<div class="form-group mb-1">
-																						<input type="text" class="form-control" id="view_file_skp" disabled/>
-																					</div>
-																				</form>
+																				<a href="#" class="font-weight-bold text-dark-75 text-hover-primary font-size-lg mb-1" id="view_file_skp">SKP</a>
 																			</div>
 																			<!--end::Title-->
 																			<!--begin::Lable-->
@@ -869,7 +850,7 @@
 																		</div>
 																		<!--end::Item-->
 																		<!--begin::Item-->
-																		<div class="d-flex align-items-center bg-light-info rounded p-5">
+																		<div class="d-flex align-items-center bg-light-info rounded p-5 mb-9">
 																			<!--begin::Icon-->
 																			<span class="svg-icon svg-icon-info mr-5">
 																				<span class="svg-icon svg-icon-lg">
@@ -889,19 +870,12 @@
 																			<!--end::Icon-->
 																			<!--begin::Title-->
 																			<div class="d-flex flex-column flex-grow-1 mr-2">
-																			<div class="d-flex flex-column flex-grow-1 mr-2">
-																				<a href="#" class="font-weight-bold text-dark-75 text-hover-primary font-size-lg mb-1">SIP</a>
-																				<form role="form">
-																					<div class="form-group mb-1">
-																						<input type="text" class="form-control" id="view_file_sip" disabled/>
-																					</div>
-																				</form>
-																			</div>
+																				<a href="#" class="font-weight-bold text-dark-75 text-hover-primary font-size-lg mb-1" id="view_file_sip">SIP</a>
 																			</div>
 																		</div>
 																		<!--end::Item-->
 																		<!--begin::Item-->
-																		<div class="d-flex align-items-center mb-9 bg-light-warning rounded p-5">
+																		<div class="d-flex align-items-center mb-9 bg-light-warning rounded p-5 mb-9">
 																			<!--begin::Icon-->
 																			<span class="svg-icon svg-icon-warning mr-5">
 																				<span class="svg-icon svg-icon-lg">
@@ -919,12 +893,7 @@
 																			<!--end::Icon-->
 																			<!--begin::Title-->
 																			<div class="d-flex flex-column flex-grow-1 mr-2">
-																				<a href="#" class="font-weight-bold text-dark-75 text-hover-primary font-size-lg mb-1">Ijazah SD</a>
-																				<form role="form">
-																					<div class="form-group mb-1">
-																						<input type="text" class="form-control" id="view_file_sd" disabled/>
-																					</div>
-																				</form><!-- <span class="text-muted font-weight-bold">Due in 2 Days</span> -->
+																				<a href="#" class="font-weight-bold text-dark-75 text-hover-primary font-size-lg mb-1" id="view_file_sd">Ijazah SD</a>
 																			</div>
 																		</div>
 																		<!--end::Item-->
@@ -947,12 +916,7 @@
 																			<!--end::Icon-->
 																			<!--begin::Title-->
 																			<div class="d-flex flex-column flex-grow-1 mr-2">
-																			<a href="#" class="font-weight-bold text-dark-75 text-hover-primary font-size-lg mb-1">Ijazah SMP</a>
-																				<form role="form">
-																					<div class="form-group mb-1">
-																						<input type="text" class="form-control" id="view_file_smp" disabled/>
-																					</div>
-																				</form>
+																				<a href="#" class="font-weight-bold text-dark-75 text-hover-primary font-size-lg mb-1" id="view_file_smp">Ijazah SMP</a>
 																			</div>
 																			<!--end::Title-->
 																			<!--begin::Lable-->
@@ -979,12 +943,7 @@
 																			<!--end::Icon-->
 																			<!--begin::Title-->
 																			<div class="d-flex flex-column flex-grow-1 mr-2">
-																				<a href="#" class="font-weight-bold text-dark-75 text-hover-primary font-size-lg mb-1">Ijazah SMA</a>
-																				<form role="form">
-																					<div class="form-group mb-1">
-																						<input type="text" class="form-control" id="view_file_sma" disabled/>
-																					</div>
-																				</form>
+																				<a href="#" class="font-weight-bold text-dark-75 text-hover-primary font-size-lg mb-1" id="view_file_sma">Ijazah SMA</a>
 																			</div>
 																			<!--end::Title-->
 																			<!--begin::Lable-->
@@ -993,7 +952,7 @@
 																		</div>
 																		<!--end::Item-->
 																		<!--begin::Item-->
-																		<div class="d-flex align-items-center bg-light-info rounded p-5">
+																		<div class="d-flex align-items-center bg-light-info rounded p-5 mb-9">
 																			<!--begin::Icon-->
 																			<span class="svg-icon svg-icon-info mr-5">
 																				<span class="svg-icon svg-icon-lg">
@@ -1013,19 +972,12 @@
 																			<!--end::Icon-->
 																			<!--begin::Title-->
 																			<div class="d-flex flex-column flex-grow-1 mr-2">
-																			<div class="d-flex flex-column flex-grow-1 mr-2">
-																				<a href="#" class="font-weight-bold text-dark-75 text-hover-primary font-size-lg mb-1">Ijazah SI</a>
-																				<form role="form">
-																					<div class="form-group mb-1">
-																						<input type="text" class="form-control" id="view_file_s1" disabled/>
-																					</div>
-																				</form>
-																			</div>
+																				<a href="#" class="font-weight-bold text-dark-75 text-hover-primary font-size-lg mb-1" id="view_file_s1">Ijazah SI</a>
 																			</div>
 																		</div>
 																		<!--end::Item-->
 																		<!--begin::Item-->
-																		<div class="d-flex align-items-center mb-9 bg-light-warning rounded p-5">
+																		<div class="d-flex align-items-center mb-9 bg-light-warning rounded p-5 mb-9">
 																			<!--begin::Icon-->
 																			<span class="svg-icon svg-icon-warning mr-5">
 																				<span class="svg-icon svg-icon-lg">
@@ -1043,12 +995,7 @@
 																			<!--end::Icon-->
 																			<!--begin::Title-->
 																			<div class="d-flex flex-column flex-grow-1 mr-2">
-																				<a href="#" class="font-weight-bold text-dark-75 text-hover-primary font-size-lg mb-1">Ijazah S2</a>
-																				<form role="form">
-																					<div class="form-group mb-1">
-																						<input type="text" class="form-control" id="view_file_s2" disabled/>
-																					</div>
-																				</form><!-- <span class="text-muted font-weight-bold">Due in 2 Days</span> -->
+																				<a href="#" class="font-weight-bold text-dark-75 text-hover-primary font-size-lg mb-1" id="view_file_s2">Ijazah S2</a>
 																			</div>
 																		</div>
 																		<!--end::Item-->
@@ -1071,12 +1018,7 @@
 																			<!--end::Icon-->
 																			<!--begin::Title-->
 																			<div class="d-flex flex-column flex-grow-1 mr-2">
-																			<a href="#" class="font-weight-bold text-dark-75 text-hover-primary font-size-lg mb-1">Ijazah S3</a>
-																				<form role="form">
-																					<div class="form-group mb-1">
-																						<input type="text" class="form-control" id="view_file_s3" disabled/>
-																					</div>
-																				</form>
+																				<a href="#" class="font-weight-bold text-dark-75 text-hover-primary font-size-lg mb-1" id="view_file_s3">Ijazah S3</a>
 																			</div>
 																			<!--end::Title-->
 																			<!--begin::Lable-->
@@ -1103,12 +1045,7 @@
 																			<!--end::Icon-->
 																			<!--begin::Title-->
 																			<div class="d-flex flex-column flex-grow-1 mr-2">
-																				<a href="#" class="font-weight-bold text-dark-75 text-hover-primary font-size-lg mb-1">Ijazah Profesi</a>
-																				<form role="form">
-																					<div class="form-group mb-1">
-																						<input type="text" class="form-control" id="view_file_profesi" disabled/>
-																					</div>
-																				</form>
+																				<a href="#" class="font-weight-bold text-dark-75 text-hover-primary font-size-lg mb-1" id="view_file_profesi">Ijazah Profesi</a>
 																			</div>
 																			<!--end::Title-->
 																			<!--begin::Lable-->
@@ -1378,6 +1315,12 @@
 																					<label class="col-xl-3 col-lg-3 text-right col-form-label">No STR</label>
 																					<div class="col-lg-9 col-xl-6">
 																						<input class="form-control form-control-lg form-control-solid" type="text" id="view_no_str" disabled />
+																					</div>
+																				</div>
+																				<div class="form-group row">
+																					<label class="col-xl-3 col-lg-3 text-right col-form-label">Masa Berlaku STR/SIP</label>
+																					<div class="col-lg-9 col-xl-6">
+																						<input class="form-control form-control-lg form-control-solid" type="text" id="view_masa_sip" disabled />
 																					</div>
 																				</div>
 																				<div class="separator separator-dashed my-10"></div>
@@ -2524,117 +2467,6 @@
 									</div>
 								</div>
 							</div>
-
-						<!-- tambah arsip -->
-						
-								<div class="modal fade" id="modalArsip" tabindex="-1" role="dialog" aria-labelledby="modal-form" aria-hidden="true">
-									<div class="modal-dialog modal- modal-dialog-centered modal-lg" role="document">
-										<div class="modal-content">
-											<div class="modal-body p-0">
-												<div class="card bg-secondary border-0 mb-0">
-													<div class="card-header bg-success pb-1">
-														<div class="text-muted text-center mt-2 mb-3">
-															<span class="text-white">Form Tambah File Kelengkapan Karyawan </span>
-														</div>
-													</div>
-													<div class="card-body px-lg-5 py-lg-5">
-														<form role="form">
-															<div class="form-group mb-3">
-																<span class="form-text text-muted">Upload Ijazah SD</span>
-																<div class="custom-file">
-																	<input id="idUser" type="hidden">
-																	<input type="file" class="custom-file-input" id="file_sd" />
-																	<label class="custom-file-label" for="customFile">File Ijazah Harus format pdf</label>
-																</div>
-															</div>
-															<div class="form-group mb-3">
-																		<span class="form-text text-muted">Upload Ijazah SMP</span>
-																		<div class="custom-file">
-																			<input type="file" class="custom-file-input" id="file_smp" />
-																			<label class="custom-file-label" for="customFile">File Ijazah Harus format pdf</label>
-																		</div>
-															</div>
-															<div class="form-group mb-3">
-																		<span class="form-text text-muted">Upload Ijazah SMA</span>
-																		<div class="custom-file">
-																			<input type="file" class="custom-file-input" id="file_sma" />
-																			<label class="custom-file-label" for="customFile">File Ijazah Harus format pdf</label>
-																		</div>
-															</div>
-															<div class="form-group mb-3">
-																		<span class="form-text text-muted">Upload Ijazah S1/D-III/D-IV</span>
-																		<div class="custom-file">
-																			<input type="file" class="custom-file-input" id="file_s1" />
-																			<label class="custom-file-label" for="customFile">File Ijazah Harus format pdf</label>
-																		</div>
-															</div>
-															<div class="form-group mb-3">
-																		<span class="form-text text-muted">Upload Ijazah S2</span>
-																		<div class="custom-file">
-																			<input type="file" class="custom-file-input" id="file_s2" />
-																			<label class="custom-file-label" for="customFile">File Ijazah Harus format pdf</label>
-																		</div>
-															</div>
-															<div class="form-group mb-3">
-																		<span class="form-text text-muted">Upload Ijazah S3</span>
-																		<div class="custom-file">
-																			<input type="file" class="custom-file-input" id="file_s3" />
-																			<label class="custom-file-label" for="customFile">File Ijazah Harus format pdf</label>
-																		</div>
-															</div>
-															<div class="form-group mb-3">
-																		<span class="form-text text-muted">Upload Ijazah Profesi</span>
-																		<div class="custom-file">
-																			<input type="file" class="custom-file-input" id="file_profesi" />
-																			<label class="custom-file-label" for="customFile">File Ijazah Harus format pdf</label>
-																		</div>
-															</div>
-															<div class="form-group mb-3">
-																		<span class="form-text text-muted">Upload SK</span>
-																		<div class="custom-file">
-																			<input type="file" class="custom-file-input" id="file_sk" />
-																			<label class="custom-file-label" for="customFile">File SK Harus format pdf</label>
-																		</div>
-															</div>
-															<div class="form-group mb-3">
-																		<span class="form-text text-muted">Upload SK Penempatan</span>
-																		<div class="custom-file">
-																			<input type="file" class="custom-file-input" id="file_penempatan" />
-																			<label class="custom-file-label" for="customFile">File SK Penempatan Harus format pdf</label>
-																		</div>
-															</div>
-															<div class="form-group mb-3">
-																		<span class="form-text text-muted">Upload SKP</span>
-																		<div class="custom-file">
-																			<input type="file" class="custom-file-input" id="file_skp" />
-																			<label class="custom-file-label" for="customFile">File SKP Harus format pdf</label>
-																		</div>
-															</div>
-															<div class="form-group mb-3">
-																		<span class="form-text text-muted">Upload STR</span>
-																		<div class="custom-file">
-																			<input type="file" class="custom-file-input" id="file_str" />
-																			<label class="custom-file-label" for="customFile">File STR Harus format pdf</label>
-																		</div>
-															</div>
-															<div class="form-group mb-3">
-																		<span class="form-text text-muted">Upload SIP</span>
-																		<div class="custom-file">
-																			<input type="file" class="custom-file-input" id="file_sip" />
-																			<label class="custom-file-label" for="customFile">File SIP Harus format pdf</label>
-																		</div>
-															</div>
-															<div class="badge badge-danger" id="pesanErrorTambah"></div>
-																<div class="text-center">
-																<button type="button" onClick="arsip()" id="tombolArsip" class="btn btn-success my-2">Tambah</button>
-															</div>
-														</form>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
 						
 							<!-- Tambah Foto-->
 								<div class="modal fade" id="modalFoto" tabindex="-1" role="dialog" aria-labelledby="modal-form" aria-hidden="true">	
@@ -2666,6 +2498,408 @@
 										</div>
 									</div>
 								</div>
+						
+						<!-- Tambah sd-->
+							<div class="modal fade" id="modalsd" tabindex="-1" role="dialog" aria-labelledby="modal-form" aria-hidden="true">	
+								<div class="modal-dialog modal- modal-dialog-centered modal-sm" role="document">
+									<div class="modal-content">
+										<div class="modal-body p-0">
+											<div class="card bg-secondary border-0 mb-0">
+												<div class="card-header bg-success pb-1">
+													<div class="text-muted text-center mt-2 mb-3">
+														<span class="text-white">Form Tambah Ijazah SD Karyawan </span>
+													</div>
+												</div>
+												<div class="card-body px-lg-5 py-lg-5">
+													<form role="form">
+														<div class="form-group mb-3">
+															<div class="custom-file">
+																<input type="file" class="custom-file-input" id="berkas_sd" accept="application/pdf" />
+																<label class="custom-file-label" for="berkas_sd">File Harus format PDF</label>
+															</div>
+														</div>
+
+														
+														<div id="div_upload_sd">
+														</div>
+													</form>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						
+						<!-- Tambah smp-->
+							<div class="modal fade" id="modalsmp" tabindex="-1" role="dialog" aria-labelledby="modal-form" aria-hidden="true">	
+								<div class="modal-dialog modal- modal-dialog-centered modal-sm" role="document">
+									<div class="modal-content">
+										<div class="modal-body p-0">
+											<div class="card bg-secondary border-0 mb-0">
+												<div class="card-header bg-success pb-1">
+													<div class="text-muted text-center mt-2 mb-3">
+														<span class="text-white">Form Tambah Ijazah SMP Karyawan </span>
+													</div>
+												</div>
+												<div class="card-body px-lg-5 py-lg-5">
+													<form role="form">
+														<div class="form-group mb-3">
+															<div class="custom-file">
+																<input type="file" class="custom-file-input" id="berkas_smp" accept="application/pdf" />
+																<label class="custom-file-label" for="berkas_smp">File Harus format PDF</label>
+															</div>
+														</div>
+
+														
+														<div id="div_upload_smp">
+														</div>
+													</form>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+						<!-- Tambah sma-->
+							<div class="modal fade" id="modalsma" tabindex="-1" role="dialog" aria-labelledby="modal-form" aria-hidden="true">	
+								<div class="modal-dialog modal- modal-dialog-centered modal-sm" role="document">
+									<div class="modal-content">
+										<div class="modal-body p-0">
+											<div class="card bg-secondary border-0 mb-0">
+												<div class="card-header bg-success pb-1">
+													<div class="text-muted text-center mt-2 mb-3">
+														<span class="text-white">Form Tambah Ijazah SMA Karyawan </span>
+													</div>
+												</div>
+												<div class="card-body px-lg-5 py-lg-5">
+													<form role="form">
+														<div class="form-group mb-3">
+															<div class="custom-file">
+																<input type="file" class="custom-file-input" id="berkas_sma" accept="application/pdf" />
+																<label class="custom-file-label" for="berkas_sma">Foto Harus format PDF</label>
+															</div>
+														</div>
+
+														
+														<div id="div_upload_sma">
+														</div>
+													</form>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+						<!-- Tambah s1-->
+							<div class="modal fade" id="modals1" tabindex="-1" role="dialog" aria-labelledby="modal-form" aria-hidden="true">	
+								<div class="modal-dialog modal- modal-dialog-centered modal-sm" role="document">
+									<div class="modal-content">
+										<div class="modal-body p-0">
+											<div class="card bg-secondary border-0 mb-0">
+												<div class="card-header bg-success pb-1">
+													<div class="text-muted text-center mt-2 mb-3">
+														<span class="text-white">Form Tambah Ijazah S1 Karyawan </span>
+													</div>
+												</div>
+												<div class="card-body px-lg-5 py-lg-5">
+													<form role="form">
+														<div class="form-group mb-3">
+															<div class="custom-file">
+																<input type="file" class="custom-file-input" id="berkas_s1" accept="application/pdf" />
+																<label class="custom-file-label" for="berkas_s1">File Harus format PDF</label>
+															</div>
+														</div>
+
+														
+														<div id="div_upload_s1">
+														</div>
+													</form>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+						<!-- Tambah s2-->
+							<div class="modal fade" id="modals2" tabindex="-1" role="dialog" aria-labelledby="modal-form" aria-hidden="true">	
+								<div class="modal-dialog modal- modal-dialog-centered modal-sm" role="document">
+									<div class="modal-content">
+										<div class="modal-body p-0">
+											<div class="card bg-secondary border-0 mb-0">
+												<div class="card-header bg-success pb-1">
+													<div class="text-muted text-center mt-2 mb-3">
+														<span class="text-white">Form Tambah Ijazah S2 Karyawan </span>
+													</div>
+												</div>
+												<div class="card-body px-lg-5 py-lg-5">
+													<form role="form">
+														<div class="form-group mb-3">
+															<div class="custom-file">
+																<input type="file" class="custom-file-input" id="berkas_s2" accept="application/pdf" />
+																<label class="custom-file-label" for="berkas_s2">File Harus format PDF</label>
+															</div>
+														</div>
+
+														
+														<div id="div_upload_s2">
+														</div>
+													</form>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+						<!-- Tambah s3-->
+							<div class="modal fade" id="modals3" tabindex="-1" role="dialog" aria-labelledby="modal-form" aria-hidden="true">	
+								<div class="modal-dialog modal- modal-dialog-centered modal-sm" role="document">
+									<div class="modal-content">
+										<div class="modal-body p-0">
+											<div class="card bg-secondary border-0 mb-0">
+												<div class="card-header bg-success pb-1">
+													<div class="text-muted text-center mt-2 mb-3">
+														<span class="text-white">Form Tambah Ijazah S3 Karyawan </span>
+													</div>
+												</div>
+												<div class="card-body px-lg-5 py-lg-5">
+													<form role="form">
+														<div class="form-group mb-3">
+															<div class="custom-file">
+																<input type="file" class="custom-file-input" id="berkas_s3" accept="application/pdf" />
+																<label class="custom-file-label" for="berkas_s3">File Harus format PDF</label>
+															</div>
+														</div>
+
+														
+														<div id="div_upload_s3">
+														</div>
+													</form>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						<!-- Tambah s3-->
+							<div class="modal fade" id="modals3" tabindex="-1" role="dialog" aria-labelledby="modal-form" aria-hidden="true">	
+								<div class="modal-dialog modal- modal-dialog-centered modal-sm" role="document">
+									<div class="modal-content">
+										<div class="modal-body p-0">
+											<div class="card bg-secondary border-0 mb-0">
+												<div class="card-header bg-success pb-1">
+													<div class="text-muted text-center mt-2 mb-3">
+														<span class="text-white">Form Tambah Ijazah S3 Karyawan </span>
+													</div>
+												</div>
+												<div class="card-body px-lg-5 py-lg-5">
+													<form role="form">
+														<div class="form-group mb-3">
+															<div class="custom-file">
+																<input type="file" class="custom-file-input" id="berkas_s3" accept="application/pdf" />
+																<label class="custom-file-label" for="berkas_s3">File Harus format PDF</label>
+															</div>
+														</div>
+
+														
+														<div id="div_upload_s3">
+														</div>
+													</form>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+						<!-- Tambah sK-->
+							<div class="modal fade" id="modalsk" tabindex="-1" role="dialog" aria-labelledby="modal-form" aria-hidden="true">	
+								<div class="modal-dialog modal- modal-dialog-centered modal-sm" role="document">
+									<div class="modal-content">
+										<div class="modal-body p-0">
+											<div class="card bg-secondary border-0 mb-0">
+												<div class="card-header bg-success pb-1">
+													<div class="text-muted text-center mt-2 mb-3">
+														<span class="text-white">Form Tambah SK Karyawan </span>
+													</div>
+												</div>
+												<div class="card-body px-lg-5 py-lg-5">
+													<form role="form">
+														<div class="form-group mb-3">
+															<div class="custom-file">
+																<input type="file" class="custom-file-input" id="berkas_sk" accept="application/pdf" />
+																<label class="custom-file-label" for="berkas_sk">File Harus format PDF</label>
+															</div>
+														</div>
+
+														
+														<div id="div_upload_sk">
+														</div>
+													</form>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+						<!-- Tambah Penempatan-->
+							<div class="modal fade" id="modalpenempatan" tabindex="-1" role="dialog" aria-labelledby="modal-form" aria-hidden="true">	
+								<div class="modal-dialog modal- modal-dialog-centered modal-sm" role="document">
+									<div class="modal-content">
+										<div class="modal-body p-0">
+											<div class="card bg-secondary border-0 mb-0">
+												<div class="card-header bg-success pb-1">
+													<div class="text-muted text-center mt-2 mb-3">
+														<span class="text-white">Form Tambah SK Penempatan Karyawan </span>
+													</div>
+												</div>
+												<div class="card-body px-lg-5 py-lg-5">
+													<form role="form">
+														<div class="form-group mb-3">
+															<div class="custom-file">
+																<input type="file" class="custom-file-input" id="berkas_penempatan" accept="application/pdf" />
+																<label class="custom-file-label" for="berkas_penempatan">File Harus format PDF</label>
+															</div>
+														</div>
+
+														
+														<div id="div_upload_penempatan">
+														</div>
+													</form>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+						<!-- Tambah SKP-->
+							<div class="modal fade" id="modalskp" tabindex="-1" role="dialog" aria-labelledby="modal-form" aria-hidden="true">	
+								<div class="modal-dialog modal- modal-dialog-centered modal-sm" role="document">
+									<div class="modal-content">
+										<div class="modal-body p-0">
+											<div class="card bg-secondary border-0 mb-0">
+												<div class="card-header bg-success pb-1">
+													<div class="text-muted text-center mt-2 mb-3">
+														<span class="text-white">Form Tambah SKP Karyawan </span>
+													</div>
+												</div>
+												<div class="card-body px-lg-5 py-lg-5">
+													<form role="form">
+														<div class="form-group mb-3">
+															<div class="custom-file">
+																<input type="file" class="custom-file-input" id="berkas_skp" accept="application/pdf" />
+																<label class="custom-file-label" for="berkas_sk">File Harus format PDF</label>
+															</div>
+														</div>
+
+														
+														<div id="div_upload_skp">
+														</div>
+													</form>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+						<!-- Tambah Profesi-->
+							<div class="modal fade" id="modalprofesi" tabindex="-1" role="dialog" aria-labelledby="modal-form" aria-hidden="true">	
+								<div class="modal-dialog modal- modal-dialog-centered modal-sm" role="document">
+									<div class="modal-content">
+										<div class="modal-body p-0">
+											<div class="card bg-secondary border-0 mb-0">
+												<div class="card-header bg-success pb-1">
+													<div class="text-muted text-center mt-2 mb-3">
+														<span class="text-white">Form Tambah Ijazah Profesi Karyawan </span>
+													</div>
+												</div>
+												<div class="card-body px-lg-5 py-lg-5">
+													<form role="form">
+														<div class="form-group mb-3">
+															<div class="custom-file">
+																<input type="file" class="custom-file-input" id="berkas_profesi" accept="application/pdf" />
+																<label class="custom-file-label" for="berkas_profesi">File Harus format PDF</label>
+															</div>
+														</div>
+
+														
+														<div id="div_upload_profesi">
+														</div>
+													</form>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						
+							<!-- Tambah STR-->
+							<div class="modal fade" id="modalstr" tabindex="-1" role="dialog" aria-labelledby="modal-form" aria-hidden="true">	
+								<div class="modal-dialog modal- modal-dialog-centered modal-sm" role="document">
+									<div class="modal-content">
+										<div class="modal-body p-0">
+											<div class="card bg-secondary border-0 mb-0">
+												<div class="card-header bg-success pb-1">
+													<div class="text-muted text-center mt-2 mb-3">
+														<span class="text-white">Form Tambah STR Karyawan </span>
+													</div>
+												</div>
+												<div class="card-body px-lg-5 py-lg-5">
+													<form role="form">
+														<div class="form-group mb-3">
+															<div class="custom-file">
+																<input type="file" class="custom-file-input" id="berkas_str" accept="application/pdf" />
+																<label class="custom-file-label" for="berkas_str">File Harus format PDF</label>
+															</div>
+														</div>
+
+														
+														<div id="div_upload_str">
+														</div>
+													</form>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<!-- Tambah SIP-->
+							<div class="modal fade" id="modalsip" tabindex="-1" role="dialog" aria-labelledby="modal-form" aria-hidden="true">	
+								<div class="modal-dialog modal- modal-dialog-centered modal-sm" role="document">
+									<div class="modal-content">
+										<div class="modal-body p-0">
+											<div class="card bg-secondary border-0 mb-0">
+												<div class="card-header bg-success pb-1">
+													<div class="text-muted text-center mt-2 mb-3">
+														<span class="text-white">Form Tambah SIP Karyawan </span>
+													</div>
+												</div>
+												<div class="card-body px-lg-5 py-lg-5">
+													<form role="form">
+														<div class="form-group mb-3">
+															<div class="custom-file">
+																<input type="file" class="custom-file-input" id="berkas_sip" accept="application/pdf" />
+																<label class="custom-file-label" for="berkas_sip">File Harus format PDF</label>
+															</div>
+														</div>
+
+														
+														<div id="div_upload_sip">
+														</div>
+													</form>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
 
 							<!--end::Container-->
 						</div>
@@ -2675,7 +2909,7 @@
 
   function tampilkan(){
     $("#tempatTabel").html('<i class="fas fa-spinner fa-pulse"></i> Memuat...')
-    var baris = '<table class="table table-separate table-head-custom table-checkable" id="tabelUser"><thead class="thead-light"><tr><th>Action</th><th>NO</th><th>Update</th><th>ID</th><th>Nama</th><th>Foto</th><th>Ruangan</th><th>Jabatan</th><th>Status Karyawan</th><th>Pendidikan</th><th>Jenis Tenaga</th></tr></thead>'
+    var baris = '<table class="table table-separate table-head-custom table-checkable" id="tabelUser"><thead class="thead-light"><tr><th>Action</th><th>NO</th><th>Update</th><th>ID</th><th>Nama</th><th>Ruangan</th><th>Jabatan</th><th>Status Karyawan</th><th>Pendidikan</th><th>Jenis Tenaga</th><th>Ijazah Sekolah</th><th>Ijazah Kuliah</th><th>SK</th><th>Berkas Lain</th></tr></thead>'
       $.ajax({
         type:'POST',
         url: '<?= base_url() ?>data_karyawan/tampil',
@@ -2685,22 +2919,41 @@
           for (let i = 0; i < data.length; i++) {
             baris += '<tr>'
             baris += '<td><div style="cursor:pointer;" title="hapus?" id="hapus' + data[i].id + '" onClick="tryHapus(' + data[i].id+ ')"><i class="flaticon-delete text-danger"></i></div>'
-            baris += ' <div style="cursor:pointer;" title="upload Berkas?"  id="arsip' + data[i].id + '" onClick="tryArsip(' + data[i].id+ ')"><i class="flaticon2-open-box text-warning"></i></div>'
-            // baris += ' <div style="cursor:pointer;" title="upload foto?"  id="foto' + data[i].id + '" onClick="tryFoto(' + data[i].id+ ')"><i class="flaticon-photo-camera text-primary"></i></div>'
+            // baris += ' <div style="cursor:pointer;" title="upload Berkas?"  id="arsip' + data[i].id + '" onClick="tampil_modal_upload_arsip(' + data[i].id+ ')"><i class="flaticon2-open-box text-warning"></i></div>'
             baris += ' <div style="cursor:pointer;" title="upload foto?"  id="foto' + data[i].id + '" onClick="tampil_modal_upload(' + data[i].id+ ')"><i class="flaticon-photo-camera text-primary"></i></div>'
             baris += ' <div style="cursor:pointer;" title="edit?"  id="edit' + data[i].id + '" onClick="tryEdit(' + data[i].id+ ')"><i class="flaticon2-pen text-success"></i></div>'
-            // baris += ' <div style="cursor:pointer;" title="view?" id="cetak' + data[i].id + '" onClick="tryCetak(' + data[i].id+ ')"><i class="flaticon-eye text-primary"></i></div>'
-            baris += ' <div style="cursor:pointer;" title="view?" id="view' + data[i].id + '" onClick="tryView(' + data[i].id+ ')"><i class="flaticon-eye text-primary"></i></div>'
+           	baris += ' <div style="cursor:pointer;" title="view?" id="view' + data[i].id + '" onClick="tryView(' + data[i].id+ ')"><i class="flaticon-eye text-primary"></i></div>'
+
             baris += '<td>' + (i + 1) + '</td>'
             baris += '<td>' + data[i].tgl_update + '</td>'
             baris += '<td>' + data[i].id_karyawan + '</td>'
             baris += '<td>' + data[i].nama + '</td>'
-            baris += '<td>' + data[i].foto + '</td>'
+            // baris += '<td>' + data[i].foto + '</td>'
+            // baris += '<td>' + data[i].foto + '</td>'
             baris += '<td>' + data[i].ruangan + '</td>'
             baris += '<td>' + data[i].jabatan + '</td>'
             baris += '<td>' + data[i].status_karyawan + '</td>'
             baris += '<td>' + data[i]. jenis_pendidikan+ '</td>'
             baris += '<td>' + data[i]. jenis_tenaga+ '</td>'
+
+			
+			baris += '<td><div style="cursor:pointer;" title="upload ijazah SD?" id="sd' + data[i].id + '" onClick="tampil_modal_upload_sd(' + data[i].id+ ')"><i class="btn btn-light btn-shadow font-weight-bold mr-2">SD</i></div>'
+            baris += ' <div style="cursor:pointer;" title="upload Ijazah SMP?"  id="smp' + data[i].id + '" onClick="tampil_modal_upload_smp(' + data[i].id+ ')"><i class="btn btn-success btn-shadow font-weight-bold mr-2">SMP</i></div>'
+            baris += ' <div style="cursor:pointer;" title="upload Ijazah SMA?"  id="sma' + data[i].id + '" onClick="tampil_modal_upload_sma(' + data[i].id+ ')"><i class="btn btn-primary btn-shadow font-weight-bold mr-2">SMA</i></div>'
+           	// baris += ' <div style="cursor:pointer;" title="view?" id="view' + data[i].id + '" onClick="tryView(' + data[i].id+ ')"><i class="flaticon-eye text-primary"></i></div>'
+
+			baris += '<td><div style="cursor:pointer;" title="upload Ijazah S1?" id="s1' + data[i].id + '" onClick="tampil_modal_upload_s1(' + data[i].id+ ')"><i class="btn btn-danger btn-shadow font-weight-bold mr-2">S1</i></div>'
+            baris += ' <div style="cursor:pointer;" title="upload Ijazah S2?"  id="s2' + data[i].id + '" onClick="tampil_modal_upload_s2(' + data[i].id+ ')"><i class="btn btn-warning btn-shadow font-weight-bold mr-2">S2</i></div>'
+            baris += ' <div style="cursor:pointer;" title="upload Ijazah S2?"  id="s3' + data[i].id + '" onClick="tampil_modal_upload_s3(' + data[i].id+ ')"><i class="btn btn-light btn-shadow font-weight-bold mr-2">S3</i></div>'
+
+			baris += '<td><div style="cursor:pointer;" title="upload SK?" id="sk' + data[i].id + '" onClick="tampil_modal_upload_sk(' + data[i].id+ ')"><i class="btn btn-success btn-shadow font-weight-bold mr-2">SK</i></div>'
+            baris += ' <div style="cursor:pointer;" title="upload SK Penempatan?"  id="penempatan' + data[i].id + '" onClick="tampil_modal_upload_penempatan(' + data[i].id+ ')"><i class="btn btn-primary btn-shadow font-weight-bold mr-2">Sk Penempatan</i></div>'
+            baris += ' <div style="cursor:pointer;" title="upload SKP?"  id="skp' + data[i].id + '" onClick="tampil_modal_upload_skp(' + data[i].id+ ')"><i class="btn btn-danger btn-shadow font-weight-bold mr-2">SKP</i></div>'
+
+			baris += '<td><div style="cursor:pointer;" title="Upload Profesi?" id="profesi' + data[i].id + '" onClick="tampil_modal_profesi(' + data[i].id+ ')"><i class="btn btn-success btn-shadow font-weight-bold mr-2">Ijazah Profesi</i></div>'
+			baris += ' <div style="cursor:pointer;" title="upload STR?"  id="str' + data[i].id + '" onClick="tampil_modal_upload_str(' + data[i].id+ ')"><i class="btn btn-warning btn-shadow font-weight-bold mr-2">STR</i></div>'
+            baris += ' <div style="cursor:pointer;" title="upload SIP?"  id="sip' + data[i].id + '" onClick="tampil_modal_upload_sip(' + data[i].id+ ')"><i class="btn btn-light btn-shadow font-weight-bold mr-2">SIP</i></div>'
+
             baris += '</td></tr>'
           }
           baris += '</tbody></table>'
@@ -2712,7 +2965,14 @@
       });
   }
 
-  function tampil_modal_upload(id){
+	// function reset_form(){
+	// 	random_all = '';
+	// 	document.getElementById('berkas_foto').value = "";
+	// }
+
+  	function tampil_modal_upload(id){
+		  
+		// reset_form();
     //   document.getElementById("jenis_pernyataan").value = "";
       document.getElementById("berkas_foto").value = "";
 
@@ -2728,7 +2988,7 @@
         document.getElementById("berkas_foto").focus();
       } else{
         var format = $('#berkas_foto').prop('files')[0].type;
-        if (format.includes('pdf') || format.includes('jpg') || format.includes('jpeg')) {
+        if (format.includes('png') || format.includes('jpg') || format.includes('jpeg')) {
           var form_data = new FormData();
           form_data.append('id', id);
         //   form_data.append('jenis', document.getElementById("jenis_pernyataan").value);
@@ -2755,7 +3015,71 @@
                 $('#loader_upload').html('');
               });
             //   ambil_data();
-              $('#modal-upload').modal('hide');
+              $('#modalFoto').modal('hide');
+              Swal.fire({
+                position: 'center',
+                icon: 'success',
+                title: 'Data Berhasil Diupload',
+                showConfirmButton: false,
+                timer: 2500
+              });
+            }
+          });
+        }else{
+           Swal.fire({
+              position: 'center',
+              icon: 'error',
+              title: 'Type file harus JPEG atau JPG',
+              showConfirmButton: false,
+              timer: 2500
+            });
+        }
+      }
+  	}
+
+	
+	function tampil_modal_upload_sd(id){
+      document.getElementById("berkas_sd").value = "";
+
+      var tombol = '<button type="button" onclick="pernyataan_sd('+id+')" id="simpan_pernyataan_sd" class="btn btn-block btn-info"><div id="loader_upload_sd"> </div> Simpan</button>';
+      $("#div_upload_sd").html(tombol);
+      $('#modalsd').modal('show');
+    }
+
+	function pernyataan_sd(id) {
+      // console.log(id);
+      if(document.getElementById("berkas_sd").value == ""){
+        document.getElementById("berkas_sd").focus();
+      } else{
+        var format = $('#berkas_sd').prop('files')[0].type;
+        if (format.includes('pdf')) {
+          var form_data = new FormData();
+          form_data.append('id', id);
+        //   form_data.append('jenis', document.getElementById("jenis_pernyataan").value);
+          form_data.append('berkas_sd', $('#berkas_sd').prop('files')[0]);
+
+          $.ajax({
+            type: 'POST',
+            data: form_data,
+            url: '<?= base_url() ?>data_karyawan/upload_pernyataan_sd',
+            processData:false,
+            contentType:false,
+            cache:false,
+            dataType: 'json',
+            beforeSend: function () {
+              $('#simpan_pernyataan_sd').attr('disabled', true);
+              $('#loader_upload_sd').html('');
+              addSpinner($('#loader_upload_sd'));
+            },
+            success: function(data) {
+              // alert(data);
+              // console.log(data);
+              $('#simpan_pernyataan_sd').attr('disabled', false);
+              removeSpinner($('#loader_upload_sd'), function () {
+                $('#loader_upload_sd').html('');
+              });
+            //   ambil_data();
+              $('#modalsd').modal('hide');
               Swal.fire({
                 position: 'center',
                 icon: 'success',
@@ -2775,755 +3099,1547 @@
             });
         }
       }
-  }
+  	}
 
+	function tampil_modal_upload_smp(id){
+      document.getElementById("berkas_smp").value = "";
 
-  function tryTambah() {
-    $("#id_karyawan").val("")
-    $("#nama").val("")
-    $("#email").val("")
-    $("#password").val("")
-    $("#rule").val("")
-    // $("#foto").val("")
-    $("#modalTambah").modal('show')
-    $('#pesan_error_tambah').html("")
-  }
+      var tombol = '<button type="button" onclick="pernyataan_smp('+id+')" id="simpan_pernyataan_smp" class="btn btn-block btn-info"><div id="loader_upload_smp"> </div> Simpan</button>';
+      $("#div_upload_smp").html(tombol);
 
-  function tambah() {
-    $("#tombolTambah").html('<i class="fas fa-spinner fa-pulse"></i> Memproses..')
-    var id_karyawan = $("#id_karyawan").val()
-    var nama = $("#nama").val()
-    var email = $("#email").val()
-    var password = $("#password").val()
-    var rule = $("#rule").val()
-    // var foto = $("#foto").val()
-    if (rule == null) {
-      rule = 0;
+      $('#modalsmp').modal('show');
     }
-    $.ajax({
-      url: '<?= base_url() ?>data_karyawan/tambah',
-      method: 'post',
-      data: {
-        id_karyawan: id_karyawan,
-        nama: nama,
-        email: email,
-        password: password,
-        rule: rule
-        // foto: foto
-        // status_karyawan: status_karyawan,
-        // jenis_pendidikan: jenis_pendidikan,
-        // jenis_tenaga: jenis_tenaga,
-        // jabatan: jabatan
-      },
-      dataType: 'json',
-      success: function(data) {
-        if (data == "") {
-          $("#modalTambah").modal('hide')
-          tampilkan()
-          $("#id_karyawan").val("")
-          $("#nama").val("")
-          $("#email").val("")
-          $("#password").val("")
-          $("#rule").val("")
-        //   $("#foto").val("")
-        //   $("#jabatan").val("")
-        //   $("#jenis_pendidikan").val("")
-        //   $("#jenis_tenaga").val("")
-          $('#pesanErroTambah').html("")
-        } else {
-        //   data = data.replace("<p>", "");
-        //   data = data.replace("</p>", "");
-          $('#pesanErrorTambah').html(data)
+
+	function pernyataan_smp(id) {
+      // console.log(id);
+      if(document.getElementById("berkas_smp").value == ""){
+        document.getElementById("berkas_smp").focus();
+      } else{
+        var format = $('#berkas_smp').prop('files')[0].type;
+        if (format.includes('pdf')) {
+          var form_data = new FormData();
+          form_data.append('id', id);
+        //   form_data.append('jenis', document.getElementById("jenis_pernyataan").value);
+          form_data.append('berkas_smp', $('#berkas_smp').prop('files')[0]);
+
+          $.ajax({
+            type: 'POST',
+            data: form_data,
+            url: '<?= base_url() ?>data_karyawan/upload_pernyataan_smp',
+            processData:false,
+            contentType:false,
+            cache:false,
+            dataType: 'json',
+            beforeSend: function () {
+              $('#simpan_pernyataan_smp').attr('disabled', true);
+              $('#loader_upload_smp').html('');
+              addSpinner($('#loader_upload_smp'));
+            },
+            success: function(data) {
+              // alert(data);
+              // console.log(data);
+              $('#simpan_pernyataan_smp').attr('disabled', false);
+              removeSpinner($('#loader_upload_smp'), function () {
+                $('#loader_upload_smp').html('');
+              });
+            //   ambil_data();
+              $('#modalsmp').modal('hide');
+              Swal.fire({
+                position: 'center',
+                icon: 'success',
+                title: 'Data Berhasil Diupload',
+                showConfirmButton: false,
+                timer: 2500
+              });
+            }
+          });
+        }else{
+           Swal.fire({
+              position: 'center',
+              icon: 'error',
+              title: 'Type file harus PDF atau JPEG atau JPG',
+              showConfirmButton: false,
+              timer: 2500
+            });
         }
-        $("#tombolTambah").html('Tambah')
       }
-    });
-  }
+  	}
 
+	function tampil_modal_upload_sma(id){
+      document.getElementById("berkas_sma").value = "";
 
-  function tryHapus(id) {
-    $("#hapus" + id).html('<i class="fas fa-spinner fa-pulse"></i>')
-    $.ajax({
-      url: '<?= base_url() ?>data_karyawan/edit_id',
-      method: 'post',
-      data: "target=karyawan&id=" + id,
-      dataType: 'json',
-      success: function(data) {
-        $("#id_hapus").val(id)
-        $("#teksHapus").html("apakah anda yakin ingin menghapus data dengan nama '" + data.nama + "' ?")
+      var tombol = '<button type="button" onclick="pernyataan_sma('+id+')" id="simpan_pernyataan_sma" class="btn btn-block btn-info"><div id="loader_upload_sma"> </div> Simpan</button>';
+      $("#div_upload_sma").html(tombol);
 
-        $("#hapus" + id).html('<i class="fa fa-times"></i>')
+      $('#modalsma').modal('show');
+    }
+
+	function pernyataan_sma(id) {
+      // console.log(id);
+      if(document.getElementById("berkas_sma").value == ""){
+        document.getElementById("berkas_sma").focus();
+      } else{
+        var format = $('#berkas_sma').prop('files')[0].type;
+        if (format.includes('pdf')) {
+          var form_data = new FormData();
+          form_data.append('id', id);
+        //   form_data.append('jenis', document.getElementById("jenis_pernyataan").value);
+          form_data.append('berkas_sma', $('#berkas_sma').prop('files')[0]);
+
+          $.ajax({
+            type: 'POST',
+            data: form_data,
+            url: '<?= base_url() ?>data_karyawan/upload_pernyataan_sma',
+            processData:false,
+            contentType:false,
+            cache:false,
+            dataType: 'json',
+            beforeSend: function () {
+              $('#simpan_pernyataan_sma').attr('disabled', true);
+              $('#loader_upload_sma').html('');
+              addSpinner($('#loader_upload_sma'));
+            },
+            success: function(data) {
+              // alert(data);
+              // console.log(data)
+              $('#simpan_pernyataan_sma').attr('disabled', false);
+              removeSpinner($('#loader_upload_sma'), function () {
+                $('#loader_upload_sma').html('');
+              });
+            //   ambil_data();
+              $('#modalsma').modal('hide');
+              Swal.fire({
+                position: 'center',
+                icon: 'success',
+                title: 'Data Berhasil Diupload',
+                showConfirmButton: false,
+                timer: 2500
+              });
+            }
+          });
+        }else{
+           Swal.fire({
+              position: 'center',
+              icon: 'error',
+              title: 'Type file harus PDF atau JPEG atau JPG',
+              showConfirmButton: false,
+              timer: 2500
+            });
+        }
       }
-    });
-    $("#modalHapus").modal('show')
-  }
+  	}
 
-  function hapus() {
-    $("#hapus").html('<i class="fas fa-spinner fa-pulse"></i> Memproses..')
-    var id = $("#id_hapus").val()
-    $.ajax({
-      url: '<?= base_url() ?>data_karyawan/hapus',
-      method: 'post',
-      data: "target=karyawan&id=" + id,
-      dataType: 'json',
-      success: function(data) {
-        $("#id_hapus").val("")
-        $("#teksHapus").html("")
-        tampilkan()
-        $("#modalHapus").modal('hide')
-        $("#hapus").html('Hapus')
+	function tampil_modal_upload_s1(id){
+      document.getElementById("berkas_s1").value = "";
+
+      var tombol = '<button type="button" onclick="pernyataan_s1('+id+')" id="simpan_pernyataan_s1" class="btn btn-block btn-info"><div id="loader_upload_s1"> </div> Simpan</button>';
+      $("#div_upload_s1").html(tombol);
+
+      $('#modals1').modal('show');
+    }
+
+	function pernyataan_s1(id) {
+      // console.log(id);
+      if(document.getElementById("berkas_s1").value == ""){
+        document.getElementById("berkas_s1").focus();
+      } else{
+        var format = $('#berkas_s1').prop('files')[0].type;
+        if (format.includes('pdf')) {
+          var form_data = new FormData();
+          form_data.append('id', id);
+        //   form_data.append('jenis', document.getElementById("jenis_pernyataan").value);
+          form_data.append('berkas_s1', $('#berkas_s1').prop('files')[0]);
+
+          $.ajax({
+            type: 'POST',
+            data: form_data,
+            url: '<?= base_url() ?>data_karyawan/upload_pernyataan_s1',
+            processData:false,
+            contentType:false,
+            cache:false,
+            dataType: 'json',
+            beforeSend: function () {
+              $('#simpan_pernyataan_s1').attr('disabled', true);
+              $('#loader_upload_s1').html('');
+              addSpinner($('#loader_upload_s1'));
+            },
+            success: function(data) {
+              // alert(data);
+              // console.log(data)
+              $('#simpan_pernyataan_s1').attr('disabled', false);
+              removeSpinner($('#loader_upload_s1'), function () {
+                $('#loader_upload_s1').html('');
+              });
+            //   ambil_data();
+              $('#modals1').modal('hide');
+              Swal.fire({
+                position: 'center',
+                icon: 'success',
+                title: 'Data Berhasil Diupload',
+                showConfirmButton: false,
+                timer: 2500
+              });
+            }
+          });
+        }else{
+           Swal.fire({
+              position: 'center',
+              icon: 'error',
+              title: 'Type file harus PDF atau JPEG atau JPG',
+              showConfirmButton: false,
+              timer: 2500
+            });
+        }
       }
-    });
-  }
+  	}
 
-  function tryEdit(id) {
-    $("#tombolEdit" + id).html('<i class="fas fa-spinner fa-pulse"></i>')
-    $("#idUser").val(id)
-    $.ajax({
-      url: '<?= base_url() ?>data_karyawan/edit_id',
-      method: 'post',
-      data: "target=karyawan&id=" + id,
-      dataType: 'json',
-      success: function(data) {
-        $("#modalEdit").modal('show')
-        // $("#foto").val(data.foto)
-        $("#editnama").val(data.nama)
-        $("#nik").val(data.nik)
-        $("#no_hp").val(data.no_hp)
-        $("#email").val(data.email)
-        $("#alamat").val(data.alamat)
-        $("#prov").val(data.prov)
-        $("#kab").val(data.kab)
-        $("#nip").val(data.nip)
-        $("#kec").val(data.kec)
-        $("#kelu").val(data.kelu)
-        $("#rt_rw").val(data.rt_rw)
-        $("#kode_pos").val(data.kode_pos)
-        $("#tempat_lahir").val(data.tempat_lahir)
-        $("#tanggal_lahir").val(data.tanggal_lahir)
-        $("#jk").val(data.jk)
-        $("#agama").val(data.agama)
-        $("#status_pernikahan").val(data.status_pernikahan)
-        $("#goldar").val(data.goldar)
-        $("#suku").val(data.suku)
-        $("#sd").val(data.sd)
-        $("#no_sd").val(data.no_sd)
-        $("#file_sd").val(data.file_sd)
-        $("#smp").val(data.smp)
-        $("#no_smp").val(data.no_smp)
-        $("#file_smp").val(data.file_smp)
-        $("#sma").val(data.sma)
-        $("#no_sma").val(data.no_sma)
-        $("#file_sma").val(data.file_sma)
-        $("#s1").val(data.s1)
-        $("#no_s1").val(data.no_s1)
-        $("#file_s1").val(data.file_s1)
-        $("#s2").val(data.s2)
-        $("#no_s2").val(data.no_s2)
-        $("#file_s2").val(data.file_s2)
-        $("#s3").val(data.s3)
-        $("#no_s3").val(data.no_s3)
-        $("#file_s3").val(data.file_s3)
-        $("#profesi").val(data.profesi)
-        $("#no_profesi").val(data.no_profesi)
-        $("#file_profesi").val(data.file_profesi)
-        $("#jabatan").val(data.jabatan)
-        $("#status_karyawan").val(data.status_karyawan)
-        $("#jenis_tenaga").val(data.jenis_tenaga)
-        $("#jenis_detail_tenaga").val(data.jenis_detail_tenaga)
-        $("#jenis_pendidikan").val(data.jenis_pendidikan)
-        $("#golongan").val(data.golongan)
-        $("#jenis_jabatan").val(data.jenis_jabatan)
-        $("#pangkat_golongan").val(data.pangkat_golongan)
-        $("#pensiun").val(data.pensiun)
-        $("#gaji").val(data.gaji)
-        $("#ruangan").val(data.ruangan)
-        $("#no_sk").val(data.no_sk)
-        $("#file_sk").val(data.file_sk)
-        $("#file_penempatan").val(data.file_penempatan)
-        $("#no_str").val(data.no_str)
-        $("#file_str").val(data.file_str)
-        $("#no_sip").val(data.no_sip)
-        $("#file_sip").val(data.file_sip)
-        $("#masa_sip").val(data.masa_sip)
-        console.log(data)
-        $("#edit" + id).html('<i class="fa fa-edit"></i>')
+	function tampil_modal_upload_s2(id){
+      document.getElementById("berkas_s2").value = "";
+
+      var tombol = '<button type="button" onclick="pernyataan_s2('+id+')" id="simpan_pernyataan_s2" class="btn btn-block btn-info"><div id="loader_upload_s2"> </div> Simpan</button>';
+      $("#div_upload_s2").html(tombol);
+
+      $('#modals2').modal('show');
+    }
+
+	function pernyataan_s2(id) {
+      // console.log(id);
+      if(document.getElementById("berkas_s2").value == ""){
+        document.getElementById("berkas_s2").focus();
+      } else{
+        var format = $('#berkas_s2').prop('files')[0].type;
+        if (format.includes('pdf')) {
+          var form_data = new FormData();
+          form_data.append('id', id);
+        //   form_data.append('jenis', document.getElementById("jenis_pernyataan").value);
+          form_data.append('berkas_s2', $('#berkas_s2').prop('files')[0]);
+
+          $.ajax({
+            type: 'POST',
+            data: form_data,
+            url: '<?= base_url() ?>data_karyawan/upload_pernyataan_s2',
+            processData:false,
+            contentType:false,
+            cache:false,
+            dataType: 'json',
+            beforeSend: function () {
+              $('#simpan_pernyataan_s2').attr('disabled', true);
+              $('#loader_upload_s2').html('');
+              addSpinner($('#loader_upload_s2'));
+            },
+            success: function(data) {
+              // alert(data);
+              // console.log(data)
+              $('#simpan_pernyataan_s2').attr('disabled', false);
+              removeSpinner($('#loader_upload_s2'), function () {
+                $('#loader_upload_s2').html('');
+              });
+            //   ambil_data();
+              $('#modals2').modal('hide');
+              Swal.fire({
+                position: 'center',
+                icon: 'success',
+                title: 'Data Berhasil Diupload',
+                showConfirmButton: false,
+                timer: 2500
+              });
+            }
+          });
+        }else{
+           Swal.fire({
+              position: 'center',
+              icon: 'error',
+              title: 'Type file harus PDF atau JPEG atau JPG',
+              showConfirmButton: false,
+              timer: 2500
+            });
+        }
       }
-    });
-  }
+  	}
 
-  function edit() {
-    $("#tombolEdit").html('<i class="fas fa-spinner fa-pulse"></i> Memproses..')
-    // var foto = $("#foto").val()
-    var nama = $("#editnama").val()
-    var nik = $("#nik").val()
-    var no_hp = $("#no_hp").val()
-    var email = $("#email").val()
-    var alamat = $("#alamat").val()
-    var prov = $("#prov").val()
-    var kab = $("#kab").val()
-    var nip = $("#nip").val()
-    var kec = $("#kec").val()
-    var kelu = $("#kelu").val()
-    var rt_rw = $("#rt_rw").val()
-    var kode_pos = $("#kode_pos").val()
-    var tempat_lahir = $("#tempat_lahir").val()
-    var tanggal_lahir = $("#tanggal_lahir").val()
-    var jk = $("#jk").val()
-    var agama = $("#agama").val()
-    var status_pernikahan = $("#status_pernikahan").val()
-    var goldar = $("#goldar").val()
-    var suku = $("#suku").val()
-    var sd = $("#sd").val()
-    var no_sd = $("#no_sd").val()
-    var file_sd = $("#file_sd").val()
-    var smp = $("#smp").val()
-    var no_smp = $("#no_smp").val()
-    var file_smp = $("#file_smp").val()
-    var sma = $("#sma").val()
-    var no_sma = $("#no_sma").val()
-    var file_sma = $("#file_sma").val()
-    var s1 = $("#s1").val()
-    var no_s1 = $("#no_s1").val()
-    var file_s1 = $("#file_s1").val()
-    var s2 = $("#s2").val()
-    var no_s2 = $("#no_s2").val()
-    var file_s2 = $("#file_s2").val()
-    var s3 = $("#s3").val()
-    var no_s3 = $("#no_s3").val()
-    var file_s3 = $("#file_s3").val()
-    var profesi = $("#profesi").val()
-    var no_profesi = $("#no_profesi").val()
-    var file_profesi = $("#file_profesi").val()
-    var jabatan = $("#jabatan").val()
-    var status_karyawan = $("#status_karyawan").val()
-    var jenis_tenaga = $("#jenis_tenaga").val()
-    var jenis_detail_tenaga = $("#jenis_detail_tenaga").val()
-    var jenis_pendidikan = $("#jenis_pendidikan").val()
-    var golongan = $("#golongan").val()
-    var jenis_jabatan = $("#jenis_jabatan").val()
-    var pangkat_golongan = $("#pangkat_golongan").val()
-    var pensiun = $("#pensiun").val()
-    var gaji = $("#gaji").val()
-    var ruangan = $("#ruangan").val()
-    var no_sk = $("#no_sk").val()
-    var file_sk = $("#file_sk").val()
-    var file_penempatan = $("#file_penempatan").val()
-    var no_str = $("#no_str").val()
-    var file_str = $("#file_str").val()
-    var no_sip = $("#no_sip").val()
-    var file_sip = $("#file_sip").val()
-    var masa_sip = $("#masa_sip").val()
-    var id = $("#idUser").val()
-    $.ajax({
-      url: '<?= base_url() ?>data_karyawan/edit',
-      method: 'post',
-      data: {
-        id: id,
-        // foto: foto,
-        nama: nama,
-        nik: nik,
-        nip: nip,
-        no_hp: no_hp,
-        email: email,
-        alamat: alamat,
-        prov: prov,
-        kab: kab,
-        kec: kec,
-        kelu: kelu,
-        rt_rw: rt_rw,
-        kode_pos: kode_pos,
-        tempat_lahir: tempat_lahir,
-        tanggal_lahir: tanggal_lahir,
-        jk: jk,
-        agama: agama,
-        status_pernikahan: status_pernikahan,
-        goldar: goldar,
-        suku: suku,
-        sd: sd,
-        no_sd: no_sd,
-        file_sd: file_sd,
-        smp: smp,
-        no_smp: no_smp,
-        file_smp: file_smp,
-        sma: sma,
-        no_sma: no_sma,
-        file_sma: file_sma,
-        s1: s1,
-        no_s1: no_s1,
-        file_s1: file_s1,
-        s2: s2,
-        no_s2: no_s2,
-        file_s2: file_s2,
-        s3: s3,
-        no_s3: no_s3,
-        file_s3: file_s3,
-        profesi: profesi,
-        no_profesi: no_profesi,
-        file_profesi: file_profesi,
-        jabatan: jabatan,
-        status_karyawan: status_karyawan,
-        jenis_tenaga: jenis_tenaga,
-        jenis_detail_tenaga: jenis_detail_tenaga,
-        jenis_pendidikan: jenis_pendidikan,
-        golongan: golongan,
-        jenis_jabatan: jenis_jabatan,
-        pangkat_golongan: pangkat_golongan,
-        pensiun: pensiun,
-        gaji: gaji,
-        ruangan: ruangan,
-        no_sk: no_sk,
-        file_sk: file_sk,
-        file_penempatan: file_penempatan,
-        no_str: no_str,
-        file_str: file_str,
-        no_sip: no_sip,
-        file_sip: file_sip,
-        masa_sip: masa_sip
-      },
-      dataType: 'json',
-      success: function(data) {
-        if (data == "") {
-			$("#idUser").val("")
-			// $("#foto").val("")
+	function tampil_modal_upload_s3(id){
+      document.getElementById("berkas_s3").value = "";
+
+      var tombol = '<button type="button" onclick="pernyataan_s3('+id+')" id="simpan_pernyataan_s3" class="btn btn-block btn-info"><div id="loader_upload_s3"> </div> Simpan</button>';
+      $("#div_upload_s3").html(tombol);
+
+      $('#modals3').modal('show');
+    }
+
+	function pernyataan_s3(id) {
+      // console.log(id);
+      if(document.getElementById("berkas_s3").value == ""){
+        document.getElementById("berkas_s3").focus();
+      } else{
+        var format = $('#berkas_s3').prop('files')[0].type;
+        if (format.includes('pdf')) {
+          var form_data = new FormData();
+          form_data.append('id', id);
+        //   form_data.append('jenis', document.getElementById("jenis_pernyataan").value);
+          form_data.append('berkas_s3', $('#berkas_s3').prop('files')[0]);
+
+          $.ajax({
+            type: 'POST',
+            data: form_data,
+            url: '<?= base_url() ?>data_karyawan/upload_pernyataan_s3',
+            processData:false,
+            contentType:false,
+            cache:false,
+            dataType: 'json',
+            beforeSend: function () {
+              $('#simpan_pernyataan_s3').attr('disabled', true);
+              $('#loader_upload_s3').html('');
+              addSpinner($('#loader_upload_s3'));
+            },
+            success: function(data) {
+              // alert(data);
+              // console.log(data)
+              $('#simpan_pernyataan_s3').attr('disabled', false);
+              removeSpinner($('#loader_upload_s3'), function () {
+                $('#loader_upload_s3').html('');
+              });
+            //   ambil_data();
+              $('#modals3').modal('hide');
+              Swal.fire({
+                position: 'center',
+                icon: 'success',
+                title: 'Data Berhasil Diupload',
+                showConfirmButton: false,
+                timer: 2500
+              });
+            }
+          });
+        }else{
+           Swal.fire({
+              position: 'center',
+              icon: 'error',
+              title: 'Type file harus PDF atau JPEG atau JPG',
+              showConfirmButton: false,
+              timer: 2500
+            });
+        }
+      }
+  	}
+
+	function tampil_modal_upload_sk(id){
+      document.getElementById("berkas_sk").value = "";
+
+      var tombol = '<button type="button" onclick="pernyataan_sk('+id+')" id="simpan_pernyataan_sk" class="btn btn-block btn-info"><div id="loader_upload_sk"> </div> Simpan</button>';
+      $("#div_upload_sk").html(tombol);
+
+      $('#modalsk').modal('show');
+    }
+
+	function pernyataan_sk(id) {
+      // console.log(id);
+      if(document.getElementById("berkas_sk").value == ""){
+        document.getElementById("berkas_sk").focus();
+      } else{
+        var format = $('#berkas_sk').prop('files')[0].type;
+        if (format.includes('pdf')) {
+          var form_data = new FormData();
+          form_data.append('id', id);
+        //   form_data.append('jenis', document.getElementById("jenis_pernyataan").value);
+          form_data.append('berkas_sk', $('#berkas_sk').prop('files')[0]);
+
+          $.ajax({
+            type: 'POST',
+            data: form_data,
+            url: '<?= base_url() ?>data_karyawan/upload_pernyataan_sk',
+            processData:false,
+            contentType:false,
+            cache:false,
+            dataType: 'json',
+            beforeSend: function () {
+              $('#simpan_pernyataan_sk').attr('disabled', true);
+              $('#loader_upload_sk').html('');
+              addSpinner($('#loader_upload_sk'));
+            },
+            success: function(data) {
+              // alert(data);
+              // console.log(data)
+              $('#simpan_pernyataan_sk').attr('disabled', false);
+              removeSpinner($('#loader_upload_sk'), function () {
+                $('#loader_upload_sk').html('');
+              });
+            //   ambil_data();
+              $('#modalsk').modal('hide');
+              Swal.fire({
+                position: 'center',
+                icon: 'success',
+                title: 'Data Berhasil Diupload',
+                showConfirmButton: false,
+                timer: 2500
+              });
+            }
+          });
+        }else{
+           Swal.fire({
+              position: 'center',
+              icon: 'error',
+              title: 'Type file harus PDF atau JPEG atau JPG',
+              showConfirmButton: false,
+              timer: 2500
+            });
+        }
+      }
+  	}
+
+	function tampil_modal_upload_penempatan(id){
+      document.getElementById("berkas_penempatan").value = "";
+
+      var tombol = '<button type="button" onclick="pernyataan_penempatan('+id+')" id="simpan_pernyataan_penempatan" class="btn btn-block btn-info"><div id="loader_upload_penempatan"> </div> Simpan</button>';
+      $("#div_upload_penempatan").html(tombol);
+
+      $('#modalpenempatan').modal('show');
+    }
+
+	function pernyataan_penempatan(id) {
+      // console.log(id);
+      if(document.getElementById("berkas_penempatan").value == ""){
+        document.getElementById("berkas_penempatan").focus();
+      } else{
+        var format = $('#berkas_penempatan').prop('files')[0].type;
+        if (format.includes('pdf')) {
+          var form_data = new FormData();
+          form_data.append('id', id);
+        //   form_data.append('jenis', document.getElementById("jenis_pernyataan").value);
+          form_data.append('berkas_penempatan', $('#berkas_penempatan').prop('files')[0]);
+
+          $.ajax({
+            type: 'POST',
+            data: form_data,
+            url: '<?= base_url() ?>data_karyawan/upload_pernyataan_penempatan',
+            processData:false,
+            contentType:false,
+            cache:false,
+            dataType: 'json',
+            beforeSend: function () {
+              $('#simpan_pernyataan_penempatan').attr('disabled', true);
+              $('#loader_upload_penempatan').html('');
+              addSpinner($('#loader_upload_penempatan'));
+            },
+            success: function(data) {
+              // alert(data);
+              // console.log(data)
+              $('#simpan_pernyataan_penempatan').attr('disabled', false);
+              removeSpinner($('#loader_upload_penempatan'), function () {
+                $('#loader_upload_penempatan').html('');
+              });
+            //   ambil_data();
+              $('#modalpenempatan').modal('hide');
+              Swal.fire({
+                position: 'center',
+                icon: 'success',
+                title: 'Data Berhasil Diupload',
+                showConfirmButton: false,
+                timer: 2500
+              });
+            }
+          });
+        }else{
+           Swal.fire({
+              position: 'center',
+              icon: 'error',
+              title: 'Type file harus PDF atau JPEG atau JPG',
+              showConfirmButton: false,
+              timer: 2500
+            });
+        }
+      }
+  	}
+
+	function tampil_modal_upload_skp(id){
+		document.getElementById("berkas_skp").value = "";
+
+		var tombol = '<button type="button" onclick="pernyataan_skp('+id+')" id="simpan_pernyataan_skp" class="btn btn-block btn-info"><div id="loader_upload_skp"> </div> Simpan</button>';
+		$("#div_upload_skp").html(tombol);
+
+		$('#modalskp').modal('show');
+	}
+
+	function pernyataan_skp(id) {
+	// console.log(id);
+		if(document.getElementById("berkas_skp").value == ""){
+			document.getElementById("berkas_skp").focus();
+		} else{
+			var format = $('#berkas_skp').prop('files')[0].type;
+			if (format.includes('pdf')) {
+			var form_data = new FormData();
+			form_data.append('id', id);
+			//   form_data.append('jenis', document.getElementById("jenis_pernyataan").value);
+			form_data.append('berkas_skp', $('#berkas_skp').prop('files')[0]);
+
+			$.ajax({
+				type: 'POST',
+				data: form_data,
+				url: '<?= base_url() ?>data_karyawan/upload_pernyataan_skp',
+				processData:false,
+				contentType:false,
+				cache:false,
+				dataType: 'json',
+				beforeSend: function () {
+				$('#simpan_pernyataan_skp').attr('disabled', true);
+				$('#loader_upload_skp').html('');
+				addSpinner($('#loader_upload_skp'));
+				},
+				success: function(data) {
+				// alert(data);
+				// console.log(data)
+				$('#simpan_pernyataan_skp').attr('disabled', false);
+				removeSpinner($('#loader_upload_skp'), function () {
+					$('#loader_upload_skp').html('');
+				});
+				//   ambil_data();
+				$('#modalskp').modal('hide');
+				Swal.fire({
+					position: 'center',
+					icon: 'success',
+					title: 'Data Berhasil Diupload',
+					showConfirmButton: false,
+					timer: 2500
+				});
+				}
+			});
+			}else{
+			Swal.fire({
+				position: 'center',
+				icon: 'error',
+				title: 'Type file harus PDF atau JPEG atau JPG',
+				showConfirmButton: false,
+				timer: 2500
+				});
+			}
+		}
+	}
+
+		
+	function tampil_modal_profesi(id){
+      document.getElementById("berkas_profesi").value = "";
+
+      var tombol = '<button type="button" onclick="pernyataan_profesi('+id+')" id="simpan_pernyataan_profesi" class="btn btn-block btn-info"><div id="loader_upload_profesi"> </div> Simpan</button>';
+      $("#div_upload_profesi").html(tombol);
+      $('#modalprofesi').modal('show');
+    }
+
+	function pernyataan_profesi(id) {
+      // console.log(id);
+      if(document.getElementById("berkas_profesi").value == ""){
+        document.getElementById("berkas_profesi").focus();
+      } else{
+        var format = $('#berkas_profesi').prop('files')[0].type;
+        if (format.includes('pdf')) {
+          var form_data = new FormData();
+          form_data.append('id', id);
+        //   form_data.append('jenis', document.getElementById("jenis_pernyataan").value);
+          form_data.append('berkas_profesi', $('#berkas_profesi').prop('files')[0]);
+
+          $.ajax({
+            type: 'POST',
+            data: form_data,
+            url: '<?= base_url() ?>data_karyawan/upload_pernyataan_profesi',
+            processData:false,
+            contentType:false,
+            cache:false,
+            dataType: 'json',
+            beforeSend: function () {
+              $('#simpan_pernyataan_profesi').attr('disabled', true);
+              $('#loader_upload_profesi').html('');
+              addSpinner($('#loader_upload_profesi'));
+            },
+            success: function(data) {
+              // alert(data);
+              // console.log(data);
+              $('#simpan_pernyataan_profesi').attr('disabled', false);
+              removeSpinner($('#loader_upload_profesi'), function () {
+                $('#loader_upload_profesi').html('');
+              });
+            //   ambil_data();
+              $('#modalprofesi').modal('hide');
+              Swal.fire({
+                position: 'center',
+                icon: 'success',
+                title: 'Data Berhasil Diupload',
+                showConfirmButton: false,
+                timer: 2500
+              });
+            }
+          });
+        }else{
+           Swal.fire({
+              position: 'center',
+              icon: 'error',
+              title: 'Type file harus PDF atau JPEG atau JPG',
+              showConfirmButton: false,
+              timer: 2500
+            });
+        }
+      }
+  	}
+
+	function tampil_modal_upload_str(id){
+		document.getElementById("berkas_str").value = "";
+
+		var tombol = '<button type="button" onclick="pernyataan_str('+id+')" id="simpan_pernyataan_str" class="btn btn-block btn-info"><div id="loader_upload_str"> </div> Simpan</button>';
+		$("#div_upload_str").html(tombol);
+
+		$('#modalstr').modal('show');
+	}
+
+	function pernyataan_str(id) {
+	// console.log(id);
+		if(document.getElementById("berkas_str").value == ""){
+			document.getElementById("berkas_str").focus();
+		} else{
+			var format = $('#berkas_str').prop('files')[0].type;
+			if (format.includes('pdf')) {
+			var form_data = new FormData();
+			form_data.append('id', id);
+			//   form_data.append('jenis', document.getElementById("jenis_pernyataan").value);
+			form_data.append('berkas_str', $('#berkas_str').prop('files')[0]);
+
+			$.ajax({
+				type: 'POST',
+				data: form_data,
+				url: '<?= base_url() ?>data_karyawan/upload_pernyataan_str',
+				processData:false,
+				contentType:false,
+				cache:false,
+				dataType: 'json',
+				beforeSend: function () {
+				$('#simpan_pernyataan_str').attr('disabled', true);
+				$('#loader_upload_str').html('');
+				addSpinner($('#loader_upload_str'));
+				},
+				success: function(data) {
+				// alert(data);
+				// console.log(data)
+				$('#simpan_pernyataan_str').attr('disabled', false);
+				removeSpinner($('#loader_upload_str'), function () {
+					$('#loader_upload_str').html('');
+				});
+				//   ambil_data();
+				$('#modalstr').modal('hide');
+				Swal.fire({
+					position: 'center',
+					icon: 'success',
+					title: 'Data Berhasil Diupload',
+					showConfirmButton: false,
+					timer: 2500
+				});
+				}
+			});
+			}else{
+			Swal.fire({
+				position: 'center',
+				icon: 'error',
+				title: 'Type file harus PDF atau JPEG atau JPG',
+				showConfirmButton: false,
+				timer: 2500
+				});
+			}
+		}
+	}
+
+	function tampil_modal_upload_sip(id){
+		document.getElementById("berkas_sip").value = "";
+
+		var tombol = '<button type="button" onclick="pernyataan_sip('+id+')" id="simpan_pernyataan_sip" class="btn btn-block btn-info"><div id="loader_upload_sip"> </div> Simpan</button>';
+		$("#div_upload_sip").html(tombol);
+
+		$('#modalsip').modal('show');
+	}
+
+	function pernyataan_sip(id) {
+	// console.log(id);
+		if(document.getElementById("berkas_sip").value == ""){
+			document.getElementById("berkas_sip").focus();
+		} else{
+			var format = $('#berkas_sip').prop('files')[0].type;
+			if (format.includes('pdf')) {
+			var form_data = new FormData();
+			form_data.append('id', id);
+			//   form_data.append('jenis', document.getElementById("jenis_pernyataan").value);
+			form_data.append('berkas_sip', $('#berkas_sip').prop('files')[0]);
+
+			$.ajax({
+				type: 'POST',
+				data: form_data,
+				url: '<?= base_url() ?>data_karyawan/upload_pernyataan_sip',
+				processData:false,
+				contentType:false,
+				cache:false,
+				dataType: 'json',
+				beforeSend: function () {
+				$('#simpan_pernyataan_sip').attr('disabled', true);
+				$('#loader_upload_sip').html('');
+				addSpinner($('#loader_upload_sip'));
+				},
+				success: function(data) {
+				// alert(data);
+				// console.log(data)
+				$('#simpan_pernyataan_str').attr('disabled', false);
+				removeSpinner($('#loader_upload_sip'), function () {
+					$('#loader_upload_sip').html('');
+				});
+				//   ambil_data();
+				$('#modalsip').modal('hide');
+				Swal.fire({
+					position: 'center',
+					icon: 'success',
+					title: 'Data Berhasil Diupload',
+					showConfirmButton: false,
+					timer: 2500
+				});
+				}
+			});
+			}else{
+			Swal.fire({
+				position: 'center',
+				icon: 'error',
+				title: 'Type file harus PDF atau JPEG atau JPG',
+				showConfirmButton: false,
+				timer: 2500
+				});
+			}
+		}
+	}
+
+
+	
+	function tryTambah() {
+		$("#id_karyawan").val("")
+		$("#nama").val("")
+		$("#email").val("")
+		$("#password").val("")
+		$("#rule").val("")
+		// $("#foto").val("")
+		$("#modalTambah").modal('show')
+		$('#pesan_error_tambah').html("")
+	}
+
+	function tambah() {
+		$("#tombolTambah").html('<i class="fas fa-spinner fa-pulse"></i> Memproses..')
+		var id_karyawan = $("#id_karyawan").val()
+		var nama = $("#nama").val()
+		var email = $("#email").val()
+		var password = $("#password").val()
+		var rule = $("#rule").val()
+		// var foto = $("#foto").val()
+		if (rule == null) {
+		rule = 0;
+		}
+		$.ajax({
+		url: '<?= base_url() ?>data_karyawan/tambah',
+		method: 'post',
+		data: {
+			id_karyawan: id_karyawan,
+			nama: nama,
+			email: email,
+			password: password,
+			rule: rule
+			// foto: foto
+			// status_karyawan: status_karyawan,
+			// jenis_pendidikan: jenis_pendidikan,
+			// jenis_tenaga: jenis_tenaga,
+			// jabatan: jabatan
+		},
+		dataType: 'json',
+		success: function(data) {
+			if (data == "") {
+			$("#modalTambah").modal('hide')
+			tampilkan()
+			$("#id_karyawan").val("")
 			$("#nama").val("")
-			$("#nik").val("")
-			$("#no_hp").val("")
 			$("#email").val("")
-			$("#alamat").val("")
-			$("#nip").val("")
-			$("#prov").val("")
-			$("#kab").val("")
-			$("#kec").val("")
-			$("#kelu").val("")
-			$("#rt_rw").val("")
-			$("#kode_pos").val("")
-			$("#tempat_lahir").val("")
-			$("#tanggal_lahir").val("")
-			$("#jk").val("")
-			$("#agama").val("")
-			$("#status_pernikahan").val("")
-			$("#goldar").val("")
-			$("#suku").val("")
-			$("#sd").val("")
-			$("#no_sd").val("")
-			$("#file_sd").val("")
-			$("#smp").val("")
-			$("#no_smp").val("")
-			$("#file_smp").val("")
-			$("#sma").val("")
-			$("#no_sma").val("")
-			$("#file_sma").val("")
-			$("#s1").val("")
-			$("#no_s1").val("")
-			$("#file_s1").val("")
-			$("#s2").val("")
-			$("#no_s2").val("")
-			$("#file_s2").val("")
-			$("#s3").val("")
-			$("#no_s3").val("")
-			$("#file_s3").val("")
-			$("#profesi").val("")
-			$("#no_profesi").val("")
-			$("#file_profesi").val("")
-			$("#jabatan").val("")
-			$("#status_karyawan").val("")
-			$("#jenis_tenaga").val("")
-			$("#jenis_detail_tenaga").val("")
-			$("#jenis_pendidikan").val("")
-			$("#golongan").val("")
-			$("#jenis_jabatan").val("")
-			$("#pangkat_golongan").val("")
-			$("#pensiun").val("")
-			$("#gaji").val("")
-			$("#ruangan").val("")
-			$("#no_sk").val("")
-			$("#file_sk").val("")
-			$("#file_penempatan").val("")
-			$("#no_str").val("")
-			$("#file_str").val("")
-			$("#no_sip").val("")
-			$("#file_sip").val("")
-			$("#masa_sip").val("")
-			// console.log(data)
-        } else {
-          $('#pesanErrorEdit').html(data)
-        }
-        $("#modalEdit").modal('hide');
-        tampilkan();
-        $("#tombolEdit").html('Simpan')
-      }
-    });
-  }
-  
-  function tryArsip(id) {
-    $("#tombolArsip" + id).html('<i class="fas fa-spinner fa-pulse"></i>')
-    $("#idUser").val(id)
-    $.ajax({
-      url: '<?= base_url() ?>data_karyawan/edit_id',
-      method: 'post',
-      data: "target=karyawan&id=" + id,
-      dataType: 'json',
-      success: function(data) {
-        $("#modalArsip").modal('show')
-        $("#file_sd").val(data.file_sd)
-        $("#file_smp").val(data.file_smp)
-        $("#file_sma").val(data.file_sma)
-        $("#file_s1").val(data.file_s1)
-        $("#file_s2").val(data.file_s2)
-        $("#file_s3").val(data.file_s3)
-        $("#file_profesi").val(data.file_profesi)
-        $("#file_sk").val(data.file_sk)
-        $("#file_penempatan").val(data.file_penempatan)
-        $("#file_str").val(data.file_str)
-        $("#file_sip").val(data.file_sip)
-        $("#file_skp").val(data.file_skp)
-        console.log(data)
-        $("#arsip" + id).html('<i class="fa fa-edit"></i>')
-      }
-    });
-  }
+			$("#password").val("")
+			$("#rule").val("")
+			//   $("#foto").val("")
+			//   $("#jabatan").val("")
+			//   $("#jenis_pendidikan").val("")
+			//   $("#jenis_tenaga").val("")
+			$('#pesanErroTambah').html("")
+			} else {
+			//   data = data.replace("<p>", "");
+			//   data = data.replace("</p>", "");
+			$('#pesanErrorTambah').html(data)
+			}
+			$("#tombolTambah").html('Tambah')
+		}
+		});
+	}
 
-  function arsip() {
-    $("#tombolArsip").html('<i class="fas fa-spinner fa-pulse"></i> Memproses..')
-    var file_sd = $("#file_sd").val()
-    var file_smp = $("#file_smp").val()
-    var file_sma = $("#file_sma").val()
-    var file_s1 = $("#file_s1").val()
-    var file_s2 = $("#file_s2").val()
-    var file_s3 = $("#file_s3").val()
-    var file_profesi = $("#file_profesi").val()
-    var file_sk = $("#file_sk").val()
-    var file_penempatan = $("#file_penempatan").val()
-    var file_str = $("#file_str").val()
-    var file_sip = $("#file_sip").val()
-    var file_skp = $("#file_skp").val()
-    var id = $("#idUser").val()
-    $.ajax({
-      url: '<?= base_url() ?>data_karyawan/arsip',
-      method: 'post',
-      data: {
-        id: id,
-        file_sd: file_sd,
-        file_smp: file_smp,
-        file_sma: file_sma,
-        file_s1: file_s1,
-        file_s2: file_s2,
-        file_s3: file_s3,
-        file_profesi: file_profesi,
-        file_sk: file_sk,
-        file_penempatan: file_penempatan,
-        file_str: file_str,
-        file_sip: file_sip,
-        file_skp: file_skp
-      },
-      dataType: 'json',
-      success: function(data) {
-        if (data == "") {
-			$("#idUser").val("")
-			$("#file_sd").val("")
-			$("#file_smp").val("")
-			$("#file_sma").val("")
-			$("#file_s1").val("")
-			$("#file_s2").val("")
-			$("#file_s3").val("")
-			$("#file_profesi").val("")
-			$("#file_sk").val("")
-			$("#file_penempatan").val("")
-			$("#file_str").val("")
-			$("#file_sip").val("")
-			$("#file_skp").val("")
-			// console.log(data)
-        } else {
-          $('#pesanErrorEdit').html(data)
-        }
-        $("#modalArsip").modal('hide');
-        tampilkan();
-        $("#tombolArsip").html('Simpan')
-      }
-    });
-  }
 
-  function tryView(id) {
-    $("#tombolView" + id).html('<i class="fas fa-spinner fa-pulse"></i>')
-    $("#idUser").val(id)
-    $.ajax({
-      url: '<?= base_url() ?>data_karyawan/edit_id',
-      method: 'post',
-      data: "target=karyawan&id=" + id,
-      dataType: 'json',
-      success: function(data) {
-        $("#modalView").modal('show')
-		$("#foto").val(data.foto)
-        $("#view_nama").val(data.nama)
-        $("#view_id_karyawan").val(data.id_karyawan)
-        $("#view_nik").val(data.nik)
-        $("#view_nip").val(data.nip)
-        $("#view_no_hp").val(data.no_hp)
-        $("#view_email").val(data.email)
-        $("#view_alamat").val(data.alamat)
-        $("#view_prov").val(data.prov)
-        $("#view_kab").val(data.kab)
-        $("#view_kec").val(data.kec)
-        $("#view_kelu").val(data.kelu)
-        $("#view_rt_rw").val(data.rt_rw)
-        $("#view_kode_pos").val(data.kode_pos)
-        $("#view_tempat_lahir").val(data.tempat_lahir)
-        $("#view_tanggal_lahir").val(data.tanggal_lahir)
-        $("#view_jk").val(data.jk)
-        $("#view_agama").val(data.agama)
-        $("#view_status_pernikahan").val(data.status_pernikahan)
-        $("#view_goldar").val(data.goldar)
-        $("#view_suku").val(data.suku)
-        $("#view_sd").val(data.sd)
-        $("#view_no_sd").val(data.no_sd)
-        $("#view_file_sd").val(data.file_sd)
-        $("#view_smp").val(data.smp)
-        $("#view_no_smp").val(data.no_smp)
-        $("#view_file_smp").val(data.file_smp)
-        $("#view_sma").val(data.sma)
-        $("#view_no_sma").val(data.no_sma)
-        $("#view_file_sma").val(data.file_sma)
-        $("#view_s1").val(data.s1)
-        $("#view_no_s1").val(data.no_s1)
-        $("#view_file_s1").val(data.file_s1)
-        $("#view_s2").val(data.s2)
-        $("#view_no_s2").val(data.no_s2)
-        $("#view_file_s2").val(data.file_s2)
-        $("#view_s3").val(data.s3)
-        $("#view_no_s3").val(data.no_s3)
-        $("#view_file_s3").val(data.file_s3)
-        $("#view_profesi").val(data.profesi)
-        $("#view_no_profesi").val(data.no_profesi)
-        $("#view_file_profesi").val(data.file_profesi)
-        $("#view_jabatan").val(data.jabatan)
-        $("#view_status_karyawan").val(data.status_karyawan)
-        $("#view_jenis_tenaga").val(data.jenis_tenaga)
-        $("#view_jenis_detail_tenaga").val(data.jenis_detail_tenaga)
-        $("#view_jenis_pendidikan").val(data.jenis_pendidikan)
-        $("#view_golongan").val(data.golongan)
-        $("#view_jenis_jabatan").val(data.jenis_jabatan)
-        $("#view_pangkat_golongan").val(data.pangkat_golongan)
-        $("#view_pensiun").val(data.pensiun)
-        $("#view_gaji").val(data.gaji)
-        $("#view_ruangan").val(data.ruangan)
-        $("#view_no_sk").val(data.no_sk)
-        $("#view_file_sk").val(data.file_sk)
-        $("#view_file_penempatan").val(data.file_penempatan)
-        $("#view_no_str").val(data.no_str)
-        $("#view_file_str").val(data.file_str)
-        $("#view_no_sip").val(data.no_sip)
-        $("#view_file_sip").val(data.file_sip)
-        $("#view_file_skp").val(data.file_skp)
-        $("#view_masa_sip").val(data.masa_sip)
-        console.log(data)
-        $("#view" + id).html('<i class="fa fa-edit"></i>')
-      }
-    });
-  }
+	function tryHapus(id) {
+		$("#hapus" + id).html('<i class="fas fa-spinner fa-pulse"></i>')
+		$.ajax({
+		url: '<?= base_url() ?>data_karyawan/edit_id',
+		method: 'post',
+		data: "target=karyawan&id=" + id,
+		dataType: 'json',
+		success: function(data) {
+			$("#id_hapus").val(id)
+			$("#teksHapus").html("apakah anda yakin ingin menghapus data dengan nama '" + data.nama + "' ?")
 
-  function view() {
-    $("#tombolView").html('<i class="fas fa-spinner fa-pulse"></i> Memproses..')
-    var foto = $("#foto").val()
-    var nama = $("#view_nama").val()
-    var nik = $("#nik").val()
-    var no_hp = $("#no_hp").val()
-    var email = $("#email").val()
-    var alamat = $("#alamat").val()
-    var prov = $("#prov").val()
-    var kab = $("#kab").val()
-    var kec = $("#kec").val()
-    var kelu = $("#kelu").val()
-    var rt_rw = $("#rt_rw").val()
-    var kode_pos = $("#kode_pos").val()
-    var tempat_lahir = $("#tempat_lahir").val()
-    var tanggal_lahir = $("#tanggal_lahir").val()
-    var jk = $("#jk").val()
-    var agama = $("#agama").val()
-    var status_pernikahan = $("#status_pernikahan").val()
-    var goldar = $("#goldar").val()
-    var suku = $("#suku").val()
-    var sd = $("#sd").val()
-    var no_sd = $("#no_sd").val()
-    var file_sd = $("#file_sd").val()
-    var smp = $("#smp").val()
-    var no_smp = $("#no_smp").val()
-    var file_smp = $("#file_smp").val()
-    var sma = $("#sma").val()
-    var no_sma = $("#no_sma").val()
-    var file_sma = $("#file_sma").val()
-    var s1 = $("#s1").val()
-    var no_s1 = $("#no_s1").val()
-    var file_s1 = $("#file_s1").val()
-    var s2 = $("#s2").val()
-    var no_s2 = $("#no_s2").val()
-    var file_s2 = $("#file_s2").val()
-    var s3 = $("#s3").val()
-    var no_s3 = $("#no_s3").val()
-    var file_s3 = $("#file_s3").val()
-    var profesi = $("#profesi").val()
-    var no_profesi = $("#no_profesi").val()
-    var file_profesi = $("#file_profesi").val()
-    var jabatan = $("#jabatan").val()
-    var status_karyawan = $("#status_karyawan").val()
-    var jenis_tenaga = $("#jenis_tenaga").val()
-    var jenis_detail_tenaga = $("#jenis_detail_tenaga").val()
-    var jenis_pendidikan = $("#jenis_pendidikan").val()
-    var golongan = $("#golongan").val()
-    var pensiun = $("#pensiun").val()
-    var gaji = $("#gaji").val()
-    var ruangan = $("#ruangan").val()
-    var no_sk = $("#no_sk").val()
-    var file_sk = $("#file_sk").val()
-    var file_penempatan = $("#file_penempatan").val()
-    var no_str = $("#no_str").val()
-    var file_str = $("#file_str").val()
-    var no_sip = $("#no_sip").val()
-    var file_sip = $("#file_sip").val()
-    var masa_sip = $("#masa_sip").val()
-    var id = $("#idUser").val()
-    $.ajax({
-      url: '<?= base_url() ?>data_karyawan/edit',
-      method: 'post',
-      data: {
-        id: id,
-        foto: foto,
-        nama: nama,
-        nik: nik,
-        no_hp: no_hp,
-        email: email,
-        alamat: alamat,
-        prov: prov,
-        kab: kab,
-        kec: kec,
-        kelu: kelu,
-        rt_rw: rt_rw,
-        kode_pos: kode_pos,
-        tempat_lahir: tempat_lahir,
-        tanggal_lahir: tanggal_lahir,
-        jk: jk,
-        agama: agama,
-        status_pernikahan: status_pernikahan,
-        goldar: goldar,
-        suku: suku,
-        sd: sd,
-        no_sd: no_sd,
-        file_sd: file_sd,
-        smp: smp,
-        no_smp: no_smp,
-        file_smp: file_smp,
-        sma: sma,
-        no_sma: no_sma,
-        file_sma: file_sma,
-        s1: s1,
-        no_s1: no_s1,
-        file_s1: file_s1,
-        s2: s2,
-        no_s2: no_s2,
-        file_s2: file_s2,
-        s3: s3,
-        no_s3: no_s3,
-        file_s3: file_s3,
-        profesi: profesi,
-        no_profesi: no_profesi,
-        file_profesi: file_profesi,
-        jabatan: jabatan,
-        status_karyawan: status_karyawan,
-        jenis_tenaga: jenis_tenaga,
-        jenis_detail_tenaga: jenis_detail_tenaga,
-        jenis_pendidikan: jenis_pendidikan,
-        golongan: golongan,
-        pensiun: pensiun,
-        gaji: gaji,
-        ruangan: ruangan,
-        no_sk: no_sk,
-        file_sk: file_sk,
-        file_penempatan: file_penempatan,
-        no_str: no_str,
-        file_str: file_str,
-        no_sip: no_sip,
-        file_sip: file_sip,
-        masa_sip: masa_sip
-      },
-      dataType: 'json',
-      success: function(data) {
-        if (data == "") {
-			$("#idUser").val("")
-			$("#foto").val("")
-			$("#nama").val("")
-			$("#nik").val("")
-			$("#no_hp").val("")
-			$("#email").val("")
-			$("#alamat").val("")
-			$("#prov").val("")
-			$("#kab").val("")
-			$("#kec").val("")
-			$("#kelu").val("")
-			$("#rt_rw").val("")
-			$("#kode_pos").val("")
-			$("#tempat_lahir").val("")
-			$("#tanggal_lahir").val("")
-			$("#jk").val("")
-			$("#agama").val("")
-			$("#status_pernikahan").val("")
-			$("#goldar").val("")
-			$("#suku").val("")
-			$("#sd").val("")
-			$("#no_sd").val("")
-			$("#file_sd").val("")
-			$("#smp").val("")
-			$("#no_smp").val("")
-			$("#file_smp").val("")
-			$("#sma").val("")
-			$("#no_sma").val("")
-			$("#file_sma").val("")
-			$("#s1").val("")
-			$("#no_s1").val("")
-			$("#file_s1").val("")
-			$("#s2").val("")
-			$("#no_s2").val("")
-			$("#file_s2").val("")
-			$("#s3").val("")
-			$("#no_s3").val("")
-			$("#file_s3").val("")
-			$("#profesi").val("")
-			$("#no_profesi").val("")
-			$("#file_profesi").val("")
-			$("#jabatan").val("")
-			$("#status_karyawan").val("")
-			$("#jenis_tenaga").val("")
-			$("#jenis_detail_tenaga").val("")
-			$("#jenis_pendidikan").val("")
-			$("#golongan").val("")
-			$("#pensiun").val("")
-			$("#gaji").val("")
-			$("#ruangan").val("")
-			$("#no_sk").val("")
-			$("#file_sk").val("")
-			$("#file_penempatan").val("")
-			$("#no_str").val("")
-			$("#file_str").val("")
-			$("#no_sip").val("")
-			$("#file_sip").val("")
-			$("#masa_sip").val("")
-			// console.log(data)
-        } else {
-          $('#pesanErrorView').html(data)
-        }
-        $("#modalView").modal('hide');
-        tampilkan();
-        $("#tombolView").html('Simpan')
-      }
-    });
-  }
+			$("#hapus" + id).html('<i class="fa fa-times"></i>')
+		}
+		});
+		$("#modalHapus").modal('show')
+	}
 
-  function addSpinner(el, static_pos)
-{
-  var spinner = el.children('.spinner');
-  if (spinner.length && !spinner.hasClass('spinner-remove')) return null;
-  !spinner.length && (spinner = $('<div class="spinner' + (static_pos ? '' : ' spinner-absolute') + '"/>').appendTo(el));
-  animateSpinner(spinner, 'add');
-}
+	function hapus() {
+		$("#hapus").html('<i class="fas fa-spinner fa-pulse"></i> Memproses..')
+		var id = $("#id_hapus").val()
+		$.ajax({
+		url: '<?= base_url() ?>data_karyawan/hapus',
+		method: 'post',
+		data: "target=karyawan&id=" + id,
+		dataType: 'json',
+		success: function(data) {
+			$("#id_hapus").val("")
+			$("#teksHapus").html("")
+			tampilkan()
+			$("#modalHapus").modal('hide')
+			$("#hapus").html('Hapus')
+		}
+		});
+	}
+
+	function tryEdit(id) {
+		$("#tombolEdit" + id).html('<i class="fas fa-spinner fa-pulse"></i>')
+		$("#idUser").val(id)
+		$.ajax({
+		url: '<?= base_url() ?>data_karyawan/edit_id',
+		method: 'post',
+		data: "target=karyawan&id=" + id,
+		dataType: 'json',
+		success: function(data) {
+			$("#modalEdit").modal('show')
+			// $("#foto").val(data.foto)
+			$("#editnama").val(data.nama)
+			$("#nik").val(data.nik)
+			$("#no_hp").val(data.no_hp)
+			$("#email").val(data.email)
+			$("#alamat").val(data.alamat)
+			$("#prov").val(data.prov)
+			$("#kab").val(data.kab)
+			$("#nip").val(data.nip)
+			$("#kec").val(data.kec)
+			$("#kelu").val(data.kelu)
+			$("#rt_rw").val(data.rt_rw)
+			$("#kode_pos").val(data.kode_pos)
+			$("#tempat_lahir").val(data.tempat_lahir)
+			$("#tanggal_lahir").val(data.tanggal_lahir)
+			$("#jk").val(data.jk)
+			$("#agama").val(data.agama)
+			$("#status_pernikahan").val(data.status_pernikahan)
+			$("#goldar").val(data.goldar)
+			$("#suku").val(data.suku)
+			$("#sd").val(data.sd)
+			$("#no_sd").val(data.no_sd)
+			$("#file_sd").val(data.file_sd)
+			$("#smp").val(data.smp)
+			$("#no_smp").val(data.no_smp)
+			$("#file_smp").val(data.file_smp)
+			$("#sma").val(data.sma)
+			$("#no_sma").val(data.no_sma)
+			$("#file_sma").val(data.file_sma)
+			$("#s1").val(data.s1)
+			$("#no_s1").val(data.no_s1)
+			$("#file_s1").val(data.file_s1)
+			$("#s2").val(data.s2)
+			$("#no_s2").val(data.no_s2)
+			$("#file_s2").val(data.file_s2)
+			$("#s3").val(data.s3)
+			$("#no_s3").val(data.no_s3)
+			$("#file_s3").val(data.file_s3)
+			$("#profesi").val(data.profesi)
+			$("#no_profesi").val(data.no_profesi)
+			$("#file_profesi").val(data.file_profesi)
+			$("#jabatan").val(data.jabatan)
+			$("#status_karyawan").val(data.status_karyawan)
+			$("#jenis_tenaga").val(data.jenis_tenaga)
+			$("#jenis_detail_tenaga").val(data.jenis_detail_tenaga)
+			$("#jenis_pendidikan").val(data.jenis_pendidikan)
+			$("#golongan").val(data.golongan)
+			$("#jenis_jabatan").val(data.jenis_jabatan)
+			$("#pangkat_golongan").val(data.pangkat_golongan)
+			$("#pensiun").val(data.pensiun)
+			$("#gaji").val(data.gaji)
+			$("#ruangan").val(data.ruangan)
+			$("#no_sk").val(data.no_sk)
+			$("#file_sk").val(data.file_sk)
+			$("#file_penempatan").val(data.file_penempatan)
+			$("#no_str").val(data.no_str)
+			$("#file_str").val(data.file_str)
+			$("#no_sip").val(data.no_sip)
+			$("#file_sip").val(data.file_sip)
+			$("#masa_sip").val(data.masa_sip)
+			console.log(data)
+			$("#edit" + id).html('<i class="fa fa-edit"></i>')
+		}
+		});
+	}
+
+	function edit() {
+		$("#tombolEdit").html('<i class="fas fa-spinner fa-pulse"></i> Memproses..')
+		// var foto = $("#foto").val()
+		var nama = $("#editnama").val()
+		var nik = $("#nik").val()
+		var no_hp = $("#no_hp").val()
+		var email = $("#email").val()
+		var alamat = $("#alamat").val()
+		var prov = $("#prov").val()
+		var kab = $("#kab").val()
+		var nip = $("#nip").val()
+		var kec = $("#kec").val()
+		var kelu = $("#kelu").val()
+		var rt_rw = $("#rt_rw").val()
+		var kode_pos = $("#kode_pos").val()
+		var tempat_lahir = $("#tempat_lahir").val()
+		var tanggal_lahir = $("#tanggal_lahir").val()
+		var jk = $("#jk").val()
+		var agama = $("#agama").val()
+		var status_pernikahan = $("#status_pernikahan").val()
+		var goldar = $("#goldar").val()
+		var suku = $("#suku").val()
+		var sd = $("#sd").val()
+		var no_sd = $("#no_sd").val()
+		var file_sd = $("#file_sd").val()
+		var smp = $("#smp").val()
+		var no_smp = $("#no_smp").val()
+		var file_smp = $("#file_smp").val()
+		var sma = $("#sma").val()
+		var no_sma = $("#no_sma").val()
+		var file_sma = $("#file_sma").val()
+		var s1 = $("#s1").val()
+		var no_s1 = $("#no_s1").val()
+		var file_s1 = $("#file_s1").val()
+		var s2 = $("#s2").val()
+		var no_s2 = $("#no_s2").val()
+		var file_s2 = $("#file_s2").val()
+		var s3 = $("#s3").val()
+		var no_s3 = $("#no_s3").val()
+		var file_s3 = $("#file_s3").val()
+		var profesi = $("#profesi").val()
+		var no_profesi = $("#no_profesi").val()
+		var file_profesi = $("#file_profesi").val()
+		var jabatan = $("#jabatan").val()
+		var status_karyawan = $("#status_karyawan").val()
+		var jenis_tenaga = $("#jenis_tenaga").val()
+		var jenis_detail_tenaga = $("#jenis_detail_tenaga").val()
+		var jenis_pendidikan = $("#jenis_pendidikan").val()
+		var golongan = $("#golongan").val()
+		var jenis_jabatan = $("#jenis_jabatan").val()
+		var pangkat_golongan = $("#pangkat_golongan").val()
+		var pensiun = $("#pensiun").val()
+		var gaji = $("#gaji").val()
+		var ruangan = $("#ruangan").val()
+		var no_sk = $("#no_sk").val()
+		var file_sk = $("#file_sk").val()
+		var file_penempatan = $("#file_penempatan").val()
+		var no_str = $("#no_str").val()
+		var file_str = $("#file_str").val()
+		var no_sip = $("#no_sip").val()
+		var file_sip = $("#file_sip").val()
+		var masa_sip = $("#masa_sip").val()
+		var id = $("#idUser").val()
+		$.ajax({
+		url: '<?= base_url() ?>data_karyawan/edit',
+		method: 'post',
+		data: {
+			id: id,
+			// foto: foto,
+			nama: nama,
+			nik: nik,
+			nip: nip,
+			no_hp: no_hp,
+			email: email,
+			alamat: alamat,
+			prov: prov,
+			kab: kab,
+			kec: kec,
+			kelu: kelu,
+			rt_rw: rt_rw,
+			kode_pos: kode_pos,
+			tempat_lahir: tempat_lahir,
+			tanggal_lahir: tanggal_lahir,
+			jk: jk,
+			agama: agama,
+			status_pernikahan: status_pernikahan,
+			goldar: goldar,
+			suku: suku,
+			sd: sd,
+			no_sd: no_sd,
+			file_sd: file_sd,
+			smp: smp,
+			no_smp: no_smp,
+			file_smp: file_smp,
+			sma: sma,
+			no_sma: no_sma,
+			file_sma: file_sma,
+			s1: s1,
+			no_s1: no_s1,
+			file_s1: file_s1,
+			s2: s2,
+			no_s2: no_s2,
+			file_s2: file_s2,
+			s3: s3,
+			no_s3: no_s3,
+			file_s3: file_s3,
+			profesi: profesi,
+			no_profesi: no_profesi,
+			file_profesi: file_profesi,
+			jabatan: jabatan,
+			status_karyawan: status_karyawan,
+			jenis_tenaga: jenis_tenaga,
+			jenis_detail_tenaga: jenis_detail_tenaga,
+			jenis_pendidikan: jenis_pendidikan,
+			golongan: golongan,
+			jenis_jabatan: jenis_jabatan,
+			pangkat_golongan: pangkat_golongan,
+			pensiun: pensiun,
+			gaji: gaji,
+			ruangan: ruangan,
+			no_sk: no_sk,
+			file_sk: file_sk,
+			file_penempatan: file_penempatan,
+			no_str: no_str,
+			file_str: file_str,
+			no_sip: no_sip,
+			file_sip: file_sip,
+			masa_sip: masa_sip
+		},
+		dataType: 'json',
+		success: function(data) {
+			if (data == "") {
+				$("#idUser").val("")
+				// $("#foto").val("")
+				$("#nama").val("")
+				$("#nik").val("")
+				$("#no_hp").val("")
+				$("#email").val("")
+				$("#alamat").val("")
+				$("#nip").val("")
+				$("#prov").val("")
+				$("#kab").val("")
+				$("#kec").val("")
+				$("#kelu").val("")
+				$("#rt_rw").val("")
+				$("#kode_pos").val("")
+				$("#tempat_lahir").val("")
+				$("#tanggal_lahir").val("")
+				$("#jk").val("")
+				$("#agama").val("")
+				$("#status_pernikahan").val("")
+				$("#goldar").val("")
+				$("#suku").val("")
+				$("#sd").val("")
+				$("#no_sd").val("")
+				$("#file_sd").val("")
+				$("#smp").val("")
+				$("#no_smp").val("")
+				$("#file_smp").val("")
+				$("#sma").val("")
+				$("#no_sma").val("")
+				$("#file_sma").val("")
+				$("#s1").val("")
+				$("#no_s1").val("")
+				$("#file_s1").val("")
+				$("#s2").val("")
+				$("#no_s2").val("")
+				$("#file_s2").val("")
+				$("#s3").val("")
+				$("#no_s3").val("")
+				$("#file_s3").val("")
+				$("#profesi").val("")
+				$("#no_profesi").val("")
+				$("#file_profesi").val("")
+				$("#jabatan").val("")
+				$("#status_karyawan").val("")
+				$("#jenis_tenaga").val("")
+				$("#jenis_detail_tenaga").val("")
+				$("#jenis_pendidikan").val("")
+				$("#golongan").val("")
+				$("#jenis_jabatan").val("")
+				$("#pangkat_golongan").val("")
+				$("#pensiun").val("")
+				$("#gaji").val("")
+				$("#ruangan").val("")
+				$("#no_sk").val("")
+				$("#file_sk").val("")
+				$("#file_penempatan").val("")
+				$("#no_str").val("")
+				$("#file_str").val("")
+				$("#no_sip").val("")
+				$("#file_sip").val("")
+				$("#masa_sip").val("")
+				// console.log(data)
+			} else {
+			$('#pesanErrorEdit').html(data)
+			}
+			$("#modalEdit").modal('hide');
+			tampilkan();
+			$("#tombolEdit").html('Simpan')
+		}
+		});
+	}
+	
+	function tryArsip(id) {
+		$("#tombolArsip" + id).html('<i class="fas fa-spinner fa-pulse"></i>')
+		$("#idUser").val(id)
+		$.ajax({
+		url: '<?= base_url() ?>data_karyawan/edit_id',
+		method: 'post',
+		data: "target=karyawan&id=" + id,
+		dataType: 'json',
+		success: function(data) {
+			$("#modalArsip").modal('show')
+			$("#file_sd").val(data.file_sd)
+			$("#file_smp").val(data.file_smp)
+			$("#file_sma").val(data.file_sma)
+			$("#file_s1").val(data.file_s1)
+			$("#file_s2").val(data.file_s2)
+			$("#file_s3").val(data.file_s3)
+			$("#file_profesi").val(data.file_profesi)
+			$("#file_sk").val(data.file_sk)
+			$("#file_penempatan").val(data.file_penempatan)
+			$("#file_str").val(data.file_str)
+			$("#file_sip").val(data.file_sip)
+			$("#file_skp").val(data.file_skp)
+			console.log(data)
+			$("#arsip" + id).html('<i class="fa fa-edit"></i>')
+		}
+		});
+	}
+
+	function arsip() {
+		$("#tombolArsip").html('<i class="fas fa-spinner fa-pulse"></i> Memproses..')
+		var file_sd = $("#file_sd").val()
+		var file_smp = $("#file_smp").val()
+		var file_sma = $("#file_sma").val()
+		var file_s1 = $("#file_s1").val()
+		var file_s2 = $("#file_s2").val()
+		var file_s3 = $("#file_s3").val()
+		var file_profesi = $("#file_profesi").val()
+		var file_sk = $("#file_sk").val()
+		var file_penempatan = $("#file_penempatan").val()
+		var file_str = $("#file_str").val()
+		var file_sip = $("#file_sip").val()
+		var file_skp = $("#file_skp").val()
+		var id = $("#idUser").val()
+		$.ajax({
+		url: '<?= base_url() ?>data_karyawan/arsip',
+		method: 'post',
+		data: {
+			id: id,
+			file_sd: file_sd,
+			file_smp: file_smp,
+			file_sma: file_sma,
+			file_s1: file_s1,
+			file_s2: file_s2,
+			file_s3: file_s3,
+			file_profesi: file_profesi,
+			file_sk: file_sk,
+			file_penempatan: file_penempatan,
+			file_str: file_str,
+			file_sip: file_sip,
+			file_skp: file_skp
+		},
+		dataType: 'json',
+		success: function(data) {
+			if (data == "") {
+				$("#idUser").val("")
+				$("#file_sd").val("")
+				$("#file_smp").val("")
+				$("#file_sma").val("")
+				$("#file_s1").val("")
+				$("#file_s2").val("")
+				$("#file_s3").val("")
+				$("#file_profesi").val("")
+				$("#file_sk").val("")
+				$("#file_penempatan").val("")
+				$("#file_str").val("")
+				$("#file_sip").val("")
+				$("#file_skp").val("")
+				// console.log(data)
+			} else {
+			$('#pesanErrorEdit').html(data)
+			}
+			$("#modalArsip").modal('hide');
+			tampilkan();
+			$("#tombolArsip").html('Simpan')
+		}
+		});
+	}
+
+	function tryView(id) {
+		$("#tombolView" + id).html('<i class="fas fa-spinner fa-pulse"></i>')
+		$("#idUser").val(id)
+		$.ajax({
+		url: '<?= base_url() ?>data_karyawan/edit_id',
+		method: 'post',
+		data: "target=karyawan&id=" + id,
+		dataType: 'json',
+		success: function(data) {
+			$("#view_file_penempatan").html('');
+			$("#view_file_sk").html('');
+			$("#view_file_str").html('');
+			$("#view_file_skp").html('');
+			$("#view_file_sip").html('');
+			$("#view_file_sd").html('');
+			$("#view_file_smp").html('');
+			$("#view_file_s1").html('');
+			$("#view_file_s2").html('');
+			$("#view_file_s3").html('');
+			$("#view_file_profesi").html('');
+			$("#view_foto").html('');
+
+			// $("#view_foto").html('<img src="'+base_url+'assets/foto_karyawan/'+data.foto+'">');
+
+			$("#modalView").modal('show')
+			$("#view_foto").val(data.foto)
+			// $("#foto").val(data.foto)
+			$("#view_nama").val(data.nama)
+			$("#view_id_karyawan").val(data.id_karyawan)
+			$("#view_nik").val(data.nik)
+			$("#view_nip").val(data.nip)
+			$("#view_no_hp").val(data.no_hp)
+			$("#view_email").val(data.email)
+			$("#view_alamat").val(data.alamat)
+			$("#view_prov").val(data.prov)
+			$("#view_kab").val(data.kab)
+			$("#view_kec").val(data.kec)
+			$("#view_kelu").val(data.kelu)
+			$("#view_rt_rw").val(data.rt_rw)
+			$("#view_kode_pos").val(data.kode_pos)
+			$("#view_tempat_lahir").val(data.tempat_lahir)
+			$("#view_tanggal_lahir").val(data.tanggal_lahir)
+			$("#view_jk").val(data.jk)
+			$("#view_agama").val(data.agama)
+			$("#view_status_pernikahan").val(data.status_pernikahan)
+			$("#view_goldar").val(data.goldar)
+			$("#view_suku").val(data.suku)
+			$("#view_sd").val(data.sd)
+			$("#view_no_sd").val(data.no_sd)
+			$("#view_file_sd").val(data.file_sd)
+			$("#view_smp").val(data.smp)
+			$("#view_no_smp").val(data.no_smp)
+			$("#view_file_smp").val(data.file_smp)
+			$("#view_sma").val(data.sma)
+			$("#view_no_sma").val(data.no_sma)
+			$("#view_file_sma").val(data.file_sma)
+			$("#view_s1").val(data.s1)
+			$("#view_no_s1").val(data.no_s1)
+			$("#view_file_s1").val(data.file_s1)
+			$("#view_s2").val(data.s2)
+			$("#view_no_s2").val(data.no_s2)
+			$("#view_file_s2").val(data.file_s2)
+			$("#view_s3").val(data.s3)
+			$("#view_no_s3").val(data.no_s3)
+			$("#view_file_s3").val(data.file_s3)
+			$("#view_profesi").val(data.profesi)
+			$("#view_no_profesi").val(data.no_profesi)
+			$("#view_file_profesi").val(data.file_profesi)
+			$("#view_jabatan").val(data.jabatan)
+			$("#view_status_karyawan").val(data.status_karyawan)
+			$("#view_jenis_tenaga").val(data.jenis_tenaga)
+			$("#view_jenis_detail_tenaga").val(data.jenis_detail_tenaga)
+			$("#view_jenis_pendidikan").val(data.jenis_pendidikan)
+			$("#view_golongan").val(data.golongan)
+			$("#view_jenis_jabatan").val(data.jenis_jabatan)
+			$("#view_pangkat_golongan").val(data.pangkat_golongan)
+			$("#view_pensiun").val(data.pensiun)
+			$("#view_gaji").val(data.gaji)
+			$("#view_ruangan").val(data.ruangan)
+			$("#view_no_sk").val(data.no_sk)
+			$("#view_file_sk").val(data.file_sk)
+			$("#view_file_penempatan").val(data.file_penempatan)
+			$("#view_no_str").val(data.no_str)
+			$("#view_file_str").val(data.file_str)
+			$("#view_no_sip").val(data.no_sip)
+			$("#view_file_sip").val(data.file_sip)
+			$("#view_file_skp").val(data.file_skp)
+			$("#view_masa_sip").val(data.masa_sip)
+
+
+			if(data.foto!=null){
+                var foto = '<img src="<?= base_url() ?>assets/foto_karyawan/'+data.foto+'" width="150" height="150" />';
+                $("#view_foto").html(foto);
+            }
+
+			// if(data.foto!=null){
+            //     var foto = '<img src="'+base_url+'assets/foto_karyawan/'+data.foto+'">';
+            //     $("#view_foto").html(foto);
+            // }
+
+			if(data.file_penempatan!=null){
+                var link = ' <a href="<?= base_url() ?>assets/arsip_karyawan/'+data.file_penempatan+'" target="_blank">SK Penempatan</a>';
+                $("#view_file_penempatan").html(link);
+            }
+
+			if(data.file_sk!=null){
+                var link = ' <a href="<?= base_url() ?>assets/arsip_karyawan/'+data.file_sk+'" target="_blank">SK KARYAWAN</a>';
+                $("#view_file_sk").html(link);
+            }
+			
+			if(data.file_str!=null){
+                var link = ' <a href="<?= base_url() ?>assets/arsip_karyawan/'+data.file_str+'" target="_blank">STR</a>';
+                $("#view_file_str").html(link);
+            }
+
+			if(data.file_skp!=null){
+                var link = ' <a href="<?= base_url() ?>assets/arsip_karyawan/'+data.file_skp+'" target="_blank">SKP</a>';
+                $("#view_file_skp").html(link);
+            }
+
+			if(data.file_sip!=null){
+                var link = ' <a href="<?= base_url() ?>assets/arsip_karyawan/'+data.file_sip+'" target="_blank">SIP</a>';
+                $("#view_file_sip").html(link);
+            }
+
+			if(data.file_sd!=null){
+                var link = ' <a href="<?= base_url() ?>assets/arsip_karyawan/'+data.file_sd+'" target="_blank">IJAZAH SD</a>';
+                $("#view_file_sd").html(link);
+            }
+
+			if(data.file_smp!=null){
+                var link = ' <a href="<?= base_url() ?>assets/arsip_karyawan/'+data.file_smp+'" target="_blank">IJAZAH SMP</a>';
+                $("#view_file_smp").html(link);
+            }
+
+			if(data.file_sma!=null){
+                var link = ' <a href="<?= base_url() ?>assets/arsip_karyawan/'+data.file_sma+'" target="_blank">IJAZAH SMA</a>';
+                $("#view_file_sma").html(link);
+            }
+
+			if(data.file_s1!=null){
+                var link = ' <a href="<?= base_url() ?>assets/arsip_karyawan/'+data.file_s1+'" target="_blank">IJAZAH S1/D-III/D-IV</a>';
+                $("#view_file_s1").html(link);
+            }
+
+			if(data.file_s2!=null){
+                var link = ' <a href="<?= base_url() ?>assets/arsip_karyawan/'+data.file_s2+'" target="_blank">IJAZAH S2</a>';
+                $("#view_file_s2").html(link);
+            }
+
+			if(data.file_s3!=null){
+                var link = ' <a href="<?= base_url() ?>assets/arsip_karyawan/'+data.file_s3+'" target="_blank">IJAZAH S3</a>';
+                $("#view_file_s3").html(link);
+            }
+
+			if(data.file_profesi!=null){
+                var link = ' <a href="<?= base_url() ?>assets/arsip_karyawan/'+data.file_profesi+'" target="_blank">IJAZAH PROFESI</a>';
+                $("#view_file_profesi").html(link);
+            }
+			console.log(data)
+			$("#view" + id).html('<i class="fa fa-edit"></i>')
+		}
+		});
+	}
+
+	function view() {
+		$("#tombolView").html('<i class="fas fa-spinner fa-pulse"></i> Memproses..')
+		var foto = $("#foto").val()
+		var nama = $("#view_nama").val()
+		var nik = $("#nik").val()
+		var no_hp = $("#no_hp").val()
+		var email = $("#email").val()
+		var alamat = $("#alamat").val()
+		var prov = $("#prov").val()
+		var kab = $("#kab").val()
+		var kec = $("#kec").val()
+		var kelu = $("#kelu").val()
+		var rt_rw = $("#rt_rw").val()
+		var kode_pos = $("#kode_pos").val()
+		var tempat_lahir = $("#tempat_lahir").val()
+		var tanggal_lahir = $("#tanggal_lahir").val()
+		var jk = $("#jk").val()
+		var agama = $("#agama").val()
+		var status_pernikahan = $("#status_pernikahan").val()
+		var goldar = $("#goldar").val()
+		var suku = $("#suku").val()
+		var sd = $("#sd").val()
+		var no_sd = $("#no_sd").val()
+		var file_sd = $("#file_sd").val()
+		var smp = $("#smp").val()
+		var no_smp = $("#no_smp").val()
+		var file_smp = $("#file_smp").val()
+		var sma = $("#sma").val()
+		var no_sma = $("#no_sma").val()
+		var file_sma = $("#file_sma").val()
+		var s1 = $("#s1").val()
+		var no_s1 = $("#no_s1").val()
+		var file_s1 = $("#file_s1").val()
+		var s2 = $("#s2").val()
+		var no_s2 = $("#no_s2").val()
+		var file_s2 = $("#file_s2").val()
+		var s3 = $("#s3").val()
+		var no_s3 = $("#no_s3").val()
+		var file_s3 = $("#file_s3").val()
+		var profesi = $("#profesi").val()
+		var no_profesi = $("#no_profesi").val()
+		var file_profesi = $("#file_profesi").val()
+		var jabatan = $("#jabatan").val()
+		var status_karyawan = $("#status_karyawan").val()
+		var jenis_tenaga = $("#jenis_tenaga").val()
+		var jenis_detail_tenaga = $("#jenis_detail_tenaga").val()
+		var jenis_pendidikan = $("#jenis_pendidikan").val()
+		var golongan = $("#golongan").val()
+		var pensiun = $("#pensiun").val()
+		var gaji = $("#gaji").val()
+		var ruangan = $("#ruangan").val()
+		var no_sk = $("#no_sk").val()
+		var file_sk = $("#file_sk").val()
+		var file_penempatan = $("#file_penempatan").val()
+		var no_str = $("#no_str").val()
+		var file_str = $("#file_str").val()
+		var no_sip = $("#no_sip").val()
+		var file_sip = $("#file_sip").val()
+		var masa_sip = $("#masa_sip").val()
+		var id = $("#idUser").val()
+		$.ajax({
+		url: '<?= base_url() ?>data_karyawan/edit',
+		method: 'post',
+		data: {
+			id: id,
+			foto: foto,
+			nama: nama,
+			nik: nik,
+			no_hp: no_hp,
+			email: email,
+			alamat: alamat,
+			prov: prov,
+			kab: kab,
+			kec: kec,
+			kelu: kelu,
+			rt_rw: rt_rw,
+			kode_pos: kode_pos,
+			tempat_lahir: tempat_lahir,
+			tanggal_lahir: tanggal_lahir,
+			jk: jk,
+			agama: agama,
+			status_pernikahan: status_pernikahan,
+			goldar: goldar,
+			suku: suku,
+			sd: sd,
+			no_sd: no_sd,
+			file_sd: file_sd,
+			smp: smp,
+			no_smp: no_smp,
+			file_smp: file_smp,
+			sma: sma,
+			no_sma: no_sma,
+			file_sma: file_sma,
+			s1: s1,
+			no_s1: no_s1,
+			file_s1: file_s1,
+			s2: s2,
+			no_s2: no_s2,
+			file_s2: file_s2,
+			s3: s3,
+			no_s3: no_s3,
+			file_s3: file_s3,
+			profesi: profesi,
+			no_profesi: no_profesi,
+			file_profesi: file_profesi,
+			jabatan: jabatan,
+			status_karyawan: status_karyawan,
+			jenis_tenaga: jenis_tenaga,
+			jenis_detail_tenaga: jenis_detail_tenaga,
+			jenis_pendidikan: jenis_pendidikan,
+			golongan: golongan,
+			pensiun: pensiun,
+			gaji: gaji,
+			ruangan: ruangan,
+			no_sk: no_sk,
+			file_sk: file_sk,
+			file_penempatan: file_penempatan,
+			no_str: no_str,
+			file_str: file_str,
+			no_sip: no_sip,
+			file_sip: file_sip,
+			masa_sip: masa_sip
+		},
+		dataType: 'json',
+		success: function(data) {
+			if (data == "") {
+				$("#idUser").val("")
+				$("#foto").val("")
+				$("#nama").val("")
+				$("#nik").val("")
+				$("#no_hp").val("")
+				$("#email").val("")
+				$("#alamat").val("")
+				$("#prov").val("")
+				$("#kab").val("")
+				$("#kec").val("")
+				$("#kelu").val("")
+				$("#rt_rw").val("")
+				$("#kode_pos").val("")
+				$("#tempat_lahir").val("")
+				$("#tanggal_lahir").val("")
+				$("#jk").val("")
+				$("#agama").val("")
+				$("#status_pernikahan").val("")
+				$("#goldar").val("")
+				$("#suku").val("")
+				$("#sd").val("")
+				$("#no_sd").val("")
+				$("#file_sd").val("")
+				$("#smp").val("")
+				$("#no_smp").val("")
+				$("#file_smp").val("")
+				$("#sma").val("")
+				$("#no_sma").val("")
+				$("#file_sma").val("")
+				$("#s1").val("")
+				$("#no_s1").val("")
+				$("#file_s1").val("")
+				$("#s2").val("")
+				$("#no_s2").val("")
+				$("#file_s2").val("")
+				$("#s3").val("")
+				$("#no_s3").val("")
+				$("#file_s3").val("")
+				$("#profesi").val("")
+				$("#no_profesi").val("")
+				$("#file_profesi").val("")
+				$("#jabatan").val("")
+				$("#status_karyawan").val("")
+				$("#jenis_tenaga").val("")
+				$("#jenis_detail_tenaga").val("")
+				$("#jenis_pendidikan").val("")
+				$("#golongan").val("")
+				$("#pensiun").val("")
+				$("#gaji").val("")
+				$("#ruangan").val("")
+				$("#no_sk").val("")
+				$("#file_sk").val("")
+				$("#file_penempatan").val("")
+				$("#no_str").val("")
+				$("#file_str").val("")
+				$("#no_sip").val("")
+				$("#file_sip").val("")
+				$("#masa_sip").val("")
+				// console.log(data)
+			} else {
+			$('#pesanErrorView').html(data)
+			}
+			$("#modalView").modal('hide');
+			tampilkan();
+			$("#tombolView").html('Simpan')
+		}
+		});
+	}
+
+	function addSpinner(el, static_pos)
+	{
+	var spinner = el.children('.spinner');
+	if (spinner.length && !spinner.hasClass('spinner-remove')) return null;
+	!spinner.length && (spinner = $('<div class="spinner' + (static_pos ? '' : ' spinner-absolute') + '"/>').appendTo(el));
+	animateSpinner(spinner, 'add');
+	}
 
 function removeSpinner(el, complete)
 {

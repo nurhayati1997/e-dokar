@@ -735,331 +735,6 @@
 																<!--end::Body-->
 															</div>
 															<!--end::Nav Panel Widget 2-->
-															<!--begin::List Widget 17-->
-															<div class="card card-custom gutter-b">
-																<!--begin::Header-->
-																	<div class="card-header border-0">
-																		<h3 class="card-title font-weight-bolder text-dark">Berkas</h3>
-																	</div>
-																<!--begin::Body-->
-																<div class="card-body pt-1">
-																	<!--begin::Body-->
-																	<div class="card-body pt-1">
-																		<!--begin::Item-->
-																		<div class="d-flex align-items-center mb-9 bg-light-warning rounded p-5">
-																			<!--begin::Icon-->
-																			<span class="svg-icon svg-icon-warning mr-5">
-																				<span class="svg-icon svg-icon-lg">
-																					<!--begin::Svg Icon | path:/metronic/theme/html/demo2/dist/assets/media/svg/icons/Home/Library.svg-->
-																					<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
-																						<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-																							<rect x="0" y="0" width="24" height="24" />
-																							<path d="M5,3 L6,3 C6.55228475,3 7,3.44771525 7,4 L7,20 C7,20.5522847 6.55228475,21 6,21 L5,21 C4.44771525,21 4,20.5522847 4,20 L4,4 C4,3.44771525 4.44771525,3 5,3 Z M10,3 L11,3 C11.5522847,3 12,3.44771525 12,4 L12,20 C12,20.5522847 11.5522847,21 11,21 L10,21 C9.44771525,21 9,20.5522847 9,20 L9,4 C9,3.44771525 9.44771525,3 10,3 Z" fill="#000000" />
-																							<rect fill="#000000" opacity="0.3" transform="translate(17.825568, 11.945519) rotate(-19.000000) translate(-17.825568, -11.945519)" x="16.3255682" y="2.94551858" width="3" height="18" rx="1" />
-																						</g>
-																					</svg>
-																					<!--end::Svg Icon-->
-																				</span>
-																			</span>
-																			<!--end::Icon-->
-																			<!--begin::Title-->
-																			<div class="d-flex flex-column flex-grow-1 mr-2">
-																				<a href="#" class="font-weight-bold text-dark-75 text-hover-primary font-size-lg mb-1" id="view_file_penempatan">SK Penempatan</a>
-																			</div>
-																		</div>
-																		<!--end::Item-->
-																		<!--begin::Item-->
-																		<div class="d-flex align-items-center bg-light-success rounded p-5 mb-9">
-																			<!--begin::Icon-->
-																			<span class="svg-icon svg-icon-success mr-5">
-																				<span class="svg-icon svg-icon-lg">
-																					<!--begin::Svg Icon | path:/metronic/theme/html/demo2/dist/assets/media/svg/icons/Communication/Write.svg-->
-																					<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
-																						<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-																							<rect x="0" y="0" width="24" height="24" />
-																							<path d="M12.2674799,18.2323597 L12.0084872,5.45852451 C12.0004303,5.06114792 12.1504154,4.6768183 12.4255037,4.38993949 L15.0030167,1.70195304 L17.5910752,4.40093695 C17.8599071,4.6812911 18.0095067,5.05499603 18.0083938,5.44341307 L17.9718262,18.2062508 C17.9694575,19.0329966 17.2985816,19.701953 16.4718324,19.701953 L13.7671717,19.701953 C12.9505952,19.701953 12.2840328,19.0487684 12.2674799,18.2323597 Z" fill="#000000" fill-rule="nonzero" transform="translate(14.701953, 10.701953) rotate(-135.000000) translate(-14.701953, -10.701953)" />
-																							<path d="M12.9,2 C13.4522847,2 13.9,2.44771525 13.9,3 C13.9,3.55228475 13.4522847,4 12.9,4 L6,4 C4.8954305,4 4,4.8954305 4,6 L4,18 C4,19.1045695 4.8954305,20 6,20 L18,20 C19.1045695,20 20,19.1045695 20,18 L20,13 C20,12.4477153 20.4477153,12 21,12 C21.5522847,12 22,12.4477153 22,13 L22,18 C22,20.209139 20.209139,22 18,22 L6,22 C3.790861,22 2,20.209139 2,18 L2,6 C2,3.790861 3.790861,2 6,2 L12.9,2 Z" fill="#000000" fill-rule="nonzero" opacity="0.3" />
-																						</g>
-																					</svg>
-																					<!--end::Svg Icon-->
-																				</span>
-																			</span>
-																			<!--end::Icon-->
-																			<!--begin::Title-->
-																			<div class="d-flex flex-column flex-grow-1 mr-2">
-																			<a href="#" class="font-weight-bold text-dark-75 text-hover-primary font-size-lg mb-1" id="view_file_sk">SK KARYAWAN</a>
-																			</div>
-																			<!--end::Title-->
-																			<!--begin::Lable-->
-																			<!-- <span class="font-weight-bolder text-success py-1 font-size-lg">+50%</span> -->
-																			<!--end::Lable-->
-																		</div>
-																		<!--end::Item-->
-																		<!--begin::Item-->
-																		<div class="d-flex align-items-center bg-light-danger rounded p-5 mb-9">
-																			<!--begin::Icon-->
-																			<span class="svg-icon svg-icon-danger mr-5">
-																				<span class="svg-icon svg-icon-lg">
-																					<!--begin::Svg Icon | path:/metronic/theme/html/demo2/dist/assets/media/svg/icons/Communication/Group-chat.svg-->
-																					<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
-																						<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-																							<rect x="0" y="0" width="24" height="24" />
-																							<path d="M16,15.6315789 L16,12 C16,10.3431458 14.6568542,9 13,9 L6.16183229,9 L6.16183229,5.52631579 C6.16183229,4.13107011 7.29290239,3 8.68814808,3 L20.4776218,3 C21.8728674,3 23.0039375,4.13107011 23.0039375,5.52631579 L23.0039375,13.1052632 L23.0206157,17.786793 C23.0215995,18.0629336 22.7985408,18.2875874 22.5224001,18.2885711 C22.3891754,18.2890457 22.2612702,18.2363324 22.1670655,18.1421277 L19.6565168,15.6315789 L16,15.6315789 Z" fill="#000000" />
-																							<path d="M1.98505595,18 L1.98505595,13 C1.98505595,11.8954305 2.88048645,11 3.98505595,11 L11.9850559,11 C13.0896254,11 13.9850559,11.8954305 13.9850559,13 L13.9850559,18 C13.9850559,19.1045695 13.0896254,20 11.9850559,20 L4.10078614,20 L2.85693427,21.1905292 C2.65744295,21.3814685 2.34093638,21.3745358 2.14999706,21.1750444 C2.06092565,21.0819836 2.01120804,20.958136 2.01120804,20.8293182 L2.01120804,18.32426 C1.99400175,18.2187196 1.98505595,18.1104045 1.98505595,18 Z M6.5,14 C6.22385763,14 6,14.2238576 6,14.5 C6,14.7761424 6.22385763,15 6.5,15 L11.5,15 C11.7761424,15 12,14.7761424 12,14.5 C12,14.2238576 11.7761424,14 11.5,14 L6.5,14 Z M9.5,16 C9.22385763,16 9,16.2238576 9,16.5 C9,16.7761424 9.22385763,17 9.5,17 L11.5,17 C11.7761424,17 12,16.7761424 12,16.5 C12,16.2238576 11.7761424,16 11.5,16 L9.5,16 Z" fill="#000000" opacity="0.3" />
-																						</g>
-																					</svg>
-																					<!--end::Svg Icon-->
-																				</span>
-																			</span>
-																			<!--end::Icon-->
-																			<!--begin::Title-->
-																			<div class="d-flex flex-column flex-grow-1 mr-2">
-																				<a href="#"  class="font-weight-bold text-dark-75 text-hover-primary font-size-lg mb-1" id="view_file_str">STR</a>
-																			</div>
-																			<!--end::Title-->
-																			<!--begin::Lable-->
-																			<!-- <span class="font-weight-bolder text-danger py-1 font-size-lg">-27%</span> -->
-																			<!--end::Lable-->
-																		</div>
-																		<!--end::Item-->
-																		<!--begin::Item-->
-																		<div class="d-flex align-items-center bg-light-danger rounded p-5 mb-9">
-																			<!--begin::Icon-->
-																			<span class="svg-icon svg-icon-danger mr-5">
-																				<span class="svg-icon svg-icon-lg">
-																					<!--begin::Svg Icon | path:/metronic/theme/html/demo2/dist/assets/media/svg/icons/Communication/Group-chat.svg-->
-																					<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
-																						<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-																							<rect x="0" y="0" width="24" height="24" />
-																							<path d="M16,15.6315789 L16,12 C16,10.3431458 14.6568542,9 13,9 L6.16183229,9 L6.16183229,5.52631579 C6.16183229,4.13107011 7.29290239,3 8.68814808,3 L20.4776218,3 C21.8728674,3 23.0039375,4.13107011 23.0039375,5.52631579 L23.0039375,13.1052632 L23.0206157,17.786793 C23.0215995,18.0629336 22.7985408,18.2875874 22.5224001,18.2885711 C22.3891754,18.2890457 22.2612702,18.2363324 22.1670655,18.1421277 L19.6565168,15.6315789 L16,15.6315789 Z" fill="#000000" />
-																							<path d="M1.98505595,18 L1.98505595,13 C1.98505595,11.8954305 2.88048645,11 3.98505595,11 L11.9850559,11 C13.0896254,11 13.9850559,11.8954305 13.9850559,13 L13.9850559,18 C13.9850559,19.1045695 13.0896254,20 11.9850559,20 L4.10078614,20 L2.85693427,21.1905292 C2.65744295,21.3814685 2.34093638,21.3745358 2.14999706,21.1750444 C2.06092565,21.0819836 2.01120804,20.958136 2.01120804,20.8293182 L2.01120804,18.32426 C1.99400175,18.2187196 1.98505595,18.1104045 1.98505595,18 Z M6.5,14 C6.22385763,14 6,14.2238576 6,14.5 C6,14.7761424 6.22385763,15 6.5,15 L11.5,15 C11.7761424,15 12,14.7761424 12,14.5 C12,14.2238576 11.7761424,14 11.5,14 L6.5,14 Z M9.5,16 C9.22385763,16 9,16.2238576 9,16.5 C9,16.7761424 9.22385763,17 9.5,17 L11.5,17 C11.7761424,17 12,16.7761424 12,16.5 C12,16.2238576 11.7761424,16 11.5,16 L9.5,16 Z" fill="#000000" opacity="0.3" />
-																						</g>
-																					</svg>
-																					<!--end::Svg Icon-->
-																				</span>
-																			</span>
-																			<!--end::Icon-->
-																			<!--begin::Title-->
-																			<div class="d-flex flex-column flex-grow-1 mr-2">
-																				<a href="#" class="font-weight-bold text-dark-75 text-hover-primary font-size-lg mb-1" id="view_file_skp">SKP</a>
-																			</div>
-																			<!--end::Title-->
-																			<!--begin::Lable-->
-																			<!-- <span class="font-weight-bolder text-danger py-1 font-size-lg">-27%</span> -->
-																			<!--end::Lable-->
-																		</div>
-																		<!--end::Item-->
-																		<!--begin::Item-->
-																		<div class="d-flex align-items-center bg-light-info rounded p-5 mb-9">
-																			<!--begin::Icon-->
-																			<span class="svg-icon svg-icon-info mr-5">
-																				<span class="svg-icon svg-icon-lg">
-																					<!--begin::Svg Icon | path:/metronic/theme/html/demo2/dist/assets/media/svg/icons/General/Attachment2.svg-->
-																					<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
-																						<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-																							<rect x="0" y="0" width="24" height="24" />
-																							<path d="M11.7573593,15.2426407 L8.75735931,15.2426407 C8.20507456,15.2426407 7.75735931,15.6903559 7.75735931,16.2426407 C7.75735931,16.7949254 8.20507456,17.2426407 8.75735931,17.2426407 L11.7573593,17.2426407 L11.7573593,18.2426407 C11.7573593,19.3472102 10.8619288,20.2426407 9.75735931,20.2426407 L5.75735931,20.2426407 C4.65278981,20.2426407 3.75735931,19.3472102 3.75735931,18.2426407 L3.75735931,14.2426407 C3.75735931,13.1380712 4.65278981,12.2426407 5.75735931,12.2426407 L9.75735931,12.2426407 C10.8619288,12.2426407 11.7573593,13.1380712 11.7573593,14.2426407 L11.7573593,15.2426407 Z" fill="#000000" opacity="0.3" transform="translate(7.757359, 16.242641) rotate(-45.000000) translate(-7.757359, -16.242641)" />
-																							<path d="M12.2426407,8.75735931 L15.2426407,8.75735931 C15.7949254,8.75735931 16.2426407,8.30964406 16.2426407,7.75735931 C16.2426407,7.20507456 15.7949254,6.75735931 15.2426407,6.75735931 L12.2426407,6.75735931 L12.2426407,5.75735931 C12.2426407,4.65278981 13.1380712,3.75735931 14.2426407,3.75735931 L18.2426407,3.75735931 C19.3472102,3.75735931 20.2426407,4.65278981 20.2426407,5.75735931 L20.2426407,9.75735931 C20.2426407,10.8619288 19.3472102,11.7573593 18.2426407,11.7573593 L14.2426407,11.7573593 C13.1380712,11.7573593 12.2426407,10.8619288 12.2426407,9.75735931 L12.2426407,8.75735931 Z" fill="#000000" transform="translate(16.242641, 7.757359) rotate(-45.000000) translate(-16.242641, -7.757359)" />
-																							<path d="M5.89339828,3.42893219 C6.44568303,3.42893219 6.89339828,3.87664744 6.89339828,4.42893219 L6.89339828,6.42893219 C6.89339828,6.98121694 6.44568303,7.42893219 5.89339828,7.42893219 C5.34111353,7.42893219 4.89339828,6.98121694 4.89339828,6.42893219 L4.89339828,4.42893219 C4.89339828,3.87664744 5.34111353,3.42893219 5.89339828,3.42893219 Z M11.4289322,5.13603897 C11.8194565,5.52656326 11.8194565,6.15972824 11.4289322,6.55025253 L10.0147186,7.96446609 C9.62419433,8.35499039 8.99102936,8.35499039 8.60050506,7.96446609 C8.20998077,7.5739418 8.20998077,6.94077682 8.60050506,6.55025253 L10.0147186,5.13603897 C10.4052429,4.74551468 11.0384079,4.74551468 11.4289322,5.13603897 Z M0.600505063,5.13603897 C0.991029355,4.74551468 1.62419433,4.74551468 2.01471863,5.13603897 L3.42893219,6.55025253 C3.81945648,6.94077682 3.81945648,7.5739418 3.42893219,7.96446609 C3.0384079,8.35499039 2.40524292,8.35499039 2.01471863,7.96446609 L0.600505063,6.55025253 C0.209980772,6.15972824 0.209980772,5.52656326 0.600505063,5.13603897 Z" fill="#000000" opacity="0.3" transform="translate(6.014719, 5.843146) rotate(-45.000000) translate(-6.014719, -5.843146)" />
-																							<path d="M17.9142136,15.4497475 C18.4664983,15.4497475 18.9142136,15.8974627 18.9142136,16.4497475 L18.9142136,18.4497475 C18.9142136,19.0020322 18.4664983,19.4497475 17.9142136,19.4497475 C17.3619288,19.4497475 16.9142136,19.0020322 16.9142136,18.4497475 L16.9142136,16.4497475 C16.9142136,15.8974627 17.3619288,15.4497475 17.9142136,15.4497475 Z M23.4497475,17.1568542 C23.8402718,17.5473785 23.8402718,18.1805435 23.4497475,18.5710678 L22.0355339,19.9852814 C21.6450096,20.3758057 21.0118446,20.3758057 20.6213203,19.9852814 C20.2307961,19.5947571 20.2307961,18.9615921 20.6213203,18.5710678 L22.0355339,17.1568542 C22.4260582,16.76633 23.0592232,16.76633 23.4497475,17.1568542 Z M12.6213203,17.1568542 C13.0118446,16.76633 13.6450096,16.76633 14.0355339,17.1568542 L15.4497475,18.5710678 C15.8402718,18.9615921 15.8402718,19.5947571 15.4497475,19.9852814 C15.0592232,20.3758057 14.4260582,20.3758057 14.0355339,19.9852814 L12.6213203,18.5710678 C12.2307961,18.1805435 12.2307961,17.5473785 12.6213203,17.1568542 Z" fill="#000000" opacity="0.3" transform="translate(18.035534, 17.863961) scale(1, -1) rotate(45.000000) translate(-18.035534, -17.863961)" />
-																						</g>
-																					</svg>
-																					<!--end::Svg Icon-->
-																				</span>
-																			</span>
-																			<!--end::Icon-->
-																			<!--begin::Title-->
-																			<div class="d-flex flex-column flex-grow-1 mr-2">
-																				<a href="#" class="font-weight-bold text-dark-75 text-hover-primary font-size-lg mb-1" id="view_file_sip">SIP</a>
-																			</div>
-																		</div>
-																		<!--end::Item-->
-																		<!--begin::Item-->
-																		<div class="d-flex align-items-center mb-9 bg-light-warning rounded p-5 mb-9">
-																			<!--begin::Icon-->
-																			<span class="svg-icon svg-icon-warning mr-5">
-																				<span class="svg-icon svg-icon-lg">
-																					<!--begin::Svg Icon | path:/metronic/theme/html/demo2/dist/assets/media/svg/icons/Home/Library.svg-->
-																					<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
-																						<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-																							<rect x="0" y="0" width="24" height="24" />
-																							<path d="M5,3 L6,3 C6.55228475,3 7,3.44771525 7,4 L7,20 C7,20.5522847 6.55228475,21 6,21 L5,21 C4.44771525,21 4,20.5522847 4,20 L4,4 C4,3.44771525 4.44771525,3 5,3 Z M10,3 L11,3 C11.5522847,3 12,3.44771525 12,4 L12,20 C12,20.5522847 11.5522847,21 11,21 L10,21 C9.44771525,21 9,20.5522847 9,20 L9,4 C9,3.44771525 9.44771525,3 10,3 Z" fill="#000000" />
-																							<rect fill="#000000" opacity="0.3" transform="translate(17.825568, 11.945519) rotate(-19.000000) translate(-17.825568, -11.945519)" x="16.3255682" y="2.94551858" width="3" height="18" rx="1" />
-																						</g>
-																					</svg>
-																					<!--end::Svg Icon-->
-																				</span>
-																			</span>
-																			<!--end::Icon-->
-																			<!--begin::Title-->
-																			<div class="d-flex flex-column flex-grow-1 mr-2">
-																				<a href="#" class="font-weight-bold text-dark-75 text-hover-primary font-size-lg mb-1" id="view_file_sd">Ijazah SD</a>
-																			</div>
-																		</div>
-																		<!--end::Item-->
-																		<!--begin::Item-->
-																		<div class="d-flex align-items-center bg-light-success rounded p-5 mb-9">
-																			<!--begin::Icon-->
-																			<span class="svg-icon svg-icon-success mr-5">
-																				<span class="svg-icon svg-icon-lg">
-																					<!--begin::Svg Icon | path:/metronic/theme/html/demo2/dist/assets/media/svg/icons/Communication/Write.svg-->
-																					<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
-																						<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-																							<rect x="0" y="0" width="24" height="24" />
-																							<path d="M12.2674799,18.2323597 L12.0084872,5.45852451 C12.0004303,5.06114792 12.1504154,4.6768183 12.4255037,4.38993949 L15.0030167,1.70195304 L17.5910752,4.40093695 C17.8599071,4.6812911 18.0095067,5.05499603 18.0083938,5.44341307 L17.9718262,18.2062508 C17.9694575,19.0329966 17.2985816,19.701953 16.4718324,19.701953 L13.7671717,19.701953 C12.9505952,19.701953 12.2840328,19.0487684 12.2674799,18.2323597 Z" fill="#000000" fill-rule="nonzero" transform="translate(14.701953, 10.701953) rotate(-135.000000) translate(-14.701953, -10.701953)" />
-																							<path d="M12.9,2 C13.4522847,2 13.9,2.44771525 13.9,3 C13.9,3.55228475 13.4522847,4 12.9,4 L6,4 C4.8954305,4 4,4.8954305 4,6 L4,18 C4,19.1045695 4.8954305,20 6,20 L18,20 C19.1045695,20 20,19.1045695 20,18 L20,13 C20,12.4477153 20.4477153,12 21,12 C21.5522847,12 22,12.4477153 22,13 L22,18 C22,20.209139 20.209139,22 18,22 L6,22 C3.790861,22 2,20.209139 2,18 L2,6 C2,3.790861 3.790861,2 6,2 L12.9,2 Z" fill="#000000" fill-rule="nonzero" opacity="0.3" />
-																						</g>
-																					</svg>
-																					<!--end::Svg Icon-->
-																				</span>
-																			</span>
-																			<!--end::Icon-->
-																			<!--begin::Title-->
-																			<div class="d-flex flex-column flex-grow-1 mr-2">
-																				<a href="#" class="font-weight-bold text-dark-75 text-hover-primary font-size-lg mb-1" id="view_file_smp">Ijazah SMP</a>
-																			</div>
-																			<!--end::Title-->
-																			<!--begin::Lable-->
-																			<!-- <span class="font-weight-bolder text-success py-1 font-size-lg">+50%</span> -->
-																			<!--end::Lable-->
-																		</div>
-																		<!--end::Item-->
-																		<!--begin::Item-->
-																		<div class="d-flex align-items-center bg-light-danger rounded p-5 mb-9">
-																			<!--begin::Icon-->
-																			<span class="svg-icon svg-icon-danger mr-5">
-																				<span class="svg-icon svg-icon-lg">
-																					<!--begin::Svg Icon | path:/metronic/theme/html/demo2/dist/assets/media/svg/icons/Communication/Group-chat.svg-->
-																					<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
-																						<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-																							<rect x="0" y="0" width="24" height="24" />
-																							<path d="M16,15.6315789 L16,12 C16,10.3431458 14.6568542,9 13,9 L6.16183229,9 L6.16183229,5.52631579 C6.16183229,4.13107011 7.29290239,3 8.68814808,3 L20.4776218,3 C21.8728674,3 23.0039375,4.13107011 23.0039375,5.52631579 L23.0039375,13.1052632 L23.0206157,17.786793 C23.0215995,18.0629336 22.7985408,18.2875874 22.5224001,18.2885711 C22.3891754,18.2890457 22.2612702,18.2363324 22.1670655,18.1421277 L19.6565168,15.6315789 L16,15.6315789 Z" fill="#000000" />
-																							<path d="M1.98505595,18 L1.98505595,13 C1.98505595,11.8954305 2.88048645,11 3.98505595,11 L11.9850559,11 C13.0896254,11 13.9850559,11.8954305 13.9850559,13 L13.9850559,18 C13.9850559,19.1045695 13.0896254,20 11.9850559,20 L4.10078614,20 L2.85693427,21.1905292 C2.65744295,21.3814685 2.34093638,21.3745358 2.14999706,21.1750444 C2.06092565,21.0819836 2.01120804,20.958136 2.01120804,20.8293182 L2.01120804,18.32426 C1.99400175,18.2187196 1.98505595,18.1104045 1.98505595,18 Z M6.5,14 C6.22385763,14 6,14.2238576 6,14.5 C6,14.7761424 6.22385763,15 6.5,15 L11.5,15 C11.7761424,15 12,14.7761424 12,14.5 C12,14.2238576 11.7761424,14 11.5,14 L6.5,14 Z M9.5,16 C9.22385763,16 9,16.2238576 9,16.5 C9,16.7761424 9.22385763,17 9.5,17 L11.5,17 C11.7761424,17 12,16.7761424 12,16.5 C12,16.2238576 11.7761424,16 11.5,16 L9.5,16 Z" fill="#000000" opacity="0.3" />
-																						</g>
-																					</svg>
-																					<!--end::Svg Icon-->
-																				</span>
-																			</span>
-																			<!--end::Icon-->
-																			<!--begin::Title-->
-																			<div class="d-flex flex-column flex-grow-1 mr-2">
-																				<a href="#" class="font-weight-bold text-dark-75 text-hover-primary font-size-lg mb-1" id="view_file_sma">Ijazah SMA</a>
-																			</div>
-																			<!--end::Title-->
-																			<!--begin::Lable-->
-																			<!-- <span class="font-weight-bolder text-danger py-1 font-size-lg">-27%</span> -->
-																			<!--end::Lable-->
-																		</div>
-																		<!--end::Item-->
-																		<!--begin::Item-->
-																		<div class="d-flex align-items-center bg-light-info rounded p-5 mb-9">
-																			<!--begin::Icon-->
-																			<span class="svg-icon svg-icon-info mr-5">
-																				<span class="svg-icon svg-icon-lg">
-																					<!--begin::Svg Icon | path:/metronic/theme/html/demo2/dist/assets/media/svg/icons/General/Attachment2.svg-->
-																					<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
-																						<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-																							<rect x="0" y="0" width="24" height="24" />
-																							<path d="M11.7573593,15.2426407 L8.75735931,15.2426407 C8.20507456,15.2426407 7.75735931,15.6903559 7.75735931,16.2426407 C7.75735931,16.7949254 8.20507456,17.2426407 8.75735931,17.2426407 L11.7573593,17.2426407 L11.7573593,18.2426407 C11.7573593,19.3472102 10.8619288,20.2426407 9.75735931,20.2426407 L5.75735931,20.2426407 C4.65278981,20.2426407 3.75735931,19.3472102 3.75735931,18.2426407 L3.75735931,14.2426407 C3.75735931,13.1380712 4.65278981,12.2426407 5.75735931,12.2426407 L9.75735931,12.2426407 C10.8619288,12.2426407 11.7573593,13.1380712 11.7573593,14.2426407 L11.7573593,15.2426407 Z" fill="#000000" opacity="0.3" transform="translate(7.757359, 16.242641) rotate(-45.000000) translate(-7.757359, -16.242641)" />
-																							<path d="M12.2426407,8.75735931 L15.2426407,8.75735931 C15.7949254,8.75735931 16.2426407,8.30964406 16.2426407,7.75735931 C16.2426407,7.20507456 15.7949254,6.75735931 15.2426407,6.75735931 L12.2426407,6.75735931 L12.2426407,5.75735931 C12.2426407,4.65278981 13.1380712,3.75735931 14.2426407,3.75735931 L18.2426407,3.75735931 C19.3472102,3.75735931 20.2426407,4.65278981 20.2426407,5.75735931 L20.2426407,9.75735931 C20.2426407,10.8619288 19.3472102,11.7573593 18.2426407,11.7573593 L14.2426407,11.7573593 C13.1380712,11.7573593 12.2426407,10.8619288 12.2426407,9.75735931 L12.2426407,8.75735931 Z" fill="#000000" transform="translate(16.242641, 7.757359) rotate(-45.000000) translate(-16.242641, -7.757359)" />
-																							<path d="M5.89339828,3.42893219 C6.44568303,3.42893219 6.89339828,3.87664744 6.89339828,4.42893219 L6.89339828,6.42893219 C6.89339828,6.98121694 6.44568303,7.42893219 5.89339828,7.42893219 C5.34111353,7.42893219 4.89339828,6.98121694 4.89339828,6.42893219 L4.89339828,4.42893219 C4.89339828,3.87664744 5.34111353,3.42893219 5.89339828,3.42893219 Z M11.4289322,5.13603897 C11.8194565,5.52656326 11.8194565,6.15972824 11.4289322,6.55025253 L10.0147186,7.96446609 C9.62419433,8.35499039 8.99102936,8.35499039 8.60050506,7.96446609 C8.20998077,7.5739418 8.20998077,6.94077682 8.60050506,6.55025253 L10.0147186,5.13603897 C10.4052429,4.74551468 11.0384079,4.74551468 11.4289322,5.13603897 Z M0.600505063,5.13603897 C0.991029355,4.74551468 1.62419433,4.74551468 2.01471863,5.13603897 L3.42893219,6.55025253 C3.81945648,6.94077682 3.81945648,7.5739418 3.42893219,7.96446609 C3.0384079,8.35499039 2.40524292,8.35499039 2.01471863,7.96446609 L0.600505063,6.55025253 C0.209980772,6.15972824 0.209980772,5.52656326 0.600505063,5.13603897 Z" fill="#000000" opacity="0.3" transform="translate(6.014719, 5.843146) rotate(-45.000000) translate(-6.014719, -5.843146)" />
-																							<path d="M17.9142136,15.4497475 C18.4664983,15.4497475 18.9142136,15.8974627 18.9142136,16.4497475 L18.9142136,18.4497475 C18.9142136,19.0020322 18.4664983,19.4497475 17.9142136,19.4497475 C17.3619288,19.4497475 16.9142136,19.0020322 16.9142136,18.4497475 L16.9142136,16.4497475 C16.9142136,15.8974627 17.3619288,15.4497475 17.9142136,15.4497475 Z M23.4497475,17.1568542 C23.8402718,17.5473785 23.8402718,18.1805435 23.4497475,18.5710678 L22.0355339,19.9852814 C21.6450096,20.3758057 21.0118446,20.3758057 20.6213203,19.9852814 C20.2307961,19.5947571 20.2307961,18.9615921 20.6213203,18.5710678 L22.0355339,17.1568542 C22.4260582,16.76633 23.0592232,16.76633 23.4497475,17.1568542 Z M12.6213203,17.1568542 C13.0118446,16.76633 13.6450096,16.76633 14.0355339,17.1568542 L15.4497475,18.5710678 C15.8402718,18.9615921 15.8402718,19.5947571 15.4497475,19.9852814 C15.0592232,20.3758057 14.4260582,20.3758057 14.0355339,19.9852814 L12.6213203,18.5710678 C12.2307961,18.1805435 12.2307961,17.5473785 12.6213203,17.1568542 Z" fill="#000000" opacity="0.3" transform="translate(18.035534, 17.863961) scale(1, -1) rotate(45.000000) translate(-18.035534, -17.863961)" />
-																						</g>
-																					</svg>
-																					<!--end::Svg Icon-->
-																				</span>
-																			</span>
-																			<!--end::Icon-->
-																			<!--begin::Title-->
-																			<div class="d-flex flex-column flex-grow-1 mr-2">
-																				<a href="#" class="font-weight-bold text-dark-75 text-hover-primary font-size-lg mb-1" id="view_file_s1">Ijazah SI</a>
-																			</div>
-																		</div>
-																		<!--end::Item-->
-																		<!--begin::Item-->
-																		<div class="d-flex align-items-center mb-9 bg-light-warning rounded p-5 mb-9">
-																			<!--begin::Icon-->
-																			<span class="svg-icon svg-icon-warning mr-5">
-																				<span class="svg-icon svg-icon-lg">
-																					<!--begin::Svg Icon | path:/metronic/theme/html/demo2/dist/assets/media/svg/icons/Home/Library.svg-->
-																					<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
-																						<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-																							<rect x="0" y="0" width="24" height="24" />
-																							<path d="M5,3 L6,3 C6.55228475,3 7,3.44771525 7,4 L7,20 C7,20.5522847 6.55228475,21 6,21 L5,21 C4.44771525,21 4,20.5522847 4,20 L4,4 C4,3.44771525 4.44771525,3 5,3 Z M10,3 L11,3 C11.5522847,3 12,3.44771525 12,4 L12,20 C12,20.5522847 11.5522847,21 11,21 L10,21 C9.44771525,21 9,20.5522847 9,20 L9,4 C9,3.44771525 9.44771525,3 10,3 Z" fill="#000000" />
-																							<rect fill="#000000" opacity="0.3" transform="translate(17.825568, 11.945519) rotate(-19.000000) translate(-17.825568, -11.945519)" x="16.3255682" y="2.94551858" width="3" height="18" rx="1" />
-																						</g>
-																					</svg>
-																					<!--end::Svg Icon-->
-																				</span>
-																			</span>
-																			<!--end::Icon-->
-																			<!--begin::Title-->
-																			<div class="d-flex flex-column flex-grow-1 mr-2">
-																				<a href="#" class="font-weight-bold text-dark-75 text-hover-primary font-size-lg mb-1" id="view_file_s2">Ijazah S2</a>
-																			</div>
-																		</div>
-																		<!--end::Item-->
-																		<!--begin::Item-->
-																		<div class="d-flex align-items-center bg-light-success rounded p-5 mb-9">
-																			<!--begin::Icon-->
-																			<span class="svg-icon svg-icon-success mr-5">
-																				<span class="svg-icon svg-icon-lg">
-																					<!--begin::Svg Icon | path:/metronic/theme/html/demo2/dist/assets/media/svg/icons/Communication/Write.svg-->
-																					<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
-																						<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-																							<rect x="0" y="0" width="24" height="24" />
-																							<path d="M12.2674799,18.2323597 L12.0084872,5.45852451 C12.0004303,5.06114792 12.1504154,4.6768183 12.4255037,4.38993949 L15.0030167,1.70195304 L17.5910752,4.40093695 C17.8599071,4.6812911 18.0095067,5.05499603 18.0083938,5.44341307 L17.9718262,18.2062508 C17.9694575,19.0329966 17.2985816,19.701953 16.4718324,19.701953 L13.7671717,19.701953 C12.9505952,19.701953 12.2840328,19.0487684 12.2674799,18.2323597 Z" fill="#000000" fill-rule="nonzero" transform="translate(14.701953, 10.701953) rotate(-135.000000) translate(-14.701953, -10.701953)" />
-																							<path d="M12.9,2 C13.4522847,2 13.9,2.44771525 13.9,3 C13.9,3.55228475 13.4522847,4 12.9,4 L6,4 C4.8954305,4 4,4.8954305 4,6 L4,18 C4,19.1045695 4.8954305,20 6,20 L18,20 C19.1045695,20 20,19.1045695 20,18 L20,13 C20,12.4477153 20.4477153,12 21,12 C21.5522847,12 22,12.4477153 22,13 L22,18 C22,20.209139 20.209139,22 18,22 L6,22 C3.790861,22 2,20.209139 2,18 L2,6 C2,3.790861 3.790861,2 6,2 L12.9,2 Z" fill="#000000" fill-rule="nonzero" opacity="0.3" />
-																						</g>
-																					</svg>
-																					<!--end::Svg Icon-->
-																				</span>
-																			</span>
-																			<!--end::Icon-->
-																			<!--begin::Title-->
-																			<div class="d-flex flex-column flex-grow-1 mr-2">
-																				<a href="#" class="font-weight-bold text-dark-75 text-hover-primary font-size-lg mb-1" id="view_file_s3">Ijazah S3</a>
-																			</div>
-																			<!--end::Title-->
-																			<!--begin::Lable-->
-																			<!-- <span class="font-weight-bolder text-success py-1 font-size-lg">+50%</span> -->
-																			<!--end::Lable-->
-																		</div>
-																		<!--end::Item-->
-																		<!--begin::Item-->
-																		<div class="d-flex align-items-center bg-light-danger rounded p-5 mb-9">
-																			<!--begin::Icon-->
-																			<span class="svg-icon svg-icon-danger mr-5">
-																				<span class="svg-icon svg-icon-lg">
-																					<!--begin::Svg Icon | path:/metronic/theme/html/demo2/dist/assets/media/svg/icons/Communication/Group-chat.svg-->
-																					<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
-																						<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-																							<rect x="0" y="0" width="24" height="24" />
-																							<path d="M16,15.6315789 L16,12 C16,10.3431458 14.6568542,9 13,9 L6.16183229,9 L6.16183229,5.52631579 C6.16183229,4.13107011 7.29290239,3 8.68814808,3 L20.4776218,3 C21.8728674,3 23.0039375,4.13107011 23.0039375,5.52631579 L23.0039375,13.1052632 L23.0206157,17.786793 C23.0215995,18.0629336 22.7985408,18.2875874 22.5224001,18.2885711 C22.3891754,18.2890457 22.2612702,18.2363324 22.1670655,18.1421277 L19.6565168,15.6315789 L16,15.6315789 Z" fill="#000000" />
-																							<path d="M1.98505595,18 L1.98505595,13 C1.98505595,11.8954305 2.88048645,11 3.98505595,11 L11.9850559,11 C13.0896254,11 13.9850559,11.8954305 13.9850559,13 L13.9850559,18 C13.9850559,19.1045695 13.0896254,20 11.9850559,20 L4.10078614,20 L2.85693427,21.1905292 C2.65744295,21.3814685 2.34093638,21.3745358 2.14999706,21.1750444 C2.06092565,21.0819836 2.01120804,20.958136 2.01120804,20.8293182 L2.01120804,18.32426 C1.99400175,18.2187196 1.98505595,18.1104045 1.98505595,18 Z M6.5,14 C6.22385763,14 6,14.2238576 6,14.5 C6,14.7761424 6.22385763,15 6.5,15 L11.5,15 C11.7761424,15 12,14.7761424 12,14.5 C12,14.2238576 11.7761424,14 11.5,14 L6.5,14 Z M9.5,16 C9.22385763,16 9,16.2238576 9,16.5 C9,16.7761424 9.22385763,17 9.5,17 L11.5,17 C11.7761424,17 12,16.7761424 12,16.5 C12,16.2238576 11.7761424,16 11.5,16 L9.5,16 Z" fill="#000000" opacity="0.3" />
-																						</g>
-																					</svg>
-																					<!--end::Svg Icon-->
-																				</span>
-																			</span>
-																			<!--end::Icon-->
-																			<!--begin::Title-->
-																			<div class="d-flex flex-column flex-grow-1 mr-2">
-																				<a href="#" class="font-weight-bold text-dark-75 text-hover-primary font-size-lg mb-1" id="view_file_profesi">Ijazah Profesi</a>
-																			</div>
-																			<!--end::Title-->
-																			<!--begin::Lable-->
-																			<!-- <span class="font-weight-bolder text-danger py-1 font-size-lg">-27%</span> -->
-																			<!--end::Lable-->
-																		</div>
-																		<!--end::Item-->
-																	</div>
-																	<!--end::Body-->
-																	
-																</div>
-																<!--end::Body-->
-															</div>
-															<!--end::List Widget 17-->
 														</div>
 														<!--end::Aside-->
 														<!--begin::Content-->
@@ -1085,7 +760,7 @@
 																							<!--end::Svg Icon-->
 																						</span>
 																					</span>
-																					<span class="nav-text font-weight-bold">Personal</span>
+																					<span class="nav-text font-weight-bold">Info Karyawan</span>
 																				</a>
 																			</li>
 																			<li class="nav-item mr-3">
@@ -1103,7 +778,7 @@
 																							<!--end::Svg Icon-->
 																						</span>
 																					</span>
-																					<span class="nav-text font-weight-bold">Pelatihan</span>
+																					<span class="nav-text font-weight-bold">Kepegawaian</span>
 																				</a>
 																			</li>
 																			<li class="nav-item mr-3">
@@ -1121,7 +796,7 @@
 																							<!--end::Svg Icon-->
 																						</span>
 																					</span>
-																					<span class="nav-text font-weight-bold">Riwayat Kerja</span>
+																					<span class="nav-text font-weight-bold">Pendidikan</span>
 																				</a>
 																			</li>
 																			<li class="nav-item">
@@ -1139,25 +814,7 @@
 																							<!--end::Svg Icon-->
 																						</span>
 																					</span>
-																					<span class="nav-text font-weight-bold">Kenaikan</span>
-																				</a>
-																			</li>
-																			<li class="nav-item">
-																				<a class="nav-link" data-toggle="tab" href="#kt_apps_contacts_view_tab_5">
-																					<span class="nav-icon mr-2">
-																						<span class="svg-icon mr-3">
-																							<!--begin::Svg Icon | path:/metronic/theme/html/demo2/dist/assets/media/svg/icons/General/Notification2.svg-->
-																							<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
-																								<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-																									<rect x="0" y="0" width="24" height="24" />
-																									<path d="M13.2070325,4 C13.0721672,4.47683179 13,4.97998812 13,5.5 C13,8.53756612 15.4624339,11 18.5,11 C19.0200119,11 19.5231682,10.9278328 20,10.7929675 L20,17 C20,18.6568542 18.6568542,20 17,20 L7,20 C5.34314575,20 4,18.6568542 4,17 L4,7 C4,5.34314575 5.34314575,4 7,4 L13.2070325,4 Z" fill="#000000" />
-																									<circle fill="#000000" opacity="0.3" cx="18.5" cy="5.5" r="2.5" />
-																								</g>
-																							</svg>
-																							<!--end::Svg Icon-->
-																						</span>
-																					</span>
-																					<span class="nav-text font-weight-bold">Perizinan</span>
+																					<span class="nav-text font-weight-bold">Berkas</span>
 																				</a>
 																			</li>
 																		</ul>
@@ -1262,6 +919,12 @@
 																					</div>
 																				</div>
 																				<div class="separator separator-dashed my-10"></div>
+																			</form>
+																		</div>
+																		<!--end::Tab Content-->
+																		<!--begin::Tab Content-->
+																		<div class="tab-pane" id="kt_apps_contacts_view_tab_3" role="tabpanel">
+																			<form class="form">
 																				<!--begin::Heading-->
 																				<div class="row">
 																					<div class="col-lg-9 col-xl-6 offset-xl-3">
@@ -1324,6 +987,12 @@
 																					</div>
 																				</div>
 																				<div class="separator separator-dashed my-10"></div>
+																			</form>
+																		</div>
+																		<!--end::Tab Content-->
+																		<!--begin::Tab Content-->
+																		<div class="tab-pane" id="kt_apps_contacts_view_tab_4" role="tabpanel">
+																			<form class="form">
 																				<!--begin::Heading-->
 																				<div class="row">
 																					<div class="col-lg-9 col-xl-6 offset-xl-3">
@@ -1419,725 +1088,336 @@
 																		</div>
 																		<!--end::Tab Content-->
 																		<!--begin::Tab Content-->
-																		<div class="tab-pane" id="kt_apps_contacts_view_tab_3" role="tabpanel">
-																			<form class="form">
-																				<!--begin::Notice-->
-																				<div class="row">
-																					<div class="col-lg-9 col-xl-6 offset-xl-3">
-																						<div class="alert alert-custom alert-light-danger fade show mb-9" role="alert">
-																							<div class="alert-icon">
-																								<i class="flaticon-warning"></i>
-																							</div>
-																							<div class="alert-text">Configure user passwords to expire periodically. 
-																							<br />Users will need warning that their passwords are going to expire, or they might inadvertently get locked out of the system!</div>
-																							<div class="alert-close">
-																								<button type="button" class="close" data-dismiss="alert" aria-label="Close">
-																									<span aria-hidden="true">
-																										<i class="ki ki-close"></i>
-																									</span>
-																								</button>
-																							</div>
-																						</div>
-																					</div>
-																				</div>
-																				<!--end::Notice-->
-																				<!--begin::Heading-->
-																				<div class="row">
-																					<div class="col-lg-9 col-xl-6 offset-xl-3">
-																						<h3 class="font-size-h6 mb-5">Account:</h3>
-																					</div>
-																				</div>
-																				<!--end::Heading-->
-																				<div class="form-group row">
-																					<label class="col-xl-3 col-lg-3 text-right col-form-label">Username</label>
-																					<div class="col-lg-9 col-xl-6">
-																						<div class="spinner spinner-sm spinner-success spinner-right">
-																							<input class="form-control form-control-lg form-control-solid" type="text" value="nick84" />
-																						</div>
-																					</div>
-																				</div>
-																				<div class="form-group row">
-																					<label class="col-xl-3 col-lg-3 text-right col-form-label">Email Address</label>
-																					<div class="col-lg-9 col-xl-6">
-																						<div class="input-group input-group-lg input-group-solid">
-																							<div class="input-group-prepend">
-																								<span class="input-group-text">
-																									<i class="la la-at"></i>
-																								</span>
-																							</div>
-																							<input type="text" class="form-control form-control-lg form-control-solid" value="nick.watson@loop.com" placeholder="Email" />
-																						</div>
-																						<span class="form-text text-muted">Email will not be publicly displayed. 
-																						<a href="#">Learn more</a>.</span>
-																					</div>
-																				</div>
-																				<div class="form-group row">
-																					<label class="col-xl-3 col-lg-3 text-right col-form-label">Language</label>
-																					<div class="col-lg-9 col-xl-6">
-																						<select class="form-control form-control-lg form-control-solid">
-																							<option>Select Language...</option>
-																							<option value="id">Bahasa Indonesia - Indonesian</option>
-																							<option value="msa">Bahasa Melayu - Malay</option>
-																							<option value="ca">Català - Catalan</option>
-																							<option value="cs">Čeština - Czech</option>
-																							<option value="da">Dansk - Danish</option>
-																							<option value="de">Deutsch - German</option>
-																							<option value="en" selected="selected">English</option>
-																							<option value="en-gb">English UK - British English</option>
-																							<option value="es">Español - Spanish</option>
-																							<option value="eu">Euskara - Basque (beta)</option>
-																							<option value="fil">Filipino</option>
-																							<option value="fr">Français - French</option>
-																							<option value="ga">Gaeilge - Irish (beta)</option>
-																							<option value="gl">Galego - Galician (beta)</option>
-																							<option value="hr">Hrvatski - Croatian</option>
-																							<option value="it">Italiano - Italian</option>
-																							<option value="hu">Magyar - Hungarian</option>
-																							<option value="nl">Nederlands - Dutch</option>
-																							<option value="no">Norsk - Norwegian</option>
-																							<option value="pl">Polski - Polish</option>
-																							<option value="pt">Português - Portuguese</option>
-																							<option value="ro">Română - Romanian</option>
-																							<option value="sk">Slovenčina - Slovak</option>
-																							<option value="fi">Suomi - Finnish</option>
-																							<option value="sv">Svenska - Swedish</option>
-																							<option value="vi">Tiếng Việt - Vietnamese</option>
-																							<option value="tr">Türkçe - Turkish</option>
-																							<option value="el">Ελληνικά - Greek</option>
-																							<option value="bg">Български език - Bulgarian</option>
-																							<option value="ru">Русский - Russian</option>
-																							<option value="sr">Српски - Serbian</option>
-																							<option value="uk">Українська мова - Ukrainian</option>
-																							<option value="he">עִבְרִית - Hebrew</option>
-																							<option value="ur">اردو - Urdu (beta)</option>
-																							<option value="ar">العربية - Arabic</option>
-																							<option value="fa">فارسی - Persian</option>
-																							<option value="mr">मराठी - Marathi</option>
-																							<option value="hi">हिन्दी - Hindi</option>
-																							<option value="bn">বাংলা - Bangla</option>
-																							<option value="gu">ગુજરાતી - Gujarati</option>
-																							<option value="ta">தமிழ் - Tamil</option>
-																							<option value="kn">ಕನ್ನಡ - Kannada</option>
-																							<option value="th">ภาษาไทย - Thai</option>
-																							<option value="ko">한국어 - Korean</option>
-																							<option value="ja">日本語 - Japanese</option>
-																							<option value="zh-cn">简体中文 - Simplified Chinese</option>
-																							<option value="zh-tw">繁體中文 - Traditional Chinese</option>
-																						</select>
-																					</div>
-																				</div>
-																				<div class="form-group row">
-																					<label class="col-xl-3 col-lg-3 text-right col-form-label">Time Zone</label>
-																					<div class="col-lg-9 col-xl-6">
-																						<select class="form-control form-control-lg form-control-solid">
-																							<option data-offset="-39600" value="International Date Line West">(GMT-11:00) International Date Line West</option>
-																							<option data-offset="-39600" value="Midway Island">(GMT-11:00) Midway Island</option>
-																							<option data-offset="-39600" value="Samoa">(GMT-11:00) Samoa</option>
-																							<option data-offset="-36000" value="Hawaii">(GMT-10:00) Hawaii</option>
-																							<option data-offset="-28800" value="Alaska">(GMT-08:00) Alaska</option>
-																							<option data-offset="-25200" value="Pacific Time (US &amp; Canada)">(GMT-07:00) Pacific Time (US &amp; Canada)</option>
-																							<option data-offset="-25200" value="Tijuana">(GMT-07:00) Tijuana</option>
-																							<option data-offset="-25200" value="Arizona">(GMT-07:00) Arizona</option>
-																							<option data-offset="-21600" value="Mountain Time (US &amp; Canada)">(GMT-06:00) Mountain Time (US &amp; Canada)</option>
-																							<option data-offset="-21600" value="Chihuahua">(GMT-06:00) Chihuahua</option>
-																							<option data-offset="-21600" value="Mazatlan">(GMT-06:00) Mazatlan</option>
-																							<option data-offset="-21600" value="Saskatchewan">(GMT-06:00) Saskatchewan</option>
-																							<option data-offset="-21600" value="Central America">(GMT-06:00) Central America</option>
-																							<option data-offset="-18000" value="Central Time (US &amp; Canada)">(GMT-05:00) Central Time (US &amp; Canada)</option>
-																							<option data-offset="-18000" value="Guadalajara">(GMT-05:00) Guadalajara</option>
-																							<option data-offset="-18000" value="Mexico City">(GMT-05:00) Mexico City</option>
-																							<option data-offset="-18000" value="Monterrey">(GMT-05:00) Monterrey</option>
-																							<option data-offset="-18000" value="Bogota">(GMT-05:00) Bogota</option>
-																							<option data-offset="-18000" value="Lima">(GMT-05:00) Lima</option>
-																							<option data-offset="-18000" value="Quito">(GMT-05:00) Quito</option>
-																							<option data-offset="-14400" value="Eastern Time (US &amp; Canada)">(GMT-04:00) Eastern Time (US &amp; Canada)</option>
-																							<option data-offset="-14400" value="Indiana (East)">(GMT-04:00) Indiana (East)</option>
-																							<option data-offset="-14400" value="Caracas">(GMT-04:00) Caracas</option>
-																							<option data-offset="-14400" value="La Paz">(GMT-04:00) La Paz</option>
-																							<option data-offset="-14400" value="Georgetown">(GMT-04:00) Georgetown</option>
-																							<option data-offset="-10800" value="Atlantic Time (Canada)">(GMT-03:00) Atlantic Time (Canada)</option>
-																							<option data-offset="-10800" value="Santiago">(GMT-03:00) Santiago</option>
-																							<option data-offset="-10800" value="Brasilia">(GMT-03:00) Brasilia</option>
-																							<option data-offset="-10800" value="Buenos Aires">(GMT-03:00) Buenos Aires</option>
-																							<option data-offset="-9000" value="Newfoundland">(GMT-02:30) Newfoundland</option>
-																							<option data-offset="-7200" value="Greenland">(GMT-02:00) Greenland</option>
-																							<option data-offset="-7200" value="Mid-Atlantic">(GMT-02:00) Mid-Atlantic</option>
-																							<option data-offset="-3600" value="Cape Verde Is.">(GMT-01:00) Cape Verde Is.</option>
-																							<option data-offset="0" value="Azores">(GMT) Azores</option>
-																							<option data-offset="0" value="Monrovia">(GMT) Monrovia</option>
-																							<option data-offset="0" value="UTC">(GMT) UTC</option>
-																							<option data-offset="3600" value="Dublin">(GMT+01:00) Dublin</option>
-																							<option data-offset="3600" value="Edinburgh">(GMT+01:00) Edinburgh</option>
-																							<option data-offset="3600" value="Lisbon">(GMT+01:00) Lisbon</option>
-																							<option data-offset="3600" value="London">(GMT+01:00) London</option>
-																							<option data-offset="3600" value="Casablanca">(GMT+01:00) Casablanca</option>
-																							<option data-offset="3600" value="West Central Africa">(GMT+01:00) West Central Africa</option>
-																							<option data-offset="7200" value="Belgrade">(GMT+02:00) Belgrade</option>
-																							<option data-offset="7200" value="Bratislava">(GMT+02:00) Bratislava</option>
-																							<option data-offset="7200" value="Budapest">(GMT+02:00) Budapest</option>
-																							<option data-offset="7200" value="Ljubljana">(GMT+02:00) Ljubljana</option>
-																							<option data-offset="7200" value="Prague">(GMT+02:00) Prague</option>
-																							<option data-offset="7200" value="Sarajevo">(GMT+02:00) Sarajevo</option>
-																							<option data-offset="7200" value="Skopje">(GMT+02:00) Skopje</option>
-																							<option data-offset="7200" value="Warsaw">(GMT+02:00) Warsaw</option>
-																							<option data-offset="7200" value="Zagreb">(GMT+02:00) Zagreb</option>
-																							<option data-offset="7200" value="Brussels">(GMT+02:00) Brussels</option>
-																							<option data-offset="7200" value="Copenhagen">(GMT+02:00) Copenhagen</option>
-																							<option data-offset="7200" value="Madrid">(GMT+02:00) Madrid</option>
-																							<option data-offset="7200" value="Paris">(GMT+02:00) Paris</option>
-																							<option data-offset="7200" value="Amsterdam">(GMT+02:00) Amsterdam</option>
-																							<option data-offset="7200" value="Berlin">(GMT+02:00) Berlin</option>
-																							<option data-offset="7200" value="Bern">(GMT+02:00) Bern</option>
-																							<option data-offset="7200" value="Rome">(GMT+02:00) Rome</option>
-																							<option data-offset="7200" value="Stockholm">(GMT+02:00) Stockholm</option>
-																							<option data-offset="7200" value="Vienna">(GMT+02:00) Vienna</option>
-																							<option data-offset="7200" value="Cairo">(GMT+02:00) Cairo</option>
-																							<option data-offset="7200" value="Harare">(GMT+02:00) Harare</option>
-																							<option data-offset="7200" value="Pretoria">(GMT+02:00) Pretoria</option>
-																							<option data-offset="10800" value="Bucharest">(GMT+03:00) Bucharest</option>
-																							<option data-offset="10800" value="Helsinki">(GMT+03:00) Helsinki</option>
-																							<option data-offset="10800" value="Kiev">(GMT+03:00) Kiev</option>
-																							<option data-offset="10800" value="Kyiv">(GMT+03:00) Kyiv</option>
-																							<option data-offset="10800" value="Riga">(GMT+03:00) Riga</option>
-																							<option data-offset="10800" value="Sofia">(GMT+03:00) Sofia</option>
-																							<option data-offset="10800" value="Tallinn">(GMT+03:00) Tallinn</option>
-																							<option data-offset="10800" value="Vilnius">(GMT+03:00) Vilnius</option>
-																							<option data-offset="10800" value="Athens">(GMT+03:00) Athens</option>
-																							<option data-offset="10800" value="Istanbul">(GMT+03:00) Istanbul</option>
-																							<option data-offset="10800" value="Minsk">(GMT+03:00) Minsk</option>
-																							<option data-offset="10800" value="Jerusalem">(GMT+03:00) Jerusalem</option>
-																							<option data-offset="10800" value="Moscow">(GMT+03:00) Moscow</option>
-																							<option data-offset="10800" value="St. Petersburg">(GMT+03:00) St. Petersburg</option>
-																							<option data-offset="10800" value="Volgograd">(GMT+03:00) Volgograd</option>
-																							<option data-offset="10800" value="Kuwait">(GMT+03:00) Kuwait</option>
-																							<option data-offset="10800" value="Riyadh">(GMT+03:00) Riyadh</option>
-																							<option data-offset="10800" value="Nairobi">(GMT+03:00) Nairobi</option>
-																							<option data-offset="10800" value="Baghdad">(GMT+03:00) Baghdad</option>
-																							<option data-offset="14400" value="Abu Dhabi">(GMT+04:00) Abu Dhabi</option>
-																							<option data-offset="14400" value="Muscat">(GMT+04:00) Muscat</option>
-																							<option data-offset="14400" value="Baku">(GMT+04:00) Baku</option>
-																							<option data-offset="14400" value="Tbilisi">(GMT+04:00) Tbilisi</option>
-																							<option data-offset="14400" value="Yerevan">(GMT+04:00) Yerevan</option>
-																							<option data-offset="16200" value="Tehran">(GMT+04:30) Tehran</option>
-																							<option data-offset="16200" value="Kabul">(GMT+04:30) Kabul</option>
-																							<option data-offset="18000" value="Ekaterinburg">(GMT+05:00) Ekaterinburg</option>
-																							<option data-offset="18000" value="Islamabad">(GMT+05:00) Islamabad</option>
-																							<option data-offset="18000" value="Karachi">(GMT+05:00) Karachi</option>
-																							<option data-offset="18000" value="Tashkent">(GMT+05:00) Tashkent</option>
-																							<option data-offset="19800" value="Chennai">(GMT+05:30) Chennai</option>
-																							<option data-offset="19800" value="Kolkata">(GMT+05:30) Kolkata</option>
-																							<option data-offset="19800" value="Mumbai">(GMT+05:30) Mumbai</option>
-																							<option data-offset="19800" value="New Delhi">(GMT+05:30) New Delhi</option>
-																							<option data-offset="19800" value="Sri Jayawardenepura">(GMT+05:30) Sri Jayawardenepura</option>
-																							<option data-offset="20700" value="Kathmandu">(GMT+05:45) Kathmandu</option>
-																							<option data-offset="21600" value="Astana">(GMT+06:00) Astana</option>
-																							<option data-offset="21600" value="Dhaka">(GMT+06:00) Dhaka</option>
-																							<option data-offset="21600" value="Almaty">(GMT+06:00) Almaty</option>
-																							<option data-offset="21600" value="Urumqi">(GMT+06:00) Urumqi</option>
-																							<option data-offset="23400" value="Rangoon">(GMT+06:30) Rangoon</option>
-																							<option data-offset="25200" value="Novosibirsk">(GMT+07:00) Novosibirsk</option>
-																							<option data-offset="25200" value="Bangkok">(GMT+07:00) Bangkok</option>
-																							<option data-offset="25200" value="Hanoi">(GMT+07:00) Hanoi</option>
-																							<option data-offset="25200" value="Jakarta">(GMT+07:00) Jakarta</option>
-																							<option data-offset="25200" value="Krasnoyarsk">(GMT+07:00) Krasnoyarsk</option>
-																							<option data-offset="28800" value="Beijing">(GMT+08:00) Beijing</option>
-																							<option data-offset="28800" value="Chongqing">(GMT+08:00) Chongqing</option>
-																							<option data-offset="28800" value="Hong Kong">(GMT+08:00) Hong Kong</option>
-																							<option data-offset="28800" value="Kuala Lumpur">(GMT+08:00) Kuala Lumpur</option>
-																							<option data-offset="28800" value="Singapore">(GMT+08:00) Singapore</option>
-																							<option data-offset="28800" value="Taipei">(GMT+08:00) Taipei</option>
-																							<option data-offset="28800" value="Perth">(GMT+08:00) Perth</option>
-																							<option data-offset="28800" value="Irkutsk">(GMT+08:00) Irkutsk</option>
-																							<option data-offset="28800" value="Ulaan Bataar">(GMT+08:00) Ulaan Bataar</option>
-																							<option data-offset="32400" value="Seoul">(GMT+09:00) Seoul</option>
-																							<option data-offset="32400" value="Osaka">(GMT+09:00) Osaka</option>
-																							<option data-offset="32400" value="Sapporo">(GMT+09:00) Sapporo</option>
-																							<option data-offset="32400" value="Tokyo">(GMT+09:00) Tokyo</option>
-																							<option data-offset="32400" value="Yakutsk">(GMT+09:00) Yakutsk</option>
-																							<option data-offset="34200" value="Darwin">(GMT+09:30) Darwin</option>
-																							<option data-offset="34200" value="Adelaide">(GMT+09:30) Adelaide</option>
-																							<option data-offset="36000" value="Canberra">(GMT+10:00) Canberra</option>
-																							<option data-offset="36000" value="Melbourne">(GMT+10:00) Melbourne</option>
-																							<option data-offset="36000" value="Sydney">(GMT+10:00) Sydney</option>
-																							<option data-offset="36000" value="Brisbane">(GMT+10:00) Brisbane</option>
-																							<option data-offset="36000" value="Hobart">(GMT+10:00) Hobart</option>
-																							<option data-offset="36000" value="Vladivostok">(GMT+10:00) Vladivostok</option>
-																							<option data-offset="36000" value="Guam">(GMT+10:00) Guam</option>
-																							<option data-offset="36000" value="Port Moresby">(GMT+10:00) Port Moresby</option>
-																							<option data-offset="36000" value="Solomon Is.">(GMT+10:00) Solomon Is.</option>
-																							<option data-offset="39600" value="Magadan">(GMT+11:00) Magadan</option>
-																							<option data-offset="39600" value="New Caledonia">(GMT+11:00) New Caledonia</option>
-																							<option data-offset="43200" value="Fiji">(GMT+12:00) Fiji</option>
-																							<option data-offset="43200" value="Kamchatka">(GMT+12:00) Kamchatka</option>
-																							<option data-offset="43200" value="Marshall Is.">(GMT+12:00) Marshall Is.</option>
-																							<option data-offset="43200" value="Auckland">(GMT+12:00) Auckland</option>
-																							<option data-offset="43200" value="Wellington">(GMT+12:00) Wellington</option>
-																							<option data-offset="46800" value="Nuku'alofa">(GMT+13:00) Nuku'alofa</option>
-																						</select>
-																					</div>
-																				</div>
-																				<div class="form-group row align-items-center">
-																					<label class="col-xl-3 col-lg-3 col-form-label text-right">Communication</label>
-																					<div class="col-lg-9 col-xl-6">
-																						<div class="checkbox-inline">
-																							<label class="checkbox">
-																							<input type="checkbox" />
-																							<span></span>Email</label>
-																							<label class="checkbox">
-																							<input type="checkbox" />
-																							<span></span>SMS</label>
-																							<label class="checkbox">
-																							<input type="checkbox" />
-																							<span></span>Phone</label>
-																						</div>
-																					</div>
-																				</div>
-																				<div class="separator separator-dashed my-10"></div>
-																				<!--begin::Heading-->
-																				<div class="row">
-																					<div class="col-lg-9 col-xl-6 offset-xl-3">
-																						<h3 class="font-size-h6 mb-5">Security:</h3>
-																					</div>
-																				</div>
-																				<!--end::Heading-->
-																				<div class="form-group row">
-																					<label class="col-xl-3 col-lg-3 text-right col-form-label">Login verification</label>
-																					<div class="col-lg-9 col-xl-6">
-																						<button type="button" class="btn btn-light-primary font-weight-bold btn-sm">Setup login verification</button>
-																						<span class="form-text text-muted">After you log in, you will be asked for additional information to confirm your identity and protect your account from being compromised. 
-																						<a href="#">Learn more</a>.</span>
-																					</div>
-																				</div>
-																				<div class="form-group row">
-																					<label class="col-xl-3 col-lg-3 text-right col-form-label">Password reset verification</label>
-																					<div class="col-lg-9 col-xl-6">
-																						<div class="checkbox-inline">
-																							<label class="checkbox">
-																							<input type="checkbox" />
-																							<span></span>Require personal information to reset your password.</label>
-																						</div>
-																						<span class="form-text text-muted">For extra security, this requires you to confirm your email or phone number when you reset your password. 
-																						<a href="#">Learn more</a>.</span>
-																					</div>
-																				</div>
-																				<div class="form-group row">
-																					<label class="col-xl-3 col-lg-3 text-right col-form-label"></label>
-																					<div class="col-lg-9 col-xl-6">
-																						<button type="button" class="btn btn-light-danger font-weight-bold btn-sm">Deactivate your account ?</button>
-																					</div>
-																				</div>
-																			</form>
-																		</div>
-																		<!--end::Tab Content-->
-																		<!--begin::Tab Content-->
-																		<div class="tab-pane" id="kt_apps_contacts_view_tab_4" role="tabpanel">
-																			<form class="form">
-																				<div class="row">
-																					<label class="col-xl-3"></label>
-																					<div class="col-lg-9 col-xl-6">
-																						<h3 class="font-size-h6 mb-5">Setup Email Notification:</h3>
-																					</div>
-																				</div>
-																				<div class="form-group row">
-																					<label class="col-xl-3 col-lg-3 text-right col-form-label">Email Notification</label>
-																					<div class="col-lg-9 col-xl-6">
-																						<span class="switch">
-																							<label>
-																								<input type="checkbox" checked="checked" name="email_notification_1" />
-																								<span></span>
-																							</label>
-																						</span>
-																					</div>
-																				</div>
-																				<div class="form-group row">
-																					<label class="col-xl-3 col-lg-3 text-right col-form-label">Send Copy To Personal Email</label>
-																					<div class="col-lg-9 col-xl-6">
-																						<span class="switch">
-																							<label>
-																								<input type="checkbox" name="email_notification_2" />
-																								<span></span>
-																							</label>
-																						</span>
-																					</div>
-																				</div>
-																				<div class="separator separator-dashed my-10"></div>
-																				<!--begin::Heading-->
-																				<div class="row">
-																					<div class="col-lg-9 col-xl-6 offset-xl-3">
-																						<h3 class="font-size-h6 mb-5">Activity Related Emails:</h3>
-																					</div>
-																				</div>
-																				<!--end::Heading-->
-																				<div class="form-group row">
-																					<label class="col-xl-3 col-lg-3 text-right">When To Email</label>
-																					<div class="col-lg-9 col-xl-6">
-																						<div class="checkbox-list">
-																							<label class="checkbox">
-																							<input type="checkbox" />
-																							<span></span>You have new notifications.</label>
-																							<label class="checkbox">
-																							<input type="checkbox" />
-																							<span></span>You're sent a direct message</label>
-																							<label class="checkbox">
-																							<input type="checkbox" checked="checked" />
-																							<span></span>Someone adds you as a connection</label>
-																						</div>
-																					</div>
-																				</div>
-																				<div class="form-group row">
-																					<label class="col-xl-3 col-lg-3 text-right">When To Escalate Emails</label>
-																					<div class="col-lg-9 col-xl-6">
-																						<div class="checkbox-list">
-																							<label class="checkbox">
-																							<input type="checkbox" />
-																							<span></span>Upon new order.</label>
-																							<label class="checkbox">
-																							<input type="checkbox" />
-																							<span></span>New membership approval</label>
-																							<label class="checkbox">
-																							<input type="checkbox" checked="checked" />
-																							<span></span>Member registration</label>
-																						</div>
-																					</div>
-																				</div>
-																				<div class="separator separator-dashed my-10"></div>
-																				<!--begin::Heading-->
-																				<div class="row">
-																					<div class="col-lg-9 col-xl-6 offset-xl-3">
-																						<h3 class="font-size-h6 mb-5">Updates From Keenthemes:</h3>
-																					</div>
-																				</div>
-																				<!--end::Heading-->
-																				<div class="form-group row">
-																					<label class="col-xl-3 col-lg-3 text-right">Email You With</label>
-																					<div class="col-lg-9 col-xl-6">
-																						<div class="checkbox-list">
-																							<label class="checkbox">
-																							<input type="checkbox" />
-																							<span></span>News about Metronic product and feature updates</label>
-																							<label class="checkbox">
-																							<input type="checkbox" />
-																							<span></span>Tips on getting more out of Keen</label>
-																							<label class="checkbox">
-																							<input type="checkbox" checked="checked" />
-																							<span></span>Things you missed since you last logged into Keen</label>
-																							<label class="checkbox">
-																							<input type="checkbox" checked="checked" />
-																							<span></span>News about Metronic on partner products and other services</label>
-																							<label class="checkbox">
-																							<input type="checkbox" checked="checked" />
-																							<span></span>Tips on Metronic business products</label>
-																						</div>
-																					</div>
-																				</div>
-																			</form>
-																		</div>
-																		<!--end::Tab Content-->
-																		<!--begin::Tab Content-->
 																		<div class="tab-pane" id="kt_apps_contacts_view_tab_1" role="tabpanel">
 																			<div class="container">
 																				<form class="form">
-																					<div class="form-group">
-																						<textarea class="form-control form-control-lg form-control-solid" id="exampleTextarea" rows="3" placeholder="Type notes"></textarea>
-																					</div>
-																					<div class="row">
-																						<div class="col">
-																							<a href="#" class="btn btn-light-primary font-weight-bold">Add notes</a>
-																							<a href="#" class="btn btn-clean font-weight-bold">Cancel</a>
+																					
+																					<!--begin::List Widget 17-->
+																					<div class="card card-custom gutter-b">
+																						<!--begin::Header-->
+																							<div class="card-header border-0">
+																								<h3 class="card-title font-weight-bolder text-dark">Berkas</h3>
+																							</div>
+																						<!--begin::Body-->
+																						<div class="card-body pt-1">
+																							<!--begin::Body-->
+																							<div class="card-body pt-1">
+																								<!--begin::Item-->
+																								<div class="d-flex align-items-center mb-9 bg-light-warning rounded p-5">
+																									<!--begin::Icon-->
+																									<span class="svg-icon svg-icon-warning mr-5">
+																										<span class="svg-icon svg-icon-lg">
+																											<!--begin::Svg Icon | path:/metronic/theme/html/demo2/dist/assets/media/svg/icons/Home/Library.svg-->
+																											<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+																												<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+																													<rect x="0" y="0" width="24" height="24" />
+																													<path d="M5,3 L6,3 C6.55228475,3 7,3.44771525 7,4 L7,20 C7,20.5522847 6.55228475,21 6,21 L5,21 C4.44771525,21 4,20.5522847 4,20 L4,4 C4,3.44771525 4.44771525,3 5,3 Z M10,3 L11,3 C11.5522847,3 12,3.44771525 12,4 L12,20 C12,20.5522847 11.5522847,21 11,21 L10,21 C9.44771525,21 9,20.5522847 9,20 L9,4 C9,3.44771525 9.44771525,3 10,3 Z" fill="#000000" />
+																													<rect fill="#000000" opacity="0.3" transform="translate(17.825568, 11.945519) rotate(-19.000000) translate(-17.825568, -11.945519)" x="16.3255682" y="2.94551858" width="3" height="18" rx="1" />
+																												</g>
+																											</svg>
+																											<!--end::Svg Icon-->
+																										</span>
+																									</span>
+																									<!--end::Icon-->
+																									<!--begin::Title-->
+																									<div class="d-flex flex-column flex-grow-1 mr-2">
+																										<a href="#" class="font-weight-bold text-dark-75 text-hover-primary font-size-lg mb-1" id="view_file_penempatan">SK Penempatan</a>
+																									</div>
+																								</div>
+																								<!--end::Item-->
+																								<!--begin::Item-->
+																								<div class="d-flex align-items-center bg-light-success rounded p-5 mb-9">
+																									<!--begin::Icon-->
+																									<span class="svg-icon svg-icon-success mr-5">
+																										<span class="svg-icon svg-icon-lg">
+																											<!--begin::Svg Icon | path:/metronic/theme/html/demo2/dist/assets/media/svg/icons/Communication/Write.svg-->
+																											<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+																												<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+																													<rect x="0" y="0" width="24" height="24" />
+																													<path d="M12.2674799,18.2323597 L12.0084872,5.45852451 C12.0004303,5.06114792 12.1504154,4.6768183 12.4255037,4.38993949 L15.0030167,1.70195304 L17.5910752,4.40093695 C17.8599071,4.6812911 18.0095067,5.05499603 18.0083938,5.44341307 L17.9718262,18.2062508 C17.9694575,19.0329966 17.2985816,19.701953 16.4718324,19.701953 L13.7671717,19.701953 C12.9505952,19.701953 12.2840328,19.0487684 12.2674799,18.2323597 Z" fill="#000000" fill-rule="nonzero" transform="translate(14.701953, 10.701953) rotate(-135.000000) translate(-14.701953, -10.701953)" />
+																													<path d="M12.9,2 C13.4522847,2 13.9,2.44771525 13.9,3 C13.9,3.55228475 13.4522847,4 12.9,4 L6,4 C4.8954305,4 4,4.8954305 4,6 L4,18 C4,19.1045695 4.8954305,20 6,20 L18,20 C19.1045695,20 20,19.1045695 20,18 L20,13 C20,12.4477153 20.4477153,12 21,12 C21.5522847,12 22,12.4477153 22,13 L22,18 C22,20.209139 20.209139,22 18,22 L6,22 C3.790861,22 2,20.209139 2,18 L2,6 C2,3.790861 3.790861,2 6,2 L12.9,2 Z" fill="#000000" fill-rule="nonzero" opacity="0.3" />
+																												</g>
+																											</svg>
+																											<!--end::Svg Icon-->
+																										</span>
+																									</span>
+																									<!--end::Icon-->
+																									<!--begin::Title-->
+																									<div class="d-flex flex-column flex-grow-1 mr-2">
+																									<a href="#" class="font-weight-bold text-dark-75 text-hover-primary font-size-lg mb-1" id="view_file_sk">SK KARYAWAN</a>
+																									</div>
+																									<!--end::Title-->
+																									<!--begin::Lable-->
+																									<!-- <span class="font-weight-bolder text-success py-1 font-size-lg">+50%</span> -->
+																									<!--end::Lable-->
+																								</div>
+																								<!--end::Item-->
+																								<!--begin::Item-->
+																								<div class="d-flex align-items-center bg-light-danger rounded p-5 mb-9">
+																									<!--begin::Icon-->
+																									<span class="svg-icon svg-icon-danger mr-5">
+																										<span class="svg-icon svg-icon-lg">
+																											<!--begin::Svg Icon | path:/metronic/theme/html/demo2/dist/assets/media/svg/icons/Communication/Group-chat.svg-->
+																											<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+																												<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+																													<rect x="0" y="0" width="24" height="24" />
+																													<path d="M16,15.6315789 L16,12 C16,10.3431458 14.6568542,9 13,9 L6.16183229,9 L6.16183229,5.52631579 C6.16183229,4.13107011 7.29290239,3 8.68814808,3 L20.4776218,3 C21.8728674,3 23.0039375,4.13107011 23.0039375,5.52631579 L23.0039375,13.1052632 L23.0206157,17.786793 C23.0215995,18.0629336 22.7985408,18.2875874 22.5224001,18.2885711 C22.3891754,18.2890457 22.2612702,18.2363324 22.1670655,18.1421277 L19.6565168,15.6315789 L16,15.6315789 Z" fill="#000000" />
+																													<path d="M1.98505595,18 L1.98505595,13 C1.98505595,11.8954305 2.88048645,11 3.98505595,11 L11.9850559,11 C13.0896254,11 13.9850559,11.8954305 13.9850559,13 L13.9850559,18 C13.9850559,19.1045695 13.0896254,20 11.9850559,20 L4.10078614,20 L2.85693427,21.1905292 C2.65744295,21.3814685 2.34093638,21.3745358 2.14999706,21.1750444 C2.06092565,21.0819836 2.01120804,20.958136 2.01120804,20.8293182 L2.01120804,18.32426 C1.99400175,18.2187196 1.98505595,18.1104045 1.98505595,18 Z M6.5,14 C6.22385763,14 6,14.2238576 6,14.5 C6,14.7761424 6.22385763,15 6.5,15 L11.5,15 C11.7761424,15 12,14.7761424 12,14.5 C12,14.2238576 11.7761424,14 11.5,14 L6.5,14 Z M9.5,16 C9.22385763,16 9,16.2238576 9,16.5 C9,16.7761424 9.22385763,17 9.5,17 L11.5,17 C11.7761424,17 12,16.7761424 12,16.5 C12,16.2238576 11.7761424,16 11.5,16 L9.5,16 Z" fill="#000000" opacity="0.3" />
+																												</g>
+																											</svg>
+																											<!--end::Svg Icon-->
+																										</span>
+																									</span>
+																									<!--end::Icon-->
+																									<!--begin::Title-->
+																									<div class="d-flex flex-column flex-grow-1 mr-2">
+																										<a href="#"  class="font-weight-bold text-dark-75 text-hover-primary font-size-lg mb-1" id="view_file_str">STR</a>
+																									</div>
+																									<!--end::Title-->
+																									<!--begin::Lable-->
+																									<!-- <span class="font-weight-bolder text-danger py-1 font-size-lg">-27%</span> -->
+																									<!--end::Lable-->
+																								</div>
+																								<!--end::Item-->
+																								<!--begin::Item-->
+																								<div class="d-flex align-items-center bg-light-danger rounded p-5 mb-9">
+																									<!--begin::Icon-->
+																									<span class="svg-icon svg-icon-danger mr-5">
+																										<span class="svg-icon svg-icon-lg">
+																											<!--begin::Svg Icon | path:/metronic/theme/html/demo2/dist/assets/media/svg/icons/Communication/Group-chat.svg-->
+																											<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+																												<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+																													<rect x="0" y="0" width="24" height="24" />
+																													<path d="M16,15.6315789 L16,12 C16,10.3431458 14.6568542,9 13,9 L6.16183229,9 L6.16183229,5.52631579 C6.16183229,4.13107011 7.29290239,3 8.68814808,3 L20.4776218,3 C21.8728674,3 23.0039375,4.13107011 23.0039375,5.52631579 L23.0039375,13.1052632 L23.0206157,17.786793 C23.0215995,18.0629336 22.7985408,18.2875874 22.5224001,18.2885711 C22.3891754,18.2890457 22.2612702,18.2363324 22.1670655,18.1421277 L19.6565168,15.6315789 L16,15.6315789 Z" fill="#000000" />
+																													<path d="M1.98505595,18 L1.98505595,13 C1.98505595,11.8954305 2.88048645,11 3.98505595,11 L11.9850559,11 C13.0896254,11 13.9850559,11.8954305 13.9850559,13 L13.9850559,18 C13.9850559,19.1045695 13.0896254,20 11.9850559,20 L4.10078614,20 L2.85693427,21.1905292 C2.65744295,21.3814685 2.34093638,21.3745358 2.14999706,21.1750444 C2.06092565,21.0819836 2.01120804,20.958136 2.01120804,20.8293182 L2.01120804,18.32426 C1.99400175,18.2187196 1.98505595,18.1104045 1.98505595,18 Z M6.5,14 C6.22385763,14 6,14.2238576 6,14.5 C6,14.7761424 6.22385763,15 6.5,15 L11.5,15 C11.7761424,15 12,14.7761424 12,14.5 C12,14.2238576 11.7761424,14 11.5,14 L6.5,14 Z M9.5,16 C9.22385763,16 9,16.2238576 9,16.5 C9,16.7761424 9.22385763,17 9.5,17 L11.5,17 C11.7761424,17 12,16.7761424 12,16.5 C12,16.2238576 11.7761424,16 11.5,16 L9.5,16 Z" fill="#000000" opacity="0.3" />
+																												</g>
+																											</svg>
+																											<!--end::Svg Icon-->
+																										</span>
+																									</span>
+																									<!--end::Icon-->
+																									<!--begin::Title-->
+																									<div class="d-flex flex-column flex-grow-1 mr-2">
+																										<a href="#" class="font-weight-bold text-dark-75 text-hover-primary font-size-lg mb-1" id="view_file_skp">SKP</a>
+																									</div>
+																									<!--end::Title-->
+																									<!--begin::Lable-->
+																									<!-- <span class="font-weight-bolder text-danger py-1 font-size-lg">-27%</span> -->
+																									<!--end::Lable-->
+																								</div>
+																								<!--end::Item-->
+																								<!--begin::Item-->
+																								<div class="d-flex align-items-center bg-light-info rounded p-5 mb-9">
+																									<!--begin::Icon-->
+																									<span class="svg-icon svg-icon-info mr-5">
+																										<span class="svg-icon svg-icon-lg">
+																											<!--begin::Svg Icon | path:/metronic/theme/html/demo2/dist/assets/media/svg/icons/General/Attachment2.svg-->
+																											<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+																												<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+																													<rect x="0" y="0" width="24" height="24" />
+																													<path d="M11.7573593,15.2426407 L8.75735931,15.2426407 C8.20507456,15.2426407 7.75735931,15.6903559 7.75735931,16.2426407 C7.75735931,16.7949254 8.20507456,17.2426407 8.75735931,17.2426407 L11.7573593,17.2426407 L11.7573593,18.2426407 C11.7573593,19.3472102 10.8619288,20.2426407 9.75735931,20.2426407 L5.75735931,20.2426407 C4.65278981,20.2426407 3.75735931,19.3472102 3.75735931,18.2426407 L3.75735931,14.2426407 C3.75735931,13.1380712 4.65278981,12.2426407 5.75735931,12.2426407 L9.75735931,12.2426407 C10.8619288,12.2426407 11.7573593,13.1380712 11.7573593,14.2426407 L11.7573593,15.2426407 Z" fill="#000000" opacity="0.3" transform="translate(7.757359, 16.242641) rotate(-45.000000) translate(-7.757359, -16.242641)" />
+																													<path d="M12.2426407,8.75735931 L15.2426407,8.75735931 C15.7949254,8.75735931 16.2426407,8.30964406 16.2426407,7.75735931 C16.2426407,7.20507456 15.7949254,6.75735931 15.2426407,6.75735931 L12.2426407,6.75735931 L12.2426407,5.75735931 C12.2426407,4.65278981 13.1380712,3.75735931 14.2426407,3.75735931 L18.2426407,3.75735931 C19.3472102,3.75735931 20.2426407,4.65278981 20.2426407,5.75735931 L20.2426407,9.75735931 C20.2426407,10.8619288 19.3472102,11.7573593 18.2426407,11.7573593 L14.2426407,11.7573593 C13.1380712,11.7573593 12.2426407,10.8619288 12.2426407,9.75735931 L12.2426407,8.75735931 Z" fill="#000000" transform="translate(16.242641, 7.757359) rotate(-45.000000) translate(-16.242641, -7.757359)" />
+																													<path d="M5.89339828,3.42893219 C6.44568303,3.42893219 6.89339828,3.87664744 6.89339828,4.42893219 L6.89339828,6.42893219 C6.89339828,6.98121694 6.44568303,7.42893219 5.89339828,7.42893219 C5.34111353,7.42893219 4.89339828,6.98121694 4.89339828,6.42893219 L4.89339828,4.42893219 C4.89339828,3.87664744 5.34111353,3.42893219 5.89339828,3.42893219 Z M11.4289322,5.13603897 C11.8194565,5.52656326 11.8194565,6.15972824 11.4289322,6.55025253 L10.0147186,7.96446609 C9.62419433,8.35499039 8.99102936,8.35499039 8.60050506,7.96446609 C8.20998077,7.5739418 8.20998077,6.94077682 8.60050506,6.55025253 L10.0147186,5.13603897 C10.4052429,4.74551468 11.0384079,4.74551468 11.4289322,5.13603897 Z M0.600505063,5.13603897 C0.991029355,4.74551468 1.62419433,4.74551468 2.01471863,5.13603897 L3.42893219,6.55025253 C3.81945648,6.94077682 3.81945648,7.5739418 3.42893219,7.96446609 C3.0384079,8.35499039 2.40524292,8.35499039 2.01471863,7.96446609 L0.600505063,6.55025253 C0.209980772,6.15972824 0.209980772,5.52656326 0.600505063,5.13603897 Z" fill="#000000" opacity="0.3" transform="translate(6.014719, 5.843146) rotate(-45.000000) translate(-6.014719, -5.843146)" />
+																													<path d="M17.9142136,15.4497475 C18.4664983,15.4497475 18.9142136,15.8974627 18.9142136,16.4497475 L18.9142136,18.4497475 C18.9142136,19.0020322 18.4664983,19.4497475 17.9142136,19.4497475 C17.3619288,19.4497475 16.9142136,19.0020322 16.9142136,18.4497475 L16.9142136,16.4497475 C16.9142136,15.8974627 17.3619288,15.4497475 17.9142136,15.4497475 Z M23.4497475,17.1568542 C23.8402718,17.5473785 23.8402718,18.1805435 23.4497475,18.5710678 L22.0355339,19.9852814 C21.6450096,20.3758057 21.0118446,20.3758057 20.6213203,19.9852814 C20.2307961,19.5947571 20.2307961,18.9615921 20.6213203,18.5710678 L22.0355339,17.1568542 C22.4260582,16.76633 23.0592232,16.76633 23.4497475,17.1568542 Z M12.6213203,17.1568542 C13.0118446,16.76633 13.6450096,16.76633 14.0355339,17.1568542 L15.4497475,18.5710678 C15.8402718,18.9615921 15.8402718,19.5947571 15.4497475,19.9852814 C15.0592232,20.3758057 14.4260582,20.3758057 14.0355339,19.9852814 L12.6213203,18.5710678 C12.2307961,18.1805435 12.2307961,17.5473785 12.6213203,17.1568542 Z" fill="#000000" opacity="0.3" transform="translate(18.035534, 17.863961) scale(1, -1) rotate(45.000000) translate(-18.035534, -17.863961)" />
+																												</g>
+																											</svg>
+																											<!--end::Svg Icon-->
+																										</span>
+																									</span>
+																									<!--end::Icon-->
+																									<!--begin::Title-->
+																									<div class="d-flex flex-column flex-grow-1 mr-2">
+																										<a href="#" class="font-weight-bold text-dark-75 text-hover-primary font-size-lg mb-1" id="view_file_sip">SIP</a>
+																									</div>
+																								</div>
+																								<!--end::Item-->
+																								<!--begin::Item-->
+																								<div class="d-flex align-items-center mb-9 bg-light-warning rounded p-5 mb-9">
+																									<!--begin::Icon-->
+																									<span class="svg-icon svg-icon-warning mr-5">
+																										<span class="svg-icon svg-icon-lg">
+																											<!--begin::Svg Icon | path:/metronic/theme/html/demo2/dist/assets/media/svg/icons/Home/Library.svg-->
+																											<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+																												<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+																													<rect x="0" y="0" width="24" height="24" />
+																													<path d="M5,3 L6,3 C6.55228475,3 7,3.44771525 7,4 L7,20 C7,20.5522847 6.55228475,21 6,21 L5,21 C4.44771525,21 4,20.5522847 4,20 L4,4 C4,3.44771525 4.44771525,3 5,3 Z M10,3 L11,3 C11.5522847,3 12,3.44771525 12,4 L12,20 C12,20.5522847 11.5522847,21 11,21 L10,21 C9.44771525,21 9,20.5522847 9,20 L9,4 C9,3.44771525 9.44771525,3 10,3 Z" fill="#000000" />
+																													<rect fill="#000000" opacity="0.3" transform="translate(17.825568, 11.945519) rotate(-19.000000) translate(-17.825568, -11.945519)" x="16.3255682" y="2.94551858" width="3" height="18" rx="1" />
+																												</g>
+																											</svg>
+																											<!--end::Svg Icon-->
+																										</span>
+																									</span>
+																									<!--end::Icon-->
+																									<!--begin::Title-->
+																									<div class="d-flex flex-column flex-grow-1 mr-2">
+																										<a href="#" class="font-weight-bold text-dark-75 text-hover-primary font-size-lg mb-1" id="view_file_sd">Ijazah SD</a>
+																									</div>
+																								</div>
+																								<!--end::Item-->
+																								<!--begin::Item-->
+																								<div class="d-flex align-items-center bg-light-success rounded p-5 mb-9">
+																									<!--begin::Icon-->
+																									<span class="svg-icon svg-icon-success mr-5">
+																										<span class="svg-icon svg-icon-lg">
+																											<!--begin::Svg Icon | path:/metronic/theme/html/demo2/dist/assets/media/svg/icons/Communication/Write.svg-->
+																											<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+																												<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+																													<rect x="0" y="0" width="24" height="24" />
+																													<path d="M12.2674799,18.2323597 L12.0084872,5.45852451 C12.0004303,5.06114792 12.1504154,4.6768183 12.4255037,4.38993949 L15.0030167,1.70195304 L17.5910752,4.40093695 C17.8599071,4.6812911 18.0095067,5.05499603 18.0083938,5.44341307 L17.9718262,18.2062508 C17.9694575,19.0329966 17.2985816,19.701953 16.4718324,19.701953 L13.7671717,19.701953 C12.9505952,19.701953 12.2840328,19.0487684 12.2674799,18.2323597 Z" fill="#000000" fill-rule="nonzero" transform="translate(14.701953, 10.701953) rotate(-135.000000) translate(-14.701953, -10.701953)" />
+																													<path d="M12.9,2 C13.4522847,2 13.9,2.44771525 13.9,3 C13.9,3.55228475 13.4522847,4 12.9,4 L6,4 C4.8954305,4 4,4.8954305 4,6 L4,18 C4,19.1045695 4.8954305,20 6,20 L18,20 C19.1045695,20 20,19.1045695 20,18 L20,13 C20,12.4477153 20.4477153,12 21,12 C21.5522847,12 22,12.4477153 22,13 L22,18 C22,20.209139 20.209139,22 18,22 L6,22 C3.790861,22 2,20.209139 2,18 L2,6 C2,3.790861 3.790861,2 6,2 L12.9,2 Z" fill="#000000" fill-rule="nonzero" opacity="0.3" />
+																												</g>
+																											</svg>
+																											<!--end::Svg Icon-->
+																										</span>
+																									</span>
+																									<!--end::Icon-->
+																									<!--begin::Title-->
+																									<div class="d-flex flex-column flex-grow-1 mr-2">
+																										<a href="#" class="font-weight-bold text-dark-75 text-hover-primary font-size-lg mb-1" id="view_file_smp">Ijazah SMP</a>
+																									</div>
+																									<!--end::Title-->
+																									<!--begin::Lable-->
+																									<!-- <span class="font-weight-bolder text-success py-1 font-size-lg">+50%</span> -->
+																									<!--end::Lable-->
+																								</div>
+																								<!--end::Item-->
+																								<!--begin::Item-->
+																								<div class="d-flex align-items-center bg-light-danger rounded p-5 mb-9">
+																									<!--begin::Icon-->
+																									<span class="svg-icon svg-icon-danger mr-5">
+																										<span class="svg-icon svg-icon-lg">
+																											<!--begin::Svg Icon | path:/metronic/theme/html/demo2/dist/assets/media/svg/icons/Communication/Group-chat.svg-->
+																											<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+																												<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+																													<rect x="0" y="0" width="24" height="24" />
+																													<path d="M16,15.6315789 L16,12 C16,10.3431458 14.6568542,9 13,9 L6.16183229,9 L6.16183229,5.52631579 C6.16183229,4.13107011 7.29290239,3 8.68814808,3 L20.4776218,3 C21.8728674,3 23.0039375,4.13107011 23.0039375,5.52631579 L23.0039375,13.1052632 L23.0206157,17.786793 C23.0215995,18.0629336 22.7985408,18.2875874 22.5224001,18.2885711 C22.3891754,18.2890457 22.2612702,18.2363324 22.1670655,18.1421277 L19.6565168,15.6315789 L16,15.6315789 Z" fill="#000000" />
+																													<path d="M1.98505595,18 L1.98505595,13 C1.98505595,11.8954305 2.88048645,11 3.98505595,11 L11.9850559,11 C13.0896254,11 13.9850559,11.8954305 13.9850559,13 L13.9850559,18 C13.9850559,19.1045695 13.0896254,20 11.9850559,20 L4.10078614,20 L2.85693427,21.1905292 C2.65744295,21.3814685 2.34093638,21.3745358 2.14999706,21.1750444 C2.06092565,21.0819836 2.01120804,20.958136 2.01120804,20.8293182 L2.01120804,18.32426 C1.99400175,18.2187196 1.98505595,18.1104045 1.98505595,18 Z M6.5,14 C6.22385763,14 6,14.2238576 6,14.5 C6,14.7761424 6.22385763,15 6.5,15 L11.5,15 C11.7761424,15 12,14.7761424 12,14.5 C12,14.2238576 11.7761424,14 11.5,14 L6.5,14 Z M9.5,16 C9.22385763,16 9,16.2238576 9,16.5 C9,16.7761424 9.22385763,17 9.5,17 L11.5,17 C11.7761424,17 12,16.7761424 12,16.5 C12,16.2238576 11.7761424,16 11.5,16 L9.5,16 Z" fill="#000000" opacity="0.3" />
+																												</g>
+																											</svg>
+																											<!--end::Svg Icon-->
+																										</span>
+																									</span>
+																									<!--end::Icon-->
+																									<!--begin::Title-->
+																									<div class="d-flex flex-column flex-grow-1 mr-2">
+																										<a href="#" class="font-weight-bold text-dark-75 text-hover-primary font-size-lg mb-1" id="view_file_sma">Ijazah SMA</a>
+																									</div>
+																									<!--end::Title-->
+																									<!--begin::Lable-->
+																									<!-- <span class="font-weight-bolder text-danger py-1 font-size-lg">-27%</span> -->
+																									<!--end::Lable-->
+																								</div>
+																								<!--end::Item-->
+																								<!--begin::Item-->
+																								<div class="d-flex align-items-center bg-light-info rounded p-5 mb-9">
+																									<!--begin::Icon-->
+																									<span class="svg-icon svg-icon-info mr-5">
+																										<span class="svg-icon svg-icon-lg">
+																											<!--begin::Svg Icon | path:/metronic/theme/html/demo2/dist/assets/media/svg/icons/General/Attachment2.svg-->
+																											<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+																												<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+																													<rect x="0" y="0" width="24" height="24" />
+																													<path d="M11.7573593,15.2426407 L8.75735931,15.2426407 C8.20507456,15.2426407 7.75735931,15.6903559 7.75735931,16.2426407 C7.75735931,16.7949254 8.20507456,17.2426407 8.75735931,17.2426407 L11.7573593,17.2426407 L11.7573593,18.2426407 C11.7573593,19.3472102 10.8619288,20.2426407 9.75735931,20.2426407 L5.75735931,20.2426407 C4.65278981,20.2426407 3.75735931,19.3472102 3.75735931,18.2426407 L3.75735931,14.2426407 C3.75735931,13.1380712 4.65278981,12.2426407 5.75735931,12.2426407 L9.75735931,12.2426407 C10.8619288,12.2426407 11.7573593,13.1380712 11.7573593,14.2426407 L11.7573593,15.2426407 Z" fill="#000000" opacity="0.3" transform="translate(7.757359, 16.242641) rotate(-45.000000) translate(-7.757359, -16.242641)" />
+																													<path d="M12.2426407,8.75735931 L15.2426407,8.75735931 C15.7949254,8.75735931 16.2426407,8.30964406 16.2426407,7.75735931 C16.2426407,7.20507456 15.7949254,6.75735931 15.2426407,6.75735931 L12.2426407,6.75735931 L12.2426407,5.75735931 C12.2426407,4.65278981 13.1380712,3.75735931 14.2426407,3.75735931 L18.2426407,3.75735931 C19.3472102,3.75735931 20.2426407,4.65278981 20.2426407,5.75735931 L20.2426407,9.75735931 C20.2426407,10.8619288 19.3472102,11.7573593 18.2426407,11.7573593 L14.2426407,11.7573593 C13.1380712,11.7573593 12.2426407,10.8619288 12.2426407,9.75735931 L12.2426407,8.75735931 Z" fill="#000000" transform="translate(16.242641, 7.757359) rotate(-45.000000) translate(-16.242641, -7.757359)" />
+																													<path d="M5.89339828,3.42893219 C6.44568303,3.42893219 6.89339828,3.87664744 6.89339828,4.42893219 L6.89339828,6.42893219 C6.89339828,6.98121694 6.44568303,7.42893219 5.89339828,7.42893219 C5.34111353,7.42893219 4.89339828,6.98121694 4.89339828,6.42893219 L4.89339828,4.42893219 C4.89339828,3.87664744 5.34111353,3.42893219 5.89339828,3.42893219 Z M11.4289322,5.13603897 C11.8194565,5.52656326 11.8194565,6.15972824 11.4289322,6.55025253 L10.0147186,7.96446609 C9.62419433,8.35499039 8.99102936,8.35499039 8.60050506,7.96446609 C8.20998077,7.5739418 8.20998077,6.94077682 8.60050506,6.55025253 L10.0147186,5.13603897 C10.4052429,4.74551468 11.0384079,4.74551468 11.4289322,5.13603897 Z M0.600505063,5.13603897 C0.991029355,4.74551468 1.62419433,4.74551468 2.01471863,5.13603897 L3.42893219,6.55025253 C3.81945648,6.94077682 3.81945648,7.5739418 3.42893219,7.96446609 C3.0384079,8.35499039 2.40524292,8.35499039 2.01471863,7.96446609 L0.600505063,6.55025253 C0.209980772,6.15972824 0.209980772,5.52656326 0.600505063,5.13603897 Z" fill="#000000" opacity="0.3" transform="translate(6.014719, 5.843146) rotate(-45.000000) translate(-6.014719, -5.843146)" />
+																													<path d="M17.9142136,15.4497475 C18.4664983,15.4497475 18.9142136,15.8974627 18.9142136,16.4497475 L18.9142136,18.4497475 C18.9142136,19.0020322 18.4664983,19.4497475 17.9142136,19.4497475 C17.3619288,19.4497475 16.9142136,19.0020322 16.9142136,18.4497475 L16.9142136,16.4497475 C16.9142136,15.8974627 17.3619288,15.4497475 17.9142136,15.4497475 Z M23.4497475,17.1568542 C23.8402718,17.5473785 23.8402718,18.1805435 23.4497475,18.5710678 L22.0355339,19.9852814 C21.6450096,20.3758057 21.0118446,20.3758057 20.6213203,19.9852814 C20.2307961,19.5947571 20.2307961,18.9615921 20.6213203,18.5710678 L22.0355339,17.1568542 C22.4260582,16.76633 23.0592232,16.76633 23.4497475,17.1568542 Z M12.6213203,17.1568542 C13.0118446,16.76633 13.6450096,16.76633 14.0355339,17.1568542 L15.4497475,18.5710678 C15.8402718,18.9615921 15.8402718,19.5947571 15.4497475,19.9852814 C15.0592232,20.3758057 14.4260582,20.3758057 14.0355339,19.9852814 L12.6213203,18.5710678 C12.2307961,18.1805435 12.2307961,17.5473785 12.6213203,17.1568542 Z" fill="#000000" opacity="0.3" transform="translate(18.035534, 17.863961) scale(1, -1) rotate(45.000000) translate(-18.035534, -17.863961)" />
+																												</g>
+																											</svg>
+																											<!--end::Svg Icon-->
+																										</span>
+																									</span>
+																									<!--end::Icon-->
+																									<!--begin::Title-->
+																									<div class="d-flex flex-column flex-grow-1 mr-2">
+																										<a href="#" class="font-weight-bold text-dark-75 text-hover-primary font-size-lg mb-1" id="view_file_s1">Ijazah SI</a>
+																									</div>
+																								</div>
+																								<!--end::Item-->
+																								<!--begin::Item-->
+																								<div class="d-flex align-items-center mb-9 bg-light-warning rounded p-5 mb-9">
+																									<!--begin::Icon-->
+																									<span class="svg-icon svg-icon-warning mr-5">
+																										<span class="svg-icon svg-icon-lg">
+																											<!--begin::Svg Icon | path:/metronic/theme/html/demo2/dist/assets/media/svg/icons/Home/Library.svg-->
+																											<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+																												<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+																													<rect x="0" y="0" width="24" height="24" />
+																													<path d="M5,3 L6,3 C6.55228475,3 7,3.44771525 7,4 L7,20 C7,20.5522847 6.55228475,21 6,21 L5,21 C4.44771525,21 4,20.5522847 4,20 L4,4 C4,3.44771525 4.44771525,3 5,3 Z M10,3 L11,3 C11.5522847,3 12,3.44771525 12,4 L12,20 C12,20.5522847 11.5522847,21 11,21 L10,21 C9.44771525,21 9,20.5522847 9,20 L9,4 C9,3.44771525 9.44771525,3 10,3 Z" fill="#000000" />
+																													<rect fill="#000000" opacity="0.3" transform="translate(17.825568, 11.945519) rotate(-19.000000) translate(-17.825568, -11.945519)" x="16.3255682" y="2.94551858" width="3" height="18" rx="1" />
+																												</g>
+																											</svg>
+																											<!--end::Svg Icon-->
+																										</span>
+																									</span>
+																									<!--end::Icon-->
+																									<!--begin::Title-->
+																									<div class="d-flex flex-column flex-grow-1 mr-2">
+																										<a href="#" class="font-weight-bold text-dark-75 text-hover-primary font-size-lg mb-1" id="view_file_s2">Ijazah S2</a>
+																									</div>
+																								</div>
+																								<!--end::Item-->
+																								<!--begin::Item-->
+																								<div class="d-flex align-items-center bg-light-success rounded p-5 mb-9">
+																									<!--begin::Icon-->
+																									<span class="svg-icon svg-icon-success mr-5">
+																										<span class="svg-icon svg-icon-lg">
+																											<!--begin::Svg Icon | path:/metronic/theme/html/demo2/dist/assets/media/svg/icons/Communication/Write.svg-->
+																											<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+																												<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+																													<rect x="0" y="0" width="24" height="24" />
+																													<path d="M12.2674799,18.2323597 L12.0084872,5.45852451 C12.0004303,5.06114792 12.1504154,4.6768183 12.4255037,4.38993949 L15.0030167,1.70195304 L17.5910752,4.40093695 C17.8599071,4.6812911 18.0095067,5.05499603 18.0083938,5.44341307 L17.9718262,18.2062508 C17.9694575,19.0329966 17.2985816,19.701953 16.4718324,19.701953 L13.7671717,19.701953 C12.9505952,19.701953 12.2840328,19.0487684 12.2674799,18.2323597 Z" fill="#000000" fill-rule="nonzero" transform="translate(14.701953, 10.701953) rotate(-135.000000) translate(-14.701953, -10.701953)" />
+																													<path d="M12.9,2 C13.4522847,2 13.9,2.44771525 13.9,3 C13.9,3.55228475 13.4522847,4 12.9,4 L6,4 C4.8954305,4 4,4.8954305 4,6 L4,18 C4,19.1045695 4.8954305,20 6,20 L18,20 C19.1045695,20 20,19.1045695 20,18 L20,13 C20,12.4477153 20.4477153,12 21,12 C21.5522847,12 22,12.4477153 22,13 L22,18 C22,20.209139 20.209139,22 18,22 L6,22 C3.790861,22 2,20.209139 2,18 L2,6 C2,3.790861 3.790861,2 6,2 L12.9,2 Z" fill="#000000" fill-rule="nonzero" opacity="0.3" />
+																												</g>
+																											</svg>
+																											<!--end::Svg Icon-->
+																										</span>
+																									</span>
+																									<!--end::Icon-->
+																									<!--begin::Title-->
+																									<div class="d-flex flex-column flex-grow-1 mr-2">
+																										<a href="#" class="font-weight-bold text-dark-75 text-hover-primary font-size-lg mb-1" id="view_file_s3">Ijazah S3</a>
+																									</div>
+																									<!--end::Title-->
+																									<!--begin::Lable-->
+																									<!-- <span class="font-weight-bolder text-success py-1 font-size-lg">+50%</span> -->
+																									<!--end::Lable-->
+																								</div>
+																								<!--end::Item-->
+																								<!--begin::Item-->
+																								<div class="d-flex align-items-center bg-light-danger rounded p-5 mb-9">
+																									<!--begin::Icon-->
+																									<span class="svg-icon svg-icon-danger mr-5">
+																										<span class="svg-icon svg-icon-lg">
+																											<!--begin::Svg Icon | path:/metronic/theme/html/demo2/dist/assets/media/svg/icons/Communication/Group-chat.svg-->
+																											<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+																												<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+																													<rect x="0" y="0" width="24" height="24" />
+																													<path d="M16,15.6315789 L16,12 C16,10.3431458 14.6568542,9 13,9 L6.16183229,9 L6.16183229,5.52631579 C6.16183229,4.13107011 7.29290239,3 8.68814808,3 L20.4776218,3 C21.8728674,3 23.0039375,4.13107011 23.0039375,5.52631579 L23.0039375,13.1052632 L23.0206157,17.786793 C23.0215995,18.0629336 22.7985408,18.2875874 22.5224001,18.2885711 C22.3891754,18.2890457 22.2612702,18.2363324 22.1670655,18.1421277 L19.6565168,15.6315789 L16,15.6315789 Z" fill="#000000" />
+																													<path d="M1.98505595,18 L1.98505595,13 C1.98505595,11.8954305 2.88048645,11 3.98505595,11 L11.9850559,11 C13.0896254,11 13.9850559,11.8954305 13.9850559,13 L13.9850559,18 C13.9850559,19.1045695 13.0896254,20 11.9850559,20 L4.10078614,20 L2.85693427,21.1905292 C2.65744295,21.3814685 2.34093638,21.3745358 2.14999706,21.1750444 C2.06092565,21.0819836 2.01120804,20.958136 2.01120804,20.8293182 L2.01120804,18.32426 C1.99400175,18.2187196 1.98505595,18.1104045 1.98505595,18 Z M6.5,14 C6.22385763,14 6,14.2238576 6,14.5 C6,14.7761424 6.22385763,15 6.5,15 L11.5,15 C11.7761424,15 12,14.7761424 12,14.5 C12,14.2238576 11.7761424,14 11.5,14 L6.5,14 Z M9.5,16 C9.22385763,16 9,16.2238576 9,16.5 C9,16.7761424 9.22385763,17 9.5,17 L11.5,17 C11.7761424,17 12,16.7761424 12,16.5 C12,16.2238576 11.7761424,16 11.5,16 L9.5,16 Z" fill="#000000" opacity="0.3" />
+																												</g>
+																											</svg>
+																											<!--end::Svg Icon-->
+																										</span>
+																									</span>
+																									<!--end::Icon-->
+																									<!--begin::Title-->
+																									<div class="d-flex flex-column flex-grow-1 mr-2">
+																										<a href="#" class="font-weight-bold text-dark-75 text-hover-primary font-size-lg mb-1" id="view_file_profesi">Ijazah Profesi</a>
+																									</div>
+																									<!--end::Title-->
+																									<!--begin::Lable-->
+																									<!-- <span class="font-weight-bolder text-danger py-1 font-size-lg">-27%</span> -->
+																									<!--end::Lable-->
+																								</div>
+																								<!--end::Item-->
+																							</div>
+																							<!--end::Body-->
+																							
 																						</div>
+																						<!--end::Body-->
 																					</div>
+																					<!--end::List Widget 17-->
 																				</form>
-																				<div class="separator separator-dashed my-10"></div>
-																				<!--begin::Timeline-->
-																				<div class="timeline timeline-3">
-																					<div class="timeline-items">
-																						<div class="timeline-item">
-																							<div class="timeline-media">
-																								<img alt="Pic" src="../../../../../theme/html/demo2/dist/assets/media/users/300_25.jpg" />
-																							</div>
-																							<div class="timeline-content">
-																								<div class="d-flex align-items-center justify-content-between mb-3">
-																									<div class="mr-2">
-																										<a href="#" class="text-dark-75 text-hover-primary font-weight-bold">New order has been placed</a>
-																										<span class="text-muted ml-2">Today</span>
-																										<span class="label label-light-success font-weight-bolder label-inline ml-2">new</span>
-																									</div>
-																									<div class="dropdown ml-2" data-toggle="tooltip" title="Quick actions" data-placement="left">
-																										<a href="#" class="btn btn-hover-light-primary btn-sm btn-icon" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-																											<i class="ki ki-more-hor font-size-lg text-primary"></i>
-																										</a>
-																										<div class="dropdown-menu p-0 m-0 dropdown-menu-md dropdown-menu-right">
-																											<!--begin::Navigation-->
-																											<ul class="navi navi-hover">
-																												<li class="navi-header font-weight-bold py-4">
-																													<span class="font-size-lg">Choose Label:</span>
-																													<i class="flaticon2-information icon-md text-muted" data-toggle="tooltip" data-placement="right" title="Click to learn more..."></i>
-																												</li>
-																												<li class="navi-separator mb-3 opacity-70"></li>
-																												<li class="navi-item">
-																													<a href="#" class="navi-link">
-																														<span class="navi-text">
-																															<span class="label label-xl label-inline label-light-success">Customer</span>
-																														</span>
-																													</a>
-																												</li>
-																												<li class="navi-item">
-																													<a href="#" class="navi-link">
-																														<span class="navi-text">
-																															<span class="label label-xl label-inline label-light-danger">Partner</span>
-																														</span>
-																													</a>
-																												</li>
-																												<li class="navi-item">
-																													<a href="#" class="navi-link">
-																														<span class="navi-text">
-																															<span class="label label-xl label-inline label-light-warning">Suplier</span>
-																														</span>
-																													</a>
-																												</li>
-																												<li class="navi-item">
-																													<a href="#" class="navi-link">
-																														<span class="navi-text">
-																															<span class="label label-xl label-inline label-light-primary">Member</span>
-																														</span>
-																													</a>
-																												</li>
-																												<li class="navi-item">
-																													<a href="#" class="navi-link">
-																														<span class="navi-text">
-																															<span class="label label-xl label-inline label-light-dark">Staff</span>
-																														</span>
-																													</a>
-																												</li>
-																												<li class="navi-separator mt-3 opacity-70"></li>
-																												<li class="navi-footer py-4">
-																													<a class="btn btn-clean font-weight-bold btn-sm" href="#">
-																													<i class="ki ki-plus icon-sm"></i>Add new</a>
-																												</li>
-																											</ul>
-																											<!--end::Navigation-->
-																										</div>
-																									</div>
-																								</div>
-																								<p class="p-0">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto.</p>
-																							</div>
-																						</div>
-																						<div class="timeline-item">
-																							<div class="timeline-media">
-																								<i class="flaticon2-shield text-danger"></i>
-																							</div>
-																							<div class="timeline-content">
-																								<div class="d-flex align-items-center justify-content-between mb-3">
-																									<div class="mr-2">
-																										<a href="#" class="text-dark-75 text-hover-primary font-weight-bold">Member has sent a request.</a>
-																										<span class="text-muted ml-2">8:30PM 20 June</span>
-																										<span class="label label-light-danger font-weight-bolder label-inline ml-2">pending</span>
-																									</div>
-																									<div class="dropdown ml-2" data-toggle="tooltip" title="Quick actions" data-placement="left">
-																										<a href="#" class="btn btn-hover-light-primary btn-sm btn-icon" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-																											<i class="ki ki-more-hor font-size-lg text-primary"></i>
-																										</a>
-																										<div class="dropdown-menu p-0 m-0 dropdown-menu-md dropdown-menu-right">
-																											<!--begin::Navigation-->
-																											<ul class="navi navi-hover">
-																												<li class="navi-header font-weight-bold py-4">
-																													<span class="font-size-lg">Choose Label:</span>
-																													<i class="flaticon2-information icon-md text-muted" data-toggle="tooltip" data-placement="right" title="Click to learn more..."></i>
-																												</li>
-																												<li class="navi-separator mb-3 opacity-70"></li>
-																												<li class="navi-item">
-																													<a href="#" class="navi-link">
-																														<span class="navi-text">
-																															<span class="label label-xl label-inline label-light-success">Customer</span>
-																														</span>
-																													</a>
-																												</li>
-																												<li class="navi-item">
-																													<a href="#" class="navi-link">
-																														<span class="navi-text">
-																															<span class="label label-xl label-inline label-light-danger">Partner</span>
-																														</span>
-																													</a>
-																												</li>
-																												<li class="navi-item">
-																													<a href="#" class="navi-link">
-																														<span class="navi-text">
-																															<span class="label label-xl label-inline label-light-warning">Suplier</span>
-																														</span>
-																													</a>
-																												</li>
-																												<li class="navi-item">
-																													<a href="#" class="navi-link">
-																														<span class="navi-text">
-																															<span class="label label-xl label-inline label-light-primary">Member</span>
-																														</span>
-																													</a>
-																												</li>
-																												<li class="navi-item">
-																													<a href="#" class="navi-link">
-																														<span class="navi-text">
-																															<span class="label label-xl label-inline label-light-dark">Staff</span>
-																														</span>
-																													</a>
-																												</li>
-																												<li class="navi-separator mt-3 opacity-70"></li>
-																												<li class="navi-footer py-4">
-																													<a class="btn btn-clean font-weight-bold btn-sm" href="#">
-																													<i class="ki ki-plus icon-sm"></i>Add new</a>
-																												</li>
-																											</ul>
-																											<!--end::Navigation-->
-																										</div>
-																									</div>
-																								</div>
-																								<p class="p-0">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto.</p>
-																							</div>
-																						</div>
-																						<div class="timeline-item">
-																							<div class="timeline-media">
-																								<i class="flaticon2-layers text-warning"></i>
-																							</div>
-																							<div class="timeline-content">
-																								<div class="d-flex align-items-center justify-content-between mb-3">
-																									<div class="mr-2">
-																										<a href="#" class="text-dark-75 text-hover-primary font-weight-bold">System deployment has been completed.</a>
-																										<span class="text-muted ml-2">11:00AM 30 June</span>
-																										<span class="label label-light-warning font-weight-bolder label-inline ml-2">done</span>
-																									</div>
-																									<div class="dropdown ml-2" data-toggle="tooltip" title="Quick actions" data-placement="left">
-																										<a href="#" class="btn btn-hover-light-primary btn-sm btn-icon" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-																											<i class="ki ki-more-hor font-size-lg text-primary"></i>
-																										</a>
-																										<div class="dropdown-menu p-0 m-0 dropdown-menu-md dropdown-menu-right">
-																											<!--begin::Navigation-->
-																											<ul class="navi navi-hover">
-																												<li class="navi-header font-weight-bold py-4">
-																													<span class="font-size-lg">Choose Label:</span>
-																													<i class="flaticon2-information icon-md text-muted" data-toggle="tooltip" data-placement="right" title="Click to learn more..."></i>
-																												</li>
-																												<li class="navi-separator mb-3 opacity-70"></li>
-																												<li class="navi-item">
-																													<a href="#" class="navi-link">
-																														<span class="navi-text">
-																															<span class="label label-xl label-inline label-light-success">Customer</span>
-																														</span>
-																													</a>
-																												</li>
-																												<li class="navi-item">
-																													<a href="#" class="navi-link">
-																														<span class="navi-text">
-																															<span class="label label-xl label-inline label-light-danger">Partner</span>
-																														</span>
-																													</a>
-																												</li>
-																												<li class="navi-item">
-																													<a href="#" class="navi-link">
-																														<span class="navi-text">
-																															<span class="label label-xl label-inline label-light-warning">Suplier</span>
-																														</span>
-																													</a>
-																												</li>
-																												<li class="navi-item">
-																													<a href="#" class="navi-link">
-																														<span class="navi-text">
-																															<span class="label label-xl label-inline label-light-primary">Member</span>
-																														</span>
-																													</a>
-																												</li>
-																												<li class="navi-item">
-																													<a href="#" class="navi-link">
-																														<span class="navi-text">
-																															<span class="label label-xl label-inline label-light-dark">Staff</span>
-																														</span>
-																													</a>
-																												</li>
-																												<li class="navi-separator mt-3 opacity-70"></li>
-																												<li class="navi-footer py-4">
-																													<a class="btn btn-clean font-weight-bold btn-sm" href="#">
-																													<i class="ki ki-plus icon-sm"></i>Add new</a>
-																												</li>
-																											</ul>
-																											<!--end::Navigation-->
-																										</div>
-																									</div>
-																								</div>
-																								<p class="p-0">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto.</p>
-																							</div>
-																						</div>
-																						<div class="timeline-item">
-																							<div class="timeline-media">
-																								<i class="flaticon2-notification fl text-primary"></i>
-																							</div>
-																							<div class="timeline-content">
-																								<div class="d-flex align-items-center justify-content-between mb-3">
-																									<div class="mr-2">
-																										<a href="#" class="text-dark-75 text-hover-primary font-weight-bold">Database backup has been completed.</a>
-																										<span class="text-muted ml-2">2 months ago</span>
-																										<span class="label label-light-primary font-weight-bolder label-inline ml-2">delivered</span>
-																									</div>
-																									<div class="dropdown ml-2" data-toggle="tooltip" title="Quick actions" data-placement="left">
-																										<a href="#" class="btn btn-hover-light-primary btn-sm btn-icon" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-																											<i class="ki ki-more-hor font-size-lg text-primary"></i>
-																										</a>
-																										<div class="dropdown-menu p-0 m-0 dropdown-menu-md dropdown-menu-right">
-																											<!--begin::Navigation-->
-																											<ul class="navi navi-hover">
-																												<li class="navi-header font-weight-bold py-4">
-																													<span class="font-size-lg">Choose Label:</span>
-																													<i class="flaticon2-information icon-md text-muted" data-toggle="tooltip" data-placement="right" title="Click to learn more..."></i>
-																												</li>
-																												<li class="navi-separator mb-3 opacity-70"></li>
-																												<li class="navi-item">
-																													<a href="#" class="navi-link">
-																														<span class="navi-text">
-																															<span class="label label-xl label-inline label-light-success">Customer</span>
-																														</span>
-																													</a>
-																												</li>
-																												<li class="navi-item">
-																													<a href="#" class="navi-link">
-																														<span class="navi-text">
-																															<span class="label label-xl label-inline label-light-danger">Partner</span>
-																														</span>
-																													</a>
-																												</li>
-																												<li class="navi-item">
-																													<a href="#" class="navi-link">
-																														<span class="navi-text">
-																															<span class="label label-xl label-inline label-light-warning">Suplier</span>
-																														</span>
-																													</a>
-																												</li>
-																												<li class="navi-item">
-																													<a href="#" class="navi-link">
-																														<span class="navi-text">
-																															<span class="label label-xl label-inline label-light-primary">Member</span>
-																														</span>
-																													</a>
-																												</li>
-																												<li class="navi-item">
-																													<a href="#" class="navi-link">
-																														<span class="navi-text">
-																															<span class="label label-xl label-inline label-light-dark">Staff</span>
-																														</span>
-																													</a>
-																												</li>
-																												<li class="navi-separator mt-3 opacity-70"></li>
-																												<li class="navi-footer py-4">
-																													<a class="btn btn-clean font-weight-bold btn-sm" href="#">
-																													<i class="ki ki-plus icon-sm"></i>Add new</a>
-																												</li>
-																											</ul>
-																											<!--end::Navigation-->
-																										</div>
-																									</div>
-																								</div>
-																								<p class="p-0">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto.</p>
-																							</div>
-																						</div>
-																					</div>
-																				</div>
-																				<!--end::Timeline-->
 																			</div>
 																		</div>
 																		<!--end::Tab Content-->

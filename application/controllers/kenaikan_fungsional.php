@@ -25,6 +25,396 @@ class kenaikan_fungsional extends CI_Controller
 		
 			echo json_encode($this->db_model->all_data("v_kenaikan_fungsional")->result());
 	}
+	
+	function upload_pernyataan_karpeg()
+	{
+		$user = $this->db_model->get_where('v_kenaikan_fungsional', array('id' => $this->input->post('id', TRUE)))->row();
+		$nama = "Karpeg_" .$user->nama ;
+		// $nama = $user->tanggal_antri . "_" . $user->id . "_" . $user->nama;
+
+		$config['allowed_types'] = 'pdf';
+		$config['upload_path'] = './assets/arsip_karyawan/';
+		$config['file_name'] = $nama;
+
+		$this->load->library('upload', $config);
+
+		// unlink('./document/pernyataan/'.$nama);
+
+		if ($this->upload->do_upload('berkas_karpeg')) {
+
+			$namaFotoBaru = $this->upload->data('file_name');
+
+			$data = [
+				"file_fc_karpeg" => $namaFotoBaru
+				// "tindakan" => $this->input->post('jenis', TRUE),
+			];
+
+			echo json_encode($this->db_model->update("kenaikan_fungsional_karyawan", $data, array('id' => $this->input->post("id", TRUE))));
+		} else {
+			echo json_encode($this->upload->display_errors());
+		}
+		// echo json_encode($nama);
+	}
+
+	function upload_pernyataan_sk_pangkat_terakhir()
+	{
+		$user = $this->db_model->get_where('v_kenaikan_fungsional', array('id' => $this->input->post('id', TRUE)))->row();
+		$nama = "FC SK PANGKAT TERAKHIR_" .$user->nama ;
+		// $nama = $user->tanggal_antri . "_" . $user->id . "_" . $user->nama;
+
+		$config['allowed_types'] = 'pdf';
+		$config['upload_path'] = './assets/arsip_karyawan/';
+		$config['file_name'] = $nama;
+
+		$this->load->library('upload', $config);
+
+		// unlink('./document/pernyataan/'.$nama);
+
+		if ($this->upload->do_upload('berkas_sk_pangkat_terakhir')) {
+
+			$namaFotoBaru = $this->upload->data('file_name');
+
+			$data = [
+				"file_fc_sk_pangkat_terakhir" => $namaFotoBaru
+				// "tindakan" => $this->input->post('jenis', TRUE),
+			];
+
+			echo json_encode($this->db_model->update("kenaikan_fungsional_karyawan", $data, array('id' => $this->input->post("id", TRUE))));
+		} else {
+			echo json_encode($this->upload->display_errors());
+		}
+		// echo json_encode($nama);
+	}
+
+	function upload_pernyataan_pak_asli()
+	{
+		$user = $this->db_model->get_where('v_kenaikan_fungsional', array('id' => $this->input->post('id', TRUE)))->row();
+		$nama = "ASLI PAK_" .$user->nama ;
+		// $nama = $user->tanggal_antri . "_" . $user->id . "_" . $user->nama;
+
+		$config['allowed_types'] = 'pdf';
+		$config['upload_path'] = './assets/arsip_karyawan/';
+		$config['file_name'] = $nama;
+
+		$this->load->library('upload', $config);
+
+		// unlink('./document/pernyataan/'.$nama);
+
+		if ($this->upload->do_upload('berkas_pak_asli')) {
+
+			$namaFotoBaru = $this->upload->data('file_name');
+
+			$data = [
+				"file_pak_asli" => $namaFotoBaru
+				// "tindakan" => $this->input->post('jenis', TRUE),
+			];
+
+			echo json_encode($this->db_model->update("kenaikan_fungsional_karyawan", $data, array('id' => $this->input->post("id", TRUE))));
+		} else {
+			echo json_encode($this->upload->display_errors());
+		}
+		// echo json_encode($nama);
+	}
+
+	function upload_pernyataan_ijazah_terakhir()
+	{
+		$user = $this->db_model->get_where('v_kenaikan_fungsional', array('id' => $this->input->post('id', TRUE)))->row();
+		$nama = "FC Ijazah Terakhir_" .$user->nama ;
+		// $nama = $user->tanggal_antri . "_" . $user->id . "_" . $user->nama;
+
+		$config['allowed_types'] = 'pdf';
+		$config['upload_path'] = './assets/arsip_karyawan/';
+		$config['file_name'] = $nama;
+
+		$this->load->library('upload', $config);
+
+		// unlink('./document/pernyataan/'.$nama);
+
+		if ($this->upload->do_upload('berkas_ijazah_terakhir')) {
+
+			$namaFotoBaru = $this->upload->data('file_name');
+
+			$data = [
+				"file_fc_ijazah_terakhir" => $namaFotoBaru
+				// "tindakan" => $this->input->post('jenis', TRUE),
+			];
+
+			echo json_encode($this->db_model->update("kenaikan_fungsional_karyawan", $data, array('id' => $this->input->post("id", TRUE))));
+		} else {
+			echo json_encode($this->upload->display_errors());
+		}
+		// echo json_encode($nama);
+	}
+
+	function upload_pernyataan_skp_2_tahun()
+	{
+		$user = $this->db_model->get_where('v_kenaikan_fungsional', array('id' => $this->input->post('id', TRUE)))->row();
+		$nama = "FC SKP 2 Tahun Terakhir_" .$user->nama ;
+		// $nama = $user->tanggal_antri . "_" . $user->id . "_" . $user->nama;
+
+		$config['allowed_types'] = 'pdf';
+		$config['upload_path'] = './assets/arsip_karyawan/';
+		$config['file_name'] = $nama;
+
+		$this->load->library('upload', $config);
+
+		// unlink('./document/pernyataan/'.$nama);
+
+		if ($this->upload->do_upload('berkas_skp_2_tahun')) {
+
+			$namaFotoBaru = $this->upload->data('file_name');
+
+			$data = [
+				"file_fc_skp_2_tahun" => $namaFotoBaru
+				// "tindakan" => $this->input->post('jenis', TRUE),
+			];
+
+			echo json_encode($this->db_model->update("kenaikan_fungsional_karyawan", $data, array('id' => $this->input->post("id", TRUE))));
+		} else {
+			echo json_encode($this->upload->display_errors());
+		}
+		// echo json_encode($nama);
+	}
+
+	function upload_pernyataan_pak_sebelumnya()
+	{
+		$user = $this->db_model->get_where('v_kenaikan_fungsional', array('id' => $this->input->post('id', TRUE)))->row();
+		$nama = "FC PAK Sebelumnya_" .$user->nama ;
+		// $nama = $user->tanggal_antri . "_" . $user->id . "_" . $user->nama;
+
+		$config['allowed_types'] = 'pdf';
+		$config['upload_path'] = './assets/arsip_karyawan/';
+		$config['file_name'] = $nama;
+
+		$this->load->library('upload', $config);
+
+		// unlink('./document/pernyataan/'.$nama);
+
+		if ($this->upload->do_upload('berkas_pak_sebelumnya')) {
+
+			$namaFotoBaru = $this->upload->data('file_name');
+
+			$data = [
+				"file_pak_sebelumnya" => $namaFotoBaru
+				// "tindakan" => $this->input->post('jenis', TRUE),
+			];
+
+			echo json_encode($this->db_model->update("kenaikan_fungsional_karyawan", $data, array('id' => $this->input->post("id", TRUE))));
+		} else {
+			echo json_encode($this->upload->display_errors());
+		}
+		// echo json_encode($nama);
+	}
+
+	function upload_pernyataan_sk_konversi_nip()
+	{
+		$user = $this->db_model->get_where('v_kenaikan_fungsional', array('id' => $this->input->post('id', TRUE)))->row();
+		$nama = "FC SK Konversi NIP_" .$user->nama ;
+		// $nama = $user->tanggal_antri . "_" . $user->id . "_" . $user->nama;
+
+		$config['allowed_types'] = 'pdf';
+		$config['upload_path'] = './assets/arsip_karyawan/';
+		$config['file_name'] = $nama;
+
+		$this->load->library('upload', $config);
+
+		// unlink('./document/pernyataan/'.$nama);
+
+		if ($this->upload->do_upload('berkas_sk_konversi_nip')) {
+
+			$namaFotoBaru = $this->upload->data('file_name');
+
+			$data = [
+				"file_fc_sk_konversi_nip" => $namaFotoBaru
+				// "tindakan" => $this->input->post('jenis', TRUE),
+			];
+
+			echo json_encode($this->db_model->update("kenaikan_fungsional_karyawan", $data, array('id' => $this->input->post("id", TRUE))));
+		} else {
+			echo json_encode($this->upload->display_errors());
+		}
+		// echo json_encode($nama);
+	}
+
+	function upload_pernyataan_sk_terakhir()
+	{
+		$user = $this->db_model->get_where('v_kenaikan_fungsional', array('id' => $this->input->post('id', TRUE)))->row();
+		$nama = "Asli SK Terakhir_" .$user->nama ;
+		// $nama = $user->tanggal_antri . "_" . $user->id . "_" . $user->nama;
+
+		$config['allowed_types'] = 'pdf';
+		$config['upload_path'] = './assets/arsip_karyawan/';
+		$config['file_name'] = $nama;
+
+		$this->load->library('upload', $config);
+
+		// unlink('./document/pernyataan/'.$nama);
+
+		if ($this->upload->do_upload('berkas_sk_terakhir')) {
+
+			$namaFotoBaru = $this->upload->data('file_name');
+
+			$data = [
+				"file_asli_sk_terakhir" => $namaFotoBaru
+				// "tindakan" => $this->input->post('jenis', TRUE),
+			];
+
+			echo json_encode($this->db_model->update("kenaikan_fungsional_karyawan", $data, array('id' => $this->input->post("id", TRUE))));
+		} else {
+			echo json_encode($this->upload->display_errors());
+		}
+		// echo json_encode($nama);
+	}
+
+	function upload_pernyataan_asli_skp_2_tahun()
+	{
+		$user = $this->db_model->get_where('v_kenaikan_fungsional', array('id' => $this->input->post('id', TRUE)))->row();
+		$nama = "Asli SKP 2 Tahun Terakhir_" .$user->nama ;
+		// $nama = $user->tanggal_antri . "_" . $user->id . "_" . $user->nama;
+
+		$config['allowed_types'] = 'pdf';
+		$config['upload_path'] = './assets/arsip_karyawan/';
+		$config['file_name'] = $nama;
+
+		$this->load->library('upload', $config);
+
+		// unlink('./document/pernyataan/'.$nama);
+
+		if ($this->upload->do_upload('berkas_asli_skp_2_tahun')) {
+
+			$namaFotoBaru = $this->upload->data('file_name');
+
+			$data = [
+				"file_asli_skp_2_tahun" => $namaFotoBaru
+				// "tindakan" => $this->input->post('jenis', TRUE),
+			];
+
+			echo json_encode($this->db_model->update("kenaikan_fungsional_karyawan", $data, array('id' => $this->input->post("id", TRUE))));
+		} else {
+			echo json_encode($this->upload->display_errors());
+		}
+		// echo json_encode($nama);
+	}
+
+	function upload_pernyataan_asli_ijazah()
+	{
+		$user = $this->db_model->get_where('v_kenaikan_fungsional', array('id' => $this->input->post('id', TRUE)))->row();
+		$nama = "Asli Ijazah_" .$user->nama ;
+		// $nama = $user->tanggal_antri . "_" . $user->id . "_" . $user->nama;
+
+		$config['allowed_types'] = 'pdf';
+		$config['upload_path'] = './assets/arsip_karyawan/';
+		$config['file_name'] = $nama;
+
+		$this->load->library('upload', $config);
+
+		// unlink('./document/pernyataan/'.$nama);
+
+		if ($this->upload->do_upload('berkas_asli_ijazah')) {
+
+			$namaFotoBaru = $this->upload->data('file_name');
+
+			$data = [
+				"file_asli_ijazah" => $namaFotoBaru
+				// "tindakan" => $this->input->post('jenis', TRUE),
+			];
+
+			echo json_encode($this->db_model->update("kenaikan_fungsional_karyawan", $data, array('id' => $this->input->post("id", TRUE))));
+		} else {
+			echo json_encode($this->upload->display_errors());
+		}
+		// echo json_encode($nama);
+	}
+
+	function upload_pernyataan_jabatan_fungsional()
+	{
+		$user = $this->db_model->get_where('v_kenaikan_fungsional', array('id' => $this->input->post('id', TRUE)))->row();
+		$nama = "Jabatan Fungsional_" .$user->nama ;
+		// $nama = $user->tanggal_antri . "_" . $user->id . "_" . $user->nama;
+
+		$config['allowed_types'] = 'pdf';
+		$config['upload_path'] = './assets/arsip_karyawan/';
+		$config['file_name'] = $nama;
+
+		$this->load->library('upload', $config);
+
+		// unlink('./document/pernyataan/'.$nama);
+
+		if ($this->upload->do_upload('berkas_jabatan_fungsional')) {
+
+			$namaFotoBaru = $this->upload->data('file_name');
+
+			$data = [
+				"file_jabatan_fungsional" => $namaFotoBaru
+				// "tindakan" => $this->input->post('jenis', TRUE),
+			];
+
+			echo json_encode($this->db_model->update("kenaikan_fungsional_karyawan", $data, array('id' => $this->input->post("id", TRUE))));
+		} else {
+			echo json_encode($this->upload->display_errors());
+		}
+		// echo json_encode($nama);
+	}
+
+	function upload_pernyataan_asli_transkip()
+	{
+		$user = $this->db_model->get_where('v_kenaikan_fungsional', array('id' => $this->input->post('id', TRUE)))->row();
+		$nama = "Asli Transkip_" .$user->nama ;
+		// $nama = $user->tanggal_antri . "_" . $user->id . "_" . $user->nama;
+
+		$config['allowed_types'] = 'pdf';
+		$config['upload_path'] = './assets/arsip_karyawan/';
+		$config['file_name'] = $nama;
+
+		$this->load->library('upload', $config);
+
+		// unlink('./document/pernyataan/'.$nama);
+
+		if ($this->upload->do_upload('berkas_asli_transkip')) {
+
+			$namaFotoBaru = $this->upload->data('file_name');
+
+			$data = [
+				"file_asli_transkip" => $namaFotoBaru
+				// "tindakan" => $this->input->post('jenis', TRUE),
+			];
+
+			echo json_encode($this->db_model->update("kenaikan_fungsional_karyawan", $data, array('id' => $this->input->post("id", TRUE))));
+		} else {
+			echo json_encode($this->upload->display_errors());
+		}
+		// echo json_encode($nama);
+	}
+
+	function upload_pernyataan_asli_pak_terakhir()
+	{
+		$user = $this->db_model->get_where('v_kenaikan_fungsional', array('id' => $this->input->post('id', TRUE)))->row();
+		$nama = "Asli PAK Terakhir_" .$user->nama ;
+		// $nama = $user->tanggal_antri . "_" . $user->id . "_" . $user->nama;
+
+		$config['allowed_types'] = 'pdf';
+		$config['upload_path'] = './assets/arsip_karyawan/';
+		$config['file_name'] = $nama;
+
+		$this->load->library('upload', $config);
+
+		// unlink('./document/pernyataan/'.$nama);
+
+		if ($this->upload->do_upload('berkas_asli_pak_terakhir')) {
+
+			$namaFotoBaru = $this->upload->data('file_name');
+
+			$data = [
+				"file_asli_pak_terakhir" => $namaFotoBaru
+				// "tindakan" => $this->input->post('jenis', TRUE),
+			];
+
+			echo json_encode($this->db_model->update("kenaikan_fungsional_karyawan", $data, array('id' => $this->input->post("id", TRUE))));
+		} else {
+			echo json_encode($this->upload->display_errors());
+		}
+		// echo json_encode($nama);
+	}
 
 	public function exel(){
 		$data = $this->db_model->datafungsional();
@@ -41,20 +431,7 @@ class kenaikan_fungsional extends CI_Controller
 	{
 		$data = [
 			"nama" => $this->input->post('nama_karyawan', TRUE),
-			"tgl_kenaikan" => $this->input->post('tgl_kenaikan', TRUE),
-			"file_fc_karpeg" => $this->input->post('file_fc_karpeg', TRUE),
-			"file_fc_sk_pangkat_terakhir" => $this->input->post('file_fc_sk_pangkat_terakhir', TRUE),
-			"file_pak_asli" => $this->input->post('file_pak_asli', TRUE),
-			"file_fc_ijazah_terakhir" => $this->input->post('file_fc_ijazah_terakhir', TRUE),
-			"file_fc_skp_2_tahun" => $this->input->post('file_fc_skp_2_tahun', TRUE),
-			"file_pak_sebelumnya" => $this->input->post('file_pak_sebelumnya', TRUE),
-			"file_fc_sk_konversi_nip" => $this->input->post('file_fc_sk_konversi_nip', TRUE),
-			"file_asli_pak_terakhir" => $this->input->post('file_asli_pak_terakhir', TRUE),
-			"file_jabatan_fungsional" => $this->input->post('file_jabatan_fungsional', TRUE),
-			"file_asli_sk_terakhir" => $this->input->post('file_asli_sk_terakhir', TRUE),
-			"file_asli_skp_2_tahun" => $this->input->post('file_asli_skp_2_tahun', TRUE),
-			"file_asli_ijazah" => $this->input->post('file_asli_ijazah', TRUE),
-			"file_asli_transkip" => $this->input->post('file_asli_transkip', TRUE)
+			"tgl_kenaikan" => $this->input->post('tgl_kenaikan', TRUE)
 		];
 
 		// echo json_encode($data);

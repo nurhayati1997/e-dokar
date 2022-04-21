@@ -192,7 +192,9 @@
 														<div class="col-12 col-xl-5"></div>
 														<div class="col-12 col-xl-7">
 															<h2 class="text-danger font-weight-bolder">Jumlah Karyawan Laki- Laki : <?php echo $total_laki; ?></h2>
-															<a href="dashboard/laki/" target="_blank" class="btn btn-danger font-weight-bold py-2 px-6">Export</a>
+															<?php if ($this->session->userdata("rule") == 1) { ?>	
+																<a href="dashboard/laki/" target="_blank" class="btn btn-danger font-weight-bold py-2 px-6">Export</a>
+															<?php } ?>
 														</div>
 													</div>
 												</div>
@@ -208,7 +210,9 @@
 												<div class="flex-grow-1 p-12 card-rounded bgi-no-repeat d-flex flex-column justify-content-center align-items-start" style="background-color: #FFF4DE; background-position: right bottom; background-size: auto 100%; background-image: url(https://preview.keenthemes.com/metronic/theme/html/demo2/dist/assets/media/svg/humans/custom-8.svg)">
 													
 													<h2 class="text-danger font-weight-bolder m-0">Jumlah Karyawan <br>Perempuan : <?php echo $total_perempuan; ?></h2>
-													<a href="dashboard/perempuan/" target="_blank" class="btn btn-danger font-weight-bold py-2 px-6">Export</a> 
+													<?php if ($this->session->userdata("rule") == 1) { ?>
+														<a href="dashboard/perempuan/" target="_blank" class="btn btn-danger font-weight-bold py-2 px-6">Export</a>
+													<?php } ?>
 												</div>
 											</div>
 										</div>
@@ -429,7 +433,9 @@
 												</span>
 												<span class="card-title font-weight-bolder text-dark-75 font-size-h2 mb-0 mt-6 d-block"><?php echo $total_fungsional; ?></span>
 												<span class="font-weight-bold text-muted font-size-sm">Jabatan Fungsional</span>
-												<a href="dashboard/fungsional/" target="_blank" class="btn btn-danger font-weight-bold py-2 px-6">Export</a>
+													<?php if ($this->session->userdata("rule") == 1) { ?>
+														<a href="dashboard/fungsional/" target="_blank" class="btn btn-danger font-weight-bold py-2 px-6">Export</a>
+													<?php } ?>
 											</div>
 											<!--end::Body-->
 										</div>
@@ -453,7 +459,9 @@
 												</span>
 												<span class="card-title font-weight-bolder text-white font-size-h2 mb-0 mt-6 d-block"><?php echo $total_struktural; ?></span>
 												<span class="font-weight-bold text-white font-size-sm">Jabatan Struktural</span>
-												<a href="dashboard/struktural/" target="_blank" class="btn btn-danger font-weight-bold py-2 px-6">Export</a>
+													<?php if ($this->session->userdata("rule") == 1) { ?>
+														<a href="dashboard/struktural/" target="_blank" class="btn btn-danger font-weight-bold py-2 px-6">Export</a>
+													<?php } ?>
 											</div>
 											<!--end::Body-->
 										</div>
@@ -479,7 +487,9 @@
 												</span>
 												<span class="card-title font-weight-bolder text-white font-size-h2 mb-0 mt-6 d-block"><?php echo $total_profesi; ?></span>
 												<span class="font-weight-bold text-white font-size-sm">Jabatan Profesi</span>
-												<br> <a href="dashboard/profesi/" target="_blank" class="btn btn-dark font-weight-bold py-2 px-6">Export</a>
+													<?php if ($this->session->userdata("rule") == 1) { ?>
+														<a href="dashboard/profesi/" target="_blank" class="btn btn-dark font-weight-bold py-2 px-6">Export</a>
+													<?php } ?>
 											</div>
 											<!--end::Body-->
 										</div>
@@ -503,7 +513,10 @@
 												</span>
 												<span class="card-title font-weight-bolder text-white font-size-h2 mb-0 mt-6 text-hover-primary d-block"><?php echo $total_bukan_pns; ?></span>
 												<span class="font-weight-bold text-white font-size-sm">Bukan PNS</span>
-												<br><a href="dashboard/bukan_pns/" target="_blank" class="btn btn-danger font-weight-bold py-2 px-6">Export</a>
+													<?php if ($this->session->userdata("rule") == 1) { ?>
+														<a href="dashboard/bukan_pns/" target="_blank" class="btn btn-danger font-weight-bold py-2 px-6">Export</a>
+													<?php } ?>
+												<br>
 											</div>
 											<!--end::Body-->
 										</div>

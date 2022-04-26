@@ -565,6 +565,7 @@ License: You must have a valid license purchased only from themeforest(the above
 		<script src="assets/plugins/custom/prismjs/prismjs.bundle5883.js?v=7.2.9"></script>
 		<script src="assets/js/scripts.bundle5883.js?v=7.2.9"></script>
 		<!--end::Global Theme Bundle-->
+		<script src="js/jquery.min.js" type="text/javascript"></script>
 		<!--begin::Page Vendors(used by this page)-->
 		<script src="assets/plugins/custom/datatables/datatables.bundle5883.js?v=7.2.9"></script>
 		<!--end::Page Vendors-->

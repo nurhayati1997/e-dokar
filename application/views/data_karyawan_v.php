@@ -3722,7 +3722,7 @@
 
 	function view() {
 		$("#tombolView").html('<i class="fas fa-spinner fa-pulse"></i> Memproses..')
-		var foto = $("#foto").val()
+		var foto = $("#view_foto").val()
 		var nama = $("#view_nama").val()
 		var nik = $("#nik").val()
 		var no_hp = $("#no_hp").val()
